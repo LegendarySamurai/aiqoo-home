@@ -1,5 +1,9 @@
-﻿@import 'variables';
+﻿@import "../vendor/bootstrap.custom/bootstrap.custom";
+@import 'variables';
 @import 'helpers';
+
+@import 'footer';
+@import 'footer-responsive';
 
 @font-face {
     font-display: swap;
