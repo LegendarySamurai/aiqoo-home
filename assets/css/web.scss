@@ -88,38 +88,6 @@ button {
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-.section-header {
-    position: relative;
-    margin: 0 auto;
-    max-width: $central-content-width - 50;
-    text-align: center;
-
-    & h2, h3 {
-        display: inline-block;
-        margin: auto;
-        min-width: 30%;
-        font-size: 13pt;
-        text-align: center;
-        background-color: #FFF;
-        z-index: 100;
-    }
-
-    & h3 {
-        background-color: #f4eee4;
-    }
-
-    &:after {
-        content: "";
-        position: absolute;
-        top: 11px;
-        display: block;
-        width: 100%;
-        height: 2px;
-        background-image: linear-gradient(to left, #585077, #fff 50%, #fff 50%, #585077 100%);
-        z-index: -1;
-    }
-}
-
 .header {
     position: relative;
     background: url('../images/header/main-image.jpg');
@@ -132,7 +100,22 @@ button {
     text-align: center;
     z-index: 0;
 
+    // Header on scroll
+    &.sticky {
+        width: 100%;
+        background-color: $primaryColor;
+
+        .reasons {
+            display: none;
+        }
+
+        .opacity-bg {
+            display: none;
+        }
+    }
+
     & .opacity-bg {
+        display: block;
         position: absolute;
         top: 0;
         width: 100%;
@@ -144,17 +127,12 @@ button {
 
     & .logo {
         position: relative;
-        //width: 80%;
-        //max-width: 300px;
-        //margin-top: 70px;
         z-index: 100;
     }
 
     & h1 {
         position: relative;
         z-index: 100;
-        //margin-top: 50px;
-        //font-size: 24pt;
         font-weight: 500;
         text-align: center;
         color: #ffffff;
@@ -165,7 +143,6 @@ button {
         position: relative;
         width: 90%;
         max-width: $central-content-width;
-        height: 200px;
         margin: 50px auto 0;
         padding: 15px;
         box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.16);
@@ -180,9 +157,7 @@ button {
 
         .form-control {
             display: block;
-            //width: calc(100% - 30px);
             width: 100%;
-            //margin: 15px;
             border-radius: 4px;
             box-shadow: 0px 11px 7px 0 rgba(0, 0, 0, 0.02);
             border: solid 2px #d8cdba;
@@ -221,37 +196,18 @@ button {
             bottom: 15px;
             left: 0;
             display: flex;
-            flex-direction: row;
             justify-content: space-between;
-            align-items: center;
             width: 100%;
 
             & .reason {
+                position: relative;
                 display: flex;
                 flex-direction: row;
                 justify-content: flex-start;
                 align-items: center;
-                position: relative;
-                //display: inline-block;
-                width: 25%;
-                height: 70px;
-                padding: 16px;
                 text-align: left;
                 color: $primaryColor;
                 overflow: hidden;
-                //border-left: solid 2px $primaryColor;
-
-                &:not(:first-child):before {
-                    display: block;
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    transform: translate(50%, 50%);
-                    width: 2px;
-                    height: 40px;
-                    background-color: $primaryColor;
-                }
 
                 & .headings {
                     margin-left: 15px;
@@ -260,25 +216,54 @@ button {
                 & h2 {
                     width: 100%;
                     margin: 0;
-                    font-size: 12pt;
+                    //font-size: 12pt;
                     font-weight: bold;
                 }
 
                 & h3 {
                     width: 100%;
-                    margin: 8px 0 0 0;
-                    font-size: 10pt;
+                    //margin: 8px 0 0 0;
+                    //font-size: 10pt;
                     font-weight: normal;
                 }
 
                 & img {
-                    //position: absolute;
-                    //top: 20px;
-                    //left: 16px;
-                    width: 30px;
+                    //width: 30px;
                 }
             }
         }
+    }
+}
+
+.section-header {
+    position: relative;
+    margin: 0 auto;
+    max-width: $central-content-width - 50;
+    text-align: center;
+
+    & h2, h3 {
+        display: inline-block;
+        margin: auto;
+        min-width: 30%;
+        font-size: 13pt;
+        text-align: center;
+        background-color: #FFF;
+        z-index: 100;
+    }
+
+    & h3 {
+        background-color: #f4eee4;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 11px;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-image: linear-gradient(to left, #585077, #fff 50%, #fff 50%, #585077 100%);
+        z-index: -1;
     }
 }
 
