@@ -1,5 +1,8 @@
-﻿@import 'variables';
+﻿@import "../vendor/bootstrap.custom/bootstrap.custom";
+@import 'variables';
 @import 'helpers';
+
+@import 'footer';
 
 @font-face {
     font-display: swap;
