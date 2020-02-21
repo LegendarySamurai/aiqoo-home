@@ -1,0 +1,3 @@
+# ignore forlders:
+.idea/
+node_modules/
