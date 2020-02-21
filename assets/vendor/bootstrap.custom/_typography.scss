@@ -1,0 +1,14 @@
+$text-color-999: #999;
+
+// line height
+@media (min-width: 992px) {
+  .lh-lg-2 {
+    line-height: 2;
+  }
+}
+
+
+// text color
+.text-brand-gray {
+  color: $text-color-999;
+}

@@ -1,6 +1,84 @@
+@media(min-width: 1200px) {
+  .page-footer-main {
+    padding-top: 60px;
+    padding-bottom: 40px;
+
+    .brand-logo {
+      width: 145px;
+    }
+
+    .more-information {
+      margin-top: 40px;
+    }
+
+    .popular-posts {
+      padding-top: 15px;
+    }
+
+    h4 {
+      padding-bottom: 30px;
+    }
+
+    .posts-divider {
+      margin: 28px 0;
+    }
+
+    .dummy-image {
+      width: 130px;
+      height: 100px;
+    }
+  }
+
+  .content-column-center {
+    padding-right: 50px;
+  }
+
+  .page-footer-footer {
+    .content {
+      height: 68px;
+    }
+  }
+
+  .page-footer-subscribe-box {
+    width: 270px;
+    margin-top: 40px;
+
+    label {
+      height: 52px;
+      padding: 0 15px;
+    }
+
+    .form-control {
+      height: 40px;
+      padding: 0 15px;
+    }
+  }
+}
+// EOL: @media(min-width: 1200px)
+
 @media(min-width: 1400px) {
-  .page-footer .container {
-    max-width: 1340px;
+  .page-footer {
+    .container {
+      max-width: 1340px;
+    }
+
+    .content-column-left {
+      padding-right: 110px;
+    }
+
+    .content-column-center {
+      padding-right: 110px;
+    }
+  }
+
+  .content-column-center {
+    padding-right: 70px;
   }
 }
 // EOL: @media(min-width: 1400px)
+
+
+@media(min-width: 1600px) {
+
+}
+// EOL: @media(min-width: 1600px)
