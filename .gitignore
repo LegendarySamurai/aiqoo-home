@@ -1,3 +1,4 @@
 # ignore forlders:
 .idea/
 node_modules/
+assets/vendor/bootstrap
