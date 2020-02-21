@@ -236,36 +236,88 @@ button {
 }
 
 .section-header {
-    position: relative;
-    margin: 0 auto;
-    max-width: $central-content-width - 50;
-    text-align: center;
+    //position: relative;
+    //margin: 0 auto;
+    //max-width: $central-content-width - 50;
+    //text-align: center;
 
-    & h2, h3 {
-        display: inline-block;
-        margin: auto;
-        min-width: 30%;
-        font-size: 13pt;
+    //& h2, h3 {
+    //    display: inline-block;
+    //    margin: auto;
+    //    min-width: 30%;
+    //    font-size: 13pt;
+    //    text-align: center;
+    //    background-color: #FFF;
+    //    z-index: 100;
+    //}
+    //
+    //& h3 {
+    //    background-color: #f4eee4;
+    //}
+    //
+    //&:after {
+    //    content: "";
+    //    position: absolute;
+    //    top: 11px;
+    //    display: block;
+    //    width: 100%;
+    //    height: 2px;
+    //    background-image: linear-gradient(to left, #585077, #fff 50%, #fff 50%, #585077 100%);
+    //    z-index: -1;
+    //}
+}
+
+.section-1 {
+    .trending-categories {
+        position: relative;
+        margin: 0 auto;
+        max-width: $central-content-width - 50;
         text-align: center;
-        background-color: #FFF;
-        z-index: 100;
-    }
 
-    & h3 {
-        background-color: #f4eee4;
-    }
+        & h2, h3 {
+            display: inline-block;
+            margin: auto;
+            min-width: 30%;
+            font-size: 13pt;
+            text-align: center;
+            background-color: #FFF;
+            z-index: 100;
+        }
 
-    &:after {
-        content: "";
-        position: absolute;
-        top: 11px;
-        display: block;
-        width: 100%;
-        height: 2px;
-        background-image: linear-gradient(to left, #585077, #fff 50%, #fff 50%, #585077 100%);
-        z-index: -1;
+        & h3 {
+            background-color: #f4eee4;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 11px;
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-image: linear-gradient(to left, #585077, #fff 50%, #fff 50%, #585077 100%);
+            z-index: -1;
+        }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .main-header-wrapper {
     display: none; //
