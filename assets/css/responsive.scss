@@ -1,0 +1,124 @@
+@import 'variables';
+
+.header {
+  .logo {
+    @media(min-width: 300px) {
+      width: 50%;
+      margin-top: 30px;
+    }
+    @media(min-width: 600px) {
+
+    }
+    @media(min-width: 1200px) {
+      width: 80%;
+      max-width: 300px;
+      margin-top: 70px;
+    }
+    @media(min-width: 1600px) {
+
+    }
+  }
+
+  h1 {
+    @media(min-width: 300px) {
+
+    }
+    @media(min-width: 600px) {
+
+    }
+    @media(min-width: 1200px) {
+      margin-top: 50px;
+      font-size: 24pt;
+    }
+    @media(min-width: 1600px) {
+
+    }
+
+  }
+  .find-btn {
+    @media(min-width: 300px) {
+      top: 0;
+      right: 0;
+      transform: translate(-60%, 140%);
+      width: 150px;
+      height: 80%;
+      font-size: 14px;
+    }
+    @media(min-width: 600px) {}
+    @media(min-width: 768px) {
+      top: 0;
+      right: 0;
+      transform: initial;
+      height: 98%;
+    }
+    @media(min-width: 1200px) {
+      font-size: 16px;
+    }
+    @media(min-width: 1600px) {
+      width: 200px;
+
+    }
+    @media(min-width: 1920px) {
+      font-size: 18px;
+    }
+  }
+
+  .form-control {
+    @media(min-width: 300px) {
+      height: 60px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    @media(min-width: 768px) {
+      padding-left: 250px;
+      padding-right: 150px;
+    }
+    @media(min-width: 1200px) {
+      padding-left: 290px;
+      padding-right: 210px;
+    }
+    @media(min-width: 1600px) {
+      height: 80px;
+      padding-left: 320px;
+      padding-right: 210px;
+    }
+  }
+
+  .form-control,
+  .form-control::placeholder {
+    @media(min-width: 300px) {
+      font-size: 12px;
+    }
+    @media(min-width: 1200px) {
+      font-size: 14px;
+    }
+    @media(min-width: 1600px) {
+      font-size: 16px;
+    }
+  }
+
+  .super-placeholder {
+    @media(min-width: 300px) {
+      display: none;
+    }
+    @media(min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    span {
+      @media(min-width: 300px) {
+        font-size: 12px;
+      }
+      @media(min-width: 1200px) {
+        font-size: 14px;
+      }
+      @media(min-width: 1600px) {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
