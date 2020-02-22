@@ -8,6 +8,10 @@
     padding-left: 50px;
     padding-right: 20px;
   }
+
+  .view-more {
+    padding-top: 40px;
+  }
 }
 
 // EOL: @media(min-width: 1200px)
@@ -24,7 +28,9 @@
 
 
 @media(min-width: 1600px) {
-
+  .view-more {
+    padding-top: 60px;
+  }
 }
 
 // EOL: @media(min-width: 1600px)
