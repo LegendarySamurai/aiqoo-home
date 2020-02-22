@@ -1,4 +1,27 @@
 .home {
+  .categories {
+    font-family: $main-font;
+
+    .list {
+      .category {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+
+        }
+
+        h5 {
+          color: $text-color;
+          font-weight: 400;
+          text-align: center;
+        }
+      }
+    }
+  }
+
   .common-searches {
     background-color: #fff;
   }
