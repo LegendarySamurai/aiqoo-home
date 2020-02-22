@@ -2,8 +2,10 @@
 @import 'variables';
 @import 'helpers';
 
-@import 'footer';
-@import 'footer-responsive';
+@import 'services';
+@import 'services-responsive';
+@import 'components/footer';
+@import 'components/footer-responsive';
 
 @font-face {
     font-display: swap;
@@ -20,7 +22,7 @@ body {
     background-color: #FFF;
     font-family: $main-font;
     font-weight: 400;
-    color: $textColer;
+    color: $text-color;
     font-size: 11pt;
     direction: ltr;
     margin: 0;
@@ -42,25 +44,25 @@ h1, h2, h3, h4 {
     font-weight: 800;
 }
 a {
-    color: $textColer;
+    color: $text-color;
     text-decoration: none;
 }
 a:hover {
     outline: 0;
     text-decoration: none;
-    color: $textColer;
+    color: $text-color;
 }
 
 a:active {
     outline: 0;
     text-decoration: none;
-    color: $textColer;
+    color: $text-color;
 }
 
 a:focus {
     outline: 0;
     text-decoration: none;
-    color: $textColer;
+    color: $text-color;
 }
 .hide {
     display: none;

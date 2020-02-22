@@ -1,0 +1,46 @@
+.services {
+  background-color: #f8f4ef;
+}
+
+.list-row {
+  &.five-cols {
+    .list-col {
+      width: 20%;
+
+      h4,
+      p,
+      .view-more {
+        line-height: 2;
+      }
+
+      p,
+      .view-more {
+        line-height: 2;
+        color: $text-color;
+      }
+
+      h4 {
+        color: $primaryColor;
+      }
+
+      p {
+
+      }
+
+      .view-more {
+        position: relative;
+
+        &::after {
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          display: block;
+          content: '';
+          width: 100%;
+          height: 1px;
+          background-color: $text-color;
+        }
+      }
+    }
+  }
+}
