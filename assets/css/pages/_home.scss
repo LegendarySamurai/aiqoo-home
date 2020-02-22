@@ -2,6 +2,7 @@
   .categories {
     font-family: $main-font;
     font-weight: 400;
+    background: url("../images/bg/bg__categories_d.png") no-repeat center bottom / auto;
   }
 
   .other-categories {
@@ -13,7 +14,20 @@
   }
 
   .magazine {
-    background-color: $primaryColor;
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: calc(100% - 175px);
+      background-color: $primaryColor;
+    }
+
+    .magazine-header {
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
 
     .article {
       color: #fff;
