@@ -22,18 +22,23 @@
             &.bathroom {
               width: 42px;
             }
+
             &.garage-conversion {
               width: 47px;
             }
+
             &.heating-cooling {
               width: 42px;
             }
+
             &.kitchen {
               width: 44px;
             }
+
             &.roofing {
               width: 72px;
             }
+
             &.windows-doors {
               width: 44px;
             }
@@ -43,6 +48,14 @@
             font-size: 11pt;
           }
         }
+      }
+    }
+
+    .other-categories {
+      margin-top: 120px;
+
+      .list {
+        padding-top: 100px;
       }
     }
 
