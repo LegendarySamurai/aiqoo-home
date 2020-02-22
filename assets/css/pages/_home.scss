@@ -12,6 +12,23 @@
     }
   }
 
+  .magazine {
+    background-color: $primaryColor;
+
+    .article {
+      color: #fff;
+
+      .main-title {
+        color: #d8cdba;
+      }
+
+      .profile-image {
+        border-radius: 50%;
+        overflow: hidden;
+      }
+    }
+  }
+
   .common-searches {
     background-color: #fff;
   }
