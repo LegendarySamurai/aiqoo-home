@@ -5,6 +5,25 @@
     }
   }
 
+  .list-item-with-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h5 {
+      color: $text-color;
+      font-weight: 400;
+      text-align: center;
+    }
+  }
+
+  .list-item-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   h4,
   p,
   .view-more {

@@ -5,6 +5,45 @@
         margin-bottom: 30px;
       }
     }
+
+    .list-item-with-icon {
+      .list-item-icon {
+        height: 44px;
+        margin-bottom: 25px;
+      }
+
+      img {
+        max-height: 100%;
+
+        &.bathroom {
+          width: 42px;
+        }
+
+        &.garage-conversion {
+          width: 47px;
+        }
+
+        &.heating-cooling {
+          width: 42px;
+        }
+
+        &.kitchen {
+          width: 44px;
+        }
+
+        &.roofing {
+          width: 72px;
+        }
+
+        &.windows-doors {
+          width: 44px;
+        }
+      }
+
+      h5 {
+        font-size: 11pt;
+      }
+    }
   }
 }
 // EOL: @media(min-width: 1200px)
