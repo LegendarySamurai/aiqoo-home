@@ -73,6 +73,10 @@
       .list {
         padding-top: 100px;
       }
+
+      .section-sub-title {
+        font-size: 12pt;
+      }
     }
 
     .services-list {
@@ -80,8 +84,12 @@
       padding-right: 20px;
     }
 
-    .view-more {
+    .view-more-container {
       padding-top: 40px;
+
+      button {
+
+      }
     }
   }
   // EOL: @media(min-width: 1200px)
@@ -95,7 +103,7 @@
 
 
   @media(min-width: 1600px) {
-    .view-more {
+    .view-more-container {
       padding-top: 60px;
     }
   }

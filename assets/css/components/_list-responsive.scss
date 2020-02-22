@@ -3,6 +3,14 @@
     &.five-cols {
       .list-col {
         margin-bottom: 30px;
+
+        h4 {
+          font-size: 12pt;
+        }
+
+        .view-more {
+          font-size: 12pt;
+        }
       }
     }
 
@@ -43,6 +51,10 @@
       h5 {
         font-size: 11pt;
       }
+    }
+
+    p {
+      font-size: 12pt;
     }
   }
 }
