@@ -1,0 +1,141 @@
+@import '../variables';
+
+.header {
+  position: relative;
+  background: url('../../images/header/main-image.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 200px;
+  height: 400px;
+  max-height: 50vh;
+  text-align: center;
+  z-index: 0;
+
+  & .opacity-bg {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    background-color: #181522;
+    z-index: 50;
+  }
+
+  & .logo {
+    position: relative;
+    z-index: 100;
+  }
+
+  & h1 {
+    position: relative;
+    z-index: 100;
+    font-weight: 500;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(0,0,0,.3), 0 0 5px rgba(0,0,0,.3);
+  }
+
+  .find-box {
+    position: relative;
+    width: 90%;
+    max-width: $central-content-width;
+    margin: 50px auto 0;
+    padding: 15px;
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.16);
+    background-color: #f4eee4;
+    overflow: hidden;
+    z-index: 100;
+
+    .form-group {
+      position: relative;
+      width: 100%;
+    }
+
+    .form-control {
+      display: block;
+      width: 100%;
+      border-radius: 4px;
+      box-shadow: 0px 11px 7px 0 rgba(0, 0, 0, 0.02);
+      border: solid 2px #d8cdba;
+      background-color: #ffffff;
+      transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+
+    .super-placeholder {
+      position: absolute;
+      top: 0;
+      left: 30px;
+      height: 100%;
+
+      span {
+        font-family: $main-font;
+        font-weight: bold;
+      }
+
+      img {
+        padding-right: 20px;
+      }
+    }
+
+    .find-btn {
+      position: absolute;
+      line-height: 100%;
+      background-color: $primaryColor;
+      font-weight: bold;
+      text-align: center;
+      color: #ffffff;
+    }
+
+
+    & .reasons {
+      position: absolute;
+      bottom: 15px;
+      left: 0;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      & .reason {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: left;
+        color: $primaryColor;
+        overflow: hidden;
+
+        & .headings {
+          margin-left: 15px;
+        }
+
+        & h2 {
+          width: 100%;
+          margin: 0;
+          font-weight: bold;
+        }
+
+        & h3 {
+          width: 100%;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+
+  // Header on scroll
+  &.sticky {
+    width: 100%;
+    background-color: $primaryColor;
+
+    .reasons {
+      display: none;
+    }
+
+    .opacity-bg {
+      display: none;
+    }
+  }
+}
