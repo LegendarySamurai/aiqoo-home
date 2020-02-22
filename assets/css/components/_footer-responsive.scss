@@ -1,4 +1,20 @@
 @media(min-width: 1200px) {
+  .page-footer {
+    padding-top: 70px;
+
+    .content-column-left {
+      padding-right: 60px;
+
+      p {
+        max-width: 320px;
+      }
+    }
+
+    .content-column-center {
+      padding-right: 40px;
+    }
+  }
+
   .page-footer-main {
     padding-top: 60px;
     padding-bottom: 40px;
@@ -42,10 +58,6 @@
     }
   }
 
-  .content-column-center {
-    padding-right: 40px;
-  }
-
   .page-footer-footer {
     .content {
       height: 68px;
@@ -73,10 +85,6 @@
   .page-footer {
     .container {
       max-width: 1340px;
-    }
-
-    .content-column-left {
-      padding-right: 110px;
     }
 
     .content-column-center {
