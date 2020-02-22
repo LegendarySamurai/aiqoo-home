@@ -2,15 +2,22 @@
   padding-top: 10rem;
   color: $text-color-999;
   background-color: $pageFooterPrimaryColor;
+  font-family: $main-font;
 
   h4,
   h5 {
     color: #fff;
+    font-weight: 600;
   }
 
   p {
-    font-family: $main-font;
     color: #999;
+    font-weight: 400;
+  }
+
+  span {
+    color: #909090;
+    font-weight: 400;
   }
 
   .page-footer-link {
