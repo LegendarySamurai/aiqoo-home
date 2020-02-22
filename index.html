@@ -68,69 +68,123 @@
     </div>
 </header>
 
-<main>
-    <section class="section-1">
-        <div class="trending-categories">
+<main class="home">
+    <section class="categories">
+        <div class="container section-container">
+            <!-- trending categories-->
+            <div class="row">
+                <!-- trending categories title -->
+                <div class="col-12">
+                    <div class="section-title-container ">
+                        <span class="section-title-decoration left"></span>
+                        <h3 class="section-title">Trending Categories</h3>
+                        <span class="section-title-decoration right"></span>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <!-- trending categories list -->
+                    <div class="row list">
+                        <div class="col-4 col-lg-2">
+                            <div class="category">
+                                <img src="assets/images/categories/4.png" alt="category image" />
+                                <h3>Bathroom</h3>
+                            </div>
+                        </div>
+                        <div class="col-4 col-lg-2">
+                            <div class="category">
+                                <img src="assets/images/categories/5.png" alt="category image" />
+                                <h3>Garage <br> Conversion</h3>
+                            </div>
+                        </div>
+                        <div class="col-4 col-lg-2">
+                            <div class="category">
+                                <img src="assets/images/categories/3.png" alt="category image" />
+                                <h3>Heating <br> & Cooling</h3>
+                            </div>
+                        </div>
+                        <div class="col-4 col-lg-2">
+                            <div class="category">
+                                <img src="assets/images/categories/2.png" alt="category image" />
+                                <h3>Kitchens</h3>
+                            </div>
+                        </div>
+                        <div class="col-4 col-lg-2">
+                            <div class="category">
+                                <img src="assets/images/categories/1.png" alt="category image" />
+                                <h3>Roofing</h3>
+                            </div>
+                        </div>
+                        <div class="col-4 col-lg-2">
+                            <div class="category">
+                                <img src="assets/images/categories/21.png" alt="category image" />
+                                <h3>Windows <br> & Doors</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- other categories -->
+            <div class="row">
+                <div class="col-12">
+                    <h4 class="section-sub-title">
+                        using Lorem Ipsum is that it has a more-or-less normal distribution of letters, using
+                    </h4>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-4 col-lg-2">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- To refactor -->
+        <div class="trending-categories d-none">
             <h2>Trending Categories</h2>
             <div class="categories-container">
                 <div class="container">
                     <div class="row">
-                        <div class="col-2 col-md-6">
-                            <div class="category">
-                                <a href="#">
-                                    <img src="assets/images/categories/4.png" />
-                                    <h3>Bathroom</h3>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-2 col-md-6">
-                            <div class="category">
-                                <a href="#">
-                                    <img src="assets/images/categories/5.png" />
-                                    <h3>Garage Conversion</h3>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-2 col-md-6">
-                            <div class="category">
-                                <a href="#">
-                                    <img src="assets/images/categories/3.png" />
-                                    <h3>Heating & Cooling</h3>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-2 col-md-6">
-                            <div class="category">
-                                <a href="#">
-                                    <img src="assets/images/categories/2.png" />
-                                    <h3>Kitchens</h3>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-2 col-md-6">
-                            <div class="category">
-                                <a href="#">
-                                    <img src="assets/images/categories/1.png" />
-                                    <h3>Roofing</h3>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-2 col-md-6">
-                            <div class="category">
-                                <a href="#">
-                                    <img src="assets/images/categories/21.png" />
-                                    <h3>Windows & Doors</h3>
-                                </a>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <section class="common-searches">
+        <div class="container section-container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title-container ">
+                        <span class="section-title-decoration left"></span>
+                        <h3 class="section-title">Common Searches</h3>
+                        <span class="section-title-decoration right"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row services-list list five-cols">
+                <div class="col-auto list-col">
+                    <p>
+                        Los Angeles tile replacement
+                        Los Angeles Roofing Facility
+                        Roof installation
+                        Los Angeles Roofing Facility
+                    </p>
+                </div>
+            </div>
+            <div class="row view-more">
+                <div class="col-auto mx-auto">
+                    <button type="button" class="brand-btn primary">View more</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="services">
-        <div class="container">
+        <div class="container section-container">
             <div class="row">
                 <div class="col-12">
                     <div class="section-title-container ">
@@ -148,87 +202,10 @@
                     <p>Roof replacement</p>
                     <a href="#!" class="view-more">View more</a>
                 </div>
-                <div class="col-auto list-col">
-                    <h4>Roofing</h4>
-                    <p>Roof replacement</p>
-                    <p>Roof replacement</p>
-                    <p>Roof replacement</p>
-                    <a href="#!" class="view-more">View more</a>
-                </div>
-                <div class="col-auto list-col">
-                    <h4>Roofing</h4>
-                    <p>Roof replacement</p>
-                    <p>Roof replacement</p>
-                    <p>Roof replacement</p>
-                    <a href="#!" class="view-more">View more</a>
-                </div>
-                <div class="col-auto list-col">
-                    <h4>Roofing</h4>
-                    <p>Roof replacement</p>
-                    <p>Roof replacement</p>
-                    <p>Roof replacement</p>
-                    <a href="#!" class="view-more">View more</a>
-                </div>
-                <div class="col-auto list-col">
-                    <h4>Roofing</h4>
-                    <p>Roof replacement</p>
-                    <p>Roof replacement</p>
-                    <p>Roof replacement</p>
-                    <a href="#!" class="view-more">View more</a>
-                </div>
-                <div class="col-auto list-col">
-                    <h4>Roofing</h4>
-                    <p>Roof replacement</p>
-                    <p>Roof replacement</p>
-                    <p>Roof replacement</p>
-                    <a href="#!" class="view-more">View more</a>
-                </div>
-                <div class="col-auto list-col">
-                    <h4>Roofing</h4>
-                    <p>Roof replacement</p>
-                    <p>Roof replacement</p>
-                    <p>Roof replacement</p>
-                    <a href="#!" class="view-more">View more</a>
-                </div>
-                <div class="col-auto list-col">
-                    <h4>Roofing</h4>
-                    <p>Roof replacement</p>
-                    <p>Roof replacement</p>
-                    <p>Roof replacement</p>
-                    <a href="#!" class="view-more">View more</a>
-                </div>
-                <div class="col-auto list-col">
-                    <h4>Roofing</h4>
-                    <p>Roof replacement</p>
-                    <p>Roof replacement</p>
-                    <p>Roof replacement</p>
-                    <a href="#!" class="view-more">View more</a>
-                </div>
-                <div class="col-auto list-col">
-                    <h4>Roofing</h4>
-                    <p>Roof replacement</p>
-                    <p>Roof replacement</p>
-                    <p>Roof replacement</p>
-                    <a href="#!" class="view-more">View more</a>
-                </div>
-                <div class="col-auto list-col">
-                    <h4>Roofing</h4>
-                    <p>Roof replacement</p>
-                    <p>Roof replacement</p>
-                    <p>Roof replacement</p>
-                    <a href="#!" class="view-more">View more</a>
-                </div>
-                <div class="col-auto list-col">
-                    <h4>Roofing</h4>
-                    <p>Roof replacement</p>
-                    <p>Roof replacement</p>
-                    <p>Roof replacement</p>
-                    <a href="#!" class="view-more">View more</a>
-                </div>
             </div>
-            <div class="row">
-                <div class="col-auto">
-                    <button type="button">View more</button>
+            <div class="row view-more">
+                <div class="col-auto mx-auto">
+                    <button type="button" class="brand-btn primary">View more</button>
                 </div>
             </div>
         </div>

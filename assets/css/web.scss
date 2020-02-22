@@ -4,10 +4,11 @@
 
 @import 'components/section-title';
 @import 'components/list';
+@import 'components/button';
 @import 'components/footer';
 @import 'components/header';
 
-@import 'services';
+@import 'pages/home';
 
 
 @font-face {
@@ -67,6 +68,11 @@ a:focus {
     text-decoration: none;
     color: $text-color;
 }
+
+img {
+    max-width: 100%;
+}
+
 .hide {
     display: none;
 }
