@@ -8,10 +8,20 @@
     }
 
     .categories {
-
+      padding-bottom: 320px;
     }
 
     .magazine {
+      position: relative;
+      padding-top: 360px;
+
+      .magazine-header {
+        position: absolute;
+        top: 0;
+        transform: translate(0, -50%);
+        width: 100%;
+      }
+
       .cards-container {
         margin-top: 40px;
       }
