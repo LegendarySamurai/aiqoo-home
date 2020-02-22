@@ -2,6 +2,11 @@
   .section-title-container {
     padding-bottom: 20px;
   }
+
+  .section-title {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
 }
 // EOL: @media(min-width: 1200px)
 
@@ -14,6 +19,11 @@
 @media(min-width: 1600px) {
   .section-title-container {
     padding-bottom: 25px;
+  }
+
+  .section-title {
+    padding-left: 120px;
+    padding-right: 120px;
   }
 }
 // EOL: @media(min-width: 1600px)

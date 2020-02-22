@@ -1,9 +1,4 @@
 @media(min-width: 1200px) {
-  .section-title {
-    padding-left: 80px;
-    padding-right: 80px;
-  }
-
   .services {
     padding-top: 40px;
     padding-bottom: 80px;
@@ -12,14 +7,6 @@
   .services-list {
     padding-left: 50px;
     padding-right: 20px;
-  }
-
-  .list-row {
-    &.five-cols {
-      .list-col {
-        margin-bottom: 30px;
-      }
-    }
   }
 }
 
@@ -31,24 +18,13 @@
       max-width: 1300px;
     }
   }
-
-  .list-row {
-    &.five-cols {
-      .list-col {
-        margin-bottom: 40px;
-      }
-    }
-  }
 }
 
 // EOL: @media(min-width: 1400px)
 
 
 @media(min-width: 1600px) {
-  .section-title {
-    padding-left: 120px;
-    padding-right: 120px;
-  }
+
 }
 
 // EOL: @media(min-width: 1600px)
