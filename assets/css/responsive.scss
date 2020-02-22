@@ -1,6 +1,9 @@
 @import 'variables';
 @import 'helpers';
 
+@import 'components/services-responsive';
+@import 'components/footer-responsive';
+
 .header {
   @media(min-width: 300px) {
     .logo {

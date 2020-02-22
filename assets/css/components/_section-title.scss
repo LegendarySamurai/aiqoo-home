@@ -1,0 +1,18 @@
+.section-title-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-title-decoration {
+  flex-grow: 1;
+  height: 2px;
+
+  &.left {
+    background-image: linear-gradient(to left, #585077, #dde1e8);
+  }
+  &.right {
+    background-image: linear-gradient(to right, #585077, #dde1e8);
+  }
+}
