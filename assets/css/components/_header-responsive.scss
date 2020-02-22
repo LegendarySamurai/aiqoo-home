@@ -141,6 +141,10 @@
   }
 
   @media(min-width: 1200px) {
+    & {
+      margin-bottom: 110px;
+    }
+
     .logo {
       width: 80%;
       max-width: 300px;
@@ -339,6 +343,10 @@
       }
     }
     @media(min-width: 1200px) {
+      & {
+        margin-bottom: 0;
+      }
+
       .header-inner {
         .find-box {
           width: 85%;
