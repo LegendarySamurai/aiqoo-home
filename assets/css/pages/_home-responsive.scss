@@ -1,0 +1,33 @@
+.home {
+  @media(min-width: 1200px) {
+    .services {
+      padding-top: 40px;
+      padding-bottom: 80px;
+    }
+
+    .services-list {
+      padding-left: 50px;
+      padding-right: 20px;
+    }
+
+    .view-more {
+      padding-top: 40px;
+    }
+  }
+  // EOL: @media(min-width: 1200px)
+
+  @media(min-width: 1400px) {
+    .section-container {
+      max-width: 1300px;
+    }
+  }
+  // EOL: @media(min-width: 1400px)
+
+
+  @media(min-width: 1600px) {
+    .view-more {
+      padding-top: 60px;
+    }
+  }
+  // EOL: @media(min-width: 1600px)
+}
