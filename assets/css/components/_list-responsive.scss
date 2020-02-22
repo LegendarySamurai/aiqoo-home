@@ -1,0 +1,27 @@
+@media(min-width: 1200px) {
+  .list {
+    &.five-cols {
+      .list-col {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+// EOL: @media(min-width: 1200px)
+
+@media(min-width: 1400px) {
+  .list {
+    &.five-cols {
+      .list-col {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+// EOL: @media(min-width: 1400px)
+
+
+@media(min-width: 1600px) {
+
+}
+// EOL: @media(min-width: 1600px)

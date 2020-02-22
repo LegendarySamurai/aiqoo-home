@@ -1,7 +1,9 @@
 @import 'variables';
 @import 'helpers';
 
-@import 'components/services-responsive';
+@import 'services-responsive';
+@import 'components/section-title-responsive';
+@import 'components/list-responsive';
 @import 'components/footer-responsive';
 
 .header {
