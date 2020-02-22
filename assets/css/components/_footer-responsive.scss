@@ -59,11 +59,17 @@
     label {
       height: 52px;
       padding: 0 15px;
+      font-size: 10pt;
     }
 
     .form-control {
       height: 40px;
       padding: 0 15px;
+      font-size: 10pt;
+
+      &::placeholder {
+        font-size: 10pt;
+      }
     }
   }
 }
