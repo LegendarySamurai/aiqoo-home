@@ -12,22 +12,14 @@
     }
 
     .magazine {
-      position: relative;
       padding-top: 360px;
 
       .magazine-header {
-        position: absolute;
-        top: 0;
-        transform: translate(0, -50%);
-        width: 100%;
+        transform: translate(0, -44%);
       }
 
       .cards-container {
         margin-top: 40px;
-      }
-
-      .tips-container {
-        margin-top: 80px;
       }
 
       .article {
