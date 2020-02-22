@@ -32,7 +32,6 @@
 
   p,
   .view-more {
-    line-height: 2;
     color: $text-color;
   }
 
@@ -46,6 +45,7 @@
 
   .view-more {
     position: relative;
+    font-weight: 700;
 
     &::after {
       position: absolute;

@@ -1,6 +1,15 @@
 .home {
   .categories {
     font-family: $main-font;
+    font-weight: 400;
+  }
+
+  .other-categories {
+    .section-sub-title {
+      color: $text-color;
+      font-family: $h-font;
+      font-weight: 600;
+    }
   }
 
   .common-searches {
@@ -9,5 +18,13 @@
 
   .services {
     background-color: #f8f4ef;
+  }
+
+  .view-more-container {
+    button {
+      font-family: $h-font;
+      font-weight: 400;
+      color: #fff;
+    }
   }
 }
