@@ -20,8 +20,40 @@
         margin-top: 80px;
       }
 
+      .article {
+        padding-right: 40px;
+
+        .main-title {
+          margin-bottom: 40px;
+        }
+
+        .profile {
+          margin-bottom: 30px;
+        }
+
+        .profile-image {
+          width: 58px;
+          height: 58px;
+          margin-right: 10px;
+        }
+
+        .profile-name {
+          margin-bottom: 4px;
+        }
+
+        .article-content {
+          p {
+            line-height: 1.75;
+          }
+        }
+      }
+
       .more-tips {
         margin-top: 40px;
+
+        .title {
+          color: #d8cdba;
+        }
       }
     }
 
