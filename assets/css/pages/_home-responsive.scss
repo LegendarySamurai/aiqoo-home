@@ -85,6 +85,86 @@
       }
     }
 
+    .google-search {
+      margin-top: 95px;
+
+      .form-group {
+        .form-control {
+          padding: 0 216px 0 130px;
+          font-size: 13.5pt;
+
+          &::placeholder {
+            font-size: 13.5pt;
+          }
+        }
+      }
+
+      .search-btn {
+        width: 204px;
+        height: calc(100% - 8px);
+        font-size: 15pt;
+
+        i {
+          margin-left: 40px;
+        }
+      }
+    }
+
+    .questionnaire {
+      margin-top: 86px;
+
+      &:before {
+        height: calc(100% - 114px);
+      }
+
+      .questionnaire-content {
+        .questionnaire-title {
+          margin-top: 12px;
+          font-size: 20.5pt;
+        }
+
+        .questionnaire-text {
+          line-height: 1.5;
+          margin-top: 30px;
+          font-size: 13.5pt;
+        }
+
+        .questionnaire-content-outer {
+          margin-top: 20px;
+          margin-left: -30px;
+
+          .questionnaire-content-inner {
+            padding: 20px;
+
+            .questionnaire-content-item {
+              padding: 10px 40px;
+
+              img {
+                margin-right: 30px;
+              }
+
+              span {
+                line-height: 1.5;
+                font-size: 11pt;
+              }
+            }
+          }
+
+          .join-us {
+            height: 100%;
+            margin-right: 3px;
+            margin-top: 3px;
+
+            button {
+              width: 150px;
+              height: 120px;
+              font-size: 13.5pt;
+            }
+          }
+        }
+      }
+    }
+
     .common-searches-list {
       padding-left: 20px;
       padding-right: 20px;
@@ -109,6 +189,61 @@
     .section-container {
       max-width: 1300px;
     }
+
+    .questionnaire {
+      //margin-top: 86px;
+
+      &:before {
+        //height: calc(100% - 114px);
+      }
+
+      .questionnaire-content {
+        .questionnaire-title {
+          //margin-top: 12px;
+          //font-size: 22.5pt;
+        }
+
+        .questionnaire-text {
+          //line-height: 1.5;
+          margin-top: 40px;
+          //font-size: 13.5pt;
+        }
+
+        .questionnaire-content-outer {
+          margin-top: 40px;
+          //margin-left: -30px;
+
+          .questionnaire-content-inner {
+            padding: 25px;
+
+            .questionnaire-content-item {
+              padding: 20px 40px;
+
+              img {
+                //margin-right: 30px;
+              }
+
+              span {
+                //line-height: 1.5;
+                //font-size: 11pt;
+              }
+            }
+          }
+
+          .join-us {
+            //height: 100%;
+            margin-right: 6px;
+            margin-top: 6px;
+
+            button {
+              //width: 150px;
+              //height: 120px;
+              //font-size: 13.5pt;
+            }
+          }
+        }
+      }
+    }
   }
   // EOL: @media(min-width: 1400px)
 
@@ -116,6 +251,61 @@
   @media(min-width: 1600px) {
     .view-more-container {
       padding-top: 60px;
+    }
+
+    .questionnaire {
+      margin-top: 106px;
+
+      &:before {
+        //height: calc(100% - 114px);
+      }
+
+      .questionnaire-content {
+        .questionnaire-title {
+          //margin-top: 12px;
+          font-size: 22.5pt;
+        }
+
+        .questionnaire-text {
+          //line-height: 1.5;
+          //margin-top: 40px;
+          //font-size: 13.5pt;
+        }
+
+        .questionnaire-content-outer {
+          //margin-top: 40px;
+          //margin-left: -30px;
+
+          .questionnaire-content-inner {
+            //padding: 25px;
+
+            .questionnaire-content-item {
+              //padding: 20px 40px;
+
+              img {
+                //margin-right: 30px;
+              }
+
+              span {
+                //line-height: 1.5;
+                //font-size: 11pt;
+              }
+            }
+          }
+
+          .join-us {
+            //height: 100%;
+            //margin-right: 6px;
+            //margin-top: 6px;
+
+            button {
+              //width: 150px;
+              //height: 120px;
+              //font-size: 13.5pt;
+            }
+          }
+        }
+      }
     }
   }
   // EOL: @media(min-width: 1600px)

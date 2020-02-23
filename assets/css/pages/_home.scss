@@ -67,6 +67,120 @@
     }
   }
 
+  .google-search {
+
+    .form-group {
+      width: 100%;
+
+      .form-control {
+        width: 100%;
+        height: 62px;
+        border-radius: 4px;
+        box-shadow: 0px 11px 7px 0 rgba(0, 0, 0, 0.02);
+        border: solid 2px #d8cdba;
+        background-color: #ffffff;
+        font-family: $h-font;
+        font-weight: 400;
+        color: $text-color;
+      }
+
+      .super-placeholder {
+        position: absolute;
+        top: 0;
+        left: 24px;
+        transform: translate(0, 50%);
+      }
+
+      .search-btn {
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        font-family: $h-font;
+        font-weight: 700;
+        color: #fff;
+        background-color: #d8cdba;
+
+        i {
+          margin-left: 40px;
+        }
+      }
+    }
+
+    .super-placeholder {
+      img {
+        width: 90px;
+        height: 30px;
+        max-width: 100%;
+      }
+    }
+  }
+
+  .questionnaire {
+
+    &:before {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 100%;
+      background-color: $primaryColor;
+    }
+
+    .questionnaire-content {
+      font-family: $h-font;
+      font-weight: 700;
+
+      .questionnaire-title {
+        color: $primaryColor;
+      }
+
+      .questionnaire-text {
+        color: #fff;
+      }
+
+      .questionnaire-content-outer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #fff;
+
+        .questionnaire-content-inner {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          .questionnaire-content-item {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            &:not(:last-child) {
+              border-right: 2px solid #e5e4ea;
+            }
+
+            span {
+              font-family: $main-font;
+              font-weight: 400;
+              color: $primaryColor;
+            }
+          }
+        }
+
+        .join-us {
+          background-color: #d8cdba;
+
+          button {
+            font-family: $main-font;
+            font-weight: bold;
+            color: $primaryColor;
+          }
+        }
+      }
+    }
+  }
+
   .common-searches {
     background-color: #fff;
   }
