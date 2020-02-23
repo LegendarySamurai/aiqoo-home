@@ -191,55 +191,25 @@
     }
 
     .questionnaire {
-      //margin-top: 86px;
-
-      &:before {
-        //height: calc(100% - 114px);
-      }
-
       .questionnaire-content {
-        .questionnaire-title {
-          //margin-top: 12px;
-          //font-size: 22.5pt;
-        }
-
         .questionnaire-text {
-          //line-height: 1.5;
           margin-top: 40px;
-          //font-size: 13.5pt;
         }
 
         .questionnaire-content-outer {
           margin-top: 40px;
-          //margin-left: -30px;
 
           .questionnaire-content-inner {
             padding: 25px;
 
             .questionnaire-content-item {
               padding: 20px 40px;
-
-              img {
-                //margin-right: 30px;
-              }
-
-              span {
-                //line-height: 1.5;
-                //font-size: 11pt;
-              }
             }
           }
 
           .join-us {
-            //height: 100%;
             margin-right: 6px;
             margin-top: 6px;
-
-            button {
-              //width: 150px;
-              //height: 120px;
-              //font-size: 13.5pt;
-            }
           }
         }
       }
@@ -256,54 +226,9 @@
     .questionnaire {
       margin-top: 106px;
 
-      &:before {
-        //height: calc(100% - 114px);
-      }
-
       .questionnaire-content {
         .questionnaire-title {
-          //margin-top: 12px;
           font-size: 22.5pt;
-        }
-
-        .questionnaire-text {
-          //line-height: 1.5;
-          //margin-top: 40px;
-          //font-size: 13.5pt;
-        }
-
-        .questionnaire-content-outer {
-          //margin-top: 40px;
-          //margin-left: -30px;
-
-          .questionnaire-content-inner {
-            //padding: 25px;
-
-            .questionnaire-content-item {
-              //padding: 20px 40px;
-
-              img {
-                //margin-right: 30px;
-              }
-
-              span {
-                //line-height: 1.5;
-                //font-size: 11pt;
-              }
-            }
-          }
-
-          .join-us {
-            //height: 100%;
-            //margin-right: 6px;
-            //margin-top: 6px;
-
-            button {
-              //width: 150px;
-              //height: 120px;
-              //font-size: 13.5pt;
-            }
-          }
         }
       }
     }
