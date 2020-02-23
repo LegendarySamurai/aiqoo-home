@@ -13,6 +13,10 @@
     .content-column-center {
       padding-right: 40px;
     }
+
+    .page-footer-link {
+      font-size: 10pt;
+    }
   }
 
   .page-footer-main {
@@ -78,10 +82,6 @@
       height: 40px;
       padding: 0 15px;
       font-size: 10pt;
-
-      &::placeholder {
-        font-size: 10pt;
-      }
     }
   }
 }
