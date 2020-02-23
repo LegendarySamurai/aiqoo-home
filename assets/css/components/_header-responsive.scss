@@ -245,7 +245,9 @@
   &.sticky {
     @media(min-width: 1200px) {
       position: sticky;
+      z-index: 8000;
       height: auto;
+      margin-bottom: 0;
       border-top: 2px solid #fff;
       background: $primaryColor;
 
