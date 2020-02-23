@@ -1459,10 +1459,10 @@
   //.my-lg-auto {
   //  margin-bottom: auto !important;
   //}
-  //.ml-lg-auto,
-  //.mx-lg-auto {
-  //  margin-left: auto !important;
-  //}
+  .ml-lg-auto,
+  .mx-lg-auto {
+    margin-left: auto !important;
+  }
 }
 
 //@media (min-width: 1200px) {
