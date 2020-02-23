@@ -1,35 +1,34 @@
 @import '../variables';
 
 .header {
-  position: relative;
-  background: url('../images/header/main-image.jpg');
+  background: url('../images/header/main-image.jpg') no-repeat center 60% / 106% auto;
 
-  background-position: center center;
-  background-repeat: no-repeat;
-  width: 100%;
-  min-height: 200px;
-  height: 400px;
-  max-height: 50vh;
-  text-align: center;
-  z-index: 0;
-
-  & .opacity-bg {
-    display: block;
+  &::before {
     position: absolute;
     top: 0;
+    display: block;
+    content: '';
     width: 100%;
     height: 100%;
     opacity: 0.4;
     background-color: #181522;
-    z-index: 50;
+    z-index: 1;
   }
 
-  & .logo {
-    z-index: 100;
+  .header-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
   }
 
-  & h1 {
-    z-index: 100;
+  h1 {
     font-weight: 500;
     text-align: center;
     color: #ffffff;
@@ -37,6 +36,10 @@
   }
 
   .find-box {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
     width: 90%;
     max-width: $central-content-width;
     margin: 50px auto 0;
@@ -86,7 +89,7 @@
     }
 
 
-    & .reasons {
+    .reasons {
       position: absolute;
       bottom: 15px;
       left: 0;
@@ -104,7 +107,7 @@
         color: $primaryColor;
         overflow: hidden;
 
-        & .headings {
+        .headings {
           margin-left: 15px;
         }
 

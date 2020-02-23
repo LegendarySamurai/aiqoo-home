@@ -1,5 +1,7 @@
 .home {
   @media(min-width: 1200px) {
+    padding-top: 30px;
+
     .categories,
     .common-searches,
     .services {
@@ -69,6 +71,11 @@
       .section-sub-title {
         font-size: 12pt;
       }
+    }
+
+    .common-searches-list {
+      padding-left: 20px;
+      padding-right: 20px;
     }
 
     .services-list {
