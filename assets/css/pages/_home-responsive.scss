@@ -18,6 +18,10 @@
 
       .magazine-header {
         transform: translate(0, -44%);
+
+        .magazine-header-text {
+          font-size: 12pt;
+        }
       }
 
       .cards-container {
@@ -29,6 +33,7 @@
 
         .main-title {
           margin-bottom: 40px;
+          font-size: 30pt;
         }
 
         .profile {
@@ -43,11 +48,17 @@
 
         .profile-name {
           margin-bottom: 4px;
+          font-size: 10.5pt;
+        }
+
+        .profile-origin {
+          font-size: 10.5pt;
         }
 
         .article-content {
           p {
             line-height: 1.75;
+            font-size: 13.5pt;
           }
         }
       }
@@ -55,8 +66,9 @@
       .more-tips {
         margin-top: 40px;
 
-        .title {
+        .main-title {
           color: #d8cdba;
+          font-size: 30pt;
         }
       }
     }
@@ -87,7 +99,7 @@
       padding-top: 40px;
 
       button {
-
+        font-size: 11pt;
       }
     }
   }

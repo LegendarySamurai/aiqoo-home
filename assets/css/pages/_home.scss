@@ -29,6 +29,11 @@
       position: absolute;
       top: 0;
       width: 100%;
+
+      .magazine-header-text {
+        font-family: $h-font;
+        font-weight: 400;
+      }
     }
 
     .article {
@@ -41,6 +46,23 @@
       .profile-image {
         border-radius: 50%;
         overflow: hidden;
+      }
+
+      .profile-name {
+        font-family: $h-font;
+        font-weight: 900;
+      }
+
+      .profile-origin {
+        font-family: $main-font;
+        font-weight: 400;
+      }
+
+      .article-content {
+        p {
+          font-family: $h-font;
+          font-weight: 400;
+        }
       }
     }
   }

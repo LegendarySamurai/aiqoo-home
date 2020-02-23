@@ -11,6 +11,16 @@
 
   .card-body {
     background-color: #fbfcfe;
+    color: $primaryColor;
+    font-family: $h-font;
+
+    .card-title {
+      font-weight: 500;
+    }
+
+    .description {
+      font-weight: 400;
+    }
   }
 
   .card-footer {
