@@ -1,0 +1,313 @@
+.landing-page {
+  .categories {
+    background: #fff;
+    background-image: none;
+  }
+
+  .head-section {
+    .section-title {
+      font-family: $h-font;
+      color: $text-color;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      //justify-content: space-between;
+      align-items: center;
+      border-radius: 7.5px;
+      box-shadow: 0 1.5px 15px 0 rgba(50, 81, 129, 0.2);
+      background-color: #ffffff;
+      color: $text-color;
+      z-index: 100;
+
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: block;
+        content: '';
+        box-shadow: 0 14px 0 0 #e9ebee;
+        border-radius: 12px;
+      }
+
+      .card-heading {
+        &:after {
+          display: block;
+          content: '';
+          background-color: #d2d8e3;
+        }
+      }
+
+      .card-title {
+        font-family: $h-font;
+      }
+
+      .services-container {
+        width: 100%;
+
+        .service-item {
+          position: relative;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          box-shadow: 0 1.5px 10px 0 rgba(53, 47, 74, 0.31);
+          border: solid 0.5px #352f4a;
+          background-color: #ffffff;
+
+          &:before {
+            position: absolute;
+            display: block;
+            content: '';
+            background-color: $text-color;
+          }
+
+          .service-icon {
+            position: absolute;
+          }
+
+          .service-name {
+            font-family: $h-font;
+          }
+
+          .service-btn {
+            font-weight: 400;
+            color: #94929b;
+          }
+        }
+      }
+    }
+
+    .why-us {
+      position: relative;
+      z-index: 100;
+      background-color: #fff;
+
+      .reason {
+        font-family: $main-font;
+        color: $text-color;
+        
+        &:not(:last-child) {
+          border-right: 1px solid $primaryColor;
+        }
+      }
+    }
+
+    .bottom-mask {
+      transform: translate(0, -60px);
+      width: 100%;
+      height: 117.5px;
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) -5%, #ebe2d3 70%);
+    }
+  }
+
+  .section-2 {
+    background-color: #ebe2d3;
+
+    .section-title-decoration {
+      &.left {
+        background-image: linear-gradient(to left, #325181, #dde1e8);
+      }
+
+      &.right {
+        background-image: linear-gradient(to right, #325181, #dde1e8);
+      }
+    }
+
+    .section-title {
+      color: #325181;
+      font-family: $main-font;
+      font-weight: 400;
+    }
+
+    .newsletter-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      background-color: #fffdfa;
+      overflow: hidden;
+
+      .super-placeholder {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+
+        .newsletter-bg {
+          width: 82%;
+
+          &:after {
+            display: block;
+            content: '';
+            background-image: linear-gradient(91deg, rgba(255, 255, 255, 0) 21%, #ffffff 64%);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          }
+
+          img {
+            display: block;
+          }
+        }
+
+        .newsletter-text {
+          font-family: $h-font;
+          color: $text-color;
+        }
+      }
+
+      .form-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .form-control {
+          border-radius: 2px;
+          background-color: #f3f4f7;
+          border: none;
+          box-shadow: none;
+          color: $text-color;
+        }
+
+        .placeholder {
+          display: flex;
+          flex-direction: row;
+        }
+
+        .send {
+          flex-grow: 1;
+          margin-left: 10px;
+          border-radius: 2px;
+          background-color: #352f4a;
+          font-family: $h-font;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .section-search-pro {
+    .search-pros-inner {
+      border-radius: 2.5px;
+      box-shadow: 0 1.5px 15px 0 rgba(50, 81, 129, 0.06);
+      //background-color: #ffffff;
+      background-color: coral;
+    }
+
+    .search {
+      .form-group {
+        .form-control {
+          border-radius: 5px;
+          background-color: #f3f4f7;
+          font-family: $h-font;
+          color: $text-color;
+          border: none;
+          box-shadow: none;
+
+          &::placeholder {
+            color: $text-color;
+          }
+        }
+
+        .fa-search {
+          position: absolute;
+          top: 50%;
+          right: 20px;
+          transform: translate(0, -50%);
+        }
+      }
+    }
+
+    .logo-container {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+
+      .logo {
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        img {
+          margin-top: 2px;
+        }
+      }
+    }
+
+    .pros-list-container {
+      .pros-card {
+        border-radius: 5px;
+        background-color: transparentize(#dde1e8, .35);
+      }
+
+      .pros-content {
+        .pros-name {
+          font-family: $main-font;
+          font-weight: 900;
+          color: $text-color;
+        }
+
+        .pros-info {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          font-family: $h-font;
+          color: $text-color;
+
+          .text {
+            font-weight: 400;
+          }
+
+          button {
+            padding-bottom: 2px;
+            border: none;
+            border-bottom: 1px solid $text-color;
+            box-shadow: none;
+          }
+        }
+
+        .pros-id,
+        .pros-location {
+          font-family: $h-font;
+          font-weight: 400;
+          color: $text-color;
+        }
+
+        .pros-id,
+        .pros-info,
+        .pros-name {
+          border-bottom: 1px solid transparentize(#dde1e8, .5);
+        }
+
+        .job-types {
+          span {
+            border-radius: 9px;
+            border: solid 0.5px #325181;
+            font-family: $h-font;
+            font-weight: 400;
+            color: #325181;
+          }
+        }
+
+        .pros-phone {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          box-shadow: 0 5px 15px 0 rgba(50, 81, 129, 0.2);
+          border: solid 1px #352f4a;
+          background-color: #ffffff;
+          border-radius: 15px;
+        }
+      }
+    }
+  }
+}

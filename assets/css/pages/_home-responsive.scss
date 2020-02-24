@@ -2,7 +2,6 @@
   @media(min-width: 1200px) {
     padding-top: 30px;
 
-    .categories,
     .common-searches,
     .services {
       padding-top: 60px;
@@ -10,6 +9,7 @@
     }
 
     .categories {
+      padding-top: 60px;
       padding-bottom: 320px;
     }
 
@@ -166,8 +166,8 @@
     }
 
     .common-searches-list {
-      padding-left: 20px;
-      padding-right: 20px;
+      //padding-left: 20px;
+      //padding-right: 20px;
     }
 
     .services-list {
@@ -189,7 +189,6 @@
     .section-container {
       max-width: 1300px;
     }
-
     .questionnaire {
       .questionnaire-content {
         .questionnaire-text {

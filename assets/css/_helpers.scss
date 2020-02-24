@@ -14,6 +14,12 @@
 .font-11 {
   font-size: 11pt !important;
 }
+.font-weight-black {
+  font-weight: 900 !important;
+}
+.font-weight-bold {
+  font-weight: 700 !important;
+}
 .m-t-10 {
   margin-top: 10px !important;
 }
@@ -44,4 +50,15 @@
 
 .border-none {
   border: none !important;
+}
+
+.display-flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-dark {
+  color: $text-color;
 }

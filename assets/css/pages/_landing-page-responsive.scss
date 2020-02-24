@@ -1,0 +1,386 @@
+.landing-page {
+  @media(min-width: 300px) {
+    .head-section {
+      width: 100%;
+      height: 100%;
+      background: url('../images/loading-map-mobile.png') no-repeat center;
+      background-size: cover;
+
+      .section-container {
+      }
+
+      .section-title {
+        line-height: 1.2;
+        padding: 0;
+      }
+
+      .card {
+        max-width: 100%;
+
+        .card-title {
+        }
+
+        .card-heading {
+
+          &:after {
+            position: absolute;
+            top: 10px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+          }
+        }
+
+        .services-container {
+          position: absolute;
+          bottom: -10%;
+          left: 50%;
+          transform: translate(-50%, 0);
+
+          .service-item {
+            flex-direction: column;
+            border-radius: 2.5px;
+
+            &:before {
+              bottom: -5px;
+              left: 50%;
+              transform: translateX(-50%);
+              width: 96%;
+              height: 5px;
+            }
+          }
+
+          .service-icon {
+            top: -50%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 40px;
+          }
+
+          .service-name {
+
+          }
+
+          .service-btn {
+            padding: 0;
+
+          }
+        }
+      }
+    }
+
+    .section-2 {
+
+    }
+  }
+
+  @media(min-width: 1200px) {
+    .head-section {
+      width: 100%;
+      height: calc(100vh - 92px);
+      background: url('../images/loading-map.png') no-repeat center;
+      background-size: cover;
+
+      .section-container {
+        padding-top: 40px;
+      }
+
+      .section-title {
+        line-height: 1.5;
+        font-size: 14pt;
+      }
+
+      .card {
+        max-width: 700px;
+        height: 210px;
+        margin: 35px auto 0;
+        padding: 20px 20px 0;
+
+        .card-title {
+          margin: 30px 0;
+          font-size: 19pt;
+        }
+
+        .card-heading {
+          font-size: 10pt;
+
+          &:after {
+            top: 30px;
+          }
+        }
+
+        .services-container {
+          bottom: -14%;
+          left: 50%;
+          transform: translate(-50%, 0);
+          padding: 0 50px;
+
+          .service-item {
+            height: 90px;
+            border-radius: 2.5px;
+
+            &:before {
+              bottom: -3px;
+              left: 50%;
+              transform: translateX(-50%);
+              width: 96%;
+              height: 3px;
+            }
+          }
+
+          .service-icon {
+            width: 60px;
+            height: 60px;
+          }
+
+          .service-name {
+            margin: 30px auto 0;
+            font-size: 14pt;
+          }
+
+          .service-btn {
+            font-size: 11pt;
+          }
+        }
+      }
+
+      .why-us {
+        width: 100%;
+        margin-top: 90px;
+        padding: 10px 0;
+
+        .reason {
+          padding-right: 20px;
+          padding-left: 20px;
+
+          h2 {
+            font-size: 13pt;
+          }
+
+          h3 {
+            font-size: 10pt;
+          }
+        }
+
+        .reason-icon {
+          width: 36px;
+        }
+      }
+    }
+
+    .section-2 {
+      padding: 40px 0 20px;
+
+      .list {
+        p {
+          line-height: 1.5;
+        }
+      }
+
+      .newsletter-container {
+        height: 76px;
+        margin-top: 40px;
+
+        .newsletter-text {
+          line-height: 1.5;
+          font-size: 11pt;
+        }
+      }
+
+      .form-group {
+        width: 50%;
+        height: 100%;
+        padding: 10px 10px 10px 0;
+
+        .form-control {
+          height: 100%;
+          width: 80%;
+          padding: 0 10px 0 84px;
+          font-size: 11pt;
+        }
+
+        .placeholder {
+          position: absolute;
+          top: 50%;
+          left: 20px;
+          transform: translate(0, -50%);
+          //width: auto;
+          font-size: 11pt;
+
+          span {
+            padding-left: 5px;
+          }
+        }
+      }
+    }
+
+    .section-search-pro {
+      .search-pros-inner {
+        padding: 30px;
+
+        .search {
+          .form-group {
+            .form-control {
+              width: 100%;
+              height: 60px;
+              padding-right: 50px;
+              padding-left: 30px;
+              font-size: 11pt;
+
+              &::placeholder {
+                font-size: 11pt;
+              }
+            }
+          }
+        }
+
+        .pros-list-container {
+          .pros-card {
+            padding: 20px;
+
+            .pros-content {
+              height: 100%;
+              padding: 5px 0;
+
+              .pros-name {
+                line-height: 1.5;
+                padding-bottom: 10px;
+                font-size: 13pt;
+              }
+
+              .pros-info {
+                padding: 5px 0;
+
+                .text {
+                  font-size: 12pt;
+                }
+
+                button {
+                  font-size: 13pt;
+                }
+              }
+
+              .pros-id,
+              .pros-location {
+                span {
+                  font-size: 12pt;
+                }
+              }
+
+              .pros-id,
+              .pros-name,
+              .pros-location {
+                padding: 10px 0;
+              }
+
+              .job-types {
+                margin-top: 10px;
+
+                span {
+                  margin-right: 20px;
+                  padding: 5px;
+                  font-size: 11pt;
+                }
+              }
+
+              .pros-phone {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 166px;
+                padding: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media(min-width: 1600px) {
+    .head-section {
+      .why-us {
+        margin-top: 150px;
+      }
+    }
+
+    .section-search-pro {
+      .search-pros-inner {
+        padding: 50px;
+      }
+
+      .pros-list-container {
+        .pros-card {
+          padding: 32px;
+        }
+      }
+    }
+  }
+
+  @media(min-width: 1920px) {
+    .head-section {
+      .section-container {
+        padding-top: 70px;
+      }
+
+      .section-title {
+        font-size: 16pt;
+      }
+
+      .card {
+        max-width: 930px;
+        height: 330px;
+        padding: 30px 50px 0;
+
+        .card-title {
+          margin: 50px 0;
+          font-size: 21pt;
+        }
+
+        .card-heading {
+          font-size: 14pt;
+
+          &:after {
+            top: 40px;
+          }
+        }
+
+        .services-container {
+          bottom: -10%;
+
+          .service-item {
+            height: 120px;
+
+            &:before {
+              bottom: -5px;
+              height: 5px;
+            }
+          }
+
+          .service-icon {
+            width: 90px;
+            height: 90px;
+          }
+
+          .service-name {
+            margin-top: 40px;
+            font-size: 16pt;
+          }
+
+          .service-btn {
+            font-size: 12pt;
+          }
+        }
+      }
+
+      .why-us {
+        margin-top: 190px;
+      }
+    }
+
+    .section-2 {
+      padding-top: 90px;
+    }
+  }
+}

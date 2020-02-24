@@ -9,3 +9,31 @@
 @import 'components/card-responsive';
 
 @import 'pages/home-responsive';
+@import 'pages/landing-page-responsive';
+
+// Common styles for common modules
+
+@media(min-width: 1200px) {
+  .categories {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+// EOL: @media(min-width: 1200px)
+
+@media(min-width: 1400px) {
+  .section-container {
+    max-width: 1300px;
+  }
+}
+// EOL: @media(min-width: 1400px)
+
+@media(min-width: 1600px) {
+
+}
+// EOL: @media(min-width: 1600px)
+
+@media(min-width: 1920px) {
+
+}
+// EOL: @media(min-width: 1920px)

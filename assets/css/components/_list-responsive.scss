@@ -1,5 +1,8 @@
 @media(min-width: 1200px) {
   .list {
+    padding-left: 20px;
+    padding-right: 20px;
+
     &.five-cols {
       .list-col {
         margin-bottom: 30px;
