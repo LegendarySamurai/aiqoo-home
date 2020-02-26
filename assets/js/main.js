@@ -1,4 +1,10 @@
-﻿(function () {
+﻿// Igor created 26 February 2020
+const isMobile = window.innerWidth < 600;
+const isDesktop = window.innerWidth >= 1200;
+
+// EOL: Igor created 26 February 2020
+
+(function () {
 	var CallToActionText = document.getElementById('CallToActionText');
 	if (CallToActionText) {
 		window.onscroll = function (e) {
@@ -29,5 +35,5 @@ const makeHeaderSticky = () => {
 };
 
 window.addEventListener('scroll', function () {
-	makeHeaderSticky();
+	isDesktop ? makeHeaderSticky() : null;
 });
