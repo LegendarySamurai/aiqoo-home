@@ -43,7 +43,7 @@
 
       .reasons {
         flex-wrap: wrap;
-        margin-top: 15px;
+        margin-top: 20px;
 
         .reason {
           width: 50%;
@@ -71,7 +71,7 @@
         align-items: flex-start;
 
         .reason {
-          margin-bottom: 5px;
+          margin-bottom: 15px;
         }
 
         .reason-icon {
@@ -105,9 +105,25 @@
       .reasons {
         flex-direction: row;
         align-items: center;
+        margin-left: -10px;
+        margin-right: -10px;
 
         .reason {
-          margin-bottom: 5px;
+
+        }
+
+        .reason-icon {
+          width: 35px;
+        }
+
+        .headings {
+          & h2 {
+            font-size: 13pt;
+          }
+
+          & h3 {
+            font-size: 11pt;
+          }
         }
       }
     }
@@ -210,7 +226,7 @@
         left: 0;
         flex-wrap: nowrap;
         width: 100%;
-        margin-top: 0;
+        margin: 0;
 
         .reason {
           width: 25%;
