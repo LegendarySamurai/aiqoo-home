@@ -1,5 +1,7 @@
 .home {
   @media(min-width: 600px) {
+    padding-top: 170px;
+
     .header {
       .header-content {
 
@@ -9,7 +11,7 @@
   // EOL: @media(min-width: 600px)
 
   @media(min-width: 1200px) {
-    padding-top: 30px;
+    padding-top: 140px;
 
     .common-searches,
     .services {
