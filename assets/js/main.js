@@ -35,5 +35,5 @@ const makeHeaderSticky = () => {
 };
 
 window.addEventListener('scroll', function () {
-	// isDesktop ? makeHeaderSticky() : null;
+	makeHeaderSticky();
 });
