@@ -5,7 +5,7 @@
 
     .list {
       .list-item-with-icon {
-        height: 103px;
+        //height: 103px;
         border-right: 2px solid #d6dce6;
       }
     }
@@ -91,15 +91,11 @@
     .why-us {
       position: relative;
       z-index: 100;
-      background-color: #fff;
+      flex-wrap: wrap;
 
       .reason {
         font-family: $main-font;
         color: $text-color;
-        
-        &:not(:last-child) {
-          border-right: 1px solid $primaryColor;
-        }
       }
     }
 
