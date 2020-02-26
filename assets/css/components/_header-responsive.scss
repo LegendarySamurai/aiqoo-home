@@ -14,33 +14,42 @@
     }
 
     .find-box {
-      height: 300px;
-
       .find-btn {
         top: 0;
         right: 0;
-        transform: translate(-60%, 140%);
-        width: 150px;
+        width: 120px;
         height: 100%;
         font-size: 14px;
       }
+
       .form-control {
         height: 60px;
         padding-left: 10px;
         padding-right: 10px;
       }
+
       .form-control,
       .form-control::placeholder {
         font-size: 11pt;
       }
-      .super-placeholder{
+
+      .super-placeholder {
         display: none;
 
         span {
           font-size: 9pt;
         }
       }
+
       .reasons {
+        flex-wrap: wrap;
+        margin-top: 15px;
+
+        .reason {
+          width: 50%;
+          padding: 0 15px;
+        }
+
         .headings {
           & h2 {
             font-size: 10pt;
@@ -60,7 +69,6 @@
       .reasons {
         flex-direction: column;
         align-items: flex-start;
-        padding: 0 15px;
 
         .reason {
           margin-bottom: 5px;
@@ -74,19 +82,31 @@
   }
 
   @media(min-width: 600px) {
+    margin-bottom: 170px;
+    background-image: url('../images/header/main-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .header-content {
+      height: 462px;
+      padding-bottom: 115px;
+    }
+
     h1 {
       margin-top: 30px;
       font-size: 20pt;
     }
+
     .find-box {
-      height: 200px;
+      width: 100%;
+      margin-top: 20px;
 
       .reasons {
         flex-direction: row;
         align-items: center;
 
         .reason {
-          width: 100%;
           margin-bottom: 5px;
         }
       }
@@ -98,12 +118,13 @@
       .find-btn {
         top: 0;
         right: 0;
-        transform: initial;
       }
+
       .form-control {
         padding-left: 250px;
         padding-right: 150px;
       }
+
       .super-placeholder {
         display: flex;
         flex-direction: row;
@@ -143,6 +164,8 @@
 
   @media(min-width: 1200px) {
     margin-bottom: 110px;
+    background-position: center 60%;
+    background-size: 106% auto;
 
     .header-content {
       height: 462px;
@@ -154,24 +177,41 @@
       max-width: 300px;
       margin-top: 70px;
     }
+
     & h1 {
       margin-top: 40px;
       font-size: 24pt;
     }
+
     .find-box {
+      width: 90%;
+      height: 200px;
+      margin-top: 50px;
+
       .find-btn {
+        width: 150px;
         font-size: 16px;
       }
+
       .form-control {
         padding-left: 290px;
         padding-right: 210px;
       }
+
       .super-placeholder {
         span {
           font-size: 10pt;
         }
       }
+
       .reasons {
+        position: absolute;
+        bottom: 15px;
+        left: 0;
+        flex-wrap: nowrap;
+        width: 100%;
+        margin-top: 0;
+
         .reason {
           width: 25%;
           height: 70px;
@@ -216,15 +256,18 @@
       .find-btn {
         width: 200px;
       }
+
       .form-control {
         height: 80px;
         padding-left: 320px;
         padding-right: 210px;
       }
+
       .form-control,
       .form-control::placeholder {
         font-size: 12pt;
       }
+
       .super-placeholder {
         span {
           font-size: 12pt;
