@@ -18,10 +18,9 @@
         }
 
         .card-heading {
-
           &:after {
             position: absolute;
-            top: 10px;
+            bottom: -10px;
             left: 0;
             width: 100%;
             height: 1px;
@@ -64,6 +63,297 @@
 
   }
 
+  @media(min-width: 600px) {
+    .all-categories {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .head-section {
+      width: 100%;
+      height: calc(100vh - 52px);
+      background: url('../images/loading-map.png') no-repeat center;
+      background-size: cover;
+
+      .section-container {
+        padding-top: 60px;
+      }
+
+      .section-title {
+        line-height: 1.5;
+        font-size: 14pt;
+      }
+
+      .card {
+        max-width: 500px;
+        height: 210px;
+        margin: 60px auto 0;
+        padding: 20px 40px 0;
+
+        .card-title {
+          margin: 30px 0;
+          font-size: 14pt;
+        }
+
+        .card-heading {
+          font-size: 14pt;
+        }
+
+        .services-container {
+          bottom: -14%;
+          left: 50%;
+          transform: translate(-50%, 0);
+          padding: 0 20px;
+
+          .service-item {
+            height: 50px;
+            border-radius: 2.5px;
+
+            &:before {
+              bottom: -3px;
+              left: 50%;
+              transform: translateX(-50%);
+              width: 56%;
+              height: 3px;
+            }
+          }
+
+          .service-icon {
+            width: 30px;
+            height: 30px;
+          }
+
+          .service-name {
+            margin: 10px auto 0;
+            font-size: 10pt;
+          }
+
+          .service-btn {
+            font-size: 10pt;
+          }
+        }
+      }
+
+      .why-us {
+        width: 100%;
+        margin-top: 110px;
+        padding: 10px 0;
+
+        .reason {
+          padding-right: 10px;
+          padding-left: 10px;
+
+          h2 {
+            font-size: 10pt;
+          }
+
+          h3 {
+            font-size: 10pt;
+          }
+        }
+
+        .reason-icon {
+          width: 26px;
+        }
+      }
+    }
+
+    .bg-container {
+      &:before {
+        position: absolute;
+        top: 150px;
+        left: 0;
+        height: 300px;
+      }
+    }
+
+    .section-2 {
+      padding: 20px 0 10px;
+
+      .list {
+        p {
+          line-height: 1;
+        }
+      }
+
+      .newsletter-container {
+        height: 56px;
+        margin-top: 20px;
+
+        .newsletter-text {
+          line-height: 1;
+          font-size: 10pt;
+        }
+      }
+
+      .form-group {
+        width: 50%;
+        height: 100%;
+        padding: 10px 10px 10px 0;
+
+        .form-control {
+          height: 100%;
+          width: 80%;
+          padding: 0 10px 0 84px;
+          font-size: 11pt;
+        }
+
+        .placeholder {
+          position: absolute;
+          top: 50%;
+          left: 20px;
+          transform: translate(0, -50%);
+          //width: auto;
+          font-size: 11pt;
+
+          span {
+            padding-left: 5px;
+          }
+        }
+      }
+    }
+
+    .section-search-pro {
+      .search-pros-inner {
+        padding: 10px;
+
+        .search {
+          .form-group {
+            .form-control {
+              width: 100%;
+              height: 50px;
+              padding-right: 10px;
+              padding-left: 10px;
+              font-size: 11pt;
+
+              &::placeholder {
+                font-size: 11pt;
+              }
+            }
+          }
+        }
+
+        .pros-list-container {
+          .pros-card {
+            padding: 10px;
+
+            &:not(:first-child) {
+              margin-top: 10px;
+            }
+
+            .pros-content {
+              height: 100%;
+              padding: 5px 0;
+
+              .pros-name {
+                line-height: 1.5;
+                padding-bottom: 10px;
+                font-size: 10pt;
+              }
+
+              .pros-info {
+                padding: 5px 0;
+
+                .text {
+                  font-size: 10pt;
+                }
+
+                button {
+                  font-size: 10pt;
+                }
+              }
+
+              .pros-id,
+              .pros-location {
+                span {
+                  padding-left: 10px;
+                  font-size: 10pt;
+                }
+              }
+
+              .pros-id,
+              .pros-name,
+              .pros-location {
+                padding: 10px 0;
+              }
+
+              .job-types {
+                margin-top: 10px;
+
+                span {
+                  margin-right: 10px;
+                  padding: 5px;
+                  font-size: 11pt;
+                }
+              }
+
+              .pros-phone {
+                position: absolute;
+                bottom: 0;
+                right: 15px;
+                transform: translateY(calc(50% + 20px));
+                width: 56px;
+                padding: 10px;
+
+                span {
+                  padding-left: 10px;
+                  font-size: 13pt;
+                }
+              }
+            }
+          }
+        }
+
+        .activity-areas {
+          .activity-areas-title {
+            padding: 0 10px;
+            font-size: 13pt;
+          }
+
+          .activity-areas-list {
+            .activity-area {
+              padding: 0 10px;
+              margin: 10px 0;
+              font-size: 10pt;
+            }
+          }
+        }
+
+        .pagination-container {
+          padding: 0 16px;
+
+          .title {
+            font-size: 13pt;
+          }
+
+          .page-prev,
+          .page-next {
+            margin: 0 15px;
+
+            i {
+              font-size: 16pt;
+            }
+          }
+
+          .pagination {
+            width: 88%;
+            overflow: hidden;
+            padding: 15px 0;
+            font-size: 10pt;
+          }
+
+          .page-item {
+            padding: 10px 0;
+
+            .page-link {
+              padding: 0 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+
   @media(min-width: 1200px) {
     .all-categories {
       padding-top: 60px;
@@ -71,18 +361,18 @@
     }
 
     .head-section {
-      width: 100%;
+      //width: 100%;
       height: calc(100vh - 92px);
-      background: url('../images/loading-map.png') no-repeat center;
-      background-size: cover;
+      //background: url('../images/loading-map.png') no-repeat center;
+      //background-size: cover;
 
       .section-container {
         padding-top: 40px;
       }
 
       .section-title {
-        line-height: 1.5;
-        font-size: 14pt;
+        //line-height: 1.5;
+        //font-size: 14pt;
       }
 
       .card {
