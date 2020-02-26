@@ -178,7 +178,7 @@
     }
   }
 
-  @media(min-width: 1200px) {
+  @media(min-width: 992px) {
     //margin-bottom: 110px;
     background-position: center 60%;
     background-size: 106% auto;
@@ -302,7 +302,7 @@
 
   // Header on scroll
   &.sticky {
-    @media(min-width: 1200px) {
+    @media(min-width: 992px) {
       position: sticky;
       z-index: 8000;
       height: auto;
@@ -352,7 +352,7 @@
         }
       }
     }
-    // EOL: @media(min-width: 1200px)
+    // EOL: @media(min-width: 992px)
 
     @media(min-width: 1400px) {
       .container {

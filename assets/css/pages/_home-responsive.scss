@@ -2,37 +2,42 @@
   @media(min-width: 600px) {
     padding-top: 170px;
 
-    .header {
-      .header-content {
-
-      }
-    }
-
-    .other-categories {
-      margin-top: 60px;
-    }
-  }
-  // EOL: @media(min-width: 600px)
-
-  @media(min-width: 1200px) {
-    padding-top: 140px;
-
     .common-searches,
     .services {
-      padding-top: 60px;
-      padding-bottom: 60px;
+      padding-top: 40px;
+      padding-bottom: 40px;
     }
 
     .categories {
-      padding-top: 60px;
-      padding-bottom: 320px;
+      padding-top: 40px;
+      padding-bottom: 240px;
+    }
+
+    .other-categories {
+      margin-top: 40px;
+
+      .list {
+        padding-top: 50px;
+      }
+
+      .section-sub-title {
+        font-size: 12pt;
+      }
+    }
+
+    .view-more-container {
+      padding-top: 40px;
+
+      button {
+        font-size: 11pt;
+      }
     }
 
     .magazine {
       padding-top: 360px;
 
       .magazine-header {
-        transform: translate(0, -44%);
+        margin-top: -550px;
 
         .magazine-header-text {
           font-size: 12pt;
@@ -79,12 +84,53 @@
       }
 
       .more-tips {
-        margin-top: 40px;
+        margin-top: 60px;
 
         .main-title {
           color: #d8cdba;
           font-size: 30pt;
         }
+      }
+    }
+
+    .tips-container {
+      margin-top: 30px;
+    }
+  }
+  // EOL: @media(min-width: 600px)
+
+  @media(min-width: 992px) {
+    padding-top: 140px;
+
+    .common-searches,
+    .services {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+    .categories {
+      padding-top: 60px;
+      padding-bottom: 320px;
+    }
+
+    .magazine {
+      padding-top: 360px;
+
+      .magazine-header {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        transform: translate(0, -44%);
+        margin-top: 0;
+      }
+
+      .tips-container {
+        margin-top: 0;
+      }
+
+      .more-tips {
+        margin-top: 40px;
+
       }
     }
 
@@ -191,14 +237,10 @@
     }
 
     .view-more-container {
-      padding-top: 40px;
 
-      button {
-        font-size: 11pt;
-      }
     }
   }
-  // EOL: @media(min-width: 1200px)
+  // EOL: @media(min-width: 992px)
 
   @media(min-width: 1400px) {
     .section-container {

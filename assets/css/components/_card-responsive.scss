@@ -1,5 +1,7 @@
 .card {
-  @media(min-width: 1200px) {
+  @media(min-width: 600px) {
+    max-width: 400px;
+
     .card-image {
       height: 210px;
     }
@@ -22,7 +24,11 @@
       height: 10px;
     }
   }
-  // EOL: @media(min-width: 1200px)
+
+  @media(min-width: 992px) {
+    max-width: 100%;
+  }
+  // EOL: @media(min-width: 992px)
 
   @media(min-width: 1400px) {
 
