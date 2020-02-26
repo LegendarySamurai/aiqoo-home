@@ -99,7 +99,7 @@
   }
   // EOL: @media(min-width: 600px)
 
-  @media(min-width: 1200px) {
+  @media(min-width: 992px) {
     padding-top: 140px;
 
     .common-searches,
@@ -122,62 +122,15 @@
         width: 100%;
         transform: translate(0, -44%);
         margin-top: 0;
-
-      //  .magazine-header-text {
-      //    font-size: 12pt;
-      //  }
       }
 
       .tips-container {
         margin-top: 0;
       }
 
-      //.cards-container {
-      //  margin-top: 40px;
-      //}
-      //
-      //.article {
-      //  padding-right: 40px;
-      //
-      //  .main-title {
-      //    margin-bottom: 40px;
-      //    font-size: 30pt;
-      //  }
-      //
-      //  .profile {
-      //    margin-bottom: 30px;
-      //  }
-      //
-      //  .profile-image {
-      //    width: 58px;
-      //    height: 58px;
-      //    margin-right: 10px;
-      //  }
-      //
-      //  .profile-name {
-      //    margin-bottom: 4px;
-      //    font-size: 10.5pt;
-      //  }
-      //
-      //  .profile-origin {
-      //    font-size: 10.5pt;
-      //  }
-      //
-      //  .article-content {
-      //    p {
-      //      line-height: 1.75;
-      //      font-size: 13.5pt;
-      //    }
-      //  }
-      //}
-      //
       .more-tips {
         margin-top: 40px;
 
-      //  .main-title {
-      //    color: #d8cdba;
-      //    font-size: 30pt;
-      //  }
       }
     }
 
@@ -287,7 +240,7 @@
 
     }
   }
-  // EOL: @media(min-width: 1200px)
+  // EOL: @media(min-width: 992px)
 
   @media(min-width: 1400px) {
     .section-container {

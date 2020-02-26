@@ -1,17 +1,19 @@
-@media(min-width: 1200px) {
+@media(min-width: 600px) {
   .page-footer {
-    padding-top: 70px;
+    padding-top: 30px;
 
     .content-column-left {
-      padding-right: 60px;
-
-      p {
-        max-width: 320px;
-      }
+      display: flex;
+      flex-direction: column;
     }
 
     .content-column-center {
+      margin-top: 40px;
       padding-right: 40px;
+    }
+
+    .content-column-right {
+      margin-top: 40px;
     }
 
     .page-footer-link {
@@ -20,19 +22,16 @@
   }
 
   .page-footer-main {
-    padding-top: 60px;
+    padding-top: 20px;
     padding-bottom: 40px;
 
     .brand-logo {
+      align-self: center;
       width: 145px;
     }
 
     .more-information {
       margin-top: 40px;
-    }
-
-    .popular-posts {
-      padding-top: 15px;
     }
 
     h4 {
@@ -57,7 +56,7 @@
     }
 
     .dummy-image {
-      width: 130px;
+      width: 110px;
       height: 100px;
     }
   }
@@ -69,8 +68,8 @@
   }
 
   .page-footer-subscribe-box {
-    width: 270px;
-    margin-top: 40px;
+    width: 400px;
+    margin: 30px auto 0;
 
     label {
       height: 52px;
@@ -85,7 +84,51 @@
     }
   }
 }
-// EOL: @media(min-width: 1200px)
+// EOL: @media(min-width: 600px)
+
+@media(min-width: 992px) {
+  .page-footer {
+    padding-top: 70px;
+
+    .content-column-left {
+      padding-right: 60px;
+
+      p {
+        max-width: 320px;
+      }
+    }
+  }
+
+  .page-footer-main {
+    padding-top: 60px;
+    padding-bottom: 40px;
+
+    .content-column-left {
+      display: block;
+    }
+
+    .brand-logo {
+      align-self: flex-start;
+      width: 145px;
+    }
+
+    .popular-posts {
+      padding-top: 15px;
+    }
+
+    .dummy-image {
+      width: 130px;
+      height: 100px;
+    }
+  }
+
+  .page-footer-subscribe-box {
+    width: 270px;
+    max-width: 100%;
+    margin: 40px 0 0;
+  }
+}
+// EOL: @media(min-width: 992px)
 
 @media(min-width: 1400px) {
   .page-footer {
@@ -94,7 +137,12 @@
     }
 
     .content-column-center {
+      margin-top: 0;
       padding-right: 60px;
+    }
+
+    .content-column-right {
+      margin-top: 0;
     }
   }
 }
