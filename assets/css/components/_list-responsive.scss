@@ -1,5 +1,14 @@
 @media(min-width: 600px) {
   .list {
+    &.five-cols {
+      .list-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
     h4 {
       font-size: 14pt;
     }
@@ -33,6 +42,9 @@
 
     &.five-cols {
       .list-col {
+        width: 20%;
+        justify-content: flex-start;
+        align-items: flex-start;
         margin-bottom: 30px;
 
         h4 {
