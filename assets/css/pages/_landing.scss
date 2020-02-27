@@ -182,206 +182,199 @@
     }
   }
 
-  .section-search-pro {
-    .search-pros-inner {
-      position: relative;
-      z-index: 10;
-      border-radius: 2.5px;
-      box-shadow: 0 1.5px 15px 0 rgba(50, 81, 129, 0.06);
-      background-color: #ffffff;
-      //background-color: coral;
+  .search-pros-inner {
+    position: relative;
+    z-index: 10;
+    border-radius: 2.5px;
+    box-shadow: 0 1.5px 15px 0 rgba(50, 81, 129, 0.06);
+    background-color: #ffffff;
+    //background-color: coral;
 
-      .search {
-        .form-group {
-          .form-control {
-            border-radius: 5px;
-            background-color: #f3f4f7;
-            font-family: $h-font;
-            color: $text-color;
-            border: none;
-            box-shadow: none;
-
-            &::placeholder {
-              color: $text-color;
-            }
-          }
-
-          .fa-search {
-            position: absolute;
-            top: 50%;
-            right: 20px;
-            transform: translate(0, -50%);
-          }
-        }
-      }
-
-      .logo-container {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translate(-50%, 0);
-
-        .logo {
-          display: flex;
-          align-items: center;
-          height: 100%;
-
-          img {
-            margin-top: 2px;
-          }
-        }
-      }
-
-      .pros-list-container {
-        .pros-card {
+    .search {
+      .form-group {
+        .form-control {
           border-radius: 5px;
-          background-color: transparentize(#dde1e8, .35);
+          background-color: #f3f4f7;
+          font-family: $h-font;
+          color: $text-color;
+          border: none;
+          box-shadow: none;
+
+          &::placeholder {
+            color: $text-color;
+          }
         }
 
-        .pros-content {
-          .pros-name {
-            font-family: $main-font;
-            font-weight: 900;
-            color: $text-color;
-          }
-
-          .pros-info {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            font-family: $h-font;
-            color: $text-color;
-
-            .text {
-              font-weight: 400;
-            }
-
-            button {
-              padding-bottom: 2px;
-              border: none;
-              border-bottom: 1px solid $text-color;
-              box-shadow: none;
-            }
-          }
-
-          .pros-id,
-          .pros-location {
-            font-family: $h-font;
-            font-weight: 400;
-            color: $text-color;
-          }
-
-          .pros-id,
-          .pros-info,
-          .pros-name {
-            border-bottom: 1px solid transparentize(#dde1e8, .5);
-          }
-
-          .job-types {
-            span {
-              border-radius: 9px;
-              border: solid 0.5px #325181;
-              font-family: $h-font;
-              font-weight: 400;
-              color: #325181;
-            }
-          }
-
-          .pros-phone {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0 5px 15px 0 rgba(50, 81, 129, 0.2);
-            border: solid 1px #352f4a;
-            background-color: #ffffff;
-            border-radius: 100px;
-
-            span {
-              font-family: $main-font;
-            }
-          }
+        .fa-search {
+          position: absolute;
+          top: 50%;
+          right: 20px;
+          transform: translate(0, -50%);
         }
       }
+    }
 
-      .activity-areas {
-        .activity-areas-title {
-          font-family: $h-font;
+    .logo {
+      display: flex;
+      align-items: center;
+      height: 100%;
+
+      img {
+        margin-top: 2px;
+      }
+    }
+
+    .pros-list-container {
+      .pros-card {
+        border-radius: 5px;
+        background-color: transparentize(#dde1e8, .35);
+      }
+
+      .pros-content {
+        .pros-name {
+          font-family: $main-font;
+          font-weight: 900;
           color: $text-color;
         }
 
-        .activity-areas-list {
+        .pros-info {
           display: flex;
           flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          font-family: $h-font;
+          color: $text-color;
+
+          .text {
+            font-weight: 400;
+          }
+
+          button {
+            padding-bottom: 2px;
+            border: none;
+            border-bottom: 1px solid $text-color;
+            box-shadow: none;
+          }
+        }
+
+        .pros-id,
+        .pros-location {
+          font-family: $h-font;
+          font-weight: 400;
+          color: $text-color;
+        }
+
+        .pros-id,
+        .pros-info,
+        .pros-name {
+          border-bottom: 1px solid transparentize(#dde1e8, .5);
+        }
+
+        .job-types {
+          display: flex;
           flex-wrap: wrap;
           justify-content: flex-start;
-          align-items: center;
+          align-items: flex-start;
 
-          .activity-area {
-            font-family: $main-font;
+          span {
+            border-radius: 9px;
+            border: solid 0.5px #325181;
+            font-family: $h-font;
             font-weight: 400;
-            color: #aeb0b3;
-            border-right: 2px solid $text-color;
+            color: #325181;
+          }
+        }
+
+        .pros-phone {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          box-shadow: 0 5px 15px 0 rgba(50, 81, 129, 0.2);
+          border: solid 1px #352f4a;
+          background-color: #ffffff;
+          border-radius: 100px;
+
+          span {
+            font-family: $main-font;
           }
         }
       }
+    }
 
-      .pagination-container {
+    .activity-areas-title {
+      font-family: $h-font;
+      color: $text-color;
+    }
+
+    .activity-areas-list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .activity-area {
+      font-family: $main-font;
+      font-weight: 400;
+      color: #aeb0b3;
+    }
+
+    .pagination-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      background-color: $text-color;
+
+      .title {
+        display: block;
+        font-family: $h-font;
+        color: #fff;
+      }
+
+      .pagination-inner {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        width: 100%;
-        background-color: $text-color;
 
-        .title {
+        .page-prev,
+        .page-next {
           display: block;
-          font-family: $h-font;
-          color: #fff;
+
+          i {
+            color: #fff;
+          }
         }
 
-        .pagination-inner {
+        .pagination {
           display: flex;
           flex-direction: row;
           justify-content: flex-start;
           align-items: center;
+        }
 
-          .page-prev,
-          .page-next {
-            display: block;
-
-            i {
-              color: #fff;
-            }
-          }
-
-          .pagination {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            align-items: center;
-          }
-
-          .page-item {
-            &:not(:last-of-type) {
-              .page-link {
-                border-right: 1px solid red;
-              }
-            }
-
-            &:hover,
-            &.active {
-              background-color: #ebe2d3;
-              .page-link {
-                border-right: none;
-              }
-            }
-
+        .page-item {
+          &:not(:last-of-type) {
             .page-link {
-              font-family: $h-font;
-              color: #fff;
+              border-right: 1px solid red;
             }
+          }
+
+          &:hover,
+          &.active {
+            background-color: #ebe2d3;
+            .page-link {
+              border-right: none;
+            }
+          }
+
+          .page-link {
+            font-family: $h-font;
+            color: #fff;
           }
         }
       }

@@ -200,142 +200,151 @@
       }
     }
 
-    .section-search-pro {
-      .search-pros-inner {
+    .search-pros-inner {
+      padding: 10px;
+
+      .logo {
+        width: 140px;
+      }
+
+      .search {
+        flex-grow: 1;
+        margin-left: 60px;
+
+        .form-group {
+          .form-control {
+            width: 100%;
+            height: 50px;
+            padding-right: 10px;
+            padding-left: 10px;
+            font-size: 11pt;
+
+            &::placeholder {
+              font-size: 11pt;
+            }
+          }
+        }
+      }
+
+      .activity-areas-list {
+        margin-top: 20px;
+      }
+
+      .activity-areas-title {
+        font-size: 12pt;
+      }
+
+      .activity-area {
+        margin: 10px 0;
+        font-size: 10pt;
+      }
+    }
+
+    .pros-list-container {
+      .pros-card {
         padding: 10px;
 
-        .search {
-          .form-group {
-            .form-control {
-              width: 100%;
-              height: 50px;
-              padding-right: 10px;
-              padding-left: 10px;
-              font-size: 11pt;
+        &:not(:first-child) {
+          margin-top: 40px;
+        }
 
-              &::placeholder {
-                font-size: 11pt;
-              }
-            }
+        .pros-logo {
+          img {
+            width: 100%;
           }
         }
 
-        .pros-list-container {
-          .pros-card {
-            padding: 10px;
+        .pros-content {
+          height: 100%;
+          padding: 5px 0 20px;
 
-            &:not(:first-child) {
-              margin-top: 10px;
-            }
-
-            .pros-content {
-              height: 100%;
-              padding: 5px 0;
-
-              .pros-name {
-                line-height: 1.5;
-                padding-bottom: 10px;
-                font-size: 10pt;
-              }
-
-              .pros-info {
-                padding: 5px 0;
-
-                .text {
-                  font-size: 10pt;
-                }
-
-                button {
-                  font-size: 10pt;
-                }
-              }
-
-              .pros-id,
-              .pros-location {
-                span {
-                  padding-left: 10px;
-                  font-size: 10pt;
-                }
-              }
-
-              .pros-id,
-              .pros-name,
-              .pros-location {
-                padding: 10px 0;
-              }
-
-              .job-types {
-                margin-top: 10px;
-
-                span {
-                  margin-right: 10px;
-                  padding: 5px;
-                  font-size: 11pt;
-                }
-              }
-
-              .pros-phone {
-                position: absolute;
-                bottom: 0;
-                right: 15px;
-                transform: translateY(calc(50% + 20px));
-                width: 56px;
-                padding: 10px;
-
-                span {
-                  padding-left: 10px;
-                  font-size: 13pt;
-                }
-              }
-            }
-          }
-        }
-
-        .activity-areas {
-          .activity-areas-title {
-            padding: 0 10px;
-            font-size: 13pt;
+          .pros-name {
+            line-height: 1.5;
+            font-size: 12pt;
           }
 
-          .activity-areas-list {
-            .activity-area {
-              padding: 0 10px;
-              margin: 10px 0;
+          .pros-info {
+            padding: 5px 0;
+
+            .text {
+              font-size: 10pt;
+            }
+
+            button {
+              padding: 0;
               font-size: 10pt;
             }
           }
+
+          .pros-id,
+          .pros-location {
+            span {
+              padding-left: 10px;
+              font-size: 10pt;
+            }
+          }
+
+          .pros-id,
+          .pros-name,
+          .pros-location {
+            padding: 8px 0;
+          }
+
+          .job-types {
+            margin-top: 10px;
+
+            span {
+              margin-right: 10px;
+              padding: 5px;
+              font-size: 11pt;
+            }
+          }
+
+          .pros-phone {
+            position: absolute;
+            bottom: 0;
+            right: 15px;
+            transform: translateY(calc(50% + 10px));
+            padding: 10px;
+
+            span {
+              padding-left: 10px;
+              font-size: 13pt;
+              white-space: nowrap;
+            }
+          }
         }
+      }
+    }
 
-        .pagination-container {
-          padding: 0 16px;
+    .pagination-container {
+      padding: 0 16px;
 
-          .title {
-            font-size: 13pt;
-          }
+      .title {
+        font-size: 13pt;
+      }
 
-          .page-prev,
-          .page-next {
-            margin: 0 15px;
+      .page-prev,
+      .page-next {
+        margin: 0 15px;
 
-            i {
-              font-size: 16pt;
-            }
-          }
+        i {
+          font-size: 16pt;
+        }
+      }
 
-          .pagination {
-            width: 64%;
-            overflow: hidden;
-            padding: 15px 0;
-            font-size: 10pt;
-          }
+      .pagination {
+        width: 64%;
+        overflow: hidden;
+        padding: 15px 0;
+        font-size: 10pt;
+      }
 
-          .page-item {
-            padding: 10px 0;
+      .page-item {
+        padding: 10px 0;
 
-            .page-link {
-              padding: 0 8px;
-            }
-          }
+        .page-link {
+          padding: 0 8px;
         }
       }
     }
@@ -524,139 +533,144 @@
          }
       }
     }
+    
+    .search-pros-inner {
+      padding: 30px;
 
-    .section-search-pro {
-      .search-pros-inner {
-        padding: 30px;
+      .search {
+        flex-grow: 0;
+        width: 340px;
+        margin-left: 0;
 
-        .form-control {
-          width: 100%;
-          height: 60px;
-          padding-right: 50px;
-          padding-left: 30px;
-          font-size: 11pt;
-
-          &::placeholder {
+        .form-group {
+          .form-control {
+            width: 100%;
+            height: 60px;
+            padding-right: 50px;
+            padding-left: 30px;
             font-size: 11pt;
-          }
-        }
 
-        .pros-list-container {
-          .pros-card {
-            padding: 20px;
-
-            &:not(:first-child) {
-              margin-top: 40px;
-            }
-
-            .pros-content {
-              height: 100%;
-              padding: 5px 0;
-
-              .pros-name {
-                line-height: 1.5;
-                padding-bottom: 10px;
-                font-size: 13pt;
-              }
-
-              .pros-info {
-                padding: 5px 0;
-
-                .text {
-                  font-size: 12pt;
-                }
-
-                button {
-                  font-size: 13pt;
-                }
-              }
-
-              .pros-id,
-              .pros-location {
-                span {
-                  padding-left: 10px;
-                  font-size: 12pt;
-                }
-              }
-
-              .pros-id,
-              .pros-name,
-              .pros-location {
-                padding: 10px 0;
-              }
-
-              .job-types {
-                margin-top: 10px;
-
-                span {
-                  margin-right: 10px;
-                  padding: 5px;
-                  font-size: 11pt;
-                }
-              }
-
-              .pros-phone {
-                position: absolute;
-                bottom: 0;
-                right: 35px;
-                transform: translateY(calc(50% + 20px));
-                width: 166px;
-                padding: 10px;
-
-                span {
-                  padding-left: 10px;
-                  font-size: 13pt;
-                }
-              }
+            &::placeholder {
+              font-size: 11pt;
             }
           }
         }
+      }
 
-        .activity-areas {
-          .activity-areas-title {
-            padding: 0 10px;
+      .logo {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+
+      .pros-card {
+        padding: 20px;
+
+        &:not(:first-child) {
+          margin-top: 40px;
+        }
+
+        .pros-content {
+          height: 100%;
+          padding: 5px 0 15px;
+
+          .pros-name {
+            line-height: 1.5;
+            padding-bottom: 10px;
             font-size: 13pt;
           }
 
-          .activity-areas-list {
-            .activity-area {
-              padding: 0 10px;
-              margin: 10px 0;
-              font-size: 10pt;
-            }
-          }
-        }
+          .pros-info {
+            padding: 5px 0;
 
-        .pagination-container {
-          padding: 0 36px;
-
-          .title {
-            font-size: 13pt;
-          }
-
-          .page-prev,
-          .page-next {
-            margin: 0 15px;
-
-            i {
-              font-size: 16pt;
+            .text {
+              font-size: 12pt;
             }
           }
 
-          .pagination {
-            width: 88%;
-            //overflow: hidden;
-            padding: 15px 0;
-            font-size: 10pt;
+          .pros-id,
+          .pros-location {
+            span {
+              padding-left: 10px;
+              font-size: 12pt;
+            }
           }
 
-          .page-item {
+          .pros-id,
+          .pros-name,
+          .pros-location {
             padding: 10px 0;
+          }
 
-            .page-link {
-              padding: 0 8px;
+          .job-types {
+            margin-top: 10px;
+
+            span {
+              margin-right: 10px;
+              margin-bottom: 10px;
+              padding: 5px;
+              font-size: 11pt;
             }
           }
+
+          .pros-phone {
+            position: absolute;
+            bottom: 0;
+            right: 35px;
+            transform: translateY(calc(50% + 30px));
+            width: 166px;
+            padding: 10px;
+
+            span {
+              padding-left: 10px;
+              font-size: 13pt;
+            }
+          }
+        }
+      }
+
+      .activity-areas-title {
+        padding: 0 10px;
+        font-size: 13pt;
+      }
+
+      .activity-area {
+        padding: 0 10px;
+        margin: 10px 0;
+        font-size: 10pt;
+        border-right: 2px solid $text-color;
+      }
+    }
+
+    .pagination-container {
+      padding: 0 36px;
+
+      .title {
+        font-size: 13pt;
+      }
+
+      .page-prev,
+      .page-next {
+        margin: 0 15px;
+
+        i {
+          font-size: 16pt;
+        }
+      }
+
+      .pagination {
+        width: 88%;
+        //overflow: hidden;
+        padding: 15px 0;
+        font-size: 10pt;
+      }
+
+      .page-item {
+        padding: 10px 0;
+
+        .page-link {
+          padding: 0 8px;
         }
       }
     }
@@ -798,17 +812,9 @@
 
 
     .section-search-pro {
-      .search-pros-inner {
-        .pros-list-container {
-          .pros-card {
-            .pros-content {
-              .job-types {
-                span {
-                  margin-right: 20px;
-                }
-              }
-            }
-          }
+      .job-types {
+        span {
+          margin-right: 20px;
         }
       }
     }
