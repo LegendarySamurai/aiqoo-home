@@ -42,9 +42,6 @@
 
     &.five-cols {
       .list-col {
-        width: 20%;
-        justify-content: flex-start;
-        align-items: flex-start;
         margin-bottom: 30px;
 
         h4 {
@@ -104,6 +101,18 @@
   }
 }
 // EOL: @media(min-width: 992px)
+
+@media(min-width: 1200px) {
+  .list {
+    &.five-cols {
+      .list-col {
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 20%;
+      }
+    }
+  }
+}
 
 @media(min-width: 1400px) {
   .list {
