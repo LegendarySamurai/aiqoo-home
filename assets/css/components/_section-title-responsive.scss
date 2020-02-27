@@ -2,6 +2,13 @@
   .section-title-container {
     padding-bottom: 20px;
   }
+
+  .section-title {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 13pt;
+    font-weight: 900;
+  }
 }
 
 @media(min-width: 992px) {
@@ -12,7 +19,7 @@
   .section-title {
     padding-left: 80px;
     padding-right: 80px;
-    font-size: 13pt;
+    font-weight: 500;
   }
 }
 // EOL: @media(min-width: 992px)

@@ -2,12 +2,6 @@
   .categories {
     background: #fff;
     background-image: none;
-
-    //.list {
-    //  .list-item-with-icon {
-    //    border-right: 2px solid #d6dce6;
-    //  }
-    //}
   }
 
   .head-section {
@@ -20,7 +14,6 @@
     .card {
       display: flex;
       flex-direction: column;
-      //justify-content: space-between;
       align-items: center;
       border-radius: 7.5px;
       box-shadow: 0 1.5px 15px 0 rgba(50, 81, 129, 0.2);
@@ -146,8 +139,6 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        //width: 50%;
-        //height: 100%;
 
         .newsletter-text {
           font-family: $h-font;
@@ -187,7 +178,6 @@
     border-radius: 2.5px;
     box-shadow: 0 1.5px 15px 0 rgba(50, 81, 129, 0.06);
     background-color: #ffffff;
-    //background-color: coral;
 
     .search {
       .form-group {
