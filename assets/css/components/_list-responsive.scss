@@ -1,10 +1,24 @@
 @media(min-width: 600px) {
-  &.five-cols {
-    .list-col {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+  .list {
+    &.five-cols {
+      .list-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    h4 {
+      font-size: 14pt;
+    }
+
+    h5 {
+      font-size: 12pt;
+    }
+
+    p {
+      font-size: 13pt;
     }
   }
 
@@ -22,20 +36,15 @@
 }
 
 @media(min-width: 992px) {
-  &.five-cols {
-    .list-col {
-      justify-content: flex-start;
-      align-items: flex-start;
-    }
-  }
-
   .list {
-    width: 20%;
     padding-left: 20px;
     padding-right: 20px;
 
     &.five-cols {
       .list-col {
+        width: 20%;
+        justify-content: flex-start;
+        align-items: flex-start;
         margin-bottom: 30px;
 
         h4 {

@@ -16,7 +16,7 @@
 <body>
 
 <header class="header">
-    <div class="container">
+    <div class="header-container container-fluid container-lg">
         <div class="row">
             <div class="col-12">
                 <div class="header-content position-relative">
@@ -27,7 +27,7 @@
                     <div class="find-box">
                         <div class="form-group position-relative">
                             <input class="form-control" type="text" placeholder="I’m looking for a roofing fixture">
-                            <div class="super-placeholder">
+                            <div class="super-placeholder d-none d-lg-flex">
                                 <img src="assets/images/icons/pen-6.svg" alt="">
                                 <span>What services are you looking for? </span>
                             </div>
@@ -152,42 +152,42 @@
                 </div>
                 <div class="col-12">
                     <div class="row list">
-                        <div class="col-4 col-lg-2">
+                        <div class="col-4 col-lg-2 mb-3">
                             <p>Roofing</p>
                             <p>Sliding</p>
                             <p>Solar Systems</p>
                             <p>Spas</p>
                             <p>Sun rooms</p>
                         </div>
-                        <div class="col-4 col-lg-2">
+                        <div class="col-4 col-lg-2 mb-3">
                             <p>Additions</p>
                             <p>ADU's</p>
                             <p>Bathrooms</p>
                             <p>Driveways & walks</p>
                             <p>Flooring & hardwood</p>
                         </div>
-                        <div class="col-4 col-lg-2">
+                        <div class="col-4 col-lg-2 mb-3">
                             <p>Kitchens</p>
                             <p>Landscaping</p>
                             <p>Major Repairs</p>
                             <p>Patios</p>
                             <p>Plumbing</p>
                         </div>
-                        <div class="col-4 col-lg-2">
+                        <div class="col-4 col-lg-2 mb-3">
                             <p>Additions</p>
                             <p>ADU's</p>
                             <p>Bathrooms</p>
                             <p>Driveways & walks</p>
                             <p>Flooring & hardwood</p>
                         </div>
-                        <div class="col-4 col-lg-2">
+                        <div class="col-4 col-lg-2 mb-3">
                             <p>Additions</p>
                             <p>ADU's</p>
                             <p>Bathrooms</p>
                             <p>Driveways & walks</p>
                             <p>Flooring & hardwood</p>
                         </div>
-                        <div class="col-4 col-lg-2">
+                        <div class="col-4 col-lg-2 mb-3">
                             <p>Additions</p>
                             <p>ADU's</p>
                             <p>Bathrooms</p>
@@ -217,7 +217,7 @@
                         </div>
                         <p class="magazine-header-text text-center lh-lg-1p75">
                             using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
-                            <br>
+                            <br class="d-none d-lg-block">
                             using ‘Content here, content here’, making it look l
                         </p>
                     </div>
@@ -461,21 +461,31 @@
     </section>
 
     <section class="questionnaire position-relative">
-        <div class="container section-container">
+        <div class="container-fluid section-container">
             <div class="row">
-                <div class="col-12 col-lg-3">
+                <div class="col-12 d-lg-none mb-5">
+                    <div class="questionnaire-title text-center">
+                        Are you a qualified home services professional?
+                    </div>
+                    <div class="questionnaire-text mt-4 text-center">
+                        Join the thousands of pros already operating with AIQ and let
+                        <br class="d-none d-lg-block">
+                        us help you grow your business If your business is:
+                    </div>
+                </div>
+                <div class="col-6 col-lg-4 col-xl-3">
                     <div class="questionnaire-image">
                         <img src="assets/images/professional.png" alt="professional">
                     </div>
                 </div>
-                <div class="col-12 col-lg-9">
+                <div class="col-6 col-lg-8 col-xl-9 d-flex flex-column">
                     <div class="questionnaire-content">
-                        <div class="questionnaire-title">
+                        <div class="questionnaire-title d-none d-lg-block">
                             Are you a qualified home services professional?
                         </div>
-                        <div class="questionnaire-text">
+                        <div class="questionnaire-text d-none d-lg-block mt-4">
                             Join the thousands of pros already operating with AIQ and let
-                            <br>
+                            <br class="d-none d-lg-block">
                             us help you grow your business If your business is:
                         </div>
                         <div class="questionnaire-content-outer">
@@ -515,11 +525,17 @@
                 </div>
             </div>
             <div class="row common-searches-list list five-cols">
-                <div class="col-auto list-col">
+                <div class="col-12 col-lg-auto list-col">
                     <p>
                         Los Angeles tile replacement
+                    </p>
+                    <p>
                         Los Angeles Roofing Facility
+                    </p>
+                    <p>
                         Roof installation
+                    </p>
+                    <p>
                         Los Angeles Roofing Facility
                     </p>
                 </div>
@@ -544,7 +560,7 @@
                 </div>
             </div>
             <div class="row services-list list five-cols">
-                <div class="col-auto list-col">
+                <div class="col-12 col-lg-auto list-col">
                     <h4>Roofing</h4>
                     <p>Roof replacement</p>
                     <p>Roof replacement</p>

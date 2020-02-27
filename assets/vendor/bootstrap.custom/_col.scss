@@ -18,7 +18,8 @@
 
 .col-auto,
 .col-2, .col-4, .col-5, .col-6, .col-12,
-.col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-8, .col-lg-9 {
+.col-lg-auto, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-8, .col-lg-9,
+.col-xl-3, .col-xl-9 {
   position: relative;
   width: 100%;
   padding-right: 15px;
@@ -225,11 +226,11 @@
     flex-grow: 1;
     max-width: 100%;
   }
-  //.col-lg-auto {
-  //  flex: 0 0 auto;
-  //  width: auto;
-  //  max-width: 100%;
-  //}
+  .col-lg-auto {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+  }
   //.col-lg-1 {
   //  flex: 0 0 8.33333%;
   //  max-width: 8.33333%;
@@ -299,10 +300,10 @@
   //  flex: 0 0 16.66667%;
   //  max-width: 16.66667%;
   //}
-  //.col-xl-3 {
-  //  flex: 0 0 25%;
-  //  max-width: 25%;
-  //}
+  .col-xl-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
   //.col-xl-4 {
   //  flex: 0 0 33.33333%;
   //  max-width: 33.33333%;
@@ -323,10 +324,10 @@
   //  flex: 0 0 66.66667%;
   //  max-width: 66.66667%;
   //}
-  //.col-xl-9 {
-  //  flex: 0 0 75%;
-  //  max-width: 75%;
-  //}
+  .col-xl-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
   //.col-xl-10 {
   //  flex: 0 0 83.33333%;
   //  max-width: 83.33333%;

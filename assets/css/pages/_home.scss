@@ -21,7 +21,6 @@
       display: block;
       content: '';
       width: 100%;
-      height: calc(100% - 175px);
       background-color: $primaryColor;
     }
 
@@ -95,10 +94,6 @@
         font-weight: 700;
         color: #fff;
         background-color: #d8cdba;
-
-        i {
-          margin-left: 40px;
-        }
       }
     }
 
@@ -124,54 +119,45 @@
       background-color: $primaryColor;
     }
 
-    .questionnaire-content {
+    .questionnaire-title,
+    .questionnaire-text {
       font-family: $h-font;
       font-weight: 700;
+    }
 
-      .questionnaire-title {
-        color: $primaryColor;
-      }
+    .questionnaire-text {
+      color: #fff;
+    }
 
-      .questionnaire-text {
-        color: #fff;
-      }
+    .questionnaire-content-outer {
+      display: flex;
+      justify-content: space-between;
+      background-color: #fff;
 
-      .questionnaire-content-outer {
+      .questionnaire-content-inner {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
-        background-color: #fff;
 
-        .questionnaire-content-inner {
+        .questionnaire-content-item {
           display: flex;
           flex-direction: row;
-          justify-content: space-between;
+          align-items: center;
 
-          .questionnaire-content-item {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-
-            &:not(:last-child) {
-              border-right: 2px solid #e5e4ea;
-            }
-
-            span {
-              font-family: $main-font;
-              font-weight: 400;
-              color: $primaryColor;
-            }
-          }
-        }
-
-        .join-us {
-          background-color: #d8cdba;
-
-          button {
+          span {
             font-family: $main-font;
-            font-weight: bold;
+            font-weight: 400;
             color: $primaryColor;
           }
+        }
+      }
+
+      .join-us {
+        background-color: #d8cdba;
+
+        button {
+          font-family: $main-font;
+          font-weight: bold;
+          color: $primaryColor;
         }
       }
     }
