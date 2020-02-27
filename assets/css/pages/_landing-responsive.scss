@@ -71,7 +71,7 @@
 
     .head-section {
       width: 100%;
-      height: calc(100vh - 52px);
+      //height: calc(100vh - 52px);
       background: url('../images/loading-map.png') no-repeat center;
       background-size: cover;
 
@@ -200,43 +200,65 @@
       .list {
         p {
           font-size: 13pt;
-          line-height: 1.5;
+          line-height: 2;
         }
       }
 
       .newsletter-container {
-        height: 56px;
+        flex-direction: column;
+        height: 440px;
         margin-top: 20px;
+        padding: 144px 15px 20px 15px;
+        background:
+          #fffdfa
+          url('../../assets/images/landing/newsletter-bg-mobile.png')
+          no-repeat;
+        background-size: 100%;
+
+        .super-placeholder {
+          width: 80%;
+          text-align: center;
+        }
 
         .newsletter-text {
-          line-height: 1;
-          font-size: 10pt;
+          line-height: 1.5;
+          font-size: 16pt;
+          font-weight: 400;
         }
       }
 
       .form-group {
-        width: 50%;
-        height: 100%;
-        padding: 10px 10px 10px 0;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 200px;
+        padding: 20px 10px;
 
         .form-control {
-          height: 100%;
-          width: 80%;
-          padding: 0 10px 0 84px;
-          font-size: 11pt;
+          height: 70px;
+          width: 100%;
+          padding: 0 10px 0 100px;
+          font-size: 15pt;
         }
 
         .placeholder {
           position: absolute;
-          top: 50%;
-          left: 20px;
+          top: 28%;
+          left: 30px;
           transform: translate(0, -50%);
           //width: auto;
-          font-size: 11pt;
+          font-size: 15pt;
 
           span {
-            padding-left: 5px;
+            padding-left: 10px;
           }
+        }
+
+        .send {
+          height: 70px;
+          width: 100%;
+          font-size: 15pt;
         }
       }
     }
@@ -502,6 +524,8 @@
         top: 450px;
         left: 0;
         height: 700px;
+        background: #ebe2d3 url(../images/landing/bg2.png) no-repeat bottom center;
+        background-size: 100%;
       }
     }
 
@@ -522,16 +546,43 @@
       }
 
       .newsletter-container {
+        flex-direction: row;
         height: 76px;
         margin-top: 40px;
+        padding: 0;
+        background: #fffdfa;
+
+        .super-placeholder {
+          //width: 50%;
+          height: 100%;
+          text-align: left;
+        }
 
         .newsletter-text {
           line-height: 1.5;
           font-size: 11pt;
+          font-weight: bold;
+        }
+
+        .newsletter-bg {
+          width: 82%;
+
+          &:after {
+            display: block;
+            content: '';
+            background-image: linear-gradient(91deg, rgba(255, 255, 255, 0) 21%, #fff 64%);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          }
         }
       }
 
       .form-group {
+        flex-direction: row;
+        //justify-content: space-between;
         width: 50%;
         height: 100%;
         padding: 10px 10px 10px 0;
@@ -544,17 +595,24 @@
         }
 
         .placeholder {
-          position: absolute;
+          //position: absolute;
           top: 50%;
           left: 20px;
           transform: translate(0, -50%);
           //width: auto;
-          font-size: 11pt;
+          font-size: 12pt;
 
           span {
             padding-left: 5px;
           }
         }
+
+        .send {
+          width: auto;
+          height: 100%;
+          flex-grow: 1;
+          margin-left: 10px;
+         }
       }
     }
 
@@ -562,19 +620,15 @@
       .search-pros-inner {
         padding: 30px;
 
-        .search {
-          .form-group {
-            .form-control {
-              width: 100%;
-              height: 60px;
-              padding-right: 50px;
-              padding-left: 30px;
-              font-size: 11pt;
+        .form-control {
+          width: 100%;
+          height: 60px;
+          padding-right: 50px;
+          padding-left: 30px;
+          font-size: 11pt;
 
-              &::placeholder {
-                font-size: 11pt;
-              }
-            }
+          &::placeholder {
+            font-size: 11pt;
           }
         }
 
