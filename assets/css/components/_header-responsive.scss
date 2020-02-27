@@ -303,6 +303,7 @@
   &.sticky {
     @media(min-width: 600px) {
       position: sticky;
+      position: -webkit-sticky;
       z-index: 8000;
       height: auto;
       margin-bottom: 0;
