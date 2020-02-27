@@ -6,6 +6,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 50%;
+        margin-bottom: 20px;
       }
     }
 
@@ -35,6 +37,16 @@
   }
 }
 
+@media(min-width: 800px) {
+  .list {
+    &.five-cols {
+      .list-col {
+        width: 33.333%;
+      }
+    }
+  }
+}
+
 @media(min-width: 992px) {
   .list {
     padding-left: 20px;
@@ -42,7 +54,7 @@
 
     &.five-cols {
       .list-col {
-        margin-bottom: 30px;
+        width: 25%;
 
         h4 {
           font-size: 13pt;
