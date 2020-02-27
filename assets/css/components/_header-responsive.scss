@@ -137,8 +137,7 @@
       }
 
       .form-control {
-        padding-left: 250px;
-        padding-right: 150px;
+
       }
 
       .super-placeholder {
@@ -302,7 +301,7 @@
 
   // Header on scroll
   &.sticky {
-    @media(min-width: 992px) {
+    @media(min-width: 600px) {
       position: sticky;
       z-index: 8000;
       height: auto;
@@ -343,6 +342,7 @@
 
         .form-control {
           height: 60px;
+          padding-right: 130px;
         }
 
         .find-btn {
@@ -352,11 +352,21 @@
         }
       }
     }
+    // EOL: @media(min-width: 600px)
+
+    @media(min-width: 992px) {
+
+    }
     // EOL: @media(min-width: 992px)
 
+    @media(min-width: 1200px) {
+
+    }
+    // EOL: @media(min-width: 1200px)
+
     @media(min-width: 1400px) {
-      .container {
-        max-width: 1300px;
+      .header-container {
+        max-width: 1300px !important;
       }
     }
     // EOL: @media(min-width: 1400px)
