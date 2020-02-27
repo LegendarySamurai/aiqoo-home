@@ -23,9 +23,7 @@
       }
 
       .form-control {
-        height: 60px;
         padding-left: 10px;
-        padding-right: 10px;
       }
 
       .form-control,
@@ -40,25 +38,25 @@
           font-size: 9pt;
         }
       }
+    }
 
-      .reasons {
-        flex-wrap: wrap;
-        margin-top: 20px;
+    .reasons {
+      flex-wrap: wrap;
+      margin-top: 20px;
 
-        .reason {
-          width: 50%;
-          padding: 0 15px;
+      .reason {
+        width: 50%;
+        padding: 0 15px;
+      }
+
+      .headings {
+        & h2 {
+          font-size: 10pt;
         }
 
-        .headings {
-          & h2 {
-            font-size: 10pt;
-          }
-
-          & h3 {
-            font-size: 8pt;
-            margin: 4px 0 0 0;
-          }
+        & h3 {
+          font-size: 8pt;
+          margin: 4px 0 0 0;
         }
       }
     }
@@ -81,8 +79,7 @@
     }
   }
 
-  @media(min-width: 600px) {
-    //margin-bottom: 110px;
+  @media(min-width: 300px) {
     background-image: url('../images/header/main-image.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -98,32 +95,37 @@
       font-size: 20pt;
     }
 
+    .form-control {
+      padding-left: 10px;
+    }
+
+    .form-control,
+    .form-control::placeholder {
+      font-size: 11pt;
+    }
+
     .find-box {
       width: 100%;
       margin-top: 20px;
+    }
 
-      .reasons {
-        flex-direction: row;
-        align-items: center;
-        margin-left: -10px;
-        margin-right: -10px;
+    .reasons {
+      flex-direction: row;
+      align-items: center;
+      margin-left: -10px;
+      margin-right: -10px;
 
-        .reason {
+      .reason-icon {
+        width: 35px;
+      }
 
+      .headings {
+        & h2 {
+          font-size: 13pt;
         }
 
-        .reason-icon {
-          width: 35px;
-        }
-
-        .headings {
-          & h2 {
-            font-size: 13pt;
-          }
-
-          & h3 {
-            font-size: 11pt;
-          }
+        & h3 {
+          font-size: 11pt;
         }
       }
     }
@@ -136,10 +138,6 @@
         right: 0;
       }
 
-      .form-control {
-
-      }
-
       .super-placeholder {
         display: flex;
         flex-direction: row;
@@ -150,35 +148,34 @@
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .find-box {
-      .reasons {
-        flex-wrap: wrap;
-        padding: 0 15px;
+    .find-box {  }
 
-        .reason {
-          width: 50%;
-          margin-bottom: 10px;
+    .reasons {
+      flex-wrap: wrap;
+      padding: 0 15px;
+
+      .reason {
+        width: 50%;
+        margin-bottom: 10px;
+      }
+
+      .headings {
+        & h2 {
+          font-size: 11pt;
         }
 
-        .headings {
-          & h2 {
-            font-size: 11pt;
-          }
-
-          & h3 {
-            font-size: 9pt;
-          }
+        & h3 {
+          font-size: 9pt;
         }
+      }
 
-        .reason-icon {
-          width: 25px;
-        }
+      .reason-icon {
+        width: 25px;
       }
     }
   }
 
   @media(min-width: 992px) {
-    //margin-bottom: 110px;
     background-position: center 60%;
     background-size: 106% auto;
 
@@ -218,47 +215,47 @@
           font-size: 10pt;
         }
       }
+    }
 
-      .reasons {
-        position: absolute;
-        bottom: 15px;
-        left: 0;
-        flex-wrap: nowrap;
-        width: 100%;
-        margin: 0;
+    .reasons {
+      position: absolute;
+      bottom: 15px;
+      left: 0;
+      flex-wrap: nowrap;
+      width: 100%;
+      margin: 0;
 
-        .reason {
-          width: 25%;
-          height: 70px;
-          padding: 16px;
+      .reason {
+        width: 25%;
+        height: 70px;
+        padding: 16px;
 
-          &:not(:first-child):before {
-            display: block;
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            transform: translate(50%, 50%);
-            width: 2px;
-            height: 40px;
-            background-color: $primaryColor;
-          }
+        &:not(:first-child):before {
+          display: block;
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          transform: translate(50%, 50%);
+          width: 2px;
+          height: 40px;
+          background-color: $primaryColor;
+        }
+      }
+
+      .headings {
+        & h2 {
+          font-size: 12pt;
         }
 
-        .headings {
-          & h2 {
-            font-size: 12pt;
-          }
-
-          & h3 {
-            margin: 8px 0 0 0;
-            font-size: 10pt;
-          }
+        & h3 {
+          margin: 8px 0 0 0;
+          font-size: 10pt;
         }
+      }
 
-        .reason-icon {
-          width: 30px;
-        }
+      .reason-icon {
+        width: 30px;
       }
     }
   }

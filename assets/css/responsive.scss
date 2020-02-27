@@ -17,6 +17,12 @@
   .categories {
     padding-top: 40px;
     padding-bottom: 40px;
+
+    .list {
+      .col-item {
+        margin-bottom: 30px;
+      }
+    }
   }
 }
 
@@ -26,8 +32,29 @@
     padding-bottom: 60px;
 
     .list {
+      .col-item {
+        position: relative;
+      }
+
+      .col-item:not(:last-child) {
+        &:after {
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translateY(-50%);
+          display: block;
+          content: '';
+          width: 2px;
+          height: 86px;
+          background-color: #d6dce6;
+        }
+
+      }
+
       .list-item-with-icon {
-        border-right: 2px solid #d6dce6;
+        position: relative;
+        margin-bottom: 0;
+        //border-right: 2px solid #d6dce6;
       }
     }
   }
