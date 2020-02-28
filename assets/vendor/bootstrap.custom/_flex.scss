@@ -18,9 +18,9 @@
 //  flex-wrap: wrap !important;
 //}
 //
-//.flex-nowrap {
-//  flex-wrap: nowrap !important;
-//}
+.flex-nowrap {
+  flex-wrap: nowrap !important;
+}
 //
 //.flex-wrap-reverse {
 //  flex-wrap: wrap-reverse !important;
@@ -138,18 +138,18 @@
   //.flex-sm-row {
   //  flex-direction: row !important;
   //}
-  //.flex-sm-column {
-  //  flex-direction: column !important;
-  //}
+  .flex-sm-column {
+    flex-direction: column !important;
+  }
   //.flex-sm-row-reverse {
   //  flex-direction: row-reverse !important;
   //}
   //.flex-sm-column-reverse {
   //  flex-direction: column-reverse !important;
   //}
-  //.flex-sm-wrap {
-  //  flex-wrap: wrap !important;
-  //}
+  .flex-sm-wrap {
+    flex-wrap: wrap !important;
+  }
   //.flex-sm-nowrap {
   //  flex-wrap: nowrap !important;
   //}
