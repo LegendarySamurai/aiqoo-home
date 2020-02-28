@@ -45,7 +45,8 @@
     align-items: flex-start;
   }
 
-  .list-col-item {
+  .list-col-item,
+  .services-list-col {
     width: 100%;
     font-size: 13pt;
     text-align: center;
@@ -63,20 +64,34 @@
       font-size: 14pt;
     }
   }
+
+  // Services-list
+  .services-list-col {
+
+  }
 }
 
 @media(min-width: 600px) {
-
-  .list-col-item {
+  .list-col-item,
+  .services-list-col {
     width: 50%;
+  }
+
+  // Services-list
+  .services-list-col {
+
   }
 }
 
 @media(min-width: 800px) {
-  .list {  }
-
-  .list-col-item {
+  .list-col-item,
+  .services-list-col {
     width: 33.33%;
+  }
+
+  // Services-list
+  .services-list-col {
+
   }
 }
 
@@ -106,38 +121,60 @@
       font-size: 11pt;
     }
 
-    .list-col-item {
+    .list-col-item,
+    .services-list-col {
       font-size: 12pt;
     }
+  }
+
+  // Services-list
+  .services-list-col {
+
   }
 }
 // EOL: @media(min-width: 992px)
 
 @media(min-width: 1200px) {
-  .list { }
-
   .list-col {
     justify-content: flex-start;
     align-items: flex-start;
   }
 
-  .list-col-item {
+  .list-col-item,
+  .services-list-col {
     width: 20%;
     text-align: left;
+  }
+
+  // Services-list
+  .services-list-col {
+
   }
 }
 
 @media(min-width: 1400px) {
-  .list { }
-
   .list-col {
     margin-bottom: 40px;
+  }
+
+  // Services-list
+  .services-list-col {
+
   }
 }
 // EOL: @media(min-width: 1400px)
 
 
 @media(min-width: 1600px) {
+  .other-categories {
+    .list-col-item {
+      width: 16.66%;
+    }
+  }
 
+  // Services-list
+  .services-list-col {
+
+  }
 }
 // EOL: @media(min-width: 1600px)
