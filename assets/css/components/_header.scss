@@ -113,7 +113,7 @@
 
   // Header on scroll
   &.sticky {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     transform: translateY(-100%);
@@ -138,8 +138,6 @@
     animation-delay: 20ms;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
-    //animation-fill-mode: как указано
-    //animation-play-state: как указано
 
     .reasons {
       display: none;
