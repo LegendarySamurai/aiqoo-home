@@ -19,18 +19,19 @@ const isDesktop = window.innerWidth >= 1200;
 
 // Igor created 23 February 2020
 const header = document.querySelector('.header');
+const headerSticky = document.querySelector('.header-sticky');
+let stickyHeaderHasBeenShown = false;
 let headerClientRect = header.getBoundingClientRect();
-header.classList.remove('sticky');
 
 const makeHeaderSticky = () => {
+	console.log('=>1', headerClientRect.bottom, window.pageYOffset );
 	if (window.pageYOffset >= headerClientRect.bottom) {
-		header.classList.add('sticky');
-		headerClientRect = header.getBoundingClientRect();
-
+		headerSticky.classList.remove('is-hidden');
+		headerSticky.classList.add('is-active');
+		stickyHeaderHasBeenShown = true;
 	}
-	else if (window.pageYOffset < headerClientRect.bottom) {
-		header.classList.remove('sticky');
-		headerClientRect = header.getBoundingClientRect();
+	else if (window.pageYOffset < headerClientRect.bottom && stickyHeaderHasBeenShown) {
+		headerSticky.classList.add('is-hidden');
 	}
 };
 
