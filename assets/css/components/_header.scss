@@ -116,12 +116,9 @@ header {
 
 // Header on scroll
 .header-sticky {
-  $animation-speed: 400ms;
-
   position: fixed;
   top: 0;
   left: 0;
-  transform: translateY(-100%);
   display: flex;
   align-items: center;
   width: 100%;
@@ -131,46 +128,12 @@ header {
     display: flex;
     align-items: center;
   }
-
-  &.is-shown {
-    transform: translateY(0);
-  }
-
-  &.is-active {
-    @keyframes slide-down {
-      from {
-        transform: translateY(-100%);
-      }
-
-      to {
-        transform: translateY(0%);
-      }
-    }
-
-    animation-name: slide-down;
-    animation-duration: $animation-speed;
-    animation-timing-function: linear;
-    animation-delay: 0ms;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
-  }
-
-  &.is-hidden {
-    @keyframes slide-up {
-      from {
-        transform: translateY(0%);
-      }
-
-      to {
-        transform: translateY(-100%);
-      }
-    }
-
-    animation-name: slide-up;
-    animation-duration: $animation-speed;
-    animation-timing-function: linear;
-    animation-delay: 0ms;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
-  }
 }
+
+// navbar mobile
+
+.header-mobile {
+  background-color: $primaryColor;
+  z-index: 1000;
+}
+

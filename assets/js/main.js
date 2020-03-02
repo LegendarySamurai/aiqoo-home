@@ -1,6 +1,6 @@
 ﻿// Igor created 26 February 2020
-const isMobile = window.innerWidth < 600;
-const isDesktop = window.innerWidth >= 1200;
+const isMobile = window.innerWidth < 800;
+const isDesktop = window.innerWidth >= 992;
 
 // EOL: Igor created 26 February 2020
 
@@ -24,7 +24,6 @@ let stickyHeaderHasBeenShown = false;
 let headerClientRect = header.getBoundingClientRect();
 
 const makeHeaderSticky = () => {
-	console.log('=>1', headerClientRect.bottom, window.pageYOffset );
 	if (window.pageYOffset >= headerClientRect.bottom) {
 		headerSticky.classList.remove('is-hidden');
 		headerSticky.classList.add('is-active');
@@ -36,5 +35,38 @@ const makeHeaderSticky = () => {
 };
 
 window.addEventListener('scroll', function () {
-	makeHeaderSticky();
+	if (isDesktop) {
+		makeHeaderSticky();
+	}
 });
+
+// Navbar mobile
+const navBarShowBtn = document.querySelector('#show-navbar');
+const navBarHideBtn = document.querySelector('#hide-navbar');
+const navBarCollapseBody = document.querySelector('#navbar');
+let havBarOpened = false;
+navBarHideBtn.classList.add('d-none');
+
+const showNavBar = () => {
+	navBarShowBtn.addEventListener('click', function() {
+		navBarCollapseBody.classList.remove('navbar-hide');
+		navBarCollapseBody.classList.add('navbar-active');
+		navBarHideBtn.classList.remove('d-none');
+		navBarHideBtn.classList.add('d-block');
+		havBarOpened = true;
+	});
+};
+
+const hideNavBar = () => {
+	navBarHideBtn.addEventListener('click', function() {
+		navBarCollapseBody.classList.remove('navbar-active');
+		navBarCollapseBody.classList.add('navbar-hide');
+		navBarHideBtn.classList.add('d-none');
+	});
+};
+
+if (isMobile) {
+	showNavBar();
+	hideNavBar();
+}
+

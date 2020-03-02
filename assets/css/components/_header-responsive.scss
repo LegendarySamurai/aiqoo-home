@@ -112,12 +112,11 @@ header {
     }
   }
   // EOL: @media(min-width: 1920px)
-
 }
 
 .header {
   @media(min-width: 300px) {
-    background-image: url('../images/header/main-image.jpg');
+    background-image: url('../images/header/main-image-m.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -359,6 +358,55 @@ header {
     }
   }
   // EOL: @media(min-width: 600px)
+
+
+  @media (min-width: 992px) {
+    $animation-speed: 400ms;
+    transform: translateY(-100%);
+
+    &.is-shown {
+      transform: translateY(0);
+    }
+
+    &.is-active {
+      @keyframes slide-down {
+        from {
+          transform: translateY(-100%);
+        }
+
+        to {
+          transform: translateY(0%);
+        }
+      }
+
+      animation-name: slide-down;
+      animation-duration: $animation-speed;
+      animation-timing-function: linear;
+      animation-delay: 0ms;
+      animation-fill-mode: forwards;
+      animation-iteration-count: 1;
+    }
+
+    &.is-hidden {
+      @keyframes slide-up {
+        from {
+          transform: translateY(0%);
+        }
+
+        to {
+          transform: translateY(-100%);
+        }
+      }
+
+      animation-name: slide-up;
+      animation-duration: $animation-speed;
+      animation-timing-function: linear;
+      animation-delay: 0ms;
+      animation-fill-mode: forwards;
+      animation-iteration-count: 1;
+    }
+  }
+  // EOL: @media(min-width: 992px)
 
   @media(min-width: 1400px) {
     .header-container {
