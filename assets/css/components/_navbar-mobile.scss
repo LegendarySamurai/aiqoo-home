@@ -1,11 +1,16 @@
-@media(min-width: 300px) and (max-width: 800px) {
-  .navbar {
+@media only screen and (min-width: 300px) and (max-width: 800px) {
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 56px;
+    padding: 0 15px;
+    background-color: $primaryColor;
 
     .logo {
       width: 75px;
@@ -13,14 +18,29 @@
   }
 
   .navbar-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
     padding: 30px;
   }
 
   .user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 15px;
     font-family: $main-font;
     color: $primaryColor;
-    .user-name {}
-    .user-address {}
+
+    .user-name {
+      font-size: 10.5pt;
+    }
+
+    .user-address {
+      font-size: 8pt;
+    }
   }
 
   .navbar-nav {
@@ -30,6 +50,60 @@
     align-items: center;
     width: 100%;
     padding-left: 30px;
+  }
+
+  .nav-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  .nav-link {
+    width: 100%;
+  }
+
+  .nav-icon {
+    display: block;
+    width: 26px;
+    height: 30px;
+
+    &.icon-home {
+      background: url('../images/icons/home.png') no-repeat center 100%;
+    }
+
+    &.icon-trending-categories {
+      background: url('../images/icons/nav-trending-categories.png') no-repeat center 100%;
+    }
+
+    &.icon-support {
+      background: url('../images/icons/nav-support.png') no-repeat center 100%;
+    }
+
+    &.icon-aiq-magazine {
+      background: url('../images/icons/aiq-magazine.png') no-repeat center 100%;
+    }
+
+    &.icon-contact-us {
+      background: url('../images/icons/mail.png') no-repeat center 100%;
+    }
+
+    &.icon-search {
+      background: url('../images/icons/magnifier.png') no-repeat center 100%;
+    }
+
+    &.icon-settings {
+      background: url('../images/icons/settings.png') no-repeat center 100%;
+    }
+  }
+
+  .link-name {
+    padding-left: 25px;
+    font-family: $main-font;
+    color: $primaryColor;
+    font-size: 10.5pt;
   }
 
   .hide-navbar {

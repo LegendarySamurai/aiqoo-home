@@ -15,142 +15,87 @@
 </head>
 <body>
 
-<header class="header">
+
+
+<header class="header-sticky">
   <div class="header-container container-fluid container-lg">
-    <div class="row position-relative">
+    <div class="row">
       <!-- header mobile -->
-      <div class="col-12 d-lg-none header-mobile">
-        <div class="navbar">
-          <div class="navbar-expand bg-transparent">
-            <span class="navbar-toggler hide-navbar" id="hide-navbar"></span>
-            <span class="navbar-toggler show-navbar" id="show-navbar">
+      <div class="col-12 d-lg-none px-0">
+        <div class="header-mobile">
+          <div class="navbar">
+            <div class="navbar-expand bg-transparent">
+              <span class="navbar-toggler hide-navbar" id="hide-navbar"></span>
+              <span class="navbar-toggler show-navbar" id="show-navbar">
               <i class="fal fa-bars icon-white half-opacity"></i>
             </span>
+            </div>
+            <img src="assets/images/logo/logo.svg" class="logo position-relative" alt=""/>
+            <i class="far fa-search icon-white half-opacity"></i>
           </div>
-          <img src="assets/images/logo/logo.svg" class="logo position-relative" alt=""/>
-          <i class="far fa-search icon-white half-opacity"></i>
+
+          <nav class="navbar-collapse collapse" id="navbar">
+            <div class="navbar-header">
+              <div class="avatar">
+                <img src="assets/images/header/avatar.png">
+              </div>
+              <div class="user-info">
+                <span class="user-name font-weight-bold">John Doe</span>
+                <span class="user-address">San Francisco, CA</span>
+              </div>
+            </div>
+
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <span class="nav-icon icon-home"></span>
+                <a class="nav-link" href="index.html">
+                  <span class="link-name">Home</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <span class="nav-icon icon-trending-categories"></span>
+                <a class="nav-link" href="index.html">
+                  <span class="link-name">Tranding Categories</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <span class="nav-icon icon-support"></span>
+                <a class="nav-link" href="index.html">
+                  <span class="link-name">Services</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <span class="nav-icon icon-aiq-magazine"></span>
+                <a class="nav-link" href="index.html">
+                  <span class="link-name">AIQ Magazine</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <span class="nav-icon icon-contact-us"></span>
+                <a class="nav-link" href="index.html">
+                  <span class="link-name">Contact us</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <span class="nav-icon icon-settings"></span>
+                <a class="nav-link" href="index.html">
+                  <span class="link-name">Settings</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <span class="nav-icon icon-search"></span>
+                <a class="nav-link" href="index.html">
+                  <span class="link-name">Search</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
-
-        <nav class="navbar-collapse collapse" id="navbar">
-          <div class="navbar-header">
-            <div class="avatar">
-              <img src="assets/images/header/avatar.png">
-            </div>
-            <div class="user-info">
-              <span class="user-name">John Doe</span>
-              <span class="user-address">San Francisco, CA</span>
-            </div>
-          </div>
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">
-                <span class="icon-home"></span>
-                Home
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">
-                <span class="icon-trending-categories"></span>
-                Tranding Categories
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">
-                <span class="icon-trending-categories"></span>
-                Services
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">
-                <span class="icon-trending-categories"></span>
-                AIQ Magazine
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">
-                <span class="icon-trending-categories"></span>
-                Contact us
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">
-                <span class="icon-trending-categories"></span>
-                Settings
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">
-                <span class="icon-trending-categories"></span>
-                Search
-              </a>
-            </li>
-
-          </ul>
-        </nav>
       </div>
       <!-- EOL: header mobile -->
 
-      <div class="col-12">
-        <div class="header-content position-relative">
-          <img src="assets/images/logo/logo.svg" class="logo position-relative d-none d-lg-block" alt=""/>
-          <h1 class="position-relative d-none d-lg-block">YOUR TRUSTED SOURCE FOR ANY PROJECT YOU NEED</h1>
-
-          <!-- search box -->
-          <div class="find-box">
-            <div class="form-group position-relative">
-              <input class="form-control" type="text" placeholder="I’m looking for a roofing fixture">
-              <div class="super-placeholder d-none d-lg-flex">
-                <img src="assets/images/icons/pen-6.svg" alt="">
-                <span>What services are you looking for? </span>
-              </div>
-              <button class="find-btn" type="button">FIND A PRO</button>
-            </div>
-            <div class="reasons">
-              <div class="reason">
-                <img class="reason-icon" src="assets/images/header/licensed.png" alt="licensed"/>
-                <div class="headings">
-                  <h2>Licensed</h2>
-                  <h3>All pro’s are trade licenses and certified</h3>
-                </div>
-              </div>
-
-              <div class="reason">
-                <img class="reason-icon" src="assets/images/header/protected.svg" alt="protected"/>
-                <div class="headings">
-                  <h2>Protected</h2>
-                  <h3>All pro’s are screened and vetted</h3>
-                </div>
-              </div>
-
-              <div class="reason">
-                <img class="reason-icon" src="assets/images/header/rating.png" alt="rating"/>
-                <div class="headings">
-                  <h2>5 star rating</h2>
-                  <h3>Quality approved pros only</h3>
-                </div>
-              </div>
-
-              <div class="reason">
-                <img class="reason-icon" src="assets/images/header/local.png" alt="local"/>
-                <div class="headings">
-                  <h2>Local</h2>
-                  <h3>All pros are local and are operating near you</h3>
-                </div>
-              </div>
-
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
-
-<header class="header-sticky d-none d-lg-block">
-  <div class="header-container container-fluid container-lg">
-    <div class="row">
-      <div class="col-12">
+      <!-- header desktop -->
+      <div class="col-12 d-none d-lg-block">
         <div class="header-content position-relative">
           <img src="assets/images/logo/logo.svg" class="logo position-relative" alt=""/>
 
@@ -158,20 +103,85 @@
           <div class="find-box">
             <div class="form-group position-relative">
               <input class="form-control" type="text" placeholder="I’m looking for a roofing fixture">
-              <div class="super-placeholder d-none d-lg-flex">
-                <img src="assets/images/icons/pen-6.svg" alt="">
-                <span>What services are you looking for? </span>
+              <div class="super-placeholder">
+                <img src="assets/images/icons/pen-6.svg" alt="pen">
+                <span class="super-placeholder-heading">What services are you looking for? </span>
               </div>
               <button class="find-btn" type="button">FIND A PRO</button>
             </div>
           </div>
         </div>
       </div>
+      <!-- EOL: header desktop -->
+
     </div>
   </div>
 </header>
 
+
+
 <main class="home">
+  <section class="head-section position-relative">
+    <div class="head-section-container container-fluid container-lg">
+      <div class="row">
+        <div class="col-12">
+          <div class="head-section-content position-relative">
+            <img src="assets/images/logo/logo.svg" class="logo position-relative d-none d-lg-block" alt=""/>
+            <h1 class="position-relative d-none d-lg-block">YOUR TRUSTED SOURCE FOR ANY PROJECT YOU NEED</h1>
+
+            <!-- search box -->
+            <div class="find-box">
+              <span class="super-placeholder-heading d-lg-none">What services are you looking for? </span>
+              <div class="form-group position-relative">
+                <input class="form-control" type="text" placeholder="I’m looking for a roofing fixture">
+                <div class="super-placeholder">
+                  <img class="d-none d-lg-block" src="assets/images/icons/pen-6.svg" alt="pen">
+                  <img class="d-lg-none" src="assets/images/icons/magnifier.svg" alt="search">
+                  <span class="super-placeholder-heading d-none d-lg-block">What services are you looking for? </span>
+                </div>
+                <button class="find-btn" type="button">FIND A PRO</button>
+              </div>
+              <div class="reasons d-none d-lg-flex">
+                <div class="reason">
+                  <img class="reason-icon" src="assets/images/header/licensed.png" alt="licensed"/>
+                  <div class="headings">
+                    <h2>Licensed</h2>
+                    <h3>All pro’s are trade licenses and certified</h3>
+                  </div>
+                </div>
+
+                <div class="reason">
+                  <img class="reason-icon" src="assets/images/header/protected.svg" alt="protected"/>
+                  <div class="headings">
+                    <h2>Protected</h2>
+                    <h3>All pro’s are screened and vetted</h3>
+                  </div>
+                </div>
+
+                <div class="reason">
+                  <img class="reason-icon" src="assets/images/header/rating.png" alt="rating"/>
+                  <div class="headings">
+                    <h2>5 star rating</h2>
+                    <h3>Quality approved pros only</h3>
+                  </div>
+                </div>
+
+                <div class="reason">
+                  <img class="reason-icon" src="assets/images/header/local.png" alt="local"/>
+                  <div class="headings">
+                    <h2>Local</h2>
+                    <h3>All pros are local and are operating near you</h3>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="categories">
     <div class="container section-container">
       <!-- trending categories-->
