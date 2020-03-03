@@ -49,7 +49,7 @@
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    padding-left: 30px;
+    //padding-left: 30px;
   }
 
   .nav-item {
@@ -57,8 +57,12 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    width: 100%;
-    padding: 15px 0;
+    width: 90%;
+    padding: 12px 15px;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid transparentize($grey, .5);
+    }
   }
 
   .nav-link {
@@ -71,31 +75,31 @@
     height: 30px;
 
     &.icon-home {
-      background: url('../images/icons/home.png') no-repeat center 100%;
+      background: url('../images/icons/home.png') no-repeat center;
     }
 
     &.icon-trending-categories {
-      background: url('../images/icons/nav-trending-categories.png') no-repeat center 100%;
+      background: url('../images/icons/nav-trending-categories.png') no-repeat center;
     }
 
     &.icon-support {
-      background: url('../images/icons/nav-support.png') no-repeat center 100%;
+      background: url('../images/icons/nav-support.png') no-repeat center;
     }
 
     &.icon-aiq-magazine {
-      background: url('../images/icons/aiq-magazine.png') no-repeat center 100%;
+      background: url('../images/icons/aiq-magazine.png') no-repeat center;
     }
 
     &.icon-contact-us {
-      background: url('../images/icons/mail.png') no-repeat center 100%;
+      background: url('../images/icons/mail.png') no-repeat center;
     }
 
     &.icon-search {
-      background: url('../images/icons/magnifier.png') no-repeat center 100%;
+      background: url('../images/icons/magnifier.png') no-repeat center;
     }
 
     &.icon-settings {
-      background: url('../images/icons/settings.png') no-repeat center 100%;
+      background: url('../images/icons/settings.png') no-repeat center;
     }
   }
 
@@ -112,7 +116,6 @@
     top: 0;
     width: 35%;
     height: 100vh;
-    //background-color: transparentize(#ccc, .75);
   }
 
   .fa-search,
@@ -130,6 +133,7 @@
     width: 65%;
     height: 100vh;
     background-color: #fff;
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.16);
 
     &.navbar-active {
       @keyframes slide-right {
