@@ -22,12 +22,13 @@
   }
 
   .list-col-item {
+    line-height: 1.5;
     width: 50%;
     font-size: 13pt;
   }
 
   .services-list-col {
-    width: 100%;
+    width: 50%;
     font-size: 13pt;
   }
 
@@ -140,6 +141,12 @@
   .list {
     padding-left: 20px;
     padding-right: 20px;
+
+    h4,
+    p,
+    .view-more {
+      line-height: 2;
+    }
 
     h4 {
       font-size: 13pt;
