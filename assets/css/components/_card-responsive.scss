@@ -27,16 +27,10 @@
   // EOL: @media(min-width: 300px)
 
   @media(min-width: 600px) {
+    max-width: 500px;
+
     .card-body {
       padding: 20px 20px 16px;
-
-      .card-title {
-
-      }
-
-      .description {
-
-      }
     }
   }
   // EOL: @media(min-width: 600px)

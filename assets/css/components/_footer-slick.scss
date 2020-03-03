@@ -2,6 +2,10 @@
   .slick-slide {
     width: calc(100vw - 60px);
     padding: 0 15px;
+
+    &:focus {
+      outline: 0;
+    }
   }
 
   .slick-current + .slick-slide {

@@ -78,7 +78,7 @@ a:active {
   color: $text-color;
 }
 
-a:focus {
+input:focus, a:focus, button:focus {
   outline: 0;
   text-decoration: none;
   color: $text-color;
