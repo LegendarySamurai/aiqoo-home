@@ -493,9 +493,18 @@
         font-size: 12pt;
         background-color: transparentize(#333, .6);
 
+        .join-our-network-inner {
+          max-width: 400px;
+          width: 100%;
+          margin: 0 auto;
+        }
+
         i {
+          position: absolute;
+          top: 50%;
+          right: 20px;
+          transform: translate(0, -50%);
           font-size: 14pt;
-          margin-left: auto;
         }
       }
     }
