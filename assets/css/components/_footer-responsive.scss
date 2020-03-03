@@ -14,7 +14,7 @@
     }
 
     .content-column-right {
-      margin-top: 40px;
+      margin-top: 60px;
     }
 
     .page-footer-link {
@@ -76,8 +76,8 @@
   .post-stats {
     display: flex;
     justify-content: flex-end;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .post-stats-item {
@@ -212,6 +212,14 @@
       display: block;
     }
 
+    .content-column-center {
+      margin-top: 0;
+    }
+
+    .content-column-right {
+      margin-top: 0;
+    }
+
     .brand-logo {
       width: 145px;
     }
@@ -223,6 +231,11 @@
     .dummy-image {
       width: 130px;
       height: 100px;
+    }
+
+    .post-stats {
+      padding-top: 15px;
+      padding-bottom: 15px;
     }
   }
 
@@ -241,12 +254,7 @@
     }
 
     .content-column-center {
-      margin-top: 0;
       padding-right: 60px;
-    }
-
-    .content-column-right {
-      margin-top: 0;
     }
   }
 }

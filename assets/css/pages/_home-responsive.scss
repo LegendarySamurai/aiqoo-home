@@ -338,7 +338,6 @@
         }
 
         span {
-          text-align: center;
           margin-top: 10px;
           line-height: 1.5;
           font-size: 11pt;
@@ -482,25 +481,25 @@
   //  }
   //}
 
-  @media(min-width: 768px) {
-    .super-placeholder {
-      left: 24px;
-
-      img {
-        width: 36px;
-      }
-
-      .search-btn {
-        height: calc(100% - 8px);
-        padding: .375rem 1rem;
-        font-size: 13pt;
-
-        i {
-          margin-left: 25px;
-        }
-      }
-    }
-  }
+  //@media(min-width: 768px) {
+  //  .super-placeholder {
+  //    left: 24px;
+  //
+  //    img {
+  //      width: auto !important;
+  //    }
+  //
+  //    .search-btn {
+  //      height: calc(100% - 8px);
+  //      padding: .375rem 1rem;
+  //      font-size: 13pt;
+  //
+  //      i {
+  //        margin-left: 25px;
+  //      }
+  //    }
+  //  }
+  //}
   // EOL: @media(min-width: 768px)
 
   @media(min-width: 992px) {
@@ -688,6 +687,12 @@
     }
 
     .google-search {
+      .super-placeholder {
+        img {
+          width: auto;
+        }
+      }
+
       .search-btn {
         width: 204px;
         padding: .375rem .75rem;
@@ -835,7 +840,7 @@
       }
 
       .questionnaire-content-outer {
-        margin-top: 40px;
+        margin-top: 30px;
       }
 
       .questionnaire-content-inner {
