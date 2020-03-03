@@ -13,30 +13,6 @@
     max-height: 100%;
   }
 
-  .bathroom {
-    width: 42px;
-  }
-
-  .garage-conversion {
-    width: 47px;
-  }
-
-  .heating-cooling {
-    width: 42px;
-  }
-
-  .kitchen {
-    width: 44px;
-  }
-
-  .roofing {
-    width: 72px;
-  }
-
-  .windows-doors {
-    width: 44px;
-  }
-
   .list-col {
     display: flex;
     flex-wrap: wrap;
@@ -45,28 +21,94 @@
     align-items: flex-start;
   }
 
-  .list-col-item,
+  .list-col-item {
+    width: 50%;
+    font-size: 13pt;
+  }
+
   .services-list-col {
     width: 100%;
     font-size: 13pt;
   }
 
   .list-item-with-icon {
+    align-content: flex-start;
     height: 103px;
-    padding: 30px 0;
+    //padding: 30px 0;
 
     .list-item-icon {
+      width: 68px;
+      height: 57px;
+      display: flex;
+      align-items: flex-start;
       margin-bottom: 20px;
     }
 
     h5 {
-      font-size: 14pt;
+      font-family: $main-font;
+      font-weight: 400;
+      font-size: 9pt;
+      color: #342e49;
     }
   }
+}
 
-  // Services-list
-  .services-list-col {
+@media only screen and (min-width: 300px) and (max-width: 991px) {
+  .col-item {
+    position: relative;
 
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3) {
+      padding-bottom: 20px;
+
+      &:after {
+        display: block;
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        height: 1px;
+        background-color: $grey;
+      }
+    }
+
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6) {
+      padding-top: 20px;
+    }
+
+    &:nth-child(1),
+    &:nth-child(4),
+    &:nth-child(3),
+    &:nth-child(6) {
+      //padding-right: 20px;
+      //padding-left: 20px;
+
+      &:before {
+        display: block;
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: auto;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 90%;
+        width: 1px;
+        background-color: $grey;
+      }
+    }
+
+    &:nth-child(1),
+    &:nth-child(4) {
+      &:before {
+        left: auto;
+        right: 0;
+      }
+    }
   }
 }
 
@@ -112,12 +154,13 @@
     }
 
     .list-item-icon {
+      align-items: center;
       height: 44px;
       margin-bottom: 25px;
     }
 
     h5 {
-      font-size: 11pt;
+      font-size: 11.25pt;
     }
 
     .list-col-item,
