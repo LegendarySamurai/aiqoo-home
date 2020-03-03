@@ -91,7 +91,6 @@
   }
 
   .google-search {
-
     .form-group {
       width: 100%;
     }
@@ -108,13 +107,6 @@
       color: $text-color;
     }
 
-    .super-placeholder {
-      position: absolute;
-      top: 0;
-      //left: 24px;
-      transform: translate(0, 50%);
-    }
-
     .search-btn {
       position: absolute;
       top: 4px;
@@ -127,18 +119,6 @@
   }
 
   .questionnaire {
-
-    &:before {
-      display: block;
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 0;
-      transform: translateY(-50%);
-      width: 100%;
-      background-color: $primaryColor;
-    }
-
     .questionnaire-title,
     .questionnaire-text {
       font-family: $h-font;

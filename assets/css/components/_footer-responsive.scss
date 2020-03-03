@@ -91,7 +91,6 @@
   }
 
   .page-footer-subscribe-box {
-    width: 340px;
     margin: 30px auto 0;
 
     .form-control {
@@ -114,10 +113,24 @@
       }
     }
 
+    .newsletter-icon {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 100%;
+      opacity: .7;
+      font-size: 1.875rem;
+    }
+
     .btn-subscribe-submit {
       display: flex;
       justify-content: center;
       align-items: center;
+      width: 100%;
       height: 60px;
       color: $primaryColor;
       border-radius: 2px;
