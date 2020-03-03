@@ -4,10 +4,9 @@
 
     .head-section {
       .head-section-content {
-        padding-top: 100px;
+        padding-top: 110px;
         margin-top: -56px;
-        height: calc(100vh - 290px);
-        //height: calc(100vh - 250px);
+        height: calc(100vh - 63vw);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -36,7 +35,6 @@
       .super-placeholder {
         position: absolute;
         top: 0;
-        //left: 10px;
         left: 0;
         display: flex;
         flex-direction: row;
@@ -44,7 +42,6 @@
         align-items: center;
         width: 50px;
         height: 100%;
-        //background-color: coral;
       }
 
       .super-placeholder-heading {
@@ -88,7 +85,7 @@
           justify-content: flex-start;
           align-items: center;
           width: 50%;
-          margin-bottom: 20px;
+          //margin-bottom: 20px;
         }
 
         .reason-icon {
@@ -98,14 +95,6 @@
         .headings {
           text-align: center;
           margin-top: 10px;
-
-          & h2 {
-            font-size: 13pt;
-          }
-
-          & h3 {
-            font-size: 11pt;
-          }
         }
       }
     }
@@ -369,12 +358,85 @@
         background-color: #f4eee4;
       }
 
+      .reason {
+        position: relative;
+
+        &:before,
+        &:after {
+          display: block;
+          content:'';
+          position: absolute;
+          background-color: #d2cec6;
+        }
+
+        &.licensed {
+          padding-bottom: 10px;
+
+          &:before {
+            height: 80%;
+            width: 1px;
+            right: 0;
+            bottom: 0;
+          }
+
+          &:after {
+            width: 80%;
+            height: 1px;
+            bottom: 0;
+            right: 0;
+          }
+        }
+
+        &.protected {
+          padding-bottom: 10px;
+          &:before {
+            width: 80%;
+            height: 1px;
+            bottom: 0;
+            left: 0;
+          }
+        }
+
+        &.rating {
+          padding-top: 10px;
+          &:before {
+            height: 80%;
+            width: 1px;
+            right: 0;
+            top: 0;
+          }
+        }
+
+        &.local {
+          padding-top: 10px;
+        }
+      }
+
       .reason-icon {
         display: flex;
         align-items: center;
         width: 35px;
         height: 35px;
-        background-color: transparentize(coral, .5);
+      }
+
+      .headings {
+        padding: 0 20px;
+        margin-top: 8px;
+      }
+
+      h2 {
+        font-family: $main-font;
+        font-weight: bold;
+        color: $text-color;
+        font-size: 10.5pt;
+      }
+
+      h3 {
+        line-height: 1.25;
+        margin-top: 5px;
+        color: $grey;
+        font-weight: 400;
+        font-size: 8.25pt;
       }
 
       .join-our-network {
@@ -616,6 +678,7 @@
 
         .headings {
           text-align: left;
+          margin-left: 15px;
 
           & h2 {
             font-size: 12pt;
