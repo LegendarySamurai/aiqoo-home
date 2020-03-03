@@ -1,0 +1,10 @@
+.page-footer {
+  .slick-slide {
+    width: calc(100vw - 80px);
+    padding: 0 15px;
+  }
+
+  .slick-current + .slick-slide {
+    margin-left: -15px;
+  }
+}

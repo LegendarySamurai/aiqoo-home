@@ -1,6 +1,6 @@
 @media(min-width: 300px) {
   .page-footer {
-    padding-top: 30px;
+    padding-top: 20px;
 
     .content-column-left {
       display: flex;
@@ -9,7 +9,8 @@
 
     .content-column-center {
       margin-top: 40px;
-      padding-right: 40px;
+      //padding-left: 0;
+      //padding-right: 0;
     }
 
     .content-column-right {
@@ -26,7 +27,7 @@
     padding-bottom: 40px;
 
     .brand-logo {
-      align-self: center;
+      align-self: flex-start;
       width: 145px;
     }
 
@@ -54,11 +55,33 @@
     .posts-divider {
       margin: 28px 0;
     }
+  }
 
-    .dummy-image {
-      width: 110px;
-      height: 100px;
+  .popular-posts {
+    margin-left: -15px;
+    margin-right: -15px;
+
+    .post {
+      h5 {
+        margin-bottom: 15px;
+      }
     }
+  }
+
+  .dummy-image {
+    width: 100%;
+    height: 150px;
+  }
+
+  .post-stats {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .post-stats-item {
+    margin-left: 30px;
   }
 
   .page-footer-footer {
@@ -71,6 +94,61 @@
     width: 340px;
     margin: 30px auto 0;
 
+    .form-control {
+      height: 60px;
+      padding: 0 15px 0 60px;
+      font-size: 10pt;
+      background-color: #fff;
+
+      &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: #999;
+      }
+      &::-moz-placeholder { /* Firefox 19+ */
+        color: #999;
+      }
+      &:-ms-input-placeholder { /* IE 10+ */
+        color: #999;
+      }
+      &:-moz-placeholder { /* Firefox 18- */
+        color: #999;
+      }
+    }
+
+    .btn-subscribe-submit {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60px;
+      color: $primaryColor;
+      border-radius: 2px;
+      background-color: #d8cdba;
+    }
+  }
+}
+// EOL: @media(min-width: 300px)
+
+@media(min-width: 600px) {
+  .page-footer {
+    padding-top: 30px;
+
+    .popular-posts {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .dummy-image {
+      width: 110px;
+      height: 100px;
+    }
+  }
+
+  .content-column-center {
+    padding-right: 40px;
+  }
+
+  .page-footer-subscribe-box {
+    width: 400px;
+
     label {
       height: 52px;
       padding: 0 15px;
@@ -81,16 +159,22 @@
       height: 40px;
       padding: 0 15px;
       font-size: 10pt;
+      background-color: #d8cdba;
+
+      &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: #d8cdba;
+      }
+      &::-moz-placeholder { /* Firefox 19+ */
+        color: #d8cdba;
+      }
+      &:-ms-input-placeholder { /* IE 10+ */
+        color: #d8cdba;
+      }
+      &:-moz-placeholder { /* Firefox 18- */
+        color: #d8cdba;
+      }
     }
   }
-}
-// EOL: @media(min-width: 300px)
-
-@media(min-width: 600px) {
-  .page-footer-subscribe-box {
-    width: 400px;
-  }
-
 }
 // EOL: @media(min-width: 600px)
 
@@ -116,7 +200,6 @@
     }
 
     .brand-logo {
-      align-self: flex-start;
       width: 145px;
     }
 
