@@ -3,9 +3,8 @@
     padding-top: 56px;
 
     .head-section {
-
       .head-section-content {
-        height: calc(100vh - 300px);
+        height: calc(100vh - 220px);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -34,6 +33,7 @@
       .super-placeholder {
         position: absolute;
         top: 0;
+        //left: 10px;
         left: 0;
         display: flex;
         flex-direction: row;
@@ -45,17 +45,20 @@
       }
 
       .super-placeholder-heading {
-        //transform: translate(0, -90px);
+        display: block;
+        line-height: 1.5;
+        margin-bottom: 10px;
         font-family: $h-font;
         font-weight: bold;
         font-size: 16.5pt;
         color: #fff;
+        text-align: center;
       }
 
       .form-control {
         height: 48px;
         padding-right: 10px;
-        padding-left: 60px;
+        padding-left: 50px;
         border-radius: 4px;
         box-shadow: 0px 11px 7px 0 rgba(0, 0, 0, 0.02);
         border: solid 2px #d8cdba;
@@ -66,8 +69,8 @@
       .form-control::placeholder {
         font-family: $main-font;
         font-weight: 500;
-        font-size: 8pt;
-        color: #352f4a;
+        font-size: 9.75pt;
+        color: #b3b3b3;
       }
 
       .reasons {
@@ -313,9 +316,9 @@
     .head-section {
       .find-btn {
         width: auto;
-        top: 4px;
-        right: 4px;
-        height: calc(100% - 8px);
+        //top: 4px;
+        //right: 4px;
+        //height: calc(100% - 8px);
         padding: 0 10px;
         background-image: none;
         background-color: $primaryColor;
@@ -357,38 +360,38 @@
   }
   // EOL: @media(min-width: 600px)
 
-  @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .head-section {
-      .reasons {
-        padding: 0 15px;
-
-        .reason {
-          flex-direction: row;
-          align-items: center;
-          padding: 10px;
-          height: 90px;
-          margin-bottom: 0;
-        }
-
-        .headings {
-          text-align: left;
-          margin-top: 0;
-
-          & h2 {
-            font-size: 11pt;
-          }
-
-          & h3 {
-            font-size: 9pt;
-          }
-        }
-
-        .reason-icon {
-          width: 25px;
-        }
-      }
-    }
-  }
+  //@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  //  .head-section {
+  //    .reasons {
+  //      padding: 0 15px;
+  //
+  //      //.reason {
+  //      //  flex-direction: row;
+  //      //  align-items: center;
+  //      //  padding: 10px;
+  //      //  height: 90px;
+  //      //  margin-bottom: 0;
+  //      //}
+  //
+  //      .headings {
+  //        text-align: left;
+  //        margin-top: 0;
+  //
+  //        & h2 {
+  //          font-size: 11pt;
+  //        }
+  //
+  //        & h3 {
+  //          font-size: 9pt;
+  //        }
+  //      }
+  //
+  //      //.reason-icon {
+  //      //  width: 25px;
+  //      //}
+  //    }
+  //  }
+  //}
 
   @media(min-width: 768px) {
     .super-placeholder {
@@ -428,16 +431,21 @@
       .super-placeholder {
         position: absolute;
         top: 0;
+        left: 20px;
+        width: initial;
         height: 100%;
-        left: 30px;
 
-        span {
-          font-size: 10pt;
+        img {
+          width: 12px;
         }
       }
 
       .super-placeholder-heading {
+        margin-left: 8px;
+        margin-bottom: 0;
         color: #352f4a;
+        text-align: initial;
+        font-size: 12pt;
       }
 
       h1 {
@@ -457,6 +465,9 @@
       }
 
       .find-btn {
+        top: 1px;
+        right: 1px;
+        height: calc(100% - 2px);
         width: 150px;
         margin-top: 0;
         font-size: 16px;
@@ -470,12 +481,17 @@
         box-shadow: 0px 11px 7px 0 rgba(0, 0, 0, 0.02);
         border: solid 2px #d8cdba;
         background-color: #ffffff;
+        font-size: 12pt;
+      }
+
+      .form-control::placeholder {
+        font-size: 12pt;
       }
 
       .logo {
         width: 100%;
         max-width: 300px;
-        margin-top: 70px;
+        margin-top: 50px;
       }
 
       h1 {
@@ -511,6 +527,8 @@
         }
 
         .headings {
+          text-align: left;
+
           & h2 {
             font-size: 12pt;
           }
@@ -522,7 +540,7 @@
         }
 
         .reason-icon {
-          width: 30px;
+          width: 36px;
         }
       }
     }
@@ -534,7 +552,7 @@
     }
 
     .categories {
-      padding-top: 60px;
+      padding-top: 200px;
       padding-bottom: 320px;
     }
 
@@ -746,16 +764,16 @@
         padding-right: 210px;
       }
 
-      .form-control,
-      .form-control::placeholder {
-        font-size: 12pt;
-      }
-
-      .super-placeholder {
-        span {
-          font-size: 12pt;
-        }
-      }
+      //.form-control,
+      //.form-control::placeholder {
+      //  font-size: 12pt;
+      //}
+      //
+      //.super-placeholder {
+      //  span {
+      //    //font-size: 12pt;
+      //  }
+      //}
     }
 
     .view-more-container {
