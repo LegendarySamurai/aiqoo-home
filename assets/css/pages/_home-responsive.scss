@@ -4,11 +4,14 @@
 
     .head-section {
       .head-section-content {
-        height: calc(100vh - 220px);
+        padding-top: 100px;
+        margin-top: -56px;
+        height: calc(100vh - 290px);
+        //height: calc(100vh - 250px);
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        //justify-content: center;
         background-image: url('../images/header/main-image-m.jpg');
         background-repeat: no-repeat;
         background-position: center 0;
@@ -358,56 +361,92 @@
   }
   // EOL: @media(min-width: 300px)
 
-  @media(min-width: 600px) {
+  // Only for mobile devices
+  @media only screen and (min-width: 300px) and (max-width: 991px) {
     .head-section {
-      .find-btn {
-        width: auto;
-        //top: 4px;
-        //right: 4px;
-        //height: calc(100% - 8px);
-        padding: 0 10px;
-        background-image: none;
-        background-color: $primaryColor;
-        font-weight: bold;
-        font-size: inherit;
-        text-align: center;
-        color: #ffffff;
-      }
-    }
-
-    .questionnaire-content-inner {
-      padding: 10px 20px;
-    }
-
-    .questionnaire-content-item {
-      flex-direction: row;
-      padding: 25px 20px;
-
-      span {
-        margin-top: 0;
-        text-align: left;
-      }
-    }
-
-    .google-search {
-      padding: 0 50px 0 50px;
-
-      .super-placeholder {
-        img {
-          width: auto;
-        }
+      .reasons {
+        padding: 10px;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.27);
+        background-color: #f4eee4;
       }
 
-      .form-control {
-        //padding: 0 150px 0 130px;
-        font-size: 13.5pt;
+      .reason-icon {
+        display: flex;
+        align-items: center;
+        width: 35px;
+        height: 35px;
+        background-color: transparentize(coral, .5);
+      }
 
-        &::placeholder {
-          font-size: 13.5pt;
+      .join-our-network {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 15px 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: #fff;
+        font-family: $h-font;
+        font-weight: 300;
+        font-size: 12pt;
+        background-color: transparentize(#333, .6);
+
+        i {
+          font-size: 14pt;
+          margin-left: auto;
         }
       }
     }
   }
+
+  //@media(min-width: 600px) {
+  //  .head-section {
+  //    .find-btn {
+  //      width: auto;
+  //      //top: 4px;
+  //      //right: 4px;
+  //      //height: calc(100% - 8px);
+  //      padding: 0 10px;
+  //      background-image: none;
+  //      background-color: $primaryColor;
+  //      font-weight: bold;
+  //      font-size: inherit;
+  //      text-align: center;
+  //      color: #ffffff;
+  //    }
+  //  }
+  //
+  //  .questionnaire-content-inner {
+  //    padding: 10px 20px;
+  //  }
+  //
+  //  .questionnaire-content-item {
+  //    flex-direction: row;
+  //    padding: 25px 20px;
+  //
+  //    img {
+  //      margin-right: 30px;
+  //    }
+  //
+  //    span {
+  //      margin-top: 0;
+  //      text-align: left;
+  //    }
+  //  }
+  //
+  //  .google-search {
+  //    .form-control {
+  //      //padding: 0 150px 0 130px;
+  //      font-size: 13.5pt;
+  //
+  //      &::placeholder {
+  //        font-size: 13.5pt;
+  //      }
+  //    }
+  //  }
+  //}
   // EOL: @media(min-width: 600px)
 
   //@media only screen and (min-width: 768px) and (max-width: 1024px) {
