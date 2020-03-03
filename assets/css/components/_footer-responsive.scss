@@ -9,8 +9,6 @@
 
     .content-column-center {
       margin-top: 40px;
-      //padding-left: 0;
-      //padding-right: 0;
     }
 
     .content-column-right {
@@ -37,7 +35,7 @@
 
     h4 {
       padding-bottom: 30px;
-      font-size: 13pt;
+      font-size: 13.5pt;
     }
 
     h5 {
@@ -45,11 +43,13 @@
     }
 
     p {
-      font-size: 11pt;
+      font-size: 13.5pt;
+      color: #d6d6d6;
     }
 
     span {
-      font-size: 9pt;
+      font-size: 12pt;
+      color: $grey;
     }
 
     .posts-divider {
@@ -64,6 +64,10 @@
     .post {
       h5 {
         margin-bottom: 15px;
+      }
+
+      i {
+        margin-right: 10px;
       }
     }
   }
@@ -96,7 +100,7 @@
     .form-control {
       height: 60px;
       padding: 0 15px 0 60px;
-      font-size: 10pt;
+      font-size: 12.75pt;
       background-color: #fff;
 
       &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -135,6 +139,10 @@
       color: $primaryColor;
       border-radius: 2px;
       background-color: #d8cdba;
+      font-family: $h-font;
+      font-size: 10.5pt;
+      font-weight: bold;
+      text-transform: uppercase;
     }
   }
 }
@@ -226,6 +234,21 @@
 
     .popular-posts {
       padding-top: 15px;
+    }
+
+    p {
+      font-size: 11.25px;
+      color: #999;
+    }
+
+    span {
+      font-size: 9pt;
+    }
+
+    .post {
+      i {
+        margin-right: 0;
+      }
     }
 
     .dummy-image {
