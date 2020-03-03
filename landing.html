@@ -15,26 +15,104 @@
 </head>
 <body>
 
-<header class="header-sticky is-shown">
+<header class="header-sticky">
   <div class="header-container container-fluid container-lg">
     <div class="row">
-      <div class="col-12">
+      <!-- header mobile -->
+      <div class="col-12 d-lg-none px-0">
+        <div class="header-mobile">
+          <div class="navbar">
+            <div class="navbar-expand bg-transparent">
+              <span class="navbar-toggler hide-navbar" id="hide-navbar"></span>
+              <span class="navbar-toggler show-navbar" id="show-navbar">
+              <i class="fal fa-bars icon-white half-opacity"></i>
+            </span>
+            </div>
+            <img src="assets/images/logo/logo.svg" class="logo position-relative" alt=""/>
+            <i class="far fa-search icon-white half-opacity"></i>
+          </div>
+
+          <!-- navbar collapse -->
+          <nav class="navbar-collapse collapse" id="navbar">
+            <div class="navbar-header">
+              <div class="avatar">
+                <img src="assets/images/header/avatar.png">
+              </div>
+              <div class="user-info">
+                <span class="user-name font-weight-bold">John Doe</span>
+                <span class="user-address">San Francisco, CA</span>
+              </div>
+            </div>
+
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <span class="nav-icon icon-home"></span>
+                <a class="nav-link" href="index.html">
+                  <span class="link-name">Home</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <span class="nav-icon icon-trending-categories"></span>
+                <a class="nav-link" href="index.html">
+                  <span class="link-name">Tranding Categories</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <span class="nav-icon icon-support"></span>
+                <a class="nav-link" href="index.html">
+                  <span class="link-name">Services</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <span class="nav-icon icon-aiq-magazine"></span>
+                <a class="nav-link" href="index.html">
+                  <span class="link-name">AIQ Magazine</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <span class="nav-icon icon-contact-us"></span>
+                <a class="nav-link" href="index.html">
+                  <span class="link-name">Contact us</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <span class="nav-icon icon-settings"></span>
+                <a class="nav-link" href="index.html">
+                  <span class="link-name">Settings</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <span class="nav-icon icon-search"></span>
+                <a class="nav-link" href="index.html">
+                  <span class="link-name">Search</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- EOL: header mobile -->
+
+      <!-- header desktop -->
+      <div class="col-12 d-none d-lg-block">
         <div class="header-content position-relative">
-          <img src="assets/images/logo/logo.svg" class="logo position-relative" alt="" />
+          <img src="assets/images/logo/logo.svg" class="logo position-relative" alt=""/>
 
           <!-- search box -->
           <div class="find-box">
             <div class="form-group position-relative">
               <input class="form-control" type="text" placeholder="I’m looking for a roofing fixture">
-              <div class="super-placeholder d-none d-lg-flex">
-                <img src="assets/images/icons/pen-6.svg" alt="">
-                <span>What services are you looking for? </span>
+              <div class="super-placeholder">
+                <img src="assets/images/icons/pen-6.svg" alt="pen">
+                <span class="super-placeholder-heading">What services are you looking for? </span>
               </div>
               <button class="find-btn" type="button">FIND A PRO</button>
             </div>
           </div>
         </div>
       </div>
+      <!-- EOL: header desktop -->
+
     </div>
   </div>
 </header>
@@ -316,7 +394,7 @@
     <div class="container section-container">
       <!-- trending categories-->
       <div class="row">
-        <!-- trending categories title  -->
+        <!-- trending categories title -->
         <div class="col-12">
           <div class="section-title-container">
             <span class="section-title-decoration left"></span>
@@ -327,55 +405,90 @@
         <div class="col-12">
           <!-- trending categories list -->
           <div class="row list">
-            <div class="col-6 col-lg-2 col-item">
+            <div class="col-4 col-lg-2 col-item">
               <div class="list-item-with-icon">
                 <div class="list-item-icon">
-                  <img class="bathroom" src="assets/images/categories/4.png" alt="category image" />
+                  <img class="bathroom" src="assets/images/categories/4.png" alt="category image"/>
                 </div>
                 <h5>Bathroom</h5>
               </div>
             </div>
-            <div class="col-6 col-lg-2 col-item">
+            <div class="col-4 col-lg-2 col-item">
               <div class="list-item-with-icon">
                 <div class="list-item-icon">
-                  <img class="garage-conversion" src="assets/images/categories/5.png" alt="category image" />
+                  <img class="garage-conversion" src="assets/images/categories/5.png" alt="category image"/>
                 </div>
                 <h5>Garage <br> Conversion</h5>
               </div>
             </div>
-            <div class="col-6 col-lg-2 col-item">
+            <div class="col-4 col-lg-2 col-item">
               <div class="list-item-with-icon">
                 <div class="list-item-icon">
-                  <img class="heating-cooling" src="assets/images/categories/3.png" alt="category image" />
+                  <img class="heating-cooling" src="assets/images/categories/3.png" alt="category image"/>
                 </div>
                 <h5>Heating <br> & Cooling</h5>
               </div>
             </div>
-            <div class="col-6 col-lg-2 col-item">
+            <div class="col-4 col-lg-2 col-item">
               <div class="list-item-with-icon">
                 <div class="list-item-icon">
-                  <img class="kitchen" src="assets/images/categories/2.png" alt="category image" />
+                  <img class="kitchen" src="assets/images/categories/2.png" alt="category image"/>
                 </div>
                 <h5>Kitchens</h5>
               </div>
             </div>
-            <div class="col-6 col-lg-2 col-item">
+            <div class="col-4 col-lg-2 col-item">
               <div class="list-item-with-icon">
                 <div class="list-item-icon">
-                  <img class="roofing" src="assets/images/categories/1.png" alt="category image" />
+                  <img class="roofing" src="assets/images/categories/1.png" alt="category image"/>
                 </div>
                 <h5>Roofing</h5>
               </div>
             </div>
-            <div class="col-6 col-lg-2 col-item">
+            <div class="col-4 col-lg-2 col-item">
               <div class="list-item-with-icon border-none">
                 <div class="list-item-icon">
-                  <img class="windows-doors" src="assets/images/categories/21.png" alt="category image" />
+                  <img class="windows-doors" src="assets/images/categories/21.png" alt="category image"/>
                 </div>
                 <h5>Windows <br> & Doors</h5>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <!-- other categories -->
+      <div class="row other-categories">
+        <div class="col-12">
+          <h4 class="section-sub-title text-center font-weight-bold">
+            using Lorem Ipsum is that it has a more-or-less normal distribution of letters, using
+          </h4>
+        </div>
+        <div class="col-12">
+          <div class="row list">
+            <div class="col-12 list-col">
+              <p class="list-col-item">Roofing</p>
+              <p class="list-col-item">Slidng</p>
+              <p class="list-col-item">Roofing</p>
+              <p class="list-col-item">Roofing</p>
+              <p class="list-col-item">Slidng</p>
+              <p class="list-col-item">Roofing</p>
+              <p class="list-col-item">Roofing</p>
+              <p class="list-col-item">Slidng</p>
+              <p class="list-col-item">Roofing</p>
+              <p class="list-col-item">Heating & cooling/HVAC</p>
+              <p class="list-col-item">Windows & Doors</p>
+              <p class="list-col-item">Driveways & walks</p>
+              <p class="list-col-item">Heating & cooling/HVAC</p>
+              <p class="list-col-item">Windows & Doors</p>
+              <p class="list-col-item">Driveways & walks</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row view-more-container">
+        <div class="col-auto mx-auto">
+          <button type="button" class="brand-btn primary">All categories</button>
         </div>
       </div>
     </div>
@@ -426,14 +539,14 @@
             class="brand-logo mb-lg-2"
             alt="aiqoo logo"
         />
-        <p class="lh-lg-2 mt-4 mt-lg-0 text-center text-lg-left">
+        <p class="lh-lg-2 mt-4 mt-lg-0">
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
           sed diam nonummy nibh euismod tincidunt ut laoreet dolore
           magna aliquam erat volutpat.
         </p>
 
         <!-- more information -->
-        <div class="more-information">
+        <div class="more-information d-none d-md-block">
           <div class="row">
             <div class="col-12">
               <h4>More Information</h4>
@@ -458,7 +571,70 @@
       <div class="col-12 col-lg-5 content-column-center">
         <h4>Popular Posts</h4>
 
-        <div class="popular-posts">
+        <!-- Posts: mobile only -->
+        <div class="popular-posts d-600-none">
+          <div class="slick-container">
+            <!-- single post -->
+            <div class="post">
+              <div class="dummy-image"></div>
+              <!-- post stats -->
+              <div class="post-stats pr-2 mb-2 mb-lg-0">
+                <div class="post-stats-item">
+                  <i class="fal fa-thumbs-up"></i>
+                  <span class="ml-2">546</span>
+                </div>
+                <div class="post-stats-item">
+                  <i class="fal fa-heart"></i>
+                  <span class="ml-2">119</span>
+                </div>
+              </div>
+              <h5>Amazing Apartment Family</h5>
+              <i class="fal fa-map-marker-alt icon-white"></i>
+              <span class="ml-lg-1">Vesey St, New York, NY, USA</span>
+            </div>
+
+            <!-- single post -->
+            <div class="post">
+              <div class="dummy-image"></div>
+              <!-- post stats -->
+              <div class="post-stats pr-2 mb-2 mb-lg-0">
+                <div class="post-stats-item">
+                  <i class="fal fa-thumbs-up"></i>
+                  <span class="ml-2">546</span>
+                </div>
+                <div class="post-stats-item">
+                  <i class="fal fa-heart"></i>
+                  <span class="ml-2">119</span>
+                </div>
+              </div>
+              <h5>Amazing Apartment Family</h5>
+              <i class="fal fa-map-marker-alt icon-white"></i>
+              <span class="ml-lg-1">Vesey St, New York, NY, USA</span>
+            </div>
+
+            <!-- single post -->
+            <div class="post">
+              <div class="dummy-image"></div>
+              <!-- post stats -->
+              <div class="post-stats pr-2 mb-2 mb-lg-0">
+                <div class="post-stats-item">
+                  <i class="fal fa-thumbs-up"></i>
+                  <span class="ml-2">546</span>
+                </div>
+                <div class="post-stats-item">
+                  <i class="fal fa-heart"></i>
+                  <span class="ml-2">119</span>
+                </div>
+              </div>
+              <h5>Amazing Apartment Family</h5>
+              <i class="fal fa-map-marker-alt icon-white"></i>
+              <span class="ml-lg-1">Vesey St, New York, NY, USA</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Posts: desktop only -->
+        <div class="popular-posts d-none d-600-block">
           <div class="post">
             <div class="row">
               <!-- post image -->
@@ -471,8 +647,7 @@
               <div class="col-6 col-lg-5 d-flex flex-column pl-lg-4 pr-0 pb-lg-3">
                 <h5>Amazing Apartment Family</h5>
                 <div class="mt-auto">
-                  <!-- icon -->
-                  <i class="fal fa-question-square icon-blue"></i>
+                  <i class="fal fa-map-marker-alt icon-white"></i>
                   <span class="ml-lg-1">Vesey St, New York, NY, USA</span>
                 </div>
               </div>
@@ -480,11 +655,11 @@
               <div class="col-2 col-lg-3 d-flex ml-lg-auto">
                 <div class="row flex-nowrap flex-sm-wrap flex-row flex-sm-column flex-lg-row mt-2 mt-sm-0">
                   <div class="col-lg-6 d-flex align-items-lg-start pl-lg-0 mb-4 mb-lg-0">
-                    <i class="fal fa-question-square icon-white"></i>
+                    <i class="fal fa-thumbs-up"></i>
                     <span class="ml-2">546</span>
                   </div>
                   <div class="col-lg-6 d-flex align-items-lg-start pr-lg-0">
-                    <i class="fal fa-question-square icon-white"></i>
+                    <i class="fal fa-heart"></i>
                     <span class="ml-2">119</span>
                   </div>
                 </div>
@@ -507,7 +682,7 @@
                 <h5>Amazing Apartment Family</h5>
                 <div class="mt-auto">
                   <!-- icon -->
-                  <i class="fal fa-question-square icon-blue"></i>
+                  <i class="fal fa-map-marker-alt icon-white"></i>
                   <span class="ml-lg-1">Vesey St, New York, NY, USA</span>
                 </div>
               </div>
@@ -515,11 +690,11 @@
               <div class="col-2 col-lg-3 d-flex ml-lg-auto">
                 <div class="row flex-nowrap flex-sm-wrap flex-row flex-sm-column flex-lg-row mt-2 mt-sm-0">
                   <div class="col-lg-6 d-flex align-items-lg-start pl-lg-0 mb-4 mb-lg-0">
-                    <i class="fal fa-question-square icon-white"></i>
+                    <i class="fal fa-thumbs-up"></i>
                     <span class="ml-2">546</span>
                   </div>
                   <div class="col-lg-6 d-flex align-items-lg-start pr-lg-0">
-                    <i class="fal fa-question-square icon-white"></i>
+                    <i class="fal fa-heart"></i>
                     <span class="ml-2">119</span>
                   </div>
                 </div>
@@ -544,10 +719,12 @@
         <div class="row">
           <div class="col-12">
             <div class="page-footer-subscribe-box">
-              <div class="form-group">
-                <label for="subscribe-to-newsletter">Enter your Email</label>
-                <input type="email" class="form-control" id="subscribe-to-newsletter" placeholder="">
+              <div class="form-group position-relative">
+                <label for="subscribe-to-newsletter" class="d-none d-600-flex">Enter your Email</label>
+                <input type="email" class="form-control" id="subscribe-to-newsletter" placeholder="Enter your Email">
+                <i class="fal fa-envelope newsletter-icon d-md-none"></i>
               </div>
+              <button type="button" class="d-600-none btn-subscribe-submit">Subscribe</button>
             </div>
           </div>
         </div>
@@ -565,6 +742,13 @@
     </div>
   </div>
 </footer>
+<script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous">
+</script>
+<script src="assets/vendor/slick/slick.min.js"></script>
+<script src="assets/js/main.js"></script>
 
 </body>
 </html>

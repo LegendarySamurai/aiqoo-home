@@ -109,6 +109,14 @@
     }
   }
 
+  .other-categories {
+    .section-sub-title {
+      color: $text-color;
+      font-family: $h-font;
+      font-weight: 600;
+    }
+  }
+
   .section-2 {
     background-color: #ebe2d3;
 
@@ -365,6 +373,14 @@
           }
         }
       }
+    }
+  }
+
+  .view-more-container {
+    button {
+      font-family: $h-font;
+      font-weight: 400;
+      color: #fff;
     }
   }
 }

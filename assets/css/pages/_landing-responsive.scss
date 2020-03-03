@@ -5,6 +5,26 @@
       padding-bottom: 40px;
     }
 
+    .other-categories {
+      margin-top: 40px;
+
+      .list {
+        padding-top: 50px;
+      }
+
+      .section-sub-title {
+        font-size: 12pt;
+      }
+    }
+
+    .view-more-container {
+      padding-top: 40px;
+
+      button {
+        font-size: 11pt;
+      }
+    }
+
     .head-section {
       width: 100%;
       background: url('../images/loading-map.png') no-repeat center;
