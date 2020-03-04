@@ -64,6 +64,12 @@
         .service-name {
           text-align: center;
         }
+
+        .card-heading {
+          &:after {
+            bottom: -10px;
+          }
+        }
       }
 
       .why-us {
