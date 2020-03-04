@@ -15,7 +15,7 @@
 </head>
 <body>
 
-<header class="header-sticky">
+<header class="header-sticky header-visible">
   <div class="header-container container-fluid container-lg">
     <div class="row">
       <!-- header mobile -->
@@ -120,92 +120,132 @@
 <main class="landing-page">
 
   <section class="head-section position-relative">
-    <div class="container section-container">
+    <div class="head-section-container container-fluid container-lg">
       <div class="row display-flex-center">
-        <div class="col-12 col-lg-8 my-auto">
-          <h1 class="section-title text-center">
-            We will find you the best suited.
-            Home Renovation expert in <span class="font-weight-black">Orange County</span>
-          </h1>
-        </div>
-        <div class="col-12">
-          <div class="card position-relative">
-            <div class="card-heading  text-center position-relative">
-              Please give us a few details so we can connect you with the best pros
-            </div>
-            <div class="font-weight-black card-title">Select required service</div>
-            <div class="services-container">
-              <div class="row">
-                <div class="col-6">
-                  <div class="service-item">
-                    <div class="service-icon display-flex-center">
-                      <img class="replacement" src="assets/images/landing/roof-replacement.png" alt="replacement">
+        <div class="col-12 head-section-content">
+          <div class="head-section-content-inner position-relative">
+            <h1 class="section-title text-center">
+              We will find you the best suited.
+              Home Renovation expert in <span class="font-weight-black">Orange County</span>
+            </h1>
+            <div class="card position-relative">
+              <div class="card-heading  text-center position-relative">
+                Please give us a few details so we can connect you with the best pros
+              </div>
+              <div class="font-weight-black card-title">Select required service</div>
+              <div class="services-container">
+                <div class="row">
+                  <div class="col-6 px-2 px-lg-3">
+                    <div class="service-item">
+                      <div class="service-icon display-flex-center">
+                        <img class="replacement" src="assets/images/landing/roof-replacement.png" alt="replacement">
+                      </div>
+                      <div class="service-name font-weight-black">Roof Replacement</div>
+                      <button class="service-btn" type="button">Click Here</button>
                     </div>
-                    <div class="service-name font-weight-black">Roof Replacement</div>
-                    <button class="service-btn" type="button">Click Here</button>
                   </div>
-                </div>
-                <div class="col-6">
-                  <div class="service-item">
-                    <div class="service-icon display-flex-center">
-                      <img class="repair" src="assets/images/landing/roof-repair.png" alt="repair">
+                  <div class="col-6 px-2 px-lg-3">
+                    <div class="service-item">
+                      <div class="service-icon display-flex-center">
+                        <img class="repair" src="assets/images/landing/roof-repair.png" alt="repair">
+                      </div>
+                      <div class="service-name font-weight-black">Roof Repair</div>
+                      <button class="service-btn" type="button">Click Here</button>
                     </div>
-                    <div class="service-name font-weight-black">Roof Repair</div>
-                    <button class="service-btn" type="button">Click Here</button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-12 px-lg-0">
-          <div class="reasons why-us">
-            <div class="reason" >
-              <div class="image-container">
-                <img class="reason-icon" src="assets/images/header/licensed.png" alt="licensed"/>
+
+          <div class="col-12 reasons-container d-none d-lg-block">
+            <div class="reasons why-us">
+              <div class="reason" >
+                <div class="image-container">
+                  <img class="reason-icon" src="assets/images/header/licensed.png" alt="licensed"/>
+                </div>
+                <div class="headings">
+                  <h2>Licensed</h2>
+                  <h3>All pro’s are trade licenses and certified</h3>
+                </div>
               </div>
+
+              <div class="reason">
+                <div class="image-container">
+                  <img class="reason-icon" src="assets/images/header/protected.svg" alt="protected"/>
+                </div>
+                <div class="headings">
+                  <h2>Protected</h2>
+                  <h3>All pro’s are screened and vetted</h3>
+                </div>
+              </div>
+
+              <div class="reason">
+                <div class="image-container">
+                  <img class="reason-icon" src="assets/images/header/rating.png" alt="rating"/>
+                </div>
+                <div class="headings">
+                  <h2>5 star rating</h2>
+                  <h3>Quality approved pros only</h3>
+                </div>
+              </div>
+
+              <div class="reason" >
+                <div class="image-container">
+                  <img class="reason-icon" src="assets/images/header/local.png" alt="local"/>
+                </div>
+                <div class="headings">
+                  <h2>Local</h2>
+                  <h3>All pros are local and are operating near you</h3>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row d-lg-none">
+        <div class="col-12 py-3">
+          <!-- Reasons block, mobile only -->
+          <div class="reasons">
+            <div class="reason licensed">
+              <img class="reason-icon" src="assets/images/icons/licensed-m.svg" alt="licensed"/>
               <div class="headings">
                 <h2>Licensed</h2>
                 <h3>All pro’s are trade licenses and certified</h3>
               </div>
             </div>
 
-            <div class="reason">
-              <div class="image-container">
-                <img class="reason-icon" src="assets/images/header/protected.svg" alt="protected"/>
-              </div>
+            <div class="reason protected">
+              <img class="reason-icon" src="assets/images/icons/protected-m.svg" alt="protected"/>
               <div class="headings">
                 <h2>Protected</h2>
                 <h3>All pro’s are screened and vetted</h3>
               </div>
             </div>
 
-            <div class="reason">
-              <div class="image-container">
-                <img class="reason-icon" src="assets/images/header/rating.png" alt="rating"/>
-              </div>
+            <div class="reason rating">
+              <img class="reason-icon" src="assets/images/icons/rating-m.svg" alt="rating"/>
               <div class="headings">
                 <h2>5 star rating</h2>
                 <h3>Quality approved pros only</h3>
               </div>
             </div>
 
-            <div class="reason" >
-              <div class="image-container">
-                <img class="reason-icon" src="assets/images/header/local.png" alt="local"/>
-              </div>
+            <div class="reason local">
+              <img class="reason-icon" src="assets/images/icons/local-m.svg" alt="local"/>
               <div class="headings">
                 <h2>Local</h2>
                 <h3>All pros are local and are operating near you</h3>
               </div>
             </div>
-
-
           </div>
         </div>
       </div>
     </div>
-    <div class="bottom-mask"></div>
+    <div class="bottom-mask d-none d-lg-block"></div>
   </section>
 
   <div class="bg-container position-relative">
@@ -272,10 +312,18 @@
     <section class="section-search-pro">
       <div class="container section-container search-pros-inner">
         <div class="row">
-          <div class="col-12 d-flex align-items-center">
-            <div class="logo">
-              <img src="assets/images/logo/logo-dark.svg" alt="logo dark">
+          <div class="col-12 col-lg-6">
+            <div class="logo-container d-flex">
+              <div class="logo">
+                <img src="assets/images/logo/logo-dark.svg" alt="logo dark">
+              </div>
+              <div class="logo-title">
+                Index
+              </div>
             </div>
+          </div>
+
+          <div class="col-12 col-lg-6 d-none d-600-block">
             <div class="search">
               <div class="form-group position-relative">
                 <input class="form-control" type="text" placeholder="Search">
@@ -285,51 +333,91 @@
           </div>
         </div>
 
-        <div class="row py-4">
+        <div class="row py-4 pros-container">
           <div class="col-12 col-lg-8 pros">
             <div class="pros-list-container">
               <div class="pros-card position-relative">
-                <div class="row">
-                  <div class="col-4">
-                    <div class="pros-logo">
-                      <img src="assets/images/landing/pros-card-image.png" alt="pros-card-image">
-                    </div>
-                  </div>
-                  <div class="col-8 pl-0 pl-lg-3">
-                    <div class="pros-content">
-                      <div class="pros-name">Christopher Nolan</div>
-                      <div class="pros-info">
-                        <div class="text">about about about about about</div>
-                        <button class="font-weight-black" type="button">
-                          Read More
-                          <span> &#62; </span>
-                        </button>
-                      </div>
-                      <div class="pros-id">
-                        <i class="fal fa-id-card"></i>
-                        <span>ID 235634531</span>
-                      </div>
-                      <div class="pros-location">
-                        <i class="far fa-map-marker-alt"></i>
-                        <span>California, Beach Road 220, USA</span>
-                      </div>
-                      <div class="job-types">
-                        <span>Kitchens</span>
-                        <span>Kitchens</span>
-                        <span>Kitchens</span>
-                      </div>
-                      <div class="pros-phone">
-                        <i class="far fa-phone-alt"></i>
-                        <span class="font-weight-black">1-800 800 70</span>
+                <div class="pros-info-container">
+                  <div class="row">
+                    <div class="col-3">
+                      <div class="pros-card-image">
+                        <img src="assets/images/landing/pros-card-image.png" alt="pros-card-image">
                       </div>
                     </div>
+                    <div class="col-9 pl-0 pl-lg-3">
+                      <div class="pros-content">
+                        <div class="pros-type">
+                          <span class="spec-type">Roof Repair Specialist</span>
+                          <img src="assets/images/landing/pros/specialist.png" alt="specialist">
+                          <span class="distance">4.9 km</span>
+                        </div>
+                        <div class="pros-reviews">
+                        <span class="pros-reviews-level image-container">
+                          <img src="assets/images/landing/pros/pros-reviews.svg" alt="">
+                        </span>
+                          <span>254 reviews</span>
+                        </div>
+                        <div class="pros-info">
+                          <div class="info">
+                            <div class="image-container">
+                              <img src="assets/images/landing/pros/verification.svg" alt="Verified">
+                            </div>
+                            <span class="">Verified License Roofing, Roof Inspectors</span>
+                          </div>
+                          <div class="info">
+                            <div class="image-container p-1">
+                              <img src="assets/images/landing/pros/maps-and-flags.svg" alt="location">
+                            </div>
+                            <span class="">California, Beach Road 220, USA</span>
+                          </div>
+                          <div class="info">
+                            <div class="image-container">
+                              <img src="assets/images/landing/pros/certified.jpg" alt="certified">
+                            </div>
+                            <span class="">Certified professionals</span>
+                          </div>
+                          <div class="info">
+                            <div class="image-container">
+                              <img src="assets/images/landing/pros/family.svg" alt="family">
+                            </div>
+                            <span class="">Family-owned & operated</span>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
                   </div>
+                </div>
+                <div class="response-container">
+                  <div class="col-lg-3"></div>
+                  <div class="col-lg-9 response-container-inner">
+                    <div class="row">
+                      <div class="response-col col-6">
+                        <div class="response">
+                          <span class="response-title">Response Time</span>
+                          <span class="response-unit">10 min</span>
+                        </div>
+                      </div>
+                      <div class="response-col col-6">
+                        <div class="response">
+                          <span class="response-title">Response Rate</span>
+                          <span class="response-unit">100%</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row justify-content-center">
+                      <div class="col-12">
+                        <span class="request-a-quote-btn">Request a Quote</span>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-12 col-lg-4 pl-0 pl-lg-3 activity">
+          <div class="col-12 col-lg-4 pl-0 pl-lg-3 activity d-none d-600-block">
             <div class="activity-areas">
               <div class="activity-areas-title font-weight-black">Activity areas</div>
               <div class="activity-areas-list">
@@ -724,7 +812,7 @@
               <div class="form-group position-relative">
                 <label for="subscribe-to-newsletter" class="d-none d-600-flex">Enter your Email</label>
                 <input type="email" class="form-control" id="subscribe-to-newsletter" placeholder="Enter your Email">
-                <i class="fal fa-envelope newsletter-icon d-md-none"></i>
+                <i class="fal fa-envelope newsletter-icon d-600-none"></i>
               </div>
               <button type="button" class="d-600-none btn-subscribe-submit">Subscribe</button>
             </div>

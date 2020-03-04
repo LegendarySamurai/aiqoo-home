@@ -3,12 +3,12 @@
 .header-sticky {
   @media (min-width: 992px) {
     $animation-speed: 400ms;
-    //position: sticky;
-    //z-index: 8000;
-    //height: auto;
-    //margin-bottom: 0;
     border-top: 2px solid #f8f8fa;
     transform: translateY(-100%);
+
+    &.header-visible {
+      transform: translateY(0);
+    }
 
     .header-content {
       display: flex;
@@ -17,8 +17,6 @@
       justify-content: space-between;
       height: 90px;
       padding-bottom: 0;
-      //background: $primaryColor;
-      //background: coral //;
     }
 
     .logo {
@@ -121,19 +119,5 @@
     }
   }
   // EOL: @media(min-width: 1400px)
-
-  @media(min-width: 1600px) {
-    .find-box {
-      //margin-left: 50px;
-    }
-  }
-  // EOL: @media(min-width: 1600px)
-
 }
 
-// Header mobile
-.header-mobile {
-  @media only screen and (min-width: 300px) and (max-width: 800px) {
-
-  }
-}

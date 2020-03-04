@@ -27,11 +27,14 @@
 
     .head-section {
       width: 100%;
-      background: url('../images/loading-map.png') no-repeat center;
-      background-size: cover;
 
-      .section-container {
-        padding-top: 60px;
+      .head-section-container {}
+
+      .head-section-content-inner {
+        z-index: 22;
+        width: 96%;
+        max-width: 500px;
+        margin: -56px auto 0;
       }
 
       .section-title {
@@ -40,61 +43,15 @@
       }
 
       .card {
-        max-width: 500px;
-        height: 210px;
-        margin: 60px auto 0;
-        padding: 20px 40px 0;
-
-        .card-title {
-          margin: 20px 0 40px;
-          font-size: 14pt;
-        }
-
-        .card-heading {
-          font-size: 14pt;
-        }
-
-        .services-container {
-          position: absolute;
-          bottom: -32%;
-          left: 50%;
-          transform: translate(-50%, 0);
-          padding: 0 20px;
-        }
 
         .service-item {
           flex-direction: column;
-          height: 100px;
           padding-bottom: 10px;
           border-radius: 5px;
-
-          &:before {
-            bottom: -6px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 98%;
-            height: 6px;
-          }
-        }
-
-        .service-icon {
-          top: -26%;
-          left: 50%;
-          transform: translateX(-50%);
-          width: 40px;
-          height: 40px;
         }
 
         .service-name {
-          margin: 25px auto 0;
-          font-size: 12pt;
           text-align: center;
-        }
-
-        .service-btn {
-          margin-top: auto;
-          padding: 0;
-          font-size: 12pt;
         }
       }
 
@@ -235,18 +192,27 @@
     }
 
     .search-pros-inner {
+
+      .pros-container {
+        background-color: $primaryColor;
+      }
+
+      .logo-container {
+        margin-bottom: 20px;
+      }
+
       .logo {
         width: 140px;
       }
 
       .search {
-        flex-grow: 1;
-        margin-left: 30px;
+        width: 100%;
+        margin-top: 20px;
       }
 
       .form-control {
         width: 100%;
-        height: 50px;
+        height: 60px;
         padding-right: 40px;
         padding-left: 10px;
         font-size: 11pt;
@@ -271,16 +237,25 @@
     }
 
     .pros-card {
-      padding: 10px;
+      padding: 32px 6px 6px;
+      background-color: #fff;
 
       &:not(:first-child) {
         margin-top: 40px;
       }
 
-      .pros-logo {
+      .pros-info-container {
+        padding: 0 16px;
+      }
+
+      .pros-card-image {
         img {
           width: 100%;
         }
+      }
+
+      .distance {
+        font-size: 9pt;
       }
 
       .pros-content {
@@ -288,64 +263,86 @@
         padding: 0 0 20px;
       }
 
-      .pros-name {
-        padding-bottom: 8px;
+      .pros-type {
         line-height: 1.5;
         font-size: 12pt;
       }
 
-      .pros-info {
+      .pros-reviews {
+        font-size: 8pt;
+      }
+
+      .info {
+        line-height: 1.5;
+
+        .image-container {
+          width: 20px;
+          padding: 2px;
+
+          img {
+            width: 100%;
+            max-width: 100%;
+          }
+        }
+
+        span {
+          font-size: 10pt;
+        }
+      }
+
+      .response-container {
+        padding: 16px 6px 0;
+        border-top: 1px solid #e1e0e7;
+      }
+
+      .request-a-quote-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 16px;
+        width: 100%;
+        height: 40px;
+        font-family: $main-font;
+        font-weight: bold;
+        font-size: 11.25pt;
+        color: #fff;
+        background-color: $primaryColor;
+        box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+      }
+
+      .response-col {
+        &:first-of-type {
+          &:after {
+            display: block;
+            content: '';
+            width: 1px;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            border-right: 1px solid #e1e0e7;
+          }
+        }
+      }
+
+      .response {
+        display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        padding: 5px 0;
-
-        .text {
-          font-size: 10pt;
-        }
-
-        button {
-          margin-top: 5px;
-          padding: 0;
-          font-size: 10pt;
-        }
+        align-items: center;
+        font-family: $main-font;
       }
 
-      .pros-id,
-      .pros-location {
-        span {
-          padding-left: 10px;
-          font-size: 10pt;
-        }
+      .response-title {
+        font-weight: 500;
+        font-size: 8.25pt;
+        color: $text-color;
       }
 
-      .pros-id,
-      .pros-location {
-        padding: 8px 0;
-      }
-
-      .job-types {
-        margin-top: 10px;
-
-        span {
-          margin-right: 10px;
-          margin-bottom: 10px;
-          padding: 5px;
-          font-size: 11pt;
-        }
-      }
-
-      .pros-phone {
-        position: absolute;
-        bottom: 0;
-        right: 15px;
-        transform: translateY(calc(50% + 10px));
-        padding: 10px;
-
-        span {
-          padding-left: 10px;
-          font-size: 13pt;
-          white-space: nowrap;
-        }
+      .response-unit {
+        margin-top: 5px;
+        font-weight: bold;
+        font-size: 9.75pt;
+        color: transparentize($primaryColor, .3);
       }
     }
 
@@ -382,11 +379,116 @@
     }
   }
 
+  @media only screen and (min-width: 300px) and (max-width: 991px) {
+    .head-section {
+      //height: calc(100vh - 92px);
+    }
+
+    .reasons {
+      flex-wrap: wrap;
+    }
+
+    .reason {
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+    }
+
+    .headings {
+      text-align: center;
+    }
+
+    .head-section-content {
+      padding-top: 60px;
+      width: 100%;
+      background: url('../images/loading-map.png') no-repeat center;
+      background-size: cover;
+    }
+
+    .head-section-content-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 100px;
+      height: calc(100vh - 36vh);
+      min-height: 460px;
+
+      .card {
+        height: 180px;
+        max-width: 500px;
+        margin: 40px auto 0;
+        padding: 20px 20px 0;
+      }
+
+      .card-title {
+        margin: 20px 0 20px;
+        font-size: 13pt;
+      }
+
+      .services-container {
+        position: absolute;
+        bottom: -29%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        padding: 0 10px;
+      }
+
+      .service-item {
+        height: 90px;
+
+        &:before {
+          bottom: -6px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 98%;
+          height: 6px;
+        }
+      }
+
+      .service-name {
+        margin: 25px auto 0;
+        font-size: 11pt;
+      }
+
+      .service-icon {
+        top: -26%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40px;
+        height: 40px;
+      }
+
+      .service-btn {
+        margin-top: auto;
+        padding: 0;
+        font-size: 11pt;
+      }
+    }
+  }
+
   @media(min-width: 600px) {
     .head-section {
+      .head-section-content-inner {
+        //height: calc(100vh - 36vw);
+      }
+
       .card {
+        height: 210px;
+        margin: 60px auto 0;
+        padding: 20px 40px 0;
+
         .card-title {
-          margin: 30px 0;
+          margin: 20px 0 40px;
+          font-size: 14pt;
+        }
+
+        .card-heading {
+          font-size: 14pt;
+        }
+
+        .services-container {
+          bottom: -32%;
+          padding: 0 20px;
         }
 
         .service-icon {
@@ -395,9 +497,17 @@
           height: 60px;
         }
 
+        .service-item {
+          height: 100px;
+        }
+
         .service-name {
           margin: 35px auto 0;
-          font-size: 16pt;
+          font-size: 12pt;
+        }
+
+        .service-btn {
+          font-size: 12pt;
         }
       }
     }
@@ -423,14 +533,40 @@
     }
 
     .search-pros-inner {
-      padding: 20px 10px 10px;
+      border-radius: 2.5px;
+      box-shadow: 0 1.5px 15px 0 rgba(50, 81, 129, 0.06);
+      background-color: #fff;
 
-      .search {
-        margin-left: 60px;
+      .pros-container {
+        background: transparent;
       }
 
-      .form-control {
-        padding-right: 46px;
+      .logo-container {
+        margin-bottom: 0;
+      }
+
+      .distance {
+        font-size: 11pt;
+      }
+
+      .pros-card {
+        padding: 20px;
+        border-radius: 5px;
+        background-color: transparentize(#dde1e8, .35);
+
+        &:not(:first-child) {
+          margin-top: 40px;
+        }
+      }
+
+      .response-container {
+        padding: 16px 0 0;
+
+        .request-a-quote-btn {
+          span {
+            height: 60px;
+          }
+        }
       }
     }
   }
@@ -442,10 +578,22 @@
     }
 
     .head-section {
-      height: calc(100vh - 92px);
+      width: 100%;
+      background: url('../images/loading-map.png') no-repeat center;
+      background-size: cover;
+
+      .head-section-content {
+        height: 462px;
+        padding-top: 190px;
+        background: none;
+      }
+
+      .head-section-content-inner {
+        height: calc(100vh - 60vh);
+      }
 
       .section-container {
-        padding-top: 140px;
+        padding-top: 110px;
       }
 
       .card {
@@ -466,13 +614,6 @@
         &:after {
           top: 30px;
         }
-      }
-
-      .services-container {
-        bottom: -14%;
-        left: 50%;
-        transform: translate(-50%, 0);
-        padding: 0 50px;
       }
 
       .service-item {
@@ -566,7 +707,7 @@
           &:after {
             display: block;
             content: '';
-            background-image: linear-gradient(90deg, rgba(255,255,255,0) 23%, #fff 84%);
+            background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 23%, #fff 84%);
             position: absolute;
             top: 0;
             left: 0;
@@ -629,9 +770,8 @@
       padding: 30px;
 
       .search {
-        flex-grow: 0;
-        width: 340px;
-        margin-left: 0;
+        width: 100%;
+        margin-top: 0;
       }
 
       .form-control {
@@ -646,74 +786,32 @@
         }
       }
 
-      .logo {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translate(-50%, 0);
-      }
-
-      .pros-card {
-        padding: 20px;
-
-        &:not(:first-child) {
-          margin-top: 40px;
-        }
-      }
-
       .pros-content {
         height: 100%;
       }
 
-      .pros-name {
+      .pros-type {
         line-height: 1.5;
         padding-bottom: 10px;
         font-size: 13pt;
       }
 
-      .pros-info {
-        padding: 5px 0;
+      .response-container {
+        border: none;
+      }
 
-        .text {
-          font-size: 12pt;
+      .response-container-inner {
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+
+        .response {
+          flex-direction: row;
         }
-      }
 
-      .pros-id,
-      .pros-location {
-        span {
-          padding-left: 10px;
-          font-size: 12pt;
-        }
-      }
-
-      .pros-id,
-      .pros-location {
-        padding: 10px 0;
-      }
-
-      .job-types {
-        margin-top: 10px;
-
-        span {
-          margin-right: 10px;
-          margin-bottom: 10px;
-          padding: 5px;
-          font-size: 11pt;
-        }
-      }
-
-      .pros-phone {
-        position: absolute;
-        bottom: 0;
-        right: 35px;
-        transform: translateY(calc(50% + 20px));
-        width: 166px;
-        padding: 10px;
-
-        span {
-          padding-left: 10px;
-          font-size: 13pt;
+        .response-unit {
+          margin-top: 0;
+          margin-left: 10px;
         }
       }
 
@@ -764,19 +862,13 @@
   @media(min-width: 1200px) {
     .head-section {
       .section-container {
-        padding-top: 40px;
+        //padding-top: 40px;
       }
     }
 
     .search-pros-inner {
       .pros-content {
         padding: 5px 0 15px;
-      }
-
-      .pros-info {
-        flex-direction: row;
-        align-items: center;
-        padding: 5px 0;
       }
     }
 
@@ -796,141 +888,140 @@
     .title {
       font-size: 13pt;
     }
-    }
+  }
 
-    @media(min-width: 1366px) {
-      .bg-container {
-        &:before {
-          position: absolute;
-          //top: 450px;
-          left: 0;
-          height: 700px;
-        }
+  @media(min-width: 1366px) {
+    .bg-container {
+      &:before {
+        position: absolute;
+        //top: 450px;
+        left: 0;
+        height: 700px;
+      }
+    }
+  }
+
+  @media(min-width: 1600px) {
+    .bg-container {
+      &:before {
+        height: 770px;
       }
     }
 
-    @media(min-width: 1600px) {
-      .bg-container {
-        &:before {
-          //top: 470px;
-          height: 770px;
+    .section-search-pro {
+      .search-pros-inner {
+        padding: 50px;
+      }
+
+      .pros-list-container {
+        .pros-card {
+          padding: 32px;
         }
       }
 
-      .section-search-pro {
-        .search-pros-inner {
-          padding: 50px;
-        }
+      .page-prev,
+      .page-next {
+        margin: 0 15px;
 
-        .pros-list-container {
-          .pros-card {
-            padding: 32px;
-          }
-        }
-
-        .page-prev,
-        .page-next {
-          margin: 0 15px;
-
-          i {
-            font-size: 16pt;
-          }
-        }
-
-        .pagination {
-          font-size: 13pt;
-        }
-
-        .page-item {
-          padding: 10px 0;
-
-          .page-link {
-            padding: 0 10px;
-          }
-        }
-
-        .search-pros-inner {
-          .pros-phone {
-            transform: translateY(calc(50% + 30px));
-          }
-        }
-      }
-    }
-
-    @media(min-width: 1920px) {
-      .head-section {
-        .section-container {
-          padding-top: 70px;
-        }
-
-        .section-title {
+        i {
           font-size: 16pt;
         }
+      }
 
-        .card {
-          max-width: 930px;
-          height: 330px;
-          padding: 30px 50px 0;
+      .pagination {
+        font-size: 13pt;
+      }
 
-          .card-title {
-            margin: 50px 0;
-            font-size: 21pt;
-          }
+      .page-item {
+        padding: 10px 0;
 
-          .card-heading {
-            font-size: 14pt;
-
-            &:after {
-              top: 40px;
-            }
-          }
-
-          .services-container {
-            bottom: -10%;
-          }
-
-          .service-item {
-            height: 120px;
-
-            &:before {
-              bottom: -5px;
-              height: 5px;
-            }
-          }
-
-          .service-icon {
-            width: 90px;
-            height: 90px;
-          }
-
-          .service-name {
-            margin-top: 50px;
-            font-size: 16pt;
-          }
-
-          .service-btn {
-            font-size: 12pt;
-          }
+        .page-link {
+          padding: 0 10px;
         }
       }
 
-      //.bg-container {
-      //  &:before {
-      //    top: 520px;
-      //  }
-      //}
-
-      //.section-2 {
-      //  padding-top: 160px;
-      //}
-
-
-      .section-search-pro {
-        .job-types {
-          span {
-            margin-right: 20px;
-          }
+      .search-pros-inner {
+        .pros-phone {
+          transform: translateY(calc(50% + 30px));
         }
       }
     }
   }
+
+  @media(min-width: 1920px) {
+    .head-section {
+      .section-container {
+        padding-top: 70px;
+      }
+
+      .section-title {
+        font-size: 16pt;
+      }
+
+      .card {
+        max-width: 930px;
+        height: 330px;
+        padding: 30px 50px 0;
+
+        .card-title {
+          margin: 50px 0;
+          font-size: 21pt;
+        }
+
+        .card-heading {
+          font-size: 14pt;
+
+          &:after {
+            top: 40px;
+          }
+        }
+
+        .services-container {
+          bottom: -10%;
+        }
+
+        .service-item {
+          height: 120px;
+
+          &:before {
+            bottom: -5px;
+            height: 5px;
+          }
+        }
+
+        .service-icon {
+          width: 90px;
+          height: 90px;
+        }
+
+        .service-name {
+          margin-top: 50px;
+          font-size: 16pt;
+        }
+
+        .service-btn {
+          font-size: 12pt;
+        }
+      }
+    }
+
+    //.bg-container {
+    //  &:before {
+    //    top: 520px;
+    //  }
+    //}
+
+    //.section-2 {
+    //  padding-top: 160px;
+    //}
+
+
+    .section-search-pro {
+      //.job-types {
+      //  span {
+      //    margin-right: 20px;
+      //  }
+      //}
+    }
+  }
+}
