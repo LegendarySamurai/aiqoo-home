@@ -19,7 +19,8 @@ const isDesktop = window.innerWidth >= 992;
 
 // Igor created 23 February 2020
 const header = document.querySelector('.head-section');
-const headerSticky = document.querySelector('.header-sticky');
+// const headerSticky = document.querySelector('.header-sticky');
+const headerSticky = $('.header-sticky').not('.header-visible');
 let stickyHeaderHasBeenShown = false;
 let headerClientRect = header.getBoundingClientRect();
 
