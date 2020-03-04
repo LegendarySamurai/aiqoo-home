@@ -51,6 +51,14 @@
           flex-direction: column;
           padding-bottom: 10px;
           border-radius: 5px;
+
+          &:before {
+            bottom: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 98%;
+            height: 6px;
+          }
         }
 
         .service-name {
@@ -437,14 +445,6 @@
 
       .service-item {
         height: 90px;
-
-        &:before {
-          bottom: -6px;
-          left: 50%;
-          transform: translateX(-50%);
-          width: 98%;
-          height: 6px;
-        }
       }
 
       .service-name {
