@@ -40,6 +40,8 @@
 
   .reason {
     position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
     &:before,
     &:after {
@@ -50,10 +52,8 @@
     }
 
     &.licensed {
-      padding-bottom: 10px;
-
       &:before {
-        height: 100%;
+        height: calc(100% - 10px);
         width: 1px;
         right: 0;
         bottom: 0;
@@ -68,7 +68,6 @@
     }
 
     &.protected {
-      padding-bottom: 10px;
       &:before {
         width: 80%;
         height: 1px;
@@ -78,9 +77,8 @@
     }
 
     &.rating {
-      padding-top: 10px;
       &:before {
-        height: 100%;
+        height: calc(100% - 10px);
         width: 1px;
         right: 0;
         top: 0;
