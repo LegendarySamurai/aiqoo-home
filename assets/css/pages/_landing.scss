@@ -87,7 +87,6 @@
     .why-us {
       position: relative;
       z-index: 100;
-      flex-wrap: wrap;
 
       .reason {
         font-family: $main-font;
@@ -323,6 +322,7 @@
       justify-content: flex-start;
       align-items: center;
       width: 100%;
+      overflow: hidden;
       background-color: $text-color;
 
       .title {
@@ -363,8 +363,9 @@
           &:hover,
           &.active {
             background-color: #ebe2d3;
+
             .page-link {
-              border-right: none;
+              border-right-color: transparent;
             }
           }
 
