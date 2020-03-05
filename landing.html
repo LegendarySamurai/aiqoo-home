@@ -15,11 +15,11 @@
 </head>
 <body>
 
-<header class="header-sticky header-visible">
+<header class="header-sticky header-landing">
   <div class="header-container container-fluid container-lg">
     <div class="row">
       <!-- header mobile -->
-      <div class="col-12 d-lg-none px-0">
+      <div class="col-12 d-none px-0">
         <div class="header-mobile">
           <div class="navbar">
             <div class="navbar-expand bg-transparent">
@@ -93,8 +93,8 @@
       </div>
       <!-- EOL: header mobile -->
 
-      <!-- header desktop -->
-      <div class="col-12 d-none d-lg-block">
+      <!-- header desktop  d-none d-lg-block-->
+      <div class="col-12">
         <div class="header-content position-relative">
           <img src="assets/images/logo/logo.svg" class="logo position-relative" alt=""/>
 
@@ -102,11 +102,12 @@
           <div class="find-box">
             <div class="form-group position-relative">
               <input class="form-control" type="text" placeholder="I’m looking for a roofing fixture">
-              <div class="super-placeholder">
+              <div class="super-placeholder d-none d-lg-flex">
                 <img src="assets/images/icons/pen-6.svg" alt="pen">
                 <span class="super-placeholder-heading">What services are you looking for? </span>
               </div>
-              <button class="find-btn" type="button">FIND A PRO</button>
+              <button class="find-btn d-none d-lg-block" type="button">FIND A PRO</button>
+              <img class="find-btn-mobile d-lg-none" src="assets/images/icons/magnifier.svg" alt="search">
             </div>
           </div>
         </div>
@@ -467,10 +468,17 @@
                   <li class="page-item"><a class="page-link" href="#">14</a></li>
                   <li class="page-item"><a class="page-link" href="#">15</a></li>
                   <li class="page-item"><a class="page-link" href="#">16</a></li>
-                  <li class="page-item hide-on-800 show-on-800"><a class="page-link" href="#">17</a></li>
-                  <li class="page-item hide-on-800 show-on-800"><a class="page-link" href="#">18</a></li>
+                  <li class="page-item"><a class="page-link" href="#">17</a></li>
+                  <li class="page-item"><a class="page-link" href="#">18</a></li>
                   <li class="page-item hide-on-800 show-on-800"><a class="page-link" href="#">...</a></li>
                 </ul>
+
+                <!--
+
+                 hide-on-600 show-on-600
+                 hide-on-700 show-on-700
+                 hide-on-800 show-on-800
+                -->
                 <span class="page-next"><i class="fal fa-angle-right"></i></span>
               </nav>
             </div>
@@ -838,7 +846,7 @@
     crossorigin="anonymous">
 </script>
 <script src="assets/vendor/slick/slick.min.js"></script>
-<script src="assets/js/main.js"></script>
+<script src="assets/js/landing.js"></script>
 
 </body>
 </html>

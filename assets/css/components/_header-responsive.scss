@@ -1,115 +1,413 @@
 @import '../variables';
 
 .header-sticky {
-  @media (min-width: 992px) {
-    $animation-speed: 400ms;
-    border-top: 2px solid #f8f8fa;
-    transform: translateY(-100%);
+  @mixin is-active {
+    @keyframes slide-down {
+      from {
+        transform: translateY(-100%);
+      }
 
-    &.header-visible {
-      transform: translateY(0);
-    }
-
-    .header-content {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      height: 90px;
-      padding-bottom: 0;
-    }
-
-    .logo {
-      width: 115px;
-      max-width: inherit;
-      margin-top: 0;
-    }
-
-    .find-box {
-      width: calc(100% - 115px - 50px);
-    }
-
-    .form-control {
-      width: 100%;
-      height: 60px;
-      padding-right: 160px;
-      padding-left: 290px;
-    }
-
-    .form-control,
-    .form-control::placeholder {
-      font-size: 12pt;
-    }
-
-    .super-placeholder {
-      position: absolute;
-      top: 0;
-      left: 16px;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
-      height: calc(100% - 2px);
-      font-size: 12pt;
-
-      span {
-        padding-left: 10px;
+      to {
+        transform: translateY(0%);
       }
     }
 
-    .find-btn {
-      position: absolute;
-      top: 4px;
-      right: 4px;
-      width: 150px;
-      height: calc(100% - 8px);
-      font-size: 16px;
-      background-color: $primaryColor;
-      color: #fff;
-      border-radius: 2px;
+    animation-name: slide-down;
+    animation-duration: 400ms;
+    animation-timing-function: linear;
+    animation-delay: 0ms;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+
+  @mixin is-hidden {
+    @keyframes slide-up {
+      from {
+        transform: translateY(0%);
+      }
+
+      to {
+        transform: translateY(-100%);
+      }
     }
+
+    animation-name: slide-up;
+    animation-duration: 400ms;
+    animation-timing-function: linear;
+    animation-delay: 0ms;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+
+  &.header-home {
+
+    @media (min-width: 300px) {
+      transform: translateY(0);
+
+      .logo {
+        width: 115px;
+        max-width: 100%;
+        margin-top: 0;
+      }
+
+      .find-box {
+        width: calc(100% - 115px - 50px);
+      }
+    }
+
+    @media (min-width: 992px) {
+      transform: translateY(-100%);
+
+      .form-control {
+        width: 100%;
+        height: 60px;
+        padding-right: 160px;
+        padding-left: 290px;
+      }
+
+      &.is-active {
+        @include is-active;
+      }
+      &.is-hidden {
+        @include is-hidden;
+      }
+    }
+  }
+
+  &.header-landing {
+    @media (min-width: 300px) {
+      transform: translateY(-100%);
+
+      .logo {
+        width: 80px;
+        max-width: 100%;
+        margin-top: 0;
+      }
+
+      .find-box {
+        width: calc(100% - 100px);
+      }
+
+      .find-btn-mobile {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 32px;
+        padding: 8px;
+        height: 100%;
+        //background-color: coral;
+      }
+
+      .form-control {
+        width: 100%;
+        height: 50px;
+        padding-right: 40px;
+        padding-left: 10px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+
+
+      &.is-active {
+        @include is-active;
+      }
+      &.is-hidden {
+        @include is-hidden;
+      }
+    }
+
+    @media (min-width: 600px) {
+      .logo {
+        width: 115px;
+      }
+
+      .form-control {
+        height: 60px;
+      }
+
+      .find-box {
+        width: calc(100% - 115px - 50px);
+      }
+
+      .find-btn-mobile {
+        width: 45px;
+        padding: 10px;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .form-control {
+        padding-right: 160px;
+        padding-left: 290px;
+      }
+    }
+  }
+
+  //$animation-speed: 400ms;
+  border-top: 2px solid #f8f8fa;
+
+  .header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    padding-bottom: 0;
+  }
+
+  .form-control,
+  .form-control::placeholder {
+    font-size: 12pt;
+  }
+
+  .super-placeholder {
+    position: absolute;
+    top: 0;
+    left: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: calc(100% - 2px);
+    font-size: 12pt;
+
+    span {
+      padding-left: 10px;
+    }
+  }
+
+  .find-btn {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 150px;
+    height: calc(100% - 8px);
+    font-size: 16px;
+    background-color: $primaryColor;
+    color: #fff;
+    border-radius: 2px;
+  }
+}
+
+
+
+.header-sticky {
+  @media (min-width: 300px) {
+    //$animation-speed: 400ms;
+    //border-top: 2px solid #f8f8fa;
+    //transform: translateY(-100%);
+    //
+    //.header-content {
+    //  display: flex;
+    //  flex-direction: row;
+    //  align-items: center;
+    //  justify-content: space-between;
+    //  height: 90px;
+    //  padding-bottom: 0;
+    //}
+    //
+    //.logo {
+    //  width: 115px;
+    //  max-width: inherit;
+    //  margin-top: 0;
+    //}
+    //
+    //.find-box {
+    //  width: calc(100% - 115px - 50px);
+    //}
+    //
+    //.form-control {
+    //  width: 100%;
+    //  height: 60px;
+    //  padding-right: 160px;
+    //  padding-left: 290px;
+    //}
+    //
+    //.form-control,
+    //.form-control::placeholder {
+    //  font-size: 12pt;
+    //}
+    //
+    //.super-placeholder {
+    //  position: absolute;
+    //  top: 0;
+    //  left: 16px;
+    //  display: flex;
+    //  flex-direction: row;
+    //  justify-content: flex-start;
+    //  align-items: center;
+    //  height: calc(100% - 2px);
+    //  font-size: 12pt;
+    //
+    //  span {
+    //    padding-left: 10px;
+    //  }
+    //}
+    //
+    //.find-btn {
+    //  position: absolute;
+    //  top: 4px;
+    //  right: 4px;
+    //  width: 150px;
+    //  height: calc(100% - 8px);
+    //  font-size: 16px;
+    //  background-color: $primaryColor;
+    //  color: #fff;
+    //  border-radius: 2px;
+    //}
 
     &.is-shown {
       transform: translateY(0);
     }
 
-    &.is-active {
-      @keyframes slide-down {
-        from {
-          transform: translateY(-100%);
-        }
+    //&.is-active {
+    //  @keyframes slide-down {
+    //    from {
+    //      transform: translateY(-100%);
+    //    }
+    //
+    //    to {
+    //      transform: translateY(0%);
+    //    }
+    //  }
+    //
+    //  animation-name: slide-down;
+    //  animation-duration: 400ms;
+    //  animation-timing-function: linear;
+    //  animation-delay: 0ms;
+    //  animation-fill-mode: forwards;
+    //  animation-iteration-count: 1;
+    //}
 
-        to {
-          transform: translateY(0%);
-        }
-      }
+    //&.is-hidden {
+    //  @keyframes slide-up {
+    //    from {
+    //      transform: translateY(0%);
+    //    }
+    //
+    //    to {
+    //      transform: translateY(-100%);
+    //    }
+    //  }
+    //
+    //  animation-name: slide-up;
+    //  animation-duration: 400ms;
+    //  animation-timing-function: linear;
+    //  animation-delay: 0ms;
+    //  animation-fill-mode: forwards;
+    //  animation-iteration-count: 1;
+    //}
+  }
+}
 
-      animation-name: slide-down;
-      animation-duration: $animation-speed;
-      animation-timing-function: linear;
-      animation-delay: 0ms;
-      animation-fill-mode: forwards;
-      animation-iteration-count: 1;
-    }
-
-    &.is-hidden {
-      @keyframes slide-up {
-        from {
-          transform: translateY(0%);
-        }
-
-        to {
-          transform: translateY(-100%);
-        }
-      }
-
-      animation-name: slide-up;
-      animation-duration: $animation-speed;
-      animation-timing-function: linear;
-      animation-delay: 0ms;
-      animation-fill-mode: forwards;
-      animation-iteration-count: 1;
-    }
+.header-home,
+.header-landing {
+  @media (min-width: 992px) {
+    //$animation-speed: 400ms;
+    //border-top: 2px solid #f8f8fa;
+    //transform: translateY(-100%);
+    //
+    //.header-content {
+    //  display: flex;
+    //  flex-direction: row;
+    //  align-items: center;
+    //  justify-content: space-between;
+    //  height: 90px;
+    //  padding-bottom: 0;
+    //}
+    //
+    //.logo {
+    //  width: 115px;
+    //  max-width: inherit;
+    //  margin-top: 0;
+    //}
+    //
+    //.find-box {
+    //  width: calc(100% - 115px - 50px);
+    //}
+    //
+    //.form-control {
+    //  width: 100%;
+    //  height: 60px;
+    //  padding-right: 160px;
+    //  padding-left: 290px;
+    //}
+    //
+    //.form-control,
+    //.form-control::placeholder {
+    //  font-size: 12pt;
+    //}
+    //
+    //.super-placeholder {
+    //  position: absolute;
+    //  top: 0;
+    //  left: 16px;
+    //  display: flex;
+    //  flex-direction: row;
+    //  justify-content: flex-start;
+    //  align-items: center;
+    //  height: calc(100% - 2px);
+    //  font-size: 12pt;
+    //
+    //  span {
+    //    padding-left: 10px;
+    //  }
+    //}
+    //
+    //.find-btn {
+    //  position: absolute;
+    //  top: 4px;
+    //  right: 4px;
+    //  width: 150px;
+    //  height: calc(100% - 8px);
+    //  font-size: 16px;
+    //  background-color: $primaryColor;
+    //  color: #fff;
+    //  border-radius: 2px;
+    //}
+    //
+    //&.is-shown {
+    //  transform: translateY(0);
+    //}
+    //
+    //&.is-active {
+    //  @keyframes slide-down {
+    //    from {
+    //      transform: translateY(-100%);
+    //    }
+    //
+    //    to {
+    //      transform: translateY(0%);
+    //    }
+    //  }
+    //
+    //  animation-name: slide-down;
+    //  animation-duration: $animation-speed;
+    //  animation-timing-function: linear;
+    //  animation-delay: 0ms;
+    //  animation-fill-mode: forwards;
+    //  animation-iteration-count: 1;
+    //}
+    //
+    //&.is-hidden {
+    //  @keyframes slide-up {
+    //    from {
+    //      transform: translateY(0%);
+    //    }
+    //
+    //    to {
+    //      transform: translateY(-100%);
+    //    }
+    //  }
+    //
+    //  animation-name: slide-up;
+    //  animation-duration: $animation-speed;
+    //  animation-timing-function: linear;
+    //  animation-delay: 0ms;
+    //  animation-fill-mode: forwards;
+    //  animation-iteration-count: 1;
+    //}
   }
   // EOL: @media(min-width: 992px)
 

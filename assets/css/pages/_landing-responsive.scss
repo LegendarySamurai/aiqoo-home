@@ -416,8 +416,8 @@
       }
 
       .pagination {
-        //width: 64%;
-        //overflow: hidden;
+        width: calc(100% - 8vw);
+        overflow: hidden;
         padding: 15px 0;
         font-size: 10pt;
       }
@@ -677,8 +677,6 @@
   }
 
   @media(min-width: 992px) {
-    padding-top: 92px;
-
     .all-categories {
       padding-top: 60px;
       padding-bottom: 60px;
@@ -689,7 +687,6 @@
 
       .head-section-content {
         height: 462px;
-        //padding-top: 90px;
       }
 
       .head-section-content-inner {
@@ -717,7 +714,6 @@
       }
 
       .card-heading {
-        //font-size: 10pt;
 
         &:after {
           bottom: -10px;
@@ -870,22 +866,6 @@
       }
     }
 
-    //.pros {
-    //  order: 1;
-    //}
-    //
-    //.activity {
-    //  order: 2;
-    //
-    //  .activity-areas {
-    //    padding: 0;
-    //  }
-    //}
-    //
-    //.pagination-outer {
-    //  order: 3;
-    //}
-
     .search-pros-inner {
       padding: 30px;
 
@@ -974,12 +954,6 @@
   }
 
   @media(min-width: 1200px) {
-    .head-section {
-      .section-container {
-        //padding-top: 40px;
-      }
-    }
-
     .search-pros-inner {
       .pros-content {
         padding: 5px 0 15px;
@@ -991,7 +965,7 @@
     }
 
     .pagination {
-      width: 88%;
+      width: 100%;
     }
 
     .page-prev,

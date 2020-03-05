@@ -1,5 +1,5 @@
 ﻿// Igor created 26 February 2020
-const isMobile = window.innerWidth < 800;
+const isMobile = window.innerWidth < 992;
 const isDesktop = window.innerWidth >= 992;
 
 // EOL: Igor created 26 February 2020
@@ -18,26 +18,43 @@ const isDesktop = window.innerWidth >= 992;
 
 
 // Igor created 23 February 2020
-const header = document.querySelector('.head-section');
+const headSection = document.querySelector('.head-section');
 // const headerSticky = document.querySelector('.header-sticky');
-const headerSticky = $('.header-sticky').not('.header-visible');
+const headerStickyHome = document.querySelector('.header-home');
+// const headerStickyLanding = document.querySelector('.header-landing');
+// const headerSticky = $('.header-sticky').not('.header-visible');
 let stickyHeaderHasBeenShown = false;
-let headerClientRect = header.getBoundingClientRect();
+let headerClientRect = headSection.getBoundingClientRect();
 
-const makeHeaderSticky = () => {
+const makeHeaderStickyHome = () => {
 	if (window.pageYOffset >= headerClientRect.bottom) {
-		headerSticky.classList.remove('is-hidden');
-		headerSticky.classList.add('is-active');
+		headerStickyHome.classList.remove('is-hidden');
+		headerStickyHome.classList.add('is-active');
 		stickyHeaderHasBeenShown = true;
 	}
 	else if (window.pageYOffset < headerClientRect.bottom && stickyHeaderHasBeenShown) {
-		headerSticky.classList.add('is-hidden');
+		headerStickyHome.classList.add('is-hidden');
 	}
 };
 
+// const makeHeaderStickyLanding = () => {
+// 	if (window.pageYOffset >= headerClientRect.bottom) {
+// 		headerStickyLanding.classList.remove('is-hidden');
+// 		headerStickyLanding.classList.add('is-active');
+// 		stickyHeaderHasBeenShown = true;
+// 	}
+// 	else if (window.pageYOffset < headerClientRect.bottom && stickyHeaderHasBeenShown) {
+// 		headerStickyLanding.classList.add('is-hidden');
+// 	}
+// };
+
+// window.addEventListener('scroll', function () {
+// 	makeHeaderStickyLanding();
+// });
+
 window.addEventListener('scroll', function () {
 	if (isDesktop) {
-		makeHeaderSticky();
+		makeHeaderStickyHome();
 	}
 });
 
@@ -67,6 +84,12 @@ const hideNavBar = () => {
 };
 
 
+if (isMobile) {
+	showNavBar();
+	hideNavBar();
+}
+
+
 // slick
 $('.slick-container').slick({
 	rows: 0,
@@ -77,10 +100,4 @@ $('.slick-container').slick({
 	infinite: false,
 	variableWidth: true,
 });
-
-
-if (isMobile) {
-	showNavBar();
-	hideNavBar();
-}
 

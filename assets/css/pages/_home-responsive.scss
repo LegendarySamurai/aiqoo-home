@@ -363,8 +363,9 @@
 
   // Only for mobile devices
   @media only screen and (min-width: 300px) and (max-width: 991px) {
-    .head-section {
+    padding-top: 56px;
 
+    .head-section {
       .head-section-content {
         &:before {
           display: block;
@@ -511,6 +512,8 @@
   }
 
   @media(min-width: 600px) {
+    padding-top: 0;
+
     .logo {
       width: 100%;
       max-width: 210px;
