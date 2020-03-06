@@ -106,7 +106,7 @@
           align-items: center;
           width: 46%;
           margin-bottom: 20px;
-          padding: 20px 20px;
+          padding: 20px 10px;
           background-color: #fff;
           border-radius: 5px;
 
@@ -440,6 +440,7 @@
 
     .reasons {
       flex-wrap: wrap;
+      padding: 20px;
     }
 
     .reason {
@@ -529,7 +530,7 @@
         max-width: 540px;
 
         .reason {
-          width: 50%;
+          width: 48%;
           max-width: 250px;
         }
       }
