@@ -1,6 +1,77 @@
 $text-color: #342e49;
 $h-font: 'Raleway', sans-serif;
 
+.font-weight-black {
+  font-weight: 900 !important;
+}
+.position-relative {
+  position: relative;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-6 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.px-2 {
+  padding-right: 0.5rem !important;
+}
+
+.px-lg-3 {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.display-flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+img {
+  max-width: 100%;
+}
+
+// styles
+
 .services-card {
   display: flex;
   flex-direction: column;
@@ -10,6 +81,12 @@ $h-font: 'Raleway', sans-serif;
   background-color: #ffffff;
   color: $text-color;
   z-index: 100;
+  box-sizing: border-box;
+  font-family: $h-font;
+
+  * {
+    box-sizing: border-box;
+  }
 
   &:before {
     position: absolute;

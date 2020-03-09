@@ -1,0 +1,302 @@
+body {
+  &.blocked {
+    overflow: hidden;
+  }
+}
+
+.landing-sign-up {
+  @media(min-width: 300px) { // from 300
+
+  }
+
+  @media(min-width: 768px) { // from 768
+
+  }
+
+  @media(min-width: 1200px) { // from 1200
+    .container-lg {
+      max-width: 1140px;
+    }
+
+  }
+
+  @media(min-width: 1400px) { // from 1400
+    .container-lg {
+      max-width: 1200px;
+    }
+
+  }
+
+  @media(min-width: 1600px) { // from 1600
+    .container-lg {
+      max-width: 1400px;
+    }
+  }
+
+  @media(min-width: 1920px) { // from 1800
+    .container-lg {
+      max-width: 1770px;
+    }
+  }
+}
+
+@media(min-width: 300px) { // from 300
+  .landing-sign-up {
+
+    h2 {
+      font-size: 15px;
+      color: $primaryColor;
+    }
+
+    .content-inner {
+      width: 96%;
+      max-width: 350px;
+      margin: 50px auto;
+    }
+  }
+
+  .quality-card-text {
+    font-size: 10px;
+    color: $primaryColor;
+  }
+
+  .head-section {
+    background-image: url("../images/bg/landing-sign-up-bg-d.png");
+    background-position: center 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top: 8px solid $primaryColor;
+  }
+
+  .head-section-content {
+    height: 300px;
+  }
+
+  .head-section-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 80px;
+      padding: 5px;
+    }
+  }
+
+  .brand-address {
+    margin-left: 10px;
+  }
+
+  .btn-wrapper {
+    padding-top: 70px;
+
+    h1 {
+      font-size: 23px;
+    }
+
+    button {
+      width: 228px;
+      height: 52px;
+      margin-top: 10px;
+      font-size: 18px;
+    }
+  }
+
+  .quality-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quality-card {
+    width: 96%;
+    max-width: 300px;
+    height: 190px;
+    margin-bottom: 20px;
+    padding: 20px 30px 10px;
+  }
+
+  .quality-card-image {
+    width: 50px;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .content {
+    h2 {
+      line-height: 1.25;
+      padding: 30px 15px;
+    }
+  }
+}
+
+@media(min-width: 768px) { // from 768
+  .head-section {
+    background-image: url("../images/bg/landing-sign-up-bg-d.png");
+    border-top-width: 28px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  .brand-address {
+    margin-left: 30px;
+  }
+
+  .quality-cards {
+    flex-direction: row;
+  }
+
+  .quality-card {
+    width: 33%;
+    margin: 0 5px;
+    padding: 20px 10px 10px 10px;
+  }
+
+  .quality-card-image {
+    width: 60px;
+    margin-bottom: 20px;
+  }
+
+  .quality-card-text {
+    font-size: 12px;
+  }
+}
+
+@media(min-width: 992px) { // from 992
+  .landing-sign-up {
+    .content-inner {
+      width: 100%;
+      max-width: initial;
+      margin-top: 50px;
+    }
+  }
+
+  .btn-wrapper {
+    padding-left: 20px;
+  }
+
+  .laptop {
+    width: 56%;
+    position: absolute;
+    top: -80px;
+    right: -2%;
+    z-index: 3;
+  }
+
+  .logo {
+    img {
+      width: 100px;
+      padding: 20px 20px 20px 20px;
+    }
+  }
+
+  .pro-img {
+    width: 130px;
+    margin-top: -10px;
+  }
+
+  .content {
+    h2 {
+      padding: 30px 20px 30px 50px;
+    }
+  }
+}
+
+@media(min-width: 1200px) { // from 1200
+  .laptop {
+    top: -100px;
+  }
+
+  .quality-card-text {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .head-section-content {
+    height: 467px;
+  }
+
+  .head-section-header {
+
+  }
+
+  .logo {
+    img {
+      width: 180px;
+      padding: 20px 30px 30px 20px;
+    }
+  }
+
+  .brand-address {
+    margin-left: 50px;
+  }
+
+  .pro-img {
+    width: 200px;
+    margin-top: -20px;
+  }
+
+  .btn-wrapper {
+    margin-left: 60px;
+    padding-top: 0;
+
+    h1 {
+      line-height: 1;
+      font-size: 25px;
+    }
+
+    button {
+      margin-top: 20px;
+    }
+  }
+
+  .quality-card {
+    height: 210px;
+    margin: 0 10px;
+    padding: 20px;
+  }
+
+  .quality-card-image {
+    margin-bottom: 30px;
+  }
+}
+
+@media(min-width: 1366px) { // from 1366
+  .quality-card {
+    height: 230px;
+  }
+
+}
+
+@media(min-width: 1600px) { // from 1600
+  .laptop {
+    top: -120px;
+  }
+
+  .quality-card {
+    height: 270px;
+  }
+
+  .content {
+    h2 {
+      padding: 20px 90px;
+    }
+  }
+}
+
+@media(min-width: 1920px) { // from 1920
+  .laptop {
+    top: -150px;
+  }
+
+  .quality-card {
+    height: 310px;
+    padding: 40px;
+  }
+}
