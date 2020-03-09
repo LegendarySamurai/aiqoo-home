@@ -50,42 +50,6 @@
         font-size: 13pt;
       }
 
-      .card {
-        margin-top: 20px;
-
-        .services-container {
-          position: absolute;
-          bottom: 0;
-          left: 50%;
-          transform: translate(-50%, 40%);
-          padding: 0 20px;
-        }
-
-        .service-item {
-          flex-direction: column;
-          padding-bottom: 10px;
-          border-radius: 5px;
-
-          &:before {
-            bottom: -6px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 98%;
-            height: 6px;
-          }
-        }
-
-        .service-name {
-          text-align: center;
-        }
-
-        .card-heading {
-          &:after {
-            bottom: -10px;
-          }
-        }
-      }
-
       // reasons for mobile devices from 300 to 600
       .reasons-row {
         margin-top: -330px;
@@ -463,44 +427,6 @@
       flex-direction: column;
       align-items: center;
       height: 340px;
-
-      .card {
-        height: 170px;
-        max-width: 500px;
-        padding: 20px 20px 0;
-      }
-
-      .card-title {
-        margin: 20px 0 20px;
-        font-size: 13pt;
-      }
-
-      .services-container {
-
-      }
-
-      .service-item {
-        height: 80px;
-      }
-
-      .service-name {
-        margin: 25px auto 0;
-        font-size: 11pt;
-      }
-
-      .service-icon {
-        top: -26%;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 40px;
-        height: 40px;
-      }
-
-      .service-btn {
-        margin-top: auto;
-        padding: 0;
-        font-size: 11pt;
-      }
     }
   }
   // EOL 300 - 991
@@ -532,42 +458,6 @@
         .reason {
           width: 48%;
           max-width: 250px;
-        }
-      }
-
-      .card {
-        width: 100%;
-        max-width: 540px;
-        height: 210px;
-        margin: 60px auto 0;
-        padding: 20px 50px 0;
-
-        .card-title {
-          margin: 20px 0 40px;
-          font-size: 14pt;
-        }
-
-        .card-heading {
-          font-size: 10pt;
-        }
-
-        .service-icon {
-          top: -40%;
-          width: 60px;
-          height: 60px;
-        }
-
-        .service-item {
-          height: 100px;
-        }
-
-        .service-name {
-          margin: 35px auto 0;
-          font-size: 12pt;
-        }
-
-        .service-btn {
-          font-size: 12pt;
         }
       }
     }
@@ -665,46 +555,6 @@
         padding-top: 110px;
       }
 
-      .card {
-        max-width: 700px;
-        height: 210px;
-        margin: 35px auto 0;
-        padding: 20px 20px 0;
-      }
-
-      .services-container {
-        padding: 0 40px;
-      }
-
-      .card-title {
-        margin: 30px 0;
-        font-size: 19pt;
-      }
-
-      .card-heading {
-
-        &:after {
-          bottom: -10px;
-        }
-      }
-
-      .service-item {
-        height: 90px;
-
-        &:before {
-          bottom: -3px;
-          height: 3px;
-        }
-      }
-
-      .service-name {
-        font-size: 14pt;
-      }
-
-      .service-btn {
-        font-size: 11pt;
-      }
-
       .why-us {
         flex-wrap: nowrap;
         max-width: initial;
@@ -713,7 +563,6 @@
         background-color: #fff;
 
         .reason {
-          //flex-direction: row;
           width: auto;
           padding: 0 20px;
           margin-bottom: 0;
@@ -952,7 +801,6 @@
     .bg-container {
       &:before {
         position: absolute;
-        //top: 450px;
         left: 0;
         height: 700px;
       }
@@ -1017,67 +865,6 @@
       .section-title {
         font-size: 16pt;
       }
-
-      .card {
-        max-width: 930px;
-        height: 330px;
-        padding: 30px 50px 0;
-
-        .card-title {
-          margin: 50px 0;
-          font-size: 22pt;
-        }
-
-        .card-heading {
-          font-size: 14pt;
-
-          &:after {
-            bottom: -20px;
-          }
-        }
-
-        .service-item {
-          height: 130px;
-
-          &:before {
-            bottom: -5px;
-            height: 5px;
-          }
-        }
-
-        .service-icon {
-          width: 90px;
-          height: 90px;
-        }
-
-        .service-name {
-          margin-top: 50px;
-          font-size: 16pt;
-        }
-
-        .service-btn {
-          font-size: 12pt;
-        }
-      }
-    }
-
-    //.bg-container {
-    //  &:before {
-    //    top: 520px;
-    //  }
-    //}
-
-    //.section-2 {
-    //  padding-top: 160px;
-    //}
-
-
-    .section-search-pro {
-      //.job-types {
-      //  span {
-      //    margin-right: 20px;
-      //  }
-      //}
     }
   }
   // EOL: 1920
