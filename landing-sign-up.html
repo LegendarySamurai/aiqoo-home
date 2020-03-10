@@ -46,8 +46,9 @@
         <div class="col-12 col-lg-8">
           <div class="content">
             <h2>
-              If you are a service provider in the home services industry, let us <br class="d-none d-lg-block"> help you realize all your business dreams.
-              A quick registration is all it takes!
+              If you are a service provider in the home services industry, let us
+              <br class="d-none d-lg-block">
+              help you realize all your business dreams.
             </h2>
             <div class="quality-cards">
               <div class="quality-card">
@@ -55,11 +56,10 @@
                   <img src="assets/images/icons/icon-2.svg" alt="">
                 </div>
                 <h3 class="quality-card-text">
-                  Manage your projects easily and effectively using the sale and projct management system
-
+                  Manage your projects easily and effectively using the sale and project management system
                 </h3>
               </div>
-              <div class="quality-card scaled">
+              <div class="quality-card scaled-up">
                 <div class="quality-card-image">
                   <img src="assets/images/icons/icon-1.svg" alt="">
                 </div>
@@ -80,67 +80,71 @@
         </div>
 
         <div class="col-12 col-lg-4">
-          <div class="content-inner position-relative">
+          <div class="laptop d-none d-lg-block">
+            <img src="assets/images/laptop.png" alt="laptop">
+          </div>
 
-            <div class="laptop d-none d-lg-block">
-              <img src="assets/images/laptop.png" alt="laptop">
+          <div class="form-container">
+            <div class="text-block">
+              <h4 class="font-weight-black">Welcome!</h4>
+              <h5>Fill in the following fields to sign-up</h5>
             </div>
 
-            <!--
-            on <button class="lets-go-btn" type="button">Let's go</button> 'click' add class 'is-active' to <div class="form-wrapper"></div
-            and also add class 'blocked' to the <body> to prevent window scroll
-            -->
-            <div class="form-wrapper">
-              <div class="sign-up-form">
-                <div class="text-block">
-                  <h4 class="font-weight-black">Welcome!</h4>
-                  <h5 class="">Fill in the following fields to sign-up</h5>
+            <form class="sign-up-form">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <div class="input-group-text position-relative"><i class="fal fa-user"></i></div>
                 </div>
-
-                <form>
-                  <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text position-relative"><i class="fal fa-user"></i></div>
-                    </div>
-                    <input type="text" class="form-control font-r-14" id="company-name" placeholder="Company name">
-                  </div>
-                  <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text position-relative"><i class="fal fa-phone-alt"></i></div>
-                    </div>
-                    <input type="tel" class="form-control font-r-14" id="phone-number" placeholder="Phone number">
-                  </div>
-                  <div class="input-group mb-4">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text position-relative"><i class="fal fa-envelope"></i></div>
-                    </div>
-                    <input type="text" class="form-control font-r-14" id="mail" placeholder="Email">
-                  </div>
-                  <div class="options">
-                    <div class="form-check">
-                      <div class="custom-checkbox position-relative">
-                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                        <label class="custom-control-label cursor-p font-r-14" for="customCheck1">I Agree to the Terms and Conditions </label>
-                      </div>
-                    </div>
-                  </div>
-                </form>
+                <input type="text" class="form-control font-r-14" id="company-name" placeholder="Company name">
               </div>
-            </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <div class="input-group-text position-relative"><i class="fal fa-phone-alt"></i></div>
+                </div>
+                <input type="tel" class="form-control font-r-14" id="phone-number" placeholder="Phone number">
+              </div>
+              <div class="input-group mb-4">
+                <div class="input-group-prepend">
+                  <div class="input-group-text position-relative"><i class="fal fa-envelope"></i></div>
+                </div>
+                <input type="text" class="form-control font-r-14" id="mail" placeholder="Email">
+              </div>
+              <div class="options">
+                <div class="form-check">
+                  <div class="custom-checkbox position-relative">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label cursor-p font-r-14" for="customCheck1">
+                      I Agree to the <a href="#!" class="custom-control-label-link position-relative">Terms and Conditions</a>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="position-relative mb-4">
+                <input type="submit" id="submit-sign-up-form" class="submit-sign-up-form-input">
+              </div>
+            </form>
 
-            <div class="submit-button position-relative">
-              <button type="button" id="lets-start" class="btn position-relative">
+            <div class="submit-button">
+              <label for="submit-sign-up-form" class="btn position-relative">
                 Let’s Start
-                <i class="fas fa-long-arrow-right"></i>
-              </button>
+                <i class="far fa-long-arrow-right"></i>
+              </label>
             </div>
           </div>
+
+
+          <!--
+            on <button class="lets-go-btn" type="button">Let's go</button> 'click' event:
+            add class 'is-active' to <div class="form-wrapper"></div>
+            and also add class 'blocked' to the <body> to prevent window scroll
+          -->
+
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section-bottom position-relative">
+  <section class="section-bottom position-relative d-none">
     <div class="left-decoration-element"></div>
     <div class="container container-lg">
       <div class="row">
@@ -152,8 +156,11 @@
           </div>
 
           <div class="bottom-text">
-            AIQpros is a market changing technological platform designed solely for service providers operating within the home services market.
-            The complete A-Z, user friendly platform incorporates unique AI algorithms to provide home services professionals across the U.S with laser focused leads, a complete lead and sales management process and technological Business Intelligence features to assure enhanced business optimization and growth.
+            AIQpros is a market changing technological platform designed solely for service providers operating within
+            the home services market.
+            The complete A-Z, user friendly platform incorporates unique AI algorithms to provide home services
+            professionals across the U.S with laser focused leads, a complete lead and sales management process and
+            technological Business Intelligence features to assure enhanced business optimization and growth.
           </div>
         </div>
       </div>

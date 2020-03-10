@@ -1,3 +1,5 @@
+@import '../components/form';
+
 .landing-sign-up {
   font-family: $h-font;
   color: $primaryColor;
@@ -9,7 +11,6 @@
 
   h2 {
     font-weight: 300;
-    font-size: 15px;
   }
 
   h3 {
@@ -42,6 +43,7 @@ img {
 }
 
 .head-section-body {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -82,46 +84,50 @@ img {
   justify-content: flex-start;
   text-align: center;
   box-shadow: 0 1.5px 15px 0 rgba(88, 80, 119, 0.17);
-  background-color: #ffffff;
+  background-color: #fff;
+  transition-duration: 400ms;
 
   &:after {
     display: block;
     content: '';
     position: absolute;
     left: 50%;
-    bottom: -6px;
+    bottom: -12px;
     transform: translate(-50%);
-    width: 90%;
-    height: 6px;
+    width: 84%;
+    height: 12px;
     background-color: #d8cdba;
   }
 
-  &.scaled {
+  &.scaled-up {
     transform: scale(1.05);
   }
 
   &:hover {
     transform: scale(1.05);
   }
-
-  &:first-of-type {
-    margin-left: 0;
-  }
-
-  &:last-of-type {
-    margin-right: 0;
-  }
 }
 
 .quality-card-image {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
-  height: 65px;
+}
 
-  img {
-    width: 100%;
+.form-container {
+  padding-top: 50px;
+  border-radius: 5px;
+  box-shadow: 0 1.5px 25px 0 rgba(88, 80, 119, 0.19);
+  background-color: #ffffff;
+
+  h5 {
+    margin-top: 8px;
+    font-weight: normal;
   }
+}
+
+.sign-up-form {
+  margin-top: 25px;
 }
 
 .section-bottom {
