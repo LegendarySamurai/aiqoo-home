@@ -20,6 +20,7 @@ letsGoBtn.addEventListener('click', function() {
 
 inner.addEventListener('click', () => {
 	formWrapper.classList.remove('is-active');
+	body.classList.remove('blocked');
 });
 
 const qualityCards = document.querySelectorAll('.quality-card');
