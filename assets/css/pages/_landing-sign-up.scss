@@ -9,10 +9,6 @@
     box-sizing: border-box;
   }
 
-  h2 {
-    font-weight: 300;
-  }
-
   h3 {
     font-weight: 500;
   }
@@ -44,9 +40,6 @@ img {
 
 .btn-wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
 
   button {
     background-color: $primaryColor;
@@ -64,9 +57,9 @@ img {
   }
 }
 
-.quality-cards {
-  display: flex;
-}
+//.quality-cards {
+//  display: flex;
+//}
 
 .quality-card {
   position: relative;
@@ -75,28 +68,36 @@ img {
   align-items: center;
   justify-content: flex-start;
   text-align: center;
-  box-shadow: 0 1.5px 15px 0 rgba(88, 80, 119, 0.17);
-  background-color: #fff;
-  transition-duration: 400ms;
 
-  &:after {
-    display: block;
-    content: '';
+  .quality-card-inner {
     position: absolute;
-    left: 50%;
-    bottom: -12px;
-    transform: translate(-50%);
-    width: 84%;
-    height: 12px;
-    background-color: #d8cdba;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    box-shadow: 0 1.5px 15px 0 rgba(88, 80, 119, 0.17);
+    background-color: #fff;
+    transition-duration: 400ms;
+    //z-index: 1;
+
+    &:after {
+      display: block;
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -12px;
+      transform: translate(-50%);
+      width: 84%;
+      height: 12px;
+      background-color: #d8cdba;
+    }
   }
 
-  &.scaled-up {
-    transform: scale(1.05);
-  }
-
-  &:hover {
-    transform: scale(1.05);
+  .quality-card-content {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 2;
   }
 }
 

@@ -38,11 +38,11 @@ body {
 
   @media(min-width: 1600px) { // from 1600
     .container-lg {
-      max-width: 1480px;
+      max-width: 1400px;
     }
   }
 
-  @media(min-width: 1900px) { // from 1900
+  @media(min-width: 1920px) {
     .container-lg {
       max-width: 1770px;
     }
@@ -51,7 +51,6 @@ body {
 
 @media(min-width: 300px) { // from 300
   .landing-sign-up {
-
     h2 {
       font-size: 15px;
       color: $primaryColor;
@@ -91,7 +90,7 @@ body {
   }
 
   .btn-wrapper {
-    padding-top: 70px;
+    //padding-top: 70px;
 
     h1 {
       font-size: 23px;
@@ -105,16 +104,14 @@ body {
     }
   }
 
-  .quality-cards {
-    flex-direction: column;
-    align-items: center;
-  }
-
   .quality-card {
     width: 96%;
     height: 200px;
     margin-bottom: 40px;
-    padding: 30px 30px 10px;
+
+    .quality-card-content {
+      padding: 30px 30px 10px;
+    }
   }
 
   .quality-card-image {
@@ -161,9 +158,70 @@ body {
   }
 }
 
+@media only screen and (min-width: 300px) and (max-width: 991px) {
+  .head-section {
+    &:before {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background-color: transparentize(#000, .65);
+    }
+  }
+
+  .head-section-container {
+    height: 100%;
+
+    .row {
+      height: 100%;
+    }
+  }
+
+  .head-section {
+    height: 350px;
+
+    .head-section-body {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      //max-width: 96%;
+      //background-color: transparentize(#fff, .5);
+      padding: 40px 60px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+    }
+  }
+
+  .btn-wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      white-space: nowrap;
+    }
+
+    .lets-go-btn {
+      margin-top: 20px;
+    }
+  }
+
+  .content {
+    h2 {
+      font-weight: bold;
+    }
+  }
+}
+
 @media(min-width: 768px) { // from 768
   .head-section {
-    background-image: url("../images/bg/landing-sign-up-bg-d.png");
     border-top-width: 28px;
   }
 
@@ -176,13 +234,39 @@ body {
   }
 
   .quality-cards {
+    display: flex;
+    align-items: center;
     flex-direction: row;
   }
 
   .quality-card {
     width: 33%;
     margin: 0 5px;
-    padding: 20px 10px 10px 10px;
+    cursor: pointer;
+
+    .quality-card-content {
+      padding: 20px 10px 10px 10px;
+    }
+
+    &.scaled-up {
+      z-index: 9;
+
+      .quality-card-inner {
+        transform: scale(1.15);
+      }
+
+      .quality-card-content {
+        z-index: 2;
+      }
+    }
+
+    &:hover {
+      z-index: 10;
+
+      .quality-card-inner {
+        transform: scale(1.15);
+      }
+    }
   }
 
   .quality-card-image {
@@ -250,16 +334,18 @@ body {
 
     h2 {
       padding: 0 50px;
+      font-weight: 300;
     }
   }
 
   .quality-cards {
-    margin-top: 20px;
+    margin-top: 40px;
   }
 
-
-
   .btn-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
     margin-left: 30px;
     padding-top: 0;
 
@@ -298,7 +384,7 @@ body {
   }
 
   .head-section-content {
-    min-height: 467px;
+    //min-height: 467px;
   }
 
   .head-section-body {
@@ -343,7 +429,10 @@ body {
   .quality-card {
     height: 210px;
     margin: 0 10px;
-    padding: 20px 15px 15px;
+
+    .quality-card-content {
+      padding: 20px 15px 15px;
+    }
   }
 
   .quality-card-image {
@@ -374,7 +463,10 @@ body {
 
   .quality-card {
     height: 270px;
-    padding: 60px 20px 20px;
+
+    .quality-card-content {
+      padding: 60px 20px 20px;
+    }
   }
 
   .quality-card-text {
@@ -442,3 +534,4 @@ body {
     }
   }
 }
+
