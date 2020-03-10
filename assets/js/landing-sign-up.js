@@ -2,6 +2,7 @@ const isMobile = window.innerWidth < 767;
 
 const letsGoBtn = document.querySelector('.lets-go-btn');
 const formWrapper = document.querySelector('.back-layer');
+const inner = document.querySelector('.inner');
 const body = document.querySelector('body');
 let popupVisible = false;
 
@@ -17,7 +18,7 @@ letsGoBtn.addEventListener('click', function() {
 	}
 });
 
-formWrapper.addEventListener('click', () => {
+inner.addEventListener('click', () => {
 	formWrapper.classList.remove('is-active');
 });
 
