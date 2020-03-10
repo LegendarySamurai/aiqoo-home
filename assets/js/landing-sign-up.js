@@ -1,7 +1,7 @@
-const isMobile = window.innerWidth < 800;
+const isMobile = window.innerWidth < 600;
 
 const letsGoBtn = document.querySelector('.lets-go-btn');
-const formWrapper = document.querySelector('.form-wrapper');
+const formWrapper = document.querySelector('.back-layer');
 let popupVisible = false;
 
 

@@ -24,18 +24,10 @@
   background-repeat: no-repeat;
 }
 
-.head-section-header {
-
-}
-
 .logo {
   background-color: #fff;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-}
-
-.brand-address {
-
 }
 
 img {
@@ -115,7 +107,6 @@ img {
 }
 
 .form-container {
-  padding-top: 50px;
   border-radius: 5px;
   box-shadow: 0 1.5px 25px 0 rgba(88, 80, 119, 0.19);
   background-color: #ffffff;
@@ -132,47 +123,44 @@ img {
 
 .section-bottom {
   width: 100%;
-  margin: 40px 0 0;
   font-family: $h-font;
   color: $primaryColor;
 
-  .left-decoration-element {
-    position: absolute;
-    top: 0;
-    left: -3px;
-    width: 11px;
-    height: 48.5px;
-    border-radius: 7.5px;
-    background-color: #d8cdba;
+  .top-container {
+    &:before {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -3px;
+      width: 19px;
+      height: 100%;
+      border-top-right-radius: 7.5px;
+      border-bottom-right-radius: 7.5px;
+      background-color: #d8cdba;
+    }
   }
 
   .bottom-decoration-element {
     position: absolute;
-    bottom: -5px;
+    bottom: -10px;
     left: 0;
     width: 100%;
-    height: 24px;
-    border-radius: 7.5px;
-    background-color: #d8cdba;
+    border-top: 24px solid;
+    border-top-right-radius: 7.5px;
+    border-top-left-radius: 7.5px;
+    border-color: #d8cdba;
   }
 
   .top-text {
     width: 100%;
-    font-size: 12px;
     font-weight: 300;
     line-height: 1.25;
-
-    span {
-      font-size: 15px;
-    }
   }
 
   .bottom-text {
     width: 100%;
     line-height: 1.25;
-    margin-top: 40px;
-    margin-bottom: 40px;
     font-weight: 300;
-    font-size: 10px;
   }
 }

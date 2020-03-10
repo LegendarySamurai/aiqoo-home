@@ -84,58 +84,61 @@
             <img src="assets/images/laptop.png" alt="laptop">
           </div>
 
-          <div class="form-container">
-            <div class="text-block">
-              <h4 class="font-weight-black">Welcome!</h4>
-              <h5>Fill in the following fields to sign-up</h5>
-            </div>
+          <div class="back-layer">
+            <div class="form-container">
+              <div class="text-block">
+                <h4 class="font-weight-black">Welcome!</h4>
+                <h5>Fill in the following fields to sign-up</h5>
+              </div>
 
-            <form class="sign-up-form">
-              <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                  <div class="input-group-text position-relative"><i class="fal fa-user"></i></div>
+              <form class="sign-up-form">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text position-relative"><i class="fal fa-user"></i></div>
+                  </div>
+                  <input type="text" class="form-control" id="company-name" placeholder="Company name">
                 </div>
-                <input type="text" class="form-control font-r-14" id="company-name" placeholder="Company name">
-              </div>
-              <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                  <div class="input-group-text position-relative"><i class="fal fa-phone-alt"></i></div>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text position-relative"><i class="fal fa-phone-alt"></i></div>
+                  </div>
+                  <input type="tel" class="form-control" id="phone-number" placeholder="Phone number">
                 </div>
-                <input type="tel" class="form-control font-r-14" id="phone-number" placeholder="Phone number">
-              </div>
-              <div class="input-group mb-4">
-                <div class="input-group-prepend">
-                  <div class="input-group-text position-relative"><i class="fal fa-envelope"></i></div>
+                <div class="input-group mb-4">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text position-relative"><i class="fal fa-envelope"></i></div>
+                  </div>
+                  <input type="text" class="form-control" id="mail" placeholder="Email">
                 </div>
-                <input type="text" class="form-control font-r-14" id="mail" placeholder="Email">
-              </div>
-              <div class="options">
-                <div class="form-check">
-                  <div class="custom-checkbox position-relative">
-                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                    <label class="custom-control-label cursor-p font-r-14" for="customCheck1">
-                      I Agree to the <a href="#!" class="custom-control-label-link position-relative">Terms and Conditions</a>
-                    </label>
+                <div class="options">
+                  <div class="form-check">
+                    <div class="custom-checkbox position-relative">
+                      <input type="checkbox" class="custom-control-input" id="customCheck1">
+                      <label class="custom-control-label" for="customCheck1">
+                        I Agree to the <a href="#!" class="custom-control-label-link position-relative">Terms and Conditions</a>
+                      </label>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="position-relative mb-4">
-                <input type="submit" id="submit-sign-up-form" class="submit-sign-up-form-input">
-              </div>
-            </form>
+                <div class="position-relative mb-4">
+                  <input type="submit" id="submit-sign-up-form" class="submit-sign-up-form-input">
+                </div>
+              </form>
 
-            <div class="submit-button">
-              <label for="submit-sign-up-form" class="btn position-relative">
-                Let’s Start
-                <i class="far fa-long-arrow-right"></i>
-              </label>
+              <div class="submit-button">
+                <label for="submit-sign-up-form" class="btn position-relative">
+                  Let’s Start
+                  <i class="far fa-long-arrow-right"></i>
+                </label>
+              </div>
             </div>
           </div>
 
 
+
           <!--
             on <button class="lets-go-btn" type="button">Let's go</button> 'click' event:
-            add class 'is-active' to <div class="form-wrapper"></div>
+            add class 'is-active' to <div class="back-layer"></div>
             and also add class 'blocked' to the <body> to prevent window scroll
           -->
 
@@ -144,17 +147,23 @@
     </div>
   </section>
 
-  <section class="section-bottom position-relative d-none">
-    <div class="left-decoration-element"></div>
+  <section class="section-bottom position-relative">
+    <div class="top-container position-relative">
+      <div class="container container-lg">
+        <div class="row">
+          <div class="col-12">
+            <div class="top-text">
+              <span class="font-weight-black"> Limited time offer:</span><br>
+              Full use of the AIQPros platform including index appearance and lead management segments at no charge<br>
+              10 FREE leads, no strings attached!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container container-lg">
       <div class="row">
         <div class="col-12">
-          <div class="top-text">
-            <span class="font-weight-black"> Limited time offer:</span><br>
-            Full use of the AIQPros platform including index appearance and lead management segments at no charge<br>
-            10 FREE leads, no strings attached!
-          </div>
-
           <div class="bottom-text">
             AIQpros is a market changing technological platform designed solely for service providers operating within
             the home services market.
@@ -162,10 +171,10 @@
             professionals across the U.S with laser focused leads, a complete lead and sales management process and
             technological Business Intelligence features to assure enhanced business optimization and growth.
           </div>
+          <div class="bottom-decoration-element"></div>
         </div>
       </div>
     </div>
-    <div class="bottom-decoration-element"></div>
   </section>
 </main>
 <script src="assets/js/landing-sign-up.js"></script>
