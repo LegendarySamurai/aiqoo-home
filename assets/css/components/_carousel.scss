@@ -167,12 +167,21 @@
     display: inline-block;
     width: 1.5rem;
     height: 1.5rem;
-    background-color: $primaryColor;
+    background-color: #d8cdba;
     background-clip: content-box;
     border: 0.25rem solid transparent;
     border-radius: 50%;
     font-size: 0;
     transition: transform 0.1s;
+
+    &.is-clicked {
+      width: 1.75rem;
+      height: 1.75rem;
+      background-color: $primaryColor;
+    }
+  }
+
+  .carousel__navigation-item {
   }
 
   //.carousel::before,
