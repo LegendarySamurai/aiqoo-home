@@ -102,16 +102,9 @@
       }
     }
 
-    .common-searches,
-    .services {
+    .common-searches {
       padding-top: 40px;
       padding-bottom: 40px;
-    }
-
-    .services {
-      .services-list {
-        padding: 0 15px;
-      }
     }
 
     .categories {
@@ -152,10 +145,6 @@
         .magazine-header-text {
           font-size: 12pt;
         }
-      }
-
-      .cards-container {
-        margin-top: 40px;
       }
 
       .article {
@@ -578,8 +567,7 @@
       }
     }
 
-    .common-searches,
-    .services {
+    .common-searches {
       padding-top: 60px;
       padding-bottom: 60px;
     }
@@ -624,11 +612,6 @@
       .section-sub-title {
         font-size: 12pt;
       }
-    }
-
-    .services-list {
-      padding-left: 50px;
-      padding-right: 20px;
     }
 
     .google-search {
@@ -742,9 +725,6 @@
   // EOL: @media(min-width: 992px)
 
   @media(min-width: 1200px) {
-    .head-section {
-
-    }
 
     .other-categories {
       .list {
@@ -779,10 +759,6 @@
   // EOL: @media(min-width: 1200px)
 
   @media(min-width: 1400px) {
-    .head-section {
-
-    }
-
     .section-container {
       max-width: 1300px;
     }

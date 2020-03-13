@@ -2,6 +2,10 @@
   @media(min-width: 300px) {
     max-width: 400px;
 
+    .cards-container {
+      margin-top: 40px;
+    }
+
     .card-image {
       height: 210px;
     }

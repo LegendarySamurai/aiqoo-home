@@ -35,14 +35,21 @@ body {
 
 
 // Head Section
+.landing-sign-up {
+  .head-section {
+    background-image: url("../images/bg/landing-sign-up-bg-d.png");
+    border-top: 28px solid $primaryColor;
+  }
+}
+
+
 .head-section {
-  background-image: url("../images/bg/landing-sign-up-bg-d.png");
-  border-top: 28px solid $primaryColor;
+  //background-image: url("../images/bg/landing-sign-up-bg-d.png");
+  //border-top: 28px solid $primaryColor;
   background-position: center 100%;
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 .head-section-content {
   padding-bottom: 0;
 }
@@ -66,14 +73,18 @@ body {
   margin-left: 10px;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  width: 240px;
-  background-color: #fff;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+.landing-sign-up {
+  .logo {
+    display: flex;
+    align-items: center;
+    width: 240px;
+    background-color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}
 
+.logo {
   img {
     max-width: 100%;
     width: 100%;
