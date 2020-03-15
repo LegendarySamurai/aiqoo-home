@@ -14,6 +14,7 @@ body {
   font-family: $h-font;
   color: $primaryColor;
   box-sizing: border-box;
+  border-top: 28px solid #585077;
 
   .container-lg {
     max-width: 1600px;
@@ -37,7 +38,7 @@ body {
 // Head Section
 .head-section {
   background-image: url("../images/bg/landing-sign-up-bg-d.png");
-  border-top: 28px solid $primaryColor;
+  //border-top: 28px solid $primaryColor;
   background-position: center 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -56,14 +57,15 @@ body {
   align-items: center;
   justify-content: flex-end;
   width: 950px;
-  padding: 50px 0;
+  //padding: 50px 0;
+  padding: 70px 0 50px;
   margin-top: -30px;
 
   &:before {
     display: block;
     content: '';
     position: absolute;
-    top: 40%;
+    top: 43%;
     left: 0;
     transform: translate(0, -50%);
     width: 100%;
@@ -147,7 +149,6 @@ body {
 .quality-cards {
   display: flex;
   flex-direction: row;
-  padding-right: 40px;
   color: #574f76;
 }
 
@@ -204,6 +205,7 @@ body {
 .read-more {
   display: block;
   margin-top: auto;
+  padding: 0;
   font-weight: 300;
   font-size: 15.75pt;
   color: #d8cdba;
@@ -241,16 +243,18 @@ body {
 }
 
 .special-offers {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   padding: 30px 30px 30px;
 
+  .special-offers-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
   .label {
-    //position: absolute;
-    //top: 46px;
-    //right: -10px;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -258,6 +262,20 @@ body {
     height: 62px;
     margin-right: -40px;
     background-color: #585077;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-50%);
+      display: block;
+      content: '';
+      width: 0;
+      height: 0;
+      border-bottom: 63px solid #fff;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+    }
   }
 
   .text {
@@ -270,30 +288,71 @@ body {
   }
 
   .offer {
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
     width: 100%;
     height: 116px;
+    padding-left: 25px;
+
+    &:after {
+      position: absolute;
+      top: 50%;
+      right: -7px;
+      transform: translateY(-50%);
+      display: block;
+      content: '';
+      width: 0;
+      height: 0;
+      border-top: 24px solid transparent;
+      border-bottom: 24px solid transparent;
+      border-right: 33px solid #fff;
+      //box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+      //background-color: #ffffff;
+    }
+
+    .fa-check {
+      margin-right: 20px;
+      font-size: 15pt;
+      color: #fff;
+    }
+
+    span {
+      color: #fff;
+      font-size: 22pt;
+    }
+
+    .number {
+       margin-right: 10px;
+       font-size: 26pt;
+     }
+  }
+
+  .offer-inner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
   }
 
   .offer-1 {
-
+    background-image: linear-gradient(76deg, #c058c9 7%, #7c3a9e 171%);
   }
 
   .offer-2 {
-
+    background-image: linear-gradient(76deg, #9abfe3 7%, #5964a4 171%);
   }
 
   .offer-3 {
-
+    background-image: linear-gradient(76deg, #354284 7%, #8a95cc 171%);
   }
 }
 
 .back-layer {
-  position: fixed;
-  top: 170px;
+  position: absolute;
+  top: 0;
+  transform: translateY(-40%);
   z-index: 100;
   width: 100%;
   max-width: 500px;
@@ -304,6 +363,8 @@ body {
 }
 
 .form-container {
+  padding-top: 10px;
+
   h5 {
     margin-top: 8px;
     font-weight: normal;
@@ -334,16 +395,15 @@ body {
     width: 100%;
     font-weight: 300;
     line-height: 1.25;
-    //font-size: 24px;
+  }
 
-    h1 {
-      font-size: 35.25pt;
-    }
+  h1 {
+    font-size: 35.25pt;
+  }
 
-    .text {
-      margin: 20px 0;
-      font-size: 18pt;
-    }
+  .text {
+    margin: 20px 0;
+    font-size: 18pt;
   }
 
   .bottom-text {
@@ -351,7 +411,7 @@ body {
     line-height: 1.25;
     margin-top: 40px;
     margin-bottom: 40px;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 17.25pt;
   }
 }
