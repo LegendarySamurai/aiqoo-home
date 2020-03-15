@@ -252,6 +252,7 @@
 
         .form-container {
           width: 96%;
+          padding-top: 20px;
           background-color: #fff;
           border-radius: 5px;
         }
@@ -339,6 +340,10 @@
 
       .quality-card-content {
         padding: 20px 20px 10px;
+
+        &:before {
+          top: 0;
+        }
       }
     }
 
@@ -442,7 +447,7 @@
     }
   }
 
-  @media(min-width: 768px) {
+  @media(min-width: 992px) {
     .quality-card {
       &.scaled-up {
         z-index: 9;
