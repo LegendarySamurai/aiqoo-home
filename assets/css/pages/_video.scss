@@ -1,0 +1,25 @@
+.video {
+  font-family: $h-font;
+  color: $primaryColor;
+  box-sizing: border-box;
+
+  .container-lg {
+    max-width: 1470px;
+  }
+
+  .video-inner {
+    padding: 20px 40px 40px;
+    box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.09);
+    background-color: #ffffff;
+  }
+
+  // Section Services
+  .services {
+    padding: 45px 0 80px;
+    background-color: transparentize(#ebe2d3, .37);
+
+    .container-lg {
+      padding: 0 100px;
+    }
+  }
+}
