@@ -25,37 +25,6 @@
     }
   }
 
-  // categories container
-  .categories-container {
-    width: 315px;
-    height: 100%;
-    padding: 20px;
-    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-  }
-
-  .categories-list {
-
-  }
-
-  .categories-item {
-    position: relative;
-    margin-bottom: 20px;
-    padding-left: 30px;
-
-    &::before {
-      position: absolute;
-      top: 50%;
-      left: 0;
-      transform: translate(0, -50%);
-      display: block;
-      content: '';
-      width: 8px;
-      height: 8px;
-      background-color: transparentize($primaryColor, .5);
-    }
-  }
-
   // Section Services
   .services {
     padding: 45px 0 80px;

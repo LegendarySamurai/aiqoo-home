@@ -3,13 +3,13 @@
   color: $primaryColor;
   box-sizing: border-box;
 
-  .container-lg {
-    max-width: 1470px;
+  h3 {
+    font-size: 18pt;
+    color: #585077;
   }
 
-  // head-section
-  .head-section {
-
+  .container-lg {
+    max-width: 1470px;
   }
 
   // article-section
@@ -24,7 +24,7 @@
   .article-inner {
     padding: 20px 40px 40px;
     box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.09);
-    background-color: #ffffff;
+    background-color: #fff;
   }
 
   .article-header {
@@ -111,8 +111,6 @@
       line-height: 1.33;
       margin: 5px 0 10px;
       font-weight: 500;
-      font-size: 18pt;
-      color: #585077;
     }
   }
 
@@ -179,13 +177,27 @@
     }
   }
 
+  .aside-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .commercials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     margin: 20px 0;
 
     button {
       margin-left: auto;
       background-color: $primaryColor;
+    }
+
+    h3 {
+      text-align: center;
+      font-size: 24pt;
     }
   }
 
@@ -197,7 +209,12 @@
     background-color: #ebe9e4;
 
     .text {
-      max-width: 550px;
+      max-width: 480px;
+      font-size: 13pt;
+    }
+
+    .number {
+      font-size: 13pt;
     }
 
     span {
@@ -207,6 +224,7 @@
 
     button {
       width: 240px;
+      font-size: 12pt;
     }
   }
 
@@ -251,7 +269,7 @@
       line-height: 1.25;
       padding: 20px;
       border: 3px solid #fff;
-      font-size: 18pt;
+      font-size: 18.5pt;
     }
 
     .h-c {
@@ -300,13 +318,126 @@
     }
   }
 
+  .commercial-4,
+  .commercial-5,
+  .commercial-6,
+  .commercial-7 {
+        max-width: 290px;
+      }
+
+  .commercial-6 {
+    padding: 30px;
+
+    .inner {
+      //height: 100%;
+      border: 5px solid #585077;
+    }
+
+    .content {
+      padding: 30px 20px;
+    }
+
+    h3 {
+      margin-top: 50px;
+    }
+
+    .text {
+      padding: 0 20px;
+      text-align: center;
+      font-size: 16pt;
+    }
+  }
+
+  .commercial-6,
+  .commercial-7 {
+    height: 350px;
+    background: url('../../assets/images/bg/commercial-6-7-bg.png') no-repeat;
+    background-size: contain;
+
+    .inner {
+      height: 100%;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+
+    button {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      max-width: 180px;
+      margin-left: 0;
+      margin-top: auto;
+      color: #fff;
+      font-size: 15pt;
+
+      .fa-chevron-right {
+        margin-left: 30px;
+      }
+    }
+  }
+
+  .commercial-7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 30px;
+    border: 5px solid #585077;
+
+    h3 {
+      margin-top: 70px;
+    }
+  }
+
+  // More
+  .more {
+    width: 100%;
+    max-width: 290px;
+    padding: 16px 30px;
+    box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+
+    h3 {
+      margin-bottom: 16px;
+    }
+  }
+
+  .i-cards-container {
+    .i-card {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      color: #585077;
+      cursor: pointer;
+    }
+
+    .title {
+      margin-top: 16px;
+      font-size: 11pt;
+    }
+
+    .text {
+      margin: 0;
+      font-weight: 300;
+      font-size: 11pt;
+    }
+  }
+
   // stats
   .graphs-container {
     .graph-card {
       height: 308px;
       border-radius: 5px;
       box-shadow: 0 0.5px 4px 0 rgba(20, 46, 110, 0.1);
-      background-color: #ffffff;
+      background-color: #fff;
     }
   }
 
@@ -314,8 +445,9 @@
   // Aside
   .articles-categories {
     box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.09);
-    background-color: #ffffff;
+    background-color: #fff;
   }
+
   // EOL: article section
 
   // Section Cards Section

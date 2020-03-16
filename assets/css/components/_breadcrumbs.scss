@@ -1,0 +1,18 @@
+.breadcrumbs {
+  ul {
+
+  }
+
+  li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  span {
+    margin: 0 5px;
+    font-size: 10pt;
+    font-weight: 300;
+  }
+}
