@@ -9,7 +9,7 @@
 
   // head-section
   .head-section {
-    background-color: coral;
+
   }
 
   // article-section
@@ -29,10 +29,10 @@
 
   .article-header {
     display: flex;
-    flex-direction: row; //
-    justify-content: space-between; //
+    flex-direction: row;
+    justify-content: space-between;
     align-items: flex-start;
-    padding-bottom: 25px; //
+    padding-bottom: 25px;
     border-bottom: 1px solid #ececec;
     color: #585077;
     font-family: "Raleway", sans-serif;
@@ -69,6 +69,7 @@
     font-weight: 300;
   }
 
+  // tools
   .tool-panel {
     span {
       padding: 0 14px;
@@ -103,6 +104,7 @@
     h2 {
       line-height: 1.5;
       font-size: 23pt;
+      color: #585077;
     }
 
     h3 {
@@ -110,6 +112,7 @@
       margin: 5px 0 10px;
       font-weight: 500;
       font-size: 18pt;
+      color: #585077;
     }
   }
 
@@ -208,16 +211,102 @@
   }
 
   .commercial-3 {
-    display: flex;
-    flex-direction: row;
-    padding: 25px 20px 25px 10px;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1) -53%, #f7f7f7 67%);
-    object-fit: contain;
+    .bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('../../assets/images/commercial-3-man.png');
+      background-size: contain;
+      background-position: top left;
+      background-repeat: no-repeat;
+    }
+
+    .commercial-content {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      z-index: 200;
+      padding: 20px 5px 20px 170px;
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1) -53%, #f7f7f7 67%);
+      background-size: cover;
+      background-position: top left;
+      background-repeat: no-repeat;
+
+      .row {
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
 
     button {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
       width: 130px;
       height: 110px;
+      line-height: 1.25;
+      padding: 20px;
       border: 3px solid #fff;
+      font-size: 18pt;
+    }
+
+    .h-c {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .f-c {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+
+      label {
+        color: #b3b3b3;
+        font-size: 11pt;
+      }
+
+      input {
+        height: 38px;
+        border: none;
+        border-bottom: 1px solid #585077;
+        background-color: transparent;
+        color: #c3c3c3;
+        font-weight: 300;
+        font-size: 11pt;
+
+        &::placeholder {
+          color: #c3c3c3;
+          font-weight: 300;
+          font-size: 11pt;
+        }
+      }
+    }
+
+    h2 {
+      max-width: 390px;
+      line-height: 1.25;
+    }
+
+    .find-by-zip-code {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+
+  // stats
+  .graphs-container {
+    .graph-card {
+      height: 308px;
+      border-radius: 5px;
+      box-shadow: 0 0.5px 4px 0 rgba(20, 46, 110, 0.1);
+      background-color: #ffffff;
     }
   }
 
@@ -258,5 +347,10 @@
     .container-lg {
       padding: 0 100px;
     }
+  }
+
+  button:active,
+  button:focus {
+    color: #fff;
   }
 }

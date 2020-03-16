@@ -7,6 +7,7 @@
     .cards-section {
 
     }
+
     .card {
       max-width: 450px;
     }
@@ -14,23 +15,42 @@
 
   @media(max-width: 1599px) {
     .container-lg {
-      max-width: 1340px;
+      max-width: 1340px !important;
     }
   }
 
   @media(max-width: 1399px) {
     .container-lg {
-      max-width: 1280px;
+      max-width: 1280px !important;
     }
   }
 
   @media(max-width: 1365px) {
     .container-lg {
-      max-width: 1140px;
+      max-width: 1140px !important;
     }
   }
 
-  @media(max-width: 1199px) {}
+  @media(max-width: 1199px) {
+    .container-lg {
+      max-width: 960px !important;
+    }
+
+    // Content
+    .article-content {
+      h1 {
+        font-size: 28pt !important;
+      }
+
+      h2 {
+        font-size: 21pt !important;
+      }
+
+      h3 {
+        font-size: 16pt !important;
+      }
+    }
+  }
 
   @media(max-width: 991px) {
     .tool-panel {
@@ -38,28 +58,58 @@
         font-size: 11pt;
       }
     }
-  }
 
-  @media(max-width: 767px) {
-    // Section Cards Section
-    .cards-section { }
+    .commercial-3 {
+      .commercial-content {
+        padding: 20px 20px 20px 20px !important;
+      }
 
-    .container-lg {
-      width: 100%;
-      max-width: initial;
-      padding: 0 15px;
-    }
+      .h-c {
+        justify-content: flex-start !important;
+      }
 
-    // Section Services
-    section.services {
+      .f-c {
 
+      }
     }
   }
 
-  @media(max-width: 599px) {
-    .card {
-      max-width: 350px;
-      margin: 0 auto;
+@media(max-width: 767px) {
+  .container-lg {
+    width: 100%;
+    max-width: initial;
+    padding: 0 15px;
+  }
+
+
+  .commercial-3 {
+    .find-by-zip-code {
+      flex-direction: column;
+      align-items: flex-start !important;
+
+      button {
+        justify-content: center;
+        width: 96%;
+        height: 70px;
+        margin-left: 0;
+        padding: 10px;
+        font-size: 15pt;
+        border: none;
+      }
+
+      .f-c {
+
+      }
     }
   }
+
+}
+
+@media(max-width: 599px) {
+  .card {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}
+
 }
