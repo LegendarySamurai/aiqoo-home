@@ -18,8 +18,9 @@
 
 .col-auto, .col,
 .col-2, .col-3, .col-4, .col-5, .col-6, .col-8, .col-9, .col-10, .col-12,
+.col-md-6,
 .col-lg-auto,
-.col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-8, .col-lg-9,
+.col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-8, .col-lg-9,.col-lg-11,
 .col-xl-3, .col-xl-9 {
   position: relative;
   width: 100%;
@@ -93,7 +94,7 @@
 //  flex: 0 0 91.66667%;
 //  max-width: 91.66667%;
 //}
-//
+
 .col-12 {
   flex: 0 0 100%;
   max-width: 100%;
@@ -191,10 +192,10 @@
   //  flex: 0 0 41.66667%;
   //  max-width: 41.66667%;
   //}
-  //.col-md-6 {
-  //  flex: 0 0 50%;
-  //  max-width: 50%;
-  //}
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
   //.col-md-7 {
   //  flex: 0 0 58.33333%;
   //  max-width: 58.33333%;
@@ -272,10 +273,10 @@
   //  flex: 0 0 83.33333%;
   //  max-width: 83.33333%;
   //}
-  //.col-lg-11 {
-  //  flex: 0 0 91.66667%;
-  //  max-width: 91.66667%;
-  //}
+  .col-lg-11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+  }
   //.col-lg-12 {
   //  flex: 0 0 100%;
   //  max-width: 100%;

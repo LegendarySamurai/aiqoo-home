@@ -15,7 +15,7 @@
 </head>
 <body>
 
-<header class="header-sticky header-home d-none">
+<header class="header-sticky header-landing always-visible">
   <div class="header-container container-fluid container-lg">
     <div class="row">
       <!-- header mobile -->
@@ -168,7 +168,7 @@
           <div class="card">
             <div class="col-12 col-lg-9">
               <div class="row">
-                <div class="col-12">
+                <div class="col-12 col-lg-11">
                   <div class="video-container">
                     <div class="mask"></div>
                     <!-- 16:9 aspect ratio -->
@@ -178,52 +178,61 @@
                   </div>
                 </div>
                 <!-- video information -->
-                <div class="col-12">
-                  <div class="row">
-                    <div class="col">
-                      <h3>Video Main Title</h3>
-                      <h4>Video Subtitle Information</h4>
-                    </div>
-                    <div class="col-auto">
-                      <ul>
-                        <!-- views -->
-                        <li>
-                          <i class="fal fa-eye"></i>
-                          <span>13,456</span>
-                        </li>
-                        <!-- repeat  -->
-                        <li>
-                          <i class="fal fa-repeat"></i>
-                          <span>1</span>
-                        </li>
-                        <!-- laikosiki -->
-                        <li>
-                          <i class="fal fa-thumbs-down"></i>
-                          <i class="fal fa-thumbs-up"></i>
-                        </li>
-                        <!-- post date -->
-                        <li>
-                          <i class="fal fa-calendar"></i>
-                          <span>01/03/2020</span>
-                        </li>
-                      </ul>
+                <div class="col-12 col-lg-11">
+                  <div class="video-info-container">
+                    <div class="row">
+                      <div class="col-12 col-lg title-col">
+                        <h3 class="title">Video Main Title</h3>
+                        <span class="sub-title">Video Subtitle Information</span>
+                      </div>
+                      <div class="col-auto ml-lg-auto">
+                        <div class="tool-panel">
+                          <span>
+                            <i class="fal fa-eye"></i>
+                            13,456
+                          </span>
+                          <span>
+                            <i class="fal fa-repeat"></i>
+                            <span>1</span>
+                          </span>
+                          <span>
+                            <i class="fal fa-thumbs-down"></i>
+                            <i class="fal fa-thumbs-up"></i>
+                          </span>
+                          <span><i class="fal fa-calendar"></i>
+                            <span>01/03/2020</span></span>
+                        </div>
+
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-lg-3 pl-lg-5">
-              <h3>Theory of ethics</h3>
-              <div>
-                written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.
-                The first line of Lorem Ipsum, “Lorem ipsum dolor sit n the theory of ethics, very popular during the
-                Renaissance. The first line of Lorem Ipsum, “Lor
-
-                written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.
-                The first line of Lorem Ipsum, “Lorem ipsum dolor sit amet..”, comes from a line in section 1.10.32.
-                written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance.
-                The first line of Lorem Ipsum, “Lorem ipsum dolor sit amet..”, comes from a line in section 1.10.32.n
-                the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, “Lor
+            <div class="col-12 col-lg-3 px-lg-0">
+              <div class="info-container">
+                <h3 class="title">Theory of ethics</h3>
+                <div class="text">
+                  written in 45 BC. This book is a treatise on the theory
+                  of ethics, very popular during the Renaissance. The first
+                  line of Lorem Ipsum, “Lorem ipsum dolor sit n the theory
+                  of ethics, very popular during the Renaissance. The first
+                  line of Lorem Ipsum, “Lor
+                </div>
+                <div class="text">
+                  written in 45 BC. This book is a treatise on the theory
+                  of ethics, very popular during the Renaissance. The first
+                  line of Lorem Ipsum, “Lorem ipsum dolor sit n the theory
+                  of ethics, very popular during the Renaissance. The first
+                  line of Lorem Ipsum, “Lor
+                </div>
+                <div class="text">
+                  written in 45 BC. This book is a treatise on the theory
+                  of ethics, very popular during the Renaissance. The first
+                  line of Lorem Ipsum, “Lorem ipsum dolor sit n the theory
+                  of ethics, very popular during the Renaissance. The first
+                  line of Lorem Ipsum, “Lor
+                </div>
               </div>
             </div>
           </div>
@@ -233,7 +242,7 @@
   </section>
 
   <!-- featured video -->
-  <section>
+  <section class="featured-video">
     <div class="container container-lg">
       <div class="row">
         <div class="col-12">
@@ -243,8 +252,8 @@
           </h2>
         </div>
       </div>
-      <div class="row">
-        <div class="col-6 col-lg-auto video-item-col">
+      <div class="row video-items-container">
+        <div class="col-12 col-md-6 col-lg-auto video-item-col">
           <div class="video-item">
             <div class="video-container">
               <!-- 1:1 aspect ratio -->
@@ -253,8 +262,92 @@
               </div>
             </div>
             <div class="video-info">
-              <h3>Title</h3>
-              <h4>Video Subtitle</h4>
+              <h3 class="sub-title font-weight-black">Title</h3>
+              <h4 class="text">Video Subtitle</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-auto video-item-col">
+          <div class="video-item">
+            <div class="video-container">
+              <!-- 1:1 aspect ratio -->
+              <div class="embed-responsive embed-responsive-1by1">
+                <iframe class="embed-responsive-item" src=""></iframe>
+              </div>
+            </div>
+            <div class="video-info">
+              <h3 class="sub-title font-weight-black">Title</h3>
+              <h4 class="text">Video Subtitle</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-auto video-item-col">
+          <div class="video-item">
+            <div class="video-container">
+              <!-- 1:1 aspect ratio -->
+              <div class="embed-responsive embed-responsive-1by1">
+                <iframe class="embed-responsive-item" src=""></iframe>
+              </div>
+            </div>
+            <div class="video-info">
+              <h3 class="sub-title font-weight-black">Title</h3>
+              <h4 class="text">Video Subtitle</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-auto video-item-col">
+          <div class="video-item">
+            <div class="video-container">
+              <!-- 1:1 aspect ratio -->
+              <div class="embed-responsive embed-responsive-1by1">
+                <iframe class="embed-responsive-item" src=""></iframe>
+              </div>
+            </div>
+            <div class="video-info">
+              <h3 class="sub-title font-weight-black">Title</h3>
+              <h4 class="text">Video Subtitle</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-auto video-item-col">
+          <div class="video-item">
+            <div class="video-container">
+              <!-- 1:1 aspect ratio -->
+              <div class="embed-responsive embed-responsive-1by1">
+                <iframe class="embed-responsive-item" src=""></iframe>
+              </div>
+            </div>
+            <div class="video-info">
+              <h3 class="sub-title font-weight-black">Title</h3>
+              <h4 class="text">Video Subtitle</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-auto video-item-col">
+          <div class="video-item">
+            <div class="video-container">
+              <!-- 1:1 aspect ratio -->
+              <div class="embed-responsive embed-responsive-1by1">
+                <iframe class="embed-responsive-item" src=""></iframe>
+              </div>
+            </div>
+            <div class="video-info">
+              <h3 class="sub-title font-weight-black">Title</h3>
+              <h4 class="text">Video Subtitle</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-auto video-item-col">
+          <div class="video-item">
+            <div class="video-container">
+              <!-- 1:1 aspect ratio -->
+              <div class="embed-responsive embed-responsive-1by1">
+                <iframe class="embed-responsive-item" src=""></iframe>
+              </div>
+            </div>
+            <div class="video-info">
+              <h3 class="sub-title font-weight-black">Title</h3>
+              <h4 class="text">Video Subtitle</h4>
             </div>
           </div>
         </div>
@@ -263,7 +356,7 @@
   </section>
 
   <!-- most popular -->
-  <section>
+  <section class="most-popular">
     <div class="container container-lg">
       <div class="row">
         <div class="col-12">
@@ -273,9 +366,9 @@
           </h2>
         </div>
       </div>
-      <div class="row">
+      <div class="row justify-content-center justify-content-lg-start">
         <!-- categories -->
-        <div class="col-12 col-auto order-lg-1">
+        <div class="col-12 col-lg-6 order-lg-1 categories-container-col">
           <div class="categories-container">
             <h3>Categories</h3>
             <ul class="categories-list">
@@ -314,19 +407,61 @@
         </div>
 
         <!-- videos -->
-        <div class="col-6 col-lg">
-          <div class="row">
+        <div class="col-7 col-lg">
+          <div class="row video-items-container">
             <div class="col-12 col-lg-4 video-item-col">
               <div class="video-item">
                 <div class="video-container">
                   <!-- 1:1 aspect ratio -->
                   <div class="embed-responsive embed-responsive-1by1">
-                    <iframe class="embed-responsive-item" src="..."></iframe>
+                    <iframe class="embed-responsive-item" src=""></iframe>
                   </div>
                 </div>
-                <div class="video-info text-center">
-                  <h3>Video Main Title</h3>
-                  <h4>Video Subtitle Information</h4>
+                <div class="video-info">
+                  <h3 class="title font-weight-black">Title</h3>
+                  <h4 class="sub-title">Video Subtitle</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 video-item-col">
+              <div class="video-item">
+                <div class="video-container">
+                  <!-- 1:1 aspect ratio -->
+                  <div class="embed-responsive embed-responsive-1by1">
+                    <iframe class="embed-responsive-item" src=""></iframe>
+                  </div>
+                </div>
+                <div class="video-info">
+                  <h3 class="title font-weight-black">Title</h3>
+                  <h4 class="sub-title">Video Subtitle</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 video-item-col">
+              <div class="video-item">
+                <div class="video-container">
+                  <!-- 1:1 aspect ratio -->
+                  <div class="embed-responsive embed-responsive-1by1">
+                    <iframe class="embed-responsive-item" src=""></iframe>
+                  </div>
+                </div>
+                <div class="video-info">
+                  <h3 class="title font-weight-black">Title</h3>
+                  <h4 class="sub-title">Video Subtitle</h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 video-item-col">
+              <div class="video-item">
+                <div class="video-container">
+                  <!-- 1:1 aspect ratio -->
+                  <div class="embed-responsive embed-responsive-1by1">
+                    <iframe class="embed-responsive-item" src=""></iframe>
+                  </div>
+                </div>
+                <div class="video-info">
+                  <h3 class="title font-weight-black">Title</h3>
+                  <h4 class="sub-title">Video Subtitle</h4>
                 </div>
               </div>
             </div>
@@ -335,12 +470,6 @@
       </div>
     </div>
   </section>
-
-
-
-
-
-
 
 
   <section class="services">
@@ -628,13 +757,14 @@
     </div>
   </div>
 </footer>
-<!--<script-->
-<!--    src="https://code.jquery.com/jquery-3.4.1.min.js"-->
-<!--    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="-->
-<!--    crossorigin="anonymous">-->
-<!--</script>-->
-<!--<script src="assets/vendor/slick/slick.min.js"></script>-->
-<!--<script src="assets/js/main.js"></script>-->
+<script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous">
+</script>
+<script src="assets/vendor/slick/slick.min.js"></script>
+<script src="assets/js/slick.js"></script>
+<script src="assets/js/main.js"></script>
 
 </body>
 </html>

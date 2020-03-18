@@ -26,18 +26,104 @@
   }
 
   @media(max-width: 991px) {
+    .tool-panel {
+      .seen {
+        font-size: 11pt;
+      }
+    }
 
+    .content-container {
+      .card {
+        flex-direction: column;
+        max-width: 96%;
+        margin: 0 auto;
+      }
+    }
+
+    .categories-container-col {
+      max-width: 100%;
+    }
+
+    .categories-container {
+      max-width: 100%;
+    }
+
+    .most-popular {
+      .video-items-container {
+        padding: 20px 0 0 0 !important;
+      }
+    }
   }
 
   @media(max-width: 767px) {
+    .tool-panel {
+      margin: 10px 0 0 auto !important;
+      padding-top: 20px !important;
+
+      span {
+        padding: 0 10px !important;
+        font-size: 10pt !important;
+        border-right: none !important;
+      }
+    }
+
     .container-lg {
       width: 100%;
       max-width: initial;
       padding: 0 15px;
     }
+
+    .featured-video {
+      .video {
+        .video-items-container {
+          padding: 0 10px;
+        }
+      }
+
+      .categories-container {
+        max-width: 100% !important;
+      }
+
+      .video-item-col {
+        width: 100% !important;
+        max-width: 315px;
+        margin: 0 auto;
+      }
+    }
   }
 
   @media(max-width: 599px) {
+    padding-top: 50px !important;
 
+    .tool-panel {
+      .fa-eye {
+        padding-right: 8px !important;
+      }
+    }
+
+    .categories-container-col {
+      max-width: 315px !important;
+    }
+
+    .categories-container {
+      max-width: 315px !important;
+    }
+
+    .content-container {
+      .card {
+        padding: 15px !important;
+      }
+    }
+
+    .most-popular {
+      .video-items-container {
+        padding: 20px 20px 0 !important;
+
+        .video-item-col {
+          width: 100% !important;
+        }
+      }
+
+    }
   }
 }
