@@ -1,16 +1,17 @@
 // Igor created 5th March 2020
-const headSection = document.querySelector('.head-section');
+const headSectionLanding = document.querySelector('.head-section');
 const headerStickyLanding = document.querySelector('.header-landing');
-let stickyHeaderHasBeenShown = false;
-let headerClientRect = headSection.getBoundingClientRect();
+let stickyHeaderLandingHasBeenShown = false;
+let headerClientRectLanding = headSectionLanding.getBoundingClientRect();
 
 const makeHeaderStickyLanding = () => {
-	if (window.pageYOffset >= headerClientRect.bottom) {
+	// console.log('=>', headerClientRectLanding.bottom, window.pageYOffset);
+	if (window.pageYOffset >= headerClientRectLanding.bottom) {
 		headerStickyLanding.classList.remove('is-hidden');
 		headerStickyLanding.classList.add('is-active');
-		stickyHeaderHasBeenShown = true;
+		stickyHeaderLandingHasBeenShown = true;
 	}
-	else if (window.pageYOffset < headerClientRect.bottom && stickyHeaderHasBeenShown) {
+	else if (window.pageYOffset < headerClientRectLanding.bottom && stickyHeaderLandingHasBeenShown) {
 		headerStickyLanding.classList.add('is-hidden');
 	}
 };

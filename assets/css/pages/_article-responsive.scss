@@ -71,6 +71,18 @@
       h3 {
         font-size: 16pt !important;
       }
+
+      .commercial-3 {
+        .find-by-zip-code {
+          button {
+            padding: 10px;
+          }
+
+          input {
+            width: 90%;
+          }
+        }
+      }
     }
   }
 
@@ -97,12 +109,25 @@
   }
 
   @media(max-width: 767px) {
+    //.cards-section {
+    //  .container-lg {
+    //    padding: 0 15px;
+    //  }
+    //}
+
     .container-lg {
       width: 100%;
       max-width: initial;
-      padding: 0 15px;
+      padding: 0 15px !important;
     }
 
+    .article-content {
+      .commercial-2 {
+        button {
+          width: 150px;
+        }
+      }
+    }
 
     .commercial-3 {
       .find-by-zip-code {
@@ -114,6 +139,7 @@
           justify-content: center;
           width: 96%;
           max-width: 240px;
+          min-width: 170px;
           height: 70px;
           margin-top: 20px;
           margin-left: 0;
@@ -121,8 +147,15 @@
           font-size: 15pt;
           border: none;
         }
+
+        .f-c {
+          input {
+            width: 100%;
+          }
+        }
       }
     }
+
   }
 
   @media(max-width: 599px) {

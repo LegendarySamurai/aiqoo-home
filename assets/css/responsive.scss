@@ -23,12 +23,6 @@
   .categories {
     padding-top: 40px;
     padding-bottom: 40px;
-
-    .list {
-      .col-item {
-        //margin-bottom: 30px;
-      }
-    }
   }
 }
 
@@ -151,7 +145,6 @@
       .list-item-with-icon {
         position: relative;
         margin-bottom: 0;
-        //border-right: 2px solid #d6dce6;
       }
     }
   }
@@ -164,13 +157,3 @@
   }
 }
 // EOL: @media(min-width: 1400px)
-
-@media(min-width: 1600px) {
-
-}
-// EOL: @media(min-width: 1600px)
-
-@media(min-width: 1920px) {
-
-}
-// EOL: @media(min-width: 1920px)
