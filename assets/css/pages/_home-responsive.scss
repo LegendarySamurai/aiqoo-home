@@ -16,8 +16,8 @@
         align-items: center;
         padding-top: 110px;
         //margin-top: -56px;
-        height: calc(100vh - 63vw);
-        min-height: 460px;
+        height: calc(100vh - 83vw);
+        min-height: 380px;
       }
 
       .find-box {
@@ -415,6 +415,13 @@
       width: 100%;
       max-width: 210px;
       margin-top: 50px;
+    }
+
+    .head-section {
+      .head-section-content-inner {
+        height: calc(100vh - 63vw);
+        min-height: 460px;
+      }
     }
   }
 
