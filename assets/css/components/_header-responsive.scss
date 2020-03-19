@@ -5,7 +5,7 @@
 
   @media(max-width: 1599px) {
     .container-lg {
-      max-width: initial !important;
+      max-width: initial;
     }
 
     .header-content {
@@ -118,6 +118,18 @@
     .container-lg {
       //max-width: 960px !important;
     }
+
+    .header-content {
+      justify-content: flex-end;
+    }
+
+    .logo {
+      margin-right: auto;
+    }
+
+    .navbar {
+      display: none;
+    }
   }
 
   @media(max-width: 991px) {
@@ -129,6 +141,17 @@
       width: 100%;
       max-width: initial;
       padding: 0 15px !important;
+    }
+
+    .header-content {
+
+      .form-group {
+        //flex-grow: 1;
+        //width: auto;
+      }
+
+      .form-control {
+      }
     }
   }
 

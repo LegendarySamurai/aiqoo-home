@@ -1,21 +1,11 @@
 .list {
-  .list-item-with-icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
 
-    h5 {
-      color: $text-color;
-      font-weight: 400;
-      text-align: center;
-    }
-  }
-
-  .list-item-icon {
-    display: flex;
-    justify-content: center;
-    //align-items: center;
+  h4,
+  p,
+  .view-more {
+    line-height: 2;
   }
 
   p,
@@ -23,21 +13,16 @@
     color: $text-color;
   }
 
-  .view-more {
-    cursor: pointer;
-  }
-
   h4 {
+    font-size: 13pt;
     color: $primaryColor;
-  }
-
-  p {
-
   }
 
   .view-more {
     position: relative;
     font-weight: 700;
+    font-size: 12pt;
+    cursor: pointer;
 
     &::after {
       position: absolute;
@@ -49,6 +34,45 @@
       height: 1px;
       background-color: $text-color;
     }
+  }
+
+  .list-item-icon {
+
+    display: flex;
+    align-items: flex-start;
+    width: 68px;
+    height: 57px;
+    margin-bottom: 20px;
+  }
+
+  .list-col {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .list-item-with-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+
+    h5 {
+      color: $text-color;
+      font-weight: 400;
+      text-align: center;
+      font-family: $main-font;
+      font-size: 11.25pt;
+    }
+  }
+
+  .list-col-item,
+  .services-list-col {
+    width: 33.33%;
+    font-size: 12pt;
   }
 }
 

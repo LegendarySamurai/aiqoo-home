@@ -1,0 +1,24 @@
+.reasons {
+  display: flex;
+  justify-content: space-between;
+
+  & .reason {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    color: $primaryColor;
+    overflow: hidden;
+
+    & h2 {
+      width: 100%;
+      margin: 0;
+      font-weight: bold;
+    }
+
+    & h3 {
+      width: 100%;
+      font-weight: normal;
+    }
+  }
+}

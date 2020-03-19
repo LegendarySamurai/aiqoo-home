@@ -1,6 +1,19 @@
+@import 'helpers/variables';
+@import 'helpers/helpers';
+
+// components
+@import 'components/section-title-responsive';
+@import 'components/reasons-responsive';
+@import 'components/list-responsive';
+@import 'components/button-responsive';
+@import 'components/footer-responsive';
+@import 'components/header-responsive';
+@import 'components/card-responsive';
+@import 'components/services-responsive';
+
 .home {
   @media(min-width: 300px) {
-    padding-top: 56px;
+    //padding-top: 56px;
 
     .head-section {
       .head-section-content {
@@ -14,10 +27,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 110px;
-        //margin-top: -56px;
-        height: calc(100vh - 83vw);
-        min-height: 380px;
+        padding-top: 60px;
+        height: calc(100vh - 162vw);
+        min-height: 340px;
       }
 
       .find-box {
@@ -352,7 +364,7 @@
 
   // Only for mobile devices
   @media only screen and (min-width: 300px) and (max-width: 991px) {
-    padding-top: 56px;
+    //padding-top: 56px;
 
     .head-section {
       .head-section-content {

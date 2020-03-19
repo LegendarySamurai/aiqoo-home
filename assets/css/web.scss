@@ -1,136 +1,28 @@
-﻿@import "vendor/bootstrap.custom/bootstrap.custom.scss";
+﻿// helpers
+@import 'helpers/variables.scss';
+@import 'helpers/base.scss';
+@import 'helpers/helpers.scss';
+
+// vendor custom bootstrap cherry picking styles
+@import "vendor/bootstrap.custom/bootstrap.custom.scss";
 @import "vendor/slick/slick.scss";
 @import "vendor/slick/slick-theme.scss";
-@import 'variables.scss';
-@import 'helpers.scss';
 
+// components
 @import 'components/section-title.scss';
+@import 'components/reasons.scss';
 @import 'components/list.scss';
 @import 'components/button.scss';
 @import 'components/footer.scss';
 @import 'components/footer-slick.scss';
 @import 'components/header.scss';
 @import 'components/card.scss';
-@import 'components/navbar-mobile.scss';
 @import 'components/services.scss';
 @import 'components/categories.scss';
 @import 'components/breadcrumbs.scss';
 @import 'components/page-title.scss';
 
-@import 'pages/home.scss';
-@import 'pages/landing.scss';
-@import 'pages/atricle.scss';
-@import 'pages/video.scss';
 
-@font-face {
-  font-display: swap;
-}
-
-html {
-  position: relative;
-  direction: ltr;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-color: #FFF;
-  font-family: $main-font;
-  font-weight: 400;
-  color: $text-color;
-  font-size: 11pt;
-  direction: ltr;
-  margin: 0;
-  padding: 0;
-}
-
-*,
-::after,
-::before {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  line-height: 1.2;
-}
-
-h1, h2, h3, h4 {
-  font-family: $h-font;
-  font-weight: 900;
-}
-
-ul, ol {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  color: $text-color;
-  text-decoration: none;
-}
-
-a:hover {
-  outline: 0;
-  text-decoration: none;
-  color: $text-color;
-}
-
-a:active {
-  outline: 0;
-  text-decoration: none;
-  color: $text-color;
-}
-
-input:focus, a:focus, button:focus {
-  outline: 0;
-  text-decoration: none;
-  color: $text-color;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-}
-
-.hide {
-  display: none;
-}
-
-.show {
-  display: inline-block;
-}
-
-button {
-  display: inline-block;
-  font-weight: 400;
-  color: #212529;
-  text-align: center;
-  vertical-align: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: transparent;
-  border: 1px solid transparent;
-  padding: .375rem .75rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  cursor: pointer;
-  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-}
-
-
-/* Common styles for common reusable modules */
-
-// Categories
-
-.categories {
-  font-family: $main-font;
-  font-weight: 400;
-  background: url("../images/bg/bg__categories_d.png") no-repeat center bottom / auto;
-}
 
 
 

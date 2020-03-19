@@ -12,6 +12,7 @@
 .section-title-decoration {
   flex-grow: 1;
   height: 2px;
+  width: 100%;
 
   &.left {
     background-image: linear-gradient(to left, #585077, #dde1e8);
