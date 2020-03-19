@@ -1,15 +1,15 @@
-@import 'variables';
-@import 'helpers';
+@import 'variables.scss';
+@import 'helpers.scss';
 
-@import 'components/section-title-responsive';
-@import 'components/list-responsive';
-@import 'components/footer-responsive';
-@import 'components/button-responsive';
-@import 'components/header-responsive';
-@import 'components/card-responsive';
-@import 'components/navbar-mobile-responsive';
-@import 'components/carousel';
-@import 'components/services-responsive';
+@import 'components/section-title-responsive.scss';
+@import 'components/list-responsive.scss';
+@import 'components/footer-responsive.scss';
+@import 'components/button-responsive.scss';
+@import 'components/header-responsive.scss';
+@import 'components/card-responsive.scss';
+@import 'components/navbar-mobile-responsive.scss';
+@import 'components/carousel.scss';
+@import 'components/services-responsive.scss';
 
 @import 'pages/home-responsive.scss';
 @import 'pages/landing-responsive.scss';
