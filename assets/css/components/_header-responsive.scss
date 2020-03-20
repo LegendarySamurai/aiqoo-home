@@ -25,10 +25,7 @@
         }
 
         .find-btn {
-          //right: 4px;
-          //top: 4px;
           width: 100px;
-          //height: calc(100% - 8px);
           font-size: 10pt;
         }
 
@@ -42,7 +39,6 @@
       }
 
       .login-network {
-        width: 100px;
         padding: 0 10px 0 10px;
 
         img {
@@ -55,8 +51,6 @@
       }
 
       .navbar {
-        margin-left: 20px;
-
         a {
           padding: 0 6px;
           font-size: 10pt;
@@ -67,12 +61,12 @@
 
   @media(max-width: 1399px) {
     .container-lg {
-      //max-width: 1280px !important;
+
     }
 
     .header-content {
       .form-group {
-        width: 390px;
+        width: 420px;
         margin-left: 10px;
 
         .form-control {
@@ -101,10 +95,11 @@
       }
 
       .login-network {
+        width: 140px;
         padding: 0 10px 0 10px;
 
         img {
-          width: 20px;
+          width: 16px;
         }
 
         span {
@@ -116,24 +111,279 @@
 
   @media(max-width: 1199px) {
     .container-lg {
-      //max-width: 960px !important;
+
     }
 
     .header-content {
       justify-content: flex-end;
-    }
 
-    .logo {
-      margin-right: auto;
+      .logo {
+        width: 80px;
+        margin-right: 15px;
+      }
+
+      .menu-icon {
+        width: 30px;
+        height: 30px;
+        //position: absolute;
+        //top: 50%;
+        //left: 30px;
+        //transform: translateY(-50%);
+        display: block;
+
+      }
+
+      .fa-bars {
+        color: #fff;
+        font-size: 23pt;
+      }
+
+      .dropdown-menu {
+        display: flex;
+      }
+
+      .navbar {
+        li {
+          border-right: 0 !important;
+        }
+
+        a {
+          &:hover {
+            &::after {
+              display: none;
+            }
+          }
+        }
+      }
+
+
+
+      .form-group {
+        width: 320px;
+
+        .super-placeholder {
+          left: 10px;
+        }
+
+        .form-control {
+          padding-left: 30px;
+        }
+      }
+
+      .login-network {
+        position: relative;
+        width: 90px;
+        padding-right: 20px;
+
+        img {
+          position: absolute;
+          top: 8px;
+          right: 8px;
+        }
+
+        span {
+          font-size: 11pt;
+        }
+      }
     }
 
     .navbar {
-      display: none;
+      align-items: flex-start;
+      margin-left: 0 !important;
     }
   }
 
   @media(max-width: 991px) {
+    height: 60px;
 
+    .header-content {
+      .find-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .form-group {
+        width: 450px;
+        height: 40px;
+        margin-left: 0;
+
+        .form-control {
+          padding-left: 40px;
+        }
+
+        .find-btn {
+          width: 100px;
+        }
+
+        .super-placeholder {
+          left: 16px;
+        }
+      }
+
+      .login-network {
+        width: 130px;
+        height: 40px;
+        margin-left: auto;
+        padding-right: 10px;
+
+        img {
+          position: static;
+          margin-left: auto;
+        }
+      }
+
+      .dropdown-menu-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 9000;
+        display: none;
+      }
+
+      .dropdown-menu {
+        position: relative;
+        z-index: 1;
+        transform: translateX(-100%);
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 80%;
+        max-width: 400px;
+        height: 100%;
+        background-color: #fff;
+      }
+
+      .logo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 60px;
+        padding: 0 20px 0 40px;
+        background-color: $primaryColor;
+
+        img {
+          width: 100px;
+        }
+      }
+
+      .navbar {
+        flex-grow: 1;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: auto;
+        margin-top: 30px;
+        padding: 0 20px 30px 40px;
+
+        li {
+          margin-bottom: 15px;
+        }
+
+        a {
+          display: block;
+          padding: 14px 0;
+          font-size: 14pt;
+          color: #000;
+        }
+      }
+
+      .dropdown-menu-container {
+         $dropdown-menu-animation-duration: 600ms;
+         $btn-close-menu-animation-duration: 300ms;
+
+         &.show {
+           display: block;
+
+           .btn-close-menu {
+             @keyframes show-btn-close-menu {
+               0% {
+                 opacity: 0;
+               }
+               100% {
+                 opacity: 1;
+               }
+             }
+
+             animation-name: show-btn-close-menu;
+             animation-duration: $btn-close-menu-animation-duration;
+             animation-timing-function: ease;
+             animation-delay: 0s;
+             animation-iteration-count: 1;
+             animation-direction: normal;
+             animation-fill-mode: forwards;
+             animation-play-state: running;
+           }
+
+           .dropdown-menu {
+             @keyframes show-dropdown-menu {
+               0% {
+                 transform: translateX(-100%);
+               }
+               100% {
+                 transform: translateX(0%);
+               }
+             }
+
+             animation-name: show-dropdown-menu;
+             animation-duration: $dropdown-menu-animation-duration;
+             animation-timing-function: ease;
+             animation-delay: 0s;
+             animation-iteration-count: 1;
+             animation-direction: normal;
+             animation-fill-mode: forwards;
+             animation-play-state: running;
+           }
+         }
+
+         &.hide {
+           .btn-close-menu {
+             @keyframes hide-btn-close-menu {
+               0% {
+                 opacity: 1;
+               }
+               100% {
+                 opacity: 0;
+               }
+             }
+
+             animation-name: hide-btn-close-menu;
+             animation-duration: $btn-close-menu-animation-duration;
+             animation-timing-function: ease;
+             animation-delay: 200ms;
+             animation-iteration-count: 1;
+             animation-direction: normal;
+             animation-fill-mode: forwards;
+             animation-play-state: running;
+           }
+
+           .dropdown-menu {
+             @keyframes hide-dropdown-menu {
+               0% {
+                 transform: translateX(0%);
+               }
+               100% {
+                 transform: translateX(-100%);
+               }
+             }
+
+             animation-name: hide-dropdown-menu;
+             animation-duration: $dropdown-menu-animation-duration;
+             animation-timing-function: ease;
+             animation-delay: 0s;
+             animation-iteration-count: 1;
+             animation-direction: normal;
+             animation-fill-mode: forwards;
+             animation-play-state: running;
+           }
+
+         }
+       }
+    }
   }
 
   @media(max-width: 767px) {
@@ -144,13 +394,67 @@
     }
 
     .header-content {
+      .login-network {
+        flex-shrink: 0;
+        width: 110px;
+        padding: 0 8px;
 
-      .form-group {
-        //flex-grow: 1;
-        //width: auto;
+        span {
+          font-size: 10pt;
+        }
+
+        img {
+          width: 14px;
+        }
       }
 
-      .form-control {
+      .find-box {
+        position: static;
+        transform: translate(0, 0);
+        flex-grow: 1;
+        display: flex;
+        max-width: 320px;
+
+        .form-group {
+          flex-grow: 1;
+          width: auto;
+          margin: 0 15px 0 10px;
+
+          input {
+            padding-left: 28px;
+            padding-right: 10px;
+
+            &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+              color: transparent;
+            }
+            &::-moz-placeholder { /* Firefox 19+ */
+              color: transparent;
+            }
+            &:-ms-input-placeholder { /* IE 10+ */
+              color: transparent;
+            }
+            &:-moz-placeholder { /* Firefox 18- */
+              color: transparent;
+            }
+          }
+
+          .super-placeholder {
+            left: 6px;
+          }
+        }
+      }
+
+      .btn-open-menu {
+        width: 50px;
+      }
+
+      .menu-icon {
+        width: auto;
+        height: auto;
+      }
+
+      .fa-bars {
+        font-size: 16pt;
       }
     }
   }

@@ -11,39 +11,53 @@
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css"
         integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="assets/css/responsive.min.css?v=0.05"/>
   <link rel="stylesheet" href="assets/css/web.min.css?v=0.05"/>
+  <link rel="stylesheet" href="assets/css/responsive.min.css?v=0.05"/>
 </head>
 <body>
 
 <header class="header">
   <div class="container container-lg">
     <div class="row">
-      <div class="col-12">
+      <div class="col-12 pl-0 pl-lg-3">
         <div class="header-content">
-          <div class="logo">
-            <img src="assets/images/logo/logo.svg" alt="logo">
+          <button type="button" id="btn-open-menu" class="btn-open-menu d-lg-none">
+            <span class="menu-icon">
+              <i class="far fa-bars"></i>
+            </span>
+          </button>
+
+          <!-- Dropdown menu -->
+          <div id="dropdown-menu-container" class="dropdown-menu-container">
+            <div id="btn-close-menu" class="btn-close-menu d-lg-none"></div>
+            <div id="dropdown-menu" class="dropdown-menu">
+              <div class="logo">
+                <img src="assets/images/logo/logo.svg" alt="logo">
+              </div>
+              <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Video</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Magazine</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </div>
           </div>
-          <ul class="navbar">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Video</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Magazine</a></li>
-            <li><a href="#">Contact us</a></li>
-          </ul>
+          <!-- EOL: Dropdown menu -->
           <!-- search box -->
           <div class="find-box">
             <div class="form-group position-relative">
               <input class="form-control font-weight-bold" type="text" placeholder="What service are you looking for?">
               <div class="super-placeholder">
-                <img src="assets/images/icons/pen-6.svg" alt="pen">
+                <i class="fal fa-search d-md-none"></i>
+                <img src="assets/images/icons/pen-6.svg" class="d-none d-md-block" alt="pen">
               </div>
-              <button class="find-btn font-weight-bold" type="button">FIND A PRO</button>
+              <button class="find-btn font-weight-bold d-none d-md-block" type="button">FIND A PRO</button>
             </div>
           </div>
-
+          <!-- EOL: search box -->
           <button class="login-network" type="button">
             <span>Pro network</span>
             <img src="assets/images/icons/login.png" alt="login">
@@ -322,6 +336,7 @@
 </script>
 <script src="assets/css/vendor/slick/slick.min.js"></script>
 <script src="assets/js/slick.js"></script>
+<script src="assets/js/header.js"></script>
 <script src="assets/js/main.js"></script>
 
 </body>
