@@ -425,6 +425,8 @@
   }
 
   @media(min-width: 992px) {
+    padding-top: 0;
+
     .head-section {
       background-image: url('../images/header/main-image.jpg');
       background-position: center 60%;
@@ -444,7 +446,7 @@
       }
 
       .head-section-content {
-        height: 30vw;
+        height: 35vw;
         min-height: inherit;
         margin-top: 0;
         padding-top: 0;
@@ -453,9 +455,9 @@
 
       .head-section-content-inner {
         position: absolute;
-        top: 6.5vw;
+        top: 50%;
         left: 50%;
-        transform: translate(-50%, 0);
+        transform: translate(-50%, -90%);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -742,11 +744,11 @@
   @media(min-width: 1200px) {
     .head-section {
       .head-section-content {
-        height: 20vw;
+        height: 25vw;
       }
 
       .head-section-content-inner {
-        top: 2.5vw;
+
       }
 
       .form-control {
@@ -823,11 +825,11 @@
   @media(min-width: 1600px) {
     .head-section {
       .head-section-content {
-        height: 19vw;
+        height: 22vw;
       }
 
       .head-section-content-inner {
-        top: 3vw;
+
       }
 
       h1 {
@@ -862,11 +864,11 @@
   @media(min-width: 1920px) {
     .head-section {
       .head-section-content {
-        height: 24vw;
+        height: 27vw;
       }
 
       .head-section-content-inner {
-        top: 6vw;
+        
       }
     }
 
