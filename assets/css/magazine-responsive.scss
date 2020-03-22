@@ -10,5 +10,46 @@
 
 .magazine {
 
+  @media(max-width: 1899px) {
+
+  }
+
+  @media(max-width: 1599px) {
+    .container-lg {
+      max-width: initial;
+    }
+  }
+
+  @media(max-width: 1399px) {
+    .container-lg {
+
+    }
+  }
+
+  @media(max-width: 1199px) {
+    .container-lg {
+
+    }
+  }
+
+  @media(max-width: 991px) {
+
+  }
+
+  @media(max-width: 767px) {
+    .container-lg {
+      width: 100%;
+      max-width: initial;
+      //padding: 0 15px !important;
+    }
+  }
+
+  @media(max-width: 599px) {
+
+  }
+
+  @media(max-width: 374px) {
+
+  }
 }
 

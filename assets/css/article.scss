@@ -22,7 +22,6 @@
 @import 'components/section-title.scss';
 
 .article {
-  //padding-top: 100px;
   font-family: $h-font;
   color: $primaryColor;
   box-sizing: border-box;
@@ -63,10 +62,6 @@
   // article-section
   .article-section {
     margin-top: 46px;
-  }
-
-  .content-container {
-    //max-width: 1136px;
   }
 
   .article-inner {
@@ -352,8 +347,8 @@
   .commercial-5,
   .commercial-6,
   .commercial-7 {
-        max-width: 290px;
-      }
+    max-width: 290px;
+  }
 
   .commercial-6 {
     padding: 30px;
