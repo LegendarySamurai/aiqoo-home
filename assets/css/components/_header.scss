@@ -10,51 +10,55 @@
   background-color: #585077;
   font-family: "Raleway", sans-serif;
 
-  &.is-hidden-on-home {
-    $animation-duration: 400ms;
+  @media (min-width: 992px) {
+    &.is-hidden-on-home {
+      $animation-duration: 400ms;
 
-    transform: translate(0, -100%);
+      transform: translate(0, -100%);
 
-    &.show-on-home {
-      @keyframes show {
-        0% {
-          transform: translate(0, -100%);
+      &.show-on-home {
+        @keyframes show {
+          0% {
+            transform: translate(0, -100%);
+          }
+          100% {
+            transform: translate(0, 0%);
+          }
         }
-        100% {
-          transform: translate(0, 0%);
-        }
+
+        animation-name: show;
+        animation-duration: $animation-duration;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        animation-play-state: running;
       }
 
-      animation-name: show;
-      animation-duration: $animation-duration;
-      animation-timing-function: ease;
-      animation-delay: 0s;
-      animation-iteration-count: 1;
-      animation-direction: normal;
-      animation-fill-mode: forwards;
-      animation-play-state: running;
-    }
+      &.hide-on-home {
+        @keyframes hide-search {
+          0% {
+            transform: translate(0, 0%);
+          }
+          100% {
+            transform: translate(0, -100%);
+          }
+        }
 
-    &.hide-on-home {
-      @keyframes hide-search {
-        0% {
-          transform: translate(0, 0%);
-        }
-        100% {
-          transform: translate(0, -100%);
-        }
+        animation-name: hide-search;
+        animation-duration: $animation-duration;
+        animation-timing-function: ease;
+        animation-delay: 0ms;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        animation-play-state: running;
       }
-
-      animation-name: hide-search;
-      animation-duration: $animation-duration;
-      animation-timing-function: ease;
-      animation-delay: 0ms;
-      animation-iteration-count: 1;
-      animation-direction: normal;
-      animation-fill-mode: forwards;
-      animation-play-state: running;
     }
   }
+
+
 
   .container-lg {
     max-width: 1470px;

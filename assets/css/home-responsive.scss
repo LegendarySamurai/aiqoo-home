@@ -17,7 +17,8 @@
 
     .head-section {
       .head-section-content {
-        padding-top: 70px;
+        height: 80vw;
+        padding-top: 10vw;
         background-image: url('../images/header/main-image-m.jpg');
         background-repeat: no-repeat;
         background-position: center 0;
@@ -56,12 +57,13 @@
       }
 
       .super-placeholder-heading {
+        position: relative;
         display: block;
         line-height: 1.5;
         margin-bottom: 10px;
         font-family: $h-font;
         font-weight: bold;
-        font-size: 16.5pt;
+        font-size: 15.5pt;
         color: #fff;
         text-align: center;
       }
@@ -355,6 +357,18 @@
   }
   // EOL: @media(min-width: 300px)
 
+  @media (max-width: 374px) {
+    .head-section {
+      .head-section-content {
+        padding-top: 6vw;
+      }
+
+      .super-placeholder-heading {
+        font-size: 12.5pt;
+      }
+    }
+  }
+
   // Only for mobile devices
   @media only screen and (min-width: 300px) and (max-width: 991px) {
     //padding-top: 56px;
@@ -375,7 +389,10 @@
         }
 
         .head-section-content-inner {
-          position: relative;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
           width: 96%;
           max-width: 400px;
         }
@@ -420,6 +437,31 @@
     .head-section {
       .head-section-content-inner {
 
+      }
+    }
+  }
+
+  @media only screen and (min-width: 600px) and (max-width: 991px) {
+    .head-section {
+      .head-section-content {
+        height: 60vw;
+      }
+
+      .find-box {
+        max-width: 480px;
+        margin: 0 auto;
+      }
+
+      .super-placeholder-heading {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .head-section {
+      .head-section-content {
+        height: 50vw;
       }
     }
   }
