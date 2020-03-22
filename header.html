@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="utf-8"/>
+  <title>Header</title>
+  <meta name="description" content="Home Improvement"/>
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css"
+        integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="assets/css/web.min.css?v=0.05"/>
+  <link rel="stylesheet" href="assets/css/responsive.min.css?v=0.05"/>
+</head>
+<body>
+
+<header class="header">
+  <div class="container container-lg">
+    <div class="row">
+      <div class="col-12 pl-0 pl-lg-3 pr-0 pr-lg-3">
+
+        <div class="header-content">
+          <button type="button" id="btn-open-menu" class="btn-open-menu d-lg-none">
+            <span class="menu-icon">
+              <i class="far fa-bars"></i>
+            </span>
+          </button>
+
+          <div class="logo">
+            <img src="assets/images/logo/logo.svg" alt="logo">
+          </div>
+
+          <button type="button" id="btn-search" class="btn-search d-lg-none">
+            <i class="fal fa-search"></i>
+          </button>
+
+          <!-- Dropdown menu -->
+          <div id="dropdown-menu-container" class="dropdown-menu-container">
+            <div id="btn-close-menu" class="btn-close-menu d-lg-none"></div>
+            <div id="dropdown-menu" class="dropdown-menu">
+              <div class="dropdown-menu-account d-lg-none">
+                <img src="assets/images/dummy/avatar.png" alt="" class="dropdown-menu-account-image">
+                <div class="dropdown-menu-account-data">
+                  <span class="name font-weight-bold">John Doe</span>
+                  <span class="location">San Francisco, CA</span>
+                </div>
+              </div>
+
+              <ul class="navbar">
+                <li>
+                  <a href="#">
+                    <i class="d-lg-none menu-item-icon icon-home"></i>
+                    <span>
+                      Home
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="d-lg-none menu-item-icon icon-home"></i>
+                    <span>
+                      Video
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="d-lg-none menu-item-icon icon-home"></i>
+                    <span>
+                      Blog
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="d-lg-none menu-item-icon icon-home"></i>
+                    <span>
+                      About us
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="d-lg-none menu-item-icon icon-home"></i>
+                    <span>
+                      Services
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="d-lg-none menu-item-icon icon-magazine"></i>
+                    <span>
+                      Magazine
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="no-border-bottom">
+                    <i class="d-lg-none menu-item-icon icon-contact-us"></i>
+                    <span>
+                      Contact us
+                    </span>
+                  </a>
+                </li>
+              </ul>
+
+              <ul class="dropdown-menu-social d-lg-none">
+                <li>
+                  <a href="#!">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#!">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#!">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- EOL: Dropdown menu -->
+
+          <div id="header-search" class="search">
+            <div class="form-group position-relative">
+              <input id="header-search-input" class="form-control font-weight-bold" type="text"
+                     placeholder="What service are you looking for?">
+              <div class="super-placeholder">
+                <img src="assets/images/icons/pen-6.svg" alt="icon">
+              </div>
+              <button class="find-btn font-weight-bold" type="button">FIND A PRO</button>
+            </div>
+          </div>
+
+          <button class="login-network d-none d-lg-flex" type="button">
+            <span>Pro network</span>
+            <img src="assets/images/icons/login.png" alt="login">
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous">
+</script>
+<script src="assets/css/vendor/slick/slick.min.js"></script>
+<script src="assets/js/slick.js"></script>
+<script src="assets/js/header.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

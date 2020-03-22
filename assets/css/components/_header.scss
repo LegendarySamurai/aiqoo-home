@@ -1,37 +1,45 @@
+main {
+  padding-top: 200px;
+}
+
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 8000;
+  display: flex;
+  align-items: center;
   width: 100%;
   height: 94px;
   background-color: #585077;
   font-family: "Raleway", sans-serif;
 
   .container-lg {
-    height: 100%;
     max-width: 1470px;
   }
 
-  .row {
-    height: 100%;
-  }
-}
-
-.header-content {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-
-  .btn-open-menu {
+  .btn-open-menu,
+  .btn-search {
+    position: relative;
+    z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70px;
-    height: 100%;
-    margin-right: auto;
     padding: 0;
     cursor: pointer;
     //background-color: transparentize(coral, .5);
+  }
+
+  .btn-open-menu {
+    margin-right: auto;
+  }
+
+  .btn-search {
+    margin-left: auto;
+
+    .fa-search {
+      color: #fff;
+    }
   }
 
   .btn-close-menu {
@@ -83,12 +91,10 @@
       height: 100%;
       padding-left: 60px;
       border: none;
-      //font-weight: bold;
       font-size: 11pt;
       color: #352f4a;
 
       &::placeholder {
-        //font-weight: bold;
         font-size: 11pt;
         color: #352f4a;
       }
@@ -139,41 +145,137 @@
       width: 25px;
     }
   }
-}
 
-.navbar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 100%;
-  margin-left: 40px;
+  .header-content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 
-  li {
-    &:not(:last-child) {
-      border-right: 1px solid #fff;
+  .dropdown-menu-account {
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
+  }
+
+  .dropdown-menu-account-data {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+
+    span {
+      margin: 2px 0;
+    }
+
+    .name {
+      font-size: 10.5pt;
+    }
+
+    .location {
+      font-size: 8pt;
     }
   }
 
-  a {
-    position: relative;
-    padding: 0 10px;
-    font-weight: 300;
-    font-size: 11pt;
-    color: #FFF;
+  .dropdown-menu-account-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
 
-    &:hover {
-      color: #d8cdba;
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    margin-left: 40px;
 
-      &::after {
-        display: block;
-        content: '';
-        position: absolute;
-        bottom: -20px;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        background-color: #d8cdba;
+    li {
+      &:not(:last-child) {
+        border-right: 1px solid #fff;
       }
+    }
+
+    a {
+      position: relative;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 0 10px;
+      font-weight: 300;
+      font-size: 11pt;
+      color: #fff;
+
+      &:hover {
+        color: #d8cdba;
+
+        &::after {
+          display: block;
+          content: '';
+          position: absolute;
+          bottom: -20px;
+          left: 0;
+          width: 100%;
+          height: 4px;
+          background-color: #d8cdba;
+        }
+      }
+    }
+
+    .menu-item-icon {
+      display: block;
+      width: 40px;
+      height: 30px;
+      background: no-repeat center;
+
+      &.icon-home {
+        background-image: url('../images/icons/home.png');
+      }
+
+      &.icon-categories {
+        background-image: url('../images/icons/nav-trending-categories.png');
+      }
+
+      &.icon-support {
+        background-image: url('../images/icons/nav-support.png');
+      }
+
+      &.icon-magazine {
+        background-image: url('../images/icons/aiq-magazine.png');
+      }
+
+      &.icon-contact-us {
+        background-image: url('../images/icons/mail.png');
+      }
+
+      &.icon-search {
+        background-image: url('../images/icons/magnifier.png');
+      }
+
+      &.icon-settings {
+        background-image: url('../images/icons/settings.png');
+      }
+    }
+
+
+  }
+
+  .dropdown-menu-social {
+    display: flex;
+    margin-top: auto;
+    padding-left: 30px;
+
+    li {
+      padding-right: 20px;
+    }
+
+    a {
+      padding: 10px;
+    }
+
+    i {
+      color: transparentize($primaryColor, .4);
     }
   }
 }
