@@ -154,6 +154,36 @@ main {
     align-items: center;
   }
 
+  .dropdown-menu-account {
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
+  }
+
+  .dropdown-menu-account-data {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+
+    span {
+      margin: 2px 0;
+    }
+
+    .name {
+      font-size: 10.5pt;
+    }
+
+    .location {
+      font-size: 8pt;
+    }
+  }
+
+  .dropdown-menu-account-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
   .navbar {
     display: flex;
     flex-direction: row;
@@ -176,7 +206,6 @@ main {
       font-weight: 300;
       font-size: 11pt;
       color: #fff;
-      border-bottom: 1px solid transparentize(#000, .84);
 
       &:hover {
         color: #d8cdba;
@@ -230,5 +259,23 @@ main {
     }
 
 
+  }
+
+  .dropdown-menu-social {
+    display: flex;
+    margin-top: auto;
+    padding-left: 30px;
+
+    li {
+      padding-right: 20px;
+    }
+
+    a {
+      padding: 10px;
+    }
+
+    i {
+      color: transparentize($primaryColor, .4);
+    }
   }
 }
