@@ -14,11 +14,10 @@
 
     .form-group {
       width: 480px;
-      height: 60px;
       margin-left: 15px;
 
       .form-control {
-        padding-left: 40px;
+        padding: 0 #{$page-header-find-pro-btn-1600 + 15px} 0 40px;
         border: none;
         font-size: 10pt;
 
@@ -28,8 +27,8 @@
       }
 
       .find-btn {
-        width: 100px;
-        font-size: 10pt;
+        width: $page-header-find-pro-btn-1600;
+        font-size: 9pt;
       }
 
       .super-placeholder {
@@ -55,8 +54,7 @@
 
     .navbar {
       a {
-        padding: 0 6px;
-        font-size: 10pt;
+
       }
     }
   }
@@ -71,10 +69,11 @@
     }
 
     .form-group {
-      width: 420px;
+      width: 380px;
       margin-left: 10px;
 
       .form-control {
+        padding-right: calc(#{$page-header-find-pro-btn-1200} + 15px);
         font-size: 9pt;
         -ms-text-overflow: ellipsis;
         text-overflow: ellipsis;
@@ -86,8 +85,8 @@
       }
 
       .find-btn {
-        width: 80px;
-        font-size: 9pt;
+        width: $page-header-find-pro-btn-1200;
+        font-size: 8pt;
       }
 
       .super-placeholder {
@@ -100,15 +99,22 @@
     }
 
     .login-network {
-      width: 140px;
-      padding: 0 10px 0 10px;
+      width: 125px;
+      padding: 0 7px 0 10px;
 
       img {
         width: 16px;
       }
 
       span {
+        font-size: 11pt;
         text-align: left;
+      }
+    }
+
+    .navbar {
+      a {
+        font-size: 11pt;
       }
     }
   }
@@ -144,10 +150,12 @@
 
     .navbar {
       li {
-        border-right: 0 !important;
+
       }
 
       a {
+        font-size: 10pt;
+
         &:hover {
           &::after {
             display: none;
@@ -156,9 +164,8 @@
       }
     }
 
-
     .form-group {
-      width: 320px;
+      width: 280px;
 
       .super-placeholder {
         left: 10px;
@@ -166,34 +173,43 @@
 
       .form-control {
         padding-left: 30px;
+        padding-right: calc(#{$page-header-find-pro-btn-992} + 15px);
+      }
+
+      .find-btn {
+        width: $page-header-find-pro-btn-992;
+        font-size: 7pt;
       }
     }
 
     .login-network {
       position: relative;
-      width: 90px;
-      padding-right: 20px;
-
-      img {
-        position: absolute;
-        top: 8px;
-        right: 8px;
-      }
+      width: 100px;
+      padding: 0 7px;
 
       span {
-        font-size: 11pt;
+        font-size: 9pt;
+      }
+
+      img {
+        width: 14px;
       }
     }
 
     .navbar {
       align-items: flex-start;
       margin-left: 0 !important;
+
+      a {
+        font-size: 9pt;
+      }
     }
   }
 
   @media(max-width: 991px) {
     display: block;
     height: $page-header-height-m;
+    padding-right: 10px;
 
     .header-content {
       flex-wrap: wrap;
@@ -205,85 +221,10 @@
     }
 
     .logo {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: $page-header-height-m;
-      padding: 0;
-      background-color: $primaryColor;
+      display: none;
 
       img {
         width: 100px;
-      }
-    }
-
-    .search {
-      position: static;
-      flex-grow: 1;
-      flex-shrink: 0;
-      order: 1;
-      transform: translate(0, -100%);
-      display: flex;
-      align-items: center;
-      width: 100%;
-      max-width: inherit;
-      height: $page-header-height-m;
-      padding: 10px 15px;
-      background-color: $primaryColor;
-      border-top: 2px solid darken($primaryColor, 10%);
-
-      $search-animation-duration: 300ms;
-
-      &.show {
-        @keyframes show-search {
-          0% {
-            transform: translate(0, -100%);
-          }
-          100% {
-            transform: translate(0, 0%);
-          }
-        }
-
-        animation-name: show-search;
-        animation-duration: $search-animation-duration;
-        animation-timing-function: ease;
-        animation-delay: 0s;
-        animation-iteration-count: 1;
-        animation-direction: normal;
-        animation-fill-mode: forwards;
-        animation-play-state: running;
-      }
-
-      &.hide {
-        @keyframes hide-search {
-          0% {
-            transform: translate(0, 0%);
-          }
-          100% {
-            transform: translate(0, -100%);
-          }
-        }
-
-        animation-name: hide-search;
-        animation-duration: $search-animation-duration;
-        animation-timing-function: ease;
-        animation-delay: 0ms;
-        animation-iteration-count: 1;
-        animation-direction: normal;
-        animation-fill-mode: forwards;
-        animation-play-state: running;
-      }
-
-      .form-group {
-        flex-grow: 1;
-        width: auto;
-        max-width: 600px;
-        margin: 0 auto;
       }
     }
 
@@ -301,9 +242,15 @@
       font-size: 16pt;
     }
 
+    .search {
+      width: 60vw;
+    }
+
     .form-group {
-      width: 450px;
-      height: 40px;
+      flex-grow: 1;
+      max-width: 600px;
+      width: 60vw;
+      height: 36px;
       margin-left: 0;
 
       .form-control {
@@ -320,15 +267,10 @@
     }
 
     .login-network {
-      width: 130px;
-      height: 40px;
+      width: 110px;
+      height: 36px;
       margin-left: auto;
-      padding-right: 10px;
-
-      img {
-        position: static;
-        margin-left: auto;
-      }
+      padding: 0 10px;
     }
 
     .dropdown-menu-container {
@@ -352,7 +294,7 @@
       width: 80%;
       max-width: 320px;
       height: 100%;
-      padding: 30px 0;
+      padding: 0 0 30px;
       background-color: #fff;
     }
 
@@ -366,7 +308,7 @@
       padding: 0 10px 30px;
 
       li {
-
+        border-right: 0 !important;
       }
 
       a {
@@ -518,7 +460,92 @@
   }
 
   @media(max-width: 599px) {
+    padding-right: 0;
 
+    .logo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: $page-header-height-m;
+      padding: 0;
+      background-color: $primaryColor;
+
+      img {
+        width: 100px;
+      }
+    }
+
+    .btn-search {
+      display: block;
+      margin-left: auto;
+    }
+
+    .search {
+      $search-animation-duration: 300ms;
+
+      position: static;
+      flex-grow: 1;
+      flex-shrink: 0;
+      order: 1;
+      transform: translate(0, -100%);
+      display: flex;
+      align-items: center;
+      width: 100%;
+      max-width: inherit;
+      height: $page-header-height-m;
+      padding: 10px 15px;
+      background-color: $primaryColor;
+      border-top: 2px solid darken($primaryColor, 10%);
+
+      &.show {
+        @keyframes show-search {
+          0% {
+            transform: translate(0, -100%);
+          }
+          100% {
+            transform: translate(0, 0%);
+          }
+        }
+
+        animation-name: show-search;
+        animation-duration: $search-animation-duration;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        animation-play-state: running;
+      }
+
+      &.hide {
+        @keyframes hide-search {
+          0% {
+            transform: translate(0, 0%);
+          }
+          100% {
+            transform: translate(0, -100%);
+          }
+        }
+
+        animation-name: hide-search;
+        animation-duration: $search-animation-duration;
+        animation-timing-function: ease;
+        animation-delay: 0ms;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        animation-play-state: running;
+      }
+    }
+
+    .login-network {
+      display: none;
+    }
   }
 
   @media(max-width: 374px) {
@@ -537,7 +564,11 @@
     }
 
     .dropdown-menu {
-      padding: 20px 0;
+      padding: 0 0 20px;
+    }
+
+    .navbar {
+      margin-top: 10px;
     }
   }
 }
