@@ -192,10 +192,8 @@
   }
 
   @media(max-width: 991px) {
-    $header-height: 60px;
-
     display: block;
-    height: $header-height;
+    height: $page-header-height-m;
 
     .header-content {
       flex-wrap: wrap;
@@ -203,7 +201,7 @@
 
     .btn-open-menu,
     .btn-search {
-      height: $header-height;
+      height: $page-header-height-m;
     }
 
     .logo {
@@ -215,7 +213,7 @@
       justify-content: center;
       align-items: center;
       width: 100%;
-      height: $header-height;
+      height: $page-header-height-m;
       padding: 0;
       background-color: $primaryColor;
 
@@ -234,7 +232,7 @@
       align-items: center;
       width: 100%;
       max-width: inherit;
-      height: $header-height;
+      height: $page-header-height-m;
       padding: 10px 15px;
       background-color: $primaryColor;
       border-top: 2px solid darken($primaryColor, 10%);

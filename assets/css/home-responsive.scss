@@ -418,7 +418,6 @@
   }
 
   @media(min-width: 600px) {
-    padding-top: 0;
 
     .logo {
       width: 100%;
@@ -435,7 +434,6 @@
   }
 
   @media(min-width: 992px) {
-    padding-top: 0;
 
     .head-section {
       background-image: url('../images/header/main-image.jpg');
@@ -457,7 +455,7 @@
 
       .head-section-content {
         height: auto;
-        padding-top: 40px;
+        padding-top: 20px;
         background: none;
       }
 
