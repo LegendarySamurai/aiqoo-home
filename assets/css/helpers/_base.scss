@@ -20,6 +20,14 @@ body {
   padding: 0;
 }
 
+main {
+  padding-top: $page-header-height-d;
+
+  @media(max-width: 991px) {
+    padding-top: $page-header-height-m;
+  }
+}
+
 *,
 ::after,
 ::before {
