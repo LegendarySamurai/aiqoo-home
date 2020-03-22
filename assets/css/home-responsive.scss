@@ -459,15 +459,16 @@
       }
 
       .head-section-content {
-        height: 462px;
-        padding-top: 50px;
+        height: auto;
+        padding-top: 40px;
         background: none;
       }
 
       .head-section-content-inner {
+        height: auto;
+        min-height: inherit;
         padding-top: 0;
         margin-top: 0;
-        height: initial;
       }
 
       .super-placeholder {
@@ -491,17 +492,19 @@
       }
 
       h1 {
+        //margin-top: 0;//
         margin-top: 30px;
         font-size: 20pt;
       }
 
       .logo {
         max-width: 300px;
+        //margin-top: 0;//
       }
 
       .find-box {
         z-index: 1;
-        transform: translate(0, calc(50% - 50px));
+        transform: translate(0, 50%);
         max-width: $central-content-width;
         width: 100%;
         margin-top: auto;
