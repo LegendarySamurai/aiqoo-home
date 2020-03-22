@@ -438,7 +438,7 @@
     .head-section {
       background-image: url('../images/header/main-image.jpg');
       background-position: center 60%;
-      background-size: 106% auto;
+      background-size: cover;
 
       &:before {
         display: block;
@@ -454,13 +454,13 @@
       }
 
       .head-section-content {
-        height: auto;
-        padding-top: 20px;
+        height: 22vw;
+        padding-top: 0;
         background: none;
       }
 
       .head-section-content-inner {
-        height: auto;
+        height: 22vw;
         min-height: inherit;
         padding-top: 0;
         margin-top: 0;
@@ -487,19 +487,21 @@
       }
 
       h1 {
-        //margin-top: 0;//
-        margin-top: 30px;
-        font-size: 20pt;
+        margin-top: 15px;
+        font-family: $main-font;
+        font-weight: 500;
+        font-size: 2vw;
+        color: #fff;
       }
 
       .logo {
-        max-width: 300px;
-        //margin-top: 0;//
+        max-width: 17vw;
+        margin-top: 30px;
       }
 
       .find-box {
         z-index: 1;
-        transform: translate(0, 50%);
+        transform: translate(0, 24%);
         max-width: $central-content-width;
         width: 100%;
         margin-top: auto;
@@ -518,7 +520,7 @@
       }
 
       .form-control {
-        height: 80px;
+        height: 70px;
         padding-left: 290px;
         padding-right: 210px;
         border-radius: 4px;
@@ -532,17 +534,10 @@
         font-size: 12pt;
       }
 
-      h1 {
-        font-family: $main-font;
-        font-weight: 500;
-        font-size: 26.25pt;
-        color: #fff;
-      }
-
       .reasons {
         flex-wrap: nowrap;
         width: 100%;
-        margin: 20px 0 0;
+        margin: 10px 0 0;
         background-color: #f4eee4;
 
         .reason {
@@ -590,7 +585,7 @@
     }
 
     .categories {
-      padding-top: 200px;
+      padding-top: 17vh;
       padding-bottom: 320px;
     }
 
