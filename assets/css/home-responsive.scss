@@ -394,7 +394,7 @@
           left: 50%;
           transform: translate(-50%, -50%);
           width: 96%;
-          max-width: 400px;
+          //max-width: 400px;
         }
       }
 
@@ -431,29 +431,163 @@
   @media(min-width: 600px) {
     .logo {
       width: 100%;
-      max-width: 210px;
     }
 
     .head-section {
       .head-section-content-inner {
-
+        position: absolute;
+        top: 40% !important;
+        left: 50%;
+        transform: translate(-50%, -90%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
       }
+
+      h1 {
+        margin-top: 15px;
+        font-family: $main-font;
+        font-weight: 500;
+        font-size: 21px;
+        color: #fff;
+      }
+
+      .logo {
+        width: 160px;
+      }
+
+      .super-placeholder {
+        position: absolute;
+        top: 0;
+        left: 12px;
+        width: initial;
+        height: 100%;
+
+        img {
+          width: 12px;
+        }
+      }
+
+      .super-placeholder-heading {
+        margin-left: 8px;
+        margin-bottom: 0;
+        color: #352f4a;
+        text-align: initial;
+        font-size: 10pt;
+      }
+
+      .find-box {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        transform: translate(0, 50%);
+        max-width: $central-content-width;
+        width: 100%;
+        margin-top: auto;
+        padding: 10px;
+        background-color: #f4eee4;
+        box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.16);
+      }
+
+      .find-btn {
+        top: 1px;
+        right: 1px;
+        height: calc(100% - 2px);
+        width: 100px;
+        margin-top: 0;
+        font-size: 10.5pt;
+      }
+
+      .form-control {
+        height: 50px;
+        padding-left: 240px;
+        padding-right: 100px;
+        border-radius: 4px;
+        box-shadow: 0px 11px 7px 0 rgba(0, 0, 0, 0.02);
+        border: solid 2px #d8cdba;
+        background-color: #ffffff;
+        font-size: 12pt;
+      }
+
+      .form-control::placeholder {
+        font-size: 10pt;
+      }
+
+      .reasons {
+        flex-wrap: nowrap;
+        align-items: stretch;
+        width: 100%;
+        max-width: initial;
+        margin: 10px 0 0;
+        padding: 0;
+        background-color: #f4eee4;
+        box-shadow: none;
+
+        .reason {
+          flex-wrap: wrap;
+          flex-direction: row;
+          width: 25%;
+          padding: 5px 10px;
+
+          &:not(:first-child):before {
+            display: block;
+            content: '';
+            position: absolute;
+            bottom: 5px;
+            left: 0;
+            transform: translate(50%, 0);
+            width: 1px;
+            height: 80%;
+            background-color: $primaryColor;
+          }
+        }
+
+        .headings {
+          text-align: left;
+          margin-top: 0;
+          margin-left: 8px;
+          padding: 0;
+        }
+
+        h2 {
+          font-size: 10pt;
+        }
+
+        h3 {
+          margin: 10px 0 0 0;
+          line-height: 1.15;
+          font-size: 9pt;
+        }
+
+        .reason-icon {
+          width: 25px;
+          height: auto;
+        }
+      }
+    }
+
+    .categories {
+      padding-top: 110px;
     }
   }
 
   @media only screen and (min-width: 600px) and (max-width: 991px) {
     .head-section {
       .head-section-content {
-        height: 60vw;
+        height: 50vw;
       }
 
       .find-box {
-        max-width: 480px;
-        margin: 0 auto;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        max-width: 96%;
       }
 
       .super-placeholder-heading {
-        margin-bottom: 20px;
+
       }
     }
   }
@@ -497,130 +631,192 @@
       }
 
       .head-section-content-inner {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -90%);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
+      //  position: absolute;
+        top: 50% !important;
+      //  left: 50%;
+      //  transform: translate(-50%, -90%);
+      //  display: flex;
+      //  flex-direction: column;
+      //  justify-content: center;
+      //  align-items: center;
+      //  width: 100%;
       }
 
-      .super-placeholder {
-        position: absolute;
-        top: 0;
-        left: 20px;
-        width: initial;
-        height: 100%;
-
-        img {
-          width: 12px;
-        }
-      }
-
-      .super-placeholder-heading {
-        margin-left: 8px;
-        margin-bottom: 0;
-        color: #352f4a;
-        text-align: initial;
-        font-size: 12pt;
-      }
+      //.super-placeholder {
+      //  position: absolute;
+      //  top: 0;
+      //  left: 20px;
+      //  width: initial;
+      //  height: 100%;
+      //
+      //  img {
+      //    width: 12px;
+      //  }
+      //}
+      //
+      //.super-placeholder-heading {
+      //  margin-left: 8px;
+      //  margin-bottom: 0;
+      //  color: #352f4a;
+      //  text-align: initial;
+      //  font-size: 12pt;
+      //}
 
       h1 {
-        margin-top: 15px;
-        font-family: $main-font;
-        font-weight: 500;
-        font-size: 2vw;
-        color: #fff;
+        //margin-top: 15px;
+        //font-family: $main-font;
+        //font-weight: 500;
+        font-size: 18pt;
+        //color: #fff;
       }
 
       .logo {
-        max-width: 17vw;
+        width: 220px;
       }
 
       .find-box {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        z-index: 1;
-        transform: translate(0, 50%);
-        max-width: $central-content-width;
-        width: 100%;
-        margin-top: auto;
         padding: 15px;
-        background-color: #f4eee4;
-        box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.16);
-      }
-
-      .find-btn {
-        top: 1px;
-        right: 1px;
-        height: calc(100% - 2px);
-        width: 150px;
-        margin-top: 0;
-        font-size: 16px;
       }
 
       .form-control {
         height: 60px;
         padding-left: 290px;
-        padding-right: 210px;
-        border-radius: 4px;
-        box-shadow: 0px 11px 7px 0 rgba(0, 0, 0, 0.02);
-        border: solid 2px #d8cdba;
-        background-color: #ffffff;
-        font-size: 12pt;
+        padding-right: 150px;
       }
 
       .form-control::placeholder {
+        font-size: 10pt;
+      }
+
+      .find-btn {
+        width: 150px;
+        font-size: 11.5pt;
+      }
+
+      .super-placeholder {
+        left: 20px;
+      }
+
+      .super-placeholder-heading {
         font-size: 12pt;
       }
 
       .reasons {
-        flex-wrap: nowrap;
-        width: 100%;
-        margin: 10px 0 0;
-        background-color: #f4eee4;
-
         .reason {
-          flex-direction: row;
-          width: 25%;
+          flex-wrap: nowrap;
           height: 70px;
           padding: 16px;
 
           &:not(:first-child):before {
-            display: block;
-            content: '';
-            position: absolute;
             top: 0;
-            left: 0;
+            bottom: auto;
             transform: translate(50%, 50%);
             width: 2px;
             height: 40px;
-            background-color: $primaryColor;
-          }
-        }
-
-        .headings {
-          text-align: left;
-          margin-left: 15px;
-
-          & h2 {
-            font-size: 12pt;
-          }
-
-          & h3 {
-            margin: 8px 0 0 0;
-            font-size: 10pt;
           }
         }
 
         .reason-icon {
           width: 36px;
         }
+
+        .headings {
+          margin-top: 10px;
+          padding: 0 10px;
+
+          h2 {
+            font-size: 12pt;
+          }
+
+          h3 {
+            margin-top: 8px;
+            line-height: inherit;
+            font-size: 10pt;
+          }
+        }
       }
+
+      //.find-box {
+      //  position: absolute;
+      //  bottom: 0;
+      //  left: 0;
+      //  z-index: 1;
+      //  transform: translate(0, 50%);
+      //  max-width: $central-content-width;
+      //  width: 100%;
+      //  margin-top: auto;
+      //  padding: 15px;
+      //  background-color: #f4eee4;
+      //  box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.16);
+      //}
+
+      //.find-btn {
+      //  top: 1px;
+      //  right: 1px;
+      //  height: calc(100% - 2px);
+      //  width: 150px;
+      //  margin-top: 0;
+      //  font-size: 16px;
+      //}
+      //
+      //.form-control {
+      //  height: 60px;
+      //  padding-left: 290px;
+      //  padding-right: 210px;
+      //  border-radius: 4px;
+      //  box-shadow: 0px 11px 7px 0 rgba(0, 0, 0, 0.02);
+      //  border: solid 2px #d8cdba;
+      //  background-color: #ffffff;
+      //  font-size: 12pt;
+      //}
+      //
+      //.form-control::placeholder {
+      //  font-size: 12pt;
+      //}
+
+      //.reasons {
+      //  flex-wrap: nowrap;
+      //  width: 100%;
+      //  margin: 10px 0 0;
+      //  background-color: #f4eee4;
+      //
+      //  .reason {
+      //    flex-direction: row;
+      //    width: 25%;
+      //    height: 70px;
+      //    padding: 16px;
+      //
+      //    &:not(:first-child):before {
+      //      display: block;
+      //      content: '';
+      //      position: absolute;
+      //      top: 0;
+      //      left: 0;
+      //      transform: translate(50%, 50%);
+      //      width: 2px;
+      //      height: 40px;
+      //      background-color: $primaryColor;
+      //    }
+      //  }
+      //
+      //  .headings {
+      //    text-align: left;
+      //    margin-left: 15px;
+      //
+      //    & h2 {
+      //      font-size: 12pt;
+      //    }
+      //
+      //    & h3 {
+      //      margin: 8px 0 0 0;
+      //      font-size: 10pt;
+      //    }
+      //  }
+      //
+      //  .reason-icon {
+      //    width: 36px;
+      //  }
+      //}
     }
 
     .section-title-container-trending-categories {
@@ -879,13 +1075,17 @@
         font-size: 25pt;
       }
 
+      .logo {
+        width: 280px;
+      }
+
       .find-btn {
         width: 200px;
       }
 
       .form-control {
         height: 70px;
-        padding-left: 320px;
+        padding-left: 300px;
         padding-right: 210px;
       }
     }
