@@ -77,7 +77,7 @@
   }
 
   .btn-open-menu {
-    margin-right: auto;
+    margin-right: 5px;
   }
 
   .btn-search {
@@ -103,10 +103,12 @@
   }
 
   .dropdown-menu-header {
+    flex-shrink: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: $page-header-height-m;
+    padding: 0 15px;
     background-color: $primaryColor;
   }
 
