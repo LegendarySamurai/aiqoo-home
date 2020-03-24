@@ -21,26 +21,52 @@
   }
 
   @media(max-width: 1399px) {
-    .container-lg {
+    .tags-container {
+      .tag {
+        font-size: 10.5pt;
+      }
+    }
 
+    .horizontal-card {
+      &.big {
+
+        h3 {
+          font-size: 19.5pt;
+        }
+
+        .text {
+          font-size: 13.5pt;
+        }
+
+        .read-more {
+          font-size: 13.5pt;
+        }
+      }
+
+      &.small {
+        h3 {
+          font-size: 19.5pt;
+        }
+      }
+    }
+
+    .label {
+      h4 {
+        font-size: 16.5pt;
+      }
     }
   }
 
   @media(max-width: 1199px) {
-    .container-lg {
-
-    }
   }
 
   @media(max-width: 991px) {
-
   }
 
   @media(max-width: 767px) {
     .container-lg {
       width: 100%;
       max-width: initial;
-      //padding: 0 15px !important;
     }
   }
 
