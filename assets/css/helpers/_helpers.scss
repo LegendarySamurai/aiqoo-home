@@ -116,3 +116,51 @@
     display: block;
   }
 }
+
+.down-600-block {
+  display: none !important;
+
+  @media(max-width: 599px) {
+    display: block !important;
+  }
+}
+
+.down-600-flex {
+  display: none !important;
+
+  @media(max-width: 599px) {
+    display: flex !important;
+  }
+}
+
+.up-600-block {
+  display: none !important;
+
+  @media(min-width: 600px) {
+    display: block !important;
+  }
+}
+
+.up-600-flex {
+  display: none !important;
+
+  @media(min-width: 600px) {
+    display: flex !important;
+  }
+}
+
+.between-600-and-991-none {
+  display: block !important;
+
+  @media (min-width: 600px) and (max-widtH: 991px) {
+    display: none !important;
+  }
+}
+
+.between-600-and-991-block {
+  display: none !important;
+
+  @media (min-width: 600px) and (max-widtH: 991px) {
+    display: block !important;
+  }
+}

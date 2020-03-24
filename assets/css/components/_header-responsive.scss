@@ -69,7 +69,7 @@
     }
 
     .form-group {
-      width: 380px;
+      width: 360px;
       margin-left: 10px;
 
       .form-control {
@@ -129,8 +129,8 @@
     }
 
     .logo {
-      width: 80px;
-      margin-right: 15px;
+      width: 70px;
+      margin-right: 20px;
     }
 
     .menu-icon {
@@ -221,10 +221,8 @@
     }
 
     .logo {
-      display: none;
-
       img {
-        width: 100px;
+
       }
     }
 
@@ -243,13 +241,13 @@
     }
 
     .search {
-      width: 60vw;
+      margin-left: auto;
     }
 
     .form-group {
       flex-grow: 1;
       max-width: 600px;
-      width: 60vw;
+      width: 53vw;
       height: 36px;
       margin-left: 0;
 
@@ -258,7 +256,7 @@
       }
 
       .find-btn {
-        width: 100px;
+        width: 80px;
       }
 
       .super-placeholder {
@@ -294,8 +292,21 @@
       width: 80%;
       max-width: 320px;
       height: 100%;
-      padding: 0 0 30px;
       background-color: #fff;
+    }
+
+    .dropdown-menu-inner {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      overflow: auto;
+      padding: 0 0 20px;
+    }
+
+    .dropdown-menu-header {
+      .login-network {
+        display: none;
+      }
     }
 
     .navbar {
@@ -449,7 +460,7 @@
       .form-group {
         input {
           padding-left: 28px;
-          padding-right: 10px;
+          padding-right: 90px;
         }
 
         .super-placeholder {
@@ -546,6 +557,12 @@
     .login-network {
       display: none;
     }
+
+    .dropdown-menu-header {
+      .login-network {
+        display: flex;
+      }
+    }
   }
 
   @media(max-width: 374px) {
@@ -564,7 +581,7 @@
     }
 
     .dropdown-menu {
-      padding: 0 0 20px;
+
     }
 
     .navbar {

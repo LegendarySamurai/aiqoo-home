@@ -2,7 +2,7 @@
 <html lang="he">
 <head>
   <meta charset="utf-8"/>
-  <title>Home Improvement - Home page</title>
+  <title>Home page</title>
   <meta name="description" content="Home Improvement"/>
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -16,7 +16,7 @@
 </head>
 <body>
 
-<header class="header">
+<header class="header is-hidden-on-home">
   <div class="container container-lg">
     <div class="row">
       <div class="col-12 pl-0 pl-lg-3 pr-0 pr-lg-3">
@@ -40,88 +40,94 @@
           <div id="dropdown-menu-container" class="dropdown-menu-container">
             <div id="btn-close-menu" class="btn-close-menu d-lg-none"></div>
             <div id="dropdown-menu" class="dropdown-menu">
-              <div class="dropdown-menu-header d-lg-none">
-                <div class="dropdown-menu-header-logo">
-                  <img src="assets/images/logo/logo.svg" alt="logo">
+              <div class="dropdown-menu-inner">
+                <div class="dropdown-menu-header d-lg-none">
+                  <div class="dropdown-menu-header-logo">
+                    <img src="assets/images/logo/logo.svg" alt="logo">
+                  </div>
+                  <button class="login-network" type="button">
+                    <span>Pro network</span>
+                    <img src="assets/images/icons/login.png" alt="login">
+                  </button>
                 </div>
-              </div>
 
-              <ul class="navbar">
-                <li>
-                  <a href="#">
-                    <i class="d-lg-none menu-item-icon icon-home"></i>
-                    <span>
+                <ul class="navbar">
+                  <li>
+                    <a href="#">
+                      <i class="d-lg-none menu-item-icon icon-home"></i>
+                      <span>
                       Home
                     </span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="d-lg-none menu-item-icon icon-home"></i>
-                    <span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="d-lg-none menu-item-icon icon-home"></i>
+                      <span>
                       Video
                     </span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="d-lg-none menu-item-icon icon-home"></i>
-                    <span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="d-lg-none menu-item-icon icon-home"></i>
+                      <span>
                       Blog
                     </span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="d-lg-none menu-item-icon icon-home"></i>
-                    <span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="d-lg-none menu-item-icon icon-home"></i>
+                      <span>
                       About us
                     </span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="d-lg-none menu-item-icon icon-home"></i>
-                    <span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="d-lg-none menu-item-icon icon-home"></i>
+                      <span>
                       Services
                     </span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="d-lg-none menu-item-icon icon-magazine"></i>
-                    <span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="d-lg-none menu-item-icon icon-magazine"></i>
+                      <span>
                       Magazine
                     </span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="no-border-bottom">
-                    <i class="d-lg-none menu-item-icon icon-contact-us"></i>
-                    <span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="no-border-bottom">
+                      <i class="d-lg-none menu-item-icon icon-contact-us"></i>
+                      <span>
                       Contact us
                     </span>
-                  </a>
-                </li>
-              </ul>
+                    </a>
+                  </li>
+                </ul>
 
-              <ul class="dropdown-menu-social d-lg-none">
-                <li>
-                  <a href="#!">
-                    <i class="fab fa-facebook-f"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#!">
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#!">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                </li>
-              </ul>
+                <ul class="dropdown-menu-social d-lg-none">
+                  <li>
+                    <a href="#!">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
           <!-- EOL: Dropdown menu -->
@@ -154,54 +160,58 @@
       <div class="row">
         <div class="col-12 head-section-content">
           <div class="head-section-content-inner">
-            <img src="assets/images/logo/logo.svg" class="logo position-relative d-none d-600-block" alt=""/>
-            <h1 class="position-relative d-none d-lg-block">YOUR TRUSTED SOURCE FOR ANY PROJECT YOU NEED</h1>
+            <img src="assets/images/logo/logo.svg" class="logo position-relative up-600-block" alt=""/>
+            <h1 class="position-relative up-600-block">YOUR TRUSTED SOURCE FOR ANY PROJECT YOU NEED</h1>
           </div>
           <!-- search box -->
           <div class="find-box">
-            <span class="super-placeholder-heading d-lg-none">What services are you looking for? </span>
+            <span class="super-placeholder-heading down-600-block">What services are you looking for?</span>
             <div class="form-group position-relative">
               <input class="form-control" type="text" placeholder="I’m looking for a roofing fixture">
               <div class="super-placeholder">
-                <img class="d-none d-lg-block" src="assets/images/icons/pen-6.svg" alt="pen">
-                <img class="d-lg-none" src="assets/images/icons/magnifier.svg" alt="search">
-                <span class="super-placeholder-heading d-none d-lg-block">What services are you looking for? </span>
+                <img class="up-600-block" src="assets/images/icons/pen-6.svg" alt="pen">
+                <img class="down-600-block" src="assets/images/icons/magnifier.svg" alt="search">
+                <span class="super-placeholder-heading up-600-block">What services are you looking for? </span>
               </div>
               <button class="find-btn" type="button">FIND A PRO</button>
             </div>
 
             <!-- Reasons block, desktop only -->
-            <div class="reasons d-none d-lg-flex">
+            <div class="reasons up-600-flex">
               <div class="reason">
                 <img class="reason-icon" src="assets/images/header/licensed.png" alt="licensed"/>
                 <div class="headings">
                   <h2>Licensed</h2>
-                  <h3>All pro’s are trade licenses and certified</h3>
+                  <h3 class="between-600-and-991-none">All pro’s are trade licenses and certified</h3>
                 </div>
+                <h3 class="between-600-and-991-block">All pro’s are trade licenses and certified</h3>
               </div>
 
               <div class="reason">
                 <img class="reason-icon" src="assets/images/header/protected.svg" alt="protected"/>
                 <div class="headings">
                   <h2>Protected</h2>
-                  <h3>All pro’s are screened and vetted</h3>
+                  <h3 class="between-600-and-991-none">All pro’s are screened and vetted</h3>
                 </div>
+                <h3 class="between-600-and-991-block">All pro’s are screened and vetted</h3>
               </div>
 
               <div class="reason">
                 <img class="reason-icon" src="assets/images/header/rating.png" alt="rating"/>
                 <div class="headings">
                   <h2>5 star rating</h2>
-                  <h3>Quality approved pros only</h3>
+                  <h3 class="between-600-and-991-none">Quality approved pros only</h3>
                 </div>
+                <h3 class="between-600-and-991-block">Quality approved pros only</h3>
               </div>
 
               <div class="reason">
                 <img class="reason-icon" src="assets/images/header/local.png" alt="local"/>
                 <div class="headings">
                   <h2>Local</h2>
-                  <h3>All pros are local and are operating near you</h3>
+                  <h3 class="between-600-and-991-none">All pros are local and are operating near you</h3>
                 </div>
+                <h3 class="between-600-and-991-block">All pros are local and are operating near you</h3>
               </div>
             </div>
           </div>
@@ -215,7 +225,7 @@
           </div>
         </div>
       </div>
-      <div class="row d-lg-none">
+      <div class="row down-600-flex">
         <div class="col-12 py-3">
           <!-- Reasons block, mobile only -->
           <div class="reasons">
@@ -1011,6 +1021,7 @@
 <script src="assets/js/slick.js"></script>
 <script src="assets/js/header.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/home.js"></script>
 
 </body>
 </html>
