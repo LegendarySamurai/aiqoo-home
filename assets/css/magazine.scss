@@ -184,7 +184,7 @@
 
     // small
     &.small {
-      padding-bottom: 10px;
+      padding-bottom: 10px !important;
 
       &:not(:last-child) {
         border-bottom: 2px solid #dcdcdc;
@@ -324,7 +324,7 @@
 
     .video-info {
       .text {
-        max-height: 50px;
+        max-height: 47px;
         overflow: hidden;
         padding: 10px 20px 10px 0;
       }
