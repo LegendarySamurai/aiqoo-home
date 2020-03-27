@@ -13,7 +13,11 @@
         integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
 
   <link rel="stylesheet" href="assets/css/landing.min.css" />
+  <link rel="stylesheet" href="assets/css/web.min.css" />
   <link rel="stylesheet" href="assets/css/landing-responsive.min.css" />
+  <link rel="stylesheet" href="assets/css/responsive.min.css"/>
+
+  <script defer type="text/javascript" src="assets/js/main.js?v=0.01"></script>
 </head>
 <body>
 
@@ -166,34 +170,297 @@
               We will find you the best suited.
               Home Renovation expert in <span class="font-weight-black">Orange County</span>
             </h1>
-            <div class="services-card position-relative">
-              <div class="services-card-heading  text-center position-relative">
-                Please give us a few details so we can connect you with the best pros
+
+            <aiq-funnel id="f_display_1" _index="1">
+              <div class="funnel-card">
+                <h2>Please give us a few details so we can connect you with the best pros</h2>
+                <div class="indicator"><li /><li /><li /></div>
               </div>
-              <div class="services-card-title font-weight-black">Select required service</div>
-              <div class="services-container">
-                <div class="row">
-                  <div class="col-6 px-2 px-lg-3">
-                    <div class="service-item">
-                      <div class="service-icon display-flex-center">
-                        <img class="replacement" src="assets/images/landing/roof-replacement.png" alt="replacement">
-                      </div>
-                      <div class="service-name font-weight-black">Roof Replacement</div>
-                      <button class="service-btn" type="button">Click Here</button>
-                    </div>
-                  </div>
-                  <div class="col-6 px-2 px-lg-3">
-                    <div class="service-item">
-                      <div class="service-icon display-flex-center">
-                        <img class="repair" src="assets/images/landing/roof-repair.png" alt="repair">
-                      </div>
-                      <div class="service-name font-weight-black">Roof Repair</div>
-                      <button class="service-btn" type="button">Click Here</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            </aiq-funnel>
+            <script id="f_data_1" type="text/json">
+                            {
+                            "funnelUid": "roofing",
+                            "initVerticalID": 1,
+                            "initSubVerticalID": 1,
+                            "initSubCategoryID": @ViewData["_subCategory"],
+                            "initServiceID": @ViewData["_service"],
+                            "initZipCode": "@ViewData["_zip"]",
+                            "funnelHeadline": "Please give us a few details so we can connect you with the best pros",
+                            "tags": "Roofing, Financing",
+                            "currentStepIndex": 0,
+                            "currentProgressBar": 0,
+                            "stepsList": [
+
+
+                            {
+                            "stepType": "subCategories",
+                            "headline": "Select category you want:",
+                            "options": [
+                            {
+                            "id": "__Cat_1__",
+                            "icon": "eject",
+                            "text": "Cat 1",
+                            "value": 1
+                            },
+                            {
+                            "id": "__Cat_2__",
+                            "icon": "eject",
+                            "text": "Cat 2",
+                            "value": 2
+                            },
+                            {
+                            "id": "__Cat_3__",
+                            "icon": "eject",
+                            "text": "Cat 3",
+                            "value": 3
+                            }
+                            ,
+                            {
+                            "id": "__Cat_4__",
+                            "icon": "eject",
+                            "text": "Cat 4",
+                            "value": 4
+                            }
+                            ],
+                            "progressMark": 0,
+                            "displayState" : ""
+                            },
+                            {
+                            "stepType": "servicesByCat",
+                            "headline": "Select required service By Cat:",
+                            "options": [
+                            {
+                            "id": "__1_Service1__",
+                            "icon": "eject",
+                            "text": "cat 1 - Service 1",
+                            "value": 1,
+                            "catID": 1
+                            },
+                            {
+                            "id": "__1_Service2__",
+                            "icon": "build",
+                            "text": "cat 1 - Service2",
+                            "value": 2,
+                            "catID": 1
+                            },
+                            {
+                            "id": "__2_Service1__",
+                            "icon": "eject",
+                            "text": "cat 2 - Service 1",
+                            "value": 3,
+                            "catID": 2
+                            },
+                            {
+                            "id": "__2_Service2__",
+                            "icon": "build",
+                            "text": "cat 2 - Service2",
+                            "value": 4,
+                            "catID": 2
+                            }
+                            ],
+                            "progressMark": 0,
+                            "displayState" : ""
+                            },
+
+                            {
+                            "stepType": "qa",
+                            "headline": "Select required service:",
+                            "options": [
+                            {
+                            "id": "__Roof_Replacement_3__",
+                            "icon": "eject",
+                            "text": "Roof Replacement",
+                            "qID": 2,
+                            "aID": 3
+                            },
+                            {
+                            "id": "__Roof_Repair_4__",
+                            "icon": "build",
+                            "text": "Roof Repair",
+                            "qID": 2,
+                            "aID": 4
+                            }
+                            ],
+                            "progressMark": 0,
+                            "displayState" : ""
+                            },
+
+                            {
+                            "stepType": "fullServices",
+                            "headline": "Select required service:",
+                            "options": [
+                            {
+                            "id": "__Service1__",
+                            "icon": "eject",
+                            "text": "Service1",
+                            "value": 1
+                            },
+                            {
+                            "id": "__Service2__",
+                            "icon": "build",
+                            "text": "Service2",
+                            "value": 2
+                            }
+                            ],
+                            "progressMark": 0,
+                            "displayState" : ""
+                            },
+                            {
+                            "stepType": "zipCode",
+                            "headline": "Enter your Zip code:",
+                            "progressMark": 20,
+                            "displayState" : ""
+                            },
+
+
+                            {
+                            "stepType": "fullName",
+                            "headline": "Please enter your full name:",
+                            "progressMark": 40,
+                            "displayState" : ""
+                            },
+                            {
+                            "stepType": "phone",
+                            "headline": "Enter your contact number:",
+                            "progressMark": 50,
+                            "displayState" : ""
+                            },
+                            {
+                            "stepType": "postLead",
+                            "progressMark": 55,
+                            "displayState" : ""
+                            },
+                            {
+                            "stepType": "qa",
+                            "headline": "Are you the homeowner?",
+                            "options": [
+                            {
+                            "id": "__Yes_IAm_1__",
+                            "icon": "home",
+                            "text": "Yes, I am",
+                            "qID": 1,
+                            "aID": 1
+                            },
+                            {
+                            "id": "__No_Im_not_2__",
+                            "icon": "no_sim",
+                            "text": "No, I'm not",
+                            "qID": 1,
+                            "aID": 2
+                            }
+                            ],
+                            "progressMark": 60,
+                            "displayState" : ""
+                            },
+                            {
+                            "stepType": "postLead",
+                            "progressMark": 60,
+                            "displayState" : ""
+                            },
+                            {
+                            "stepType": "qa",
+                            "headline": "Required project start date:",
+                            "options": [
+                            {
+                            "id": "__Ready_To_Hire_139__",
+                            "icon": "access_alarms",
+                            "text": "Ready To Hire",
+                            "qID": 17,
+                            "aID": 139
+                            },
+                            {
+                            "id": "__Flexible_140__",
+                            "icon": "calendar_today",
+                            "text": "Flexible",
+                            "qID": 17,
+                            "aID": 140
+                            }
+                            ],
+                            "progressMark": 70,
+                            "displayState" : ""
+                            },
+                            {
+                            "stepType": "qa",
+                            "headline": "Are you interested in financing?",
+                            "options": [
+                            {
+                            "id": "__Yes_I_am_7__",
+                            "icon": "check_box",
+                            "text": "Yes, I am",
+                            "qID": 4,
+                            "aID": 7
+                            },
+                            {
+                            "id": "__No_Im_not_8__",
+                            "icon": "indeterminate_check_box",
+                            "text": "No, I'm not",
+                            "qID": 4,
+                            "aID": 8
+                            }
+                            ],
+                            "progressMark": 80,
+                            "displayState" : ""
+                            },
+                            {
+                            "stepType": "postLead",
+                            "progressMark": 80,
+                            "displayState" : ""
+                            },
+                            {
+                            "stepType": "needFinancingQa",
+                            "headline": "",
+                            "progressMark": 85,
+                            "displayState" : "",
+                            "conditional": true
+                            },
+                            {
+                            "stepType": "qa",
+                            "headline": "How many pros do you wish to consult with?",
+                            "options": [
+                            {
+                            "id": "__Up_to_2_Pros_229__",
+                            "icon": "looks_two",
+                            "text": "Up to 2 Pros",
+                            "qID": 41,
+                            "aID": 229
+                            },
+                            {
+                            "id": "__3-4_Pros_230__",
+                            "icon": "looks_4",
+                            "text": "3 or 4 Pros",
+                            "qID": 41,
+                            "aID": 230
+                            }
+                            ],
+                            "progressMark": 90,
+                            "displayState" : ""
+                            },
+                            {
+                            "stepType": "postLead",
+                            "progressMark": 90,
+                            "displayState" : ""
+                            },
+                            {
+                            "stepType": "additionalDetails",
+                            "headline": "Thanks, \n completing the additional, optional data \n will assist us in providing you withfast, accurate service:",
+                            "progressMark": 95,
+                            "displayState" : ""
+                            },
+                            {
+                            "stepType": "postLead",
+                            "progressMark": 95,
+                            "displayState" : ""
+                            },
+                            {
+                            "stepType": "finish",
+                            "headline": "Thank you\nWe have successfully received your information.\nCertified local pros will contact you shortly.",
+                            "progressMark": 100,
+                            "displayState" : ""
+                            }
+                            ]
+                            }
+                        </script>
+
           </div>
 
           <div class="reasons-container d-none d-600-block">
@@ -855,7 +1122,6 @@
 <script src="assets/css/vendor/slick/slick.min.js"></script>
 <script src="assets/js/slick.js"></script>
 <script src="assets/js/header.js"></script>
-<script src="assets/js/main.js"></script>
 
 </body>
 </html>

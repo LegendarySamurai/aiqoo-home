@@ -3,15 +3,6 @@
 @import 'helpers/base';
 @import 'helpers/helpers';
 
-// components
-@import 'components/section-title-responsive';
-@import 'components/header-responsive';
-@import 'components/reasons-responsive';
-@import 'components/button-responsive';
-@import 'components/list-responsive';
-@import 'components/footer-responsive';
-@import 'components/carousel';
-
 .landing-page {
   @media(min-width: 300px) {
     .all-categories {
@@ -55,7 +46,7 @@
 
       .head-section-content-inner {
         z-index: 22;
-        max-width: 540px;
+        max-width: 96%;
         margin: 10px auto 0;
       }
 

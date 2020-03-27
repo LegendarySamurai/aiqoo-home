@@ -21,14 +21,14 @@ function init() {
     Icons.type = 'text/css';
     document.getElementsByTagName('head')[0].appendChild(Icons);
 
-    // if (window.location.href.toLowerCase().indexOf("lp/") > -1) {
+    if (window.location.href.toLowerCase().indexOf("lp/") > -1) {
         var funnel_script_load = setTimeout(function () {
             var script = document.createElement('script');
             script.src = "assets/js/funnels_0.1.js?v=0.01";
             document.getElementsByTagName('head')[0].appendChild(script);
-        }, 1500000) //todo chage after test in lighthouse
+        }, 1500) //todo chage after test in lighthouse
 
-    // }
+    }
 }
 
 

@@ -1,22 +1,5 @@
 // helpers
 @import 'helpers/variables';
-@import 'helpers/base';
-@import 'helpers/helpers';
-
-// vendor custom bootstrap cherry picking styles
-@import "vendor/bootstrap.custom/bootstrap.custom";
-@import "vendor/slick/slick";
-@import "vendor/slick/slick-theme";
-
-// components
-@import 'components/section-title';
-@import 'components/header';
-@import 'components/reasons';
-@import 'components/button';
-@import 'components/categories';
-@import 'components/list';
-@import 'components/footer';
-@import 'components/footer-slick';
 @import 'components/load-funnel';
 
 .landing-page {
