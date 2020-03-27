@@ -3,13 +3,31 @@
 @import 'components/load-funnel';
 
 .landing-page {
+  position: relative;
+  z-index: 6000;
+
+  #f_display_1 {
+    //position: fixed; // when you click on any li
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
   .categories {
     background: #fff;
     background-image: none;
   }
 
   .head-section {
+    z-index: 11;
+
+    .head-section-content-inner {
+      z-index: 9900 !important;
+    }
+
     .section-title {
+      margin-bottom: 60px;
       font-family: $h-font;
       font-weight: 500;
       color: $text-color;

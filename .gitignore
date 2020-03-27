@@ -1,4 +1,4 @@
 # ignore forlders:
 .idea/
 node_modules/
-assets/css/vendor/bootstrap
+assets/scss/vendor/bootstrap
