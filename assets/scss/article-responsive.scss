@@ -3,14 +3,6 @@
 
 .article {
   @media(max-width: 1899px) {
-    //.container-lg {
-    //  max-width: 1495px;
-    //}
-
-    .cards-section {
-
-    }
-
     .card {
       max-width: 450px;
     }
@@ -43,8 +35,9 @@
       }
 
       .h-c {
-        h2 {
+        .commercial-h2 {
           font-size: 21pt;
+          margin: 5px 0 10px;
         }
       }
     }

@@ -5,11 +5,11 @@
 
 // Video
 .video-container {
-  .embed-responsive-1by1 {
-    .fa-play-circle {
-      font-size: 40pt;
-    }
-  }
+  //.embed-responsive-1by1 {
+  //  .fa-play-circle {
+  //    font-size: 40pt;
+  //  }
+  //}
 
   img {
     position: absolute;
@@ -37,7 +37,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: transparentize(#fff, .5);
+    color: #d8cdba;
     font-size: 78pt;
     z-index: 2;
     cursor: pointer;
