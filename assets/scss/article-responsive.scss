@@ -46,6 +46,34 @@
     }
   }
 
+  @media(max-width: 1299px) {
+    .commercial-6 {
+      .text {
+        font-size: 14pt;
+        padding: 0 10px;
+      }
+      .content {
+        padding: 20px;
+      }
+    }
+
+    .commercial-6,
+    .commercial-7 {
+      .commercial-h3 {
+        margin-top: 0;
+        font-size: 22pt;
+      }
+
+      button {
+        white-space: nowrap;
+      }
+    }
+
+    .commercial-h3 {
+
+    }
+  }
+
   @media(max-width: 1199px) {
     .container-lg {
       max-width: 960px !important;
