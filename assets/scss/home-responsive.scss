@@ -2,9 +2,17 @@
 @import 'helpers/helpers';
 
 .home {
+  @media(max-width: 599px) {
+    .find-box {
+      &.is-active {
+        position: fixed;
+        z-index: 100;
+        height: auto;
+        width: 92vw;
+      }
+    }
+  }
   @media(min-width: 300px) {
-    //padding-top: 56px;
-
     .head-section {
       .head-section-content {
         height: 80vw;
@@ -13,14 +21,6 @@
         background-repeat: no-repeat;
         background-position: center 0;
         background-size: cover;
-      }
-
-      .head-section-content-inner {
-
-      }
-
-      .find-box {
-        width: 100%;
       }
 
       .find-btn {
@@ -56,6 +56,17 @@
         font-size: 15.5pt;
         color: #fff;
         text-align: center;
+
+        &.zip-super-placeholder-heading,
+        &.main-super-placeholder-heading {
+          &.is-hidden {
+            display: none !important;
+          }
+
+          &.is-active {
+            display: block !important;
+          }
+        }
       }
 
       .form-control {
@@ -500,6 +511,10 @@
         border: solid 2px #d8cdba;
         background-color: #ffffff;
         font-size: 12pt;
+
+        &.is-hidden {
+          padding-left: 160px;
+        }
       }
 
       .form-control::placeholder {
@@ -621,43 +636,11 @@
       }
 
       .head-section-content-inner {
-      //  position: absolute;
         top: 50% !important;
-      //  left: 50%;
-      //  transform: translate(-50%, -90%);
-      //  display: flex;
-      //  flex-direction: column;
-      //  justify-content: center;
-      //  align-items: center;
-      //  width: 100%;
       }
 
-      //.super-placeholder {
-      //  position: absolute;
-      //  top: 0;
-      //  left: 20px;
-      //  width: initial;
-      //  height: 100%;
-      //
-      //  img {
-      //    width: 12px;
-      //  }
-      //}
-      //
-      //.super-placeholder-heading {
-      //  margin-left: 8px;
-      //  margin-bottom: 0;
-      //  color: #352f4a;
-      //  text-align: initial;
-      //  font-size: 12pt;
-      //}
-
       h1 {
-        //margin-top: 15px;
-        //font-family: $main-font;
-        //font-weight: 500;
         font-size: 18pt;
-        //color: #fff;
       }
 
       .logo {
@@ -672,6 +655,10 @@
         height: 60px;
         padding-left: 290px;
         padding-right: 150px;
+
+        &.is-hidden {
+          padding-left: 190px;
+        }
       }
 
       .form-control::placeholder {
@@ -694,8 +681,9 @@
       .reasons {
         .reason {
           flex-wrap: nowrap;
-          height: 70px;
+          height: 80px;
           padding: 16px;
+          margin: 0;
 
           &:not(:first-child):before {
             top: 0;

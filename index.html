@@ -12,7 +12,7 @@
         integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
 
   <link rel="stylesheet" href="assets/css/home.css"/>
-  <link rel="stylesheet" href="assets/css/web.css" />
+  <link rel="stylesheet" href="assets/css/web.css"/>
   <link rel="stylesheet" href="assets/css/home-responsive.css"/>
   <link rel="stylesheet" href="assets/css/web-responsive.css"/>
 </head>
@@ -167,13 +167,16 @@
           </div>
           <!-- search box -->
           <div class="find-box">
-            <span class="super-placeholder-heading down-600-block">What services are you looking for?</span>
+            <span class="main-super-placeholder-heading super-placeholder-heading down-600-block">What services are you looking for?</span>
+            <span class="zip-super-placeholder-heading super-placeholder-heading down-600-block is-hidden">Enter your zip code.</span>
             <div class="form-group position-relative">
-              <input class="form-control" type="text" placeholder="I’m looking for a roofing fixture">
+              <input id="head-section-search-input" class="form-control" type="text"
+                     placeholder="I’m looking for a roofing fixture">
               <div class="super-placeholder">
                 <img class="up-600-block" src="assets/images/icons/pen-6.svg" alt="pen">
                 <img class="down-600-block" src="assets/images/icons/magnifier.svg" alt="search">
-                <span class="super-placeholder-heading up-600-block">What services are you looking for? </span>
+                <span class="main-super-placeholder-heading super-placeholder-heading up-600-block">What services are you looking for? </span>
+                <span class="zip-super-placeholder-heading super-placeholder-heading up-600-block is-hidden">Enter your zip code.</span>
               </div>
               <button class="find-btn" type="button">FIND A PRO</button>
             </div>
@@ -503,36 +506,36 @@
             <div class="col-12 col-lg-8 mt-5 mt-lg-0">
               <div class="row">
                 <div class="col-12 py-lg-3 mb-5 mb-lg-0">
-                  <!-- 16:9 aspect ratio -->
-                  <div class="embed-responsive embed-responsive-16by9">
-                    <iframe
-                        src="https://www.youtube.com/embed/lM02vNMRRB0"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                    </iframe>
+                  <div class="video-container">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <!-- video thumbnail -->
+                      <img src="assets/images/house.jpg" alt="">
+                      <i class="fal fa-play-circle"></i>
+                      <div class="mask"></div>
+                    </div>
                   </div>
                 </div>
                 <div class="col-12 col-lg-6 py-lg-3 mb-5 mb-lg-0">
-                  <!-- 1:1 aspect ratio -->
-                  <div class="embed-responsive embed-responsive-1by1">
-                    <iframe
-                        src="https://www.youtube.com/embed/lM02vNMRRB0"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                    </iframe>
+                  <div class="video-container">
+                    <!-- 1:1 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-1by1">
+                      <!-- video thumbnail -->
+                      <img src="assets/images/house.jpg" alt="">
+                      <i class="fal fa-play-circle"></i>
+                      <div class="mask"></div>
+                    </div>
                   </div>
                 </div>
                 <div class="col-12 col-lg-6 py-lg-3">
-                  <!-- 1:1 aspect ratio -->
-                  <div class="embed-responsive embed-responsive-1by1">
-                    <iframe
-                        src="https://www.youtube.com/embed/lM02vNMRRB0"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                    </iframe>
+                  <div class="video-container">
+                    <!-- 1:1 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-1by1">
+                      <!-- video thumbnail -->
+                      <img src="assets/images/house.jpg" alt="">
+                      <i class="fal fa-play-circle"></i>
+                      <div class="mask"></div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1014,6 +1017,7 @@
     </div>
   </div>
 </footer>
+<div class="back-layer"></div>
 <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
