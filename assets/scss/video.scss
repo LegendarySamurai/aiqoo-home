@@ -75,11 +75,11 @@
 
   // Video
   .video-container {
-    //.embed-responsive-1by1 {
-    //  .fa-play-circle {
-    //    font-size: 40pt;
-    //  }
-    //}
+    .embed-responsive-1by1 {
+      .fa-play-circle {
+        font-size: 40pt;
+      }
+    }
 
     img {
       position: absolute;
@@ -132,6 +132,13 @@
 
     .video-info {
       text-align: center;
+    }
+    .video-container {
+      .embed-responsive-1by1 {
+        .fa-play-circle {
+          font-size: 60pt;
+        }
+      }
     }
   }
 

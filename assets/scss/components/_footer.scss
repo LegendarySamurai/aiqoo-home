@@ -3,8 +3,9 @@
   background-color: $pageFooterPrimaryColor;
   font-family: $main-font;
 
-  h4,
-  h5 {
+  .footer-h4,
+  .footer-h5 {
+    display: block;
     color: #fff;
     font-weight: 600;
   }

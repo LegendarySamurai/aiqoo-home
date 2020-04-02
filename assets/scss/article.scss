@@ -9,6 +9,13 @@
   color: $primaryColor;
   box-sizing: border-box;
 
+  h3 {
+    margin-top: 24px;
+    margin-bottom: .5rem;
+    font-weight: 600;
+    font-size: 15pt;
+  }
+
   // tools
   .tool-panel {
     span {
@@ -317,6 +324,7 @@
     .commercial-h2 {
       max-width: 390px;
       line-height: 1.25;
+      font-size: 21pt;
     }
 
     .find-by-zip-code {

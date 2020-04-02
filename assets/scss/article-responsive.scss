@@ -34,11 +34,8 @@
         }
       }
 
-      .h-c {
-        .commercial-h2 {
-          font-size: 21pt;
-          margin: 5px 0 10px;
-        }
+      .commercial-h2 {
+        margin: 5px 0 10px;
       }
     }
   }
@@ -66,6 +63,10 @@
 
       h3 {
         font-size: 16pt !important;
+      }
+
+      .commercial-h2 {
+        font-size: 19pt;
       }
 
       .commercial-3 {
