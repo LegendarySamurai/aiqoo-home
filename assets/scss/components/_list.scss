@@ -73,6 +73,8 @@
   .services-list-col {
     width: 33.33%;
     font-size: 12pt;
+    flex-grow: 0;
+    flex-basis: auto;
   }
 }
 

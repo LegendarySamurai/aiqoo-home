@@ -1,0 +1,71 @@
+// Video settings and layers
+.video-container {
+  .link-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 900;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .5s ease;
+  }
+
+  .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparentize(#342e49, 0.35);
+    //background-image: linear-gradient(to top, transparentize(#000000, .8) 99%, rgba(25, 23, 23, 0) -5%);
+  }
+
+  .fa-play-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #d8cdba;
+    font-size: 78pt;
+    z-index: 2;
+    cursor: pointer;
+    transition: font-size .5s ease;
+  }
+
+  &.small-video {
+    .embed-responsive-16by9 {
+      .fa-play-circle {
+        font-size: 50pt;
+      }
+    }
+  }
+
+  &.small-video:hover {
+    .fa-play-circle {
+      font-size: 65pt;
+    }
+  }
+}
+
+.video-container:hover {
+  img {
+    transform: scale(1.1);
+  }
+
+  .fa-play-circle {
+    font-size: 100pt;
+  }
+}
