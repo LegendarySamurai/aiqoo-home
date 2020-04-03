@@ -3,14 +3,13 @@
 
 
 .magazine {
-
   @media(max-width: 1899px) {
 
   }
 
   @media(max-width: 1599px) {
     .container-lg {
-      max-width: initial;
+      max-width: 1340px;
     }
   }
 
@@ -24,7 +23,7 @@
     .horizontal-card {
       &.big {
 
-        h3 {
+        .h2 {
           font-size: 19.5pt;
         }
 
@@ -38,14 +37,14 @@
       }
 
       &.small {
-        h3 {
+        .h2 {
           font-size: 19.5pt;
         }
       }
     }
 
     .label {
-      h4 {
+      .h3 {
         font-size: 16.5pt;
       }
     }
@@ -60,6 +59,12 @@
 
         .read-more {
           margin-top: 10px;
+        }
+      }
+
+      &.big {
+        .share-link {
+          
         }
       }
     }

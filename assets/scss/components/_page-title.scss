@@ -19,6 +19,12 @@
   @media(max-width: 1199px) {}
 
   @media(max-width: 991px) {
+    .page-heading-container {
+      .fa-chevron-left {
+        font-size: 24pt;
+      }
+    }
+
     .page-heading {
       font-size: 28pt;
     }
