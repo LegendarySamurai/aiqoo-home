@@ -16,9 +16,7 @@
 
   @media(max-width: 1399px) {}
 
-  @media(max-width: 1199px) {}
-
-  @media(max-width: 991px) {
+  @media(max-width: 1199px) {
     .page-heading-container {
       .fa-chevron-left {
         font-size: 24pt;
@@ -26,7 +24,19 @@
     }
 
     .page-heading {
-      font-size: 28pt;
+      font-size: 26pt;
+    }
+  }
+
+  @media(max-width: 991px) {
+    .page-heading-container {
+      .fa-chevron-left {
+        font-size: 18pt;
+      }
+    }
+
+    .page-heading {
+      font-size: 24pt;
     }
   }
 

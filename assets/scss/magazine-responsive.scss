@@ -78,7 +78,7 @@
 
       &.big {
         margin: 0 auto;
-        max-width: 96%;
+        max-width: 100%;
 
         .card-info {
           .fa-share-alt {
@@ -95,7 +95,7 @@
     .vertical-card {
       &.small {
         width: 100%;
-        max-width: 96%;
+        max-width: 100%;
         margin: 10px auto 20px;
       }
     }
@@ -109,11 +109,24 @@
     }
 
     .big-content-block {
+      padding-top: 15px;
+      padding-left: 20px;
+      padding-right: 20px;
+
       .trends {
         .vertical-card {
           &.big {
+            max-width: 100%;
             margin: 20px auto 40px;
           }
+        }
+      }
+
+      .cards {
+        padding-right: 0;
+
+        .card {
+          max-width: 100%;
         }
       }
     }
@@ -140,10 +153,75 @@
   }
 
   @media(max-width: 599px) {
+    .card {
+      max-width: 100% !important;
+
+      .card-info {
+        .text {
+          font-size: 12pt;
+        }
+      }
+    }
+
+    .featured-items {
+      padding: 15px 15px 15px 15px;
+      margin-top: 30px;
+    }
+
+    .big-content-block {
+      padding-left: 15px;
+      padding-right: 15px;
+
+      .cards {
+        padding-right: 0;
+
+        .card {
+          max-width: 100%;
+          width: 100%;
+        }
+
+        .card-info {
+          padding: 10px 10px 10px 0;
+        }
+      }
+    }
+
+    .trends {
+      .card {
+        &.vertical-card {
+          &.big {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+
+    .videos {
+      .video-info {
+        .text {
+          margin-bottom: 10px;
+          max-height: 60px;
+          font-size: 12pt;
+        }
+      }
+    }
+
     .page-title-inner {
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
+    }
+
+    .label {
+      .h3 {
+        margin-top: 15px;
+      }
+    }
+
+    .tags-container {
+      .tag {
+        margin-top: 0;
+      }
     }
   }
 

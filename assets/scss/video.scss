@@ -50,9 +50,9 @@
 
   .text {
     line-height: 1.25;
-    margin: 10px 0;
+    margin: 5px 0;
     font-weight: 300;
-    font-size: 11pt;
+    font-size: 10pt;
   }
 
   // tools
@@ -115,14 +115,14 @@
       &.small-video {
         .embed-responsive-16by9 {
           .fa-play-circle {
-            font-size: 40pt;
+            font-size: 35pt;
           }
         }
       }
 
       &.small-video:hover {
         .fa-play-circle {
-          font-size: 50pt;
+          font-size: 40pt;
         }
       }
     }
@@ -135,19 +135,13 @@
       justify-content: flex-start;
 
       .text {
-        margin-top: 10px;
+        margin-top: 5px;
       }
     }
   }
 
   .most-popular {
     padding-bottom: 40px;
-
-    .video-container {
-      .fa-play-circle {
-        //font-size: 60pt;
-      }
-    }
   }
 
   // Video-item-col
@@ -157,6 +151,8 @@
   }
 
   .video-item {
+    margin-bottom: 10px;
+
     .video-container {
       margin-bottom: 10px;
       background-image: linear-gradient(to top, rgba(0,0,0,0.2) 99%, rgba(25,23,23,0) -5%);
