@@ -19,3 +19,29 @@
     font-weight: 300;
   }
 }
+
+.breadcrumbs {
+  @media(max-width: 1899px) {}
+
+  @media(max-width: 1599px) {}
+
+  @media(max-width: 1399px) {}
+
+  @media(max-width: 1199px) {}
+
+  @media(max-width: 991px) {
+    li {
+      margin-bottom: 10px;
+    }
+
+    span {
+      font-size: 12pt;
+    }
+  }
+
+  @media(max-width: 767px) {}
+
+  @media(max-width: 599px) {}
+
+  @media(max-width: 374px) {}
+}
