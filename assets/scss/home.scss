@@ -26,18 +26,6 @@ body {
 
 // Video
 .video-container {
-
-  //.link-mask {
-  //  position: absolute;
-  //  top: 0;
-  //  left: 0;
-  //  right: 0;
-  //  bottom: 0;
-  //  width: 100%;
-  //  height: 100%;
-  //  z-index: 900;
-  //}
-
   .text {
     position: absolute;
     top: 15px;
@@ -69,65 +57,31 @@ body {
         font-size: 15pt;
       }
     }
-
-    //.embed-responsive-16by9 {
-    //  .fa-play-circle {
-    //    font-size: 50pt;
-    //  }
-    //}
   }
-
-  //&.small-video:hover {
-  //  .fa-play-circle {
-  //    font-size: 65pt;
-  //  }
-  //}
-
-  //img {
-  //  position: absolute;
-  //  top: 0;
-  //  left: 0;
-  //  width: 100%;
-  //  height: 100%;
-  //  object-fit: cover;
-  //  transition: transform .5s ease;
-  //}
-
-  //.mask {
-  //  position: absolute;
-  //  top: 0;
-  //  left: 0;
-  //  right: 0;
-  //  bottom: 0;
-  //  width: 100%;
-  //  height: 100%;
-  //  background-color: transparentize(#000, 0.45);
-  //}
-
-  //.fa-play-circle {
-  //  position: absolute;
-  //  top: 50%;
-  //  left: 50%;
-  //  transform: translate(-50%, -50%);
-  //  color: #d8cdba;
-  //  font-size: 78pt;
-  //  z-index: 2;
-  //  cursor: pointer;
-  //  transition: font-size .5s ease;
-  //}
 }
 
-//.video-container:hover {
-//  img {
-//    transform: scale(1.1);
-//  }
-//
-//  .fa-play-circle {
-//    font-size: 100pt;
-//  }
-//}
 
 .home {
+  .find-box {
+    &.is-active {
+      @keyframes find-box-animation {
+        0% {
+          transform: translateY(20%) scale(0.8);
+        }
+
+        100% {
+          transform: translateY(50%) scale(1);
+        }
+      }
+
+      animation-name: find-box-animation;
+      animation-duration: 600ms;
+      animation-delay: 0ms;
+      animation-fill-mode: forwards;
+      animation-iteration-count: 1;
+    }
+  }
+
   .main-title {
     color: #d8cdba;
     font-size: 30pt;

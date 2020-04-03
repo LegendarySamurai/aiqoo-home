@@ -13,6 +13,12 @@
     }
   }
 
+  @media(max-width: 991px) {
+    .card {
+      max-width: 100%;
+    }
+  }
+
   @media(max-width: 1090px) {
     .video-container {
       &.small-video {

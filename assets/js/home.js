@@ -34,6 +34,8 @@ let headSectionInputPlaceholder = document.getElementById('head-section-search-i
 const desktopInputPlaceholder = document.querySelector('.super-placeholder .zip-super-placeholder-heading');
 const mobileInputPlaceholder = document.querySelector('.find-box .zip-super-placeholder-heading');
 
+// const findBox = document.querySelector('.find-box');
+
 let findProBtnClicked = false;
 
 findProBtns.forEach(btn => {
@@ -66,6 +68,7 @@ findProBtns.forEach(btn => {
 		if (isDesktop) {
 			mobileInputPlaceholder.classList.remove('is-active');
 			mobileInputPlaceholder.classList.add('is-hidden');
+			findBox.classList.add('is-active');
 		}
 		// console.log('=> Works');
 	});
