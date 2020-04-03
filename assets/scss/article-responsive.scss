@@ -123,6 +123,20 @@
       }
     }
 
+    .cards-section {
+      .cards-container {
+        padding: 0 15px;
+
+        .card {
+          max-width: 100%;
+        }
+
+        .card-col {
+          width: 100%;
+        }
+      }
+    }
+
     .tool-panel {
       .seen {
         font-size: 11pt;
@@ -145,16 +159,20 @@
   }
 
   @media(max-width: 767px) {
-    //.cards-section {
-    //  .container-lg {
-    //    padding: 0 15px;
-    //  }
-    //}
 
     .container-lg {
       width: 100%;
       max-width: initial;
       padding: 0 15px !important;
+    }
+
+    .cards-section {
+      .cards-container {
+        .card-col {
+          padding: 0;
+
+        }
+      }
     }
 
     .article-content {
@@ -203,6 +221,10 @@
     }
 
     .article-section {
+      .article-inner {
+        padding: 20px 30px 40px;
+      }
+
       .article-header {
         flex-direction: column;
       }
