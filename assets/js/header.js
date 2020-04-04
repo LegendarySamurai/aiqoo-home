@@ -6,6 +6,7 @@ const search = document.querySelector('#btn-search');
 const headerSearch = document.querySelector('#header-search');
 const headerSearchInput = document.querySelector('#header-search-input');
 const headerSuperPlaceholder = document.querySelector('#header-search .super-placeholder');
+const headerFindBtn = document.querySelector('#header-search .find-btn');
 
 btnOpenMenu.addEventListener('click', () => {
 	mainMenuContainer.classList.remove('hide', 'd-none');
@@ -23,7 +24,6 @@ btnCloseMenu.addEventListener('click', () => {
 btnSearch.addEventListener('click', () => {
 	if (!headerSearch.classList.contains('show')) {
 		headerSearch.classList.add('show');
-		headerSuperPlaceholder.classList
 		headerSearchInput.focus();
 	}
 	else if (headerSearch.classList.contains('hide')) {
@@ -32,4 +32,8 @@ btnSearch.addEventListener('click', () => {
 	else if (headerSearch.classList.contains('show')) {
 		headerSearch.classList.add('hide');
 	}
+});
+
+headerFindBtn.addEventListener('click', () => {
+	headerSuperPlaceholder.classList.add('is-active');
 });

@@ -26,11 +26,9 @@ window.addEventListener('scroll', () => {
 const zipCodePlaceholders = document.querySelectorAll('.zip-super-placeholder-heading');
 const mainPlaceholderHeadings = document.querySelectorAll('.main-super-placeholder-heading');
 const findProBtns = document.querySelectorAll('.find-btn');
-// const btnSearchHeader = document.querySelector('#btn-search');
 const backLayer = document.querySelector('.back-layer');
-// const inputPlaceholder = document.querySelector('.find-box .form-control');
+const inputPlaceholder = document.querySelector('.find-box .form-control');
 let headerInputPlaceholder = document.getElementById('header-search-input');
-// const headerSearchSuperPlaceholder = document.querySelector('#header-search .form-group .super-placeholder');
 let headSectionInputPlaceholder = document.getElementById('head-section-search-input');
 
 const desktopInputPlaceholder = document.querySelector('.super-placeholder .zip-super-placeholder-heading');
@@ -53,6 +51,8 @@ findProBtns.forEach(btn => {
 			placeholder.classList.add('is-active');
 			placeholder.classList.remove('is-hidden');
 		});
+
+		inputPlaceholder.classList.add('is-hidden');
 		headerInputPlaceholder.placeholder = 'Enter your zip code.';
 		headSectionInputPlaceholder.placeholder = 'Enter your zip code.';
 
@@ -70,8 +70,8 @@ findProBtns.forEach(btn => {
 			mobileInputPlaceholder.classList.add('is-hidden');
 			findBox.classList.add('is-active');
 		}
+		// console.log('=> Works');
 	});
 });
-
 
 
