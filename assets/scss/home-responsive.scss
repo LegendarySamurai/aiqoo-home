@@ -4,11 +4,58 @@
 .home {
   @media(max-width: 599px) {
     .find-box {
+      .location {
+        display: none !important;
+      }
+
+      .magnifier {
+        display: block !important;
+      }
+
       &.is-active {
+        top: 6%;
         position: fixed;
         z-index: 100;
         height: auto;
         width: 92vw;
+
+        .form-group-mobile-bg {
+          width: 100%;
+          padding: 20px;
+          background-color: transparentize($primaryColor, .3);
+          //background-color: transparentize($beige, .3);
+          border-radius: 6px;
+          border: 1px solid $beige;
+
+          .form-group {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+          }
+        }
+
+        .location {
+          display: block !important;
+          width: 16px;
+        }
+
+        .magnifier {
+          display: none !important;
+        }
+
+        .find-btn {
+          position: static;
+          width: 50%;
+          margin: 20px auto 0;
+          border: 1px solid $beige;
+          background-color: $beige;
+          color: $primaryColor;
+          font-size: 10.5pt;
+        }
+
+        .super-placeholder {
+          height: 44%;
+        }
       }
     }
   }
