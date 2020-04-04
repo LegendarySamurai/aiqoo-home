@@ -42,7 +42,9 @@
 
   @media(max-width: 767px) {}
 
-  @media(max-width: 599px) {}
+  @media(max-width: 599px) {
+    padding: 10px;
+  }
 
   @media(max-width: 374px) {}
 }
