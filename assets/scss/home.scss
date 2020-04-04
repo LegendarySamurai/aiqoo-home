@@ -26,51 +26,22 @@ body {
 
 // Video
 .video-container {
-  .text {
-    position: absolute;
-    top: 15px;
-    bottom: auto;
-    left: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: auto;
-    padding: 7px 30px 7px 10px;
-    background-color: #d8cdba;
-    color: #342e49;
-    font-family: "Raleway", sans-serif;
 
-    .video-title {
-      font-weight: bold;
-      font-size: 24pt;
-    }
-  }
-
-  &.small-video {
-    .text {
-      left: 10px;
-      top: auto;
-      bottom: 10px;
-      padding: 5px 20px 5px 10px;
-
-      & .video-title {
-        font-size: 15pt;
-      }
-    }
-  }
 }
 
 
 .home {
   .find-box {
     &.is-active {
+      left: 50% !important;
+
       @keyframes find-box-animation {
         0% {
-          transform: translateY(20%) scale(0.8);
+          transform: translate(-50%, 20%) scale(0.8);
         }
 
         100% {
-          transform: translateY(50%) scale(1);
+          transform: translate(-50%, 50%) scale(1);
         }
       }
 
@@ -163,11 +134,10 @@ body {
       background-color: $primaryColor;
     }
 
-    .magazine-header {
-      .magazine-header-text {
-        font-family: $h-font;
-        font-weight: 400;
-      }
+    .magazine-header-text {
+      margin-top: 20px;
+      font-family: $h-font;
+      font-weight: 400;
     }
 
     .article {

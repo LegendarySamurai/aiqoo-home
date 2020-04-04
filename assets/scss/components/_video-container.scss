@@ -1,5 +1,38 @@
 // Video settings and layers
 .video-container {
+  .text {
+    position: absolute;
+    top: 15px;
+    bottom: auto;
+    left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: auto;
+    padding: 7px 30px 7px 10px;
+    background-color: #d8cdba;
+    color: #342e49;
+    font-family: "Raleway", sans-serif;
+
+    .video-title {
+      font-weight: bold;
+      font-size: 24pt;
+    }
+  }
+
+  &.small-video {
+    .text {
+      left: 10px;
+      top: auto;
+      bottom: 10px;
+      padding: 5px 20px 5px 10px;
+
+      & .video-title {
+        font-size: 15pt;
+      }
+    }
+  }
+
   .link-mask {
     position: absolute;
     top: 0;
@@ -52,19 +85,27 @@
     }
   }
 
-  &.small-video:hover {
-    .fa-play-circle {
-      font-size: 65pt;
-    }
-  }
+
 }
 
-.video-container:hover {
-  img {
-    transform: scale(1.1);
-  }
 
-  .fa-play-circle {
-    font-size: 100pt;
+.video-container {
+  @media(min-width: 992px) {
+
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+
+      .fa-play-circle {
+        font-size: 100pt;
+      }
+    }
+
+    &.small-video:hover {
+      .fa-play-circle {
+        font-size: 65pt;
+      }
+    }
   }
 }

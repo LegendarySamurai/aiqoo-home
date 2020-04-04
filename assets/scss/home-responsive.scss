@@ -17,16 +17,34 @@
     .card {
       max-width: 100%;
     }
-  }
 
-  @media(max-width: 1090px) {
+    .magazine {
+      .magazine-header-text {
+        margin-top: 0;
+      }
+    }
+
     .video-container {
+      .text {
+        left: 10px;
+        top: auto;
+        bottom: 10px;
+        padding: 5px 20px 5px 10px;
+
+        .video-title {
+          font-size: 15pt;
+        }
+      }
+
       &.small-video {
         .fa-play-circle {
           font-size: 78pt;
         }
       }
     }
+  }
+
+  @media(max-width: 1090px) {
   }
 
   @media(min-width: 300px) {
