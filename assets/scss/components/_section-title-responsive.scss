@@ -20,9 +20,18 @@
     padding: 0 20px;
     font-weight: 500;
     white-space: nowrap;
+    font-size: 16pt;
   }
 }
 // EOL: @media(min-width: 992px)
+
+
+@media(min-width: 1200px) {
+  .section-title {
+    font-size: 18pt;
+  }
+}
+// EOL: @media(min-width: 1200px)
 
 @media(min-width: 1600px) {
   .section-title-container {

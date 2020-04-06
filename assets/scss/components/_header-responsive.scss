@@ -320,6 +320,14 @@
 
       li {
         border-right: 0 !important;
+
+        &.is-active {
+          a {
+            &::after {
+              display: none !important;
+            }
+          }
+        }
       }
 
       a {

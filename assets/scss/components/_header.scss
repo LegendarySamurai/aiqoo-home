@@ -254,9 +254,7 @@
     height: 100%;
     margin-left: 20px;
 
-
-
-    .dropdown-menu-navbar-item {
+    li {
       &:not(:last-child) {
         border-right: 1px solid #fff;
       }
@@ -266,9 +264,17 @@
 
         a {
           /* font color change here */
+          color: #d8cdba;
 
           &::after {
-            /* Underline style for active state here */
+            display: block;
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background-color: #d8cdba;
           }
         }
       }
