@@ -7,7 +7,16 @@ const headerSearch = document.querySelector('#header-search');
 const headerSearchInput = document.querySelector('#header-search-input');
 const headerSuperPlaceholder = document.querySelector('#header-search .super-placeholder');
 const headerFindBtn = document.querySelector('#header-search .find-btn');
+// const dropdownMenuItems = document.querySelectorAll('.dropdown-menu-navbar-item');
 
+// Dropdown menu
+// dropdownMenuItems.forEach(item => {
+// 	item.addEventListener('click', function() {
+// 		this.classList.add('is-active');
+// 	})
+// });
+
+// Opened menu
 btnOpenMenu.addEventListener('click', () => {
 	mainMenuContainer.classList.remove('hide', 'd-none');
 	mainMenuContainer.classList.add('show');

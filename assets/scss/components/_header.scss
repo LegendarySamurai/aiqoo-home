@@ -254,9 +254,23 @@
     height: 100%;
     margin-left: 20px;
 
-    li {
+
+
+    .dropdown-menu-navbar-item {
       &:not(:last-child) {
         border-right: 1px solid #fff;
+      }
+
+      &.is-active {
+        /* Place styles here for menu item active state */
+
+        a {
+          /* font color change here */
+
+          &::after {
+            /* Underline style for active state here */
+          }
+        }
       }
     }
 
