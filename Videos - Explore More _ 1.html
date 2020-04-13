@@ -1,0 +1,557 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Video List</title>
+    <meta name="description" content="Home Improvement"/>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css"
+          integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/css/video.css"/>
+    <link rel="stylesheet" href="assets/css/web.css" />
+    <link rel="stylesheet" href="assets/css/video-responsive.css"/>
+    <link rel="stylesheet" href="assets/css/web-responsive.css"/>
+
+
+</head>
+<body>
+    <script>
+        /*
+        //-- aiq ut pixel
+        var _ut_web_id = "AiqHome.com";
+        !function (e, t, n, a, s, u, i, c) {
+            e.ut_aiq || ((s = e.ut_aiq = function () { s.callMethod ? s.callMethod.apply(s, arguments) : s.queue.push(arguments) }).push = s, s.loaded = !0, s.version = "2.0", s.queue = [], (u = t.createElement(n)).async = !0, u.src = "https://api.aiq-magazine.com/FunnelsAssets/FunnelJS/user_tracking.es5.min.js", (i = t.getElementsByTagName(n)[0]).parentNode.insertBefore(u, i))
+        }
+        */
+    </script>
+
+    <header class="header">
+        <div class="container container-lg">
+            <div class="row">
+                <div class="col-12 pl-0 pl-lg-3 pr-0 pr-lg-3">
+
+                    <div class="header-content">
+                        <button type="button" id="btn-open-menu" class="btn-open-menu d-lg-none">
+                            <span class="menu-icon">
+                                <i class="far fa-bars"></i>
+                            </span>
+                        </button>
+
+                        <div class="logo">
+                            <a href="https://localhost:44391"><img src="assets/images/logo/logo.svg" alt="AiqHome"></a>
+                        </div>
+
+                        <button type="button" id="btn-search" class="btn-search">
+                            <i class="fal fa-search"></i>
+                        </button>
+
+                        <!-- Dropdown menu -->
+                        <div id="dropdown-menu-container" class="dropdown-menu-container">
+                            <div id="btn-close-menu" class="btn-close-menu d-lg-none"></div>
+                            <div id="dropdown-menu" class="dropdown-menu">
+                                <div class="dropdown-menu-inner">
+                                    <div class="dropdown-menu-header d-lg-none">
+                                        <div class="dropdown-menu-header-logo">
+                                            <a href="https://localhost:44391"><img src="assets/images/logo/logo.svg" alt="AiqHome"></a>
+                                        </div>
+                                        <button class="login-network" type="button">
+                                            <span>Pro network</span>
+                                            <img src="assets/images/icons/login.png" alt="login">
+                                        </button>
+                                    </div>
+
+                                    <ul class="navbar">
+                                        <li class="">
+                                            <a href="https://localhost:44391">
+                                                <i class="d-lg-none menu-item-icon icon-home"></i>
+                                                <span>Home</span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="https://localhost:44391/Magazine">
+                                                <i class="d-lg-none menu-item-icon icon-magazine"></i>
+                                                <span>Magazine</span>
+                                            </a>
+                                        </li>
+                                        <li class="is-active">
+                                            <a href="https://localhost:44391/Videos">
+                                                <i class="d-lg-none menu-item-icon icon-home"></i>
+                                                <span>Videos</span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#">
+                                                <i class="d-lg-none menu-item-icon icon-home"></i>
+                                                <span>Services</span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#">
+                                                <i class="d-lg-none menu-item-icon icon-home"></i>
+                                                <span>About us</span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" class="no-border-bottom">
+                                                <i class="d-lg-none menu-item-icon icon-contact-us"></i>
+                                                <span>Contact us</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                    <ul class="dropdown-menu-social d-lg-none">
+                                        <li>
+                                            <a href="#!">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#!">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#!">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- EOL: Dropdown menu -->
+
+                        <div id="header-search" class="search">
+                            <div class="form-group position-relative">
+                                <input id="header-search-input" class="form-control font-weight-bold" type="text"
+                                       placeholder="What service are you looking for?">
+                                <div class="super-placeholder">
+                                    <img class="header-location" src="assets/images/icons/pen-6.svg" alt="icon">
+                                    <img class="header-zip-code" src="assets/images/icons/location.svg" alt="icon">
+                                </div>
+                                <button class="find-btn font-weight-bold" type="button">FIND A PRO</button>
+                            </div>
+                        </div>
+
+                        <button class="login-network" type="button">
+                            <span>Pro network</span>
+                            <img src="assets/images/icons/login.png" alt="login">
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="video">
+        <div class="page-title">
+            <div class="container container-lg">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="page-heading">Videos</p>
+                        <!-- Breadcrumbs -->
+                        <div class="breadcrumbs">
+                            <ul>
+                                <li>
+                                    <a href="https://localhost:44391">
+                                        <span>Home</span>
+                                        <i class="far fa-chevron-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://localhost:44391/Videos">
+                                        <span>Videos</span>
+                                        <i class="far fa-chevron-right"></i>
+                                    </a>
+                                </li>
+
+                                <li><span>Explore More</span></li>
+                            </ul>
+                        </div>
+                        <!-- EOL: Breadcrumbs -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="video-list">
+
+            <div class="container container-lg m-b-30">
+                <!-- Explore More-items -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="featured-items">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="label">
+                                        <h3 class="h3 font-weight-black">Explore More</h3>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-12">
+                                    <div class="row video-items-container">
+                                        <div class="col-auto video-item-col">
+                                            <a href="Videos/v-9">
+                                                <div class="video-item">
+                                                    <div class="video-container small-video">
+                                                        <!-- 16:9 aspect ratio -->
+                                                        <div class="embed-responsive embed-responsive-16by9">
+                                                            <div class="link-mask"></div>
+                                                            <img src="https://api.aiq-magazine.com/assets/UploadImages/307001d602696d2564580f6c21dfbe2d_600_360_1132019111040AM.jpg" alt="main">
+                                                            <i class="fal fa-play-circle"></i>
+                                                            <div class="mask"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="video-info">
+                                                        <h4 class="sub-title font-weight-black">Video Teaser - 9</h4>
+                                                        <span class="text">Video H2 - 9</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-auto video-item-col">
+                                            <a href="Videos/v-8">
+                                                <div class="video-item">
+                                                    <div class="video-container small-video">
+                                                        <!-- 16:9 aspect ratio -->
+                                                        <div class="embed-responsive embed-responsive-16by9">
+                                                            <div class="link-mask"></div>
+                                                            <img src="https://api.aiq-magazine.com/assets/UploadImages/4cf07011f839f5c444d71b2347980eb1_600_360_3_31_2020_9_23_53_AM.jpg" alt="bla alt">
+                                                            <i class="fal fa-play-circle"></i>
+                                                            <div class="mask"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="video-info">
+                                                        <h4 class="sub-title font-weight-black">Video Teaser - 8</h4>
+                                                        <span class="text">Video H2 - 8</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Pagination -->
+                                    <div class="row pagination-container">
+                                        <div class="col-12">
+                                            <nav aria-label="Page navigation example">
+                                                <ul class="pagination justify-content-center m-t-70 m-b-30">
+                                                    <li class="page-item disabled">
+                                                        <a class="page-link" href="https://localhost:44391/Videos/ExploreMore/0" tabindex="-1">Previous</a>
+                                                    </li>
+                                                    <li class="page-item  active"><a href="https://localhost:44391/Videos/ExploreMore/1"><span class="page-link">1</span></a></li>
+                                                    <li class="page-item "><a href="https://localhost:44391/Videos/ExploreMore/2"><span class="page-link">2</span></a></li>
+                                                    <li class="page-item "><a href="https://localhost:44391/Videos/ExploreMore/3"><span class="page-link">3</span></a></li>
+                                                    <li class="page-item "><a href="https://localhost:44391/Videos/ExploreMore/4"><span class="page-link">4</span></a></li>
+                                                    <li class="page-item "><a href="https://localhost:44391/Videos/ExploreMore/5"><span class="page-link">5</span></a></li>
+                                                    <li class="page-item active">
+                                                        <a class="page-link" href="https://localhost:44391/Videos/ExploreMore/2">Next</a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
+        <section class="services">
+            <div class="container container-lg">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title-container">
+                            <span class="section-title-decoration left"></span>
+                            <h3 class="section-title font-weight-bold">Services</h3>
+                            <span class="section-title-decoration right"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row services-list list">
+                    <div class="col services-list-col mb-3">
+                        <span class="h4-title">Roofing</span>
+                        <p>Roof replacement</p>
+                        <p>Roof replacement</p>
+                        <p>Roof replacement</p>
+                        <span class="view-more">View More</span>
+                    </div>
+                    <div class="col services-list-col mb-3">
+                        <span class="h4-title">Roofing</span>
+                        <p>Roof replacement</p>
+                        <p>Roof replacement</p>
+                        <p>Roof replacement</p>
+                        <span class="view-more">View More</span>
+                    </div>
+                    <div class="col services-list-col mb-3">
+                        <span class="h4-title">Roofing</span>
+                        <p>Roof replacement</p>
+                        <p>Roof replacement</p>
+                        <p>Roof replacement</p>
+                        <span class="view-more">View More</span>
+                    </div>
+                    <div class="col services-list-col mb-3">
+                        <span class="h4-title">Roofing</span>
+                        <p>Roof replacement</p>
+                        <p>Roof replacement</p>
+                        <p>Roof replacement</p>
+                        <span class="view-more">View More</span>
+                    </div>
+                    <div class="col services-list-col mb-3">
+                        <span class="h4-title">Roofing</span>
+                        <p>Roof replacement</p>
+                        <p>Roof replacement</p>
+                        <p>Roof replacement</p>
+                        <span class="view-more">View More</span>
+                    </div>
+                    <div class="col services-list-col mb-3">
+                        <span class="h4-title">Roofing</span>
+                        <p>Roof replacement</p>
+                        <p>Roof replacement</p>
+                        <p>Roof replacement</p>
+                        <span class="view-more">View More</span>
+                    </div>
+                    <div class="col services-list-col mb-3">
+                        <span class="h4-title">Roofing</span>
+                        <p>Roof replacement</p>
+                        <p>Roof replacement</p>
+                        <p>Roof replacement</p>
+                        <span class="view-more">View More</span>
+                    </div>
+                </div>
+                <div class="row view-more-container">
+                    <div class="col-auto mx-auto">
+                        <button type="button" class="brand-btn primary">View More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="page-footer">
+        <div class="container page-footer-main">
+            <div class="row">
+
+                <!-- left column -->
+                <div class="col-12 col-lg-4 content-column-left">
+                    <img src="assets/images/logo/logo.svg"
+                         class="brand-logo mb-lg-2"
+                         alt="aiqoo logo" />
+                    <p class="lh-lg-2 mt-4 mt-lg-0">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                        magna aliquam erat volutpat.
+                    </p>
+
+                    <!-- more information -->
+                    <div class="more-information d-none d-md-block">
+                        <div class="row">
+                            <div class="col-12">
+                                <span class="footer-h4">More Information</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 d-flex flex-column">
+                                <a href="#!" class="page-footer-link mb-2 py-1">Help Center</a>
+                                <a href="#!" class="page-footer-link mb-2 py-1">Terms of Use</a>
+                                <a href="#!" class="page-footer-link mb-2 py-1">Envato Market Blog</a>
+                            </div>
+                            <div class="col-6 d-flex flex-column">
+                                <a href="#!" class="page-footer-link mb-2 py-1">About</a>
+                                <a href="#!" class="page-footer-link mb-2 py-1">Careers</a>
+                                <a href="#!" class="page-footer-link mb-2 py-1">Terms of Use</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- center column -->
+                <div class="col-12 col-lg-5 content-column-center">
+                    <span class="footer-h4">Popular Posts</span>
+
+                    <!-- Posts: mobile only -->
+                    <div class="popular-posts d-600-none">
+                        <div class="slick-container">
+                            <!-- single post -->
+                            <div class="post">
+                                <div class="dummy-image"></div>
+                                <!-- post stats -->
+                                <div class="post-stats pr-2 mb-2 mb-lg-0">
+                                    <div class="post-stats-item">
+                                        <i class="fal fa-thumbs-up"></i>
+                                        <span class="ml-2">546</span>
+                                    </div>
+                                    <div class="post-stats-item">
+                                        <i class="fal fa-heart"></i>
+                                        <span class="ml-2">119</span>
+                                    </div>
+                                </div>
+                                <span class="footer-h5">Amazing Apartment Family</span>
+                                <i class="fal fa-map-marker-alt icon-white"></i>
+                                <span class="ml-lg-1">Vesey St, New York, NY, USA</span>
+                            </div>
+
+                            <!-- single post -->
+                            <div class="post">
+                                <div class="dummy-image"></div>
+                                <!-- post stats -->
+                                <div class="post-stats pr-2 mb-2 mb-lg-0">
+                                    <div class="post-stats-item">
+                                        <i class="fal fa-thumbs-up"></i>
+                                        <span class="ml-2">546</span>
+                                    </div>
+                                    <div class="post-stats-item">
+                                        <i class="fal fa-heart"></i>
+                                        <span class="ml-2">119</span>
+                                    </div>
+                                </div>
+                                <span class="footer-h5">Amazing Apartment Family</span>
+                                <i class="fal fa-map-marker-alt icon-white"></i>
+                                <span class="ml-lg-1">Vesey St, New York, NY, USA</span>
+                            </div>
+
+                            <!-- single post -->
+                            <div class="post">
+                                <div class="dummy-image"></div>
+                                <!-- post stats -->
+                                <div class="post-stats pr-2 mb-2 mb-lg-0">
+                                    <div class="post-stats-item">
+                                        <i class="fal fa-thumbs-up"></i>
+                                        <span class="ml-2">546</span>
+                                    </div>
+                                    <div class="post-stats-item">
+                                        <i class="fal fa-heart"></i>
+                                        <span class="ml-2">119</span>
+                                    </div>
+                                </div>
+                                <span class="footer-h5">Amazing Apartment Family</span>
+                                <i class="fal fa-map-marker-alt icon-white"></i>
+                                <span class="ml-lg-1">Vesey St, New York, NY, USA</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Posts: desktop only -->
+                    <div class="popular-posts d-none d-600-block">
+                        <div class="post">
+                            <div class="row">
+                                <!-- post image -->
+                                <div class="col-auto pr-lg-0">
+                                    <!-- dummy-image-->
+                                    <div class="dummy-image"></div>
+                                    <!--<img src="" alt="">-->
+                                </div>
+                                <!-- post main data -->
+                                <div class="col-6 col-lg-5 d-flex flex-column pl-lg-4 pr-0 pb-lg-3">
+                                    <span class="footer-h5">Amazing Apartment Family</span>
+                                    <div class="mt-auto">
+                                        <i class="fal fa-map-marker-alt icon-white"></i>
+                                        <span class="ml-lg-1">Vesey St, New York, NY, USA</span>
+                                    </div>
+                                </div>
+                                <!-- post stats -->
+                                <div class="col-2 col-lg-3 d-flex ml-lg-auto">
+                                    <div class="row flex-nowrap flex-sm-wrap flex-row flex-sm-column flex-lg-row mt-2 mt-sm-0">
+                                        <div class="col-lg-6 d-flex align-items-lg-start pl-lg-0 mb-4 mb-lg-0">
+                                            <i class="fal fa-thumbs-up"></i>
+                                            <span class="ml-2">546</span>
+                                        </div>
+                                        <div class="col-lg-6 d-flex align-items-lg-start pr-lg-0">
+                                            <i class="fal fa-heart"></i>
+                                            <span class="ml-2">119</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="posts-divider"></div>
+
+                        <div class="post">
+                            <div class="row">
+                                <!-- post image -->
+                                <div class="col-auto pr-lg-0">
+                                    <!-- dummy-image-->
+                                    <div class="dummy-image"></div>
+                                    <!--<img src="" alt="">-->
+                                </div>
+                                <!-- post main data -->
+                                <div class="col-6 col-lg-5 d-flex flex-column pl-lg-4 pr-0 pb-lg-3">
+                                    <span class="footer-h5">Amazing Apartment Family</span>
+                                    <div class="mt-auto">
+                                        <!-- icon -->
+                                        <i class="fal fa-map-marker-alt icon-white"></i>
+                                        <span class="ml-lg-1">Vesey St, New York, NY, USA</span>
+                                    </div>
+                                </div>
+                                <!-- post stats -->
+                                <div class="col-2 col-lg-3 d-flex ml-lg-auto">
+                                    <div class="row flex-nowrap flex-sm-wrap flex-row flex-sm-column flex-lg-row mt-2 mt-sm-0">
+                                        <div class="col-lg-6 d-flex align-items-lg-start pl-lg-0 mb-4 mb-lg-0">
+                                            <i class="fal fa-thumbs-up"></i>
+                                            <span class="ml-2">546</span>
+                                        </div>
+                                        <div class="col-lg-6 d-flex align-items-lg-start pr-lg-0">
+                                            <i class="fal fa-heart"></i>
+                                            <span class="ml-2">119</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- right column -->
+                <div class="col-12 col-lg-3 content-column-right">
+                    <div class="row">
+                        <div class="col-12">
+                            <span class="footer-h4">Square Newsletter</span>
+                            <p class="lh-lg-2">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                                magna aliquam erat volutpat.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-footer-subscribe-box">
+                                <div class="form-group position-relative">
+                                    <label for="subscribe-to-newsletter" class="d-none d-600-flex">Enter your Email</label>
+                                    <input type="email" class="form-control" id="subscribe-to-newsletter" placeholder="Enter your Email">
+                                    <i class="fal fa-envelope newsletter-icon d-600-none"></i>
+                                </div>
+                                <button type="button" class="d-600-none btn-subscribe-submit">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid page-footer-footer">
+            <div class="row">
+                <div class="col-auto mx-auto">
+                    <div class="content d-flex align-items-center">
+                        <p>&#169; 2020 . All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="back-layer"></div>
+</body>
+</html>

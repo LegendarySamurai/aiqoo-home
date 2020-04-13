@@ -42,12 +42,6 @@
         }
       }
     }
-
-    .label {
-      .h3 {
-        font-size: 16.5pt;
-      }
-    }
   }
 
   @media(max-width: 1199px) {
@@ -166,8 +160,8 @@
     }
 
     .featured-items {
-      padding: 15px 15px 15px 15px;
-      margin-top: 30px;
+      //padding: 15px 15px 15px 15px;
+      //margin-top: 30px;
     }
 
     .big-content-block {
@@ -212,12 +206,6 @@
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
-    }
-
-    .label {
-      .h3 {
-        margin-top: 15px;
-      }
     }
 
     .tags-container {
