@@ -89,12 +89,24 @@
             }
         }
 
-    .most-popular {
-      .video-item-col {
-        max-width: 240px !important;
-      }
+        .video-list-with-cat {
+
+            .video-container {
+                &.small-video {
+                    .embed-responsive-16by9 {
+                        .fa-play-circle {
+                            font-size: 70pt;
+                        }
+                    }
+                }
+            }
+
+
+            .video-item-col {
+                max-width: 240px !important;
+            }
+        }
     }
-  }
 
   @media(max-width: 991px) {
     padding-top: 50px;
@@ -150,13 +162,13 @@
       }
     }
 
-    .most-popular {
-      .most-popular-inner {
-        .categories-container-col {
-          order: 1;
-          max-width: 90%;
-          margin-top: 20px;
-        }
+        .video-list-with-cat {
+            .video-list-with-cat-inner {
+                .categories-container-col {
+                    order: 1;
+                    max-width: 90%;
+                    margin-top: 20px;
+                }
 
         .section-title-col {
           order: 2;
@@ -186,16 +198,16 @@
       }
     }
 
-    .most-popular,
-    .featured-video {
-      .video-container {
-        &.small-video {
-          .embed-responsive-16by9 {
-            .fa-play-circle {
-              font-size: 50pt;
-            }
-          }
-        }
+        .video-list-with-cat,
+        .video-list {
+            .video-container {
+                &.small-video {
+                    .embed-responsive-16by9 {
+                        .fa-play-circle {
+                            font-size: 60pt;
+                        }
+                    }
+                }
 
         &.small-video:hover {
           .fa-play-circle {
@@ -227,12 +239,12 @@
       padding: 0 15px;
     }
 
-    .featured-video {
-      .video {
-        .video-items-container {
-          padding: 0 10px;
-        }
-      }
+        .video-list {
+            .video {
+                .video-items-container {
+                    padding: 0 10px;
+                }
+            }
 
       .categories-container {
         max-width: 100% !important;
@@ -282,18 +294,18 @@
       }
     }
 
-    .featured-video {
-      .video-items-container {
-        padding: 0 15px;
+        .video-list {
+            .video-items-container {
+                padding: 0 15px;
 
-        .video-item-col {
-          width: 90% !important;
-          max-width: 90% !important;
-          margin: 0 auto;
-          padding: 0;
+                .video-item-col {
+                    width: 90% !important;
+                    max-width: 90% !important;
+                    margin: 0 auto;
+                    padding: 0;
+                }
+            }
         }
-      }
-    }
 
     .most-popular {
       .video-items-container {
