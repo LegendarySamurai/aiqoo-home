@@ -11,7 +11,7 @@
     // tools
     .tool-panel {
         span {
-            padding: 0 14px;
+            padding: 0 10px;
             cursor: pointer;
             font-weight: 300;
             font-size: 12pt;
@@ -22,7 +22,7 @@
 
             &:first-child {
                 .fa-eye {
-                    padding-right: 14px;
+                    padding-right: 7px;
                 }
             }
 
@@ -60,6 +60,12 @@
         border-bottom: 1px solid #ececec;
         color: #585077;
         font-family: "Raleway", sans-serif;
+
+        & .share-div {
+            position: absolute;
+            right: 10px;
+            top: 30px;
+        }
     }
 
     .author {
