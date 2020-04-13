@@ -3,59 +3,59 @@
 
 
 .video {
-  @media(max-width: 1899px) {
-
-  }
-
-  @media(max-width: 1599px) {
-    .container-lg {
-      max-width: 1340px;
+    @media(max-width: 1899px) {
     }
 
-    .most-popular {
-      .video-items-col {
-        .video-item-col {
-          max-width: 315px;
+    @media(max-width: 1599px) {
+        .container-lg {
+            max-width: 1340px;
         }
-      }
 
-      .categories-container-col {
-        width: 315px;
-      }
-    }
-  }
+        .video-list-with-cat {
+            .video-items-col {
+                .video-item-col {
+                    max-width: 315px;
+                }
+            }
 
-  @media(max-width: 1399px) {
-    .container-lg {
-      max-width: 1280px;
-    }
-
-    .most-popular {
-      .video-item-col {
-        max-width: 300px;
-      }
-
-      .categories-container-col {
-        width: 300px;
-      }
-    }
-  }
-
-  @media(max-width: 1365px) {
-    .container-lg {
-      max-width: 1140px;
+            .categories-container-col {
+                width: 315px;
+            }
+        }
     }
 
-    .most-popular {
-      .video-item-col {
-        max-width: 265px !important;;
-      }
+    @media(max-width: 1399px) {
+        .container-lg {
+            max-width: 1280px;
+        }
 
-      .categories-container-col {
-        width: 265px !important;
-      }
+        .video-list-with-cat {
+            .video-item-col {
+                max-width: 300px;
+            }
+
+            .categories-container-col {
+                width: 300px;
+            }
+        }
     }
-  }
+
+    @media(max-width: 1365px) {
+        .container-lg {
+            max-width: 1140px;
+        }
+
+        .video-list-with-cat {
+            .video-item-col {
+                max-width: 265px !important;
+                ;
+            }
+
+            .categories-container-col {
+                width: 265px !important;
+            }
+        }
+    }
 
   @media(max-width: 1199px) {
     .tool-panel {
@@ -72,12 +72,22 @@
       padding: 0 15px;
     }
 
-    .featured-video {
-      // Video settings and layers
-      .video-item-col {
-        width: 50% !important;
-      }
-    }
+        .video-list {
+            // Video settings and layers
+            .video-container {
+                &.small-video {
+                    .embed-responsive-16by9 {
+                        .fa-play-circle {
+                            font-size: 70pt;
+                        }
+                    }
+                }
+            }
+
+            .video-item-col {
+                width: 50% !important;
+            }
+        }
 
     .most-popular {
       .video-item-col {
