@@ -12,9 +12,6 @@
 }
 
 @media(min-width: 992px) {
-  .section-title-container {
-    padding-bottom: 0;
-  }
 
   .section-title {
     padding: 0 20px;
@@ -29,6 +26,7 @@
 @media(min-width: 1200px) {
   .section-title {
     font-size: 18pt;
+    font-weight:bold;
   }
 }
 // EOL: @media(min-width: 1200px)
