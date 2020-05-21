@@ -27,6 +27,10 @@ body {
 .home {
   padding-top: 0 !important;
 
+  .section-container {
+    max-width: 1300px;
+  }
+
   // head section
   .head-section {
     background-image: url(../images/header/main-image.jpg);
@@ -561,7 +565,7 @@ body {
     .questionnaire-content {
       display: flex;
       flex-direction: column;
-      flex-grow: 1;
+      //flex-grow: 1;
     }
 
     .questionnaire-content-outer {
@@ -623,7 +627,7 @@ body {
       }
 
       .join-us {
-        flex-grow: 1;
+        //flex-grow: 1;
         width: calc(100% - 20px);
         margin-left: auto;
         margin-right: auto;
