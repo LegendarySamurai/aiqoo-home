@@ -1,22 +1,49 @@
 .reasons {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
   justify-content: space-between;
 
-  & .reason {
+  .reason {
     position: relative;
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
+    width: 50%;
+    overflow: hidden;
     text-align: left;
     color: $primaryColor;
-    overflow: hidden;
 
-    & h2 {
+    .reason-icon {
+      width: 35px;
+    }
+
+    .headings {
+      text-align: center;
+      margin-top: 10px;
+
+      span {
+        font-weight: 700;
+        font-size: 10.5pt;
+      }
+
+
+      p {
+        color: $primaryColor;
+        font-weight: 400;
+        font-size: 9pt;
+      }
+    }
+
+    h2 {
       width: 100%;
       margin: 0;
       font-weight: bold;
     }
 
-    & h3 {
+    h3 {
       width: 100%;
       font-weight: normal;
     }
