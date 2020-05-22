@@ -7,32 +7,44 @@
   height: 100%;
 }
 
+.line-h-1-5 {
+  line-height: 1.5;
+}
+
 .line-h-2 {
   line-height: 2;
 }
+
 .font-9{
   font-size:9pt !important;
 }
+
 .font-10 {
   font-size: 10pt !important;
 }
+
 .font-11 {
   font-size: 11pt !important;
 }
+
 .font-weight-black {
   font-weight: 900 !important;
 }
-.font-weight-400 {
-    font-weight: 400 !important;
-}
-.font-weight-500 {
-    font-weight: 500 !important;
-}
-.font-weight-600 {
-    font-weight: 600 !important;
-}
+
 .font-weight-bold {
   font-weight: 700 !important;
+}
+
+.font-weight-600 {
+  font-weight: 600 !important;
+}
+
+.font-weight-500 {
+  font-weight: 500 !important;
+}
+
+.font-weight-400 {
+    font-weight: 400 !important;
 }
 .m-t-10 {
   margin-top: 10px !important;
@@ -84,6 +96,10 @@
 .icon-white,
 .color-white {
   color: #fff;
+}
+
+.beige {
+  color: $beige !important;
 }
 
 .half-opacity {

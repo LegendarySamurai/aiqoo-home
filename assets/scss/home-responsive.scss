@@ -80,6 +80,10 @@
         height: calc(100% - 175px);
       }
 
+      .article {
+        padding-right: 0;
+      }
+
       .magazine-header {
         //position: absolute;
         //top: 0;
@@ -386,6 +390,21 @@
 
       .questionnaire-text {
         font-size: 14pt;
+      }
+    }
+  }
+
+  @media (max-width: 474px) {
+    .magazine {
+      .article {
+        width: 100%;
+        overflow: hidden;
+      }
+    }
+
+    .common-searches {
+      .section-title {
+        color: #d8cdba;
       }
     }
   }

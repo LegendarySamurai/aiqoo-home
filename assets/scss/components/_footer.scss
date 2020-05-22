@@ -1,63 +1,257 @@
 .page-footer {
+  padding-top: 20px;
   color: $text-color-999;
   background-color: $pageFooterPrimaryColor;
   font-family: $main-font;
 
-  .footer-h4,
-  .footer-h5 {
+  .footer-container {
+    width: 100%;
+  }
+
+  // Left
+  .content-column-left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+
+    &::after {
+      position: absolute;
+      top: 60%;
+      right: 10px;
+      transform: translate(0, -50%);
+      display: block;
+      content: '';
+      width: 1px;
+      height: 85%;
+      background-color: #edecef;
+    }
+  }
+
+  // Center
+  .content-column-center {
+    padding-top: 30px;
+  }
+
+  // Right
+  .content-column-right {
+    .content {
+      padding-top: 30px;
+    }
+  }
+
+  .page-footer-link {
+    font-size: 10pt;
+    color: #ccc;
+  }
+
+  .page-footer-main {
+    max-width: 1570px;
+    padding-bottom: 40px;
+    padding-right: 60px;
+    margin-left: auto;
+  }
+
+  .brand-logo {
+    align-self: flex-start;
+    width: 145px;
+  }
+
+  .logo-pros-container {
+    width: 100%;
+    height: 40px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .more-information {
+    margin-top: 40px;
+  }
+
+  .footer-h4 {
     display: block;
+    font-family: "Raleway", sans-serif;
+    font-size: 13.5pt;
     color: #fff;
-    font-weight: 600;
+    white-space: nowrap;
   }
 
   p {
     font-weight: 400;
+    font-size: 13.5pt;
+    color: #999999;
   }
 
   span {
-    color: #909090;
     font-weight: 400;
+    font-size: 12pt;
   }
 
-  .page-footer-link {
-    color: #ccc;
+  .pros-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 330px;
+    height: 100%;
+    max-height: 390px;
+    padding: 30px 40px;
+    background-color: #312c43;
+    border-radius: 5px;
   }
 
-  .posts-divider {
-    width: 100%;
-    height: 1px;
-    background-color: #474b4c;
-  }
+  .join-us-button {
+    width: 240px;
+    height: 60px;
+    border-radius: 5px;
 
-  .dummy-image {
-    background-color: #9da6b0;
+    button {
+      width: 100%;
+      height: 100%;
+      color: #fff;
+      font-family: "Lato", sans-serif;
+      font-size: 15pt;
+      font-weight: 400;
+      border-radius: 5px;
+      border: solid 0.5px #ffffff;
+    }
   }
+}
+
+.post-stats {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.post-stats-item {
+  margin-left: 30px;
 }
 
 .page-footer-footer {
+  width: 100%;
+  height: 68px;
   background-color: $pageFooterSecondaryColor;
+
+  .footer-container {
+    max-width: 1460px;
+    height: 100%;
+    margin-right: 80px;
+    margin-left: auto;
+    //padding-right: 120px;
+    //padding-left: 15px;
+    //margin-right: auto;
+  }
+
+  .row {
+    height: 100%;
+  }
+
+  .content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 120px;
+    height: 100%;
+
+    a {
+      display: block;
+      width: 28px;
+      height: 28px;
+      border-radius: 5px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 5px;
+      }
+    }
+  }
 }
 
+// Subscribe
 .page-footer-subscribe-box {
+  width: 340px;
+  margin-top: 25px;
+  //width: 270px;
+  //max-width: 100%;
+  //margin: 40px 0 0;
+
   .form-group {
-    display: flex;
-    flex-direction: column;
-  }
+    .form-control {
+      width: 100%;
+      height: 50px;
+      padding-left: 60px;
+      padding-right: 10px;
+      background-color: #15131d;
+      color: #999999;
+      font-family: "Lato", sans-serif;
+      font-weight: 400;
+      font-size: 10pt;
+      border: none !important;
 
-  label {
-    display: flex;
-    align-items: center;
-    border-radius: 2px;
-    background-color: #343839;
-    font-weight: 400;
-    color: #999;
-  }
+      &::-webkit-input-placeholder {
+        color: #999;
+        font-size: 10pt;
+      }
+      &::-moz-placeholder {
+        color: #999;
+        font-size: 10pt;
+      }
+      &:-ms-input-placeholder {
+        color: #999;
+        font-size: 10pt;
+      }
+      &:-moz-placeholder {
+        color: #999;
+        font-size: 10pt;
+      }
 
-  .form-control {
-    width: 100%;
-    border: none;
-    border-radius: 2px;
-    font-weight: 400;
-    color: #999;
+      &.email {
+        padding-right: 100px;
+      }
+    }
+
+    .fa-envelope,
+    .fa-user {
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      transform: translate(0, -50%);
+      font-size: 13pt;
+      color: #fff;
+    }
+
+    .btn-subscribe {
+      position: absolute;
+      top: 50%;
+      right: 8px;
+      transform: translate(0, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80px;
+      height: 35px;
+      border-radius: 1px;
+      background-color: #d8cdba;
+      color: #15131d;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 8pt;
+    }
   }
 }
