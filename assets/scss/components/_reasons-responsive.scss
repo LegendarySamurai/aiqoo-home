@@ -86,23 +86,23 @@
           height: calc(100% - 10px) !important;
           width: 1px !important;
           right: 0 !important;
-          bottom: 0 !important;
+          bottom: 10px !important;
         }
 
         &:after {
-          width: 100% !important;
+          width: 90% !important;
           height: 1px !important;
           bottom: 0 !important;
-          right: 0 !important;
+          right: 10px !important;
         }
       }
 
       &.protected {
         &:before {
-          width: 100% !important;
+          width: 90% !important;
           height: 1px !important;
           bottom: 0 !important;
-          left: 0 !important;
+          left: 10px !important;
           transform: translate(0, 0) !important;
         }
 
@@ -112,13 +112,20 @@
       }
 
       &.rating {
-        &::after,
-        &:before {
+        &::before {
           display: none !important;
           //height: calc(100% - 10px);
           //width: 1px;
           //right: 0;
           //top: 0;
+        }
+
+        &:after {
+          top: 10px !important;
+          right: 0 !important;
+          width: 1px !important;
+          height: 90% !important;
+          transform: translate(0, 0) !important;
         }
       }
 
@@ -130,11 +137,12 @@
         }
 
         &::before {
-          bottom: 0 !important;
-          left: 0 !important;
-          width: 1px !important;
-          height: 100% !important;
-          transform: translate(0, 0) !important;
+          display: none !important;
+          //bottom: 0 !important;
+          //left: 0 !important;
+          //width: 1px !important;
+          //height: 100% !important;
+          //transform: translate(0, 0) !important;
         }
       }
     }
