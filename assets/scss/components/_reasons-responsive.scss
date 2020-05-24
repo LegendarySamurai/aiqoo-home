@@ -1,6 +1,8 @@
 @media(max-width: 991px) {
   .reasons {
     .reason {
+      justify-content: center;
+
       &:not(:first-child):before {
         display: block;
         content: '';
@@ -17,26 +19,23 @@
     .reason-icon {
       display: inline-block !important;
       vertical-align: top !important;
-      width: 13% !important;
+      width: 18% !important;
       height: auto !important;
     }
 
     .headings {
-      //display: inline-block !important;
-      //vertical-align: top !important;
-      //width: 83% !important;
-      //text-align: left !important;
-      //margin-top: 0px !important;
-      //padding-left: 5% !important;
+      display: block !important;
+      vertical-align: top;
+      width: 100%;
+      text-align: center !important;
+      margin-top: 10px !important;
+      padding: 0 !important;
     }
 
     p {
-      font-family: $main-font !important;
-      font-weight: 700 !important;
-      line-height: 1.15 !important;
-      font-size: 10.5pt !important;
-      color: $primaryColor !important;
-      margin-top: 3px !important;
+      color: #585077 !important;
+      font-weight: 400 !important;
+      font-size: 9pt !important;
     }
 
 

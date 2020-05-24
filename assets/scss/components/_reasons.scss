@@ -1,39 +1,93 @@
 .reasons {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-start;
+  //flex-wrap: wrap;
+  //align-items: flex-start;
   justify-content: space-between;
+
+  flex-wrap: nowrap;
+  align-items: stretch;
+  width: 100%;
+  max-width: initial;
+  margin: 10px 0 0;
+  padding: 0;
+  background-color: #f4eee4;
+  box-shadow: none;
 
   .reason {
     position: relative;
     display: flex;
-    flex-direction: column;
+    //flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 50%;
+
+    //width: 50%;
     overflow: hidden;
     text-align: left;
     color: $primaryColor;
 
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 25%;
+    padding: 10px;
+
+    &:not(:first-child):before {
+      display: block;
+      content: '';
+      position: absolute;
+      bottom: 5px;
+      left: 0;
+      transform: translate(50%, 0);
+      width: 1px;
+      height: 80%;
+      background-color: $primaryColor;
+    }
+
     .reason-icon {
-      width: 35px;
+      //display: block;
+      //vertical-align: top;
+      //width: 18%;
+      //height: auto;
+
+      display: inline-block;
+      vertical-align: top;
+      width: 13%;
+      height: auto;
+      margin: 0 auto;
+      //width: 35px;
     }
 
     .headings {
-      text-align: center;
-      margin-top: 10px;
+      display: inline-block;
+      vertical-align: top;
+      width: 83%;
+      text-align: left;
+      //margin-top: 0px !important;
+      padding: 0 0 0 5%;
 
       span {
-        font-weight: 700;
-        font-size: 10.5pt;
+        display: block;
+        font-family: "Lato",sans-serif;
+        font-weight: bold;
+        font-size: 12.5pt;
+        color: #585077;
+        //font-weight: 700;
+        //font-size: 10.5pt;
+        //font-family: $main-font;
+        //font-weight: bold;
+        //font-size: 12.5pt;
+        //color: $primaryColor;
+        //display: block;
       }
 
 
       p {
-        color: $primaryColor;
-        font-weight: 400;
-        font-size: 9pt;
+        line-height: 1.15;
+        margin-top: 3px;
+        font-family: "Lato",sans-serif;
+        font-weight: 700;
+        font-size: 10.5pt;
+        color: #585077;
       }
     }
 

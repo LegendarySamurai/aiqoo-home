@@ -9,14 +9,48 @@
     }
   }
 
+  .list-col {
+    //position: relative;
+    padding-top: 20px;
+
+    //&::after {
+    //  position: absolute;
+    //  top: 50%;
+    //  left: 50%;
+    //  transform: translate(-50%, -50%);
+    //  display: block;
+    //  content: '';
+    //  width: 1px;
+    //  height: 80%;
+    //  background-color: #b3b3b3;
+    //}
+  }
+
   img {
     max-height: 100%;
   }
 
   .list-col-item {
+    //position: relative;
     line-height: 1.5;
     width: 50%;
     font-size: 13pt;
+    text-align: center;
+    //white-space: nowrap;
+
+    //&:nth-child(odd) {
+    //  &::after {
+    //    position: absolute;
+    //    top: 50%;
+    //    right: 0;
+    //    transform: translate(0, -50%);
+    //    display: block;
+    //    content: '';
+    //    width: 1px;
+    //    height: 80%;
+    //    background-color: #b3b3b3;
+    //  }
+    //}
   }
 
   .services-list-col {
@@ -29,7 +63,6 @@
     height: 103px;
 
     .list-item-icon {
-
       display: flex;
       justify-content: center;
       align-items: center;
