@@ -491,7 +491,7 @@
 
         <!-- cards -->
         <div class="row cards-container pt-3">
-          <div class="col-auto col-md-6 col-lg-4 mx-auto mx-lg-0 mb-4 mb-lg-0">
+          <div class="col-auto col-md-6 col-lg-3 mx-auto mx-lg-0 mb-4 mb-lg-0">
             <a href="Articles/@Model.articlesList[0].articleUrl">
               <div class="card">
                 <div class="card-header">
@@ -509,7 +509,7 @@
               </div>
             </a>
           </div>
-          <div class="col-auto col-md-6 col-lg-4 mx-auto mx-lg-0 mb-4 mb-lg-0">
+          <div class="col-auto col-md-6 col-lg-3 mx-auto mx-lg-0 mb-4 mb-lg-0">
             <a href="Articles/@Model.articlesList[0].articleUrl">
               <div class="card">
                 <div class="card-header">
@@ -527,7 +527,25 @@
               </div>
             </a>
           </div>
-          <div class="col-auto col-md-6 col-lg-4 mx-auto mx-lg-0 mb-4 mb-lg-0">
+          <div class="col-auto col-md-6 col-lg-3 mx-auto mx-lg-0 mb-4 mb-lg-0">
+            <a href="Articles/@Model.articlesList[0].articleUrl">
+              <div class="card">
+                <div class="card-header">
+                  <div class="card-image">
+                    <img src="@Model._config["ImagesCdnUrl"]/@Model.articlesList[2].mainImageUrl" alt="@Model.articlesList[2].mainImageAlt">
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">@Model.articlesList[2].articleH1Teaser</h4>
+                  <p class="description">
+                    @Model.articlesList[2].articleH2
+                  </p>
+                </div>
+                <div class="card-footer"></div>
+              </div>
+            </a>
+          </div>
+          <div class="col-auto col-md-6 col-lg-3 mx-auto mx-lg-0 mb-4 mb-lg-0">
             <a href="Articles/@Model.articlesList[0].articleUrl">
               <div class="card">
                 <div class="card-header">
