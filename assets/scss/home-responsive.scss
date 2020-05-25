@@ -22,6 +22,12 @@
     .section-container {
       max-width: 990px;
     }
+
+    .questionnaire {
+      .questionnaire-content-outer {
+        margin-top: 10px;
+      }
+    }
   }
 
   @media(max-width: 991px) {
@@ -166,7 +172,7 @@
       .questionnaire-title {
         margin-top: 12px;
         padding-left: 0;
-        font-size: 28pt;
+        font-size: 26pt;
       }
 
       .questionnaire-content {
@@ -176,7 +182,7 @@
       .questionnaire-content-outer {
         flex-grow: 0;
         flex-direction: column;
-        margin-top: 20px;
+        margin-top: 0px;
         margin-left: 0;
         padding: 0 0 10px 0;
       }
@@ -206,7 +212,7 @@
         height: 100%;
 
         button {
-          height: 80px !important;
+          height: 50px !important;
           font-size: 20pt !important;
         }
       }
@@ -375,7 +381,7 @@
     }
 
     .common-searches {
-      padding-top: 27vw;
+      padding-top: 13vw;
     }
 
     .magazine {
@@ -407,7 +413,21 @@
       }
 
       .questionnaire-content-icon {
-        width: 74px !important;
+        width: 38px !important;
+      }
+
+      .questionnaire-image {
+        display: none;
+      }
+
+      .questionnaire-content-item:not(:last-child)::after {
+        width: calc(100% - 110px);
+      }
+
+      .join-us {
+        button {
+          font-size: 15pt !important;
+        }
       }
     }
   }
