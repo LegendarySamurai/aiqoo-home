@@ -381,7 +381,7 @@
     }
 
     .common-searches {
-      padding-top: 13vw;
+      padding-top: 10vw;
     }
 
     .magazine {
@@ -404,8 +404,16 @@
     }
 
     .questionnaire {
+      background-color: #585077;
+      padding: 10px 0 30px;
+
+      &::before {
+        display: none;
+      }
+
       .questionnaire-title {
         font-size: 20pt;
+        color: #d8cdba;
       }
 
       .questionnaire-text {
@@ -437,9 +445,9 @@
       padding-top: 56vw;
     }
 
-    .common-searches {
-      padding-top: 35vw;
-    }
+    //.common-searches {
+    //  padding-top: 35vw;
+    //}
   }
 
   @media (max-width: 474px) {
@@ -473,9 +481,9 @@
       padding-bottom: 60vw;
     }
 
-    .common-searches {
-      padding-top: 45vw;
-    }
+    //.common-searches {
+    //  padding-top: 10vw;
+    //}
 
     .magazine {
       padding-top: 310px;

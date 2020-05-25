@@ -1,23 +1,21 @@
 @media(max-width: 1199px) {
   .list-col {
     .list-col-item {
-      width: 33.3%;
+      //width: 33.3%;
     }
   }
 
-  .decoration-line {
-    &.decoration-line-one {
-      left: 30%;
-    }
-    &.decoration-line-two {
-      left: 60%;
-    }
-    &.decoration-line-three {
-      display: none;
-    }
-  }
-  .other-categories {
-  }
+  //.decoration-line {
+  //  &.decoration-line-one {
+  //    left: 30%;
+  //  }
+  //  &.decoration-line-two {
+  //    left: 60%;
+  //  }
+  //  &.decoration-line-three {
+  //    display: none;
+  //  }
+  //}
 }
 
 @media (max-width: 991px) {
@@ -77,44 +75,43 @@
 
   .list-col {
     .list-col-item {
-      width: 50%;
-      padding: 0 10px;
+      //width: 50%;
+      //padding: 0 10px;
     }
 
-    .decoration-line {
-      &.decoration-line-one {
-        left: 47%;
-      }
-      &.decoration-line-two {
-        display: none;
-      }
-    }
+    //.decoration-line {
+    //  &.decoration-line-one {
+    //    left: 47%;
+    //  }
+    //  &.decoration-line-two {
+    //    display: none;
+    //  }
+    //}
   }
 }
 
 @media(max-width: 767px) {
   .list-col {
-
     .list-col-item {
       //width: 50%;
 
-      &:nth-child(even) {
-        padding-right: 10px;
-      }
-
-      &:nth-child(odd) {
-        padding-left: 20px;
-      }
+      //&:nth-child(even) {
+      //  padding-right: 10px;
+      //}
+      //
+      //&:nth-child(odd) {
+      //  padding-left: 20px;
+      //}
     }
 
-    .decoration-line {
-      &.decoration-line-one {
-        left: 50%;
-      }
-      &.decoration-line-two {
-        display: none;
-      }
-    }
+    //.decoration-line {
+    //  &.decoration-line-one {
+    //    left: 50%;
+    //  }
+    //  &.decoration-line-two {
+    //    display: none;
+    //  }
+    //}
   }
 }
 
@@ -146,17 +143,17 @@
 
     .list-col-item {
       line-height: 1.5;
-      width: 100% !important;
-      padding: 0 !important;
+      //width: 100% !important;
+      //padding: 0 !important;
       font-size: 13pt;
       text-align: center;
     }
 
-    .decoration-line {
-      &.decoration-line-one {
-        display: none;
-      }
-    }
+    //.decoration-line {
+    //  &.decoration-line-one {
+    //    display: none;
+    //  }
+    //}
   }
 
   img {
