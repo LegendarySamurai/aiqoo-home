@@ -4,18 +4,6 @@
       //width: 33.3%;
     }
   }
-
-  //.decoration-line {
-  //  &.decoration-line-one {
-  //    left: 30%;
-  //  }
-  //  &.decoration-line-two {
-  //    left: 60%;
-  //  }
-  //  &.decoration-line-three {
-  //    display: none;
-  //  }
-  //}
 }
 
 @media (max-width: 991px) {
@@ -79,14 +67,17 @@
       //padding: 0 10px;
     }
 
-    //.decoration-line {
-    //  &.decoration-line-one {
-    //    left: 47%;
-    //  }
-    //  &.decoration-line-two {
-    //    display: none;
-    //  }
-    //}
+    .decoration-line {
+      &.decoration-line-one {
+        left: 30%;
+      }
+      &.decoration-line-two {
+        left: 65%;
+      }
+      &.decoration-line-three {
+        display: none;
+      }
+    }
   }
 }
 
@@ -104,14 +95,14 @@
       //}
     }
 
-    //.decoration-line {
-    //  &.decoration-line-one {
-    //    left: 50%;
-    //  }
-    //  &.decoration-line-two {
-    //    display: none;
-    //  }
-    //}
+    .decoration-line {
+      &.decoration-line-one {
+        left: 47%;
+      }
+      &.decoration-line-two {
+        display: none;
+      }
+    }
   }
 }
 
@@ -149,11 +140,20 @@
       text-align: center;
     }
 
-    //.decoration-line {
-    //  &.decoration-line-one {
-    //    display: none;
-    //  }
-    //}
+    .decoration-line {
+      &.decoration-line-one {
+        left: 50%;
+      }
+      &.decoration-line-two {
+        display: none;
+      }
+    }
+
+    .decoration-line {
+      &.decoration-line-one {
+        display: none;
+      }
+    }
   }
 
   img {
