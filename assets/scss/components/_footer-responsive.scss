@@ -148,8 +148,8 @@
 
       &::after {
         top: auto;
-        bottom: 0px;
-        width: 85%;
+        bottom: 0;
+        width: 96%;
         height: 1px;
         right: 50%;
         transform: translate(50%, 0);
@@ -213,6 +213,12 @@
         p {
           margin: 20px auto 0;
         }
+      }
+    }
+
+    .content-column-left {
+      &::after {
+        width: 85%;
       }
     }
   }

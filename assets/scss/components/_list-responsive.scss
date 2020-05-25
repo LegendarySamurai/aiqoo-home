@@ -1,83 +1,22 @@
-@media(max-width: 599px) {
-  .list {
-    h4 {
-      font-size: 14pt;
-    }
-
-    h5 {
-      font-size: 12pt;
-    }
-  }
-
+@media(max-width: 1199px) {
   .list-col {
-    //position: relative;
-    padding-top: 20px;
-
-    //&::after {
-    //  position: absolute;
-    //  top: 50%;
-    //  left: 50%;
-    //  transform: translate(-50%, -50%);
-    //  display: block;
-    //  content: '';
-    //  width: 1px;
-    //  height: 80%;
-    //  background-color: #b3b3b3;
-    //}
-  }
-
-  img {
-    max-height: 100%;
-  }
-
-  .list-col-item {
-    //position: relative;
-    line-height: 1.5;
-    width: 50%;
-    font-size: 13pt;
-    text-align: center;
-    //white-space: nowrap;
-
-    //&:nth-child(odd) {
-    //  &::after {
-    //    position: absolute;
-    //    top: 50%;
-    //    right: 0;
-    //    transform: translate(0, -50%);
-    //    display: block;
-    //    content: '';
-    //    width: 1px;
-    //    height: 80%;
-    //    background-color: #b3b3b3;
-    //  }
-    //}
-  }
-
-  .services-list-col {
-    width: 50% !important;
-    font-size: 13pt;
-  }
-
-  .list-item-with-icon {
-    align-content: flex-start;
-    height: 103px;
-
-    .list-item-icon {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 44px;
-      margin-bottom: 25px;
-    }
-
-    h5 {
-      font-size: 9pt;
+    .list-col-item {
+      width: 33.3%;
     }
   }
 
-  .list-col-item,
-  .services-list-col {
-    width: 50% !important;
+  .decoration-line {
+    &.decoration-line-one {
+      left: 30%;
+    }
+    &.decoration-line-two {
+      left: 60%;
+    }
+    &.decoration-line-three {
+      display: none;
+    }
+  }
+  .other-categories {
   }
 }
 
@@ -135,14 +74,129 @@
       }
     }
   }
+
+  .list-col-item {
+    padding: 0 10px;
+  }
+
+  .decoration-line {
+    &.decoration-line-one {
+      left: 32%;
+    }
+    &.decoration-line-two {
+      left: 64%;
+    }
+  }
+
+  .other-categories {
+  }
 }
 
-@media(min-width: 800px) {
+@media(max-width: 767px) {
+  .list-col {
+
+    .list-col-item {
+      width: 50%;
+
+      &:nth-child(even) {
+        padding-right: 10px;
+      }
+
+      &:nth-child(odd) {
+        padding-left: 20px;
+      }
+    }
+
+    .decoration-line {
+      &.decoration-line-one {
+        left: 50%;
+      }
+      &.decoration-line-two {
+        display: none;
+      }
+    }
+  }
 }
 
-@media(min-width: 992px) {
+@media(max-width: 599px) {
+  .list {
+    h4 {
+      font-size: 14pt;
+    }
+
+    h5 {
+      font-size: 12pt;
+    }
+  }
+
+  .list-col {
+    padding-top: 20px;
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      content: '';
+      width: 1px;
+      height: 80%;
+      background-color: #b3b3b3;
+    }
+  }
+
+  img {
+    max-height: 100%;
+  }
+
+  .list-col-item {
+    line-height: 1.5;
+    width: 50%;
+    font-size: 13pt;
+    text-align: left;
+  }
+
+  .list-col {
+    padding: 20px 0 0 0;
+
+    &::after {
+      height: 90%;
+    }
+  }
+
+  .decoration-line {
+    &.decoration-line-one {
+      display: none;
+    }
+  }
+
+  .services-list-col {
+    width: 50% !important;
+    font-size: 13pt;
+  }
+
+  .list-item-with-icon {
+    align-content: flex-start;
+    height: 103px;
+
+    .list-item-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 44px;
+      margin-bottom: 25px;
+    }
+
+    h5 {
+      font-size: 9pt;
+    }
+  }
+
+  .list-col-item,
+  .services-list-col {
+    width: 50% !important;
+  }
 }
-// EOL: @media(min-width: 992px)
 
 @media(min-width: 1200px) {
   .list-col {
@@ -150,7 +204,7 @@
     align-items: flex-start;
   }
 
-  .list-col-item,
+  //.list-col-item,
   .services-list-col {
     width: 20% !important;
     text-align: left;
@@ -162,14 +216,4 @@
     margin-bottom: 40px;
   }
 }
-// EOL: @media(min-width: 1400px)
 
-
-@media(min-width: 1600px) {
-  .other-categories {
-    .list-col-item {
-      width: 16.66% !important;
-    }
-  }
-}
-// EOL: @media(min-width: 1600px)

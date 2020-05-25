@@ -221,12 +221,6 @@
     .common-searches {
       padding-top: 19vw;
     }
-
-    //.common-searches {
-    //  .section-title {
-    //    color: #d8cdba;
-    //  }
-    //}
   }
 
   @media(max-width: 599px) {
@@ -241,14 +235,13 @@
 
       &.small-video {
         .fa-play-circle {
-          font-size: 65pt;
+          font-size: 52pt;
         }
       }
     }
 
     .logo {
       display: none;
-      //width: 200px !important;
     }
 
     h1 {
