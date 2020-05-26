@@ -1,6 +1,7 @@
 // Video settings and layers
 .video-container {
   .text {
+    z-index: 301;
     position: absolute;
     top: 15px;
     bottom: auto;

@@ -408,8 +408,14 @@
         display: none;
       }
 
-      .questionnaire-content-item:not(:last-child)::after {
-        width: calc(100% - 110px);
+      .questionnaire-content-item {
+        &:not(:last-child)::after {
+          width: calc(100% - 110px);
+        }
+
+        .questionnaire-content-text {
+          font-size: 9pt !important;
+        }
       }
 
       .join-us {

@@ -1,13 +1,13 @@
 .page-footer {
   @media(max-width: 1599px) {
     .page-footer-main {
-      max-width: 90%;
+      //max-width: 90%;
     }
 
     .page-footer-footer {
       .footer-container {
-        max-width: 90%;
-        margin-right: 30px;
+        //max-width: 90%;
+        //margin-right: 30px;
       }
     }
   }
@@ -15,7 +15,7 @@
   @media(max-width: 1499px) {
     .page-footer-main {
       margin: 0 auto;
-      padding: 0 0 60px;
+      //padding: 0 0 60px;
     }
 
     .page-footer-footer {
@@ -26,6 +26,10 @@
   }
 
   @media(max-width: 1399px) {
+    .page-footer-main {
+      max-width: 1200px;
+    }
+
     .pros-card {
       width: 100%;
       padding: 30px 20px;
@@ -54,9 +58,18 @@
         top: 50%;
       }
     }
+
+    // Center
+    .content-column-center {
+      padding-top: 30px;
+    }
   }
 
   @media(max-width: 1199px) {
+    .page-footer-main {
+      max-width: 990px;
+    }
+
     .content-column-left {
       max-width: 50%;
       flex: 0 0 50%;
@@ -80,9 +93,45 @@
       width: 90%;
       margin: 0 auto;
     }
+
+    .page-footer-subscribe-box {
+      .form-group {
+        .form-control.email {
+          padding-right: 10px;
+          height: 40px;
+        }
+
+        .fa-envelope {
+          top: 25%;
+        }
+
+        .btn-subscribe {
+          position: static;
+          transform: none;
+          width: 100%;
+          margin-top: 10px;
+
+          .spinner-border {
+            right: 1vw;
+            top: auto;
+            bottom: .65vw;
+          }
+        }
+      }
+    }
   }
 
   @media(max-width: 991px) {
+    .page-footer-footer {
+      .page-footer-main {
+        padding-bottom: 0;
+      }
+    }
+
+    .page-footer-main {
+      max-width: 90%;
+    }
+
     .content-column-left {
       max-width: 65%;
       flex: 0 0 65%;
