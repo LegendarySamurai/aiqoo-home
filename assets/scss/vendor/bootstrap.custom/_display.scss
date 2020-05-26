@@ -34,10 +34,10 @@
 //  display: inline-flex !important;
 //}
 
-@media (min-width: 576px) {
-  //.d-sm-none {
-  //  display: none !important;
-  //}
+@media (min-width: 599px) {
+  .d-sm-none {
+    display: none !important;
+  }
   //.d-sm-inline {
   //  display: inline !important;
   //}

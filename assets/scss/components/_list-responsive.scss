@@ -157,6 +157,12 @@
     }
   }
 
+  &.common-searches-list {
+    .list-col {
+      padding: 20px 15px 0;
+    }
+  }
+
   img {
     max-height: 100%;
   }

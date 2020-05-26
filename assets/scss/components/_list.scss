@@ -74,6 +74,14 @@
     }
   }
 
+  &.common-searches-list {
+    padding: 0;
+
+    .list-col-item {
+      width: auto !important;
+    }
+  }
+
   .list-item-with-icon {
     display: flex;
     flex-direction: column;
