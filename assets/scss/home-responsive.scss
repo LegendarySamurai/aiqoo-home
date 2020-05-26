@@ -392,12 +392,12 @@
       }
 
       .questionnaire-title {
-        font-size: 20pt !important;
+        font-size: 17pt !important;
         color: #d8cdba;
       }
 
       .questionnaire-text {
-        font-size: 14pt !important;
+        font-size: 12pt !important;
       }
 
       .questionnaire-content-icon {
@@ -414,12 +414,13 @@
         }
 
         .questionnaire-content-text {
-          font-size: 9pt !important;
+          font-size: 11pt !important;
         }
       }
 
       .join-us {
         button {
+          line-height: .75;
           font-size: 15pt !important;
         }
       }
@@ -466,10 +467,6 @@
       padding-top: 75vw;
       padding-bottom: 60vw;
     }
-
-    //.common-searches {
-    //  padding-top: 10vw;
-    //}
 
     .magazine {
       padding-top: 310px;

@@ -11,7 +11,7 @@
     justify-content: flex-start;
     height: auto;
     padding: 7px 30px 7px 10px;
-    background-color: #d8cdba;
+    background-color: transparentize(#d8cdba, .2);
     color: #342e49;
     font-family: "Raleway", sans-serif;
 
@@ -26,14 +26,15 @@
       left: 10px;
       top: auto;
       bottom: 10px;
-      width: 94%;
+      //width: 94%;
+      width: auto;
       padding: 5px 20px 5px 10px;
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
 
       & .video-title {
-        font-size: 15pt;
+        font-size: 10pt;
       }
     }
   }
