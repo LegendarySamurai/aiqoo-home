@@ -317,27 +317,21 @@
             }
 
             .article-content {
-
-                & .text {
+                .text {
                     line-height: 1.35;
                     margin: 0;
                     font-weight: 300;
                     font-size: 11pt;
 
-                    & p {
-                        margin: 0 0 15px 0;
-                        line-height: 1.45;
-                        font-weight: 300;
+                    p {
+                        //margin: 0 0 15px 0;
+                        //line-height: 1.45;
+                        //font-weight: 300;
                         font-size: 11pt;
                     }
 
-                    & h3 {
-                        margin: 25px 0 0 0;
-                        margin-bottom: .5rem;
-                        font-weight: 600;
+                    h3 {
                         font-size: 13pt;
-                        line-height: 12pt;
-                        color: $primaryColor;
                     }
                 }
             }

@@ -176,30 +176,35 @@
             }
         }
 
-        & .text {
+        .text {
             line-height: 1.35;
             margin: 0;
             font-weight: 300;
             font-size: 12pt;
 
-            & p {
-                margin: 0 0 15px 0;
+            p {
+                margin: 5px 0 15px 0;
                 line-height: 1.45;
                 font-weight: 300;
                 font-size: 12pt;
             }
 
-            & .p-no-space {
+            .p-no-space {
                 margin: 0 0 0 0 !important;
             }
 
-            & h3 {
-                margin: 25px 0 0 0;
-                margin-bottom: .5rem;
-                font-weight: 600;
-                font-size: 14pt;
-                line-height: 10pt;
+            h3 {
+                line-height: 1;
+                margin: 1.5rem 0 .5rem 0;
                 color: $primaryColor;
+                font-weight: 700;
+                font-size: 14pt;
+            }
+
+            h4 {
+                margin: 20px 0 0 0;
+                font-size: 13pt;
+                font-weight: 600;
             }
         }
     }
