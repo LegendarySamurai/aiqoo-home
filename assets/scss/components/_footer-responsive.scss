@@ -221,6 +221,12 @@
 
     .pros-card {
       width: 100%;
+      max-width: 400px;
+    }
+
+    .content {
+      max-width: 400px;
+      margin: 0 auto;
     }
 
     .brand-logo {
@@ -278,6 +284,15 @@
             bottom: 1.5vw;
           }
         }
+      }
+    }
+
+    .more-info {
+      flex-wrap: wrap;
+
+      .page-footer-link {
+        width: 50%;
+        margin-right: 0;
       }
     }
   }
