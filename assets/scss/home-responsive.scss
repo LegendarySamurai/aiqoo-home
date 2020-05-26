@@ -43,7 +43,7 @@
 
     .categories {
       padding-top: 19vw;
-      padding-bottom: 28vw;
+      padding-bottom: 22vh;
     }
 
     .card {
@@ -190,6 +190,7 @@
   @media(max-width: 767px) {
     .categories {
       padding-top: 23vw;
+      //padding-bottom: 10vh;
     }
 
     .common-searches {
@@ -365,7 +366,7 @@
     }
 
     .magazine {
-      padding-top: 400px;
+      padding-top: 32vh;
 
       .magazine-header {
         margin-top: -480px;
