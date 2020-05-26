@@ -145,32 +145,32 @@
         }
       }
     }
-  }
 
-  .reason-icon {
-    display: flex;
-    align-items: center;
-    width: 35px;
-    height: 35px;
-  }
+    .reason-icon {
+      display: flex;
+      align-items: center;
+      width: 35px;
+      height: 35px;
+    }
 
-  .headings {
-    padding: 0 20px;
-    margin-top: 8px;
-  }
+    .headings {
+      padding: 0 20px;
+      margin-top: 8px;
+    }
 
-  span {
-    font-family: $main-font;
-    font-weight: bold;
-    color: $text-color;
-    font-size: 10.5pt;
-  }
+    span {
+      font-family: $main-font;
+      font-weight: bold;
+      color: $text-color;
+      font-size: 10.5pt;
+    }
 
-  p {
-    line-height: 1.25;
-    margin-top: 5px;
-    color: $grey;
-    font-weight: 400;
-    font-size: 8.25pt;
+    p {
+      line-height: 1.25;
+      margin-top: 5px;
+      color: $grey;
+      font-weight: 400;
+      font-size: 8.25pt;
+    }
   }
 }

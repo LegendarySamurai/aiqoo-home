@@ -270,5 +270,15 @@
         width: 85%;
       }
     }
+
+    .page-footer-subscribe-box  {
+      .form-group  {
+        .btn-subscribe {
+          .spinner-border {
+            bottom: 1.5vw;
+          }
+        }
+      }
+    }
   }
 }
