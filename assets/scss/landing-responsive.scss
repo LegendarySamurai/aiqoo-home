@@ -85,9 +85,10 @@
 
       .newsletter-container {
         flex-direction: column;
-        height: 390px;
-        margin-top: 20px;
-        padding: 50px 10px 20px 10px;
+        max-width: 90%;
+        height: 380px;
+        margin: 20px auto 0;
+        padding: 40px 10px 20px 10px;
         background: #fffdfa url('../../assets/images/landing/newsletter-bg-mobile.png') no-repeat;
         background-size: 100%;
 
@@ -98,7 +99,7 @@
 
         .newsletter-text {
           line-height: 1.5;
-          font-size: 16pt;
+          font-size: 18pt;
           font-weight: 400;
         }
       }
@@ -129,7 +130,7 @@
         top: 50%;
         left: 30px;
         transform: translate(0, -50%);
-        font-size: 15pt;
+        font-size: 17pt;
 
         span {
           padding-left: 10px;
@@ -139,7 +140,7 @@
       .send {
         height: 60px;
         width: 100%;
-        font-size: 15pt;
+        font-size: 17pt;
       }
     }
 
@@ -360,8 +361,8 @@
 
     .section-2 {
       .newsletter-container {
-        height: 440px;
-        padding: 80px 15px 20px 15px;
+        //height: 440px;
+        //padding: 80px 15px 20px 15px;
 
       }
 
