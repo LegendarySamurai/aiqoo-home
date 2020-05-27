@@ -195,20 +195,14 @@
 
       // head-section-header
       .head-section-header {
-        top: 20%;
-
-        .head-section-header-link {
-          font-size: 10pt;
-        }
+        display: none;
       }
-
     }
   }
 
   @media(max-width: 767px) {
     .categories {
       padding-top: 23vw;
-      //padding-bottom: 10vh;
     }
 
     .common-searches {
@@ -230,11 +224,6 @@
 
   @media(max-width: 599px) {
     padding-top: 60px !important;
-
-    // head-section-header
-    .head-section-header {
-      display: none;
-    }
 
     .video-container {
       .text {
@@ -269,6 +258,7 @@
     .head-section-content {
       .head-section-content-inner {
         top: 40% !important;
+        margin-top: 0;
       }
     }
 
@@ -380,18 +370,23 @@
     }
 
     .categories {
-      padding-top: 50vw;
+      padding-top: 30vh;
     }
 
     .common-searches {
       padding-top: 10vw;
+
+      .list-col-item {
+        white-space: pre-line;
+        text-align: left;
+      }
     }
 
     .magazine {
       padding-top: 32vh;
 
       .magazine-header {
-        margin-top: -480px;
+        margin-top: -400px;
       }
     }
 
@@ -451,12 +446,6 @@
           font-size: 15pt !important;
         }
       }
-    }
-  }
-
-  @media (max-width: 499px) {
-    .categories {
-      padding-top: 56vw;
     }
   }
 

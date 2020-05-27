@@ -4,6 +4,14 @@
 @import 'helpers/helpers';
 
 .landing-page {
+  @media(max-width: 599px) { }
+
+  @media(max-width: 768px) {
+    .head-section-content {
+      margin-top: 3vh;
+    }
+  }
+
   @media(min-width: 300px) {
     .all-categories {
       padding-top: 40px;
@@ -350,7 +358,6 @@
       }
     }
   }
-  // EOL: 300
 
   @media only screen and (min-width: 300px) and (max-width: 991px) {
     .headings {
@@ -358,7 +365,7 @@
     }
 
     .head-section-content {
-      padding-top: 56px;
+      //padding-top: 56px;
       width: 100%;
     }
 
@@ -369,7 +376,6 @@
       height: auto;
     }
   }
-  // EOL 300 - 991
 
   @media(min-width: 600px) {
     .head-section-content-inner {
@@ -458,7 +464,6 @@
       border-right: 2px solid $text-color;
     }
   }
-  // EOL: 600
 
   @media(min-width: 992px) {
     .all-categories {
@@ -695,7 +700,6 @@
       }
     }
   }
-  // EOL: 992
 
   @media(min-width: 1200px) {
     .search-pros-inner {
@@ -721,7 +725,6 @@
       font-size: 13pt;
     }
   }
-  // EOL: 1200
 
   @media(min-width: 1366px) {
     .bg-container {
@@ -732,7 +735,6 @@
       }
     }
   }
-  // EOL: 1366
 
   @media(min-width: 1600px) {
     .bg-container {
@@ -780,7 +782,6 @@
       }
     }
   }
-  // EOL: 1600
 
   @media(min-width: 1920px) {
     .head-section {
@@ -793,5 +794,4 @@
       }
     }
   }
-  // EOL: 1920
 }
