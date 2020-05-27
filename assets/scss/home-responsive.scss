@@ -213,6 +213,11 @@
   @media(max-width: 599px) {
     padding-top: 60px !important;
 
+    // head-section-header
+    .head-section-header {
+      display: none;
+    }
+
     .video-container {
       .text {
         .video-title {

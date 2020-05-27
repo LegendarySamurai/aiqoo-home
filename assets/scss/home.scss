@@ -52,6 +52,27 @@ body {
       background-color: transparentize(#181522, .61);
     }
 
+    // head-section-header
+    .head-section-header {
+      position: absolute;
+      top: 2%;
+      right: 2%;
+      width: auto;
+
+      .head-section-header-link {
+        line-height: 1;
+        margin-right: 15px;
+        font-weight: 700;
+        font-size: 16pt;
+        color: transparentize(#fff, .25);
+
+        i {
+          padding-right: 5px;
+        }
+      }
+    }
+
+    // head-section-container
     .head-section-content {
       height: 460px;
       min-height: inherit;
