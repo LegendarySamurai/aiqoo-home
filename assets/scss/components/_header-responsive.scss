@@ -40,17 +40,17 @@
       }
     }
 
-    .login-network {
-      padding: 0 10px 0 10px;
-
-      img {
-        width: 20px;
-      }
-
-      span {
-        text-align: left;
-      }
-    }
+    //.login-network {
+    //  padding: 0 10px 0 10px;
+    //
+    //  img {
+    //    width: 20px;
+    //  }
+    //
+    //  span {
+    //    text-align: left;
+    //  }
+    //}
 
     .navbar {
       a {
@@ -98,19 +98,19 @@
       }
     }
 
-    .login-network {
-      width: 125px;
-      padding: 0 7px 0 10px;
-
-      img {
-        width: 16px;
-      }
-
-      span {
-        font-size: 11pt;
-        text-align: left;
-      }
-    }
+    //.login-network {
+    //  width: 125px;
+    //  padding: 0 7px 0 10px;
+    //
+    //  img {
+    //    width: 16px;
+    //  }
+    //
+    //  span {
+    //    font-size: 11pt;
+    //    text-align: left;
+    //  }
+    //}
 
     .navbar {
       a {
@@ -182,19 +182,19 @@
       }
     }
 
-    .login-network {
-      position: relative;
-      width: 100px;
-      padding: 0 7px;
-
-      span {
-        font-size: 9pt;
-      }
-
-      img {
-        width: 14px;
-      }
-    }
+    //.login-network {
+    //  position: relative;
+    //  width: 100px;
+    //  padding: 0 7px;
+    //
+    //  span {
+    //    font-size: 9pt;
+    //  }
+    //
+    //  img {
+    //    width: 14px;
+    //  }
+    //}
 
     .navbar {
       align-items: flex-start;
@@ -264,12 +264,12 @@
       }
     }
 
-    .login-network {
-      width: 110px;
-      height: 36px;
-      margin-left: auto;
-      padding: 0 10px;
-    }
+    //.login-network {
+    //  width: 110px;
+    //  height: 36px;
+    //  margin-left: auto;
+    //  padding: 0 10px;
+    //}
 
     .dropdown-menu-container {
       position: fixed;
@@ -304,9 +304,9 @@
     }
 
     .dropdown-menu-header {
-      .login-network {
-        display: none;
-      }
+      //.login-network {
+      //  display: none;
+      //}
     }
 
     .navbar {
@@ -450,19 +450,19 @@
 
     }
 
-    .login-network {
-      flex-shrink: 0;
-      width: 110px;
-      padding: 0 8px;
-
-      span {
-        font-size: 10pt;
-      }
-
-      img {
-        width: 14px;
-      }
-    }
+    //.login-network {
+    //  flex-shrink: 0;
+    //  width: 110px;
+    //  padding: 0 8px;
+    //
+    //  span {
+    //    font-size: 10pt;
+    //  }
+    //
+    //  img {
+    //    width: 14px;
+    //  }
+    //}
 
     .search {
       .form-group {
@@ -562,15 +562,15 @@
       }
     }
 
-    .login-network {
-      display: none;
-    }
+    //.login-network {
+    //  display: none;
+    //}
 
-    .dropdown-menu-header {
-      .login-network {
-        display: flex;
-      }
-    }
+    //.dropdown-menu-header {
+    //  .login-network {
+    //    display: flex;
+    //  }
+    //}
   }
 
   @media(max-width: 374px) {

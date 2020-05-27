@@ -213,29 +213,29 @@
     }
   }
 
-  .login-network {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 170px;
-    height: calc(#{$page-header-height-d} - 20px);
-    margin-left: 10px;
-    padding: 0 15px;
-    border-radius: 1.5px;
-    border: solid 0.5px transparentize(#ffffff, .8);
-
-    span {
-      color: #fffdfa;
-      font-weight: 300;
-      font-size: 13pt;
-    }
-
-    img {
-      width: 25px;
-      margin-left: auto;
-    }
-  }
+  //.login-network {
+  //  display: flex;
+  //  flex-direction: row;
+  //  justify-content: space-between;
+  //  align-items: center;
+  //  width: 170px;
+  //  height: calc(#{$page-header-height-d} - 20px);
+  //  margin-left: 10px;
+  //  padding: 0 15px;
+  //  border-radius: 1.5px;
+  //  border: solid 0.5px transparentize(#ffffff, .8);
+  //
+  //  span {
+  //    color: #fffdfa;
+  //    font-weight: 300;
+  //    font-size: 13pt;
+  //  }
+  //
+  //  img {
+  //    width: 25px;
+  //    margin-left: auto;
+  //  }
+  //}
 
   .header-content {
     position: relative;

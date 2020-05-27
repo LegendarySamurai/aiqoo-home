@@ -55,16 +55,17 @@ body {
     // head-section-header
     .head-section-header {
       position: absolute;
-      top: 2%;
+      top: 8%;
       right: 2%;
       width: auto;
 
       .head-section-header-link {
         line-height: 1;
         margin-right: 15px;
-        font-weight: 700;
-        font-size: 16pt;
-        color: transparentize(#fff, .25);
+        font-weight: 400;
+        font-size: 14pt;
+        color: #fff;
+        cursor: pointer;
 
         i {
           padding-right: 5px;
@@ -130,7 +131,8 @@ body {
       transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 
       &.is-hidden {
-        padding-left: 190px;
+        //padding-left: 190px;
+        padding-left: 50px;
 
         &::placeholder {
           color: transparent;
