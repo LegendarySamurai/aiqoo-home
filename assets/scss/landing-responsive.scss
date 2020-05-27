@@ -54,56 +54,6 @@
         line-height: 1.5;
         font-size: 13pt;
       }
-
-      // reasons for mobile devices from 300 to 600
-      .reasons-row {
-        margin-top: -270px;
-      }
-
-      .reasons-col {
-        .reason {
-          background-color: #fff;
-        }
-      }
-
-      .why-us {
-        width: 100%;
-
-        .reason {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          width: 46%;
-          margin-bottom: 20px;
-          padding: 20px 10px;
-          background-color: #fff;
-          border-radius: 5px;
-
-          h2 {
-            font-size: 13pt;
-          }
-
-          h3 {
-            margin-top: 5px;
-            font-size: 11pt;
-          }
-        }
-
-        .headings {
-          margin: 10px 0 0 0;
-          text-align: center;
-        }
-
-        .image-container {
-          display: flex;
-          align-items: center;
-          height: 43px;
-        }
-
-        .reason-icon {
-          width: 36px;
-        }
-      }
     }
 
     .bg-container {
@@ -403,21 +353,6 @@
   // EOL: 300
 
   @media only screen and (min-width: 300px) and (max-width: 991px) {
-    .head-section {
-      //height: calc(100vh - 92px);
-    }
-
-    .reasons {
-      flex-wrap: wrap;
-      padding: 20px;
-    }
-
-    .reason {
-      flex-direction: column;
-      align-items: center;
-      width: 50%;
-    }
-
     .headings {
       text-align: center;
     }
@@ -450,20 +385,6 @@
 
       .section-title {
         font-size: 14pt;
-      }
-
-      .reasons-container {
-        margin-top: 110px;
-        margin-bottom: 40px;
-      }
-
-      .why-us {
-        max-width: 540px;
-
-        .reason {
-          width: 48%;
-          max-width: 250px;
-        }
       }
     }
 

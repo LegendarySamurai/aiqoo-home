@@ -1,22 +1,31 @@
 <!DOCTYPE html>
-<html lang="he">
+<html lang="en">
 <head>
-  <meta charset="utf-8"/>
+  <meta charset="utf-8" />
   <title>Video</title>
-  <meta name="description" content="Home Improvement"/>
+  <meta name="description" content="Home Improvement" />
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css"
         integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="assets/css/video.css"/>
+  <link rel="stylesheet" href="assets/css/video.css" />
   <link rel="stylesheet" href="assets/css/web.css" />
-  <link rel="stylesheet" href="assets/css/video-responsive.css"/>
-  <link rel="stylesheet" href="assets/css/web-responsive.css"/>
+  <link rel="stylesheet" href="assets/css/video-responsive.css" />
+  <link rel="stylesheet" href="assets/css/web-responsive.css" />
 </head>
 <body>
+<script>
+	/*
+  //-- aiq ut pixel
+  var _ut_web_id = "AiqHome.com";
+  !function (e, t, n, a, s, u, i, c) {
+      e.ut_aiq || ((s = e.ut_aiq = function () { s.callMethod ? s.callMethod.apply(s, arguments) : s.queue.push(arguments) }).push = s, s.loaded = !0, s.version = "2.0", s.queue = [], (u = t.createElement(n)).async = !0, u.src = "https://api.aiq-magazine.com/FunnelsAssets/FunnelJS/user_tracking.es5.min.js", (i = t.getElementsByTagName(n)[0]).parentNode.insertBefore(u, i))
+  }
+  */
+</script>
 
 <header class="header">
   <div class="container container-lg">
@@ -25,13 +34,13 @@
 
         <div class="header-content">
           <button type="button" id="btn-open-menu" class="btn-open-menu d-lg-none">
-            <span class="menu-icon">
-              <i class="far fa-bars"></i>
-            </span>
+                            <span class="menu-icon">
+                                <i class="far fa-bars"></i>
+                            </span>
           </button>
 
           <div class="logo">
-            <img src="assets/images/logo/logo.svg" alt="logo">
+            <a href="https://localhost:44391"><img src="assets/images/logo/logo.svg" alt="Aiq Home Menu Logo" title="Aiq Home Menu Logo"></a>
           </div>
 
           <button type="button" id="btn-search" class="btn-search">
@@ -45,69 +54,45 @@
               <div class="dropdown-menu-inner">
                 <div class="dropdown-menu-header d-lg-none">
                   <div class="dropdown-menu-header-logo">
-                    <img src="assets/images/logo/logo.svg" alt="logo">
+                    <a href="https://localhost:44391"><img src="assets/images/logo/logo.svg" alt="Aiq Home Logo M" title="Aiq Home Logo M"></a>
                   </div>
-                  <!--<button class="login-network" type="button">-->
-                  <!--  <span>Pro network</span>-->
-                  <!--  <img src="assets/images/icons/login.png" alt="login">-->
-                  <!--</button>-->
                 </div>
 
                 <ul class="navbar">
-                  <li>
-                    <a href="#">
+                  <li class="">
+                    <a href="https://localhost:44391">
                       <i class="d-lg-none menu-item-icon icon-home"></i>
-                      <span>
-                      Home
-                    </span>
+                      <span>Home</span>
                     </a>
                   </li>
-                  <li>
-                    <a href="#">
-                      <i class="d-lg-none menu-item-icon icon-home"></i>
-                      <span>
-                      Video
-                    </span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="d-lg-none menu-item-icon icon-home"></i>
-                      <span>
-                      Blog
-                    </span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="d-lg-none menu-item-icon icon-home"></i>
-                      <span>
-                      About us
-                    </span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="d-lg-none menu-item-icon icon-home"></i>
-                      <span>
-                      Services
-                    </span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
+                  <li class="">
+                    <a href="https://localhost:44391/Magazine">
                       <i class="d-lg-none menu-item-icon icon-magazine"></i>
-                      <span>
-                      Magazine
-                    </span>
+                      <span>Magazine</span>
                     </a>
                   </li>
-                  <li>
+                  <li class="is-active">
+                    <a href="https://localhost:44391/Videos">
+                      <i class="d-lg-none menu-item-icon icon-home"></i>
+                      <span>Videos</span>
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="#">
+                      <i class="d-lg-none menu-item-icon icon-home"></i>
+                      <span>Services</span>
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="#">
+                      <i class="d-lg-none menu-item-icon icon-home"></i>
+                      <span>About us</span>
+                    </a>
+                  </li>
+                  <li class="">
                     <a href="#" class="no-border-bottom">
                       <i class="d-lg-none menu-item-icon icon-contact-us"></i>
-                      <span>
-                      Contact us
-                    </span>
+                      <span>Contact us</span>
                     </a>
                   </li>
                 </ul>
@@ -139,16 +124,12 @@
               <input id="header-search-input" class="form-control font-weight-bold" type="text"
                      placeholder="What service are you looking for?">
               <div class="super-placeholder">
-                <img src="assets/images/icons/pen-6.svg" alt="icon">
+                <img class="header-location" src="assets/images/icons/pen-6.svg" alt="Find Pros Icon">
+                <img class="header-zip-code" src="assets/images/icons/location.svg" alt="Find Pros Location Icon">
               </div>
               <button class="find-btn font-weight-bold" type="button">FIND A PRO</button>
             </div>
           </div>
-
-          <!--<button class="login-network" type="button">-->
-          <!--  <span>Pro network</span>-->
-          <!--  <img src="assets/images/icons/login.png" alt="login">-->
-          <!--</button>-->
         </div>
 
       </div>
@@ -156,12 +137,13 @@
   </div>
 </header>
 
+
 <main class="video">
   <div class="page-title">
     <div class="container container-lg">
       <div class="row">
         <div class="col-12">
-          <h1 class="page-heading">Home Improvement Videos</h1>
+          <h2 class="page-heading hide-on-600">Home Improvement Videos</h2>
           <!-- Breadcrumbs -->
           <div class="breadcrumbs">
             <ul>
@@ -173,8 +155,12 @@
               </li>
               <li>
                 <a href="https://localhost:44391/Videos">
-                  <span>Videos</span>
+                  <span>Home Improvement Videos</span>
+                  <i class="far fa-chevron-right"></i>
                 </a>
+              </li>
+              <li>
+                <span>VideoBreadCramps</span>
               </li>
             </ul>
           </div>
@@ -190,12 +176,12 @@
         <div class="col-12">
           <!-- card -->
           <div class="card">
-            <div class="card-col col-12 col-lg-7">
+            <div class="card-col col-9">
               <div class="row">
                 <div class="video-container-col col-12 col-lg-12">
                   <div class="video-container">
                     <div class="embed-responsive embed-responsive-16by9">
-                      <img id="video-img" src="https://api.aiq-magazine.com/assets/UploadImages/ecea6e3cc6c3efa892beb69ca117a195_600_360_122201911527PM.jpg" alt="&#x5E9;&#x5D8;&#x5E8;&#x5D5;&#x5EA; &#x5E9;&#x5DC; &#x5DE;&#x5D0;&#x5D4; &#x5E9;&quot;&#x5D7; &#x5D5;&#x5D1;&#x5D9;&#x5EA; &#x5DE;&#x5E2;&#x5D5;&#x5E6;&#x5D1; &#x5DE;&#x5E9;&#x5D8;&#x5E8;&#x5D9; 200 &#x5E9;&quot;&#x5D7; &#x5DB;&#x5D7;&#x5D5;&#x5DC;&#x5D9;&#x5DD;">
+                      <img id="video-img" src="https://api.aiq-magazine.com/assets/UploadImages/da0e49e40ced6814954055a93baf734e_600_360_1128201910924PM.jpg" alt="&#x5DB;&#x5EA;&#x5D1;&#x5EA; &#x5E2;&#x5D9;&#x5EA;&#x5D5;&#x5DF; &#x5D1;&#x5D9;&#x5D8;&#x5D5;&#x5D7; &#x5D7;&#x5D9;&#x5D9;&#x5DD; - &#x5E8;&#x5E4;&#x5D5;&#x5E8;&#x5DE;&#x5D4;">
                       <div id="video-mask" class="mask"></div>
                       <i id="video-play" class="fal fa-play-circle"></i>
                       <iframe id="video-player" class="video-player" src="https://www.youtube-nocookie.com/embed/Y4e4NSgGoR0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -210,7 +196,7 @@
                 <div class="video-info-container">
                   <div class="row">
                     <div class="col-6 tool-panel text-left">
-                      <div class="addthis_inline_share_toolbox_oiqz" data-url="https://localhost:44391/Videos/v-1"></div>
+                      <div class="addthis_inline_share_toolbox_oiqz"></div>
                     </div>
                     <div class="col-6 tool-panel text-right">
                                             <span>
@@ -220,8 +206,8 @@
                     </div>
                   </div>
                 </div>
-                <p class="title">Video H1 - 1</p>
-                <span class="sub-title">Video H2 - 1</span>
+                <h1 class="title">Video H1 - 4</h1>
+                <h2 class="sub-title">Video H2 - 4</h2>
                 <div class="text">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Justo nec ultrices dui sapien. Lorem ipsum dolor sit amet consectetur adipiscing elit. Habitant morbi tristique senectus et netus. Sit amet justo donec enim. Ac tortor vitae purus faucibus ornare suspendisse sed. Egestas diam in arcu cursus euismod quis viverra nibh. Pellentesque adipiscing commodo elit at. Venenatis tellus in metus vulputate eu scelerisque. Sit amet aliquam id diam maecenas. Adipiscing bibendum est ultricies integer quis auctor elit sed.
                 </div>
@@ -233,37 +219,19 @@
     </div>
   </section>
 
+
   <section class="video-list">
     <div class="container container-lg">
       <div class="row">
         <div class="col-12">
-          <h2 class="section-title">
-            <span>Most popular</span>
+          <h3 class="section-title">
+            <span>Related Videos</span>
             <i class="decoration-element"></i>
-          </h2>
+          </h3>
         </div>
       </div>
       <div class="row video-items-container">
 
-        <div class="col-auto video-item-col">
-          <a href="Videos/v-4">
-            <div class="video-item">
-              <div class="video-container small-video">
-                <!-- 16:9 aspect ratio -->
-                <div class="embed-responsive embed-responsive-16by9">
-                  <div class="link-mask"></div>
-                  <img src="https://api.aiq-magazine.com/assets/UploadImages/da0e49e40ced6814954055a93baf734e_600_360_1128201910924PM.jpg" alt="&#x5DB;&#x5EA;&#x5D1;&#x5EA; &#x5E2;&#x5D9;&#x5EA;&#x5D5;&#x5DF; &#x5D1;&#x5D9;&#x5D8;&#x5D5;&#x5D7; &#x5D7;&#x5D9;&#x5D9;&#x5DD; - &#x5E8;&#x5E4;&#x5D5;&#x5E8;&#x5DE;&#x5D4;">
-                  <i class="fal fa-play-circle"></i>
-                  <div class="mask"></div>
-                </div>
-              </div>
-              <div class="video-info">
-                <span class="sub-title">Video Teaser - 4</span>
-                <span class="text">Video H2 - 4</span>
-              </div>
-            </div>
-          </a>
-        </div>
         <div class="col-auto video-item-col">
           <a href="Videos/v-1">
             <div class="video-item">
@@ -277,8 +245,27 @@
                 </div>
               </div>
               <div class="video-info">
-                <span class="sub-title">Video Teaser - 1</span>
+                <span class="sub-title font-weight-black">Video Teaser - 1</span>
                 <span class="text">Video H2 - 1</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-auto video-item-col">
+          <a href="Videos/v-2">
+            <div class="video-item">
+              <div class="video-container small-video">
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <div class="link-mask"></div>
+                  <img src="https://api.aiq-magazine.com/assets/UploadImages/fd0eea63b58a981bee4ee3d92fba4c53_600_360_1162019113738AM.jpg" alt=" &#x5D8;&#x5D1;&#x5DC;&#x5EA; &#x5D4;&#x5E9;&#x5D5;&#x5D5;&#x5D0;&#x5D4; &#x5E8;&#x5E4;&#x5D5;&#x5E8;&#x5DE;&#x5EA; &#x5D4;&#x5D1;&#x5E8;&#x5D9;&#x5D0;&#x5D5;&#x5EA; &#x5D0;&#x5D3;&#x5D5;&#x5DD;">
+                  <i class="fal fa-play-circle"></i>
+                  <div class="mask"></div>
+                </div>
+              </div>
+              <div class="video-info">
+                <span class="sub-title font-weight-black">Video Teaser - 2</span>
+                <span class="text">Video H2 - 2</span>
               </div>
             </div>
           </a>
@@ -296,63 +283,8 @@
                 </div>
               </div>
               <div class="video-info">
-                <span class="sub-title">Video Teaser - 7</span>
+                <span class="sub-title font-weight-black">Video Teaser - 7</span>
                 <span class="text">Video H2 - 7</span>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-auto video-item-col">
-          <a href="Videos/v-2">
-            <div class="video-item">
-              <div class="video-container small-video">
-                <!-- 16:9 aspect ratio -->
-                <div class="embed-responsive embed-responsive-16by9">
-                  <div class="link-mask"></div>
-                  <img src="https://api.aiq-magazine.com/assets/UploadImages/fd0eea63b58a981bee4ee3d92fba4c53_600_360_1162019113738AM.jpg" alt=" &#x5D8;&#x5D1;&#x5DC;&#x5EA; &#x5D4;&#x5E9;&#x5D5;&#x5D5;&#x5D0;&#x5D4; &#x5E8;&#x5E4;&#x5D5;&#x5E8;&#x5DE;&#x5EA; &#x5D4;&#x5D1;&#x5E8;&#x5D9;&#x5D0;&#x5D5;&#x5EA; &#x5D0;&#x5D3;&#x5D5;&#x5DD;">
-                  <i class="fal fa-play-circle"></i>
-                  <div class="mask"></div>
-                </div>
-              </div>
-              <div class="video-info">
-                <span class="sub-title">Video Teaser - 2</span>
-                <span class="text">Video H2 - 2</span>
-              </div>
-            </div>
-          </a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="video-list">
-    <div class="container container-lg">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="section-title">
-            <span>Featured video</span>
-            <i class="decoration-element"></i>
-          </h2>
-        </div>
-      </div>
-      <div class="row video-items-container">
-
-        <div class="col-auto video-item-col">
-          <a href="Videos/v-2">
-            <div class="video-item">
-              <div class="video-container small-video">
-                <!-- 16:9 aspect ratio -->
-                <div class="embed-responsive embed-responsive-16by9">
-                  <div class="link-mask"></div>
-                  <img src="https://api.aiq-magazine.com/assets/UploadImages/fd0eea63b58a981bee4ee3d92fba4c53_600_360_1162019113738AM.jpg" alt=" &#x5D8;&#x5D1;&#x5DC;&#x5EA; &#x5D4;&#x5E9;&#x5D5;&#x5D5;&#x5D0;&#x5D4; &#x5E8;&#x5E4;&#x5D5;&#x5E8;&#x5DE;&#x5EA; &#x5D4;&#x5D1;&#x5E8;&#x5D9;&#x5D0;&#x5D5;&#x5EA; &#x5D0;&#x5D3;&#x5D5;&#x5DD;">
-                  <i class="fal fa-play-circle"></i>
-                  <div class="mask"></div>
-                </div>
-              </div>
-              <div class="video-info">
-                <span class="sub-title">Video Teaser - 2</span>
-                <span class="text">Video H2 - 2</span>
               </div>
             </div>
           </a>
@@ -370,27 +302,27 @@
                 </div>
               </div>
               <div class="video-info">
-                <span class="sub-title">Video Teaser - 3</span>
+                <span class="sub-title font-weight-black">Video Teaser - 3</span>
                 <span class="text">Video H2 - 3</span>
               </div>
             </div>
           </a>
         </div>
         <div class="col-auto video-item-col">
-          <a href="Videos/v-4">
+          <a href="Videos/v-8">
             <div class="video-item">
               <div class="video-container small-video">
                 <!-- 16:9 aspect ratio -->
                 <div class="embed-responsive embed-responsive-16by9">
                   <div class="link-mask"></div>
-                  <img src="https://api.aiq-magazine.com/assets/UploadImages/da0e49e40ced6814954055a93baf734e_600_360_1128201910924PM.jpg" alt="&#x5DB;&#x5EA;&#x5D1;&#x5EA; &#x5E2;&#x5D9;&#x5EA;&#x5D5;&#x5DF; &#x5D1;&#x5D9;&#x5D8;&#x5D5;&#x5D7; &#x5D7;&#x5D9;&#x5D9;&#x5DD; - &#x5E8;&#x5E4;&#x5D5;&#x5E8;&#x5DE;&#x5D4;">
+                  <img src="https://api.aiq-magazine.com/assets/UploadImages/4cf07011f839f5c444d71b2347980eb1_600_360_3_31_2020_9_23_53_AM.jpg" alt="bla alt">
                   <i class="fal fa-play-circle"></i>
                   <div class="mask"></div>
                 </div>
               </div>
               <div class="video-info">
-                <span class="sub-title">Video Teaser - 4</span>
-                <span class="text">Video H2 - 4</span>
+                <span class="sub-title font-weight-black">Video Teaser - 8</span>
+                <span class="text">Video H2 - 8</span>
               </div>
             </div>
           </a>
@@ -408,7 +340,7 @@
                 </div>
               </div>
               <div class="video-info">
-                <span class="sub-title">Video Teaser - 5</span>
+                <span class="sub-title font-weight-black">Video Teaser - 5</span>
                 <span class="text">Video H2 - 5</span>
               </div>
             </div>
@@ -427,46 +359,8 @@
                 </div>
               </div>
               <div class="video-info">
-                <span class="sub-title">Video Teaser - 6</span>
+                <span class="sub-title font-weight-black">Video Teaser - 6</span>
                 <span class="text">Video H2 - 6</span>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-auto video-item-col">
-          <a href="Videos/v-7">
-            <div class="video-item">
-              <div class="video-container small-video">
-                <!-- 16:9 aspect ratio -->
-                <div class="embed-responsive embed-responsive-16by9">
-                  <div class="link-mask"></div>
-                  <img src="https://api.aiq-magazine.com/assets/UploadImages/814ba1dc20739bf2e31377dff7b7261e_600_360_1112201975757AM.jpg" alt="&#x5D2;&#x5E8;&#x5E3; &#x5D4;&#x5E9;&#x5D5;&#x5D5;&#x5D0;&#x5EA;&#x5D9; &#x5D3;&#x5DE;&#x5D9; &#x5D1;&#x5D9;&#x5D8;&#x5D5;&#x5D7; &#x5D1;&#x5E8;&#x5D9;&#x5D0;&#x5D5;&#x5EA; &#x5D1;&#x5E2;&#x5E9;&#x5D5;&#x5E8; &#x5D4;&#x5D0;&#x5D7;&#x5E8;&#x5D5;&#x5DF; - &#x5DC;&#x5E4;&#x5D9; &#x5E9;&#x5E0;&#x5D9;&#x5DD;">
-                  <i class="fal fa-play-circle"></i>
-                  <div class="mask"></div>
-                </div>
-              </div>
-              <div class="video-info">
-                <span class="sub-title">Video Teaser - 7</span>
-                <span class="text">Video H2 - 7</span>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-auto video-item-col">
-          <a href="Videos/v-8">
-            <div class="video-item">
-              <div class="video-container small-video">
-                <!-- 16:9 aspect ratio -->
-                <div class="embed-responsive embed-responsive-16by9">
-                  <div class="link-mask"></div>
-                  <img src="https://api.aiq-magazine.com/assets/UploadImages/4cf07011f839f5c444d71b2347980eb1_600_360_3_31_2020_9_23_53_AM.jpg" alt="bla alt">
-                  <i class="fal fa-play-circle"></i>
-                  <div class="mask"></div>
-                </div>
-              </div>
-              <div class="video-info">
-                <span class="sub-title">Video Teaser - 8</span>
-                <span class="text">Video H2 - 8</span>
               </div>
             </div>
           </a>
@@ -484,14 +378,14 @@
                 </div>
               </div>
               <div class="video-info">
-                <span class="sub-title">Video Teaser - 9</span>
+                <span class="sub-title font-weight-black">Video Teaser - 9</span>
                 <span class="text">Video H2 - 9</span>
               </div>
             </div>
           </a>
         </div>
         <div class="col-auto video-item-col">
-          <a href="Videos/v-1">
+          <a href="Videos/bbbbx">
             <div class="video-item">
               <div class="video-container small-video">
                 <!-- 16:9 aspect ratio -->
@@ -503,82 +397,16 @@
                 </div>
               </div>
               <div class="video-info">
-                <span class="sub-title">Video Teaser - 1</span>
-                <span class="text">Video H2 - 1</span>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-auto video-item-col">
-          <a href="Videos/v-2">
-            <div class="video-item">
-              <div class="video-container small-video">
-                <!-- 16:9 aspect ratio -->
-                <div class="embed-responsive embed-responsive-16by9">
-                  <div class="link-mask"></div>
-                  <img src="https://api.aiq-magazine.com/assets/UploadImages/fd0eea63b58a981bee4ee3d92fba4c53_600_360_1162019113738AM.jpg" alt=" &#x5D8;&#x5D1;&#x5DC;&#x5EA; &#x5D4;&#x5E9;&#x5D5;&#x5D5;&#x5D0;&#x5D4; &#x5E8;&#x5E4;&#x5D5;&#x5E8;&#x5DE;&#x5EA; &#x5D4;&#x5D1;&#x5E8;&#x5D9;&#x5D0;&#x5D5;&#x5EA; &#x5D0;&#x5D3;&#x5D5;&#x5DD;">
-                  <i class="fal fa-play-circle"></i>
-                  <div class="mask"></div>
-                </div>
-              </div>
-              <div class="video-info">
-                <span class="sub-title">Video Teaser - 2</span>
-                <span class="text">Video H2 - 2</span>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-auto video-item-col">
-          <a href="Videos/v-3">
-            <div class="video-item">
-              <div class="video-container small-video">
-                <!-- 16:9 aspect ratio -->
-                <div class="embed-responsive embed-responsive-16by9">
-                  <div class="link-mask"></div>
-                  <img src="https://api.aiq-magazine.com/assets/UploadImages/ecea6e3cc6c3efa892beb69ca117a195_600_360_122201911527PM.jpg" alt="&#x5E9;&#x5D8;&#x5E8;&#x5D5;&#x5EA; &#x5E9;&#x5DC; &#x5DE;&#x5D0;&#x5D4; &#x5E9;&quot;&#x5D7; &#x5D5;&#x5D1;&#x5D9;&#x5EA; &#x5DE;&#x5E2;&#x5D5;&#x5E6;&#x5D1; &#x5DE;&#x5E9;&#x5D8;&#x5E8;&#x5D9; 200 &#x5E9;&quot;&#x5D7; &#x5DB;&#x5D7;&#x5D5;&#x5DC;&#x5D9;&#x5DD;">
-                  <i class="fal fa-play-circle"></i>
-                  <div class="mask"></div>
-                </div>
-              </div>
-              <div class="video-info">
-                <span class="sub-title">Video Teaser - 3</span>
-                <span class="text">Video H2 - 3</span>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-auto video-item-col">
-          <a href="Videos/v-4">
-            <div class="video-item">
-              <div class="video-container small-video">
-                <!-- 16:9 aspect ratio -->
-                <div class="embed-responsive embed-responsive-16by9">
-                  <div class="link-mask"></div>
-                  <img src="https://api.aiq-magazine.com/assets/UploadImages/da0e49e40ced6814954055a93baf734e_600_360_1128201910924PM.jpg" alt="&#x5DB;&#x5EA;&#x5D1;&#x5EA; &#x5E2;&#x5D9;&#x5EA;&#x5D5;&#x5DF; &#x5D1;&#x5D9;&#x5D8;&#x5D5;&#x5D7; &#x5D7;&#x5D9;&#x5D9;&#x5DD; - &#x5E8;&#x5E4;&#x5D5;&#x5E8;&#x5DE;&#x5D4;">
-                  <i class="fal fa-play-circle"></i>
-                  <div class="mask"></div>
-                </div>
-              </div>
-              <div class="video-info">
-                <span class="sub-title">Video Teaser - 4</span>
-                <span class="text">Video H2 - 4</span>
+                <span class="sub-title font-weight-black">2x</span>
+                <span class="text">4x</span>
               </div>
             </div>
           </a>
         </div>
 
       </div>
-
-      <div class="row view-more-container m-t-30 m-b-30">
-        <div class="col-auto mx-auto">
-          <a href="https://localhost:44391/Videos/ExploreMore"><div class="brand-btn big">Explore More Videos<i class="far fa-chevron-right"></i></div></a>
-        </div>
-      </div>
-
     </div>
   </section>
-
-  <!-- video-list-with-cat -->
 
   <section class="services">
     <div class="container container-lg">
@@ -651,6 +479,8 @@
   </section>
 </main>
 
+
+
 <footer class="page-footer">
   <div class="footer-container page-footer-main">
     <div class="row">
@@ -721,16 +551,20 @@
                     <i class="fad fa-user"></i>
                     <input type="text" class="form-control" placeholder="Full name">
                 </div>-->
-                <div class="form-group position-relative mt-2">
+                <div class="form-group position-relative mt-2 d-none">
                   <i class="fad fa-envelope"></i>
                   <input type="email" id="NewsletterEmail" name="NewsletterEmail" class="form-control email" placeholder="Enter your Email">
-                  <button type="button" class="btn-subscribe" onclick="javascript: JoinNewsletter();">Subscribe
-                    <span id="NewsletterSpiner" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span></button>
-
+                  <button type="button" id="NewsletterBtn" class="btn-subscribe" onclick="javascript: JoinNewsletter();">
+                    Subscribe
+                    <span id="NewsletterSpinner" class="spinner-border spinner-border-sm" style="display:none;"></span>
+                  </button>
                 </div>
-                <span class="error-message system-color-14" id="NewsletterError">
-                  Please enter email address
-                </span>
+                <div class="form-group position-relative mt-2">
+                  <button type="button" id="NewsletterBtn" class="btn-subscribe">
+                    asdasd asd asdsa dsad
+                  </button>
+                </div>
+                <span id="NewsletterError" class="error-message system-color-14" style="display:none;"></span>
               </div>
             </div>
           </div>
@@ -779,15 +613,6 @@
     </div>
   </div>
 </footer>
-<script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous">
-</script>
-<script src="assets/scss/vendor/slick/slick.min.js"></script>
-<script src="assets/js/slick.js"></script>
-<script src="assets/js/header.js"></script>
-<script src="assets/js/main.js"></script>
-
+<div class="back-layer"></div>
 </body>
 </html>

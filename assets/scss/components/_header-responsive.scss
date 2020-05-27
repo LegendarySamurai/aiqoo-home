@@ -1,8 +1,4 @@
 .header {
-  @media(max-width: 1899px) {
-
-  }
-
   @media(max-width: 1599px) {
     .container-lg {
       max-width: initial;
@@ -264,13 +260,6 @@
       }
     }
 
-    //.login-network {
-    //  width: 110px;
-    //  height: 36px;
-    //  margin-left: auto;
-    //  padding: 0 10px;
-    //}
-
     .dropdown-menu-container {
       position: fixed;
       top: 0;
@@ -446,24 +435,6 @@
       padding: 0 15px !important;
     }
 
-    .header-content {
-
-    }
-
-    //.login-network {
-    //  flex-shrink: 0;
-    //  width: 110px;
-    //  padding: 0 8px;
-    //
-    //  span {
-    //    font-size: 10pt;
-    //  }
-    //
-    //  img {
-    //    width: 14px;
-    //  }
-    //}
-
     .search {
       .form-group {
         input {
@@ -561,16 +532,6 @@
         animation-play-state: running;
       }
     }
-
-    //.login-network {
-    //  display: none;
-    //}
-
-    //.dropdown-menu-header {
-    //  .login-network {
-    //    display: flex;
-    //  }
-    //}
   }
 
   @media(max-width: 374px) {

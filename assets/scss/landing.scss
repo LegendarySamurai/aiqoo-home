@@ -14,8 +14,13 @@
     bottom: 0;
   }
 
+  // Reasons
+  .reasons {
+    margin-top: 4vh;
+  }
+
   .categories {
-    background: #fff;
+    background-color: #fff;
     background-image: none;
   }
 
@@ -31,16 +36,6 @@
       font-family: $h-font;
       font-weight: 500;
       color: $text-color;
-    }
-
-    .why-us {
-      position: relative;
-      z-index: 100;
-
-      .reason {
-        font-family: $main-font;
-        color: $text-color;
-      }
     }
 
     .bottom-mask {
