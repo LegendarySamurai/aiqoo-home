@@ -321,42 +321,6 @@
     .activity {
       order: 2;
     }
-
-    .pagination-outer {
-      order: 3;
-    }
-
-    .pagination-container {
-      padding: 0 16px;
-
-      .title {
-        font-size: 13pt;
-      }
-
-      .page-prev,
-      .page-next {
-        margin: 0 15px;
-
-        i {
-          font-size: 16pt;
-        }
-      }
-
-      .pagination {
-        width: calc(100% - 8vw);
-        overflow: hidden;
-        padding: 15px 0;
-        font-size: 10pt;
-      }
-
-      .page-item {
-        padding: 10px 0;
-      }
-
-      .page-link {
-        padding: 0 8px;
-      }
-    }
   }
 
   @media only screen and (min-width: 300px) and (max-width: 991px) {
@@ -669,36 +633,6 @@
         padding: 0;
       }
     }
-
-    .pagination-container {
-      padding: 0 16px;
-
-      .title {
-        font-size: 9pt;
-      }
-
-      .page-prev,
-      .page-next {
-        margin: 0 8px;
-
-        i {
-          font-size: 16pt;
-        }
-      }
-
-      .pagination {
-        padding: 15px 0;
-        font-size: 10pt;
-      }
-
-      .page-item {
-        padding: 10px 0;
-      }
-
-      .page-link {
-        padding: 0 8px;
-      }
-    }
   }
 
   @media(min-width: 1200px) {
@@ -706,23 +640,6 @@
       .pros-content {
         padding: 5px 0 15px;
       }
-    }
-
-    .pagination-container {
-      padding: 0 36px;
-    }
-
-    .pagination {
-      width: 100%;
-    }
-
-    .page-prev,
-    .page-next {
-      margin: 0 15px;
-    }
-
-    .title {
-      font-size: 13pt;
     }
   }
 
@@ -751,27 +668,6 @@
       .pros-list-container {
         .pros-card {
           padding: 32px;
-        }
-      }
-
-      .page-prev,
-      .page-next {
-        margin: 0 15px;
-
-        i {
-          font-size: 16pt;
-        }
-      }
-
-      .pagination {
-        font-size: 13pt;
-      }
-
-      .page-item {
-        padding: 10px 0;
-
-        .page-link {
-          padding: 0 10px;
         }
       }
 

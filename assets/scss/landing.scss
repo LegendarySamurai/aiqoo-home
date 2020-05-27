@@ -263,67 +263,6 @@
       font-weight: 400;
       color: #aeb0b3;
     }
-
-    .pagination-container {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
-      width: 100%;
-      overflow: hidden;
-      background-color: $text-color;
-
-      .title {
-        display: block;
-        font-family: $h-font;
-        color: #fff;
-      }
-
-      .pagination-inner {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-
-        .page-prev,
-        .page-next {
-          display: block;
-
-          i {
-            color: #fff;
-          }
-        }
-
-        .pagination {
-          display: flex;
-          flex-direction: row;
-          justify-content: flex-start;
-          align-items: center;
-        }
-
-        .page-item {
-          &:not(:last-of-type) {
-            .page-link {
-              border-right: 1px solid red;
-            }
-          }
-
-          &:hover,
-          &.active {
-            background-color: #ebe2d3;
-
-            .page-link {
-              border-right-color: transparent;
-            }
-          }
-
-          .page-link {
-            font-family: $h-font;
-            color: #fff;
-          }
-        }
-      }
-    }
   }
 
   .view-more-container {
