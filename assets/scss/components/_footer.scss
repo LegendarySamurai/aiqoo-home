@@ -40,7 +40,6 @@
   .news-letter-wrap {
     .image-container {
       width: 35px;
-      margin: 0 auto;
     }
   }
 
@@ -275,7 +274,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 120px;
+      //width: 120px;
+      width: auto;
       height: 35px;
       border-radius: 1px;
       background-color: #d8cdba;
@@ -297,10 +297,11 @@
 }
 
 .spinner-border {
-  position: absolute;
-  right: .5vw;
-  top: 15%;
-  display: inline-block;
+  //position: absolute;
+  //right: .5vw;
+  //top: 15%;
+  display: block;
+  margin-left: 10px;
   width: 1.5rem;
   height: 1.5rem;
   vertical-align: text-bottom;
