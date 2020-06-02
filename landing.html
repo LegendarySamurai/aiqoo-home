@@ -17,7 +17,8 @@
   <link rel="stylesheet" href="assets/css/landing-responsive.css" />
   <link rel="stylesheet" href="assets/css/web-responsive.css"/>
 
-  <script defer type="text/javascript" src="assets/js/main.js?v=0.01"></script>
+    <script defer type="text/javascript" src="assets/js/main.js?v=0.01"></script>
+    <script defer type="text/javascript" src="assets/js/funnels_0.6.js?v=0.01"></script>
 </head>
 <body>
 
@@ -156,720 +157,687 @@
 
 <main class="landing-page">
 
-  <section class="head-section position-relative">
-    <div class="head-section-container container-fluid container-lg">
-      <div class="row display-flex-center">
-        <div class="col-12 head-section-content">
-          <div class="head-section-content-inner position-relative">
-            <h1 class="section-title text-center">
-              We will find you the best suited.
-              Home Renovation expert in <span class="font-weight-black">Orange County</span>
-            </h1>
-
-            <aiq-funnel id="f_display_1" _index="1">
-              <div class="funnel-card">
-                <h2>Please give us a few details so we can connect you with the best pros</h2>
-                <div class="indicator"><li /><li /><li /></div>
-              </div>
-            </aiq-funnel>
-            <script id="f_data_1" type="text/json">
+    <section class="head-section position-relative">
+        <div class="head-section-container container-fluid container-lg">
+            <div class="row display-flex-center">
+                <div class="col-12 head-section-content">
+                    <div class="head-section-content-inner position-relative">
+                        <h1>We will find you the best suited Home Security expert</h1>
+                        <aiq-funnel id="f_display_1" _index="1">
+                            <div class="funnel-card">
+                                <h2>Please give us a few details so we can connect you with the best pros</h2>
+                                <div class="indicator"><li /><li /><li /></div>
+                            </div>
+                        </aiq-funnel>
+                        <script id="f_data_1" type="text/json">
                             {
                             "funnelUid": "roofing",
                             "initVerticalID": 1,
-                            "initSubVerticalID": 1,
-                            "initSubCategoryID": @ViewData["_subCategory"],
-                            "initServiceID": @ViewData["_service"],
-                            "initZipCode": "@ViewData["_zip"]",
+                            "initCategoryID": 76,
+                            "initSubCategoryID": 0,
+                            "initServiceID": 0,
+                            "initZipCode": "",
                             "funnelHeadline": "Please give us a few details so we can connect you with the best pros",
-                            "tags": "Roofing, Financing",
+                            "tags": "76,",
                             "currentStepIndex": 0,
                             "currentProgressBar": 0,
-                            "stepsList": [
-
-
-                            {
-                            "stepType": "subCategories",
-                            "headline": "Select category you want:",
-                            "options": [
-                            {
-                            "id": "__Cat_1__",
-                            "icon": "eject",
-                            "text": "Cat 1",
-                            "value": 1
-                            },
-                            {
-                            "id": "__Cat_2__",
-                            "icon": "eject",
-                            "text": "Cat 2",
-                            "value": 2
-                            },
-                            {
-                            "id": "__Cat_3__",
-                            "icon": "eject",
-                            "text": "Cat 3",
-                            "value": 3
-                            }
-                            ,
-                            {
-                            "id": "__Cat_4__",
-                            "icon": "eject",
-                            "text": "Cat 4",
-                            "value": 4
-                            }
-                            ],
-                            "progressMark": 0,
-                            "displayState" : ""
-                            },
-                            {
-                            "stepType": "servicesByCat",
-                            "headline": "Select required service By Cat:",
-                            "options": [
-                            {
-                            "id": "__1_Service1__",
-                            "icon": "eject",
-                            "text": "cat 1 - Service 1",
-                            "value": 1,
-                            "catID": 1
-                            },
-                            {
-                            "id": "__1_Service2__",
-                            "icon": "build",
-                            "text": "cat 1 - Service2",
-                            "value": 2,
-                            "catID": 1
-                            },
-                            {
-                            "id": "__2_Service1__",
-                            "icon": "eject",
-                            "text": "cat 2 - Service 1",
-                            "value": 3,
-                            "catID": 2
-                            },
-                            {
-                            "id": "__2_Service2__",
-                            "icon": "build",
-                            "text": "cat 2 - Service2",
-                            "value": 4,
-                            "catID": 2
-                            }
-                            ],
-                            "progressMark": 0,
-                            "displayState" : ""
-                            },
-
-                            {
-                            "stepType": "qa",
-                            "headline": "Select required service:",
-                            "options": [
-                            {
-                            "id": "__Roof_Replacement_3__",
-                            "icon": "eject",
-                            "text": "Roof Replacement",
-                            "qID": 2,
-                            "aID": 3
-                            },
-                            {
-                            "id": "__Roof_Repair_4__",
-                            "icon": "build",
-                            "text": "Roof Repair",
-                            "qID": 2,
-                            "aID": 4
-                            }
-                            ],
-                            "progressMark": 0,
-                            "displayState" : ""
-                            },
-
-                            {
-                            "stepType": "fullServices",
-                            "headline": "Select required service:",
-                            "options": [
-                            {
-                            "id": "__Service1__",
-                            "icon": "eject",
-                            "text": "Service1",
-                            "value": 1
-                            },
-                            {
-                            "id": "__Service2__",
-                            "icon": "build",
-                            "text": "Service2",
-                            "value": 2
-                            }
-                            ],
-                            "progressMark": 0,
-                            "displayState" : ""
-                            },
-                            {
-                            "stepType": "zipCode",
-                            "headline": "Enter your Zip code:",
-                            "progressMark": 20,
-                            "displayState" : ""
-                            },
-
-
-                            {
-                            "stepType": "fullName",
-                            "headline": "Please enter your full name:",
-                            "progressMark": 40,
-                            "displayState" : ""
-                            },
-                            {
-                            "stepType": "phone",
-                            "headline": "Enter your contact number:",
-                            "progressMark": 50,
-                            "displayState" : ""
-                            },
-                            {
-                            "stepType": "postLead",
-                            "progressMark": 55,
-                            "displayState" : ""
-                            },
-                            {
-                            "stepType": "qa",
-                            "headline": "Are you the homeowner?",
-                            "options": [
-                            {
-                            "id": "__Yes_IAm_1__",
-                            "icon": "home",
-                            "text": "Yes, I am",
-                            "qID": 1,
-                            "aID": 1
-                            },
-                            {
-                            "id": "__No_Im_not_2__",
-                            "icon": "no_sim",
-                            "text": "No, I'm not",
-                            "qID": 1,
-                            "aID": 2
-                            }
-                            ],
-                            "progressMark": 60,
-                            "displayState" : ""
-                            },
-                            {
-                            "stepType": "postLead",
-                            "progressMark": 60,
-                            "displayState" : ""
-                            },
-                            {
-                            "stepType": "qa",
-                            "headline": "Required project start date:",
-                            "options": [
-                            {
-                            "id": "__Ready_To_Hire_139__",
-                            "icon": "access_alarms",
-                            "text": "Ready To Hire",
-                            "qID": 17,
-                            "aID": 139
-                            },
-                            {
-                            "id": "__Flexible_140__",
-                            "icon": "calendar_today",
-                            "text": "Flexible",
-                            "qID": 17,
-                            "aID": 140
-                            }
-                            ],
-                            "progressMark": 70,
-                            "displayState" : ""
-                            },
-                            {
-                            "stepType": "qa",
-                            "headline": "Are you interested in financing?",
-                            "options": [
-                            {
-                            "id": "__Yes_I_am_7__",
-                            "icon": "check_box",
-                            "text": "Yes, I am",
-                            "qID": 4,
-                            "aID": 7
-                            },
-                            {
-                            "id": "__No_Im_not_8__",
-                            "icon": "indeterminate_check_box",
-                            "text": "No, I'm not",
-                            "qID": 4,
-                            "aID": 8
-                            }
-                            ],
-                            "progressMark": 80,
-                            "displayState" : ""
-                            },
-                            {
-                            "stepType": "postLead",
-                            "progressMark": 80,
-                            "displayState" : ""
-                            },
-                            {
-                            "stepType": "needFinancingQa",
-                            "headline": "",
-                            "progressMark": 85,
-                            "displayState" : "",
-                            "conditional": true
-                            },
-                            {
-                            "stepType": "qa",
-                            "headline": "How many pros do you wish to consult with?",
-                            "options": [
-                            {
-                            "id": "__Up_to_2_Pros_229__",
-                            "icon": "looks_two",
-                            "text": "Up to 2 Pros",
-                            "qID": 41,
-                            "aID": 229
-                            },
-                            {
-                            "id": "__3-4_Pros_230__",
-                            "icon": "looks_4",
-                            "text": "3 or 4 Pros",
-                            "qID": 41,
-                            "aID": 230
-                            }
-                            ],
-                            "progressMark": 90,
-                            "displayState" : ""
-                            },
-                            {
-                            "stepType": "postLead",
-                            "progressMark": 90,
-                            "displayState" : ""
-                            },
-                            {
-                            "stepType": "additionalDetails",
-                            "headline": "Thanks, \n completing the additional, optional data \n will assist us in providing you withfast, accurate service:",
-                            "progressMark": 95,
-                            "displayState" : ""
-                            },
-                            {
-                            "stepType": "postLead",
-                            "progressMark": 95,
-                            "displayState" : ""
-                            },
-                            {
-                            "stepType": "finish",
-                            "headline": "Thank you\nWe have successfully received your information.\nCertified local pros will contact you shortly.",
-                            "progressMark": 100,
-                            "displayState" : ""
-                            }
-                            ]
+                            "stepsList": [{"stepType": "subCategories","headline": "Select category you want:","options": [{"id": "__Cat_1__","icon": "eject","text": "Cat 1","value": 1},{"id": "__Cat_2__","icon": "eject","text": "Cat 2","value": 2},{"id": "__Cat_3__","icon": "eject","text": "Cat 3","value": 3},{"id": "__Cat_4__","icon": "eject","text": "Cat 4","value": 4}],"progressMark": 0,"displayState" : ""},{"stepType": "servicesByCat","headline": "Select required service By Cat:","options": [{"id": "__1_Service1__","icon": "eject","text": "cat 1 - Service 1","value": 1,"catID": 1},{"id": "__1_Service2__","icon": "build","text": "cat 1 - Service2","value": 2,"catID": 1},{"id": "__2_Service1__","icon": "eject","text": "cat 2 - Service 1","value": 3,"catID": 2},{"id": "__2_Service2__","icon": "build","text": "cat 2 - Service2","value": 4,"catID": 2}],"progressMark": 0,"displayState" : ""},{"stepType": "qa","headline": "Select required service:","options": [{"id": "__Roof_Replacement_3__","icon": "eject","text": "Roof Replacement","qID": 2,"aID": 3},{"id": "__Roof_Repair_4__","icon": "build","text": "Roof Repair","qID": 2,"aID": 4}],"progressMark": 0,"displayState" : ""},{"stepType": "fullServices","headline": "Select required service:","options": [{"id": "__Service1__","icon": "eject","text": "Service1","value": 1},{"id": "__Service2__","icon": "build","text": "Service2","value": 2}],"progressMark": 0,"displayState" : ""},{"stepType": "zipCode","headline": "Enter your Zip code:","progressMark": 20,"displayState" : ""},{"stepType": "fullName","headline": "Please enter your full name:","progressMark": 40,"displayState" : ""},{"stepType": "phone","headline": "Enter your contact number:","progressMark": 50,"displayState" : ""},{"stepType": "postLead","progressMark": 55,"displayState" : ""},{"stepType": "qa","headline": "Are you the homeowner?","options": [{"id": "__Yes_IAm_1__","icon": "home","text": "Yes, I am","qID": 1,"aID": 1},{"id": "__No_Im_not_2__","icon": "no_sim","text": "No, I'm not","qID": 1,"aID": 2}],"progressMark": 60,"displayState" : ""},{"stepType": "postLead","progressMark": 60,"displayState" : ""},{"stepType": "qa","headline": "Required project start date:","options": [{"id": "__Ready_To_Hire_139__","icon": "access_alarms","text": "Ready To Hire","qID": 17,"aID": 139},{"id": "__Flexible_140__","icon": "calendar_today","text": "Flexible","qID": 17,"aID": 140}],"progressMark": 70,"displayState" : ""},{"stepType": "qa","headline": "Are you interested in financing?","options": [{"id": "__Yes_I_am_7__","icon": "check_box","text": "Yes, I am","qID": 4,"aID": 7},{"id": "__No_Im_not_8__","icon": "indeterminate_check_box","text": "No, I'm not","qID": 4,"aID": 8}],"progressMark": 80,"displayState" : ""},{"stepType": "postLead","progressMark": 80,"displayState" : ""},{"stepType": "needFinancingQa","headline": "","progressMark": 85,"displayState" : "","conditional": true},{"stepType": "qa","headline": "How many pros do you wish to consult with?","options": [{"id": "__Up_to_2_Pros_229__","icon": "looks_two","text": "Up to 2 Pros","qID": 41,"aID": 229},{"id": "__3-4_Pros_230__","icon": "looks_4","text": "3 or 4 Pros","qID": 41,"aID": 230}],"progressMark": 90,"displayState" : ""},{"stepType": "postLead","progressMark": 90,"displayState" : ""},{"stepType": "additionalDetails","headline": "Thanks, \n completing the additional, optional data \n will assist us in providing you withfast, accurate service:","progressMark": 95,"displayState" : ""},{"stepType": "postLead","progressMark": 95,"displayState" : ""},{"stepType": "finish","headline": "Thank you\nWe have successfully received your information.\nCertified local pros will contact you shortly.","progressMark": 100,"displayState" : ""}]
                             }
                         </script>
 
-            <!-- Reasons -->
-            <div class="reasons"> <!--  up-600-flex -->
-              <div class="reason licensed">
-                <img class="reason-icon" src="assets/images/header/licensed.png" alt="Licensed Icon" title="Licensed Icon" />
-                <div class="headings">
-                  <span>Licensed</span>
-                  <p>Certified and insured</p>
-                </div>
+                        <!-- Reasons -->
+                        <div class="reasons">
+                            <!--  up-600-flex -->
+                            <div class="reason licensed">
+                                <img class="reason-icon" src="assets/images/header/licensed.png" alt="Licensed Icon" title="Licensed Icon" />
+                                <div class="headings">
+                                    <span>Licensed </span>
+                                    <p>Certified and insured</p>
+                                </div>
 
-              </div>
+                            </div>
 
-              <div class="reason protected">
-                <img class="reason-icon" src="assets/images/header/protected.svg" alt="Approved Icon" title="Approved Icon" />
-                <div class="headings">
-                  <span>Approved</span>
-                  <p>Screened and vetted</p>
-                </div>
-              </div>
+                            <div class="reason protected">
+                                <img class="reason-icon" src="assets/images/header/protected.svg" alt="Approved Icon" title="Approved Icon" />
+                                <div class="headings">
+                                    <span>Approved</span>
+                                    <p>Screened and vetted</p>
+                                </div>
+                            </div>
 
-              <div class="reason rating">
-                <img class="reason-icon" src="assets/images/header/rating.png" alt="5 Star Rating Icon" title="5 Star Rating Icon" />
-                <div class="headings">
-                  <span>5 star rated</span>
-                  <p>Locally recommended</p>
-                </div>
-              </div>
+                            <div class="reason rating">
+                                <img class="reason-icon" src="assets/images/header/rating.png" alt="5 Star Rating Icon" title="5 Star Rating Icon" />
+                                <div class="headings">
+                                    <span>5 star rated</span>
+                                    <p>Locally recommended</p>
+                                </div>
+                            </div>
 
-              <div class="reason local">
-                <img class="reason-icon" src="assets/images/header/local.png" alt="Local Pros Icon" title="Local Pros Icon" />
-                <div class="headings">
-                  <span>Local</span>
-                  <p>Active and operating near you</p>
+                            <div class="reason local">
+                                <img class="reason-icon" src="assets/images/header/local.png" alt="Local Pros Icon" title="Local Pros Icon" />
+                                <div class="headings">
+                                    <span>Local</span>
+                                    <p>Active and operating near you</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-              </div>
+            </div>
+        </div>
+        <div class="bottom-mask"></div>
+    </section>
+
+    <div class="bg-container position-relative">
+        <section class="section-2">
+
+            <div class="container section-container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title-container">
+                            <span class="section-title-decoration left"></span>
+                            <h3 class="section-title">Roofing Services 33</h3>
+                            <span class="section-title-decoration right"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row list mt-3">
+                    <!--<div class="section-title-container">-->
+                    <!--  <span class="section-title-decoration left"></span>-->
+                    <!--  <h3 class="section-title">All Categories</h3>-->
+                    <!--  <span class="section-title-decoration right"></span>-->
+                    <!--</div>-->
+                    <div class="col-12 list-col">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                <a href="" class="list-col-item">Roofing<i class="fad fa-chevron-right"></i></a>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                <a href="" class="list-col-item">Sliding<i class="fad fa-chevron-right"></i></a>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                <a href="" class="list-col-item">Roofing<i class="fad fa-chevron-right"></i></a>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                <a href="" class="list-col-item">Roofing<i class="fad fa-chevron-right"></i></a>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                <a href="" class="list-col-item">Sliding<i class="fad fa-chevron-right"></i></a>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                <a href="" class="list-col-item">Roofing<i class="fad fa-chevron-right"></i></a>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                <a href="" class="list-col-item">Roofing<i class="fad fa-chevron-right"></i></a>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                <a href="" class="list-col-item">Sliding<i class="fad fa-chevron-right"></i></a>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                <a href="" class="list-col-item">Roofing<i class="fad fa-chevron-right"></i></a>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                <a href="" class="list-col-item">Heating & cooling/HVAC<i class="fad fa-chevron-right"></i></a>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                <a href="" class="list-col-item">Windows & Doors<i class="fad fa-chevron-right"></i></a>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                <a href="" class="list-col-item">Driveways & walks<i class="fad fa-chevron-right"></i></a>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                <a href="" class="list-col-item">Heating & cooling/HVAC<i class="fad fa-chevron-right"></i></a>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                <a href="" class="list-col-item">Windows & Doors<i class="fad fa-chevron-right"></i></a>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                <a href="" class="list-col-item">Driveways & walks<i class="fad fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-          </div>
-        </div>
-      </div>
+            <div class="container section-container d-none">
+                <div class="row">
+                    <div class="col-12 px-lg-0">
+                        <div class="newsletter-container">
+                            <div class="super-placeholder">
+                                <div class="newsletter-bg position-relative">
+                                    <img class="d-none d-lg-block" src="assets/images/landing/newsletter-bg.png" alt="newsletter-bg">
+                                </div>
+                                <span class="newsletter-text">
+                                    Want tips on how to <span class="font-weight-bold">preserve the roof?</span>
+                                    Leave details and join our newsletter
+                                </span>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group position-relative">
+                                    <input class="form-control" type="text" placeholder="">
+                                    <div class="placeholder icon-dark">
+                                        <i class="fal fa-envelope"></i>
+                                        <span>Email</span>
+                                    </div>
+                                </div>
+                                <button class="send" type="button">
+                                    Send
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-search-pro">
+            <div class="container section-container search-pros-inner">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="logo-container d-flex">
+                            <div class="logo">
+                                <img src="assets/images/logo/logo-dark.svg" alt="logo dark">
+                            </div>
+                            <div class="logo-title">
+                                Index
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 d-none d-600-block">
+                        <div class="search">
+                            <div class="form-group position-relative">
+                                <input class="form-control" type="text" placeholder="Search">
+                                <i class="far fa-search icon-dark"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row py-3 pb-lg-0 pros-container">
+                    <div class="col-12 col-lg-8 pros">
+                        <div class="pros-list-container mb-3">
+                            <div class="pros-card position-relative">
+                                <div class="pros-info-container">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="pros-card-image">
+                                                <img src="assets/images/landing/pros-card-image.png" alt="pros-card-image">
+                                            </div>
+                                        </div>
+                                        <div class="col-9 pl-0 pl-lg-3">
+                                            <div class="pros-content">
+                                                <div class="pros-type">
+                                                    <span class="spec-type">Roof Repair Specialist</span>
+                                                    <img src="assets/images/landing/pros/specialist.png" alt="specialist">
+                                                </div>
+                                                <div class="pros-info">
+                                                    <div class="info">
+                                                        <div class="image-container">
+                                                            <img src="assets/images/landing/pros/verification.svg" alt="Verified">
+                                                        </div>
+                                                        <span class="">Verified License Roofing, Roof Inspectors</span>
+                                                    </div>
+                                                    <div class="info">
+                                                        <div class="image-container p-1">
+                                                            <img src="assets/images/landing/pros/maps-and-flags.svg" alt="location">
+                                                        </div>
+                                                        <span class="">California, Beach Road 220, USA</span>
+                                                    </div>
+                                                    <div class="info">
+                                                        <div class="image-container">
+                                                            <img src="assets/images/landing/pros/certified.jpg" alt="certified">
+                                                        </div>
+                                                        <span class="">Certified professionals</span>
+                                                    </div>
+                                                    <div class="info">
+                                                        <div class="image-container">
+                                                            <img src="assets/images/landing/pros/family.svg" alt="family">
+                                                        </div>
+                                                        <span class="">Family-owned & operated</span>
+                                                    </div>
+
+                                                    <div class="response-container">
+                                                        <div class="col-lg-6"></div>
+                                                        <div class="col-lg-6 response-container-inner">
+                                                            <div class="row justify-content-center">
+
+                                                                <span class="request-a-quote-btn">Request a Quote 33</span>
+
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="pros-list-container mb-3">
+                            <div class="pros-card position-relative">
+                                <div class="pros-info-container">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="pros-card-image">
+                                                <img src="assets/images/landing/pros-card-image.png" alt="pros-card-image">
+                                            </div>
+                                        </div>
+                                        <div class="col-9 pl-0 pl-lg-3">
+                                            <div class="pros-content">
+                                                <div class="pros-type">
+                                                    <span class="spec-type">Roof Repair Specialist</span>
+                                                    <img src="assets/images/landing/pros/specialist.png" alt="specialist">
+                                                </div>
+                                                <div class="pros-info">
+                                                    <div class="info">
+                                                        <div class="image-container">
+                                                            <img src="assets/images/landing/pros/verification.svg" alt="Verified">
+                                                        </div>
+                                                        <span class="">Verified License Roofing, Roof Inspectors</span>
+                                                    </div>
+                                                    <div class="info">
+                                                        <div class="image-container p-1">
+                                                            <img src="assets/images/landing/pros/maps-and-flags.svg" alt="location">
+                                                        </div>
+                                                        <span class="">California, Beach Road 220, USA</span>
+                                                    </div>
+                                                    <div class="info">
+                                                        <div class="image-container">
+                                                            <img src="assets/images/landing/pros/certified.jpg" alt="certified">
+                                                        </div>
+                                                        <span class="">Certified professionals</span>
+                                                    </div>
+                                                    <div class="info">
+                                                        <div class="image-container">
+                                                            <img src="assets/images/landing/pros/family.svg" alt="family">
+                                                        </div>
+                                                        <span class="">Family-owned & operated</span>
+                                                    </div>
+
+                                                    <div class="response-container">
+                                                        <div class="col-lg-6"></div>
+                                                        <div class="col-lg-6 response-container-inner">
+                                                            <div class="row justify-content-center">
+
+                                                                <span class="request-a-quote-btn">Request a Quote 33</span>
+
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="pros-list-container mb-3">
+                            <div class="pros-card position-relative">
+                                <div class="pros-info-container">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="pros-card-image">
+                                                <img src="assets/images/landing/pros-card-image.png" alt="pros-card-image">
+                                            </div>
+                                        </div>
+                                        <div class="col-9 pl-0 pl-lg-3">
+                                            <div class="pros-content">
+                                                <div class="pros-type">
+                                                    <span class="spec-type">Roof Repair Specialist</span>
+                                                    <img src="assets/images/landing/pros/specialist.png" alt="specialist">
+                                                </div>
+                                                <div class="pros-info">
+                                                    <div class="info">
+                                                        <div class="image-container">
+                                                            <img src="assets/images/landing/pros/verification.svg" alt="Verified">
+                                                        </div>
+                                                        <span class="">Verified License Roofing, Roof Inspectors</span>
+                                                    </div>
+                                                    <div class="info">
+                                                        <div class="image-container p-1">
+                                                            <img src="assets/images/landing/pros/maps-and-flags.svg" alt="location">
+                                                        </div>
+                                                        <span class="">California, Beach Road 220, USA</span>
+                                                    </div>
+                                                    <div class="info">
+                                                        <div class="image-container">
+                                                            <img src="assets/images/landing/pros/certified.jpg" alt="certified">
+                                                        </div>
+                                                        <span class="">Certified professionals</span>
+                                                    </div>
+                                                    <div class="info">
+                                                        <div class="image-container">
+                                                            <img src="assets/images/landing/pros/family.svg" alt="family">
+                                                        </div>
+                                                        <span class="">Family-owned & operated</span>
+                                                    </div>
+
+                                                    <div class="response-container">
+                                                        <div class="col-lg-6"></div>
+                                                        <div class="col-lg-6 response-container-inner">
+                                                            <div class="row justify-content-center">
+
+                                                                <span class="request-a-quote-btn">Request a Quote 33</span>
+
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 pl-0 pl-lg-3 activity d-none d-600-block">
+                        <div class="activity-areas">
+                            <div class="activity-areas-title font-weight-black">Activity areas</div>
+                            <div class="activity-areas-list">
+                                <div class="activity-area">Orlando</div>
+                                <div class="activity-area">Clarcona</div>
+                                <div class="activity-area">Tangerine Winter Park Zellwood</div>
+                                <div class="activity-area">Winter Park</div>
+                                <div class="activity-area">Windermere</div>
+                                <div class="activity-area">Winter Garden</div>
+                                <div class="activity-area">LA</div>
+                                <div class="activity-area">Killarney Oakland Ocoee</div>
+                                <div class="activity-area">Orlando</div>
+                                <div class="activity-area"> Gotha Killarney</div>
+                                <div class="activity-area">Orlando</div>
+                                <div class="activity-area">Orlando</div>
+                                <div class="activity-area"> Gotha Killarney</div>
+                                <div class="activity-area"> Gotha Killarney</div>
+                                <div class="activity-area">Orlando</div>
+                                <div class="activity-area">Orlando</div>
+                                <div class="activity-area">Orlando</div>
+                                <div class="activity-area"> Gotha Killarney</div>
+                                <div class="activity-area">Orlando</div>
+                                <div class="activity-area">Orlando</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-    <div class="bottom-mask"></div>
-  </section>
 
-  <div class="bg-container position-relative">
-    <section class="section-2">
-      <div class="container section-container">
-        <div class="row">
-          <div class="col-12">
-            <div class="section-title-container">
-              <span class="section-title-decoration left"></span>
-              <h3 class="section-title">Roofing Services</h3>
-              <span class="section-title-decoration right"></span>
-            </div>
-          </div>
-        </div>
-        <div class="row list mt-3">
-          <!--<div class="section-title-container">-->
-          <!--  <span class="section-title-decoration left"></span>-->
-          <!--  <h3 class="section-title">All Categories</h3>-->
-          <!--  <span class="section-title-decoration right"></span>-->
-          <!--</div>-->
-          <div class="col-12 list-col">
+    <section class="categories">
+        <div class="container section-container">
+            <!-- trending categories-->
             <div class="row">
-              <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
-                <a href="" class="list-col-item">Roofing<i class="fad fa-chevron-right"></i></a>
-              </div>
-              <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
-                <a href="" class="list-col-item">Sliding<i class="fad fa-chevron-right"></i></a>
-              </div>
-              <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
-                <a href="" class="list-col-item">Roofing<i class="fad fa-chevron-right"></i></a>
-              </div>
-              <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
-                <a href="" class="list-col-item">Roofing<i class="fad fa-chevron-right"></i></a>
-              </div>
-              <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
-                <a href="" class="list-col-item">Sliding<i class="fad fa-chevron-right"></i></a>
-              </div>
-              <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
-                <a href="" class="list-col-item">Roofing<i class="fad fa-chevron-right"></i></a>
-              </div>
-              <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
-                <a href="" class="list-col-item">Roofing<i class="fad fa-chevron-right"></i></a>
-              </div>
-              <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
-                <a href="" class="list-col-item">Sliding<i class="fad fa-chevron-right"></i></a>
-              </div>
-              <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
-                <a href="" class="list-col-item">Roofing<i class="fad fa-chevron-right"></i></a>
-              </div>
-              <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
-                <a href="" class="list-col-item">Heating & cooling/HVAC<i class="fad fa-chevron-right"></i></a>
-              </div>
-              <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
-                <a href="" class="list-col-item">Windows & Doors<i class="fad fa-chevron-right"></i></a>
-              </div>
-              <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
-                <a href="" class="list-col-item">Driveways & walks<i class="fad fa-chevron-right"></i></a>
-              </div>
-              <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
-                <a href="" class="list-col-item">Heating & cooling/HVAC<i class="fad fa-chevron-right"></i></a>
-              </div>
-              <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
-                <a href="" class="list-col-item">Windows & Doors<i class="fad fa-chevron-right"></i></a>
-              </div>
-              <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
-                <a href="" class="list-col-item">Driveways & walks<i class="fad fa-chevron-right"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 px-lg-0">
-            <div class="newsletter-container">
-              <div class="super-placeholder">
-                <div class="newsletter-bg position-relative">
-                  <img class="d-none d-lg-block" src="assets/images/landing/newsletter-bg.png" alt="newsletter-bg">
+                <!-- trending categories title -->
+                <div class="col-12">
+                    <div class="section-title-container section-title-container-trending-categories">
+                        <span class="section-title-decoration left"></span>
+                        <h3 class="section-title">Leading Categories 11</h3>
+                        <span class="section-title-decoration right"></span>
+                    </div>
                 </div>
-                <span class="newsletter-text">
-                  Want tips on how to <span class="font-weight-bold">preserve the roof?</span>
-                  Leave details and join our newsletter
-                </span>
-              </div>
-              <div class="form-group">
-                <div class="input-group position-relative">
-                  <input class="form-control" type="text" placeholder="">
-                  <div class="placeholder icon-dark">
-                    <i class="fal fa-envelope"></i>
-                    <span>Email</span>
+                <div class="col-12">
+                  <!-- trending categories list -->
+                  <div class="row list">
+
+                    <div class="col-4 col-lg-2 col-item">
+                      <div class="list-item-with-icon">
+                        <a href="c/bathroom_remodeling">
+                          <div class="list-item-icon">
+                            <img asp-append-version="true" class="bathroom" src="assets/images/categories/4.png" alt="Bathroom Icon" />
+                          </div>
+                          <h5>Bathroom Remodeling</h5>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="col-4 col-lg-2 col-item">
+                      <div class="list-item-with-icon">
+                        <a href="c/garages">
+                          <div class="list-item-icon">
+                            <img asp-append-version="true" class="garage-conversion" src="assets/images/categories/5.png" alt="Garage Icon" />
+                          </div>
+                          <h5>Garages</h5>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="col-4 col-lg-2 col-item">
+                      <div class="list-item-with-icon">
+                        <a href="c/air_conditioning_&_cooling">
+                          <div class="list-item-icon">
+                            <img asp-append-version="true" class="heating-cooling" src="assets/images/categories/3.png" alt="Heating & Cooling Icon" />
+                          </div>
+                          <h5>Air Conditioning & Cooling</h5>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="col-4 col-lg-2 col-item">
+                      <div class="list-item-with-icon">
+                        <a href="c/kitchen_remodeling">
+                          <div class="list-item-icon">
+                            <img asp-append-version="true" class="kitchen" src="assets/images/categories/2.png" alt="Kitchen Icon" />
+                          </div>
+                          <h5>Kitchen Remodeling</h5>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="col-4 col-lg-2 col-item">
+                      <div class="list-item-with-icon">
+                        <a href="c/roofing">
+                          <div class="list-item-icon">
+                            <img asp-append-version="true" class="roofing" src="assets/images/categories/1.png" alt="Roofing Icon" />
+                          </div>
+                          <h5>Roofing</h5>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="col-4 col-lg-2 col-item">
+                      <div class="list-item-with-icon border-none">
+                        <a href="c/windows">
+                          <div class="list-item-icon">
+                            <img asp-append-version="true" class="windows-doors" src="assets/images/categories/21.png" alt="Windows & Doors Icon" />
+                          </div>
+                          <h5>Windows</h5>
+                        </a>
+                      </div>
+                    </div>
+
                   </div>
                 </div>
-                <button class="send" type="button">
-                  Send
-                </button>
-              </div>
             </div>
-          </div>
+
+            <!-- other categories -->
+            <div class="row other-categories">
+                <div class="col-12">
+                    <h2 class="section-sub-title text-center font-weight-bold">
+                        All Home Improvement Categories
+                    </h2>
+                </div>
+                <div class="col-12">
+                    <div class="row list">
+                        <div class="col-12 list-col">
+
+                            <div class="row">
+
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/cabanas,_arbors,_gazebos_&amp;_pergolas" class="list-col-item">Cabanas, Arbors, Gazebos &amp; Pergolas <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/outdoor_kitchens" class="list-col-item">Outdoor Kitchens <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/home_security" class="list-col-item">Home Security <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/sports_surfaces" class="list-col-item">Sports Surfaces <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/framing" class="list-col-item">Framing <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/docks" class="list-col-item">Docks <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/elevators" class="list-col-item">Elevators <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/disability_services" class="list-col-item">Disability Services <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/recovery_services" class="list-col-item">Recovery Services <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/carpeting" class="list-col-item">Carpeting <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/baby_proofing" class="list-col-item">Baby Proofing <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/attics" class="list-col-item">Attics <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/glass_&amp;_mirrors" class="list-col-item">Glass &amp; Mirrors <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/heating_&amp;_furnaces" class="list-col-item">Heating &amp; Furnaces <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/foundations" class="list-col-item">Foundations <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/energy_efficiency_/_going_green" class="list-col-item">Energy Efficiency / Going Green <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/countertops" class="list-col-item">Countertops <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/cabinets_&amp;_closets" class="list-col-item">Cabinets &amp; Closets <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/carpentry_&amp;_woodworking" class="list-col-item">Carpentry &amp; Woodworking <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/basements" class="list-col-item">Basements <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/walls_&amp;_ceilings" class="list-col-item">Walls &amp; Ceilings <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/locksmiths" class="list-col-item">Locksmiths <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/handyman_services" class="list-col-item">Handyman Services <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/addiions,_adus_&amp;_new_construction" class="list-col-item">Addiions, ADUs &amp; New Construction <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="row" id="MoreCategoriesContainer" style="display:none;">
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/flooring" class="list-col-item">Flooring <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/doors" class="list-col-item">Doors <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/electrical" class="list-col-item">Electrical <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/concrete,_brick_&amp;_stone" class="list-col-item">Concrete, Brick &amp; Stone <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/windows" class="list-col-item">Windows <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/fences_&amp;_gates" class="list-col-item">Fences &amp; Gates <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/pool_houses_&amp;_guest_houses" class="list-col-item">Pool Houses &amp; Guest Houses <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/spas,_hot_tubs,_jacuzzis_&amp;_saunas" class="list-col-item">Spas, Hot Tubs, Jacuzzis &amp; Saunas <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/smart_home" class="list-col-item">Smart Home <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/plumbing" class="list-col-item">Plumbing <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/swimming_pools" class="list-col-item">Swimming Pools <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/painting_&amp;_staining" class="list-col-item">Painting &amp; Staining <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/sunrooms" class="list-col-item">Sunrooms <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/driveways,_walks_&amp;_steps" class="list-col-item">Driveways, Walks &amp; Steps <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/tiles_&amp;_ceramics" class="list-col-item">Tiles &amp; Ceramics <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/patios,_porches_&amp;_decks" class="list-col-item">Patios, Porches &amp; Decks <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/siding" class="list-col-item">Siding <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/drywall_&amp;_insulation" class="list-col-item">Drywall &amp; Insulation <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/home_remodeling" class="list-col-item">Home Remodeling <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/landscape,_yard_&amp;_garden" class="list-col-item">Landscape, Yard &amp; Garden <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/garages" class="list-col-item">Garages <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/bathroom_remodeling" class="list-col-item">Bathroom Remodeling <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/air_conditioning_&amp;_cooling" class="list-col-item">Air Conditioning &amp; Cooling <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/kitchen_remodeling" class="list-col-item">Kitchen Remodeling <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                                    <a href="/Cat/roofing" class="list-col-item">Roofing <i class="fad fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row view-more-container">
+                <div class="col-auto mx-auto">
+                    <button type="button" class="brand-btn primary" id="MoreCategoriesBtn" onclick="reloadon(MoreCategoriesContainer); reloadoff(MoreCategoriesBtn);">View All</button>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <section class="section-search-pro">
-      <div class="container section-container search-pros-inner">
-        <div class="row">
-          <div class="col-12 col-lg-6">
-            <div class="logo-container d-flex">
-              <div class="logo">
-                <img src="assets/images/logo/logo-dark.svg" alt="logo dark">
-              </div>
-              <div class="logo-title">
-                Index
-              </div>
-            </div>
-          </div>
 
-          <div class="col-12 col-lg-6 d-none d-600-block">
-            <div class="search">
-              <div class="form-group position-relative">
-                <input class="form-control" type="text" placeholder="Search">
-                <i class="far fa-search icon-dark"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row py-4 pb-lg-0 pros-container">
-          <div class="col-12 col-lg-8 pros">
-            <div class="pros-list-container">
-              <div class="pros-card position-relative">
-                <div class="pros-info-container">
-                  <div class="row">
-                    <div class="col-3">
-                      <div class="pros-card-image">
-                        <img src="assets/images/landing/pros-card-image.png" alt="pros-card-image">
-                      </div>
-                    </div>
-                    <div class="col-9 pl-0 pl-lg-3">
-                      <div class="pros-content">
-                        <div class="pros-type">
-                          <span class="spec-type">Roof Repair Specialist</span>
-                          <img src="assets/images/landing/pros/specialist.png" alt="specialist">
-                          <span class="distance">4.9 km</span>
-                        </div>
-                        <div class="pros-reviews">
-                        <span class="pros-reviews-level image-container">
-                          <img src="assets/images/landing/pros/pros-reviews.svg" alt="">
-                        </span>
-                          <span>254 reviews</span>
-                        </div>
-                        <div class="pros-info">
-                          <div class="info">
-                            <div class="image-container">
-                              <img src="assets/images/landing/pros/verification.svg" alt="Verified">
-                            </div>
-                            <span class="">Verified License Roofing, Roof Inspectors</span>
-                          </div>
-                          <div class="info">
-                            <div class="image-container p-1">
-                              <img src="assets/images/landing/pros/maps-and-flags.svg" alt="location">
-                            </div>
-                            <span class="">California, Beach Road 220, USA</span>
-                          </div>
-                          <div class="info">
-                            <div class="image-container">
-                              <img src="assets/images/landing/pros/certified.jpg" alt="certified">
-                            </div>
-                            <span class="">Certified professionals</span>
-                          </div>
-                          <div class="info">
-                            <div class="image-container">
-                              <img src="assets/images/landing/pros/family.svg" alt="family">
-                            </div>
-                            <span class="">Family-owned & operated</span>
-                          </div>
-
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="response-container">
-                  <div class="col-lg-3"></div>
-                  <div class="col-lg-9 response-container-inner">
-                    <div class="row">
-                      <div class="response-col col-6">
-                        <div class="response">
-                          <span class="response-title">Response Time</span>
-                          <span class="response-unit">10 min</span>
-                        </div>
-                      </div>
-                      <div class="response-col col-6">
-                        <div class="response">
-                          <span class="response-title">Response Rate</span>
-                          <span class="response-unit">100%</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row justify-content-center">
-                      <div class="col-12">
-                        <span class="request-a-quote-btn">Request a Quote</span>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-lg-4 pl-0 pl-lg-3 activity d-none d-600-block">
-            <div class="activity-areas">
-              <div class="activity-areas-title font-weight-black">Activity areas</div>
-              <div class="activity-areas-list">
-                <div class="activity-area">Orlando</div>
-                <div class="activity-area">Clarcona</div>
-                <div class="activity-area">Tangerine Winter Park Zellwood</div>
-                <div class="activity-area">Winter Park</div>
-                <div class="activity-area">Windermere</div>
-                <div class="activity-area">Winter Garden</div>
-                <div class="activity-area">LA</div>
-                <div class="activity-area">Killarney Oakland Ocoee</div>
-                <div class="activity-area">Orlando</div>
-                <div class="activity-area"> Gotha Killarney</div>
-                <div class="activity-area">Orlando</div>
-                <div class="activity-area">Orlando</div>
-                <div class="activity-area"> Gotha Killarney</div>
-                <div class="activity-area"> Gotha Killarney</div>
-                <div class="activity-area">Orlando</div>
-                <div class="activity-area">Orlando</div>
-                <div class="activity-area">Orlando</div>
-                <div class="activity-area"> Gotha Killarney</div>
-                <div class="activity-area">Orlando</div>
-                <div class="activity-area">Orlando</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <section class="categories">
-    <div class="container section-container">
-      <!-- trending categories-->
-      <div class="row">
-        <!-- trending categories title -->
-        <div class="col-12">
-          <div class="section-title-container">
-            <span class="section-title-decoration left"></span>
-            <h3 class="section-title">Trending Categories</h3>
-            <span class="section-title-decoration right"></span>
-          </div>
-        </div>
-        <div class="col-12">
-          <!-- trending categories list -->
-          <div class="row list">
-            <div class="col-4 col-lg-2 col-item">
-              <div class="list-item-with-icon">
-                <div class="list-item-icon">
-                  <img class="bathroom" src="assets/images/categories/4.png" alt="category image"/>
-                </div>
-                <h5>Bathroom</h5>
-              </div>
-            </div>
-            <div class="col-4 col-lg-2 col-item">
-              <div class="list-item-with-icon">
-                <div class="list-item-icon">
-                  <img class="garage-conversion" src="assets/images/categories/5.png" alt="category image"/>
-                </div>
-                <h5>Garage <br> Conversion</h5>
-              </div>
-            </div>
-            <div class="col-4 col-lg-2 col-item">
-              <div class="list-item-with-icon">
-                <div class="list-item-icon">
-                  <img class="heating-cooling" src="assets/images/categories/3.png" alt="category image"/>
-                </div>
-                <h5>Heating <br> & Cooling</h5>
-              </div>
-            </div>
-            <div class="col-4 col-lg-2 col-item">
-              <div class="list-item-with-icon">
-                <div class="list-item-icon">
-                  <img class="kitchen" src="assets/images/categories/2.png" alt="category image"/>
-                </div>
-                <h5>Kitchens</h5>
-              </div>
-            </div>
-            <div class="col-4 col-lg-2 col-item">
-              <div class="list-item-with-icon">
-                <div class="list-item-icon">
-                  <img class="roofing" src="assets/images/categories/1.png" alt="category image"/>
-                </div>
-                <h5>Roofing</h5>
-              </div>
-            </div>
-            <div class="col-4 col-lg-2 col-item">
-              <div class="list-item-with-icon border-none">
-                <div class="list-item-icon">
-                  <img class="windows-doors" src="assets/images/categories/21.png" alt="category image"/>
-                </div>
-                <h5>Windows <br> & Doors</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="all-categories">
-    <div class="container section-container">
-      <div class="row">
-        <div class="col-12">
-          <div class="section-title-container">
-            <span class="section-title-decoration left"></span>
-            <h3 class="section-title">All Categories</h3>
-            <span class="section-title-decoration right"></span>
-          </div>
-        </div>
-      </div>
-      <div class="row list">
-        <div class="col-12 list-col">
-          <div class="row">
-            <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
-              <a href="" class="list-col-item">Roofing<i class="fad fa-chevron-right"></i></a>
-            </div>
-            <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
-              <a href="" class="list-col-item">Slidng<i class="fad fa-chevron-right"></i></a>
-            </div>
-            <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
-              <a href="" class="list-col-item">Roofing<i class="fad fa-chevron-right"></i></a>
-            </div>
-            <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
-              <a href="" class="list-col-item">Roofing<i class="fad fa-chevron-right"></i></a>
-            </div>
-            <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
-              <a href="" class="list-col-item">Slidng<i class="fad fa-chevron-right"></i></a>
-            </div>
-            <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
-              <a href="" class="list-col-item">Roofing<i class="fad fa-chevron-right"></i></a>
-            </div>
-            <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
-              <a href="" class="list-col-item">Roofing<i class="fad fa-chevron-right"></i></a>
-            </div>
-            <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
-              <a href="" class="list-col-item">Slidng<i class="fad fa-chevron-right"></i></a>
-            </div>
-            <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
-              <a href="" class="list-col-item">Roofing<i class="fad fa-chevron-right"></i></a>
-            </div>
-            <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
-              <a href="" class="list-col-item">Heating & cooling/HVAC<i class="fad fa-chevron-right"></i></a>
-            </div>
-            <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
-              <a href="" class="list-col-item">Windows & Doors<i class="fad fa-chevron-right"></i></a>
-            </div>
-            <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
-              <a href="" class="list-col-item">Driveways & walks<i class="fad fa-chevron-right"></i></a>
-            </div>
-            <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
-              <a href="" class="list-col-item">Heating & cooling/HVAC<i class="fad fa-chevron-right"></i></a>
-            </div>
-            <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
-              <a href="" class="list-col-item">Windows & Doors<i class="fad fa-chevron-right"></i></a>
-            </div>
-            <div class="col-sm-12 col-md-6 col-xl-4 col-xxl-3">
-              <a href="" class="list-col-item">Driveways & walks<i class="fad fa-chevron-right"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 </main>
 
 <footer class="page-footer">

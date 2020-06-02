@@ -12,6 +12,7 @@
     left: 0;
     right: 0;
     bottom: 0;
+    width: 100%;
   }
 
   .section-container {
@@ -28,19 +29,20 @@
     background-image: none;
   }
 
-  .head-section {
-    z-index: 11;
+    .head-section {
+        z-index: 11;
 
-    .head-section-content-inner {
-      z-index: 9900 !important;
-    }
+        .head-section-content-inner {
+            z-index: 9900 !important;
+        }
 
-    .section-title {
-      margin-bottom: 60px;
-      font-family: $h-font;
-      font-weight: 500;
-      color: $text-color;
-    }
+        h1 {
+          margin-bottom: 2vh;
+          font-family: $h-font;
+          font-weight: 600;
+          color: $text-color;
+          text-align: center !important;
+        }
 
     .bottom-mask {
       position: absolute;

@@ -1,15 +1,12 @@
 .reasons {
   display: flex;
   flex-direction: row;
-  //flex-wrap: wrap;
-  //align-items: flex-start;
   justify-content: space-between;
-
   flex-wrap: nowrap;
   align-items: stretch;
   width: 100%;
   max-width: initial;
-  margin: 10px 0 0;
+  margin: 4vh 0 0;
   padding: 0;
   background-color: #f4eee4;
   box-shadow: none;
@@ -17,11 +14,8 @@
   .reason {
     position: relative;
     display: flex;
-    //flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-
-    //width: 50%;
     overflow: hidden;
     text-align: left;
     color: $primaryColor;

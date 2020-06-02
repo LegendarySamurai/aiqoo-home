@@ -82,7 +82,7 @@
     }
   }
 
-  .list-item-with-icon {
+  .list-item-with-icon a {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -90,6 +90,8 @@
     padding: 0;
 
     h5 {
+      width: 70%;
+      margin: 0 auto;
       color: $text-color;
       font-weight: 400;
       text-align: center;

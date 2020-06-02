@@ -8,8 +8,7 @@
     color: #342e49;
     text-align: center;
     z-index: 100;
-    width: 94%;
-    max-width: 930px;
+    width: 100%!important;
     padding: 30px 2% 2% 2%;
     min-height: 385px;
 }
@@ -30,7 +29,7 @@
 .funnel-card h2 {
     position: relative;
     font-weight: normal;
-    font-size: 14pt;
+    font-size: 13pt !important;
     font-family: "Raleway", sans-serif;
     margin-left: 15%;
 }
@@ -108,5 +107,17 @@
     .indicator :first-child {
         width: 90%;
         margin: 20px 0 20px 0;
+    }
+}
+
+@media (max-width: 850px) {
+    .funnel-card h2 {
+        font-size: 11pt !important;
+    }
+
+}
+@media (max-width: 500px) {
+    .funnel-card h2 {
+        font-size: 10pt !important;
     }
 }
