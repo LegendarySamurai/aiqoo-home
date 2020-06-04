@@ -11,14 +11,70 @@
 
   @media(max-width: 1199px) {}
 
-  @media(max-width: 991px) {}
+  @media(max-width: 991px) {
+    h2 {
+      font-size: 22pt;
+    }
+
+    .text-content {
+      p {
+        font-size: 13pt;
+      }
+    }
+
+    .form-group {
+      margin-bottom: 1.25rem;
+    }
+
+    .form-control, textarea {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      font-size: 12pt;
+
+      &::placeholder {
+        font-size: 12pt;
+      }
+    }
+
+    .request-btn {
+      font-size: 13pt;
+    }
+  }
 
   @media(max-width: 767px) {}
 
   @media(max-width: 599px) {
     .content {
       max-width: 90%;
-    }}
+    }
+
+    .text-content h2 {
+      font-size: 22pt;
+    }
+
+    .text-content p {
+      font-size: 12pt;
+    }
+
+    .form-group {
+      flex-direction: column;
+      margin-bottom: 0;
+    }
+
+    .form-control {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+
+    .custom-control {
+      width: 100%;
+      margin: 1rem 0;
+    }
+
+    .request-btn {
+      width: auto;
+    }
+  }
 
   @media(max-width: 374px) {}
 }

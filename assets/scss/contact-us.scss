@@ -17,13 +17,13 @@
   }
 
   .content {
-    transform: translate(0, -30%);
+    transform: translate(0, -10%);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     max-width: 900px;
-    padding: 3% 5% 4%;
+    padding: 3% 4% 3%;
     background-color: #fff;
     border-top: 10px solid #d8cdba;
     border-radius: 5px 5px 5px 5px;
@@ -31,6 +31,14 @@
 
   .text-content {
     text-align: center;
+
+    h2 {
+      font-size: 26pt;
+    }
+
+    p {
+      font-size: 18pt;
+    }
   }
 
   form {
@@ -64,6 +72,7 @@
     height: 50px;
     padding-top: .75rem;
     resize: none;
+    font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
 
     &::placeholder {
 
@@ -81,12 +90,27 @@
     }
   }
 
-  label {
+  .custom-control {
     width: 48%;
   }
 
+  .input-label {
+    font-size: 11pt;
+    color: #848484;
+  }
+
   .request-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 48%;
+    height: 56px;
+    border-radius: 5px;
+    font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 15pt;
+    color: #fff;
+    background-color: #d8cdba;
   }
 }
 
