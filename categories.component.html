@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="utf-8" />
+  <title>Categories component</title>
+  <meta name="description" content="Home Improvement" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css"
+        integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="assets/css/landing.css" />
+  <link rel="stylesheet" href="assets/css/web.css" />
+  <link rel="stylesheet" href="assets/css/landing-responsive.css" />
+  <link rel="stylesheet" href="assets/css/web-responsive.css"/>
+
+  <script defer type="text/javascript" src="assets/js/main.js?v=0.01"></script>
+  <script defer type="text/javascript" src="assets/js/funnels_0.6.js?v=0.01"></script>
+</head>
+<body>
+
+<header class="header">
+  <div class="container container-lg">
+    <div class="row">
+      <div class="col-12 pl-0 pl-lg-3 pr-0 pr-lg-3">
+
+        <div class="header-content">
+          <button type="button" id="btn-open-menu" class="btn-open-menu d-lg-none">
+            <span class="menu-icon">
+              <i class="far fa-bars"></i>
+            </span>
+          </button>
+
+          <div class="logo">
+            <img src="assets/images/logo/logo.svg" alt="logo">
+          </div>
+
+          <button type="button" id="btn-search" class="btn-search">
+            <i class="fal fa-search"></i>
+          </button>
+
+          <!-- Dropdown menu -->
+          <div id="dropdown-menu-container" class="dropdown-menu-container">
+            <div id="btn-close-menu" class="btn-close-menu d-lg-none"></div>
+            <div id="dropdown-menu" class="dropdown-menu">
+              <div class="dropdown-menu-inner">
+                <div class="dropdown-menu-header d-lg-none">
+                  <div class="dropdown-menu-header-logo">
+                    <img src="assets/images/logo/logo.svg" alt="logo">
+                  </div>
+                  <!--<button class="login-network" type="button">-->
+                  <!--  <span>Pro network</span>-->
+                  <!--  <img src="assets/images/icons/login.png" alt="login">-->
+                  <!--</button>-->
+                </div>
+
+                <ul class="navbar">
+                  <li>
+                    <a href="#">
+                      <i class="d-lg-none menu-item-icon icon-home"></i>
+                      <span>
+                      Home
+                    </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="d-lg-none menu-item-icon icon-home"></i>
+                      <span>
+                      Video
+                    </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="d-lg-none menu-item-icon icon-home"></i>
+                      <span>
+                      Blog
+                    </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="d-lg-none menu-item-icon icon-home"></i>
+                      <span>
+                      About us
+                    </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="d-lg-none menu-item-icon icon-home"></i>
+                      <span>
+                      Services
+                    </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="d-lg-none menu-item-icon icon-magazine"></i>
+                      <span>
+                      Magazine
+                    </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="no-border-bottom">
+                      <i class="d-lg-none menu-item-icon icon-contact-us"></i>
+                      <span>
+                      Contact us
+                    </span>
+                    </a>
+                  </li>
+                </ul>
+
+                <ul class="dropdown-menu-social d-lg-none">
+                  <li>
+                    <a href="#!">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- EOL: Dropdown menu -->
+
+          <div id="header-search" class="search">
+            <div class="form-group position-relative">
+              <input id="header-search-input" class="form-control font-weight-bold" type="text"
+                     placeholder="What service are you looking for?">
+              <div class="super-placeholder">
+                <img src="assets/images/icons/pen-6.svg" alt="icon">
+              </div>
+              <button class="find-btn font-weight-bold" type="button">FIND A PRO</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="categories">
+    <div class="container section-container">
+      <!-- trending categories-->
+      <div class="row">
+        <!-- trending categories title -->
+        <div class="col-12">
+          <div class="section-title-container section-title-container-trending-categories">
+            <span class="section-title-decoration left"></span>
+            <h3 class="section-title">Leading Categories 11</h3>
+            <span class="section-title-decoration right"></span>
+          </div>
+        </div>
+        <div class="col-12">
+          <!-- trending categories list -->
+          <div class="row list">
+
+            <div class="col-4 col-lg-2 col-item">
+              <div class="list-item-with-icon">
+                <a href="c/bathroom_remodeling">
+                  <div class="list-item-icon">
+                    <img asp-append-version="true" class="bathroom" src="assets/images/categories/4.png" alt="Bathroom Icon" />
+                  </div>
+                  <h5>Bathroom Remodeling</h5>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-4 col-lg-2 col-item">
+              <div class="list-item-with-icon">
+                <a href="c/garages">
+                  <div class="list-item-icon">
+                    <img asp-append-version="true" class="garage-conversion" src="assets/images/categories/5.png" alt="Garage Icon" />
+                  </div>
+                  <h5>Garages</h5>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-4 col-lg-2 col-item">
+              <div class="list-item-with-icon">
+                <a href="c/air_conditioning_&_cooling">
+                  <div class="list-item-icon">
+                    <img asp-append-version="true" class="heating-cooling" src="assets/images/categories/3.png" alt="Heating & Cooling Icon" />
+                  </div>
+                  <h5>Air Conditioning & Cooling</h5>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-4 col-lg-2 col-item">
+              <div class="list-item-with-icon">
+                <a href="c/kitchen_remodeling">
+                  <div class="list-item-icon">
+                    <img asp-append-version="true" class="kitchen" src="assets/images/categories/2.png" alt="Kitchen Icon" />
+                  </div>
+                  <h5>Kitchen Remodeling</h5>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-4 col-lg-2 col-item">
+              <div class="list-item-with-icon">
+                <a href="c/roofing">
+                  <div class="list-item-icon">
+                    <img asp-append-version="true" class="roofing" src="assets/images/categories/1.png" alt="Roofing Icon" />
+                  </div>
+                  <h5>Roofing</h5>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-4 col-lg-2 col-item">
+              <div class="list-item-with-icon border-none">
+                <a href="c/windows">
+                  <div class="list-item-icon">
+                    <img asp-append-version="true" class="windows-doors" src="assets/images/categories/21.png" alt="Windows & Doors Icon" />
+                  </div>
+                  <h5>Windows</h5>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- other categories -->
+      <div class="row other-categories">
+        <div class="col-12">
+          <h2 class="section-sub-title text-center font-weight-bold">
+            All Home Improvement Categories
+          </h2>
+        </div>
+        <div class="col-12">
+          <div class="row list">
+            <div class="col-12 list-col">
+
+              <div class="row">
+
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/cabanas,_arbors,_gazebos_&amp;_pergolas" class="list-col-item">Cabanas, Arbors, Gazebos &amp; Pergolas <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/outdoor_kitchens" class="list-col-item">Outdoor Kitchens <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/home_security" class="list-col-item">Home Security <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/sports_surfaces" class="list-col-item">Sports Surfaces <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/framing" class="list-col-item">Framing <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/docks" class="list-col-item">Docks <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/elevators" class="list-col-item">Elevators <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/disability_services" class="list-col-item">Disability Services <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/recovery_services" class="list-col-item">Recovery Services <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/carpeting" class="list-col-item">Carpeting <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/baby_proofing" class="list-col-item">Baby Proofing <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/attics" class="list-col-item">Attics <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/glass_&amp;_mirrors" class="list-col-item">Glass &amp; Mirrors <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/heating_&amp;_furnaces" class="list-col-item">Heating &amp; Furnaces <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/foundations" class="list-col-item">Foundations <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/energy_efficiency_/_going_green" class="list-col-item">Energy Efficiency / Going Green <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/countertops" class="list-col-item">Countertops <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/cabinets_&amp;_closets" class="list-col-item">Cabinets &amp; Closets <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/carpentry_&amp;_woodworking" class="list-col-item">Carpentry &amp; Woodworking <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/basements" class="list-col-item">Basements <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/walls_&amp;_ceilings" class="list-col-item">Walls &amp; Ceilings <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/locksmiths" class="list-col-item">Locksmiths <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/handyman_services" class="list-col-item">Handyman Services <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/addiions,_adus_&amp;_new_construction" class="list-col-item">Addiions, ADUs &amp; New Construction <i class="fad fa-chevron-right"></i></a>
+                </div>
+              </div>
+              <div class="row" id="MoreCategoriesContainer" style="display:none;">
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/flooring" class="list-col-item">Flooring <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/doors" class="list-col-item">Doors <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/electrical" class="list-col-item">Electrical <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/concrete,_brick_&amp;_stone" class="list-col-item">Concrete, Brick &amp; Stone <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/windows" class="list-col-item">Windows <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/fences_&amp;_gates" class="list-col-item">Fences &amp; Gates <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/pool_houses_&amp;_guest_houses" class="list-col-item">Pool Houses &amp; Guest Houses <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/spas,_hot_tubs,_jacuzzis_&amp;_saunas" class="list-col-item">Spas, Hot Tubs, Jacuzzis &amp; Saunas <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/smart_home" class="list-col-item">Smart Home <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/plumbing" class="list-col-item">Plumbing <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/swimming_pools" class="list-col-item">Swimming Pools <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/painting_&amp;_staining" class="list-col-item">Painting &amp; Staining <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/sunrooms" class="list-col-item">Sunrooms <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/driveways,_walks_&amp;_steps" class="list-col-item">Driveways, Walks &amp; Steps <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/tiles_&amp;_ceramics" class="list-col-item">Tiles &amp; Ceramics <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/patios,_porches_&amp;_decks" class="list-col-item">Patios, Porches &amp; Decks <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/siding" class="list-col-item">Siding <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/drywall_&amp;_insulation" class="list-col-item">Drywall &amp; Insulation <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/home_remodeling" class="list-col-item">Home Remodeling <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/landscape,_yard_&amp;_garden" class="list-col-item">Landscape, Yard &amp; Garden <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/garages" class="list-col-item">Garages <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/bathroom_remodeling" class="list-col-item">Bathroom Remodeling <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/air_conditioning_&amp;_cooling" class="list-col-item">Air Conditioning &amp; Cooling <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/kitchen_remodeling" class="list-col-item">Kitchen Remodeling <i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="/Cat/roofing" class="list-col-item">Roofing <i class="fad fa-chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row view-more-container">
+        <div class="col-auto mx-auto">
+          <button type="button" class="brand-btn primary" id="MoreCategoriesBtn" onclick="reloadon(MoreCategoriesContainer); reloadoff(MoreCategoriesBtn);">View All</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="page-footer">
+  <div class="footer-container page-footer-main">
+    <div class="row">
+
+      <!-- left column -->
+      <div class="col-12 col-md-auto col-xl-5 content-column-left">
+        <img src="assets/images/logo/logo.svg" class="brand-logo mb-lg-2" alt="Aiq Home Footer Logo" title="Aiq Home Footer Logo" />
+        <p class="line-h-1-5 mt-4 mt-lg-0">
+          The market changing, AI & BI enhanced, technological marketplace connecting homeowners with local, approved and recommended home improvement contractors and professionals.
+        </p>
+
+        <!-- more information -->
+        <div class="more-information-container">
+          <div class="row">
+            <div class="col-12 d-flex flex-row more-info">
+              <!--<span class="footer-h4 font-weight-600 pb-3">More Information</span>-->
+              <a href="#!" class="page-footer-link mb-2 py-1">About us</a>
+              <a href="#!" class="page-footer-link mb-2 py-1">Help Center</a>
+              <a href="#!" class="page-footer-link mb-2 py-1">Terms of Use</a>
+              <a href="#!" class="page-footer-link mb-2 py-1">Terms of Use</a>
+
+            </div>
+            <div class="col-12 top-services">
+              <div class="row">
+                <div class="col-12">
+                  <span class="footer-h4 font-weight-600 py-3">Top Services</span>
+                </div>
+                <div class="col-12 col-sm-6 d-flex flex-column mt-3 mt-sm-0">
+                  <a href="#!" class="page-footer-link mb-2 py-1">Roof - Install or replace</a>
+                  <a href="#!" class="page-footer-link mb-2 py-1">Accessory Dwelling Units - Build</a>
+                  <a href="#!" class="page-footer-link mb-2 py-1">Garage - Build</a>
+                </div>
+                <div class="col-12 col-sm-6 d-flex flex-column mt-3 mt-sm-0">
+                  <span class="footer-h4 font-weight-600"></span>
+                  <a href="#!" class="page-footer-link mb-2 py-1">Garage - Remodel or renovate</a>
+                  <a href="#!" class="page-footer-link mb-2 py-1">Adus - Remodel</a>
+                  <a href="#!" class="page-footer-link mb-2 py-1">Roof - repair</a>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <!-- center column -->
+      <div class="col-12 col-md-auto col-xl-4 content-column-center">
+        <div class="content">
+          <div class="row">
+            <div class="col-12">
+              <div class="news-letter-wrap">
+                <div class="image-container">
+                  <img src="assets/images/interface.svg" alt="newsletter">
+                </div>
+                <span class="footer-h4 beige font-weight-black py-3">Join The AIQ Home Newsletter</span>
+                <p class="text line-h-1-5">
+                  Sign up today and be first to get notified of special offers,
+                  hot trends and exclusive subscribers’ only events.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="page-footer-subscribe-box">
+                <!--<div class="form-group position-relative">
+                    <i class="fad fa-user"></i>
+                    <input type="text" class="form-control" placeholder="Full name">
+                </div>-->
+                <div class="form-group position-relative mt-2">
+                  <i class="fad fa-envelope"></i>
+                  <input type="email" id="NewsletterEmail" name="NewsletterEmail" class="form-control email" placeholder="Enter your Email">
+                  <button type="button" class="btn-subscribe" onclick="javascript: JoinNewsletter();">Subscribe
+                    <span id="NewsletterSpiner" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span></button>
+
+                </div>
+                <span class="error-message system-color-14" id="NewsletterError">
+                  Please enter email address
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- right column -->
+      <div class="col-12 col-md-auto col-xl-3 content-column-right">
+        <div class="pros-card">
+          <div class="logo-pros-container">
+            <img src="assets/images/footer-pros-logo.png" alt="logo-pros">
+          </div>
+          <p class="line-h-1-5">
+            The industry dedicated, business optimizing, leads, sales and project management platform for all home improvement service providers.
+          </p>
+          <div class="join-us-button">
+            <button type="button">Join Us</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid page-footer-footer">
+    <div class="footer-container page-footer-main">
+      <div class="row">
+        <div class="col-12 col-sm-6">
+          <div class="social">
+            <a class="facebook" href="#">
+              <img src="assets/images/social/facebook.svg" alt="facebook">
+            </a>
+            <a class="linkedin" href="#">
+              <img src="assets/images/social/linkedin.svg" alt="linkedin">
+            </a>
+            <a class="instagram" href="#">
+              <img src="assets/images/social/instagram.svg" alt="instagram">
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6">
+          <div class="content d-flex justify-content-end align-items-center">
+            <p>&#169; 2020 . All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous">
+</script>
+<script src="assets/scss/vendor/slick/slick.min.js"></script>
+<script src="assets/js/slick.js"></script>
+<script src="assets/js/header.js"></script>
+
+</body>
+</html>
