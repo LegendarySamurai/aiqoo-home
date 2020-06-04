@@ -19,18 +19,13 @@
     max-width: 1300px;
   }
 
-  // Reasons
+  // Reasons for this page
   .reasons {
     margin-top: 4vh;
     box-shadow: 0 3px 15px 0 rgba(0,0,0,0.16);
   }
 
-  .categories {
-    background-color: #fff;
-    background-image: none;
-  }
-
-    .head-section {
+  .head-section {
         z-index: 11;
 
         .head-section-content-inner {
@@ -60,14 +55,6 @@
       display: block;
       content: '';
       width: 100%;
-    }
-  }
-
-  .other-categories {
-    .section-sub-title {
-      color: $text-color;
-      font-family: $h-font;
-      font-weight: 600;
     }
   }
 
@@ -265,16 +252,6 @@
       font-family: $main-font;
       font-weight: 400;
       color: #aeb0b3;
-    }
-  }
-
-  .view-more-container {
-    padding-top: 40px;
-
-    button {
-      font-family: $h-font;
-      font-weight: 400;
-      color: #fff;
     }
   }
 }

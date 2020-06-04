@@ -13,6 +13,7 @@
       }
     }
 
+    // Categories for home page
     .categories {
       padding-top: 13vw;
     }
@@ -41,6 +42,7 @@
       max-width: 96% !important;
     }
 
+    // Categories for home page
     .categories {
       padding-top: 19vw;
       padding-bottom: 22vh;
@@ -112,14 +114,6 @@
       }
     }
 
-    .other-categories {
-      margin-top: 40px;
-
-      .section-sub-title {
-        font-size: 12pt;
-      }
-    }
-
     .google-search {
       .super-placeholder {
         img {
@@ -187,7 +181,6 @@
     }
 
     .head-section {
-
       // Head section
       .head-section-content-inner {
         margin-top: 30px;
@@ -201,6 +194,7 @@
   }
 
   @media(max-width: 767px) {
+    // Categories for home page
     .categories {
       padding-top: 23vw;
     }
@@ -369,6 +363,7 @@
       }
     }
 
+    // Categories for home page
     .categories {
       padding-top: 30vh;
     }
@@ -466,15 +461,10 @@
         font-size: 10pt;
       }
     }
-
-    .categories {
-      .list {
-        padding: 0;
-      }
-    }
   }
 
   @media (max-width: 374px) {
+    // Categories for home page
     .categories {
       padding-top: 75vw;
       padding-bottom: 60vw;
@@ -537,18 +527,6 @@
         height: 70px;
         padding-left: 300px;
         padding-right: 210px;
-      }
-    }
-
-    .view-more-container {
-      padding-top: 60px;
-    }
-
-    .questionnaire {
-      //margin-top: 106px;
-
-      .questionnaire-title {
-        //font-size: 22.5pt;
       }
     }
   }

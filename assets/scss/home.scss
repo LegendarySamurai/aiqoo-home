@@ -269,35 +269,8 @@ body {
 
   .categories {
     padding-top: 110px;
-  }
-
-  .common-searches {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-
-  .categories {
-    padding-top: 9vw;
     padding-bottom: 240px;
-  }
-
-  // Other categories
-  .other-categories {
-    margin-top: 40px;
-
-    .section-sub-title {
-      color: $text-color;
-      font-family: $h-font;
-      font-weight: 600;
-    }
-
-    .list {
-      padding-top: 50px;
-    }
-
-    .section-sub-title {
-      font-size: 12pt;
-    }
+    background: url("../images/bg/bg__categories_d.jpg") no-repeat center bottom / auto;
   }
 
   // Magazine
@@ -607,17 +580,8 @@ body {
 
   // Common searches
   .common-searches {
-    background-color: #fff;
-  }
-
-  .view-more-container {
     padding-top: 40px;
-
-    button {
-      font-family: $h-font;
-      font-weight: 400;
-      font-size: 11pt;
-      color: #fff;
-    }
+    padding-bottom: 40px;
+    background-color: #fff;
   }
 }

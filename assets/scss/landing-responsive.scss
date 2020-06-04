@@ -4,9 +4,6 @@
 @import 'helpers/helpers';
 
 .landing-page {
-    @media(max-width: 599px) {
-    }
-
     @media(max-width: 768px) {
         .head-section-content {
             margin-top: 3vh;
@@ -17,26 +14,6 @@
         .all-categories {
             padding-top: 40px;
             padding-bottom: 40px;
-        }
-
-        .other-categories {
-            margin-top: 40px;
-
-            .list {
-                padding-top: 50px;
-            }
-
-            .section-sub-title {
-                font-size: 12pt;
-            }
-        }
-
-        .view-more-container {
-            padding-top: 40px;
-
-            button {
-                font-size: 11pt;
-            }
         }
 
         .head-section {
@@ -142,18 +119,6 @@
                 height: 60px;
                 width: 100%;
                 font-size: 17pt;
-            }
-        }
-
-        .pros {
-            order: 2;
-        }
-
-        .activity {
-            order: 1;
-
-            .activity-areas {
-                padding: 30px;
             }
         }
 
@@ -316,12 +281,14 @@
             }
         }
 
-        .pros {
-            order: 1;
-        }
+        .pros { order: 1; }
 
         .activity {
             order: 2;
+
+            .activity-areas {
+                padding: 30px;
+            }
         }
     }
 
@@ -331,7 +298,6 @@
         }
 
         .head-section-content {
-            //padding-top: 56px;
             width: 100%;
         }
 
@@ -366,11 +332,6 @@
         }
 
         .section-2 {
-            .newsletter-container {
-                //height: 440px;
-                //padding: 80px 15px 20px 15px;
-            }
-
             .form-group {
                 padding: 40px 10px 20px;
             }
@@ -443,7 +404,6 @@
 
         .head-section {
             width: 100%;
-
 
             .head-section-content {
                 height: 462px;
