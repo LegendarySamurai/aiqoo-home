@@ -1,22 +1,22 @@
-.contact-us {
-  @media(max-width: 1899px) {}
-
-  @media(max-width: 1599px) {}
-
+// for all info pages common styles
+.info-page  {
   @media(max-width: 1399px) {
     .content {
       max-width: 80%;
     }
   }
 
-  @media(max-width: 1199px) {}
-
   @media(max-width: 991px) {
+
     h2 {
       font-size: 22pt;
     }
 
     .text-content {
+      h1 {
+        font-size: 26pt;
+      }
+
       p {
         font-size: 13pt;
       }
@@ -40,8 +40,6 @@
       font-size: 13pt;
     }
   }
-
-  @media(max-width: 767px) {}
 
   @media(max-width: 599px) {
     .content {
@@ -75,6 +73,11 @@
       width: auto;
     }
   }
-
-  @media(max-width: 374px) {}
 }
+
+// Contact Us page
+.contact-us {}
+
+// About Us page
+.about-us {}
+

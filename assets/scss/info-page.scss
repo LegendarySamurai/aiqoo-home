@@ -1,13 +1,12 @@
-.contact-us {
+// for all info pages common styles
+.info-page {
   .content-wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-image: url('./../images/bg/contact-us-bg-d.jpg');
-    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
   }
 
   .top-bg {
@@ -30,14 +29,27 @@
   }
 
   .text-content {
-    text-align: center;
+    font-family: "Raleway",sans-serif;
+
+    h1 {
+      font-weight: 900;
+      font-size: 30pt;
+      color: #585077;
+      text-align: left;
+    }
 
     h2 {
+      font-weight: 600;
       font-size: 26pt;
+      color: #1a1a1a;
+      text-align: center;
     }
 
     p {
+      font-family: 'Lato', 'Helvetica','Arial',sans-serif;
+      font-weight: 400;
       font-size: 18pt;
+      color: #585858;
     }
   }
 
@@ -111,6 +123,46 @@
     font-size: 15pt;
     color: #fff;
     background-color: #d8cdba;
+  }
+}
+
+// Contact us
+.contact-us {
+  .content-wrap {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .text-content {
+    p {
+      text-align: center;
+    }
+  }
+}
+
+// About Us page
+.about-us {
+  .content-wrap {
+    width: 100%;
+    height: auto;
+    padding-top: 160px;
+    background-color: #f7f7f7;
+    background-size: 100% 500px;
+    background-position: bottom;
+  }
+
+  .content {
+    transform: translate(0, -16%);
+    padding: 2% 7% 6%;
+  }
+
+  .text-content {
+    min-height: 460px;
+
+    p {
+      //font-weight: 500;
+      //text-transform: uppercase;
+    }
   }
 }
 
