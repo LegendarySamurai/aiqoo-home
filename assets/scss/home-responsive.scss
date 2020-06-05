@@ -76,7 +76,6 @@
     }
 
     .common-searches {
-      padding-top: 110px;
       padding-bottom: 60px;
     }
 
@@ -142,7 +141,7 @@
       }
 
       .questionnaire-image {
-        width: 210px;
+        width: 180px;
       }
 
       .questionnaire-text {
@@ -200,12 +199,12 @@
     }
 
     .common-searches {
-      padding-top: 19vw;
+      padding-top: 4vw;
     }
 
     .questionnaire {
       .questionnaire-image {
-        width: 180px;
+        width: 150px;
       }
 
       .join-us {
@@ -406,6 +405,10 @@
 
       &::before {
         display: none;
+      }
+
+      .image-col {
+        padding: 0;
       }
 
       .questionnaire-title {
