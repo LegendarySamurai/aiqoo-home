@@ -1,43 +1,21 @@
-@media(min-width: 300px) {
-  .section-title-container {
-    padding-bottom: 20px;
-  }
+@media(max-width: 600px) {
+    .section-title-container {
 
-  .section-title {
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 13pt;
-    font-weight: 900;
-  }
+        .section-title {
+            font-size: 15pt;
+        }
+
+        h2 {
+            font-size: 15pt;
+        }
+
+        h3 {
+            font-size: 15pt;
+        }
+    }
+
 }
 
-@media(min-width: 992px) {
-
-  .section-title {
-    padding: 0 20px;
-    font-weight: 500;
-    white-space: nowrap;
-    font-size: 16pt;
-  }
-}
 // EOL: @media(min-width: 992px)
-
-
-@media(min-width: 1200px) {
-  .section-title {
-    font-size: 18pt;
-    font-weight:bold;
-  }
-}
 // EOL: @media(min-width: 1200px)
-
-@media(min-width: 1600px) {
-  .section-title-container {
-    padding-bottom: 30px;
-  }
-
-  .section-title {
-    padding: 0 40px;
-  }
-}
 // EOL: @media(min-width: 1600px)

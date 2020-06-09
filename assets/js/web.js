@@ -153,6 +153,110 @@ function NewsletterResponse() {
 	}
 }
 
+function ContactUsRequest() {
+
+	var form = document.getElementById("cu_form");
+	var errorCount = 0;
+
+	reloadon(cu_btnSpinner);
+	reloadoff(cu_btn);
+	reloadoff(cu_fullName_error);
+	reloadoff(cu_phone_error);
+	reloadoff(cu_email_error);
+	
+
+
+	if (form.cu_fullName.value == "" || form.cu_fullName.value == null) {
+		document.getElementById("cu_fullName_error").innerHTML = 'Please enter your full name';
+		reloadon(cu_fullName_error);
+		form.cu_fullName.focus();
+		errorCount++;
+	} else {
+		reloadoff(cu_fullName_error);
+	}
+
+	var resMsg = validatePhone(form.cu_phone);
+	if (resMsg != "NoError") {
+		document.getElementById("cu_phone_error").innerHTML = resMsg;
+		reloadon(cu_phone_error);
+		form.cu_phone.focus();
+		errorCount++;
+	} else {
+		reloadoff(cu_phone_error);
+	}
+
+	if (form.cu_whoAreYou.value == "" || form.cu_whoAreYou.value == null) {
+		document.getElementById("cu_whoAreYou_error").innerHTML = 'Please select what best describes you';
+		reloadon(cu_whoAreYou_error);
+		form.cu_whoAreYou.focus();
+		errorCount++;
+	} else {
+		reloadoff(cu_whoAreYou_error);
+	}
+		
+
+	if (validateEmail(form.cu_email.value) == false) {
+		document.getElementById("cu_email_error").innerHTML = 'Please enter valid email address';
+		reloadon(cu_email_error);
+		form.cu_email.focus();
+		errorCount++;
+	} else {
+		reloadoff(cu_email_error);
+	}
+
+
+	if (errorCount == 0) {
+
+		url = "api/v1/ContactUs/setNewRequest/?websiteID=3"
+		url = url + "&fullName=" + form.cu_fullName.value;
+		url = url + "&phone=" + form.cu_phone.value;
+		url = url + "&email=" + form.cu_email.value;
+		url = url + "&whoAreYou=" + form.cu_whoAreYou.value;
+		url = url + "&details=" + form.cu_details.value;
+		url = url + "&Rand=" + Math.random();
+
+		http = createHttpObject();
+		http.open('post', url, true);
+		http.onreadystatechange = ContactUsResponse;
+		http.send(null);
+	}
+	else {
+		reloadon(cu_btn);
+		reloadoff(cu_btnSpinner);
+	}
+
+	return false;
+
+}
+
+function ContactUsResponse() {
+	if (http.readyState == 4) {
+		if (http.responseText == "true") {
+			reloadoff(cu_form_div);
+			reloadon(cu_success);
+		} else {
+			alert('Oops, something went wrong, try again');
+		}
+	}
+}
+
+
+function validatePhone(Phone) {
+	var phonePattern = /(?:\d{1}\s)?\(?(\d{3})\)?-?\s?(\d{3})-?\s?(\d{4})/;
+
+	if (Phone.value == "" || Phone.value == null) {
+		error = "Should not be empty.";
+	} else if ((Phone.value.length < 10)) {
+		error = "Should not be less than 10 digits";
+	} else if (!Phone.value.match(phonePattern)) {
+		error = "Invalid Number Please re-enter using valid 10 digit number";
+	} else {
+		error = "NoError";
+	}
+
+	return error;
+}
+
 function validateEmail(email) {
 	var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 	return re.test(String(email).toLowerCase());

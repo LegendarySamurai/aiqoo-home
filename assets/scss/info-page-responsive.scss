@@ -1,83 +1,102 @@
 // for all info pages common styles
-.info-page  {
-  @media(max-width: 1399px) {
-    .content {
-      max-width: 80%;
-    }
-  }
-
-  @media(max-width: 991px) {
-
-    h2 {
-      font-size: 22pt;
+.info-page {
+    @media(max-width: 1399px) {
     }
 
-    .text-content {
-      h1 {
-        font-size: 26pt;
-      }
+    @media(max-width: 991px) {
 
-      p {
-        font-size: 13pt;
-      }
+        h2 {
+            font-size: 22pt;
+        }
+
+        .text-content {
+            h1 {
+                font-size: 26pt;
+            }
+
+            p {
+                font-size: 13pt;
+            }
+        }
+
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+
+        .form-control, textarea {
+            padding-left: .5rem;
+            padding-right: .5rem;
+            font-size: 11pt;
+
+            &::placeholder {
+                font-size: 11pt;
+            }
+        }
+
+        .request-btn {
+            font-size: 12pt;
+        }
     }
 
-    .form-group {
-      margin-bottom: 1.25rem;
-    }
+    @media(max-width: 599px) {
+        .content {
+            max-width: 90%;
+        }
 
-    .form-control, textarea {
-      padding-left: 1rem;
-      padding-right: 1rem;
-      font-size: 12pt;
+        .success {
+            & h2 {
+                font-size: 20pt;
+            }
 
-      &::placeholder {
-        font-size: 12pt;
-      }
-    }
+            & p {
+                font-size: 13pt;
+                padding-bottom: 50px;
+            }
 
-    .request-btn {
-      font-size: 13pt;
-    }
-  }
+            & .image-col {
+                width: 100%;
+                margin: 0 auto;
 
-  @media(max-width: 599px) {
-    .content {
-      max-width: 90%;
-    }
+                & img{
+                    width:30%;
+                    margin:0 auto;
+                }
+            }
+        }
 
-    .text-content h2 {
-      font-size: 22pt;
-    }
+        .text-content h2 {
+            font-size: 22pt;
+        }
 
-    .text-content p {
-      font-size: 12pt;
-    }
+        .text-content p {
+            font-size: 12pt;
+        }
 
-    .form-group {
-      flex-direction: column;
-      margin-bottom: 0;
-    }
+        .form-group {
+            flex-direction: column;
+            margin-bottom: 0;
+        }
 
-    .form-control {
-      width: 100%;
-      margin-bottom: 1rem;
-    }
+        .form-control {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
 
-    .custom-control {
-      width: 100%;
-      margin: 1rem 0;
-    }
+        .custom-control {
+            width: 100%;
+            margin: 1rem 0;
+        }
 
-    .request-btn {
-      width: auto;
+        .request-btn {
+            width: auto;
+            margin: 15px auto;
+        }
     }
-  }
 }
 
 // Contact Us page
 .contact-us {}
 
 // About Us page
-.about-us {}
+.text-page {}
 

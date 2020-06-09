@@ -111,7 +111,7 @@
   p {
     font-weight: 400;
     font-size: 12pt;
-    color: #999999;
+    color: #ccc;
   }
 
   span {
@@ -215,80 +215,83 @@
 
 // Subscribe
 .page-footer-subscribe-box {
-  width: 340px;
-  margin-top: 25px;
-  //width: 270px;
-  //max-width: 100%;
-  //margin: 40px 0 0;
+    width: 340px;
+    margin-top: 25px;
+    //width: 270px;
+    //max-width: 100%;
+    //margin: 40px 0 0;
+    .form-group {
+        .form-control {
+            width: 100%;
+            height: 50px;
+            padding-left: 60px;
+            padding-right: 10px;
+            background-color: #15131d;
+            color: #000;
+            font-family: "Lato", sans-serif;
+            font-weight: 400;
+            font-size: 10pt;
+            border: none !important;
 
-  .form-group {
-    .form-control {
-      width: 100%;
-      height: 50px;
-      padding-left: 60px;
-      padding-right: 10px;
-      background-color: #15131d;
-      color: #999999;
-      font-family: "Lato", sans-serif;
-      font-weight: 400;
-      font-size: 10pt;
-      border: none !important;
+            &::-webkit-input-placeholder {
+                color: #000;
+                font-size: 10pt;
+            }
 
-      &::-webkit-input-placeholder {
-        color: #999;
-        font-size: 10pt;
-      }
-      &::-moz-placeholder {
-        color: #999;
-        font-size: 10pt;
-      }
-      &:-ms-input-placeholder {
-        color: #999;
-        font-size: 10pt;
-      }
-      &:-moz-placeholder {
-        color: #999;
-        font-size: 10pt;
-      }
+            &::-moz-placeholder {
+                color: #000;
+                font-size: 10pt;
+            }
 
-      &.email {
-        padding-right: 100px;
-      }
+            &:-ms-input-placeholder {
+                color: #000;
+                font-size: 10pt;
+            }
+
+            &:-moz-placeholder {
+                color: #000;
+                font-size: 10pt;
+            }
+
+            &.email {
+                padding-right: 100px;
+                background-color: #d8cdba;
+            }
+        }
+
+        .fa-envelope,
+        .fa-user {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translate(0, -50%);
+            font-size: 18pt;
+            color: #585077 !important;
+        }
+
+        .btn-subscribe {
+            position: absolute;
+            top: 50%;
+            right: 8px;
+            transform: translate(0, -50%);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            //width: 120px;
+            width: auto;
+            height: 35px;
+            border-radius: 1px;
+            background-color: #585077;
+            color: #FFF;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 8pt;
+        }
     }
 
-    .fa-envelope,
-    .fa-user {
-      position: absolute;
-      top: 50%;
-      left: 20px;
-      transform: translate(0, -50%);
-      font-size: 13pt;
-      color: #fff;
+    .error-message {
+        font-size: 10pt;
     }
-
-    .btn-subscribe {
-      position: absolute;
-      top: 50%;
-      right: 8px;
-      transform: translate(0, -50%);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      //width: 120px;
-      width: auto;
-      height: 35px;
-      border-radius: 1px;
-      background-color: #d8cdba;
-      color: #15131d;
-      text-transform: uppercase;
-      font-weight: bold;
-      font-size: 8pt;
-    }
-  }
-
-  .error-message {
-    font-size: 10pt;
-  }
 }
 
 // Spinner

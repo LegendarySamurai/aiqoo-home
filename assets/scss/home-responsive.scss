@@ -12,11 +12,6 @@
         height: 350px;
       }
     }
-
-    // Categories for home page
-    .categories {
-      padding-top: 13vw;
-    }
   }
 
   @media(max-width: 1199px) {
@@ -42,12 +37,6 @@
       max-width: 96% !important;
     }
 
-    // Categories for home page
-    .categories {
-      padding-top: 19vw;
-      padding-bottom: 22vh;
-    }
-
     .card {
       max-width: 100%;
     }
@@ -69,10 +58,6 @@
           //font-size: 78pt;
         }
       }
-    }
-
-    .section-title-container-trending-categories {
-      padding-bottom: 30px;
     }
 
     .common-searches {
@@ -193,11 +178,6 @@
   }
 
   @media(max-width: 767px) {
-    // Categories for home page
-    .categories {
-      padding-top: 23vw;
-    }
-
     .common-searches {
       padding-top: 4vw;
     }
@@ -362,11 +342,6 @@
       }
     }
 
-    // Categories for home page
-    .categories {
-      padding-top: 30vh;
-    }
-
     .common-searches {
       padding-top: 10vw;
 
@@ -467,12 +442,6 @@
   }
 
   @media (max-width: 374px) {
-    // Categories for home page
-    .categories {
-      padding-top: 75vw;
-      padding-bottom: 60vw;
-    }
-
     .magazine {
       padding-top: 310px;
 
