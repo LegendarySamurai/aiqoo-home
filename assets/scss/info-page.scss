@@ -1,3 +1,5 @@
+@import 'info-page-responsive';
+
 // helpers
 @import 'helpers/variables.scss';
 
@@ -25,7 +27,16 @@
         align-items: center;
         justify-content: center;
         max-width: 900px;
-        padding: 1.5% 4% 3%;
+        //padding: 1.5% 4% 3%;
+        //background-color: #fff;
+        //border-top: 10px solid #d8cdba;
+        //border-radius: 5px 5px 5px 5px;
+    }
+
+    .text-content {
+        font-family: "Raleway",sans-serif;
+        transform: translate(0, 11%);
+        padding: 2% 7% 6%;
         background-color: #fff;
         border-top: 10px solid #d8cdba;
         border-radius: 5px 5px 5px 5px;
@@ -167,6 +178,9 @@
     .content {
         width: 96%;
         max-width: 1000px;
+        background-color: #fff;
+        border-top: 10px solid #d8cdba;
+        border-radius: 5px 5px 5px 5px;
     }
 
     .success {
@@ -183,13 +197,17 @@
     }
 
     .text-content {
+        background-color: transparent;
+        border-top: none;
+        border-radius: 0;
+
         p {
             text-align: center;
         }
     }
 }
 
-// About Us page
+// Text page (Privacy-policy)
 .text-page {
     .content-wrap {
         width: 100%;
@@ -216,4 +234,22 @@
         }
     }
 }
+
+
+// About Us page
+.about-us {
+    .content-wrap {
+        margin-top: 110px;
+        background-size: cover;
+    }
+
+    .content {
+        transform: none;
+    }
+
+    .text-content {
+        transform: translate(0, -16%);
+    }
+}
+
 

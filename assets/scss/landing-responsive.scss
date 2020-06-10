@@ -8,49 +8,19 @@
     .head-section-content {
       margin-top: 3vh;
     }
-
-    // Uniq styles for this particular case
-    .landing-search-pro {
-      .logo-outer-container {
-        .logo {
-          display: none;
-        }
-      }
-    }
   }
 
-  @media (max-width: 599px) {
-    // Uniq styles for this particular case
-    .landing-search-pro {
-      .logo-outer-container {
-        .logo-container {
-          margin-bottom: 0;
-        }
+    @media(max-width: 599px) {
+       .search-pros-inner {
+           .logo-container {
+               justify-content: center;
 
-        .logo-title {
-          margin-left: 0;
-          font-size: 23pt;
-          white-space: nowrap;
-        }
-      }
-
-      .pros-container {
-        .categories {
-          padding-top: 30px;
-
-          .container {
-            padding: 0;
-          }
-        }
-      }
+               .logo {
+                   display: none;
+               }
+           }
+       }
     }
-
-    .bg-container {
-      &:before {
-        height: 500px;
-      }
-    }
-  }
 
   @media(min-width: 300px) {
     .all-categories {
@@ -72,26 +42,20 @@
         padding-bottom: 300px;
       }
 
-      .head-section-content-inner {
-        z-index: 22;
-        max-width: 96%;
-        margin: 1.5vh auto 0;
-      }
-
       h1 {
         line-height: 1.5;
         font-size: 14pt;
       }
     }
 
-    //.bg-container {
-    //  &:before {
-    //    position: absolute;
-    //    top: 150px;
-    //    left: 0;
-    //    height: 300px;
-    //  }
-    //}
+    .bg-container {
+      &:before {
+        position: absolute;
+        top: 150px;
+        left: 0;
+        height: 300px;
+      }
+    }
 
     .section-2 {
       padding: 20px 0 20px;
@@ -165,12 +129,15 @@
     }
 
     .section-search-pro {
-      padding-top: 30px;
+      //padding-top: 30px;
     }
 
     .search-pros-inner {
+        padding-top: 30px;
+        padding-bottom: 30px;
+
       .pros-container {
-        background-color: $primaryColor;
+        //background-color: $primaryColor;
       }
 
       .logo-container {
@@ -494,15 +461,15 @@
       }
     }
 
-    //.bg-container {
-    //  &:before {
-    //    position: absolute;
-    //    left: 0;
-    //    height: 700px;
-    //    background: #ebe2d3 url(../images/landing/bg-shingles.jpg) no-repeat bottom center;
-    //    background-size: 100%;
-    //  }
-    //}
+    .bg-container {
+      &:before {
+        position: absolute;
+        left: 0;
+        height: 700px;
+        background: #ebe2d3 url(../images/landing/bg-shingles.jpg) no-repeat bottom center;
+        background-size: 100%;
+      }
+    }
 
     .section-2 {
       padding: 30px 0 20px;
