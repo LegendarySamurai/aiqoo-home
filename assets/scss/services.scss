@@ -183,8 +183,17 @@
 
   // Services
   section.services {
+    .services-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+      grid-gap: 0 20px;
+      grid-auto-rows: 10px;
+    }
+
     .services-list-col {
-      margin:15px;
+      //margin:15px;
+       width: auto !important;
+      padding: 15px;
       background-color:rgba(255,255,255, 0.5);
       border:solid 1px #585077;
       border-radius:10px;
