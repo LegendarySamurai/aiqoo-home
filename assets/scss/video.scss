@@ -14,6 +14,10 @@
   color: $primaryColor;
   box-sizing: border-box;
 
+  .section-container {
+    max-width: 1300px;
+  }
+
   .container-lg {
     max-width: 1470px;
   }

@@ -3,12 +3,35 @@
 @import 'helpers/base';
 @import 'helpers/helpers';
 @import 'helpers/colors';
-// components
-@import 'components/page-title.scss';
 
 
-main.services {
+.services-page {
   padding-top: 0 !important;
+  font-family: "Raleway","Helvetica","Arial",sans-serif;
+  color: #585077;
+  //display: none !important;
+
+  .section-container {
+    //display: none !important;
+    max-width: 1300px;
+    //background-color: red; // remove!!!!
+
+
+  }
+
+  .page-title-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .page-heading-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
 
   // Questionaire
   .questionnaire {
@@ -157,10 +180,20 @@ main.services {
       }
     }
   }
+
+  // Services
+  section.services {
+    .services-list-col {
+      margin:15px;
+      background-color:rgba(255,255,255, 0.5);
+      border:solid 1px #585077;
+      border-radius:10px;
+    }
+  }
 }
 
 // Responsive
-main.services {
+main.services-page {
   @media(max-width: 1899px) {}
 
   @media(max-width: 1599px) {}
@@ -236,6 +269,14 @@ main.services {
   }
 
   @media(max-width: 599px) {
+    // Page title
+    .page-title-inner {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    // Questionnare
     .questionnaire {
       background-color: #585077;
       padding: 10px 0 30px;
