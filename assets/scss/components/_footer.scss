@@ -1,154 +1,151 @@
 .page-footer {
-  padding-top: 20px;
-  color: $text-color-999;
-  background-color: $pageFooterPrimaryColor;
-  font-family: $main-font;
+    padding-top: 20px;
+    color: $text-color-999;
+    background-color: $pageFooterPrimaryColor;
+    font-family: $main-font;
 
-  .footer-container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  // Left
-  .content-column-left {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    padding-top: 30px;
-
-    &::after {
-      position: absolute;
-      top: 60%;
-      right: 10px;
-      transform: translate(0, -50%);
-      display: block;
-      content: '';
-      width: 1px;
-      height: 85%;
-      background-color: #edecef;
+    .footer-container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
     }
-  }
+    // Left
+    .content-column-left {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
 
-  // Center
-  .content-column-center {
-    padding-top: 60px;
-  }
-
-  .news-letter-wrap {
-    .image-container {
-      width: 35px;
+        &::after {
+            position: absolute;
+            top: 60%;
+            right: 10px;
+            transform: translate(0, -50%);
+            display: block;
+            content: '';
+            width: 1px;
+            height: 85%;
+            background-color: #edecef;
+        }
     }
-  }
-
-  // Right
-  .content-column-right {
-    .content {
-      padding-top: 30px;
-    }
-  }
-
-  .page-footer-link {
-    display: block;
-    width: auto;
-    margin-right: 20px;
-    text-align: left;
-    font-size: 9pt;
-    color: #ccc;
-  }
-
-  .page-footer-main {
-    max-width: 1300px;
-    padding-bottom: 40px;
-    margin: 0 auto;
-  }
-
-  .brand-logo {
-    align-self: flex-start;
-    width: 145px;
-  }
-
-  .logo-pros-container {
-    width: 100%;
-    height: 40px;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
-  }
-
-  .more-information-container {
-    margin-top: 20px;
-
-    .more-info {
-      a {
-        text-transform: uppercase;
-        text-decoration: underline;
-      }
-
-      .page-footer-link {
-        color: #d8cdba;
-      }
+    // Center
+    .content-column-center {
+        padding-top: 60px;
     }
 
-    .top-services {
-      //width: 37%;
+    .news-letter-wrap {
+        .image-container {
+            width: 35px;
+        }
     }
-  }
-
-  .footer-h4 {
-    display: block;
-    font-family: "Raleway", sans-serif;
-    font-size: 12pt;
-    color: #fff;
-    white-space: nowrap;
-  }
-
-  p {
-    font-weight: 400;
-    font-size: 12pt;
-    color: #ccc;
-  }
-
-  span {
-    font-weight: 400;
-    font-size: 12pt;
-  }
-
-  .pros-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    max-height: 390px;
-    padding: 30px 40px;
-    background-color: #312c43;
-    border-radius: 5px;
-  }
-
-  .join-us-button {
-    width: 220px;
-    height: 40px;
-    border-radius: 5px;
-
-    button {
-      width: 100%;
-      height: 100%;
-      line-height: .75;
-      color: #fff;
-      font-family: "Lato", sans-serif;
-      font-size: 15pt;
-      font-weight: 400;
-      border-radius: 5px;
-      border: solid 0.5px #ffffff;
+    // Right
+    .content-column-right {
+        .content {
+            padding-top: 30px;
+        }
     }
-  }
+
+    .page-footer-link {
+        display: block;
+        width: auto;
+        margin-right: 20px;
+        text-align: left;
+        font-size: 9pt;
+        color: #ccc;
+    }
+
+    .page-footer-main {
+        max-width: 1300px;
+        padding-bottom: 40px;
+        margin: 0 auto;
+    }
+
+    .brand-logo {
+        align-self: flex-start;
+        width: 145px;
+    }
+
+    .logo-pros-container {
+        width: 100%;
+        height: 40px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .more-information-container {
+        margin-top: 20px;
+
+        .more-info {
+            a {
+                text-transform: uppercase;
+                text-decoration: underline;
+            }
+
+            .page-footer-link {
+                color: #d8cdba;
+            }
+        }
+
+        .top-services {
+            //width: 37%;
+        }
+    }
+
+    .footer-h4 {
+        display: block;
+        font-family: $h-font;
+        font-size: 12pt;
+        color: #fff;
+        white-space: nowrap;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 12pt;
+        color: #ccc;
+    }
+
+    span {
+        font-weight: 400;
+        font-size: 12pt;
+    }
+
+    .pros-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        max-height: 390px;
+        padding: 30px 40px;
+        background-color: #312c43;
+        border-radius: 5px;
+    }
+
+    .join-us-button {
+        width: 220px;
+        height: 40px;
+        border-radius: 5px;
+
+        button {
+            width: 100%;
+            height: 100%;
+            line-height: .75;
+            color: #fff;
+            font-family: $main-font;
+            font-size: 15pt;
+            font-weight: 400;
+            border-radius: 5px;
+            border: solid 0.5px #ffffff;
+        }
+    }
 }
 
 .post-stats {
@@ -228,7 +225,7 @@
             padding-right: 10px;
             background-color: #15131d;
             color: #000;
-            font-family: "Lato", sans-serif;
+            font-family: $main-font;
             font-weight: 400;
             font-size: 10pt;
             border: none !important;

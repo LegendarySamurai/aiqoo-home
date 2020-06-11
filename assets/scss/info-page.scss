@@ -253,3 +253,60 @@
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.info-page-legal {
+    .content-wrap {
+        width: 100%;
+        height: auto;
+        padding-top: 40px;
+        background-color: #f7f7f7;
+        background-size: 100% 500px;
+        background-position: bottom;
+    }
+
+    .content {
+        transform: translate(0, -16%);
+        padding: 2%;
+        width: 98%;
+    }
+
+
+
+    .text-content {
+        font-family: "Raleway",sans-serif;
+        transform: translate(0, 11%);
+        padding: 2% 2% 6%;
+        background-color: #fff;
+        border-top: 10px solid #d8cdba;
+        border-radius: 5px 5px 5px 5px;
+
+        p {
+            margin: 8px;
+            font-size: 8pt;
+        }
+    }
+}

@@ -28,6 +28,17 @@
         font-weight: 600;
         font-size: 17pt;
     }
+
+    p {
+        font-family: $h-font;
+        color: $primaryColor;
+        white-space: nowrap;
+        padding: 0 20px;
+        font-weight: 600;
+        font-size: 14pt;
+        text-align: center;
+        width: 100%;
+    }
 }
 
 .section-title-decoration {
