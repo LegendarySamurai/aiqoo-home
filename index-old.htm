@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--<meta name="robots" content="noindex">-->
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MainPage - title</title>
+  <meta name="title" content="MainPage - title">
+  <meta name="description" content="MainPage - description">
+  <meta property="og:title" content="MainPage - title"/>
+  <meta property="og:description" content="MainPage - description"/>
+  <meta property="og:image" content="bla bla"/>
+  <link rel="icon" type="image/x-icon"
+        href="assets/favicons/favicon.ico?v=rbJvHdQ1pXf3c84N1GgaWko-QCv9q1hkLrr-3w8bd3M"/>
+  <!--<link rel="manifest" href="assets/manifest.json?v=hfkIF6z5DnvvS9K9Fo2FG2P5jbjbbKdIMtokXEzpnwY">-->
+  <script defer type="text/javascript" src="assets/js/web.js?v=1LpuMpU8Jdk-WyzUb6HLaUvLzeItKrfwgJKwBmPsj7o"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,900&display=swap" rel="stylesheet">
+  <link href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css" rel="stylesheet"
+        integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
+
+  <link href="assets/css/web.css?v=gN1wdYg08_ITmeiDmZ7E3XLB0Z1gOgqSNZ01skwDJDE" rel="stylesheet"/>
+  <!--<link href="assets/css/web-responsive.css?v=sdl_EeGpGSpkjwbvxJs_nPgxtTOqBE7aXCivGLMaLUA" rel="stylesheet" />-->
+
+  <link href="assets/css/home.css?v=vuOOkr0kN3bIMizfyxPH-IJ1i2RynPCFlEH7Eu-__78" rel="stylesheet"/>
+  <!--<link href="assets/css/home-responsive.css?v=uR6RtIyoDYq6GbvYriYDh4ddtoIUTsPAc-rTGFcCIpI" rel="stylesheet" />-->
+
+
+</head>
+<body>
+<script>
+	/*
+  //-- aiq ut pixel
+  var _ut_web_id = "AiqHome.com";
+  !function (e, t, n, a, s, u, i, c) {
+      e.ut_aiq || ((s = e.ut_aiq = function () { s.callMethod ? s.callMethod.apply(s, arguments) : s.queue.push(arguments) }).push = s, s.loaded = !0, s.version = "2.0", s.queue = [], (u = t.createElement(n)).async = !0, u.src = "https://api.aiq-magazine.com/FunnelsAssets/FunnelJS/user_tracking.es5.min.js", (i = t.getElementsByTagName(n)[0]).parentNode.insertBefore(u, i))
+  }
+  */
+</script>
+
+<header class="header is-hidden-on-home">
+  <div class="container container-lg">
+    <div class="row">
+      <div class="col-12 pl-0 pl-lg-3 pr-0 pr-lg-3">
+
+        <div class="header-content">
+          <button type="button" id="btn-open-menu" class="btn-open-menu d-lg-none" aria-label="Toggle menu">
+                            <span class="menu-icon">
+                                <i class="far fa-bars"></i>
+                            </span>
+          </button>
+
+          <div class="logo">
+            <a href="https://localhost:44391/"><img
+                src="assets/images/logo/logo.svg?v=IgkdLofEQidYHMGrUW0t3qumnQKKdu9pqWu8MSG36g4" alt="Aiq Home Menu Logo"
+                title="Aiq Home Menu Logo"></a>
+          </div>
+
+          <button type="button" id="btn-search" class="btn-search" aria-label="Search">
+            <i class="fal fa-search"></i>
+          </button>
+
+          <!-- Dropdown menu -->
+          <div id="dropdown-menu-container" class="dropdown-menu-container">
+            <div id="btn-close-menu" class="btn-close-menu d-lg-none"></div>
+            <div id="dropdown-menu" class="dropdown-menu">
+              <div class="dropdown-menu-inner">
+                <div class="dropdown-menu-header d-lg-none">
+                  <div class="dropdown-menu-header-logo">
+                    <a href="https://localhost:44391/"><img
+                        src="assets/images/logo/logo.svg?v=IgkdLofEQidYHMGrUW0t3qumnQKKdu9pqWu8MSG36g4"
+                        alt="Aiq Home Logo M" title="Aiq Home Logo M"></a>
+                  </div>
+                </div>
+
+                <ul class="navbar">
+                  <li class="is-active">
+                    <a href="https://localhost:44391/">
+                      <i class="d-lg-none menu-item-icon icon-home"></i>
+                      <span>Home</span>
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="magazine/">
+                      <i class="d-lg-none menu-item-icon icon-magazine"></i>
+                      <span>Magazine</span>
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="magazine/videos/">
+                      <i class="d-lg-none menu-item-icon icon-home"></i>
+                      <span>Videos</span>
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="#">
+                      <i class="d-lg-none menu-item-icon icon-home"></i>
+                      <span>Services</span>
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="about-us/">
+                      <i class="d-lg-none menu-item-icon icon-home"></i>
+                      <span>About us</span>
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="contact-us/" class="no-border-bottom">
+                      <i class="d-lg-none menu-item-icon icon-contact-us"></i>
+                      <span>Contact us</span>
+                    </a>
+                  </li>
+                </ul>
+
+                <ul class="dropdown-menu-social d-lg-none">
+                  <li>
+                    <a href="#!">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- EOL: Dropdown menu -->
+
+          <div id="header-search" class="search">
+            <div class="form-group position-relative">
+              <input type="text" id="header-search-input" aria-labelledby="FindAProBtn"
+                     class="form-control font-weight-bold" placeholder="What service are you looking for?">
+              <div class="super-placeholder">
+                <img class="header-location"
+                     src="assets/images/icons/pen-6.svg?v=7cGlhey0OBC1P8EieCpQhPjRjk7rjzZuRynaWeDmQU0"
+                     alt="Find Pros Icon">
+
+              </div>
+              <button type="button" id="FindAProBtn" class="find-btn font-weight-bold">FIND A PRO</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="home">
+
+
+  <section class="head-section position-relative">
+    <div class="head-section-header">
+      <a class="head-section-header-link" href="">
+        <i class="fad fa-pen-square"></i>
+        <span>Start Your Project</span>
+      </a>
+      <a class="head-section-header-link" href="">
+        <i class="fad fa-newspaper"></i>
+        <span>Magazine</span>
+      </a>
+      <a class="head-section-header-link" href="">
+        <i class="fad fa-users"></i>
+        <span>Join As A Pro</span>
+      </a>
+    </div>
+    <div class="head-section-container container-fluid container-lg">
+      <div class="row">
+        <div class="col-12 head-section-content">
+          <div class="head-section-content-inner">
+            <img src="assets/images/logo/logo.svg?v=IgkdLofEQidYHMGrUW0t3qumnQKKdu9pqWu8MSG36g4"
+                 class="logo position-relative" alt="Aiq Home Logo" title="Aiq Home Logo"/>
+            <div class="position-relative">
+              <h1>The leading source for local home improvement experts</h1>
+            </div>
+          </div>
+          <!-- search box -->
+          <div class="find-box">
+
+            <div class="form-group-mobile-bg">
+              <!--<span class="main-super-placeholder-heading super-placeholder-heading down-600-block">Please type your required project?</span>-->
+              <!--<span class="zip-super-placeholder-heading super-placeholder-heading down-600-block is-hidden">Enter your zip code.</span>-->
+              <div class="form-group position-relative">
+                <input id="head-section-search-input" class="form-control" type="text"
+                       placeholder="I’m looking for a roofing fixture">
+                <div class="super-placeholder">
+                  <img class="up-600-block" src="assets/images/icons/pen-6.svg" alt="Find Pros Icon">
+                  <img class="magnifier down-600-block" src="assets/images/icons/magnifier.svg"
+                       alt="Find Pros Magnifiers Icon">
+                  <img class="location down-600-block" src="assets/images/icons/location.svg"
+                       alt="Find Pros Location Icon">
+                  <span class="main-super-placeholder-heading super-placeholder-heading">Please type your required project?</span>
+                  <span
+                      class="zip-super-placeholder-heading super-placeholder-heading is-hidden">Enter your zip code.</span>
+                </div>
+                <button class="find-btn" type="button">FIND A PRO</button>
+              </div>
+            </div>
+
+            <!-- Reasons -->
+            <div class="reasons">
+              <!--  up-600-flex -->
+              <div class="reason licensed">
+                <img class="reason-icon" src="assets/images/header/licensed.png" alt="Licensed Icon"
+                     title="Licensed Icon"/>
+                <div class="headings">
+                  <span>Licensed</span>
+                  <p>Certified and insured</p>
+                </div>
+
+              </div>
+
+              <div class="reason protected">
+                <img class="reason-icon" src="assets/images/header/protected.svg" alt="Approved Icon"
+                     title="Approved Icon"/>
+                <div class="headings">
+                  <span>Approved</span>
+                  <p>Screened and vetted</p>
+                </div>
+              </div>
+
+              <div class="reason rating">
+                <img class="reason-icon" src="assets/images/header/rating.png" alt="5 Star Rating Icon"
+                     title="5 Star Rating Icon"/>
+                <div class="headings">
+                  <span>5 star rated</span>
+                  <p>Locally recommended</p>
+                </div>
+              </div>
+
+              <div class="reason local">
+                <img class="reason-icon" src="assets/images/header/local.png" alt="Local Pros Icon"
+                     title="Local Pros Icon"/>
+                <div class="headings">
+                  <span>Local</span>
+                  <p>Active and operating near you</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="categories  categories-home-page">
+    <div class="container section-container">
+      <!-- trending categories-->
+      <div class="row">
+        <!-- trending categories title -->
+        <div class="col-12">
+          <div class="section-title-container">
+            <span class="section-title-decoration left"></span>
+            <h3>Leading Categories</h3>
+            <span class="section-title-decoration right"></span>
+          </div>
+        </div>
+        <div class="col-12">
+          <!-- trending categories list -->
+          <div class="row list">
+
+            <div class="col-4 col-lg-2 col-item">
+              <div class="list-item-with-icon">
+                <a href="c/bathroom_remodeling/">
+                  <div class="list-item-icon">
+                    <img class="bathroom"
+                         src="assets/images/categories/4.png?v=C-R66fIOdPvtaOBDEtBF_tXewGuZGoxwIgcMfIybtDw"
+                         alt="Bathroom Icon"/>
+                  </div>
+                  <h5>Bathroom Remodeling</h5>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-4 col-lg-2 col-item">
+              <div class="list-item-with-icon">
+                <a href="c/garages/">
+                  <div class="list-item-icon">
+                    <img class="garage-conversion"
+                         src="assets/images/categories/5.png?v=9nLE65-MkbG48VOgrBQZdzPOKv2li3y0zz4gAR_mLSI"
+                         alt="Garage Icon"/>
+                  </div>
+                  <h5>Garages</h5>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-4 col-lg-2 col-item">
+              <div class="list-item-with-icon">
+                <a href="c/air_conditioning_&_cooling/">
+                  <div class="list-item-icon">
+                    <img class="heating-cooling"
+                         src="assets/images/categories/3.png?v=byCHZvJbcyXY1keZKj5cCaukrgs1XBUFx_DJbqDLcVk"
+                         alt="Heating & Cooling Icon"/>
+                  </div>
+                  <h5>Air Conditioning & Cooling</h5>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-4 col-lg-2 col-item">
+              <div class="list-item-with-icon">
+                <a href="c/kitchen_remodeling/">
+                  <div class="list-item-icon">
+                    <img class="kitchen"
+                         src="assets/images/categories/2.png?v=AUp3iKQjEMM7Ghs46OKv7AI04Y2h1WVL1jKiHismtKQ"
+                         alt="Kitchen Icon"/>
+                  </div>
+                  <h5>Kitchen Remodeling</h5>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-4 col-lg-2 col-item">
+              <div class="list-item-with-icon">
+                <a href="c/roofing/">
+                  <div class="list-item-icon">
+                    <img class="roofing"
+                         src="assets/images/categories/1.png?v=f_2RRTTPtHeAoatEtCOHZ1IRWaASsVp_OEaOT_oAtsU"
+                         alt="Roofing Icon"/>
+                  </div>
+                  <h5>Roofing</h5>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-4 col-lg-2 col-item">
+              <div class="list-item-with-icon border-none">
+                <a href="c/windows/">
+                  <div class="list-item-icon">
+                    <img class="windows-doors"
+                         src="assets/images/categories/21.png?v=3oDsYrlPXb_Law9K5VGfJBlm5UV2l7SiqLmXW9qlotY"
+                         alt="Windows & Doors Icon"/>
+                  </div>
+                  <h5>Windows</h5>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- other categories -->
+      <div class="row other-categories">
+
+        <div class="col-12">
+          <h2>All Home Improvement Categories</h2>
+        </div>
+
+        <div class="col-12">
+          <div class="row list">
+            <div class="col-12 list-col">
+
+              <div class="row">
+
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/solar_panels/" class="list-col-item">Solar Panels<i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/cabanas,_gazebos_&amp;_pergolas/" class="list-col-item">Cabanas, Gazebos &amp; Pergolas<i
+                      class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/outdoor_kitchens/" class="list-col-item">Outdoor Kitchens<i
+                      class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/home_security/" class="list-col-item">Home Security<i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/sports_surfaces/" class="list-col-item">Sports Surfaces<i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/framing/" class="list-col-item">Framing<i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/docks/" class="list-col-item">Docks<i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/elevators/" class="list-col-item">Elevators<i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/disability_services/" class="list-col-item">Disability Services<i
+                      class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/recovery_services/" class="list-col-item">Recovery Services<i
+                      class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/carpeting/" class="list-col-item">Carpeting<i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/baby_proofing/" class="list-col-item">Baby Proofing<i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/attics/" class="list-col-item">Attics<i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/glass_&amp;_mirrors/" class="list-col-item">Glass &amp; Mirrors<i
+                      class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/heating_&amp;_furnaces/" class="list-col-item">Heating &amp; Furnaces<i
+                      class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/foundations/" class="list-col-item">Foundations<i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/energy_efficiency_/_going_green/" class="list-col-item">Energy Efficiency / Going Green<i
+                      class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/3d_design/" class="list-col-item">3D Design<i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/cabinets_&amp;_closets/" class="list-col-item">Cabinets &amp; Closets<i
+                      class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/carpentry_&amp;_woodworking/" class="list-col-item">Carpentry &amp; Woodworking<i
+                      class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/basements/" class="list-col-item">Basements<i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/walls_&amp;_ceilings/" class="list-col-item">Walls &amp; Ceilings<i
+                      class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/locksmiths/" class="list-col-item">Locksmiths<i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/handyman_services/" class="list-col-item">Handyman Services<i
+                      class="fad fa-chevron-right"></i></a>
+                </div>
+              </div>
+              <div class="row" id="MoreCategoriesContainer" style="display:none;">
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/addiions,_adus_&amp;_new_construction/" class="list-col-item">Addiions, ADUs &amp; New
+                    Construction<i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/flooring/" class="list-col-item">Flooring<i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/doors/" class="list-col-item">Doors<i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/electrical/" class="list-col-item">Electrical<i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/concrete,_brick_&amp;_stone/" class="list-col-item">Concrete, Brick &amp; Stone<i
+                      class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/windows/" class="list-col-item">Windows<i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/fences_&amp;_gates/" class="list-col-item">Fences &amp; Gates<i
+                      class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/pool_houses_&amp;_guest_houses/" class="list-col-item">Pool Houses &amp; Guest Houses<i
+                      class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/spas,_hot_tubs,_jacuzzis_&amp;_saunas/" class="list-col-item">Spas, Hot Tubs, Jacuzzis
+                    &amp; Saunas<i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/smart_home/" class="list-col-item">Smart Home<i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/plumbing/" class="list-col-item">Plumbing<i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/swimming_pools/" class="list-col-item">Swimming Pools<i
+                      class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/painting_&amp;_staining/" class="list-col-item">Painting &amp; Staining<i
+                      class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/sunrooms/" class="list-col-item">Sunrooms<i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/driveways,_walks_&amp;_steps/" class="list-col-item">Driveways, Walks &amp; Steps<i
+                      class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/tiles_&amp;_ceramics/" class="list-col-item">Tiles &amp; Ceramics<i
+                      class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/patios,_porches_&amp;_decks/" class="list-col-item">Patios, Porches &amp; Decks<i
+                      class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/siding/" class="list-col-item">Siding<i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/drywall_&amp;_insulation/" class="list-col-item">Drywall &amp; Insulation<i
+                      class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/home_remodeling/" class="list-col-item">Home Remodeling<i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/landscape,_yard_&amp;_garden/" class="list-col-item">Landscape, Yard &amp; Garden<i
+                      class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/garages/" class="list-col-item">Garages<i class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/bathroom_remodeling/" class="list-col-item">Bathroom Remodeling<i
+                      class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/air_conditioning_&amp;_cooling/" class="list-col-item">Air Conditioning &amp; Cooling<i
+                      class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/kitchen_remodeling/" class="list-col-item">Kitchen Remodeling<i
+                      class="fad fa-chevron-right"></i></a>
+                </div>
+                <div class=" col-sm-12 col-md-6 col-xl-4 col-xxl-3">
+                  <a href="c/roofing/" class="list-col-item">Roofing<i class="fad fa-chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row view-more-container" id="MoreCategoriesBtn">
+        <div class="col-auto mx-auto">
+          <button type="button" class="brand-btn primary"
+                  onclick="reloadon(MoreCategoriesContainer); reloadoff(MoreCategoriesBtn);">View All
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="magazine position-relative">
+    <div class="magazine-header">
+      <div class="container section-container">
+
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title-container">
+              <span class="section-title-decoration left"></span>
+              <a href="magazine/"><h2>AIQ Magazine</h2></a>
+              <span class="section-title-decoration right"></span>
+            </div>
+            <p class="magazine-header-text text-center">
+              <span class="font-weight-600">The ultimate home improvement magazine featuring professional articles and videos</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- cards -->
+        <div class="row cards-container pt-3">
+          <div class="col-auto col-md-6 col-lg-3 mx-auto mx-lg-0 mb-4 mb-lg-0">
+            <a href="magazine/articles/pace-government-backed-program-that-will-fund-your-new-roof/">
+              <div class="card">
+                <div class="card-header">
+                  <div class="card-image">
+                    <img
+                        src="https://api.aiq-magazine.com/assets/UploadImages/4cf07011f839f5c444d71b2347980eb1_600_360_3_31_2020_9_23_53_AM.jpg"
+                        alt="bla alt">
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">Meet the government backed program that will fund your new roof</h4>
+                </div>
+                <div class="card-footer"></div>
+              </div>
+            </a>
+          </div>
+          <div class="col-auto col-md-6 col-lg-3 mx-auto mx-lg-0 mb-4 mb-lg-0">
+            <a href="magazine/articles/remodeling-your-kitchen/">
+              <div class="card">
+                <div class="card-header">
+                  <div class="card-image">
+                    <img
+                        src="https://api.aiq-magazine.com/assets/UploadImages/ecea6e3cc6c3efa892beb69ca117a195_600_360_122201911527PM.jpg"
+                        alt="&#x5E9;&#x5D8;&#x5E8;&#x5D5;&#x5EA; &#x5E9;&#x5DC; &#x5DE;&#x5D0;&#x5D4; &#x5E9;&quot;&#x5D7; &#x5D5;&#x5D1;&#x5D9;&#x5EA; &#x5DE;&#x5E2;&#x5D5;&#x5E6;&#x5D1; &#x5DE;&#x5E9;&#x5D8;&#x5E8;&#x5D9; 200 &#x5E9;&quot;&#x5D7; &#x5DB;&#x5D7;&#x5D5;&#x5DC;&#x5D9;&#x5DD;">
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">Thinking about remodeling your kitchen? </h4>
+                </div>
+                <div class="card-footer"></div>
+              </div>
+            </a>
+          </div>
+          <div class="col-auto col-md-6 col-lg-3 mx-auto mx-lg-0 mb-4 mb-lg-0">
+            <a href="magazine/articles/remodeling-your-bathroom-like-a-pro/">
+              <div class="card">
+                <div class="card-header">
+                  <div class="card-image">
+                    <img
+                        src="https://api.aiq-magazine.com/assets/UploadImages/fd0eea63b58a981bee4ee3d92fba4c53_600_360_1162019113738AM.jpg"
+                        alt=" &#x5D8;&#x5D1;&#x5DC;&#x5EA; &#x5D4;&#x5E9;&#x5D5;&#x5D5;&#x5D0;&#x5D4; &#x5E8;&#x5E4;&#x5D5;&#x5E8;&#x5DE;&#x5EA; &#x5D4;&#x5D1;&#x5E8;&#x5D9;&#x5D0;&#x5D5;&#x5EA; &#x5D0;&#x5D3;&#x5D5;&#x5DD;">
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">Remodeling your bathroom like a pro</h4>
+                </div>
+                <div class="card-footer"></div>
+              </div>
+            </a>
+          </div>
+          <div class="col-auto col-md-6 col-lg-3 mx-auto mx-lg-0 mb-4 mb-lg-0">
+            <a href="magazine/articles/backyard-planning/">
+              <div class="card">
+                <div class="card-header">
+                  <div class="card-image">
+                    <img
+                        src="https://api.aiq-magazine.com/assets/UploadImages/ecea6e3cc6c3efa892beb69ca117a195_600_360_122201911527PM.jpg"
+                        alt="&#x5E9;&#x5D8;&#x5E8;&#x5D5;&#x5EA; &#x5E9;&#x5DC; &#x5DE;&#x5D0;&#x5D4; &#x5E9;&quot;&#x5D7; &#x5D5;&#x5D1;&#x5D9;&#x5EA; &#x5DE;&#x5E2;&#x5D5;&#x5E6;&#x5D1; &#x5DE;&#x5E9;&#x5D8;&#x5E8;&#x5D9; 200 &#x5E9;&quot;&#x5D7; &#x5DB;&#x5D7;&#x5D5;&#x5DC;&#x5D9;&#x5DD;">
+                  </div>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">The backyard you&#x2019;ve always dreamed of is actually a lot more attainable
+                    than you may think</h4>
+                </div>
+                <div class="card-footer"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container section-container">
+      <!-- tips -->
+      <div class="row tips-container">
+        <div class="col-12">
+          <div class="row">
+            <!-- article container -->
+            <div class="col-12 col-lg-4">
+              <div class="article">
+                <div class="profile d-flex align-items-center">
+                  <div class="profile-image">
+                    <img
+                        src="https://api.aiq-magazine.com/assets/UploadImages/4cf0fgt1f839f5c444d71b2347980eb1_120_120_3_31_2020_10_23_00_AM.png"
+                        alt="AiqHome Editorial Team<">
+                  </div>
+                  <div class="profile-details">
+                    <p class="profile-name">AiqHome</p>
+                    <p class="profile-origin">Editorial Team</p>
+                  </div>
+                </div>
+                <div class="article-content">
+                  <p>
+                    The professional, in-depth magazine assisting homeowners make the wisest choices when it comes to
+                    remodeling, improving or fixing up their homes.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- videos container -->
+            <div class="col-12 col-lg-8 mt-5 mt-lg-0">
+              <div class="row">
+
+                <div class="col-12 col-sm-6 py-lg-3 mb-5 mb-lg-0">
+                  <div class="video-container small-video">
+                    <!-- 1:1 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <a class="link-mask" href="magazine/videos/v-1/"></a>
+                      <!-- video thumbnail -->
+                      <img
+                          src="https://api.aiq-magazine.com/assets/UploadImages/ecea6e3cc6c3efa892beb69ca117a195_600_360_122201911527PM.jpg"
+                          alt="&#x5E9;&#x5D8;&#x5E8;&#x5D5;&#x5EA; &#x5E9;&#x5DC; &#x5DE;&#x5D0;&#x5D4; &#x5E9;&quot;&#x5D7; &#x5D5;&#x5D1;&#x5D9;&#x5EA; &#x5DE;&#x5E2;&#x5D5;&#x5E6;&#x5D1; &#x5DE;&#x5E9;&#x5D8;&#x5E8;&#x5D9; 200 &#x5E9;&quot;&#x5D7; &#x5DB;&#x5D7;&#x5D5;&#x5DC;&#x5D9;&#x5DD;">
+                      <i class="fal fa-play-circle"></i>
+                      <div class="mask"></div>
+                      <div class="text">
+                        <span class="video-title">Video Teaser - 1</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 py-lg-3">
+                  <div class="video-container small-video">
+                    <!-- 1:1 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <a class="link-mask" href="magazine/videos/v-2/"></a>
+                      <!-- video thumbnail -->
+                      <img
+                          src="https://api.aiq-magazine.com/assets/UploadImages/fd0eea63b58a981bee4ee3d92fba4c53_600_360_1162019113738AM.jpg"
+                          alt=" &#x5D8;&#x5D1;&#x5DC;&#x5EA; &#x5D4;&#x5E9;&#x5D5;&#x5D5;&#x5D0;&#x5D4; &#x5E8;&#x5E4;&#x5D5;&#x5E8;&#x5DE;&#x5EA; &#x5D4;&#x5D1;&#x5E8;&#x5D9;&#x5D0;&#x5D5;&#x5EA; &#x5D0;&#x5D3;&#x5D5;&#x5DD;">
+                      <i class="fal fa-play-circle"></i>
+                      <div class="mask"></div>
+                      <div class="text">
+                        <span class="video-title">Video Teaser - 2</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- more tips -->
+      <div class="row more-tips">
+        <div class="col-12">
+          <h2 class="system-color-19 mt-2">Home Improvement Articles</h2>
+          <!-- cards -->
+          <div class="row cards-container pt-3">
+            <div class="col-auto col-md-6 col-lg-3 mx-auto mx-lg-0 mb-4 mb-lg-0">
+              <a href="magazine/articles/diy-painting-your-home/">
+                <div class="card">
+                  <div class="card-header">
+                    <div class="card-image">
+                      <img
+                          src="https://api.aiq-magazine.com/assets/UploadImages/da0e49e40ced6814954055a93baf734e_600_360_1128201910924PM.jpg"
+                          alt="&#x5DB;&#x5EA;&#x5D1;&#x5EA; &#x5E2;&#x5D9;&#x5EA;&#x5D5;&#x5DF; &#x5D1;&#x5D9;&#x5D8;&#x5D5;&#x5D7; &#x5D7;&#x5D9;&#x5D9;&#x5DD; - &#x5E8;&#x5E4;&#x5D5;&#x5E8;&#x5DE;&#x5D4;">
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title">Painting your home might be a handful, and many wonder whether they should
+                      DIY it or hire professionals</h4>
+                  </div>
+                  <div class="card-footer"></div>
+                </div>
+              </a>
+            </div>
+            <div class="col-auto col-md-6 col-lg-3 mx-auto mx-lg-0 mb-4 mb-lg-0">
+              <a href="magazine/articles/hottest-kitchen-trends/">
+                <div class="card">
+                  <div class="card-header">
+                    <div class="card-image">
+                      <img
+                          src="https://api.aiq-magazine.com/assets/UploadImages/fd0eea63b58a981bee4ee3d92fba4c53_600_360_1162019113738AM.jpg"
+                          alt=" &#x5D8;&#x5D1;&#x5DC;&#x5EA; &#x5D4;&#x5E9;&#x5D5;&#x5D5;&#x5D0;&#x5D4; &#x5E8;&#x5E4;&#x5D5;&#x5E8;&#x5DE;&#x5EA; &#x5D4;&#x5D1;&#x5E8;&#x5D9;&#x5D0;&#x5D5;&#x5EA; &#x5D0;&#x5D3;&#x5D5;&#x5DD;">
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title">Are you ready to let some color into your life? 2020&#x2019;s hottest kitchen
+                      trends</h4>
+                  </div>
+                  <div class="card-footer"></div>
+                </div>
+              </a>
+            </div>
+            <div class="col-auto col-md-6 col-lg-3 mx-auto mx-lg-0 mb-4 mb-lg-0">
+              <a href="magazine/articles/pro-vs-diy/">
+                <div class="card">
+                  <div class="card-header">
+                    <div class="card-image">
+                      <img
+                          src="https://api.aiq-magazine.com/assets/UploadImages/a7e1472143ba30e1e2f74b778c3cc7c5_600_360_1162019115450AM.jpg"
+                          alt="&#x5DB;&#x5E0;&#x5E1;&#x5EA; &#x5D9;&#x5E9;&#x5E8;&#x5D0;&#x5DC; &#x5DE;&#x5E0;&#x5D5;&#x5E8;&#x5D4;">
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title">Pro vs. DIY</h4>
+                  </div>
+                  <div class="card-footer"></div>
+                </div>
+              </a>
+            </div>
+            <div class="col-auto col-md-6 col-lg-3 mx-auto mx-lg-0 mb-4 mb-lg-0">
+              <a href="magazine/articles/air-conditioning-units-split-or-central/">
+                <div class="card">
+                  <div class="card-header">
+                    <div class="card-image">
+                      <img
+                          src="https://api.aiq-magazine.com/assets/UploadImages/814ba1dc20739bf2e31377dff7b7261e_600_360_1112201975757AM.jpg"
+                          alt="&#x5D2;&#x5E8;&#x5E3; &#x5D4;&#x5E9;&#x5D5;&#x5D5;&#x5D0;&#x5EA;&#x5D9; &#x5D3;&#x5DE;&#x5D9; &#x5D1;&#x5D9;&#x5D8;&#x5D5;&#x5D7; &#x5D1;&#x5E8;&#x5D9;&#x5D0;&#x5D5;&#x5EA; &#x5D1;&#x5E2;&#x5E9;&#x5D5;&#x5E8; &#x5D4;&#x5D0;&#x5D7;&#x5E8;&#x5D5;&#x5DF; - &#x5DC;&#x5E4;&#x5D9; &#x5E9;&#x5E0;&#x5D9;&#x5DD;">
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title">Air conditioning units - split or central?</h4>
+                  </div>
+                  <div class="card-footer"></div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="questionnaire position-relative">
+    <div class="container section-container">
+      <div class="row">
+        <!--<div class="col-12 d-lg-none mb-3">-->
+        <!--  <h2 class="questionnaire-title">Are you a qualified and certified home services professional?</h2>-->
+        <!--</div>-->
+        <div class="col-auto image-col">
+          <div class="questionnaire-image">
+            <img class="d-none d-600-block"
+                 src="assets/images/professional/bob.png?v=Q721bznfjdCN8o9SjuSytwTvB0ajq4lSnYq86IDOA2s"
+                 alt="Home Services Pro" title="Home Services Pro">
+          </div>
+        </div>
+        <!--<div class="col-12 d-sm-none">-->
+        <!--  <div class="questionnaire-text my-4">-->
+        <!--    Join the thousands of pros already operating with AIQ and let-->
+        <!--    <br class="d-none d-lg-block">-->
+        <!--    us help you grow your business If your business is:-->
+        <!--  </div>-->
+        <!--</div>-->
+
+        <div class="col-auto d-flex questionnaire-content-col">
+          <div class="questionnaire-content">
+            <h2 class="questionnaire-title">Are you a qualified home services professional?</h2>
+            <div class="questionnaire-text">
+              Join the thousands of leading home improvement professionals
+              <br class="d-none d-lg-block">
+              in the AIQPros network and benefit from:
+            </div>
+            <div class="questionnaire-content-outer">
+              <div class="questionnaire-content-inner">
+                <div class="questionnaire-content-item">
+                  <div class="questionnaire-content-icon">
+                    <img src="assets/images/icons/support.png?v=9xquCkc2_wbzwY_n0mp5PvM6ZippHM8zqoxPK27LU04"
+                         alt="Certified Icon">
+                  </div>
+                  <div class="questionnaire-content-text">Technologically automated marketing and advertising</div>
+                </div>
+                <div class="questionnaire-content-item">
+                  <div class="questionnaire-content-icon">
+                    <img src="assets/images/icons/confidence.png?v=g5O0-IBn0j5GmqWMfqZ7tk7i9tPWUQtIgb_bD0mHyvs"
+                         alt="Professional Icon">
+                  </div>
+                  <div class="questionnaire-content-text">AI enhanced user-friendly leads, sales and project management
+                    platform
+                  </div>
+                </div>
+                <div class="questionnaire-content-item border-none">
+                  <div class="questionnaire-content-icon">
+                    <img src="assets/images/icons/fully-insured.png?v=IV2ODyEzBA_r1o3u9Vj771FL3uJbwdU2A8nAG-LKNck"
+                         alt="Insured Icon">
+                  </div>
+                  <div class="questionnaire-content-text">A business optimizing, unique, industry level comparative
+                    reports segment
+                  </div>
+                </div>
+              </div>
+              <div class="join-us">
+                <button type="button">Join Us Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--section class="google-search">
+      <div class="container section-container">
+          <div class="row">
+              <div class="col-12">
+                  <div class="form-group position-relative">
+                      <input class="form-control" type="text" placeholder="">
+                      <div class="super-placeholder">
+                          <img asp-append-version="true" src="assets/images/icons/google.png">
+                      </div>
+                      <i class="far fa-search icon-search d-600-none"></i>
+                      <button class="search-btn" type="button">
+                          SEARCH
+                          <i class="far fa-chevron-right icon-white"></i>
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </section-->
+
+
+  <section class="common-searches">
+    <div class="container section-container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-title-container">
+            <span class="section-title-decoration left"></span>
+            <h3>Top Searches</h3>
+            <span class="section-title-decoration right"></span>
+          </div>
+        </div>
+      </div>
+      <div class="row list common-searches-list">
+        <div class="col-12 list-col">
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-xl-4">
+              <a href="#" class="list-col-item">Los Angeles tile 2222<i class="fad fa-chevron-right"></i></a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-4">
+              <a href="#" class="list-col-item">Los Angeles Roofing Facility<i class="fad fa-chevron-right"></i></a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-4">
+              <a href="#" class="list-col-item">Roof installation<i class="fad fa-chevron-right"></i></a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-4">
+              <a href="#" class="list-col-item">Los Angeles Roofing Facility<i class="fad fa-chevron-right"></i></a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-4">
+              <a href="#" class="list-col-item">Slidng<i class="fad fa-chevron-right"></i></a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-4">
+              <a href="#" class="list-col-item">Roofing<i class="fad fa-chevron-right"></i></a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-4">
+              <a href="#" class="list-col-item">Roofing<i class="fad fa-chevron-right"></i></a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-4">
+              <a href="#" class="list-col-item">Los Angeles Roofing Facility<i class="fad fa-chevron-right"></i></a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-4">
+              <a href="#" class="list-col-item">Roofing<i class="fad fa-chevron-right"></i></a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-4">
+              <a href="#" class="list-col-item">Heating & cooling/HVAC<i class="fad fa-chevron-right"></i></a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-4">
+              <a href="#" class="list-col-item">Los Angeles Roofing Facility & Doors<i class="fad fa-chevron-right"></i></a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-4">
+              <a href="#" class="list-col-item">Driveways & walks<i class="fad fa-chevron-right"></i></a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-4">
+              <a href="#" class="list-col-item">Los Angeles Roofing Facility & cooling/HVAC<i
+                  class="fad fa-chevron-right"></i></a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-4">
+              <a href="#" class="list-col-item">Windows & Doors<i class="fad fa-chevron-right"></i></a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-4">
+              <a href="#" class="list-col-item">Los Angeles Roofing Facility & walks<i class="fad fa-chevron-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="services">
+    <div class="container section-container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-title-container">
+            <span class="section-title-decoration left"></span>
+            <h3>Home Improvement Services</h3>
+            <span class="section-title-decoration right"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row services-list list">
+        <div class="col services-list-col mb-3">
+          <span class="h4-title">Roofing</span>
+          <p>Roof Replacement Or Repair</p>
+          <p>Roof Insulation</p>
+          <p>Roof Paint</p>
+          <p>Metal Roofing</p>
+          <p>Gutters</p>
+          <p>Skylights</p>
+        </div>
+        <div class="col services-list-col mb-3">
+          <span class="h4-title">Kitchen Remodeling</span>
+          <p>Full Kitchen Remodel</p>
+          <p>Kitchen Cabinets</p>
+          <p>Kitchen Countertops</p>
+          <p>Kitchen Flooring &amp; Tiles</p>
+          <p>Kitchen Plumbing</p>
+          <p>Outdoor Kitchens</p>
+          <p>Kitchen Appliances</p>
+          <p>Other</p>
+        </div>
+        <div class="col services-list-col mb-3">
+          <span class="h4-title">Air Conditioning &amp; Cooling</span>
+          <p>Central Air Conditioning / Hvac</p>
+          <p>Swamp Coolers</p>
+          <p>Window A/c Units</p>
+          <p>Fans</p>
+          <p>Mist Cooling Systems</p>
+          <p>Ducts &amp; Vents</p>
+        </div>
+        <div class="col services-list-col mb-3">
+          <span class="h4-title">Bathroom Remodeling</span>
+          <p>Full Bathroom Remodel</p>
+          <p>Bathroom Renovation</p>
+          <p>Bathroom Fixtures</p>
+          <p>Bathroom Plumbing</p>
+          <p>Bath-tubs</p>
+          <p>Bathroom Addition</p>
+          <p>Shower Doors &amp; Enclosures</p>
+          <p>Hot Tubs And Jaccusis</p>
+          <p>Other</p>
+        </div>
+        <div class="col services-list-col mb-3">
+          <span class="h4-title">Landscape, Yard &amp; Garden</span>
+          <p>Full Landscape Remodel</p>
+          <p>Gardening</p>
+          <p>Swimming Pools</p>
+          <p>Artificial Turf / Synthetic Grass</p>
+          <p>Irrigation Systems</p>
+          <p>Motion Sensors</p>
+          <p>Mist Cooling Systems</p>
+          <p>Ponds &amp; Water Features</p>
+          <p>Outdoor Structures</p>
+          <p>Concrete, Paving &amp; Stone</p>
+          <p>3d Design</p>
+        </div>
+        <div class="col services-list-col mb-3">
+          <span class="h4-title">Driveways, Walks &amp; Steps</span>
+          <p>Driveways</p>
+          <p>Walks &amp; Steps</p>
+        </div>
+        <div class="col services-list-col mb-3">
+          <span class="h4-title">Painting &amp; Staining</span>
+          <p>Whole House - Paint</p>
+          <p>Exterior - Paint Or Stain</p>
+          <p>Interior - Paint Or Stain</p>
+          <p>Multiple Rooms - Paint Or Stain</p>
+          <p>Small Projects - Paint Or Stain</p>
+          <p>Commericial Buildings - Paint</p>
+          <p>Residential Buildings - Paint</p>
+        </div>
+        <div class="col services-list-col mb-3">
+          <span class="h4-title">Windows</span>
+          <p>Window Installation</p>
+          <p>Window Repairs</p>
+          <p>Skylights Installation Or Repair</p>
+          <p>Window Weatherstripping</p>
+          <p>Other</p>
+        </div>
+        <div class="col services-list-col mb-3">
+          <span class="h4-title">Addiions, ADUs &amp; New Construction</span>
+          <p>Home Construction</p>
+          <p>Accessory Dwelling Unit - Adu</p>
+          <p>Build An Addition</p>
+          <p>Home Remodeling</p>
+          <p>Outbuildings And Structures</p>
+          <p>Foundations</p>
+          <p>Framing</p>
+          <p>Recovery Services</p>
+          <p>Sports Surfaces</p>
+          <p>Major Renovation</p>
+        </div>
+        <div class="col services-list-col mb-3">
+          <span class="h4-title">Energy Efficiency / Going Green</span>
+          <p>Insulation</p>
+          <p>Windows &amp; Doors</p>
+          <p>Solar Systems</p>
+          <p>Roof Replacement</p>
+          <p>Air Conditioning &amp; Heating</p>
+          <p>Energy Efficient Landscaping</p>
+          <p>Sun Rooms</p>
+          <p>Lighting</p>
+          <p>Hurricane Protection</p>
+          <p>Other</p>
+        </div>
+      </div>
+
+      <div class="row view-more-container">
+        <div class="col-auto mx-auto">
+          <a href="services.html" class="brand-btn primary">View More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+
+<footer class="page-footer">
+  <div class="footer-container page-footer-main">
+    <div class="row">
+
+      <!-- left column -->
+      <div class="col-12 col-md-auto col-xl-5 content-column-left">
+        <img src="assets/images/footer/logo.svg?v=IgkdLofEQidYHMGrUW0t3qumnQKKdu9pqWu8MSG36g4"
+             class="brand-logo mb-lg-2" alt="Aiq Home Footer Logo" title="Aiq Home Footer Logo"/>
+        <p class="line-h-1-5 mt-4 mt-lg-0">
+          The market changing, AI & BI enhanced, technological marketplace connecting homeowners with local, approved
+          and recommended home improvement contractors and professionals.
+        </p>
+
+        <!-- more information -->
+        <div class="more-information-container">
+          <div class="row">
+            <div class="col-12 d-flex flex-row more-info">
+              <a href="about-us/" class="page-footer-link mb-2 py-1">About us</a>
+              <a href="contact-us/" class="page-footer-link mb-2 py-1">Contact Us</a>
+              <a href="terms-and-conditions/" class="page-footer-link mb-2 py-1">Terms & Conditions</a>
+              <a href="privacy-policy/" class="page-footer-link mb-2 py-1">Privacy Policy</a>
+            </div>
+            <div class="col-12 top-services">
+              <div class="row">
+                <div class="col-12">
+                  <span class="footer-h4 font-weight-600 py-3">Top Services</span>
+                </div>
+                <div class="col-12 col-sm-6 d-flex flex-column mt-3 mt-sm-0">
+                  <a href="#!" class="page-footer-link mb-2 py-1">Roof - Install or replace</a>
+                  <a href="#!" class="page-footer-link mb-2 py-1">Accessory Dwelling Units - Build</a>
+                  <a href="#!" class="page-footer-link mb-2 py-1">Garage - Build</a>
+                </div>
+                <div class="col-12 col-sm-6 d-flex flex-column mt-3 mt-sm-0">
+                  <span class="footer-h4 font-weight-600"></span>
+                  <a href="#!" class="page-footer-link mb-2 py-1">Garage - Remodel or renovate</a>
+                  <a href="#!" class="page-footer-link mb-2 py-1">Adus - Remodel</a>
+                  <a href="#!" class="page-footer-link mb-2 py-1">Roof - repair</a>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <!-- center column -->
+      <div class="col-12 col-md-auto col-xl-4 content-column-center">
+        <div class="content">
+          <div class="row">
+            <div class="col-12">
+              <div class="news-letter-wrap">
+                <div class="image-container">
+                  <img src="assets/images/footer/interface.svg?v=SihIKODx3Bi8G2Yc4HJNHL9mZemc0Nh_6aJJ8JIfXuA"
+                       alt="newsletter">
+                </div>
+                <span class="footer-h4 beige font-weight-black py-3">Join The AIQ Home Newsletter</span>
+                <p class="text line-h-1-5">
+                  Sign up today and be first to get notified of special offers,
+                  hot trends and exclusive subscribers’ only events.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="page-footer-subscribe-box">
+                <!--<div class="form-group position-relative">
+                    <i class="fad fa-user"></i>
+                    <input type="text" class="form-control" placeholder="Full name">
+                </div>-->
+                <div id="NewsletterForm" class="form-group position-relative mt-2">
+                  <i class="fad fa-envelope" id="NewsletterEnvelope" title="Email"></i>
+                  <input type="text" id="NewsletterEmail" name="NewsletterEmail" aria-labelledby="NewsletterEnvelope"
+                         class="form-control email" placeholder="Enter your Email">
+                  <button id="NewsletterBtn" class="btn-subscribe" onclick="javascript: JoinNewsletter();">Subscribe
+                  </button>
+                  <button id="NewsletterBtnSpinner" class="btn-subscribe" style="display:none;">Subscribe <span
+                      class="spinner-border spinner-border-sm"></span></button>
+                </div>
+                <div id="NewsletterThank" class="form-group position-relative m-t-30" style="display:none;">
+                  <button type="button" class="btn-subscribe">
+                    Thank you for joining the AIQHome newsletter.
+                  </button>
+                </div>
+                <span id="NewsletterError" class="error-message system-color-14" style="display:none;"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- right column -->
+      <div class="col-12 col-md-auto col-xl-3 content-column-right">
+        <div class="pros-card">
+          <div class="logo-pros-container">
+            <img src="assets/images/footer/footer-pros-logo.png?v=vAnOYXGqQTVp3NReFeymrRWZCOluueRaNqCLV0y0QCo"
+                 alt="logo-pros">
+          </div>
+          <p class="line-h-1-5">
+            The industry dedicated, business optimizing, leads, sales and project management platform for all home
+            improvement service providers.
+          </p>
+          <div class="join-us-button">
+            <a href="#">Join Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid page-footer-footer">
+    <div class="footer-container page-footer-main">
+      <div class="row">
+        <div class="col-12 col-sm-6">
+          <div class="social">
+            <a class="facebook" href="#">
+              <img src="assets/images/footer/social/facebook.svg?v=GRT4tGugZdC2efJx-77YvRIHbk6rQLFoL42q1Q6vpLw"
+                   alt="facebook">
+            </a>
+            <a class="linkedin" href="#">
+              <img src="assets/images/footer/social/linkedin.svg?v=nyl2dc--tPuYS2agE4r_-ratqiMo6vJwAu6OvWsc2Xs"
+                   alt="linkedin">
+            </a>
+            <a class="instagram" href="#">
+              <img src="assets/images/footer/social/instagram.svg?v=Y56zTGyn3NcffZOX1hLy7qef0NNftU9RMQ7BNdbE9HY"
+                   alt="instagram">
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6">
+          <div class="content d-flex justify-content-end align-items-center">
+            <p>&#169; 2020 . All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="back-layer"></div>
+
+</body>
+</html>
