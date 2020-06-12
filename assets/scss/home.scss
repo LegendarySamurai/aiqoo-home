@@ -30,10 +30,6 @@ body {
 .home {
   padding-top: 0 !important;
 
-  .section-container {
-    //max-width: 1300px;
-  }
-
   // head section
   .head-section {
     background-image: url(../images/header/main-image.jpg);
@@ -267,6 +263,11 @@ body {
 
   .logo {
     width: 100%;
+  }
+
+  // Categories
+  .categories-home-page {
+    padding-top: 150px;
   }
 
   // Magazine
