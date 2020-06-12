@@ -1,6 +1,4 @@
-﻿@import 'web-responsive';
-
-// helpers
+﻿// helpers
 @import 'helpers/variables.scss';
 @import 'helpers/base.scss';
 @import 'helpers/helpers.scss';
@@ -10,6 +8,7 @@
 @import "vendor/bootstrap.custom/bootstrap.custom.scss";
 @import "vendor/slick/slick.scss";
 @import "vendor/slick/slick-theme.scss";
+
 
 // components
 @import 'components/section-title.scss';
@@ -26,6 +25,18 @@
 @import 'components/breadcrumbs.scss';
 @import 'components/page-title.scss';
 @import 'components/section-container.scss';
+@import 'components/questionnaire.scss';
+
+
+// Responsive // components
+@import 'components/section-title-responsive.scss';
+@import 'components/list-responsive.scss';
+@import 'components/footer-responsive.scss';
+@import 'components/button-responsive.scss';
+@import 'components/header-responsive.scss';
+@import 'components/reasons-responsive.scss';
+@import 'components/card-responsive.scss';
+@import 'components/services-responsive.scss';
 
 
 

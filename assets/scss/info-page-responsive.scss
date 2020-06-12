@@ -97,6 +97,12 @@
 // Contact Us page
 .contact-us {}
 
-// About Us page
-.text-page {}
+// Text page (Privacy-policy)
+.text-page {
+    @media(max-width: 767px) {
+        .content {
+            transform: translate(0, -14%) !important;
+        }
+    }
+}
 

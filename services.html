@@ -20,11 +20,7 @@
         integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
 
   <link href="assets/css/web.css?v=iASR-qHKG2KSMFdBLKbYtO-DAkpRNHrmeQ5mlZEsMm0" rel="stylesheet"/>
-  <!--<link href="assets/css/web-responsive.css?v=zvmxNcbZOXegkjUYjeBhq6gpKqLAgfDhM7JFsjMSbm4" rel="stylesheet" />-->
-
   <link href="assets/css/services.css" rel="stylesheet"/>
-  <!--<link href="assets/css/home-responsive.css?v=uR6RtIyoDYq6GbvYriYDh4ddtoIUTsPAc-rTGFcCIpI" rel="stylesheet" />-->
-
 
 </head>
 <body>
@@ -52,9 +48,7 @@
           </button>
 
           <div class="logo">
-            <a href="https://localhost:44391/"><img
-                src="assets/images/logo/logo.svg?v=IgkdLofEQidYHMGrUW0t3qumnQKKdu9pqWu8MSG36g4" alt="Aiq Home Menu Logo"
-                title="Aiq Home Menu Logo"></a>
+            <a href="https://localhost:44391/"><img src="assets/images/logo/logo.svg?v=IgkdLofEQidYHMGrUW0t3qumnQKKdu9pqWu8MSG36g4" alt="Aiq Home Menu Logo" title="Aiq Home Menu Logo"></a>
           </div>
 
           <button type="button" id="btn-search" class="btn-search" aria-label="Search">
@@ -68,9 +62,7 @@
               <div class="dropdown-menu-inner">
                 <div class="dropdown-menu-header d-lg-none">
                   <div class="dropdown-menu-header-logo">
-                    <a href="https://localhost:44391/"><img
-                        src="assets/images/logo/logo.svg?v=IgkdLofEQidYHMGrUW0t3qumnQKKdu9pqWu8MSG36g4"
-                        alt="Aiq Home Logo M" title="Aiq Home Logo M"></a>
+                    <a href="https://localhost:44391/"><img src="assets/images/logo/logo.svg?v=IgkdLofEQidYHMGrUW0t3qumnQKKdu9pqWu8MSG36g4" alt="Aiq Home Logo M" title="Aiq Home Logo M"></a>
                   </div>
                 </div>
 
@@ -81,7 +73,7 @@
                       <span>Home</span>
                     </a>
                   </li>
-                  <li class="">
+                  <li class="is-active">
                     <a href="magazine/">
                       <i class="d-lg-none menu-item-icon icon-magazine"></i>
                       <span>Magazine</span>
@@ -93,7 +85,7 @@
                       <span>Videos</span>
                     </a>
                   </li>
-                  <li class="is-active">
+                  <li class="">
                     <a href="services/">
                       <i class="d-lg-none menu-item-icon icon-home"></i>
                       <span>Services</span>
@@ -137,12 +129,9 @@
 
           <div id="header-search" class="search">
             <div class="form-group position-relative">
-              <input type="text" id="header-search-input" aria-labelledby="FindAProBtn"
-                     class="form-control font-weight-bold" placeholder="What service are you looking for?">
+              <input type="text" id="header-search-input" aria-labelledby="FindAProBtn" class="form-control font-weight-bold" placeholder="What service are you looking for?">
               <div class="super-placeholder">
-                <img class="header-location"
-                     src="assets/images/icons/pen-6.svg?v=7cGlhey0OBC1P8EieCpQhPjRjk7rjzZuRynaWeDmQU0"
-                     alt="Find Pros Icon">
+                <img class="header-location" src="assets/images/icons/pen-6.svg?v=7cGlhey0OBC1P8EieCpQhPjRjk7rjzZuRynaWeDmQU0" alt="Find Pros Icon">
 
               </div>
               <button type="button" id="FindAProBtn" class="find-btn font-weight-bold">FIND A PRO</button>
@@ -184,11 +173,10 @@
     </div>
   </div>
 
-
   <section class="services">
     <div class="container section-container">
       <div class="services-list list">
-        <div class="services-list-col mb-3">
+        <div class="services-list-col">
           <span class="h4-title font-11">3D Design</span>
           <p class="font-10">Home 3d Design</p>
           <p class="font-10">Landscape 3d Design</p>
@@ -609,7 +597,6 @@
     </div>
   </section>
 
-
   <section class="questionnaire position-relative">
     <div class="container section-container">
       <div class="row">
@@ -631,7 +618,7 @@
         <!--  </div>-->
         <!--</div>-->
 
-        <div class="col-auto d-flex">
+        <div class="col-auto d-flex questionnaire-content-col">
           <div class="questionnaire-content">
             <h2 class="questionnaire-title">Are you a qualified home services professional?</h2>
             <div class="questionnaire-text">
@@ -676,7 +663,6 @@
       </div>
     </div>
   </section>
-
 
 </main>
 
@@ -826,6 +812,7 @@
     crossorigin="anonymous">
 </script>
 <script src="assets/js/services-page.js"></script>
+<script src="assets/js/header.js"></script>
 
 </body>
 </html>
