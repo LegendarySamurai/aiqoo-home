@@ -11,5 +11,6 @@ $(document).ready(function() {
 			$(service).css({gridRowEnd: `span ${ spans+ 1}`});
 		});
 	}
-
 });
+
+// window.addEventListener("resize", myFunction);

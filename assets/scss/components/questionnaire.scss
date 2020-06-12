@@ -160,6 +160,18 @@
 @media(max-width: 991px) {
   // Questionaire
   .questionnaire {
+    .row {
+      flex-wrap: nowrap;
+    }
+    &::before {
+      height: 80%;
+    }
+
+    .questionnaire-content-col {
+      flex-grow: 1;
+      flex-shrink: 1;
+    }
+
     .questionnaire-title {
       font-size: 2.125vw !important;
     }
@@ -207,17 +219,8 @@
 @media(max-width: 767px) {
   // Questionaire
   .questionnaire {
-    &::before {
-      height: 80%;
-    }
-
-    .row {
-      flex-wrap: nowrap;
-    }
-
-    .questionnaire-content-col {
-      flex-grow: 1;
-      flex-shrink: 1;
+    .questionnaire-content-outer {
+      margin-bottom: 50px;
     }
 
     .questionnaire-image {
@@ -237,6 +240,10 @@
   .questionnaire {
     background-color: #585077;
     padding: 10px 0 30px;
+
+    .questionnaire-content-outer {
+      margin-bottom: 0;
+    }
 
     &::before {
       display: none;
