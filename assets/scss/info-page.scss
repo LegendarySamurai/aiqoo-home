@@ -3,6 +3,9 @@
 
 // for all info pages common styles
 .info-page {
+    width: 100%;
+    height: 100%;
+
     .content-wrap {
         display: flex;
         flex-direction: column;
@@ -10,13 +13,14 @@
         justify-content: center;
         background-image: url('./../images/bg/contact-us-bg-d.jpg');
         background-repeat: no-repeat;
+        background-position: bottom;
     }
 
-    .top-bg {
-        width: 100%;
-        height: 85px;
-        background-color: #f7f7f7;
-    }
+    //.top-bg {
+    //    width: 100%;
+    //    height: 85px;
+    //    background-color: #f7f7f7;
+    //}
 
     .content {
         transform: translate(0, -6%);
@@ -34,10 +38,8 @@
         background-color: #fff;
         border-top: 10px solid #d8cdba;
         border-radius: 5px 5px 5px 5px;
-    }
 
-    .text-content {
-        font-family: "Raleway",sans-serif;
+        box-shadow: 0 1.5px 15px 0 rgba(50, 81, 129, 0.2);
 
         h1 {
             font-weight: 900;
@@ -175,6 +177,8 @@
         background-color: #fff;
         border-top: 10px solid #d8cdba;
         border-radius: 5px 5px 5px 5px;
+
+        box-shadow: 0 1.5px 15px 0 rgba(50, 81, 129, 0.2);
     }
 
     .success {
@@ -194,6 +198,7 @@
         background-color: transparent;
         border-top: none;
         border-radius: 0;
+        box-shadow: none;
 
         p {
             text-align: center;
@@ -232,8 +237,10 @@
 // About Us page
 .about-us {
     .content-wrap {
-        margin-top: 110px;
-        background-size: cover;
+        //margin-top: 110px;
+        padding-bottom: 90px;
+        padding-top: 100px;
+        background-size: 100%;
     }
 
     .content {
@@ -242,7 +249,7 @@
     }
 
     .text-content {
-        transform: translate(0, -16%);
+        transform: none;
     }
 }
 
@@ -252,26 +259,17 @@
         width: 100%;
         height: auto;
         padding-top: 40px;
-        background-color: #f7f7f7;
-        background-size: 100% 500px;
-        background-position: bottom;
+        background: none;
     }
 
     .content {
-        transform: translate(0, -16%);
+        transform: none;
         padding: 2%;
-        width: 98%;
+        max-width: 96%;
     }
 
-
-
     .text-content {
-        font-family: "Raleway",sans-serif;
-        transform: translate(0, 11%);
-        padding: 2% 2% 6%;
-        background-color: #fff;
-        border-top: 10px solid #d8cdba;
-        border-radius: 5px 5px 5px 5px;
+        transform: none;
 
         p {
             margin: 8px;
