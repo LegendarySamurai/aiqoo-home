@@ -102,6 +102,17 @@
     a:active {
         color: $beige;
     }
+
+    .brand-btn {
+        &.big {
+            box-shadow: none;
+
+            i {
+                top: 50%;
+                transform: translate(0, -50%);
+            }
+        }
+    }
 }
 
 @media(min-width: 300px) {

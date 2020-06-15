@@ -1,5 +1,3 @@
-@import 'info-page-responsive';
-
 // helpers
 @import 'helpers/variables.scss';
 
@@ -66,6 +64,7 @@
     form {
         display: flex;
         flex-direction: column;
+        width: 96%;
         margin-top: 2vh;
     }
 
@@ -165,7 +164,6 @@
 
 // Contact us
 .contact-us {
-
     .content-wrap {
         background-size: cover;
         background-position: center;
@@ -231,7 +229,6 @@
     }
 }
 
-
 // About Us page
 .about-us {
     .content-wrap {
@@ -240,6 +237,7 @@
     }
 
     .content {
+        width: 96%;
         transform: none;
     }
 
@@ -248,32 +246,7 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// info-page-legal
 .info-page-legal {
     .content-wrap {
         width: 100%;
@@ -306,3 +279,150 @@
         }
     }
 }
+
+
+// RESPONSIVE
+// for all info pages common styles
+.info-page {
+    @media(max-width: 991px) {
+        h2 {
+            font-size: 22pt;
+        }
+
+        .text-content {
+            h1 {
+                font-size: 26pt;
+            }
+
+            p {
+                font-size: 13pt;
+            }
+        }
+
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+
+        .form-control, textarea {
+            padding-left: .5rem;
+            padding-right: .5rem;
+            font-size: 11pt;
+
+            &::placeholder {
+                font-size: 11pt;
+            }
+        }
+
+        .request-btn {
+            font-size: 12pt;
+        }
+    }
+
+    @media(max-width: 599px) {
+        .content {
+            max-width: 90%;
+        }
+
+        .success {
+            & h2 {
+                font-size: 20pt;
+            }
+
+            & p {
+                font-size: 13pt;
+                padding-bottom: 50px;
+            }
+
+            & .image-col {
+                width: 100%;
+                margin: 0 auto;
+
+                & img{
+                    width:30%;
+                    margin:0 auto;
+                }
+            }
+        }
+
+        .text-content h2 {
+            font-size: 22pt;
+        }
+
+        .text-content p {
+            font-size: 12pt;
+        }
+
+        .form-group {
+            flex-direction: column;
+            margin-bottom: 0;
+        }
+
+        .form-control {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+
+        .custom-control {
+            width: 100%;
+            margin: 1rem 0;
+        }
+
+        .request-btn {
+            width: auto;
+            margin: 15px auto;
+        }
+    }
+}
+
+// Contact Us page
+.contact-us {
+    @media(max-width: 1899px) {}
+
+    @media(max-width: 1599px) {}
+
+    @media(max-width: 1399px) {}
+
+    @media(max-width: 1199px) {}
+
+    @media(max-width: 991px) {}
+
+    @media(max-width: 767px) {}
+
+    @media(max-width: 599px) {}
+
+    @media(max-width: 374px) {}
+}
+
+// Text page (Privacy-policy)
+.text-page {
+    @media(max-width: 767px) {
+        .content {
+            transform: translate(0, -14%) !important;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -33,8 +33,6 @@
       grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
       grid-gap: 0 20px;
       grid-auto-rows: 10px;
-      //grid-auto-rows: minmax(10px, auto);
-      //grid-auto-rows: auto;
     }
 
     .services-list-col {
@@ -52,13 +50,6 @@
 // Responsive
 main.services-page {
   @media(max-width: 1199px) {
-    //// Questionaire
-    //.questionnaire {
-    //  .questionnaire-title {
-    //    font-size: 20pt;
-    //  }
-    //}
-
     // Services
     section.services {
       .services-list {
@@ -120,6 +111,4 @@ main.services-page {
       margin-top: 0;
     }
   }
-
-  @media(max-width: 374px) {}
 }

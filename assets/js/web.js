@@ -32,28 +32,51 @@ function init() {
 
 
 //-- Hide Menu In Main Page
-window.addEventListener("load", function () {
+const findBox = document.querySelector('.home .find-box');
+const pageHeader = document.querySelector('.header');
 
-	const pageHeader = document.querySelector('.header');
-	const findBox = document.querySelector('.home .find-box');
-	if (findBox != null) {
+function handlePageHeader () {
+
+	if (window.innerWidth >= 992) {
 		const findBoxRect = findBox.getBoundingClientRect();
-		window.addEventListener('scroll', () => {
-			if (window.innerWidth >= 992) {
-				if (window.scrollY >= findBoxRect.top) {
-					if (!pageHeader.classList.contains('show-on-home')) {
-						pageHeader.classList.add('show-on-home');
-					}
-					else if (pageHeader.classList.contains('hide-on-home')) {
-						pageHeader.classList.remove('hide-on-home');
-					}
-				}
-				else {
-					if (pageHeader.classList.contains('show-on-home')) {
-						pageHeader.classList.add('hide-on-home');
-					}
-				}
+
+		if (window.pageYOffset >= findBoxRect.top) {
+			if (!pageHeader.classList.contains('show-on-home')) {
+				pageHeader.classList.add('show-on-home');
 			}
+			else if (pageHeader.classList.contains('hide-on-home')) {
+				pageHeader.classList.remove('hide-on-home');
+			}
+		}
+		else {
+			if (pageHeader.classList.contains('show-on-home')) {
+				pageHeader.classList.add('hide-on-home');
+			}
+		}
+	}
+}
+
+window.addEventListener("load", function () {
+	handlePageHeader();
+
+	if (findBox != null) {
+		window.addEventListener('scroll', () => {
+			handlePageHeader();
+			// if (window.innerWidth >= 992) {
+			// 	if (window.pageYOffset >= findBoxRect.top) {
+			// 		if (!pageHeader.classList.contains('show-on-home')) {
+			// 			pageHeader.classList.add('show-on-home');
+			// 		}
+			// 		else if (pageHeader.classList.contains('hide-on-home')) {
+			// 			pageHeader.classList.remove('hide-on-home');
+			// 		}
+			// 	}
+			// 	else {
+			// 		if (pageHeader.classList.contains('show-on-home')) {
+			// 			pageHeader.classList.add('hide-on-home');
+			// 		}
+			// 	}
+			// }
 		});
 
 	}
