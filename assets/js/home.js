@@ -4,23 +4,36 @@ const isDesktop = window.innerWidth >=600;
 const pageHeader = document.querySelector('.header');
 const findBox = document.querySelector('.home .find-box');
 const findBoxRect = findBox.getBoundingClientRect();
+const desktopSize = window.innerWidth >= 992;
+
+function handlePageHeader () {
+	console.log('=>>>', document.offsetTop);
+}
+
+// function handlePageHeader() {
+// 	if (desktopSize) {
+// 		if (window.scrollY >= findBoxRect.top) {
+// 			if (!pageHeader.classList.contains('show-on-home')) {
+// 				pageHeader.classList.add('show-on-home');
+// 			}
+// 			else if (pageHeader.classList.contains('hide-on-home')) {
+// 				pageHeader.classList.remove('hide-on-home');
+// 			}
+// 		}
+// 		else {
+// 			if (pageHeader.classList.contains('show-on-home')) {
+// 				pageHeader.classList.add('hide-on-home');
+// 			}
+// 		}
+// 	}
+// }
+
+$(document).ready(function() {
+	handlePageHeader();
+});
 
 window.addEventListener('scroll', () => {
-	if (window.innerWidth >= 992) {
-		if (window.scrollY >= findBoxRect.top) {
-			if (!pageHeader.classList.contains('show-on-home')) {
-				pageHeader.classList.add('show-on-home');
-			}
-			else if (pageHeader.classList.contains('hide-on-home')) {
-				pageHeader.classList.remove('hide-on-home');
-			}
-		}
-		else {
-			if (pageHeader.classList.contains('show-on-home')) {
-				pageHeader.classList.add('hide-on-home');
-			}
-		}
-	}
+	handlePageHeader();
 });
 
 const zipCodePlaceholders = document.querySelectorAll('.zip-super-placeholder-heading');

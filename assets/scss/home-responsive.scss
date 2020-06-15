@@ -2,139 +2,156 @@
 @import 'helpers/helpers';
 
 .home {
-  @media(max-width: 1399px) {
-    .section-container {
-      max-width: 1200px;
+    @media(max-width: 1399px) {
+        .section-container {
+            max-width: 1200px;
+        }
+
+        .head-section {
+            .head-section-content {
+                height: 350px;
+            }
+        }
     }
 
-    .head-section {
-      .head-section-content {
-        height: 350px;
-      }
+    @media(max-width: 1199px) {
+        .section-container {
+            max-width: 990px;
+        }
+
+        .questionnaire {
+            .questionnaire-title {
+                font-size: 20pt;
+            }
+        }
     }
+
+    @media(max-width: 991px) {
+        .section-container {
+            max-width: 90%;
+        }
+
+        .find-box {
+            left: 50% !important;
+            transform: translate(-50%, 50%) !important;
+            max-width: 96% !important;
+        }
+
+        .card {
+            max-width: 100%;
+        }
+
+        .video-container {
+            .text {
+                left: 10px;
+                top: auto;
+                bottom: 10px;
+                padding: 5px 20px 5px 10px;
+
+                .video-title {
+                    font-size: 15pt;
+                }
+            }
+
+            &.small-video {
+                .fa-play-circle {
+                    //font-size: 78pt;
+                }
+            }
+        }
+
+        .common-searches {
+            padding-bottom: 60px;
+        }
+
+        .magazine {
+            padding-top: 20px;
+
+            &:before {
+                height: calc(100% - 175px);
+            }
+
+            .article {
+                padding-right: 0;
+            }
+
+            .magazine-header {
+                width: 100%;
+                height: auto;
+                margin-top: -200px;
+            }
+
+            .magazine-header-text {
+                margin-top: 0;
+            }
+
+            .tips-container {
+                margin-top: 30px;
+            }
+
+            .more-tips {
+                margin-top: 40px;
+
+                .main-title {
+                    color: #fff;
+                }
+            }
+        }
+
+        .google-search {
+            .super-placeholder {
+                img {
+                    width: auto;
+                }
+            }
+
+            .search-btn {
+                width: 204px;
+                padding: .375rem .75rem;
+                font-size: 15pt;
+
+                i {
+                    margin-left: 40px;
+                }
+            }
+
+            .form-control {
+                padding: 0 216px 0 130px;
+            }
+        }
+
+      .head-section {
+        // Head section
+        .head-section-content-inner {
+          margin-top: 30px;
+        }
+        // head-section-header
+        .head-section-header {
+          display: none;
+        }
+      }
   }
 
-  @media(max-width: 1199px) {
-    .section-container {
-      max-width: 990px;
-    }
-  }
-
-  @media(max-width: 991px) {
-    .section-container {
-      max-width: 90%;
-    }
-
-    .find-box {
-      left: 50% !important;
-      transform: translate(-50%, 50%) !important;
-      max-width: 96% !important;
-    }
-
-    .card {
-      max-width: 100%;
-    }
-
-    .video-container {
-      .text {
-        left: 10px;
-        top: auto;
-        bottom: 10px;
-        padding: 5px 20px 5px 10px;
-
-        .video-title {
-          font-size: 15pt;
+    @media(max-width: 767px) {
+        .common-searches {
+            padding-top: 4vw;
         }
-      }
 
-      &.small-video {
-        .fa-play-circle {
-          //font-size: 78pt;
+        .questionnaire {
+            .questionnaire-image {
+                width: 150px;
+            }
+
+            .join-us {
+                button {
+                    height: 35px !important;
+                }
+            }
         }
-      }
     }
 
-    .common-searches {
-      padding-bottom: 60px;
-    }
-
-    .magazine {
-      padding-top: 20px;
-
-      &:before {
-        height: calc(100% - 175px);
-      }
-
-      .article {
-        padding-right: 0;
-      }
-
-      .magazine-header {
-        width: 100%;
-        height: auto;
-        margin-top: -200px;
-      }
-
-      .magazine-header-text {
-        margin-top: 0;
-      }
-
-      .tips-container {
-        margin-top: 30px;
-      }
-
-      .more-tips {
-        margin-top: 40px;
-
-        .main-title {
-          color: #fff;
-        }
-      }
-    }
-
-    .google-search {
-      .super-placeholder {
-        img {
-          width: auto;
-        }
-      }
-
-      .search-btn {
-        width: 204px;
-        padding: .375rem .75rem;
-        font-size: 15pt;
-
-        i {
-          margin-left: 40px;
-        }
-      }
-
-      .form-control {
-        padding: 0 216px 0 130px;
-      }
-    }
-
-    .head-section {
-      // Head section
-      .head-section-content-inner {
-        margin-top: 30px;
-      }
-
-      // head-section-header
-      .head-section-header {
-        display: none;
-      }
-    }
-  }
-
-  @media(max-width: 767px) {
-    .common-searches {
-      padding-top: 4vw;
-    }
-  }
-
-  @media(max-width: 599px) {
-    padding-top: 60px !important;
+    @media(max-width: 599px) {
+        padding-top: 60px !important;
 
     .video-container {
       .text {

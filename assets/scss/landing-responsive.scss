@@ -4,22 +4,31 @@
 @import 'helpers/helpers';
 
 .landing-page {
-  @media(max-width: 768px) {
-    .head-section-content {
-      margin-top: 3vh;
+    @media(max-width: 768px) {
+        .head-section-content {
+            margin-top: 3vh;
+        }
+        .head-section-content-inner {
+            width: 86%;
+        }
     }
-  }
 
     @media(max-width: 599px) {
-       .search-pros-inner {
-           .logo-container {
-               justify-content: center;
 
-               .logo {
-                   display: none;
-               }
-           }
-       }
+        .head-section-content-inner {
+            width: 96%;
+        }
+
+
+        .search-pros-inner {
+            .logo-container {
+                justify-content: center;
+
+                .logo {
+                    display: none;
+                }
+            }
+        }
     }
 
   @media(min-width: 300px) {
@@ -128,9 +137,9 @@
       }
     }
 
-    .section-search-pro {
-      //padding-top: 30px;
-    }
+        .section-search-pro {
+            //padding-top: 30px;
+        }
 
     .search-pros-inner {
         padding-top: 30px;

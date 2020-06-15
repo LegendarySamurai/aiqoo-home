@@ -69,14 +69,39 @@
 
 // view-more-container
 .view-more-container {
-  padding-top: 40px;
+    padding-top: 40px;
 
-  a {
-    font-family: $h-font;
-    font-weight: 400;
-    font-size: 11pt;
-    color: #fff;
-  }
+    a {
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border: 1px solid transparent;
+        font-size: 1rem;
+        line-height: 1.5;
+        cursor: pointer;
+        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        color: #fff;
+        background-color: #585077;
+        box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+        padding: 7px 28px;
+    }
+
+    a:hover {
+        color: $beige;
+    }
+
+    a:after {
+        color: $beige;
+    }
+
+    a:active {
+        color: $beige;
+    }
 }
 
 @media(min-width: 300px) {
