@@ -33,7 +33,7 @@ function init() {
 
 //-- Hide Menu In Main Page
 const findBox = document.querySelector('.home .find-box');
-const pageHeader = document.querySelector('.header');
+const pageHeader = document.querySelector('.header.is-hidden-on-home');
 
 function handlePageHeader () {
 

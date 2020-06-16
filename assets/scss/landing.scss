@@ -1,6 +1,7 @@
 // helpers
 @import 'helpers/variables';
 @import 'components/load-funnel';
+@import 'components/search-pro-section';
 
 .landing-page {
   position: relative;
@@ -15,9 +16,9 @@
     width: 100%;
   }
 
-  .section-container {
-    max-width: 1300px;
-  }
+  //.section-container {
+  //  max-width: 1300px;
+  //}
 
   // Reasons for this page
   .reasons {
@@ -30,10 +31,6 @@
 
     .head-section-content-inner {
       z-index: 9900 !important;
-      //display: flex;
-      //flex-direction: column;
-      //align-items: center;
-      //justify-content: space-evenly;
       min-height: 100vh;
       max-width: 80%;
       margin: 0 auto;
@@ -45,11 +42,38 @@
             padding: 10px 0;
         }
 
+        // funnel card
+        .funnel-card {
+          .step-div {
+            .icon-pos {
+              img {
+                width: 100%;
+              }
+            }
+          }
+        }
+
         .funnel-card-wrap {
             min-height: calc(65vh - 70px);
             width: 100%;
             padding-bottom: 25px;
         }
+
+        .funnel-card-nav {
+          display: flex !important;
+          flex-direction: row;
+          align-items: center;
+          white-space: nowrap;
+          padding: 0 0 30px 10px;
+
+          &:after {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+          }
+        }
+
+        // EOL: funnel card
 
         .reasons-wrap {
             min-height: 20vh;
@@ -150,146 +174,6 @@
     }
   }
 
-  .search-pros-inner {
-    position: relative;
-    z-index: 10;
-    padding-top: 20px;
-
-    .logo-container {
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: center;
-    }
-
-    .logo {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo-title {
-      margin: 0 auto;
-      color: $text-color;
-      font-family: $h-font;
-      font-weight: 700;
-      font-size: 27pt;
-    }
-
-    .search {
-      .form-group {
-        .form-control {
-          border-radius: 5px;
-          background-color: #f3f4f7;
-          font-family: $h-font;
-          color: $text-color;
-          border: none;
-          box-shadow: none;
-
-          &::placeholder {
-            color: $text-color;
-          }
-        }
-
-        .fa-search {
-          position: absolute;
-          top: 50%;
-          right: 20px;
-          transform: translate(0, -50%);
-        }
-      }
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      height: 100%;
-
-      img {
-        margin-top: 2px;
-      }
-    }
-
-    .pros-card-image {
-      border-radius: 5px;
-      box-shadow: 0 10px 35px 0 rgba(50, 81, 129, 0.35);
-    }
-
-    .pros-content {
-      .pros-type {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
-        width: 100%;
-
-        img {
-          margin-left: 10px;
-        }
-      }
-
-      .distance {
-        margin-left: auto;
-        font-family: $main-font;
-        font-weight: 500;
-        color: $grey;
-      }
-
-      .spec-type {
-        font-family: $main-font;
-        font-weight: 900;
-        color: $text-color;
-      }
-
-      .info,
-      .pros-reviews {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin: 10px 0;
-
-        .image-container {
-          margin-right: 10px;
-        }
-      }
-
-      .info {
-        margin: 10px 0;
-
-        span {
-          font-family: $main-font;
-          font-weight: 600;
-          color: $primaryColor;
-        }
-      }
-
-      .pros-reviews {
-        font-family: $main-font;
-        font-weight: 400;
-        color: $grey;
-      }
-    }
-
-    .activity-areas-title {
-      font-family: $h-font;
-      color: $text-color;
-    }
-
-    .activity-areas-list {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      align-items: center;
-    }
-
-    .activity-area {
-      font-family: $main-font;
-      font-weight: 400;
-      color: #aeb0b3;
-    }
-  }
-
   // Uniq styles for this particular case
   .landing-search-pro {
     padding-top: 0;
@@ -297,22 +181,36 @@
     .logo-outer-container {
       position: relative;
       width: 96%;
+      padding: 30px;
+      border-radius: 2.5px;
+      box-shadow: 0 1.5px 15px 0 rgba(50,81,129,0.06);
+      background-color: #fff;
 
       .logo-container {
         flex-direction: row-reverse;
         justify-content: center;
+        margin-bottom: 0;
 
         .logo {
           position: absolute;
           top: 0;
           right: 30px;
+          display: flex;
+          align-items: center;
+          flex-direction: row;
+          justify-content: space-between;
+          width: 140px;
+          height: 100%;
+          margin-top: 2px;
         }
-      }
-    }
 
-    .search-pros-inner {
-      .pros-container {
-        background-color: transparent;
+        .logo-title {
+          margin: 0 auto;
+          color: #342e49;
+          font-family: "Raleway","Helvetica","Arial",sans-serif;
+          font-weight: 700;
+          font-size: 27pt;
+        }
       }
     }
   }
@@ -347,25 +245,31 @@
     .head-section-content {
       margin-top: 3vh;
     }
+
     .head-section-content-inner {
       width: 86%;
     }
-  }
 
-  @media(max-width: 599px) {
-
-    .head-section-content-inner {
-      width: 96%;
-    }
-
-
-    .search-pros-inner {
+    .landing-search-pro {
       .logo-container {
         justify-content: center;
 
         .logo {
-          display: none;
+          width: 120px !important;
+          display: none !important;
         }
+      }
+    }
+  }
+
+  @media(max-width: 599px) {
+    .head-section-content-inner {
+      width: 96%;
+    }
+
+    .categories {
+      .list {
+        padding: 0;
       }
     }
   }
@@ -476,7 +380,7 @@
       }
     }
 
-    .search-pros-inner {
+    .landing-search-pro {
       padding-top: 30px;
       padding-bottom: 30px;
 
@@ -516,126 +420,6 @@
       .activity-area {
         margin: 10px 0;
         font-size: 10pt;
-      }
-    }
-
-    .pros-card {
-      padding: 32px 6px 6px;
-      background-color: #fff;
-
-      &:not(:first-child) {
-        margin-top: 40px;
-      }
-
-      .pros-info-container {
-        padding: 0 16px;
-      }
-
-      .pros-card-image {
-        img {
-          width: 100%;
-        }
-      }
-
-      .distance {
-        font-size: 9pt;
-      }
-
-      .pros-content {
-        height: 100%;
-        padding: 0 0 20px;
-      }
-
-      .pros-type {
-        line-height: 1.5;
-        font-size: 12pt;
-      }
-
-      .pros-reviews {
-        font-size: 8pt;
-      }
-
-      .info {
-        line-height: 1.5;
-
-        .image-container {
-          width: 20px;
-          padding: 2px;
-
-          img {
-            width: 100%;
-            max-width: 100%;
-          }
-        }
-
-        span {
-          font-size: 10pt;
-        }
-      }
-
-      .response-container {
-        padding: 16px 6px 0;
-        border-top: 1px solid #e1e0e7;
-      }
-
-      .request-a-quote-btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 16px;
-        width: 100%;
-        height: 40px;
-        font-family: $main-font;
-        font-weight: bold;
-        font-size: 11.25pt;
-        color: #fff;
-        background-color: $primaryColor;
-        box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
-      }
-
-      .response-col {
-        &:first-of-type {
-          &:after {
-            display: block;
-            content: '';
-            width: 1px;
-            height: 100%;
-            position: absolute;
-            right: 0;
-            top: 0;
-            border-right: 1px solid #e1e0e7;
-          }
-        }
-      }
-
-      .response {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-family: $main-font;
-      }
-
-      .response-title {
-        font-weight: 500;
-        font-size: 8.25pt;
-        color: $text-color;
-      }
-
-      .response-unit {
-        margin-top: 5px;
-        font-weight: bold;
-        font-size: 9.75pt;
-        color: transparentize($primaryColor, .3);
-      }
-    }
-
-    .pros { order: 1; }
-
-    .activity {
-      order: 2;
-
-      .activity-areas {
-        padding: 30px;
       }
     }
   }
@@ -693,7 +477,7 @@
       }
     }
 
-    .search-pros-inner {
+    .landing-search-pro {
       border-radius: 2.5px;
       box-shadow: 0 1.5px 15px 0 rgba(50, 81, 129, 0.06);
       background-color: #fff;
@@ -709,38 +493,6 @@
       .distance {
         font-size: 11pt;
       }
-
-      .pros-card {
-        padding: 20px;
-        border-radius: 5px;
-        background-color: transparentize(#dde1e8, .35);
-
-        &:not(:first-child) {
-          margin-top: 40px;
-        }
-      }
-
-      .response-container {
-        padding: 16px 0 0;
-
-        .request-a-quote-btn {
-          span {
-            height: 60px;
-          }
-        }
-      }
-    }
-
-    .activity-areas-title {
-      padding: 0 10px;
-      font-size: 13pt;
-    }
-
-    .activity-area {
-      padding: 0 10px;
-      margin: 10px 0;
-      font-size: 10pt;
-      border-right: 2px solid $text-color;
     }
   }
 
@@ -892,71 +644,9 @@
         margin-left: 10px;
       }
     }
-
-    .search-pros-inner {
-      padding: 30px;
-
-      .search {
-        width: 100%;
-        margin-top: 0;
-      }
-
-      .form-control {
-        width: 100%;
-        height: 60px;
-        padding-right: 50px;
-        padding-left: 30px;
-        font-size: 11pt;
-
-        &::placeholder {
-          font-size: 11pt;
-        }
-      }
-
-      .pros-content {
-        height: 100%;
-      }
-
-      .pros-type {
-        line-height: 1.5;
-        padding-bottom: 10px;
-        font-size: 13pt;
-      }
-
-      .response-container {
-        border: none;
-      }
-
-      .response-container-inner {
-        margin-left: auto;
-        display: flex;
-        flex-direction: column;
-
-        .response {
-          flex-direction: row;
-        }
-
-        .response-unit {
-          margin-top: 0;
-          margin-left: 10px;
-        }
-      }
-    }
-
-    .activity {
-      .activity-areas {
-        padding: 0;
-      }
-    }
   }
 
   @media(min-width: 1200px) {
-    .search-pros-inner {
-      .pros-content {
-        padding: 5px 0 15px;
-      }
-    }
-
     .head-section {
       h1 {
         font-size: 24pt;
@@ -978,24 +668,6 @@
     .bg-container {
       &:before {
         height: 770px;
-      }
-    }
-
-    .section-search-pro {
-      .search-pros-inner {
-        padding: 50px;
-      }
-
-      .pros-list-container {
-        .pros-card {
-          padding: 32px;
-        }
-      }
-
-      .search-pros-inner {
-        .pros-phone {
-          transform: translateY(calc(50% + 30px));
-        }
       }
     }
   }
