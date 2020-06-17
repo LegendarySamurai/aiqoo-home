@@ -81,8 +81,7 @@
     display: block;
     width: 100%;
     height: 275px;
-    border-radius: 5px;
-    background-color: transparentize(#dde1e8, .65);
+    //border-radius: 5px;
 
     &:not(:last-of-type) {
       margin-bottom: 2rem;
@@ -125,10 +124,35 @@
     }
 
     &.rank-1 {
-
+      border-top: 5px solid #585077;
+      border-radius: 10px 10px 0 0;
     }
 
     &.rank-2 {
+      position: relative;
+
+      .decoration-el-one {
+        z-index: 1;
+        position: absolute;
+        top: -18px;
+        right: 0;
+        width: 100%;
+        height: 25px;
+        background-color: #d8cdba;
+        border-radius: 10px 30px 0 0;
+      }
+
+      .decoration-el-two {
+        z-index: 3;
+        position: absolute;
+        top: -18px;
+        right: 0;
+        width: 70px;
+        height: 38px;
+        background-color: #585077;
+        border-radius: 0 24px 0 30px;
+      }
+
       .image-container {
         position: relative;
         z-index: 2;
@@ -158,12 +182,16 @@
   }
 
   .card-wrap-inner {
+    position: relative;
+    z-index: 2;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
     height: 100%;
     padding: 0 1.75rem;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #f3f4f7;
   }
 
   .image-container-col {
@@ -341,11 +369,21 @@
 
     .image-container-col {
       width: 100%;
-      height: 320px;
+      height: 100%;
+      padding: 0.5rem 15px;
+
+      &::after {
+        top: 50% !important;
+        left: 0 !important;
+        transform: translate(0%, -50%) !important;
+        width: 100% !important;
+        height: calc(100% - 30px - 30px) !important;
+      }
     }
 
     .info-inner-col {
-      margin-top: 20px;
+      margin-top: 0;
+      padding: 0.5rem 15px !important;
     }
 
     .pro-card {
