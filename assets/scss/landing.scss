@@ -42,38 +42,53 @@
             padding: 10px 0;
         }
 
-        // funnel card
-        .funnel-card {
+        // landing-funnel-card
+        .landing-funnel-card {
           .step-div {
+            button {
+              img {
+                margin-top: 0;
+              }
+
+              i, span {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+                padding: 0;
+                line-height: 1;
+              }
+            }
+
             .icon-pos {
               img {
                 width: 100%;
               }
             }
           }
-        }
 
-        .funnel-card-wrap {
+          .funnel-card-nav {
+            display: flex !important;
+            flex-direction: row;
+            align-items: center;
+            white-space: nowrap;
+            padding: 0 0 30px 10px;
+
+            &:after {
+              position: absolute;
+              left: 0;
+              bottom: 0;
+            }
+          }
+
+          .funnel-card-wrap {
             min-height: calc(65vh - 70px);
             width: 100%;
             padding-bottom: 25px;
-        }
-
-        .funnel-card-nav {
-          display: flex !important;
-          flex-direction: row;
-          align-items: center;
-          white-space: nowrap;
-          padding: 0 0 30px 10px;
-
-          &:after {
-            position: absolute;
-            left: 0;
-            bottom: 0;
           }
         }
 
-        // EOL: funnel card
+        // EOL: landing-funnel-card
 
         .reasons-wrap {
             min-height: 20vh;
