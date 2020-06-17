@@ -476,9 +476,9 @@
 // RESPONSIVE
 .magazine {
     @media(max-width: 1599px) {
-        .container-lg {
-            max-width: 1340px;
-        }
+        //.container-lg {
+        //    max-width: 1340px;
+        //}
     }
 
     @media(max-width: 1399px) {
@@ -607,10 +607,10 @@
     }
 
     @media(max-width: 767px) {
-        .container-lg {
-            width: 100%;
-            max-width: initial;
-        }
+        //.container-lg {
+        //    width: 100%;
+        //    max-width: initial;
+        //}
     }
 
     @media(max-width: 599px) {
@@ -624,11 +624,6 @@
                     font-size: 12pt;
                 }
             }
-        }
-
-        .featured-items {
-            //padding: 15px 15px 15px 15px;
-            //margin-top: 30px;
         }
 
         .big-content-block {

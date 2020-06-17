@@ -32,32 +32,46 @@ function init() {
 }
 
 
+// code written 17-06-2020 by Igor
+// Landing page Section search-pro Image size and map size (always should be 3 cards height)
+function countMapHeight () {
+    const proCards = document.querySelectorAll('.pro-card');
+    const mapCol = document.querySelector('.map-col');
 
-// Landing page Section search-pro Image size
+    proCards.forEach(proCard => {
+        let proCardHeight = proCard.clientHeight;
+        let mapMaxHeight = proCardHeight * 3;
+        mapCol.style.maxHeight = `calc(${mapMaxHeight}px + 2rem + 2rem + 2rem)`;
+    })
+}
 
 window.addEventListener('resize',  function() {
     const imageContainers = document.querySelectorAll('.image-container');
 
     imageContainers.forEach(imageContainer => {
         let imageContainerHeight = (imageContainer.clientWidth) / 2;
-        // imageContainer = (imageContainers
 
         if (window.innerWidth < 767) {
-            console.log(111111);
             imageContainer.style.height = `${ imageContainerHeight  }px`;
             imageContainer.style.width = "100" + "%";
         }
 
         if (window.innerWidth >= 768) {
-            console.log(222222);
             imageContainer.style.height = '150' + 'px';
             imageContainer.style.width = '200' + 'px';
         }
-
-        console.log('imageContainerHeight => ', imageContainerHeight );
     });
+
+    countMapHeight();
 });
 
+$(document).ready(function() {
+    countMapHeight();
+});
 
+// window.addEventListener('scroll', () => {
+//     let coordinates = $(window).scrollTop();
+//     // console.log('=> ', coordinates);
+// });
 
-
+//  EOL: code written 17-06-2020 by Igor

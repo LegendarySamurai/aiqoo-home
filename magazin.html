@@ -1,796 +1,869 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--<meta name="robots" content="noindex">-->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Magazine - title</title>
-    <meta name="title" content="Magazine - title">
-    <meta name="description" content="Magazine - description">
-    <meta property="og:title" content="Magazine - title" />
-    <meta property="og:description" content="Magazine - description" />
-    <meta property="og:image" content="assets/images/pro-image.png" />
-    <link rel="icon" type="image/x-icon" href="assets/favicons/favicon.ico?v=rbJvHdQ1pXf3c84N1GgaWko-QCv9q1hkLrr-3w8bd3M" />
-    <!--<link rel="manifest" href="assets/manifest.json?v=hfkIF6z5DnvvS9K9Fo2FG2P5jbjbbKdIMtokXEzpnwY">-->
-    <script defer type="text/javascript" src="assets/js/web.js?v=1LpuMpU8Jdk-WyzUb6HLaUvLzeItKrfwgJKwBmPsj7o"></script>
+  <!--<meta name="robots" content="noindex">-->
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Magazine - title</title>
+  <meta name="title" content="Magazine - title">
+  <meta name="description" content="Magazine - description">
+  <meta property="og:title" content="Magazine - title"/>
+  <meta property="og:description" content="Magazine - description"/>
+  <meta property="og:image" content="assets/images/pro-image.png"/>
+  <link rel="icon" type="image/x-icon"
+        href="assets/favicons/favicon.ico?v=rbJvHdQ1pXf3c84N1GgaWko-QCv9q1hkLrr-3w8bd3M"/>
+  <!--<link rel="manifest" href="assets/manifest.json?v=hfkIF6z5DnvvS9K9Fo2FG2P5jbjbbKdIMtokXEzpnwY">-->
+  <script defer type="text/javascript" src="assets/js/web.js?v=1LpuMpU8Jdk-WyzUb6HLaUvLzeItKrfwgJKwBmPsj7o"></script>
 
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,900&display=swap" rel="stylesheet">
-    <link href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css" rel="stylesheet" integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,900&display=swap" rel="stylesheet">
+  <link href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css" rel="stylesheet"
+        integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
 
-    <link href="assets/css/web.css?v=iASR-qHKG2KSMFdBLKbYtO-DAkpRNHrmeQ5mlZEsMm0" rel="stylesheet" />
+  <link href="assets/css/web.css?v=iASR-qHKG2KSMFdBLKbYtO-DAkpRNHrmeQ5mlZEsMm0" rel="stylesheet"/>
 
-    <link href="assets/css/magazine.css?v=KB3cXoiO7yAlkw3AptZuBGnup3FjD5cWOiu8Rv-8-pA" rel="stylesheet" />
+  <link href="assets/css/magazine.css?v=KB3cXoiO7yAlkw3AptZuBGnup3FjD5cWOiu8Rv-8-pA" rel="stylesheet"/>
 
 
 </head>
 <body>
-    <script>
-        /*
-        //-- aiq ut pixel
-        var _ut_web_id = "AiqHome.com";
-        !function (e, t, n, a, s, u, i, c) {
-            e.ut_aiq || ((s = e.ut_aiq = function () { s.callMethod ? s.callMethod.apply(s, arguments) : s.queue.push(arguments) }).push = s, s.loaded = !0, s.version = "2.0", s.queue = [], (u = t.createElement(n)).async = !0, u.src = "https://api.aiq-magazine.com/FunnelsAssets/FunnelJS/user_tracking.es5.min.js", (i = t.getElementsByTagName(n)[0]).parentNode.insertBefore(u, i))
-        }
-        */
-    </script>
+<script>
+	/*
+  //-- aiq ut pixel
+  var _ut_web_id = "AiqHome.com";
+  !function (e, t, n, a, s, u, i, c) {
+      e.ut_aiq || ((s = e.ut_aiq = function () { s.callMethod ? s.callMethod.apply(s, arguments) : s.queue.push(arguments) }).push = s, s.loaded = !0, s.version = "2.0", s.queue = [], (u = t.createElement(n)).async = !0, u.src = "https://api.aiq-magazine.com/FunnelsAssets/FunnelJS/user_tracking.es5.min.js", (i = t.getElementsByTagName(n)[0]).parentNode.insertBefore(u, i))
+  }
+  */
+</script>
 
-    <header class="header ">
-        <div class="container container-lg">
-            <div class="row">
-                <div class="col-12 pl-0 pl-lg-3 pr-0 pr-lg-3">
+<header class="header ">
+  <div class="section-container">
+    <div class="row">
+      <div class="col-12 pl-0 pl-lg-3 pr-0 pr-lg-3">
 
-                    <div class="header-content">
-                        <button type="button" id="btn-open-menu" class="btn-open-menu d-lg-none" aria-label="Toggle menu">
+        <div class="header-content">
+          <button type="button" id="btn-open-menu" class="btn-open-menu d-lg-none" aria-label="Toggle menu">
                             <span class="menu-icon">
                                 <i class="far fa-bars"></i>
                             </span>
-                        </button>
+          </button>
 
-                        <div class="logo">
-                            <a href="https://localhost:44391/"><img src="assets/images/logo/logo.svg?v=IgkdLofEQidYHMGrUW0t3qumnQKKdu9pqWu8MSG36g4" alt="Aiq Home Menu Logo" title="Aiq Home Menu Logo"></a>
-                        </div>
+          <div class="logo">
+            <a href="https://localhost:44391/"><img
+                src="assets/images/logo/logo.svg?v=IgkdLofEQidYHMGrUW0t3qumnQKKdu9pqWu8MSG36g4" alt="Aiq Home Menu Logo"
+                title="Aiq Home Menu Logo"></a>
+          </div>
 
-                        <button type="button" id="btn-search" class="btn-search" aria-label="Search">
-                            <i class="fal fa-search"></i>
-                        </button>
+          <button type="button" id="btn-search" class="btn-search" aria-label="Search">
+            <i class="fal fa-search"></i>
+          </button>
 
-                        <!-- Dropdown menu -->
-                        <div id="dropdown-menu-container" class="dropdown-menu-container">
-                            <div id="btn-close-menu" class="btn-close-menu d-lg-none"></div>
-                            <div id="dropdown-menu" class="dropdown-menu">
-                                <div class="dropdown-menu-inner">
-                                    <div class="dropdown-menu-header d-lg-none">
-                                        <div class="dropdown-menu-header-logo">
-                                            <a href="https://localhost:44391/"><img src="assets/images/logo/logo.svg?v=IgkdLofEQidYHMGrUW0t3qumnQKKdu9pqWu8MSG36g4" alt="Aiq Home Logo M" title="Aiq Home Logo M"></a>
-                                        </div>
-                                    </div>
-
-                                    <ul class="navbar">
-                                        <li class="">
-                                            <a href="https://localhost:44391/">
-                                                <i class="d-lg-none menu-item-icon icon-home"></i>
-                                                <span>Home</span>
-                                            </a>
-                                        </li>
-                                        <li class="is-active">
-                                            <a href="magazine/">
-                                                <i class="d-lg-none menu-item-icon icon-magazine"></i>
-                                                <span>Magazine</span>
-                                            </a>
-                                        </li>
-                                        <li class="">
-                                            <a href="magazine/videos/">
-                                                <i class="d-lg-none menu-item-icon icon-home"></i>
-                                                <span>Videos</span>
-                                            </a>
-                                        </li>
-                                        <li class="">
-                                            <a href="services/">
-                                                <i class="d-lg-none menu-item-icon icon-home"></i>
-                                                <span>Services</span>
-                                            </a>
-                                        </li>
-                                        <li class="">
-                                            <a href="about-us/">
-                                                <i class="d-lg-none menu-item-icon icon-home"></i>
-                                                <span>About us</span>
-                                            </a>
-                                        </li>
-                                        <li class="">
-                                            <a href="contact-us/" class="no-border-bottom">
-                                                <i class="d-lg-none menu-item-icon icon-contact-us"></i>
-                                                <span>Contact us</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-
-                                    <ul class="dropdown-menu-social d-lg-none">
-                                        <li>
-                                            <a href="#!">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#!">
-                                                <i class="fab fa-instagram"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#!">
-                                                <i class="fab fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- EOL: Dropdown menu -->
-
-                        <div id="header-search" class="search">
-                            <div class="form-group position-relative">
-                                <input type="text" id="header-search-input" aria-labelledby="FindAProBtn" class="form-control font-weight-bold" placeholder="What service are you looking for?">
-                                <div class="super-placeholder">
-                                    <img class="header-location" src="assets/images/icons/pen-6.svg?v=7cGlhey0OBC1P8EieCpQhPjRjk7rjzZuRynaWeDmQU0" alt="Find Pros Icon">
-
-                                </div>
-                                <button type="button" id="FindAProBtn" class="find-btn font-weight-bold">FIND A PRO</button>
-                            </div>
-                        </div>
-                    </div>
-
+          <!-- Dropdown menu -->
+          <div id="dropdown-menu-container" class="dropdown-menu-container">
+            <div id="btn-close-menu" class="btn-close-menu d-lg-none"></div>
+            <div id="dropdown-menu" class="dropdown-menu">
+              <div class="dropdown-menu-inner">
+                <div class="dropdown-menu-header d-lg-none">
+                  <div class="dropdown-menu-header-logo">
+                    <a href="https://localhost:44391/"><img
+                        src="assets/images/logo/logo.svg?v=IgkdLofEQidYHMGrUW0t3qumnQKKdu9pqWu8MSG36g4"
+                        alt="Aiq Home Logo M" title="Aiq Home Logo M"></a>
+                  </div>
                 </div>
-            </div>
-        </div>
-    </header>
 
-    <main class="magazine">
-    <div class="page-title">
-        <div class="container container-lg">
-            <div class="row">
-                <div class="col-12">
-                    <div class="page-title-inner">
-                        <div class="page-heading-container">
-                            <h1 class="page-heading">Home Improvement Magazine</h1>
-                        </div>
-                        <div class="breadcrumbs">
-                            <ul>
-                                <li>
-                                    <a href="https://localhost:44391">
-                                        <span>Home</span>
-                                        <i class="far fa-chevron-right"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <span>Magazine</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                <ul class="navbar">
+                  <li class="">
+                    <a href="https://localhost:44391/">
+                      <i class="d-lg-none menu-item-icon icon-home"></i>
+                      <span>Home</span>
+                    </a>
+                  </li>
+                  <li class="is-active">
+                    <a href="magazine/">
+                      <i class="d-lg-none menu-item-icon icon-magazine"></i>
+                      <span>Magazine</span>
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="magazine/videos/">
+                      <i class="d-lg-none menu-item-icon icon-home"></i>
+                      <span>Videos</span>
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="services/">
+                      <i class="d-lg-none menu-item-icon icon-home"></i>
+                      <span>Services</span>
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="about-us/">
+                      <i class="d-lg-none menu-item-icon icon-home"></i>
+                      <span>About us</span>
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="contact-us/" class="no-border-bottom">
+                      <i class="d-lg-none menu-item-icon icon-contact-us"></i>
+                      <span>Contact us</span>
+                    </a>
+                  </li>
+                </ul>
+
+                <ul class="dropdown-menu-social d-lg-none">
+                  <li>
+                    <a href="#!">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
+          <!-- EOL: Dropdown menu -->
+
+          <div id="header-search" class="search">
+            <div class="form-group position-relative">
+              <input type="text" id="header-search-input" aria-labelledby="FindAProBtn"
+                     class="form-control font-weight-bold" placeholder="What service are you looking for?">
+              <div class="super-placeholder">
+                <img class="header-location"
+                     src="assets/images/icons/pen-6.svg?v=7cGlhey0OBC1P8EieCpQhPjRjk7rjzZuRynaWeDmQU0"
+                     alt="Find Pros Icon">
+
+              </div>
+              <button type="button" id="FindAProBtn" class="find-btn font-weight-bold">FIND A PRO</button>
+            </div>
+          </div>
         </div>
+
+      </div>
     </div>
+  </div>
+</header>
 
-    <section class="magazine-section content-section">
-        <div class="container container-lg">
-            <div class="row">
-                <!-- horizontal-card -->
-                <div class="col-12 col-lg-9">
-                    <div class="card horizontal-card big position-relative">
-                        <a href="magazine/articles/pace-government-backed-program-that-will-fund-your-new-roof/">
-                            <div class="row">
-                                <div class="col-12 col-lg-5">
-                                    <div class="image-container position-relative">
-                                        <img src="https://api.aiq-magazine.com/assets/UploadImages/444364d01a76222c57e54ba99e3651fb_600_360_6_10_2020_2_37_37_PM.jpg" alt="red ahingle roof on a suberban home with pink walls">
-                                        <div class="tags-container">
-                                            <div class="tags-container-inner">
-                                                <i class="fal fa-tag"></i>
-                                                <div class="tags-inner">
-                                                    <span class="tag">Roofing</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-7 pl-1">
-                                    <div class="card-info">
-                                        <div class="title">
-                                            <span class="h2">Meet the government backed program that will fund your new roof</span>
-                                        </div>
-                                        <div class="text">PACE programs backed by the government recently have raised property values across the U.S and replaced its roofs in the process.</div>
-                                        <button type="button" class="read-more">
-                                            <span>Read More</span>
-                                            <i class="far fa-chevron-right"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-
-                <!-- EOL: horizontal-card -->
-                <!-- vertical-card -->
-                <div class="col-12 col-lg-3 pl-lg-0">
-                    <div class="card vertical-card small position-relative">
-                        <a href="magazine/articles/remodeling-your-kitchen/">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="image-container position-relative">
-                                        <img src="https://api.aiq-magazine.com/assets/UploadImages/ca60e8d5dd7c1b8fc7a167466dfee33c_600_360_6_10_2020_12_41_07_PM.jpg" alt="modern design contemporary kitchen with grey wall tiles, white cabinets and drak wooden flooring">
-                                        <div class="tags-container">
-                                            <div class="tags-container-inner">
-                                                <i class="fal fa-tag"></i>
-                                                <div class="tags-inner">
-                                                    <span class="tag">Remodeling Kitchen</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="card-info">
-
-                                        <span class="h2">Thinking about remodeling your kitchen? </span>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!-- EOL: vertical-card -->
+<main class="magazine">
+  <div class="page-title">
+    <div class="section-container">
+      <div class="row">
+        <div class="col-12">
+          <div class="page-title-inner">
+            <div class="page-heading-container">
+              <h1 class="page-heading">Home Improvement Magazine</h1>
             </div>
-
-            <!-- featured-items -->
-            <div class="row">
-                <div class="col-12">
-                    <div class="featured-items">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="label">
-                                    <h2 class="h3 font-weight-black">Featured items</h2>
-                                </div>
-                            </div>
-                                <div class="col-12 col-md-6 col-lg-3">
-                                    <div class="card vertical-card small position-relative">
-                                        <a href="magazine/articles/remodeling-your-bathroom-like-a-pro/">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="image-container position-relative">
-                                                        <img src="https://api.aiq-magazine.com/assets/UploadImages/50b3f2eaab07c95bb4d604a3e8eecd16_600_360_6_10_2020_12_41_43_PM.jpg" alt="stylish grey bathroom with hardwood floors and white fixtures">
-                                                        <div class="tags-container">
-                                                            <div class="tags-container-inner">
-                                                                <i class="fal fa-tag"></i>
-                                                                <div class="tags-inner">
-                                                                    <span class="tag">Bathroom Remodeling</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="card-info">
-                                                        <div class="text">Remodeling your bathroom like a pro</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-3">
-                                    <div class="card vertical-card small position-relative">
-                                        <a href="magazine/articles/backyard-planning/">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="image-container position-relative">
-                                                        <img src="https://api.aiq-magazine.com/assets/UploadImages/d5966cf85149fa5c7164d454c95db816_600_360_6_10_2020_1_49_25_PM.jpg" alt="A fully renovated backyard with an electric fireplace, open porch, grass and greenery">
-                                                        <div class="tags-container">
-                                                            <div class="tags-container-inner">
-                                                                <i class="fal fa-tag"></i>
-                                                                <div class="tags-inner">
-                                                                    <span class="tag">Backyard Planning</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="card-info">
-                                                        <div class="text">The backyard you&#x2019;ve always dreamed of is actually a lot more attainable than you may think</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-3">
-                                    <div class="card vertical-card small position-relative">
-                                        <a href="magazine/articles/diy-painting-your-home/">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="image-container position-relative">
-                                                        <img src="https://api.aiq-magazine.com/assets/UploadImages/49226abdfa99c375cbb1557e95de7fff_600_360_6_10_2020_2_01_49_PM.jpg" alt="Grey Painted wall, light wood flooring, with ladder and paints">
-                                                        <div class="tags-container">
-                                                            <div class="tags-container-inner">
-                                                                <i class="fal fa-tag"></i>
-                                                                <div class="tags-inner">
-                                                                    <span class="tag">Painting Your Home</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="card-info">
-                                                        <div class="text">Painting your home might be a handful, and many wonder whether they should DIY it or hire professionals</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-3">
-                                    <div class="card vertical-card small position-relative">
-                                        <a href="magazine/articles/hottest-kitchen-trends/">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="image-container position-relative">
-                                                        <img src="https://api.aiq-magazine.com/assets/UploadImages/855a22513cc0b22a12b502139dfacc78_600_360_6_10_2020_1_34_44_PM.jpg" alt="Ultra modern kitchen with red cabinets and spot lighting">
-                                                        <div class="tags-container">
-                                                            <div class="tags-container-inner">
-                                                                <i class="fal fa-tag"></i>
-                                                                <div class="tags-inner">
-                                                                    <span class="tag">Hottest Kitchen Trends</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="card-info">
-                                                        <div class="text">Are you ready to let some color into your life? 2020&#x2019;s hottest kitchen trends</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="breadcrumbs">
+              <ul>
+                <li>
+                  <a href="https://localhost:44391">
+                    <span>Home</span>
+                    <i class="far fa-chevron-right"></i>
+                  </a>
+                </li>
+                <li>
+                  <span>Magazine</span>
+                </li>
+              </ul>
             </div>
-            <!-- EOL: featured-items -->
-
-            <div class="row">
-                <div class="col-12">
-                    <div class="big-content-block">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="label">
-                                    <h2 class="h3 font-weight-black">Trends</h2>
-                                </div>
-                            </div>
-
-                            <!-- Left side content -->
-                            <div class="col-12 col-lg-6">
-                                <!-- trends -->
-                                <div class="trends">
-                                    <div class="card vertical-card big position-relative">
-                                        <a href="magazine/articles/pro-vs-diy/">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="image-container position-relative">
-                                                        <img src="https://api.aiq-magazine.com/assets/UploadImages/7c763efc493199e16e898fc916f30e33_600_360_6_10_2020_2_20_48_PM.jpg" alt="Plans and layout for a home remodel with a template of the new kticen on a tablet">
-                                                        <div class="tags-container">
-                                                            <div class="tags-container-inner">
-                                                                <i class="fal fa-tag"></i>
-                                                                <div class="tags-inner">
-                                                                    <span class="tag">Pro vs DIY</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="card-info">
-                                                        <div class="title">
-                                                            <span class="h2">Pro vs. DIY</span>
-                                                        </div>
-                                                        <div class="text">What should I do on my own, and what calls for a professional job? This is a question almost every homeowner asks before going into remodeling a property. In this short guide you&#x2019;ll find our answer, wrapped in some very useful tips.</div>
-                                                        <button type="button" class="read-more">
-                                                            <span>Read More</span>
-                                                            <i class="far fa-chevron-right"></i>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- EOL: trends -->
-                                <!-- videos -->
-                                <div class="videos">
-                                    <div class="label">
-                                        <a href="magazine/videos/">
-                                            <h2 class="h3 font-weight-black">Videos</h2>
-                                        </a>
-                                    </div>
-
-                                    <div class="row">
-                                            <div class="col-12 col-md-6 col-lg-auto video-item-col">
-                                                <div class="video-item">
-                                                    <div class="video-container small-video">
-                                                        <div class="embed-responsive embed-responsive-16by9">
-                                                            <a class="link-mask" href="magazine/videos/v-1/"></a>
-                                                            <img src="https://api.aiq-magazine.com/assets/UploadImages/01c7a542bf92207f7260c68e5c2e089e_600_360_6_10_2020_12_42_15_PM.jpg" alt="Yellow and white exterior wall painted using a brush">
-                                                            <i class="fal fa-play-circle"></i>
-                                                            <div class="mask"></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="video-info">
-                                                        <h4 class="text">Video Teaser - 1</h4>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-6 col-lg-auto video-item-col">
-                                                <div class="video-item">
-                                                    <div class="video-container small-video">
-                                                        <div class="embed-responsive embed-responsive-16by9">
-                                                            <a class="link-mask" href="magazine/videos/v-2/"></a>
-                                                            <img src="https://api.aiq-magazine.com/assets/UploadImages/29f7748b758a56cdbe8d32f89764a954_600_360_6_10_2020_1_21_12_PM.jpg" alt="central airconditioning thermostat being set to 21 degrees in a trendy apartment">
-                                                            <i class="fal fa-play-circle"></i>
-                                                            <div class="mask"></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="video-info">
-                                                        <h4 class="text">Video Teaser - 2</h4>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-6 col-lg-auto video-item-col">
-                                                <div class="video-item">
-                                                    <div class="video-container small-video">
-                                                        <div class="embed-responsive embed-responsive-16by9">
-                                                            <a class="link-mask" href="magazine/videos/v-3/"></a>
-                                                            <img src="https://api.aiq-magazine.com/assets/UploadImages/" alt="">
-                                                            <i class="fal fa-play-circle"></i>
-                                                            <div class="mask"></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="video-info">
-                                                        <h4 class="text">Video Teaser - 3</h4>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-md-6 col-lg-auto video-item-col">
-                                                <div class="video-item">
-                                                    <div class="video-container small-video">
-                                                        <div class="embed-responsive embed-responsive-16by9">
-                                                            <a class="link-mask" href="magazine/videos/v-4/"></a>
-                                                            <img src="https://api.aiq-magazine.com/assets/UploadImages/" alt="">
-                                                            <i class="fal fa-play-circle"></i>
-                                                            <div class="mask"></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="video-info">
-                                                        <h4 class="text">Video Teaser - 4</h4>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                    </div>
-                                </div>
-                                <!-- EOL: videos -->
-                            </div>
-                            <!-- EOL: Left side content -->
-                            <!-- Right side content -->
-                            <div class="col-12 col-lg-6">
-                                <div class="cards">
-                                        <div class="card horizontal-card small position-relative">
-                                            <a href="magazine/articles/air-conditioning-units-split-or-central/">
-                                                <div class="row">
-                                                    <div class="col-12 col-lg-5">
-                                                        <div class="image-container position-relative">
-                                                            <img src="https://api.aiq-magazine.com/assets/UploadImages/2e0cf1eaf0dce31d0748d3e0c3cf6c0e_600_360_6_10_2020_2_11_39_PM.jpg" alt="Airconditioning thermostat on a brown laminate wood cover wall">
-                                                            <div class="tags-container">
-                                                                <div class="tags-container-inner">
-                                                                    <i class="fal fa-tag"></i>
-                                                                    <div class="tags-inner">
-                                                                        <span class="tag">Air conditioning units</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 col-lg-7 pl-lg-0">
-                                                        <div class="card-info">
-                                                            <div class="title">
-                                                                <span class="h2">Air conditioning units - split or central?</span>
-                                                            </div>
-                                                            <div class="text">Homeowners across America are debating the everlasting question of what will suit their house better - a central AC unit or split AC throughout the house? In this short guide we have assembled the advantages and disadvantages of each option, to help you make the better choice.</div>
-                                                            <button type="button" class="read-more">
-                                                                <span>Read More</span>
-                                                                <i class="far fa-chevron-right"></i>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="card horizontal-card small position-relative">
-                                            <a href="magazine/articles/is-it-possible-to-renew-your-deck/">
-                                                <div class="row">
-                                                    <div class="col-12 col-lg-5">
-                                                        <div class="image-container position-relative">
-                                                            <img src="https://api.aiq-magazine.com/assets/UploadImages/855a22513cc0b22a12b502139dfacc78_600_360_6_10_2020_1_34_44_PM.jpg" alt="Ultra modern kitchen with red cabinets and spot lighting">
-                                                            <div class="tags-container">
-                                                                <div class="tags-container-inner">
-                                                                    <i class="fal fa-tag"></i>
-                                                                    <div class="tags-inner">
-                                                                        <span class="tag">Renew Your Deck</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 col-lg-7 pl-lg-0">
-                                                        <div class="card-info">
-                                                            <div class="title">
-                                                                <span class="h2">Is it possible to renew your deck?</span>
-                                                            </div>
-                                                            <div class="text">Many property owners ask whether it is possible to renew the deck, wondering whether it might be better to just go ahead and replace it all together. In this guide you will learn that deck restorations are not only probable - they are practically a guaranteed success.</div>
-                                                            <button type="button" class="read-more">
-                                                                <span>Read More</span>
-                                                                <i class="far fa-chevron-right"></i>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="card horizontal-card small position-relative">
-                                            <a href="magazine/articles/pro-vs-diy/">
-                                                <div class="row">
-                                                    <div class="col-12 col-lg-5">
-                                                        <div class="image-container position-relative">
-                                                            <img src="https://api.aiq-magazine.com/assets/UploadImages/7c763efc493199e16e898fc916f30e33_600_360_6_10_2020_2_20_48_PM.jpg" alt="Plans and layout for a home remodel with a template of the new kticen on a tablet">
-                                                            <div class="tags-container">
-                                                                <div class="tags-container-inner">
-                                                                    <i class="fal fa-tag"></i>
-                                                                    <div class="tags-inner">
-                                                                        <span class="tag">Pro vs DIY</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 col-lg-7 pl-lg-0">
-                                                        <div class="card-info">
-                                                            <div class="title">
-                                                                <span class="h2">Pro vs. DIY</span>
-                                                            </div>
-                                                            <div class="text">What should I do on my own, and what calls for a professional job? This is a question almost every homeowner asks before going into remodeling a property. In this short guide you&#x2019;ll find our answer, wrapped in some very useful tips.</div>
-                                                            <button type="button" class="read-more">
-                                                                <span>Read More</span>
-                                                                <i class="far fa-chevron-right"></i>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="card horizontal-card small position-relative">
-                                            <a href="magazine/articles/pace-government-backed-program-that-will-fund-your-new-roof/">
-                                                <div class="row">
-                                                    <div class="col-12 col-lg-5">
-                                                        <div class="image-container position-relative">
-                                                            <img src="https://api.aiq-magazine.com/assets/UploadImages/444364d01a76222c57e54ba99e3651fb_600_360_6_10_2020_2_37_37_PM.jpg" alt="red ahingle roof on a suberban home with pink walls">
-                                                            <div class="tags-container">
-                                                                <div class="tags-container-inner">
-                                                                    <i class="fal fa-tag"></i>
-                                                                    <div class="tags-inner">
-                                                                        <span class="tag">Roofing</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 col-lg-7 pl-lg-0">
-                                                        <div class="card-info">
-                                                            <div class="title">
-                                                                <span class="h2">Meet the government backed program that will fund your new roof</span>
-                                                            </div>
-                                                            <div class="text">PACE programs backed by the government recently have raised property values across the U.S and replaced its roofs in the process.</div>
-                                                            <button type="button" class="read-more">
-                                                                <span>Read More</span>
-                                                                <i class="far fa-chevron-right"></i>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="card horizontal-card small position-relative">
-                                            <a href="magazine/articles/remodeling-your-kitchen/">
-                                                <div class="row">
-                                                    <div class="col-12 col-lg-5">
-                                                        <div class="image-container position-relative">
-                                                            <img src="https://api.aiq-magazine.com/assets/UploadImages/ca60e8d5dd7c1b8fc7a167466dfee33c_600_360_6_10_2020_12_41_07_PM.jpg" alt="modern design contemporary kitchen with grey wall tiles, white cabinets and drak wooden flooring">
-                                                            <div class="tags-container">
-                                                                <div class="tags-container-inner">
-                                                                    <i class="fal fa-tag"></i>
-                                                                    <div class="tags-inner">
-                                                                        <span class="tag">Remodeling Kitchen</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 col-lg-7 pl-0">
-                                                        <div class="card-info">
-                                                            <div class="title">
-                                                                <span class="h2">Thinking about remodeling your kitchen? </span>
-                                                            </div>
-                                                            <div class="text">Here are some tips on how to do it the right way</div>
-                                                            <button type="button" class="read-more">
-                                                                <span>Read More</span>
-                                                                <i class="far fa-chevron-right"></i>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                </div>
-                            </div>
-                            <!-- EOL: Right side content -->
-                        </div>
-
-                        <div class="row view-more-container m-t-70 m-b-30">
-                            <div class="col-auto mx-auto">
-                                <a href="https://localhost:44391/magazine/explore-more/"><div class="brand-btn big">Explore More Articles<i class="far fa-chevron-right"></i></div></a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+
+  <section class="magazine-section content-section">
+    <div class="section-container">
+      <div class="row">
+        <!-- horizontal-card -->
+        <div class="col-12 col-lg-9">
+          <div class="card horizontal-card big position-relative">
+            <a href="magazine/articles/pace-government-backed-program-that-will-fund-your-new-roof/">
+              <div class="row">
+                <div class="col-12 col-lg-5">
+                  <div class="image-container position-relative">
+                    <img
+                        src="https://api.aiq-magazine.com/assets/UploadImages/444364d01a76222c57e54ba99e3651fb_600_360_6_10_2020_2_37_37_PM.jpg"
+                        alt="red ahingle roof on a suberban home with pink walls">
+                    <div class="tags-container">
+                      <div class="tags-container-inner">
+                        <i class="fal fa-tag"></i>
+                        <div class="tags-inner">
+                          <span class="tag">Roofing</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-7 pl-1">
+                  <div class="card-info">
+                    <div class="title">
+                      <span class="h2">Meet the government backed program that will fund your new roof</span>
+                    </div>
+                    <div class="text">PACE programs backed by the government recently have raised property values across
+                      the U.S and replaced its roofs in the process.
+                    </div>
+                    <button type="button" class="read-more">
+                      <span>Read More</span>
+                      <i class="far fa-chevron-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+
+        <!-- EOL: horizontal-card -->
+        <!-- vertical-card -->
+        <div class="col-12 col-lg-3 pl-lg-0">
+          <div class="card vertical-card small position-relative">
+            <a href="magazine/articles/remodeling-your-kitchen/">
+              <div class="row">
+                <div class="col-12">
+                  <div class="image-container position-relative">
+                    <img
+                        src="https://api.aiq-magazine.com/assets/UploadImages/ca60e8d5dd7c1b8fc7a167466dfee33c_600_360_6_10_2020_12_41_07_PM.jpg"
+                        alt="modern design contemporary kitchen with grey wall tiles, white cabinets and drak wooden flooring">
+                    <div class="tags-container">
+                      <div class="tags-container-inner">
+                        <i class="fal fa-tag"></i>
+                        <div class="tags-inner">
+                          <span class="tag">Remodeling Kitchen</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="card-info">
+
+                    <span class="h2">Thinking about remodeling your kitchen? </span>
+
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- EOL: vertical-card -->
+      </div>
+
+      <!-- featured-items -->
+      <div class="row">
+        <div class="col-12">
+          <div class="featured-items">
+            <div class="row">
+              <div class="col-12">
+                <div class="label">
+                  <h2 class="h3 font-weight-black">Featured items</h2>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="card vertical-card small position-relative">
+                  <a href="magazine/articles/remodeling-your-bathroom-like-a-pro/">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="image-container position-relative">
+                          <img
+                              src="https://api.aiq-magazine.com/assets/UploadImages/50b3f2eaab07c95bb4d604a3e8eecd16_600_360_6_10_2020_12_41_43_PM.jpg"
+                              alt="stylish grey bathroom with hardwood floors and white fixtures">
+                          <div class="tags-container">
+                            <div class="tags-container-inner">
+                              <i class="fal fa-tag"></i>
+                              <div class="tags-inner">
+                                <span class="tag">Bathroom Remodeling</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="card-info">
+                          <div class="text">Remodeling your bathroom like a pro</div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="card vertical-card small position-relative">
+                  <a href="magazine/articles/backyard-planning/">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="image-container position-relative">
+                          <img
+                              src="https://api.aiq-magazine.com/assets/UploadImages/d5966cf85149fa5c7164d454c95db816_600_360_6_10_2020_1_49_25_PM.jpg"
+                              alt="A fully renovated backyard with an electric fireplace, open porch, grass and greenery">
+                          <div class="tags-container">
+                            <div class="tags-container-inner">
+                              <i class="fal fa-tag"></i>
+                              <div class="tags-inner">
+                                <span class="tag">Backyard Planning</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="card-info">
+                          <div class="text">The backyard you&#x2019;ve always dreamed of is actually a lot more
+                            attainable than you may think
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="card vertical-card small position-relative">
+                  <a href="magazine/articles/diy-painting-your-home/">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="image-container position-relative">
+                          <img
+                              src="https://api.aiq-magazine.com/assets/UploadImages/49226abdfa99c375cbb1557e95de7fff_600_360_6_10_2020_2_01_49_PM.jpg"
+                              alt="Grey Painted wall, light wood flooring, with ladder and paints">
+                          <div class="tags-container">
+                            <div class="tags-container-inner">
+                              <i class="fal fa-tag"></i>
+                              <div class="tags-inner">
+                                <span class="tag">Painting Your Home</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="card-info">
+                          <div class="text">Painting your home might be a handful, and many wonder whether they should
+                            DIY it or hire professionals
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="card vertical-card small position-relative">
+                  <a href="magazine/articles/hottest-kitchen-trends/">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="image-container position-relative">
+                          <img
+                              src="https://api.aiq-magazine.com/assets/UploadImages/855a22513cc0b22a12b502139dfacc78_600_360_6_10_2020_1_34_44_PM.jpg"
+                              alt="Ultra modern kitchen with red cabinets and spot lighting">
+                          <div class="tags-container">
+                            <div class="tags-container-inner">
+                              <i class="fal fa-tag"></i>
+                              <div class="tags-inner">
+                                <span class="tag">Hottest Kitchen Trends</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="card-info">
+                          <div class="text">Are you ready to let some color into your life? 2020&#x2019;s hottest
+                            kitchen trends
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- EOL: featured-items -->
+
+      <div class="row">
+        <div class="col-12">
+          <div class="big-content-block">
+            <div class="row">
+              <div class="col-12">
+                <div class="label">
+                  <h2 class="h3 font-weight-black">Trends</h2>
+                </div>
+              </div>
+
+              <!-- Left side content -->
+              <div class="col-12 col-lg-6">
+                <!-- trends -->
+                <div class="trends">
+                  <div class="card vertical-card big position-relative">
+                    <a href="magazine/articles/pro-vs-diy/">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="image-container position-relative">
+                            <img
+                                src="https://api.aiq-magazine.com/assets/UploadImages/7c763efc493199e16e898fc916f30e33_600_360_6_10_2020_2_20_48_PM.jpg"
+                                alt="Plans and layout for a home remodel with a template of the new kticen on a tablet">
+                            <div class="tags-container">
+                              <div class="tags-container-inner">
+                                <i class="fal fa-tag"></i>
+                                <div class="tags-inner">
+                                  <span class="tag">Pro vs DIY</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="card-info">
+                            <div class="title">
+                              <span class="h2">Pro vs. DIY</span>
+                            </div>
+                            <div class="text">What should I do on my own, and what calls for a professional job? This is
+                              a question almost every homeowner asks before going into remodeling a property. In this
+                              short guide you&#x2019;ll find our answer, wrapped in some very useful tips.
+                            </div>
+                            <button type="button" class="read-more">
+                              <span>Read More</span>
+                              <i class="far fa-chevron-right"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- EOL: trends -->
+                <!-- videos -->
+                <div class="videos">
+                  <div class="label">
+                    <a href="magazine/videos/">
+                      <h2 class="h3 font-weight-black">Videos</h2>
+                    </a>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-12 col-md-6 col-lg-auto video-item-col">
+                      <div class="video-item">
+                        <div class="video-container small-video">
+                          <div class="embed-responsive embed-responsive-16by9">
+                            <a class="link-mask" href="magazine/videos/v-1/"></a>
+                            <img
+                                src="https://api.aiq-magazine.com/assets/UploadImages/01c7a542bf92207f7260c68e5c2e089e_600_360_6_10_2020_12_42_15_PM.jpg"
+                                alt="Yellow and white exterior wall painted using a brush">
+                            <i class="fal fa-play-circle"></i>
+                            <div class="mask"></div>
+                          </div>
+                        </div>
+                        <div class="video-info">
+                          <h4 class="text">Video Teaser - 1</h4>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-auto video-item-col">
+                      <div class="video-item">
+                        <div class="video-container small-video">
+                          <div class="embed-responsive embed-responsive-16by9">
+                            <a class="link-mask" href="magazine/videos/v-2/"></a>
+                            <img
+                                src="https://api.aiq-magazine.com/assets/UploadImages/29f7748b758a56cdbe8d32f89764a954_600_360_6_10_2020_1_21_12_PM.jpg"
+                                alt="central airconditioning thermostat being set to 21 degrees in a trendy apartment">
+                            <i class="fal fa-play-circle"></i>
+                            <div class="mask"></div>
+                          </div>
+                        </div>
+                        <div class="video-info">
+                          <h4 class="text">Video Teaser - 2</h4>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-auto video-item-col">
+                      <div class="video-item">
+                        <div class="video-container small-video">
+                          <div class="embed-responsive embed-responsive-16by9">
+                            <a class="link-mask" href="magazine/videos/v-3/"></a>
+                            <img src="https://api.aiq-magazine.com/assets/UploadImages/" alt="">
+                            <i class="fal fa-play-circle"></i>
+                            <div class="mask"></div>
+                          </div>
+                        </div>
+                        <div class="video-info">
+                          <h4 class="text">Video Teaser - 3</h4>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-auto video-item-col">
+                      <div class="video-item">
+                        <div class="video-container small-video">
+                          <div class="embed-responsive embed-responsive-16by9">
+                            <a class="link-mask" href="magazine/videos/v-4/"></a>
+                            <img src="https://api.aiq-magazine.com/assets/UploadImages/" alt="">
+                            <i class="fal fa-play-circle"></i>
+                            <div class="mask"></div>
+                          </div>
+                        </div>
+                        <div class="video-info">
+                          <h4 class="text">Video Teaser - 4</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- EOL: videos -->
+              </div>
+              <!-- EOL: Left side content -->
+              <!-- Right side content -->
+              <div class="col-12 col-lg-6">
+                <div class="cards">
+                  <div class="card horizontal-card small position-relative">
+                    <a href="magazine/articles/air-conditioning-units-split-or-central/">
+                      <div class="row">
+                        <div class="col-12 col-lg-5">
+                          <div class="image-container position-relative">
+                            <img
+                                src="https://api.aiq-magazine.com/assets/UploadImages/2e0cf1eaf0dce31d0748d3e0c3cf6c0e_600_360_6_10_2020_2_11_39_PM.jpg"
+                                alt="Airconditioning thermostat on a brown laminate wood cover wall">
+                            <div class="tags-container">
+                              <div class="tags-container-inner">
+                                <i class="fal fa-tag"></i>
+                                <div class="tags-inner">
+                                  <span class="tag">Air conditioning units</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-7 pl-lg-0">
+                          <div class="card-info">
+                            <div class="title">
+                              <span class="h2">Air conditioning units - split or central?</span>
+                            </div>
+                            <div class="text">Homeowners across America are debating the everlasting question of what
+                              will suit their house better - a central AC unit or split AC throughout the house? In this
+                              short guide we have assembled the advantages and disadvantages of each option, to help you
+                              make the better choice.
+                            </div>
+                            <button type="button" class="read-more">
+                              <span>Read More</span>
+                              <i class="far fa-chevron-right"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="card horizontal-card small position-relative">
+                    <a href="magazine/articles/is-it-possible-to-renew-your-deck/">
+                      <div class="row">
+                        <div class="col-12 col-lg-5">
+                          <div class="image-container position-relative">
+                            <img
+                                src="https://api.aiq-magazine.com/assets/UploadImages/855a22513cc0b22a12b502139dfacc78_600_360_6_10_2020_1_34_44_PM.jpg"
+                                alt="Ultra modern kitchen with red cabinets and spot lighting">
+                            <div class="tags-container">
+                              <div class="tags-container-inner">
+                                <i class="fal fa-tag"></i>
+                                <div class="tags-inner">
+                                  <span class="tag">Renew Your Deck</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-7 pl-lg-0">
+                          <div class="card-info">
+                            <div class="title">
+                              <span class="h2">Is it possible to renew your deck?</span>
+                            </div>
+                            <div class="text">Many property owners ask whether it is possible to renew the deck,
+                              wondering whether it might be better to just go ahead and replace it all together. In this
+                              guide you will learn that deck restorations are not only probable - they are practically a
+                              guaranteed success.
+                            </div>
+                            <button type="button" class="read-more">
+                              <span>Read More</span>
+                              <i class="far fa-chevron-right"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="card horizontal-card small position-relative">
+                    <a href="magazine/articles/pro-vs-diy/">
+                      <div class="row">
+                        <div class="col-12 col-lg-5">
+                          <div class="image-container position-relative">
+                            <img
+                                src="https://api.aiq-magazine.com/assets/UploadImages/7c763efc493199e16e898fc916f30e33_600_360_6_10_2020_2_20_48_PM.jpg"
+                                alt="Plans and layout for a home remodel with a template of the new kticen on a tablet">
+                            <div class="tags-container">
+                              <div class="tags-container-inner">
+                                <i class="fal fa-tag"></i>
+                                <div class="tags-inner">
+                                  <span class="tag">Pro vs DIY</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-7 pl-lg-0">
+                          <div class="card-info">
+                            <div class="title">
+                              <span class="h2">Pro vs. DIY</span>
+                            </div>
+                            <div class="text">What should I do on my own, and what calls for a professional job? This is
+                              a question almost every homeowner asks before going into remodeling a property. In this
+                              short guide you&#x2019;ll find our answer, wrapped in some very useful tips.
+                            </div>
+                            <button type="button" class="read-more">
+                              <span>Read More</span>
+                              <i class="far fa-chevron-right"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="card horizontal-card small position-relative">
+                    <a href="magazine/articles/pace-government-backed-program-that-will-fund-your-new-roof/">
+                      <div class="row">
+                        <div class="col-12 col-lg-5">
+                          <div class="image-container position-relative">
+                            <img
+                                src="https://api.aiq-magazine.com/assets/UploadImages/444364d01a76222c57e54ba99e3651fb_600_360_6_10_2020_2_37_37_PM.jpg"
+                                alt="red ahingle roof on a suberban home with pink walls">
+                            <div class="tags-container">
+                              <div class="tags-container-inner">
+                                <i class="fal fa-tag"></i>
+                                <div class="tags-inner">
+                                  <span class="tag">Roofing</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-7 pl-lg-0">
+                          <div class="card-info">
+                            <div class="title">
+                              <span class="h2">Meet the government backed program that will fund your new roof</span>
+                            </div>
+                            <div class="text">PACE programs backed by the government recently have raised property
+                              values across the U.S and replaced its roofs in the process.
+                            </div>
+                            <button type="button" class="read-more">
+                              <span>Read More</span>
+                              <i class="far fa-chevron-right"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="card horizontal-card small position-relative">
+                    <a href="magazine/articles/remodeling-your-kitchen/">
+                      <div class="row">
+                        <div class="col-12 col-lg-5">
+                          <div class="image-container position-relative">
+                            <img
+                                src="https://api.aiq-magazine.com/assets/UploadImages/ca60e8d5dd7c1b8fc7a167466dfee33c_600_360_6_10_2020_12_41_07_PM.jpg"
+                                alt="modern design contemporary kitchen with grey wall tiles, white cabinets and drak wooden flooring">
+                            <div class="tags-container">
+                              <div class="tags-container-inner">
+                                <i class="fal fa-tag"></i>
+                                <div class="tags-inner">
+                                  <span class="tag">Remodeling Kitchen</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-7 pl-0">
+                          <div class="card-info">
+                            <div class="title">
+                              <span class="h2">Thinking about remodeling your kitchen? </span>
+                            </div>
+                            <div class="text">Here are some tips on how to do it the right way</div>
+                            <button type="button" class="read-more">
+                              <span>Read More</span>
+                              <i class="far fa-chevron-right"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- EOL: Right side content -->
+            </div>
+
+            <div class="row view-more-container m-t-70 m-b-30">
+              <div class="col-auto mx-auto">
+                <a href="https://localhost:44391/magazine/explore-more/">
+                  <div class="brand-btn big">Explore More Articles<i class="far fa-chevron-right"></i></div>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 </main>
 
-        <footer class="page-footer">
-            <div class="footer-container page-footer-main">
-                <div class="row">
+<footer class="page-footer">
+  <div class="footer-container page-footer-main">
+    <div class="row">
 
-                    <!-- left column -->
-                    <div class="col-12 col-md-auto col-xl-5 content-column-left">
-                        <img src="assets/images/footer/logo.svg?v=IgkdLofEQidYHMGrUW0t3qumnQKKdu9pqWu8MSG36g4" class="brand-logo mb-lg-2" alt="Aiq Home Footer Logo" title="Aiq Home Footer Logo" />
-                        <p class="line-h-1-5 mt-4 mt-lg-0">
-                            The market changing, AI & BI enhanced, technological marketplace connecting homeowners with local, approved and recommended home improvement contractors and professionals.
-                        </p>
+      <!-- left column -->
+      <div class="col-12 col-md-auto col-xl-5 content-column-left">
+        <img src="assets/images/footer/logo.svg?v=IgkdLofEQidYHMGrUW0t3qumnQKKdu9pqWu8MSG36g4"
+             class="brand-logo mb-lg-2" alt="Aiq Home Footer Logo" title="Aiq Home Footer Logo"/>
+        <p class="line-h-1-5 mt-4 mt-lg-0">
+          The market changing, AI & BI enhanced, technological marketplace connecting homeowners with local, approved
+          and recommended home improvement contractors and professionals.
+        </p>
 
-                        <!-- more information -->
-                        <div class="more-information-container">
-                            <div class="row">
-                                <div class="col-12 d-flex flex-row more-info">
-                                    <a href="about-us/" class="page-footer-link mb-2 py-1">About us</a>
-                                    <a href="contact-us/" class="page-footer-link mb-2 py-1">Contact Us</a>
-                                    <a href="terms-and-conditions/" class="page-footer-link mb-2 py-1">Terms & Conditions</a>
-                                    <a href="privacy-policy/" class="page-footer-link mb-2 py-1">Privacy Policy</a>
-                                </div>
-                                <div class="col-12 top-services d-none">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <span class="footer-h4 font-weight-600 py-3">Top Services</span>
-                                        </div>
-                                        <div class="col-12 col-sm-6 d-flex flex-column mt-3 mt-sm-0">
-                                            <a href="#!" class="page-footer-link mb-2 py-1">Roof - Install or replace</a>
-                                            <a href="#!" class="page-footer-link mb-2 py-1">Accessory Dwelling Units - Build</a>
-                                            <a href="#!" class="page-footer-link mb-2 py-1">Garage - Build</a>
-                                        </div>
-                                        <div class="col-12 col-sm-6 d-flex flex-column mt-3 mt-sm-0">
-                                            <span class="footer-h4 font-weight-600"></span>
-                                            <a href="#!" class="page-footer-link mb-2 py-1">Garage - Remodel or renovate</a>
-                                            <a href="#!" class="page-footer-link mb-2 py-1">Adus - Remodel</a>
-                                            <a href="#!" class="page-footer-link mb-2 py-1">Roof - repair</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- center column -->
-                    <div class="col-12 col-md-auto col-xl-4 content-column-center">
-                        <div class="content">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="news-letter-wrap">
-                                        <div class="image-container">
-                                            <img src="assets/images/footer/interface.svg?v=SihIKODx3Bi8G2Yc4HJNHL9mZemc0Nh_6aJJ8JIfXuA" alt="newsletter">
-                                        </div>
-                                        <span class="footer-h4 beige font-weight-black py-3">Join The AIQ Home Newsletter</span>
-                                        <p class="text line-h-1-5">
-                                            Sign up today and be first to get notified of special offers,
-                                            hot trends and exclusive subscribers’ only events.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="page-footer-subscribe-box">
-                                        <!--<div class="form-group position-relative">
-                                            <i class="fad fa-user"></i>
-                                            <input type="text" class="form-control" placeholder="Full name">
-                                        </div>-->
-                                        <div id="NewsletterForm" class="form-group position-relative mt-2">
-                                            <i class="fad fa-envelope" id="NewsletterEnvelope" title="Email"></i>
-                                            <input type="text" id="NewsletterEmail" name="NewsletterEmail" aria-labelledby="NewsletterEnvelope" class="form-control email" placeholder="Enter your Email">
-                                            <button id="NewsletterBtn" class="btn-subscribe" onclick="javascript: JoinNewsletter();">Subscribe</button>
-                                            <button id="NewsletterBtnSpinner" class="btn-subscribe" style="display:none;">Subscribe <span class="spinner-border spinner-border-sm"></span></button>
-                                        </div>
-                                        <div id="NewsletterThank" class="form-group position-relative m-t-30" style="display:none;">
-                                            <button type="button" class="btn-subscribe">
-                                                Thank you for joining the AIQHome newsletter.
-                                            </button>
-                                        </div>
-                                        <span id="NewsletterError" class="error-message system-color-14" style="display:none;"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- right column -->
-                    <div class="col-12 col-md-auto col-xl-3 content-column-right">
-                        <div class="pros-card">
-                            <div class="logo-pros-container">
-                                <img src="assets/images/footer/footer-pros-logo.png?v=vAnOYXGqQTVp3NReFeymrRWZCOluueRaNqCLV0y0QCo" alt="logo-pros">
-                            </div>
-                            <p class="line-h-1-5">
-                                The industry dedicated, business optimizing, leads, sales and project management platform for all home improvement service providers.
-                            </p>
-                            <div class="join-us-button">
-                                <button type="button">Join Us</button>
-                            </div>
-                        </div>
-                    </div>
+        <!-- more information -->
+        <div class="more-information-container">
+          <div class="row">
+            <div class="col-12 d-flex flex-row more-info">
+              <a href="about-us/" class="page-footer-link mb-2 py-1">About us</a>
+              <a href="contact-us/" class="page-footer-link mb-2 py-1">Contact Us</a>
+              <a href="terms-and-conditions/" class="page-footer-link mb-2 py-1">Terms & Conditions</a>
+              <a href="privacy-policy/" class="page-footer-link mb-2 py-1">Privacy Policy</a>
+            </div>
+            <div class="col-12 top-services d-none">
+              <div class="row">
+                <div class="col-12">
+                  <span class="footer-h4 font-weight-600 py-3">Top Services</span>
                 </div>
+                <div class="col-12 col-sm-6 d-flex flex-column mt-3 mt-sm-0">
+                  <a href="#!" class="page-footer-link mb-2 py-1">Roof - Install or replace</a>
+                  <a href="#!" class="page-footer-link mb-2 py-1">Accessory Dwelling Units - Build</a>
+                  <a href="#!" class="page-footer-link mb-2 py-1">Garage - Build</a>
+                </div>
+                <div class="col-12 col-sm-6 d-flex flex-column mt-3 mt-sm-0">
+                  <span class="footer-h4 font-weight-600"></span>
+                  <a href="#!" class="page-footer-link mb-2 py-1">Garage - Remodel or renovate</a>
+                  <a href="#!" class="page-footer-link mb-2 py-1">Adus - Remodel</a>
+                  <a href="#!" class="page-footer-link mb-2 py-1">Roof - repair</a>
+                </div>
+              </div>
             </div>
 
-            <div class="container-fluid page-footer-footer">
-                <div class="footer-container page-footer-main">
-                    <div class="row">
-                        <div class="col-12 col-sm-6">
-                            <div class="social">
-                                <a class="facebook" href="#">
-                                    <img src="assets/images/footer/social/facebook.svg?v=GRT4tGugZdC2efJx-77YvRIHbk6rQLFoL42q1Q6vpLw" alt="facebook">
-                                </a>
-                                <a class="linkedin" href="#">
-                                    <img src="assets/images/footer/social/linkedin.svg?v=nyl2dc--tPuYS2agE4r_-ratqiMo6vJwAu6OvWsc2Xs" alt="linkedin">
-                                </a>
-                                <a class="instagram" href="#">
-                                    <img src="assets/images/footer/social/instagram.svg?v=Y56zTGyn3NcffZOX1hLy7qef0NNftU9RMQ7BNdbE9HY" alt="instagram">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6">
-                            <div class="content d-flex justify-content-end align-items-center">
-                                <p>&#169; 2020 . All Rights Reserved.</p>
-                            </div>
-                        </div>
-                    </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- center column -->
+      <div class="col-12 col-md-auto col-xl-4 content-column-center">
+        <div class="content">
+          <div class="row">
+            <div class="col-12">
+              <div class="news-letter-wrap">
+                <div class="image-container">
+                  <img src="assets/images/footer/interface.svg?v=SihIKODx3Bi8G2Yc4HJNHL9mZemc0Nh_6aJJ8JIfXuA"
+                       alt="newsletter">
                 </div>
+                <span class="footer-h4 beige font-weight-black py-3">Join The AIQ Home Newsletter</span>
+                <p class="text line-h-1-5">
+                  Sign up today and be first to get notified of special offers,
+                  hot trends and exclusive subscribers’ only events.
+                </p>
+              </div>
             </div>
-        </footer>
-        <div class="back-layer"></div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="page-footer-subscribe-box">
+                <!--<div class="form-group position-relative">
+                    <i class="fad fa-user"></i>
+                    <input type="text" class="form-control" placeholder="Full name">
+                </div>-->
+                <div id="NewsletterForm" class="form-group position-relative mt-2">
+                  <i class="fad fa-envelope" id="NewsletterEnvelope" title="Email"></i>
+                  <input type="text" id="NewsletterEmail" name="NewsletterEmail" aria-labelledby="NewsletterEnvelope"
+                         class="form-control email" placeholder="Enter your Email">
+                  <button id="NewsletterBtn" class="btn-subscribe" onclick="javascript: JoinNewsletter();">Subscribe
+                  </button>
+                  <button id="NewsletterBtnSpinner" class="btn-subscribe" style="display:none;">Subscribe <span
+                      class="spinner-border spinner-border-sm"></span></button>
+                </div>
+                <div id="NewsletterThank" class="form-group position-relative m-t-30" style="display:none;">
+                  <button type="button" class="btn-subscribe">
+                    Thank you for joining the AIQHome newsletter.
+                  </button>
+                </div>
+                <span id="NewsletterError" class="error-message system-color-14" style="display:none;"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- right column -->
+      <div class="col-12 col-md-auto col-xl-3 content-column-right">
+        <div class="pros-card">
+          <div class="logo-pros-container">
+            <img src="assets/images/footer/footer-pros-logo.png?v=vAnOYXGqQTVp3NReFeymrRWZCOluueRaNqCLV0y0QCo"
+                 alt="logo-pros">
+          </div>
+          <p class="line-h-1-5">
+            The industry dedicated, business optimizing, leads, sales and project management platform for all home
+            improvement service providers.
+          </p>
+          <div class="join-us-button">
+            <button type="button">Join Us</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid page-footer-footer">
+    <div class="footer-container page-footer-main">
+      <div class="row">
+        <div class="col-12 col-sm-6">
+          <div class="social">
+            <a class="facebook" href="#">
+              <img src="assets/images/footer/social/facebook.svg?v=GRT4tGugZdC2efJx-77YvRIHbk6rQLFoL42q1Q6vpLw"
+                   alt="facebook">
+            </a>
+            <a class="linkedin" href="#">
+              <img src="assets/images/footer/social/linkedin.svg?v=nyl2dc--tPuYS2agE4r_-ratqiMo6vJwAu6OvWsc2Xs"
+                   alt="linkedin">
+            </a>
+            <a class="instagram" href="#">
+              <img src="assets/images/footer/social/instagram.svg?v=Y56zTGyn3NcffZOX1hLy7qef0NNftU9RMQ7BNdbE9HY"
+                   alt="instagram">
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6">
+          <div class="content d-flex justify-content-end align-items-center">
+            <p>&#169; 2020 . All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="back-layer"></div>
 
 </body>
 </html>

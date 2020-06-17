@@ -199,8 +199,8 @@
 
   .image-container-col {
     display: flex;
+    align-items: center;
     flex-shrink: 0;
-    //width: 200px;
     padding: 1.75rem 15px;
   }
 
@@ -285,7 +285,7 @@
   }
 
   .btn {
-    width: 160px;
+    width: auto;
     height: 32px;
     border-radius: 20px;
     border: solid 1px #352f4a;
@@ -410,21 +410,27 @@
     }
 
     .buttons-wrap {
-      flex-direction: column;
-      align-items: flex-start;
-      //margin-top: 0;
+      margin-top: 0;
 
       .btn {
         margin-top: .75rem;
       }
 
       .phone-wrap {
-        margin-left: 0;
+        //margin-left: 0;
       }
     }
 
     .card-wrap-row {
       flex-direction: column;
+    }
+
+    .decoration-el-one {
+      border-radius: 10px 10px 0 0 !important;
+    }
+
+    .decoration-el-two {
+      display: none;
     }
   }
 
@@ -432,9 +438,25 @@
 
   }
 
-  @media(max-width: 474px) {
-    .image-container-col {
-      //height: 220px;
+  @media(max-width: 399px) {
+    .card-wrap-inner {
+      padding: 1rem;
+    }
+
+    .buttons-wrap {
+      .btn {
+        padding: .375rem .375rem;
+
+        i {
+          padding-right: 5px;
+          font-size: 9.5pt;
+        }
+
+        .text {
+          white-space: nowrap;
+          font-size: 9.5pt;
+        }
+      }
     }
   }
 }

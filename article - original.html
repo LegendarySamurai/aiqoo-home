@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="utf-8"/>
+  <title>Article</title>
+  <meta name="description" content="Home Improvement"/>
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css"
+        integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="assets/css/article.css"/>
+  <link rel="stylesheet" href="assets/css/web.css" />
+  <link rel="stylesheet" href="assets/css/article-responsive.css"/>
+  <link rel="stylesheet" href="assets/css/web-responsive.css"/>
+</head>
+<body>
+
+<header class="header">
+  <div class="container container-lg">
+    <div class="row">
+      <div class="col-12 pl-0 pl-lg-3 pr-0 pr-lg-3">
+
+        <div class="header-content">
+          <button type="button" id="btn-open-menu" class="btn-open-menu d-lg-none">
+            <span class="menu-icon">
+              <i class="far fa-bars"></i>
+            </span>
+          </button>
+
+          <div class="logo">
+            <img src="assets/images/logo/logo.svg" alt="logo">
+          </div>
+
+          <button type="button" id="btn-search" class="btn-search">
+            <i class="fal fa-search"></i>
+          </button>
+
+          <!-- Dropdown menu -->
+          <div id="dropdown-menu-container" class="dropdown-menu-container">
+            <div id="btn-close-menu" class="btn-close-menu d-lg-none"></div>
+            <div id="dropdown-menu" class="dropdown-menu">
+              <div class="dropdown-menu-inner">
+                <div class="dropdown-menu-header d-lg-none">
+                  <div class="dropdown-menu-header-logo">
+                    <img src="assets/images/logo/logo.svg" alt="logo">
+                  </div>
+                  <button class="login-network" type="button">
+                    <span>Pro network</span>
+                    <img src="assets/images/icons/login.png" alt="login">
+                  </button>
+                </div>
+
+                <ul class="navbar">
+                  <li>
+                    <a href="#">
+                      <i class="d-lg-none menu-item-icon icon-home"></i>
+                      <span>
+                      Home
+                    </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="d-lg-none menu-item-icon icon-home"></i>
+                      <span>
+                      Video
+                    </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="d-lg-none menu-item-icon icon-home"></i>
+                      <span>
+                      Blog
+                    </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="d-lg-none menu-item-icon icon-home"></i>
+                      <span>
+                      About us
+                    </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="d-lg-none menu-item-icon icon-home"></i>
+                      <span>
+                      Services
+                    </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="d-lg-none menu-item-icon icon-magazine"></i>
+                      <span>
+                      Magazine
+                    </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="no-border-bottom">
+                      <i class="d-lg-none menu-item-icon icon-contact-us"></i>
+                      <span>
+                      Contact us
+                    </span>
+                    </a>
+                  </li>
+                </ul>
+
+                <ul class="dropdown-menu-social d-lg-none">
+                  <li>
+                    <a href="#!">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- EOL: Dropdown menu -->
+
+          <div id="header-search" class="search">
+            <div class="form-group position-relative">
+              <input id="header-search-input" class="form-control font-weight-bold" type="text"
+                     placeholder="What service are you looking for?">
+              <div class="super-placeholder">
+                <img src="assets/images/icons/pen-6.svg" alt="icon">
+              </div>
+              <button class="find-btn font-weight-bold" type="button">FIND A PRO</button>
+            </div>
+          </div>
+
+          <button class="login-network" type="button">
+            <span>Pro network</span>
+            <img src="assets/images/icons/login.png" alt="login">
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="article">
+  <div class="page-title">
+    <div class="container container-lg">
+      <div class="row">
+        <div class="col-12">
+          <!-- put styles -->
+          <p class="page-heading">AIQ Magazine</p>
+          <div class="breadcrumbs">
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="far fa-chevron-left"></i>
+                  <span>Home</span>
+                  <i class="far fa-chevron-right"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Magazine</span>
+                  <i class="far fa-chevron-right"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>article</span>
+                  <i class="far fa-chevron-right"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>why do we use it</span>
+                  <i class="far fa-chevron-right"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="article-section">
+    <div class="content-container container container-lg">
+      <div class="row">
+        <div class="col-12 col-lg-9 pl-lg-0">
+          <div class="article-inner">
+            <div class="article-header">
+              <div class="author">
+                <div class="author-image">
+                  <img class="author-image" src="assets/images/icons/user.png" alt="user">
+                </div>
+                <div class="info">
+                  <span class="author-name">Arik Rollenhagen</span>
+                  <span class="posted">yesterday</span>
+                </div>
+              </div>
+              <div class="tool-panel">
+                <span>
+                  <i class="fal fa-eye"></i>
+                  13,456
+                </span>
+                <span><i class="far fa-share-alt"></i></span>
+                <span><i class="fal fa-paper-plane"></i></span>
+                <span><i class="fal fa-print"></i></span>
+              </div>
+            </div>
+            <div class="article-content position-relative">
+              <div class="likes">
+                <span><i class="fal fa-thumbs-up"></i></span>
+                <span><i class="fal fa-thumbs-down"></i></span>
+                <span class="stats">315 Like</span>
+              </div>
+              <h1>Main Title</h1>
+              <h2>Video Subtitle Information during the Renaissance. The first line of Lorem Ipsum</h2>
+              <div class="big-img">
+                <img src="assets/images/bg/atricle-big-img.png" alt="">
+              </div>
+              <div class="text">
+                <h3 class="h3">Example h3 text</h3>
+                written in 45 BC. This book is a treatise on the theory of ethics,
+                very popular during the Renaissance. The first line of Lorem Ipsum,
+                “Lorem ipsum dolor sit n the theory of ethics, very popular during
+                the Renaissance. The first line of Lorem Ipsum, “Lor
+                <br><br>
+                written in 45 BC. This book is a treatise on the theory of ethics,
+                very popular during the Renaissance. The first line of Lorem Ipsum,
+                “Lorem ipsum dolor sit amet..”, comes from a line in section 1.10.32.
+                written in 45 BC. This book is a treatise on the theory of ethics,
+                very popular during the Renaissance. The first line of Lorem Ipsum,
+                “Lorem ipsum dolor sit amet..”, comes from a line in section 1.10.32.n the
+                theory of ethics, very popular during the Renaissance. The first line of
+                Lorem Ipsum, “Lor
+              </div>
+              <div class="commercials commercial-1">
+                <img src="assets/images/bg/commercial-1.png" alt="commercial-1">
+              </div>
+
+              <div class="floated">
+                <div class="text">
+                  written in 45 BC. This book is a treatise on the theory of ethics,
+                  very popular during the Renaissance. The first line of Lorem Ipsum,
+                  “Lorem ipsum dolor sit n the theory of ethics, very popular during
+                  the Renaissance. The first line of Lorem Ipsum, “Lor
+                </div>
+
+                <div class="small-img">
+                  <img src="assets/images/bg/atricle-big-img.png" alt="">
+                </div>
+                <div class="text">
+                  <h3 class="h3">Example h3 text</h3>
+                  written in 45 BC. This book is a treatise on the theory of ethics,
+                  very popular during the Renaissance. The first line of Lorem Ipsum,
+                  “Lorem ipsum dolor sit n the theory of ethics, very popular during
+                  the Renaissance. The first line of Lorem Ipsum, “Lor
+                  <br><br>
+                  written in 45 BC. This book is a treatise on the theory of ethics,
+                  very popular during the Renaissance. The first line of Lorem Ipsum,
+                  “Lorem ipsum dolor sit n the theory of ethics, very popular during
+                  the Renaissance. The first line of Lorem Ipsum, “Lor
+                  <br><br>
+                  written in 45 BC. This book is a treatise on the theory of ethics,
+                  very popular during the Renaissance. The first line of Lorem Ipsum,
+                  “Lorem ipsum dolor sit n the theory of ethics, very popular during
+                  the Renaissance. The first line of Lorem Ipsum, “Lor
+                  <br><br>
+                  written in 45 BC. This book is a treatise on the theory of ethics,
+                  very popular during the Renaissance. The first line of Lorem Ipsum,
+                  “Lorem ipsum dolor sit n the theory of ethics, very popular during
+                  the Renaissance. The first line of Lorem Ipsum, “Lor
+                </div>
+              </div>
+
+              <div class="commercials commercial-2">
+               <span class="text font-weight-black">
+                 Find out if you are eligible for PACE roof financing
+                 <span class="number font-weight-black">5,428</span> have already checked and <span class="number font-weight-black">78%</span> were eligible
+               </span>
+               <button class="color-white font-weight-black" type="button">Check Now</button>
+              </div>
+
+              <div class="text">
+                written in 45 BC. This book is a treatise on the theory of ethics,
+                very popular during the Renaissance. The first line of Lorem Ipsum,
+                “Lorem ipsum dolor sit n the theory of ethics, very popular during
+                the Renaissance. The first line of Lorem Ipsum, “Lor
+              </div>
+
+              <div class="commercials commercial-3 position-relative">
+                <div class="bg d-none d-lg-block"></div>
+                <div class="commercial-content">
+
+                  <div class="row">
+                    <div class="col-12 col-lg-6">
+                      <div class="h-c h-100">
+                        <span class="font-weight-black commercial-h2">
+                          Looking for a plumber to hold immediately?
+                        </span>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-6 px-lg-0">
+                      <div class="find-by-zip-code">
+                        <div class="f-c">
+                          <label class="font-weight-black" for="zip-code">Zip code</label>
+                          <input id="zip-code" class="" type="tel" placeholder="Insert your zip code">
+                        </div>
+                        <button class="color-white font-weight-black" type="button">Find a Pro</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text">
+                written in 45 BC. This book is a treatise on the theory of ethics,
+                very popular during the Renaissance. The first line of Lorem Ipsum,
+                “Lorem ipsum dolor sit n the theory of ethics, very popular during
+                the Renaissance. The first line of Lorem Ipsum, “Lor
+              </div>
+
+              <div class="graphs-container mt-4">
+                <div class="row my-lg-4">
+                  <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                    <div class="graph-card"></div>
+                  </div>
+                  <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                    <div class="graph-card"></div>
+                  </div>
+                  <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                    <div class="graph-card"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-none d-lg-block col-lg-3 pr-lg-0">
+          <div class="aside-block">
+            <div class="categories-container">
+              <span class="title">Categories</span>
+              <ul class="categories-list">
+                <li class="categories-item">
+                  <span>Video</span>
+                </li>
+                <li class="categories-item">
+                  <span>Fix and Tips</span>
+                </li>
+                <li class="categories-item">
+                  <span>6 Tips</span>
+                </li>
+                <li class="categories-item">
+                  <span>Who to fix</span>
+                </li>
+                <li class="categories-item">
+                  <span>Fix and Tips</span>
+                </li>
+                <li class="categories-item">
+                  <span>6 Tips</span>
+                </li>
+                <li class="categories-item">
+                  <span>Who to fix</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="commercials commercial-4 mt-4">
+              <img src="assets/images/bg/commercial-2.png" alt="commercial-2">
+            </div>
+
+            <div class="commercials commercial-5 mt-4">
+              <img src="assets/images/bg/commercial-3.png" alt="commercial-3">
+            </div>
+
+            <div class="commercials commercial-6 mt-4">
+              <div class="inner">
+                <div class="content">
+                  <span class="commercial-h3">
+                    Find the right pro
+                  </span>
+                  <span class="text">
+                    for your next project
+                  </span>
+                  <button type="button">
+                    <span class="font-weight-bold">Find now</span>
+                    <i class="fal fa-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="commercials commercial-7 mt-4">
+              <div class="inner">
+                <div class="content">
+                  <span class="commercial-h3">
+                    Find the right pro for your
+                    next project
+                  </span>
+                  <button type="button">
+                    <span class="font-weight-bold">Find now</span>
+                    <i class="fal fa-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="more">
+              <span class="commercial-h3">More Articles</span>
+              <div class="i-cards-container">
+                <div class="i-card mb-4">
+                  <img src="assets/images/bg/more-articles.png" alt="articles">
+                  <span class="title font-weight-bold">Title</span>
+                  <span class="text">ar during the Renaissan</span>
+                </div>
+                <div class="i-card mb-4">
+                  <img src="assets/images/bg/more-articles.png" alt="articles">
+                  <span class="title font-weight-bold">Title</span>
+                  <span class="text">ar during the Renaissan</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cards-section mt-3 mt-lg-4">
+    <div class="container container-lg">
+      <!-- cards -->
+      <div class="row cards-container">
+        <div class="col-auto col-lg-4 mx-auto mx-lg-0 mb-4 mb-lg-0">
+          <div class="card">
+            <div class="card-header">
+              <div class="card-image">
+                <img src="assets/images/dummy/dummy__new-home-house-property-and-tenant-real-estate.jpg" alt="">
+              </div>
+            </div>
+            <div class="card-body">
+              <span class="card-title">Card Title</span>
+              <p class="description">
+                but also the leap into electronic typesetting,
+                remaining essentially unchanged.
+                It was popularised in the…
+              </p>
+            </div>
+            <div class="card-footer"></div>
+          </div>
+        </div>
+        <div class="col-auto col-lg-4 mx-auto mx-lg-0 mb-4 mb-lg-0">
+          <div class="card">
+            <div class="card-header">
+              <div class="card-image">
+                <img src="assets/images/dummy/dummy__new-home-house-property-and-tenant-real-estate.jpg" alt="">
+              </div>
+            </div>
+            <div class="card-body">
+              <span class="card-title">Card Title</span>
+              <p class="description">
+                but also the leap into electronic typesetting,
+                remaining essentially unchanged.
+                It was popularised in the…
+              </p>
+            </div>
+            <div class="card-footer"></div>
+          </div>
+        </div>
+        <div class="col-auto col-lg-4 mx-auto mx-lg-0 mb-4 mb-lg-0">
+          <div class="card">
+            <div class="card-header">
+              <div class="card-image">
+                <img src="assets/images/dummy/dummy__new-home-house-property-and-tenant-real-estate.jpg" alt="">
+              </div>
+            </div>
+            <div class="card-body">
+              <span class="card-title">Card Title</span>
+              <p class="description">
+                but also the leap into electronic typesetting,
+                remaining essentially unchanged.
+                It was popularised in the…
+              </p>
+            </div>
+            <div class="card-footer"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="container container-lg">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-title-container">
+            <span class="section-title-decoration left"></span>
+            <span class="section-title">Services</span>
+            <span class="section-title-decoration right"></span>
+          </div>
+        </div>
+      </div>
+      <div class="row services-list list">
+        <div class="col services-list-col mb-3">
+          <span class="h4-title">Roofing</span>
+          <p>Roof replacement</p>
+          <p>Roof replacement</p>
+          <p>Roof replacement</p>
+          <span class="view-more">View More</span>
+        </div>
+        <div class="col services-list-col mb-3">
+          <span class="h4-title">Roofing</span>
+          <p>Roof replacement</p>
+          <p>Roof replacement</p>
+          <p>Roof replacement</p>
+          <span class="view-more">View More</span>
+        </div>
+        <div class="col services-list-col mb-3">
+          <span class="h4-title">Roofing</span>
+          <p>Roof replacement</p>
+          <p>Roof replacement</p>
+          <p>Roof replacement</p>
+          <span class="view-more">View More</span>
+        </div>
+        <div class="col services-list-col mb-3">
+          <span class="h4-title">Roofing</span>
+          <p>Roof replacement</p>
+          <p>Roof replacement</p>
+          <p>Roof replacement</p>
+          <span class="view-more">View More</span>
+        </div>
+        <div class="col services-list-col mb-3">
+          <span class="h4-title">Roofing</span>
+          <p>Roof replacement</p>
+          <p>Roof replacement</p>
+          <p>Roof replacement</p>
+          <span class="view-more">View More</span>
+        </div>
+        <div class="col services-list-col mb-3">
+          <span class="h4-title">Roofing</span>
+          <p>Roof replacement</p>
+          <p>Roof replacement</p>
+          <p>Roof replacement</p>
+          <span class="view-more">View More</span>
+        </div>
+        <div class="col services-list-col mb-3">
+          <span class="h4-title">Roofing</span>
+          <p>Roof replacement</p>
+          <p>Roof replacement</p>
+          <p>Roof replacement</p>
+          <span class="view-more">View More</span>
+        </div>
+      </div>
+      <div class="row view-more-container">
+        <div class="col-auto mx-auto">
+          <button type="button" class="brand-btn primary mt-3 mt-lg-4">View More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+<footer class="page-footer">
+  <div class="container page-footer-main">
+    <div class="row">
+
+      <!-- left column -->
+      <div class="col-12 col-lg-4 content-column-left">
+        <img
+            src="assets/images/logo/logo.svg"
+            class="brand-logo mb-lg-2"
+            alt="aiqoo logo"
+        />
+        <p class="lh-lg-2 mt-4 mt-lg-0">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+          sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+          magna aliquam erat volutpat.
+        </p>
+
+        <!-- more information -->
+        <div class="more-information d-none d-md-block">
+          <div class="row">
+            <div class="col-12">
+              <span class="footer-h4">More Information</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6 d-flex flex-column">
+              <a href="#!" class="page-footer-link mb-2 py-1">Help Center</a>
+              <a href="#!" class="page-footer-link mb-2 py-1">Terms of Use</a>
+              <a href="#!" class="page-footer-link mb-2 py-1">Envato Market Blog</a>
+            </div>
+            <div class="col-6 d-flex flex-column">
+              <a href="#!" class="page-footer-link mb-2 py-1">About</a>
+              <a href="#!" class="page-footer-link mb-2 py-1">Careers</a>
+              <a href="#!" class="page-footer-link mb-2 py-1">Terms of Use</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- center column -->
+      <div class="col-12 col-lg-5 content-column-center">
+        <span class="footer-h4">Popular Posts</span>
+
+        <!-- Posts: mobile only -->
+        <div class="popular-posts d-600-none">
+          <div class="slick-container">
+            <!-- single post -->
+            <div class="post">
+              <div class="dummy-image"></div>
+              <!-- post stats -->
+              <div class="post-stats pr-2 mb-2 mb-lg-0">
+                <div class="post-stats-item">
+                  <i class="fal fa-thumbs-up"></i>
+                  <span class="ml-2">546</span>
+                </div>
+                <div class="post-stats-item">
+                  <i class="fal fa-heart"></i>
+                  <span class="ml-2">119</span>
+                </div>
+              </div>
+              <span class="footer-h5">Amazing Apartment Family</span>
+              <i class="fal fa-map-marker-alt icon-white"></i>
+              <span class="ml-lg-1">Vesey St, New York, NY, USA</span>
+            </div>
+
+            <!-- single post -->
+            <div class="post">
+              <div class="dummy-image"></div>
+              <!-- post stats -->
+              <div class="post-stats pr-2 mb-2 mb-lg-0">
+                <div class="post-stats-item">
+                  <i class="fal fa-thumbs-up"></i>
+                  <span class="ml-2">546</span>
+                </div>
+                <div class="post-stats-item">
+                  <i class="fal fa-heart"></i>
+                  <span class="ml-2">119</span>
+                </div>
+              </div>
+              <span class="footer-h5">Amazing Apartment Family</span>
+              <i class="fal fa-map-marker-alt icon-white"></i>
+              <span class="ml-lg-1">Vesey St, New York, NY, USA</span>
+            </div>
+
+            <!-- single post -->
+            <div class="post">
+              <div class="dummy-image"></div>
+              <!-- post stats -->
+              <div class="post-stats pr-2 mb-2 mb-lg-0">
+                <div class="post-stats-item">
+                  <i class="fal fa-thumbs-up"></i>
+                  <span class="ml-2">546</span>
+                </div>
+                <div class="post-stats-item">
+                  <i class="fal fa-heart"></i>
+                  <span class="ml-2">119</span>
+                </div>
+              </div>
+              <span class="footer-h5">Amazing Apartment Family</span>
+              <i class="fal fa-map-marker-alt icon-white"></i>
+              <span class="ml-lg-1">Vesey St, New York, NY, USA</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Posts: desktop only -->
+        <div class="popular-posts d-none d-600-block">
+          <div class="post">
+            <div class="row">
+              <!-- post image -->
+              <div class="col-auto pr-lg-0">
+                <!-- dummy-image-->
+                <div class="dummy-image"></div>
+                <!--<img src="" alt="">-->
+              </div>
+              <!-- post main data -->
+              <div class="col-6 col-lg-5 d-flex flex-column pl-lg-4 pr-0 pb-lg-3">
+                <span class="footer-h5">Amazing Apartment Family</span>
+                <div class="mt-auto">
+                  <i class="fal fa-map-marker-alt icon-white"></i>
+                  <span class="ml-lg-1">Vesey St, New York, NY, USA</span>
+                </div>
+              </div>
+              <!-- post stats -->
+              <div class="col-2 col-lg-3 d-flex ml-lg-auto">
+                <div class="row flex-nowrap flex-sm-wrap flex-row flex-sm-column flex-lg-row mt-2 mt-sm-0">
+                  <div class="col-lg-6 d-flex align-items-lg-start pl-lg-0 mb-4 mb-lg-0">
+                    <i class="fal fa-thumbs-up"></i>
+                    <span class="ml-2">546</span>
+                  </div>
+                  <div class="col-lg-6 d-flex align-items-lg-start pr-lg-0">
+                    <i class="fal fa-heart"></i>
+                    <span class="ml-2">119</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="posts-divider"></div>
+
+          <div class="post">
+            <div class="row">
+              <!-- post image -->
+              <div class="col-auto pr-lg-0">
+                <!-- dummy-image-->
+                <div class="dummy-image"></div>
+                <!--<img src="" alt="">-->
+              </div>
+              <!-- post main data -->
+              <div class="col-6 col-lg-5 d-flex flex-column pl-lg-4 pr-0 pb-lg-3">
+                <span class="footer-h5">Amazing Apartment Family</span>
+                <div class="mt-auto">
+                  <!-- icon -->
+                  <i class="fal fa-map-marker-alt icon-white"></i>
+                  <span class="ml-lg-1">Vesey St, New York, NY, USA</span>
+                </div>
+              </div>
+              <!-- post stats -->
+              <div class="col-2 col-lg-3 d-flex ml-lg-auto">
+                <div class="row flex-nowrap flex-sm-wrap flex-row flex-sm-column flex-lg-row mt-2 mt-sm-0">
+                  <div class="col-lg-6 d-flex align-items-lg-start pl-lg-0 mb-4 mb-lg-0">
+                    <i class="fal fa-thumbs-up"></i>
+                    <span class="ml-2">546</span>
+                  </div>
+                  <div class="col-lg-6 d-flex align-items-lg-start pr-lg-0">
+                    <i class="fal fa-heart"></i>
+                    <span class="ml-2">119</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- right column -->
+      <div class="col-12 col-lg-3 content-column-right">
+        <div class="row">
+          <div class="col-12">
+            <span class="footer-h4">Square Newsletter</span>
+            <p class="lh-lg-2">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+              sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+              magna aliquam erat volutpat.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="page-footer-subscribe-box">
+              <div class="form-group position-relative">
+                <label for="subscribe-to-newsletter" class="d-none d-600-flex">Enter your Email</label>
+                <input type="email" class="form-control" id="subscribe-to-newsletter" placeholder="Enter your Email">
+                <i class="fal fa-envelope newsletter-icon d-600-none"></i>
+              </div>
+              <button type="button" class="d-600-none btn-subscribe-submit">Subscribe</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid page-footer-footer">
+    <div class="row">
+      <div class="col-auto mx-auto">
+        <div class="content d-flex align-items-center">
+          <p>&#169; 2020 . All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous">
+</script>
+<script src="assets/scss/vendor/slick/slick.min.js"></script>
+<script src="assets/js/slick.js"></script>
+<script src="assets/js/header.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
