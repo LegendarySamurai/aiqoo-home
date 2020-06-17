@@ -34,21 +34,30 @@ function init() {
 
 
 // Landing page Section search-pro Image size
-const imageContainers = document.querySelectorAll('.image-container');
 
+window.addEventListener('resize',  function() {
+    const imageContainers = document.querySelectorAll('.image-container');
 
-imageContainers.forEach(imageContainer => {
-    let imageContainerHeight = (imageContainer.clientWidth) / 2;
-    // imageContainer = (imageContainers
+    imageContainers.forEach(imageContainer => {
+        let imageContainerHeight = (imageContainer.clientWidth) / 2;
+        // imageContainer = (imageContainers
 
-    if (window.innerWidth < 767) {
-        console.log(111111);
-        imageContainer.style.height = `${ imageContainerHeight  }px`;
-    }
+        if (window.innerWidth < 767) {
+            console.log(111111);
+            imageContainer.style.height = `${ imageContainerHeight  }px`;
+            imageContainer.style.width = "100" + "%";
+        }
 
+        if (window.innerWidth >= 768) {
+            console.log(222222);
+            imageContainer.style.height = '150' + 'px';
+            imageContainer.style.width = '200' + 'px';
+        }
 
-    console.log('imageContainerHeight => ', imageContainerHeight );
+        console.log('imageContainerHeight => ', imageContainerHeight );
+    });
 });
+
 
 
 

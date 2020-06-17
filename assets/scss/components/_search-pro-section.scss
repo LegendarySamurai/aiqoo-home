@@ -200,7 +200,7 @@
   .image-container-col {
     display: flex;
     flex-shrink: 0;
-    width: 200px;
+    //width: 200px;
     padding: 1.75rem 15px;
   }
 
@@ -434,7 +434,7 @@
 
   @media(max-width: 474px) {
     .image-container-col {
-      height: 220px;
+      //height: 220px;
     }
   }
 }
