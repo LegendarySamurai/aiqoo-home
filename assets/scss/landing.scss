@@ -1,24 +1,19 @@
 // helpers
 @import 'helpers/variables';
 @import 'components/load-funnel';
-@import 'components/search-pro-section';
+@import 'components/aiq-index-section';
 
 .landing-page {
   position: relative;
   z-index: 6000;
 
   #f_display_1 {
-    // position: fixed; // when you click on any li
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     width: 100%;
   }
-
-  //.section-container {
-  //  max-width: 1300px;
-  //}
 
   // Reasons for this page
   .reasons {
@@ -32,7 +27,7 @@
     .head-section-content-inner {
       z-index: 9900 !important;
       min-height: 100vh;
-      max-width: 80%;
+      width: 80%;
       margin: 0 auto;
     }
 
@@ -42,53 +37,11 @@
             padding: 10px 0;
         }
 
-        // landing-funnel-card
-        //.landing-funnel-card {
-        //  .step-div {
-        //    button {
-        //      img {
-        //        margin-top: 0;
-        //      }
-        //
-        //      i, span {
-        //        display: flex;
-        //        align-items: center;
-        //        justify-content: center;
-        //        margin: 0;
-        //        padding: 0;
-        //        line-height: 1;
-        //      }
-        //    }
-        //
-        //    .icon-pos {
-        //      img {
-        //        width: 100%;
-        //      }
-        //    }
-        //  }
-        //
-        //  .funnel-card-nav {
-        //    display: flex !important;
-        //    flex-direction: row;
-        //    align-items: center;
-        //    white-space: nowrap;
-        //    padding: 0 0 30px 10px;
-        //
-        //    &:after {
-        //      position: absolute;
-        //      left: 0;
-        //      bottom: 0;
-        //    }
-        //  }
-        //
-        //  .funnel-card-wrap {
-        //    min-height: calc(65vh - 70px);
-        //    width: 100%;
-        //    padding-bottom: 25px;
-        //  }
-        //}
-
-        // EOL: landing-funnel-card
+        .funnel-card-wrap {
+          min-height: calc(65vh - 70px);
+          width: 100%;
+          padding-bottom: 25px;
+        }
 
         .reasons-wrap {
             min-height: 20vh;
@@ -234,6 +187,12 @@
 
 // RESPONSIVE
 .landing-page {
+  @media(max-width: 991px) {
+    .head-section-content-inner {
+      width: 96% !important;
+    }
+  }
+
   @media(max-width: 768px) {
     .bg-container {
       &::before {
@@ -261,10 +220,6 @@
       margin-top: 3vh;
     }
 
-    .head-section-content-inner {
-      width: 86%;
-    }
-
     .landing-search-pro {
       .logo-container {
         justify-content: center;
@@ -278,8 +233,10 @@
   }
 
   @media(max-width: 599px) {
+    z-index: 8000;
+
     .head-section-content-inner {
-      width: 96%;
+      width: 96% !important;
     }
 
     .categories {

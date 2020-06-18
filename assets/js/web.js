@@ -293,3 +293,41 @@ function reloadoff(c) {
 	c.style.display = "none";
 }
 function createHttpObject() { var hr; if (window.XMLHttpRequest) { try { hr = new XMLHttpRequest(); } catch (e) { hr = false; } } else if (window.ActiveXObject) { try { hr = new ActiveXObject("Msxml2.HTMLHTTP"); } catch (e) { try { hr = new ActiveXObject("Microsoft.XMLHTTP"); } catch (e) { hr = false; } } } return hr; }
+
+
+// code written 17-06-2020 by Igor
+// Landing page Section search-pro Image size and map size (always should be 3 cards height)
+// function countMapHeight () {
+// 	const proCards = document.querySelectorAll('.pro-card');
+// 	const mapCol = document.querySelector('.map-col');
+//
+// 	proCards.forEach(proCard => {
+// 		let proCardHeight = proCard.clientHeight;
+// 		let mapMaxHeight = proCardHeight * 3;
+// 		mapCol.style.maxHeight = `calc(${mapMaxHeight}px + 2rem + 2rem + 2rem)`;
+// 	})
+// }
+//
+// window.addEventListener('resize',  function() {
+// 	const imageContainers = document.querySelectorAll('.image-container');
+//
+// 	imageContainers.forEach(imageContainer => {
+// 		let imageContainerHeight = (imageContainer.clientWidth) / 2;
+//
+// 		if (window.innerWidth < 767) {
+// 			imageContainer.style.height = `${ imageContainerHeight  }px`;
+// 			imageContainer.style.width = "100" + "%";
+// 		}
+//
+// 		if (window.innerWidth >= 768) {
+// 			imageContainer.style.height = '150' + 'px';
+// 			imageContainer.style.width = '200' + 'px';
+// 		}
+// 	});
+//
+// 	countMapHeight();
+// });
+//
+// $(document).ready(function() {
+// 	countMapHeight();
+// });
