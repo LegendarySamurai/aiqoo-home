@@ -3,7 +3,7 @@
     z-index: 4;
     position: -webkit-sticky; /* Safari */
     position: sticky;
-    top: 75px;
+    top: 70px;
     padding-top: 30px;
     background-color: #fff;
     padding-bottom: 20px;
@@ -98,7 +98,7 @@
         width: 100%;
         height: auto;
         max-height: 275px;
-        //border-radius: 5px;
+
         &:not(:last-of-type) {
             margin-bottom: 2rem;
         }
@@ -399,6 +399,14 @@
   }
 
   @media(max-width: 991px) {
+    .map-col {
+      display: none;
+    }
+
+    .cards-col {
+      width: 100%;
+    }
+
     .head-row {
       top: 60px;
     }
@@ -461,10 +469,6 @@
 
       .btn {
         margin-top: .75rem;
-      }
-
-      .phone-wrap {
-        //margin-left: 0;
       }
     }
 
