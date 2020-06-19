@@ -97,8 +97,11 @@
     }
 
     .navbar {
+      align-items: flex-start;
+      margin-left: 0 !important;
+
       a {
-        font-size: 10pt;
+        font-size: 11pt !important;
 
         &:hover {
           &::after {
@@ -123,15 +126,6 @@
       .find-btn {
         width: $page-header-find-pro-btn-992;
         font-size: 7pt;
-      }
-    }
-
-    .navbar {
-      align-items: flex-start;
-      margin-left: 0 !important;
-
-      a {
-        font-size: 9pt;
       }
     }
   }

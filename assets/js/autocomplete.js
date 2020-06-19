@@ -3,7 +3,32 @@ $(function () {
 
 	var countriesArray = $.map(countries, function (value, key) { return { value: value, data: key }; });
 
-    $('#head-section-search-input').autocomplete({
+    $('.find-box #head-section-search-input').autocomplete({
+        beforeRender: function (container) {
+            container.addClass("find-pro-autocomplete");
+        },
+        lookup: countriesArray,
+        lookupFilter: function (suggestion, originalQuery, queryLowerCase) {
+            var re = new RegExp('\\b' + $.Autocomplete.utils.escapeRegExChars(queryLowerCase), 'gi');
+            return re.test(suggestion.value);
+        },
+        onSelect: function (suggestion) {
+            //$('#selction-ajax').html('You selected: ' + suggestion.value + ', ' + suggestion.data);
+            alert('You selected: ' + suggestion.value + ', ' + suggestion.data);
+        },
+        onHint: function (hint) {
+            //$('#autocomplete-ajax-x').val(hint);
+        },
+        onInvalidateSelection: function () {
+            //$('#selction-ajax').html('You selected: none');
+        }
+    });
+
+    $('#header-search #header-search-input').autocomplete({
+        beforeRender: function (container) {
+            // console.log('=>', container);
+            container.addClass("header-autocomplete");
+        },
         lookup: countriesArray,
         lookupFilter: function (suggestion, originalQuery, queryLowerCase) {
             var re = new RegExp('\\b' + $.Autocomplete.utils.escapeRegExChars(queryLowerCase), 'gi');

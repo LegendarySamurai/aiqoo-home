@@ -12,32 +12,64 @@
 }
 
 .autocomplete-suggestions {
+  height: auto !important;
+  max-height: unset !important;
   padding: 0 30px;
-  margin-top: 5px;
+  margin-top: 10px;
   box-sizing: border-box;
   //border: 1px solid #d8cdba;
   background: #FFF;
   cursor: default;
-  overflow: auto;
+  //overflow: auto;
   border-radius: 15px;
   box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.16);
   display: block !important; // remove !!!!
 
-  //&::before {
-  //  position: absolute;
-  //  top: 50%;
-  //  left: 10%;
-  //  transform: translate(0, -50%);
-  //  display: block;
-  //  content: '';
-  //  width: 1px;
-  //  height: 1px;
-  //  border-bottom: 8px solid red;
-  //  border-left: 8px solid transparent;
-  //  border-right: 8px solid transparent;
-  //  border-top: none;
-  //  z-index: 99999 !important;
-  //}
+  &.find-pro-autocomplete,
+  &.header-autocomplete {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: -6px;
+      left: 10%;
+      display: block;
+      content: '';
+      width: 1px;
+      height: 1px;
+      border-bottom: 8px solid #fff;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: none;
+      z-index: 99999 !important;
+    }
+  }
+}
+
+.autocomplete-suggestions {
+  &.find-pro-autocomplete {
+    .autocomplete-suggestion {
+      height: 70px;
+      line-height: 70px;
+      padding: 0 5px 0 40px;
+      font-size: 14pt;
+
+      @media(max-width: 599px) {
+        height: 55px;
+        line-height: 55px;
+        padding: 0 5px 0 40px;
+      }
+    }
+  }
+
+  &.header-autocomplete {
+    .autocomplete-suggestion {
+      height: 55px;
+      line-height: 55px;
+      padding: 0 5px 0 30px;
+      font-size: 12pt;
+    }
+  }
 }
 
 .autocomplete-suggestion {
@@ -45,18 +77,17 @@
   display: inline-block;
   vertical-align: middle;
   width: 100%;
-  height: 70px;
-  line-height: 70px;
-  padding: 0 5px 0 40px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   font-family: 'Raleway', 'Helvetica','Arial',sans-serif;
   font-weight: 400;
-  font-size: 12pt;
   color: #352f4a;
   cursor: pointer;
-  border-bottom: 1px solid #e0e0e0;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid #e0e0e0;
+  }
 
   &::before {
     position: absolute;
@@ -69,12 +100,6 @@
     height: 16px;
     border-radius: 3px;
     background-color: #585077;
-  }
-
-  @media(max-width: 599px) {
-    height: 55px;
-    line-height: 55px;
-    padding: 0 5px 0 40px;
   }
 }
 
