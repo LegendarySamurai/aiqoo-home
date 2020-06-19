@@ -12,6 +12,7 @@
 }
 
 .autocomplete-suggestions {
+  z-index: 10 !important;
   height: auto !important;
   max-height: unset !important;
   padding: 0 30px;
@@ -73,7 +74,6 @@
 }
 
 .autocomplete-suggestion {
-  z-index: 10 !important;
   position: relative;
   display: inline-block;
   vertical-align: middle;
