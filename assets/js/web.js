@@ -295,7 +295,24 @@ function reloadoff(c) {
 function createHttpObject() { var hr; if (window.XMLHttpRequest) { try { hr = new XMLHttpRequest(); } catch (e) { hr = false; } } else if (window.ActiveXObject) { try { hr = new ActiveXObject("Msxml2.HTMLHTTP"); } catch (e) { try { hr = new ActiveXObject("Microsoft.XMLHTTP"); } catch (e) { hr = false; } } } return hr; }
 
 
-// code written 17-06-2020 by Igor
+// code written 19-06-2020 by Igor
+$('#head-section-search-input').blur(function () {
+	if(this.value.length < 1) {
+		$('.find-box .main-super-placeholder-heading').css("display", "block");
+		// console.log(this.value.length, 'Less then one');
+	} else {
+		$('.find-box .main-super-placeholder-heading').css("display", "none");
+		// console.log(this.value.length, 'More then one');
+	}
+});
+
+
+
+
+
+
+
+
 // Landing page Section search-pro Image size and map size (always should be 3 cards height)
 // function countMapHeight () {
 // 	const proCards = document.querySelectorAll('.pro-card');

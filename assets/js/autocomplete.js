@@ -3,10 +3,10 @@ $(function () {
 
 	var countriesArray = $.map(countries, function (value, key) { return { value: value, data: key }; });
 
-    $('.find-box #head-section-search-input').autocomplete({
-        beforeRender: function (container) {
-            container.addClass("find-pro-autocomplete");
-        },
+    $('.find-box #head-section-search-input').autocomplete({ // code written 19-06-2020 by Igor
+        beforeRender: function (container) {// code written 19-06-2020 by Igor
+            container.addClass("find-pro-autocomplete");// code written 19-06-2020 by Igor
+        },// code written 19-06-2020 by Igor
         lookup: countriesArray,
         lookupFilter: function (suggestion, originalQuery, queryLowerCase) {
             var re = new RegExp('\\b' + $.Autocomplete.utils.escapeRegExChars(queryLowerCase), 'gi');
@@ -24,7 +24,7 @@ $(function () {
         }
     });
 
-    $('#header-search #header-search-input').autocomplete({
+    $('#header-search #header-search-input').autocomplete({// code written 19-06-2020 by Igor
         beforeRender: function (container) {
             // console.log('=>', container);
             container.addClass("header-autocomplete");
@@ -44,7 +44,7 @@ $(function () {
         onInvalidateSelection: function () {
             //$('#selction-ajax').html('You selected: none');
         }
-    });
+    });// EOL: code written 19-06-2020 by Igor
 
 
 

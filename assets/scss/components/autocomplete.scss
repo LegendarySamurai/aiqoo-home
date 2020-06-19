@@ -23,7 +23,7 @@
   //overflow: auto;
   border-radius: 15px;
   box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.16);
-  display: block !important; // remove !!!!
+  //display: block !important; // remove !!!!
 
   &.find-pro-autocomplete,
   &.header-autocomplete {
@@ -73,6 +73,7 @@
 }
 
 .autocomplete-suggestion {
+  z-index: 10 !important;
   position: relative;
   display: inline-block;
   vertical-align: middle;

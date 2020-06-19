@@ -34,6 +34,10 @@ let headSectionInputPlaceholder = document.getElementById('head-section-search-i
 const desktopInputPlaceholder = document.querySelector('.super-placeholder .zip-super-placeholder-heading');
 const mobileInputPlaceholder = document.querySelector('.find-box .zip-super-placeholder-heading');
 
+$(mainPlaceholderHeadings).blur(function () {
+	console.log('Hello');
+});
+
 // const findBox = document.querySelector('.find-box');
 
 let findProBtnClicked = false;
