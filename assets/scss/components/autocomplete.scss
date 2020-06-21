@@ -12,21 +12,15 @@
 }
 
 .autocomplete-suggestions {
-  //z-index: 10 !important;
-  position: fixed !important;
-  top: 60px !important;
   height: auto !important;
   max-height: unset !important;
   padding: 0 30px;
   margin-top: 10px;
   box-sizing: border-box;
-  //border: 1px solid #d8cdba;
   background: #FFF;
   cursor: default;
-  //overflow: auto;
   border-radius: 15px;
   box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.16);
-  //display: block !important; // remove !!!!
 
   &.find-pro-autocomplete,
   &.header-autocomplete {
@@ -66,6 +60,14 @@
   }
 
   &.header-autocomplete {
+    position: fixed !important;
+    top: 60px !important;
+
+
+    @media(max-width: 599px) {
+      top: 110px !important;
+    }
+
     .autocomplete-suggestion {
       height: 55px;
       line-height: 55px;

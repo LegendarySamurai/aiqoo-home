@@ -90,10 +90,6 @@
         }
     }
 
-    //.container-lg {
-    //    max-width: 1470px;
-    //}
-
     .btn-open-menu,
     .btn-search {
         position: relative;
@@ -103,7 +99,6 @@
         align-items: center;
         padding: 0;
         cursor: pointer;
-        //background-color: transparentize(coral, .5);
     }
 
     .btn-open-menu {
@@ -157,8 +152,8 @@
         position: fixed;
         top: $page-header-height-d;
         left: 0;
-        //background-color: #fff;
-        background-color: lightcoral;
+        background-color: #fff;
+        //background-color: lightcoral;
     }
 
     .logo {
@@ -188,6 +183,12 @@
             &::placeholder {
                 font-size: 11pt;
                 color: #352f4a;
+            }
+
+            &:focus {
+                &::placeholder {
+                    color: #b3b3b3;
+                }
             }
         }
 

@@ -18,7 +18,7 @@
     max-width: 90%;
   }
 
-  @media(max-width: 767px) {
-
+  @media(max-width: 599px) {
+    max-width: 100%; // added 21.06.2020
   }
 }
