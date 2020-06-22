@@ -23,7 +23,27 @@ $(function () {
             //$('#selction-ajax').html('You selected: none');
         },
         showNoSuggestionNotice: true,
-        // noSuggestions: <div></div>
+        hide: function () {
+            alert('enter....');
+
+            var that = this,
+                container = $(that.suggestionsContainer);
+
+            console.log(that);
+
+            if ($.isFunction(that.options.onHide) && that.visible) {
+                that.options.onHide.call(that.element, container);
+            }
+
+            that.visible = false;
+            that.selectedIndex = -1;
+            clearTimeout(that.onChangeTimeout);
+            $(that.suggestionsContainer).hide();
+            that.signalHint(null);
+
+
+            alert('exit');
+        },
     });
 
     $('#header-search #header-search-input').autocomplete({// code written 19-06-2020 by Igor
@@ -45,7 +65,29 @@ $(function () {
         },
         onInvalidateSelection: function () {
             //$('#selction-ajax').html('You selected: none');
-        }
+        },
+        showNoSuggestionNotice: true,
+        hide: function () {
+            alert('enter....');
+
+            var that = this,
+                container = $(that.suggestionsContainer);
+
+            console.log(that);
+
+            if ($.isFunction(that.options.onHide) && that.visible) {
+                that.options.onHide.call(that.element, container);
+            }
+
+            that.visible = false;
+            that.selectedIndex = -1;
+            clearTimeout(that.onChangeTimeout);
+            $(that.suggestionsContainer).hide();
+            that.signalHint(null);
+
+
+            alert('exit');
+        },
     });// EOL: code written 19-06-2020 by Igor
 
     // code written 19-06-2020 by Igor

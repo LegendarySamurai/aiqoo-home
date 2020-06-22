@@ -59,10 +59,38 @@
         background-color: #f4eee4;
       }
 
+      &::before {
+        left: 30px;
+      }
+
       @media(max-width: 599px) {
         height: 55px;
         line-height: 55px;
         padding: 0 5px 0 40px;
+      }
+    }
+
+    .autocomplete-no-suggestion {
+      .no-results-message-wrap {
+        font-size: 21pt;
+
+        @media(max-width: 991px) {
+          font-size: 18pt;
+        }
+
+        @media(max-width: 767px) {
+          text-align: center;
+        }
+      }
+
+      .image-container {
+        width: 100px;
+        height: 110px;
+
+        @media(max-width: 991px) {
+          width: 90px;
+          height: 100px;
+        }
       }
     }
   }
@@ -79,8 +107,37 @@
     .autocomplete-suggestion {
       height: 55px;
       line-height: 55px;
-      padding: 0 5px 0 30px;
+      padding: 0 15px 0 40px;
       font-size: 12pt;
+
+      &::before {
+        left: 20px;
+      }
+    }
+
+    .autocomplete-no-suggestion {
+      .no-results-message-wrap {
+        font-size: 18pt;
+        text-align: center;
+
+        @media(max-width: 991px) {
+
+        }
+
+        @media(max-width: 767px) {
+          
+        }
+      }
+
+      .image-container {
+        width: 90px;
+        height: 100px;
+
+        @media(max-width: 991px) {
+          width: 80px;
+          height: 90px;
+        }
+      }
     }
   }
 }
@@ -104,7 +161,7 @@
 
   &::before {
     position: absolute;
-    left: 30px;
+    //left: 30px;
     top: 50%;
     transform: translate(0, -50%);
     display: block;
@@ -128,27 +185,18 @@
 .no-results-message-wrap {
   font-family: 'Raleway', 'Helvetica','Arial',sans-serif;
   font-weight: 300;
-  font-size: 21pt;
   color: #342e49;
-
-  @media(max-width: 991px) {
-    font-size: 18pt;
-  }
-
-  @media(max-width: 767px) {
-    text-align: center;
-  }
 }
 
 .autocomplete-no-suggestion {
   .image-container {
-    width: 100px;
-    height: 110px;
+    //width: 100px;
+    //height: 110px;
     margin-top: 40px;
 
     @media(max-width: 991px) {
-      width: 90px;
-      height: 100px;
+      //width: 90px;
+      //height: 100px;
     }
 
     img {
