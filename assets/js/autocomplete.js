@@ -21,7 +21,9 @@ $(function () {
         },
         onInvalidateSelection: function () {
             //$('#selction-ajax').html('You selected: none');
-        }
+        },
+        showNoSuggestionNotice: true,
+        // noSuggestions: <div></div>
     });
 
     $('#header-search #header-search-input').autocomplete({// code written 19-06-2020 by Igor
@@ -208,7 +210,7 @@ $(function () {
         paramName: 'query',
         transformResult: _transformResult,
         showNoSuggestionNotice: false,
-        noSuggestionNotice: 'No results',
+        noSuggestionNotice: '<div class="no-results-message-wrap">We did not find the term <strong>“bla bla bla”</strong> try differently</div><div class="image-container"><img src="assets/images/icons/search-no-result.svg"/></div>',
         orientation: 'bottom',
         forceFixPosition: false
     };
@@ -254,7 +256,7 @@ $(function () {
             that.element.setAttribute('autocomplete', 'off');
 
             // html() deals with many types: htmlString or Element or Array or jQuery
-            that.noSuggestionsContainer = $('<div class="autocomplete-no-suggestion"></div>')
+            that.noSuggestionsContainer = $('<div class="autocomplete-no-suggestion">FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</div>')
                 .html(this.options.noSuggestionNotice).get(0);
 
             that.suggestionsContainer = Autocomplete.utils.createNode(options.containerClass);
@@ -588,6 +590,7 @@ $(function () {
         },
 
         isExactMatch: function (query) {
+            console.log('=>', query);
             var suggestions = this.suggestions;
 
             return (suggestions.length === 1 && suggestions[0].value.toLowerCase() === query.toLowerCase());

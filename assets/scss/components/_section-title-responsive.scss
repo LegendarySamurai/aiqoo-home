@@ -1,5 +1,6 @@
-@media(max-width: 600px) {
+@media(max-width: 599px) {
     .section-title-container {
+        padding: 0 0 15px 0;
 
         .section-title {
             font-size: 15pt;
@@ -17,9 +18,4 @@
             font-size: 11pt;
         }
     }
-
 }
-
-// EOL: @media(min-width: 992px)
-// EOL: @media(min-width: 1200px)
-// EOL: @media(min-width: 1600px)
