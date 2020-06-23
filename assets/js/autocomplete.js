@@ -252,7 +252,7 @@ $(function () {
         paramName: 'query',
         transformResult: _transformResult,
         showNoSuggestionNotice: false,
-        noSuggestionNotice: '<div class="no-results-message-wrap">We did not find the term <strong>“bla bla bla”</strong> try differently</div><div class="image-container"><img src="assets/images/icons/search-no-result.svg"/></div>',
+        noSuggestionNotice: '<div class="no-results-message-wrap">We did not find the service you searched for. <br>Please try re-writing the term. </div><div class="image-container"><img src="assets/images/icons/search-no-result.svg"/></div><br><br><a class="services-link" href="/Services/"><i class="fad fa-clipboard-list"></i>see full services list</a>',
         orientation: 'bottom',
         forceFixPosition: false
     };
