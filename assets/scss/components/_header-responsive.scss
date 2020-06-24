@@ -1,9 +1,5 @@
 .header {
   @media(max-width: 1599px) {
-    //.container-lg {
-    //  max-width: initial;
-    //}
-
     .form-group {
       width: 480px;
       margin-left: 15px;
@@ -11,11 +7,6 @@
       .form-control {
         padding: 0 #{$page-header-find-pro-btn-1600 + 15px} 0 40px;
         border: none;
-        font-size: 10pt;
-
-        &::placeholder {
-          font-size: 10pt;
-        }
       }
 
       .find-btn {
@@ -40,7 +31,7 @@
 
       .form-control {
         padding-right: calc(#{$page-header-find-pro-btn-1200} + 15px);
-        font-size: 9pt;
+        //font-size: 9pt;
         -ms-text-overflow: ellipsis;
         text-overflow: ellipsis;
 
@@ -446,6 +437,12 @@
         animation-direction: normal;
         animation-fill-mode: forwards;
         animation-play-state: running;
+      }
+    }
+
+    .form-group {
+      .form-control {
+        font-size: 11pt;
       }
     }
   }

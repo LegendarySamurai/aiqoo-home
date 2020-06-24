@@ -78,10 +78,20 @@ window.addEventListener("load", function () {
 			// 	}
 			// }
 		});
-
 	}
-
 });
+
+// Autocomplete Home page. On input focus add class 23.06.2020 Igor
+if(window.innerWidth <=600) {
+	$('#head-section-search-input').focus(function() {
+		$('.find-box').addClass('fixed');
+	});
+
+	$('.return-button').click(function() {
+		$('.find-box').removeClass('fixed');
+	});
+}
+// EOL: Autocomplete
 
 
 //-- Mobile Menu Event Listeners

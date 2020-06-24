@@ -10,11 +10,14 @@ $(function () {
         lookup: countriesArray,
         lookupFilter: function (suggestion, originalQuery, queryLowerCase) {
             var re = new RegExp('\\b' + $.Autocomplete.utils.escapeRegExChars(queryLowerCase), 'gi');
+            // console.log('FFFFFFFFFFFFFFFFFFFFFFF', re);
             return re.test(suggestion.value);
         },
         onSelect: function (suggestion) {
             //$('#selction-ajax').html('You selected: ' + suggestion.value + ', ' + suggestion.data);
             alert('You selected: ' + suggestion.value + ', ' + suggestion.data);
+            // console.log('WORKS');
+            $('.find-box').removeClass('fixed');
         },
         onHint: function (hint) {
             //$('#autocomplete-ajax-x').val(hint);
@@ -29,7 +32,7 @@ $(function () {
             var that = this,
                 container = $(that.suggestionsContainer);
 
-            console.log(that);
+            // console.log(that);
 
             if ($.isFunction(that.options.onHide) && that.visible) {
                 that.options.onHide.call(that.element, container);
@@ -73,7 +76,7 @@ $(function () {
             var that = this,
                 container = $(that.suggestionsContainer);
 
-            console.log(that);
+            // console.log(that);
 
             if ($.isFunction(that.options.onHide) && that.visible) {
                 that.options.onHide.call(that.element, container);
@@ -252,7 +255,7 @@ $(function () {
         paramName: 'query',
         transformResult: _transformResult,
         showNoSuggestionNotice: false,
-        noSuggestionNotice: '<div class="no-results-message-wrap">We did not find the service you searched for. <br>Please try re-writing the term. </div><div class="image-container"><img src="assets/images/icons/search-no-result.svg"/></div><br><br><a class="services-link" href="/Services/"><i class="fad fa-clipboard-list"></i>see full services list</a>',
+        noSuggestionNotice: '<div class="image-container"><img src="assets/images/icons/search-no-result.svg"/></div><div class="no-results-message-wrap">We did not find the service you searched for. <a class="services-link" href="/Services/"><i class="fad fa-clipboard-list"></i>see full services list</a></div>',
         orientation: 'bottom',
         forceFixPosition: false
     };
@@ -632,7 +635,7 @@ $(function () {
         },
 
         isExactMatch: function (query) {
-            console.log('=>', query);
+            // console.log('=>', query);
             var suggestions = this.suggestions;
 
             return (suggestions.length === 1 && suggestions[0].value.toLowerCase() === query.toLowerCase());

@@ -12,10 +12,14 @@
 }
 
 .autocomplete-suggestions {
-  display: block !important;
+  //display: block !important; // remove !!!!!!
+  //height: 560px !important;
   height: auto !important;
   max-height: unset !important;
+  //max-height: 70vh !important;
+  //overflow-y: scroll;
   //padding: 0 30px;
+  //padding: 2% 0;
   margin-top: 10px;
   box-sizing: border-box;
   background: #FFF;
@@ -23,9 +27,21 @@
   border-radius: 15px;
   box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.16);
 
+  &::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #342e4a;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
   &.find-pro-autocomplete,
   &.header-autocomplete {
-    position: relative;
+    //position: relative;
 
     &::before {
       position: absolute;
@@ -46,17 +62,25 @@
 
 .autocomplete-suggestions {
   &.find-pro-autocomplete {
-    min-height: 320px;
+    //min-height: 320px;
     z-index: 20 !important;
 
+    @media(max-width: 599px) {
+      z-index: 9999 !important;
+    }
+
     .autocomplete-suggestion {
-      height: 70px;
-      line-height: 70px;
-      padding: 0 35px 0 70px;
-      font-size: 14pt;
+      height: 55px;
+      line-height: 55px;
+      padding: 0 30px 0 55px;
+      font-size: 12pt;
 
       &:hover {
         background-color: #f4eee4;
+
+        &:first-child {
+          border-radius: 15px 15px 0 0;
+        }
       }
 
       &::before {
@@ -64,33 +88,29 @@
       }
 
       @media(max-width: 599px) {
-        height: 55px;
-        line-height: 55px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 11pt;
         padding: 0 5px 0 40px;
+
+        &::before {
+          left: 20px;
+        }
       }
     }
 
     .autocomplete-no-suggestion {
       .no-results-message-wrap {
-        font-size: 21pt;
+        font-size: 14pt;
 
-        @media(max-width: 991px) {
-          font-size: 18pt;
-        }
-
-        @media(max-width: 767px) {
-          text-align: center;
+        @media(max-width: 599px) {
+          font-size: 12pt;
         }
       }
 
       .image-container {
-        width: 100px;
-        height: 110px;
-
-        @media(max-width: 991px) {
-          width: 90px;
-          height: 100px;
-        }
+        width: 40px;
+        height: 50px;
       }
     }
   }
@@ -98,7 +118,6 @@
   &.header-autocomplete {
     position: fixed !important;
     top: 60px !important;
-
 
     @media(max-width: 599px) {
       top: 110px !important;
@@ -108,7 +127,11 @@
       height: 55px;
       line-height: 55px;
       padding: 0 15px 0 40px;
-      font-size: 12pt;
+      font-size: 11pt;
+
+      @media(max-width: 599px) {
+        font-size: 10pt;
+      }
 
       &::before {
         left: 20px;
@@ -117,26 +140,12 @@
 
     .autocomplete-no-suggestion {
       .no-results-message-wrap {
-        font-size: 18pt;
-        text-align: center;
-
-        @media(max-width: 991px) {
-
-        }
-
-        @media(max-width: 767px) {
-
-        }
+        font-size: 13pt;
       }
 
       .image-container {
-        width: 90px;
-        height: 100px;
-
-        @media(max-width: 991px) {
-          width: 80px;
-          height: 90px;
-        }
+        width: 50px;
+        height: 50px;
       }
     }
   }
@@ -161,7 +170,6 @@
 
   &::before {
     position: absolute;
-    //left: 30px;
     top: 50%;
     transform: translate(0, -50%);
     display: block;
@@ -175,22 +183,14 @@
 
 .autocomplete-no-suggestion {
   display: flex !important;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  padding: 2px 5px;
-  height: 300px;
-}
+  justify-content: flex-start;
+  padding: 2% 5%;
+  height: auto;
 
-.no-results-message-wrap {
-  font-family: 'Raleway', 'Helvetica','Arial',sans-serif;
-  font-weight: 300;
-  color: #342e49;
-}
-
-.autocomplete-no-suggestion {
   .image-container {
-    margin-top: 40px;
+    margin-right: 10px;
 
     img {
       width: 100%;
@@ -204,13 +204,23 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-size: 18pt;
-    //text-decoration: underline;
+    margin-top: 5px;
+    font-size: 12pt;
+    text-decoration: underline;
 
     i {
       margin-right: 10px;
-      //text-decoration: none;
     }
+  }
+
+  .no-results-message-wrap {
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-family: 'Raleway', 'Helvetica','Arial',sans-serif;
+    font-weight: 300;
+    color: #342e49;
   }
 }
 
