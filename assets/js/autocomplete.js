@@ -18,6 +18,7 @@ $(function () {
             alert('You selected: ' + suggestion.value + ', ' + suggestion.data);
             // console.log('WORKS');
             $('.find-box').removeClass('fixed');
+            // $('.main-super-placeholder-heading').addClass('d-none');
         },
         onHint: function (hint) {
             //$('#autocomplete-ajax-x').val(hint);
