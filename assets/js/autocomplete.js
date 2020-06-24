@@ -3,7 +3,7 @@ $(function () {
 
 	var countriesArray = $.map(countries, function (value, key) { return { value: value, data: key }; });
 
-    $('.find-box #head-section-search-input').autocomplete({ // code written 19-06-2020 by Igor
+    $('.find-box #head-section-search-input').autocomplete({ // code written 24-06-2020 by Igor (REPLACE)
 
         beforeRender: function (container) {// code written 19-06-2020 by Igor
             container.addClass("find-pro-autocomplete");// code written 19-06-2020 by Igor
@@ -51,7 +51,7 @@ $(function () {
         },
     });
 
-    $('#header-search #header-search-input').autocomplete({// code written 19-06-2020 by Igor
+    $('#header-search #header-search-input').autocomplete({ // code written 24-06-2020 by Igor (REPLACE)
         beforeRender: function (container) {
             // console.log('=>', container);
             container.addClass("header-autocomplete");
@@ -68,14 +68,7 @@ $(function () {
 
             if (!headerSearch.classList.contains('show')) {
                 headerSearch.classList.add('show');
-                // headerSearchInput.focus();
             }
-            // else if (headerSearch.classList.contains('hide')) {
-            //     headerSearch.classList.remove('hide');
-            // }
-            // else if (headerSearch.classList.contains('show')) {
-            //     headerSearch.classList.add('hide');
-            // }
         },
         onHint: function (hint) {
             //$('#autocomplete-ajax-x').val(hint);
@@ -105,7 +98,7 @@ $(function () {
 
             alert('exit');
         },
-    });// EOL: code written 19-06-2020 by Igor
+    }); // EOL: code written 24-06-2020 by Igor (REPLACE)
 
     // code written 19-06-2020 by Igor
     $('#head-section-search-input').blur(function () {

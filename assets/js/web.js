@@ -81,7 +81,7 @@ window.addEventListener("load", function () {
 	}
 });
 
-// Autocomplete Home page. On input focus add class 23.06.2020 Igor
+// Autocomplete Home page. On input focus add class 24.06.2020 Igor (REPLACE THIS BLOCK OF CODE)
 function handleSearchInputOpen() {
 	$('.find-box').addClass('fixed');
 	document.querySelector('body').style.overflow= 'hidden';
@@ -144,9 +144,7 @@ if(window.innerWidth <=600) {
 		}
 	});
 }
-
-
-// EOL: Autocomplete
+// EOL: Autocomplete (EOL: REPLACE)
 
 
 //-- Mobile Menu Event Listeners
