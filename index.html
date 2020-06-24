@@ -48,9 +48,9 @@
 
         <div class="header-content">
           <button type="button" id="btn-open-menu" class="btn-open-menu d-lg-none" aria-label="Toggle menu">
-                            <span class="menu-icon">
-                                <i class="far fa-bars"></i>
-                            </span>
+            <span class="menu-icon">
+                <i class="far fa-bars"></i>
+            </span>
           </button>
 
           <div class="logo">
@@ -138,16 +138,19 @@
           <!-- EOL: Dropdown menu -->
 
           <div id="header-search" class="search">
-            <div class="form-group position-relative">
-              <input type="text" id="header-search-input" aria-labelledby="FindAProBtn"
-                     class="form-control font-weight-bold" placeholder="What service are you looking for?">
-              <div class="super-placeholder">
-                <img class="header-location"
-                     src="assets/images/icons/pen-6.svg?v=7cGlhey0OBC1P8EieCpQhPjRjk7rjzZuRynaWeDmQU0"
-                     alt="Find Pros Icon">
-
+            <div class="form-group-mobile-wrap">
+              <div class="form-group position-relative">
+                <input type="text" id="header-search-input" aria-labelledby="FindAProBtn"
+                       class="form-control font-weight-bold" placeholder="What service are you looking for?">
+                <div class="super-placeholder">
+                  <img class="header-location"
+                       src="assets/images/icons/pen-6.svg?v=7cGlhey0OBC1P8EieCpQhPjRjk7rjzZuRynaWeDmQU0"
+                       alt="Find Pros Icon">
+                </div>
+                <button type="button" id="FindAProBtn" class="find-btn font-weight-bold">FIND A PRO</button>
+                <span class="return-button-header"><i class="fad fa-arrow-right"></i></span>
               </div>
-              <button type="button" id="FindAProBtn" class="find-btn font-weight-bold">FIND A PRO</button>
+              <div class="when-input-empty">Please type the service you are looking for</div>
             </div>
           </div>
         </div>
@@ -197,11 +200,13 @@
                   <img class="location down-600-block" src="assets/images/icons/location.svg"
                        alt="Find Pros Location Icon">
                   <span class="main-super-placeholder-heading super-placeholder-heading">Please type your required project?</span>
-                  <span class="zip-super-placeholder-heading super-placeholder-heading is-hidden">Enter your zip code.</span>
+                  <span
+                      class="zip-super-placeholder-heading super-placeholder-heading is-hidden">Enter your zip code.</span>
                 </div>
                 <button class="find-btn" type="button">FIND A PRO</button>
                 <span class="return-button"><i class="fad fa-arrow-right"></i></span>
               </div>
+              <div class="when-input-empty">Please type the service you are looking for</div>
             </div>
 
             <!-- Reasons -->

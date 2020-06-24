@@ -112,6 +112,10 @@ body {
       width: 220px;
     }
 
+    .when-input-empty {
+      display: none;
+    }
+
     .form-group {
       width: 100%;
       box-shadow: 0px 11px 7px 0 rgba(0, 0, 0, 0.02);
@@ -178,6 +182,7 @@ body {
 
       img {
         width: 16px;
+        margin-right: 10px;
       }
 
       .zip-super-placeholder-heading,
@@ -646,6 +651,10 @@ body {
       }
     }
 
+    .head-section .find-box.fixed + .categories-home-page {
+
+    }
+
     .find-box {
       bottom: -3%;
       width: 100%;
@@ -653,18 +662,35 @@ body {
 
       &.fixed {
         z-index: 9000;
+        left: 0 !important;
         transform: inherit !important;
 
         .form-group-mobile-bg {
+          z-index: 999;
           position: fixed !important;
           top: 0;
           left: 0;
           right: 0;
           bottom: 0;
-          background: #fff;
           width: 100vw;
           height: 100vh;
-          z-index: 999;
+          padding: 2% 0 0;
+          background: #fff;
+        }
+
+        .form-group {
+          width: 96%;
+          margin: 0 auto;
+        }
+
+        .when-input-empty {
+          display: block;
+          padding: 2%;
+          font-family: 'Raleway', 'Helvetica','Arial',sans-serif;
+          font-weight: 500;
+          font-size: 12pt;
+          text-align: center;
+          color: #342e4a;
         }
 
         .super-placeholder {
@@ -704,7 +730,7 @@ body {
       }
 
       .super-placeholder {
-        height: 58px;
+        height: 48px;
         top: auto !important;
         bottom: 48px;
         transform: none !important;
@@ -720,8 +746,8 @@ body {
 
       .form-control {
         width: 100%;
-        height: 58px !important;
-        padding-right: 10px !important;
+        height: 50px !important;
+        padding-right: 40px !important;
         padding-left: 50px !important;
         pointer-events: auto;
         font-size: 12pt;

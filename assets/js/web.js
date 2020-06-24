@@ -82,15 +82,68 @@ window.addEventListener("load", function () {
 });
 
 // Autocomplete Home page. On input focus add class 23.06.2020 Igor
+function handleSearchInputOpen() {
+	$('.find-box').addClass('fixed');
+	document.querySelector('body').style.overflow= 'hidden';
+}
+
+function handleHeaderSearchInputOpen() {
+	$('#header-search').addClass('fixed');
+	document.querySelector('body').style.overflow= 'hidden';
+}
+
 if(window.innerWidth <=600) {
+	// Find box
 	$('#head-section-search-input').focus(function() {
-		$('.find-box').addClass('fixed');
+		handleSearchInputOpen();
+	});
+
+	$('.head-section .find-btn').click(function() {
+		handleSearchInputOpen();
+		$('#head-section-search-input').focus();
 	});
 
 	$('.return-button').click(function() {
 		$('.find-box').removeClass('fixed');
 	});
+
+	// Header search
+	$('.btn-search').click(function() {
+		handleHeaderSearchInputOpen();
+	});
+
+	$('.header .find-btn').click(function() {
+		handleHeaderSearchInputOpen();
+
+		if (headerSearch.classList.contains('show')) {
+			headerSearch.classList.remove('show');
+			headerSearch.classList.add('hide');
+			// handleHeaderSearchInputOpen();
+		}
+	});
+
+	$('#header-search-input').focus(function() {
+		handleHeaderSearchInputOpen();
+		headerSearch.classList.remove('show');
+	});
+
+	$('.return-button-header').click(function() {
+		$('#header-search').removeClass('fixed');
+
+		if (!headerSearch.classList.contains('show')) {
+			headerSearch.classList.add('show');
+			// headerSearchInput.focus();
+		}
+		else if (headerSearch.classList.contains('hide')) {
+			headerSearch.classList.remove('hide');
+		}
+		else if (headerSearch.classList.contains('show')) {
+			headerSearch.classList.add('hide');
+		}
+	});
 }
+
+
 // EOL: Autocomplete
 
 
@@ -116,18 +169,19 @@ btnCloseMenu.addEventListener('click', () => {
 	}, 600)
 });
 
-btnSearch.addEventListener('click', () => {
-	if (!headerSearch.classList.contains('show')) {
-		headerSearch.classList.add('show');
-		headerSearchInput.focus();
-	}
-	else if (headerSearch.classList.contains('hide')) {
-		headerSearch.classList.remove('hide');
-	}
-	else if (headerSearch.classList.contains('show')) {
-		headerSearch.classList.add('hide');
-	}
-});
+// Click on Header search button shows the input floating under header with animation
+// btnSearch.addEventListener('click', () => {
+// 	if (!headerSearch.classList.contains('show')) {
+// 		headerSearch.classList.add('show');
+// 		headerSearchInput.focus();
+// 	}
+// 	else if (headerSearch.classList.contains('hide')) {
+// 		headerSearch.classList.remove('hide');
+// 	}
+// 	else if (headerSearch.classList.contains('show')) {
+// 		headerSearch.classList.add('hide');
+// 	}
+// });
 
 
 function JoinNewsletter() {

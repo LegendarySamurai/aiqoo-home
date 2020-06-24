@@ -4,13 +4,14 @@ $(function () {
 	var countriesArray = $.map(countries, function (value, key) { return { value: value, data: key }; });
 
     $('.find-box #head-section-search-input').autocomplete({ // code written 19-06-2020 by Igor
+
         beforeRender: function (container) {// code written 19-06-2020 by Igor
             container.addClass("find-pro-autocomplete");// code written 19-06-2020 by Igor
         },// code written 19-06-2020 by Igor
         lookup: countriesArray,
         lookupFilter: function (suggestion, originalQuery, queryLowerCase) {
             var re = new RegExp('\\b' + $.Autocomplete.utils.escapeRegExChars(queryLowerCase), 'gi');
-            // console.log('FFFFFFFFFFFFFFFFFFFFFFF', re);
+
             return re.test(suggestion.value);
         },
         onSelect: function (suggestion) {
@@ -18,7 +19,7 @@ $(function () {
             alert('You selected: ' + suggestion.value + ', ' + suggestion.data);
             // console.log('WORKS');
             $('.find-box').removeClass('fixed');
-            // $('.main-super-placeholder-heading').addClass('d-none');
+            $('.main-super-placeholder-heading').addClass('d-none');
         },
         onHint: function (hint) {
             //$('#autocomplete-ajax-x').val(hint);
@@ -63,6 +64,18 @@ $(function () {
         onSelect: function (suggestion) {
             //$('#selction-ajax').html('You selected: ' + suggestion.value + ', ' + suggestion.data);
             alert('You selected: ' + suggestion.value + ', ' + suggestion.data);
+            $('#header-search').removeClass('fixed');
+
+            if (!headerSearch.classList.contains('show')) {
+                headerSearch.classList.add('show');
+                // headerSearchInput.focus();
+            }
+            // else if (headerSearch.classList.contains('hide')) {
+            //     headerSearch.classList.remove('hide');
+            // }
+            // else if (headerSearch.classList.contains('show')) {
+            //     headerSearch.classList.add('hide');
+            // }
         },
         onHint: function (hint) {
             //$('#autocomplete-ajax-x').val(hint);
