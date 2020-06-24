@@ -115,6 +115,25 @@
     }
 }
 
+@media(max-width: 400px) {
+    .other-categories {
+        h2 {
+            padding: 0;
+        }
+
+        .list {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .list-col {
+            .list-col-item {
+                font-size: 11.5pt;
+            }
+        }
+    }
+}
+
 @media(min-width: 300px) {
     .categories-home-page {
         padding-top: 260px;
@@ -138,6 +157,7 @@
         }
     }
 }
+
 @media(min-width: 600px) {
     .categories-home-page {
         padding-top: 180px;
@@ -189,10 +209,3 @@
     }
 }
 
-
-@media(min-width: 1600px) {
-
-  .view-more-container {
-    padding-top: 30px;
-  }
-}

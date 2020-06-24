@@ -1,6 +1,6 @@
 @media(max-width: 599px) {
     .section-title-container {
-        padding: 0 0 15px 0;
+        padding: 25px 0 15px 0;
 
         .section-title {
             font-size: 15pt;
@@ -12,6 +12,7 @@
 
         h3 {
             font-size: 15pt;
+            max-width: 100%;
         }
 
         p {

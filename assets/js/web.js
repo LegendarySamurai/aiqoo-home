@@ -105,6 +105,7 @@ if(window.innerWidth <=600) {
 
 	$('.return-button').click(function() {
 		$('.find-box').removeClass('fixed');
+		document.querySelector('body').style.overflow= 'unset';
 	});
 
 	// Header search
@@ -129,6 +130,7 @@ if(window.innerWidth <=600) {
 
 	$('.return-button-header').click(function() {
 		$('#header-search').removeClass('fixed');
+		document.querySelector('body').style.overflow= 'unset';
 
 		if (!headerSearch.classList.contains('show')) {
 			headerSearch.classList.add('show');
