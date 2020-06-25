@@ -85,11 +85,13 @@ window.addEventListener("load", function () {
 function handleSearchInputOpen() {
 	$('.find-box').addClass('fixed');
 	document.querySelector('body').style.overflow= 'hidden';
+	$('#head-section-search-input').focus();
 }
 
 function handleHeaderSearchInputOpen() {
 	$('#header-search').addClass('fixed');
 	document.querySelector('body').style.overflow= 'hidden';
+	$('#header-search-input').focus();
 }
 
 if(window.innerWidth <=600) {

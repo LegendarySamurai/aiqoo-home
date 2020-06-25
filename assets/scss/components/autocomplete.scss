@@ -12,7 +12,7 @@
 }
 
 .autocomplete-suggestions {
-  //display: block !important; // remove !!!!!!
+  display: block !important; // remove !!!!!!
   //height: 560px !important;
   height: auto !important;
   max-height: unset !important;
@@ -121,6 +121,7 @@
 
     @media(max-width: 599px) {
       //top: 110px !important;
+      top: 57px !important;
     }
 
     .autocomplete-suggestion {
