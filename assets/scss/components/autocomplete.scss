@@ -12,14 +12,9 @@
 }
 
 .autocomplete-suggestions {
-  display: block !important; // remove !!!!!!
-  //height: 560px !important;
+  //display: block !important; // remove !!!!!!
   height: auto !important;
   max-height: unset !important;
-  //max-height: 70vh !important;
-  //overflow-y: scroll;
-  //padding: 0 30px;
-  //padding: 2% 0;
   margin-top: 10px;
   box-sizing: border-box;
   background: #FFF;
@@ -120,7 +115,6 @@
     top: 60px !important;
 
     @media(max-width: 599px) {
-      //top: 110px !important;
       top: 57px !important;
     }
 
@@ -131,7 +125,7 @@
       font-size: 11pt;
 
       @media(max-width: 599px) {
-        font-size: 10pt;
+        font-size: 11pt;
       }
 
       &::before {
