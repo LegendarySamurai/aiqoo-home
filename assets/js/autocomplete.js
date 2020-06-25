@@ -20,7 +20,6 @@ $(function () {
             // console.log('WORKS');
             $('.find-box').removeClass('fixed');
             $('.main-super-placeholder-heading').addClass('d-none');
-            document.querySelector('body').style.overflow= 'unset';
         },
         onHint: function (hint) {
             //$('#autocomplete-ajax-x').val(hint);
@@ -70,7 +69,6 @@ $(function () {
             if (!headerSearch.classList.contains('show')) {
                 headerSearch.classList.add('show');
             }
-            document.querySelector('body').style.overflow= 'unset';
         },
         onHint: function (hint) {
             //$('#autocomplete-ajax-x').val(hint);

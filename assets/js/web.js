@@ -132,7 +132,6 @@ if(window.innerWidth <=600) {
 
 	$('.return-button-header').click(function() {
 		$('#header-search').removeClass('fixed');
-		document.querySelector('body').style.overflow= 'unset';
 
 		if (!headerSearch.classList.contains('show')) {
 			headerSearch.classList.add('show');
@@ -144,6 +143,7 @@ if(window.innerWidth <=600) {
 		else if (headerSearch.classList.contains('show')) {
 			headerSearch.classList.add('hide');
 		}
+		document.querySelector('body').style.overflow= 'unset';
 	});
 }
 // EOL: Autocomplete (EOL: REPLACE)
