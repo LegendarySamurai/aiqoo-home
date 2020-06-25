@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--<meta name="robots" content="noindex">-->
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Aiqoo pros</title>
+  <meta name="title" content="MainPage - title">
+  <meta name="description" content="MainPage - description">
+  <meta property="og:title" content="MainPage - title"/>
+  <meta property="og:description" content="MainPage - description"/>
+  <meta property="og:image" content="bla bla"/>
+  <link rel="icon" type="image/x-icon"
+        href="assets/favicons/favicon.ico?v=rbJvHdQ1pXf3c84N1GgaWko-QCv9q1hkLrr-3w8bd3M"/>
+  <!--<link rel="manifest" href="assets/manifest.json?v=hfkIF6z5DnvvS9K9Fo2FG2P5jbjbbKdIMtokXEzpnwY">-->
+  <script defer type="text/javascript" src="assets/js/web.js?v=1LpuMpU8Jdk-WyzUb6HLaUvLzeItKrfwgJKwBmPsj7o"></script>
+
+  <script type="text/javascript" defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" defer src="assets/js/autocomplete.js"></script>
+  <script type="text/javascript" defer src="assets/js/countries.js"></script>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,900&display=swap" rel="stylesheet">
+  <link href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css" rel="stylesheet"
+        integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
+
+  <link href="assets/css/web.css" rel="stylesheet"/>
+
+  <link href="assets/css/about-aiqoo-pros.css" rel="stylesheet"/>
+
+
+</head>
+<body>
+
+<header class="header">
+  <div class="section-container">
+    <div class="row">
+      <div class="col-12 pl-0 pl-lg-3 pr-0 pr-lg-3">
+
+        <div class="header-content">
+          <button type="button" id="btn-open-menu" class="btn-open-menu d-lg-none">
+            <span class="menu-icon">
+              <i class="far fa-bars"></i>
+            </span>
+          </button>
+
+          <div class="logo">
+            <img src="assets/images/logo/logo.svg" alt="logo">
+          </div>
+
+          <button type="button" id="btn-search" class="btn-search">
+            <i class="fal fa-search"></i>
+          </button>
+
+          <!-- Dropdown menu -->
+          <div id="dropdown-menu-container" class="dropdown-menu-container">
+            <div id="btn-close-menu" class="btn-close-menu d-lg-none"></div>
+            <div id="dropdown-menu" class="dropdown-menu">
+              <div class="dropdown-menu-inner">
+                <div class="dropdown-menu-header d-lg-none">
+                  <div class="dropdown-menu-header-logo">
+                    <img src="assets/images/logo/logo.svg" alt="logo">
+                  </div>
+                  <!--<button class="login-network" type="button">-->
+                  <!--  <span>Pro network</span>-->
+                  <!--  <img src="assets/images/icons/login.png" alt="login">-->
+                  <!--</button>-->
+                </div>
+
+                <ul class="navbar">
+                  <li>
+                    <a href="#">
+                      <i class="d-lg-none menu-item-icon icon-home"></i>
+                      <span>
+                      Home
+                    </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="d-lg-none menu-item-icon icon-home"></i>
+                      <span>
+                      Video
+                    </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="d-lg-none menu-item-icon icon-home"></i>
+                      <span>
+                      Blog
+                    </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="d-lg-none menu-item-icon icon-home"></i>
+                      <span>
+                      About us
+                    </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="d-lg-none menu-item-icon icon-home"></i>
+                      <span>
+                      Services
+                    </span>
+                    </a>
+                  </li>
+                  <li class="is-active">
+                    <a href="#">
+                      <i class="d-lg-none menu-item-icon icon-magazine"></i>
+                      <span>
+                      Magazine
+                    </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="no-border-bottom">
+                      <i class="d-lg-none menu-item-icon icon-contact-us"></i>
+                      <span>
+                      Contact us
+                    </span>
+                    </a>
+                  </li>
+                </ul>
+
+                <ul class="dropdown-menu-social d-lg-none">
+                  <li>
+                    <a href="#!">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- EOL: Dropdown menu -->
+
+          <div id="header-search" class="search">
+            <div class="form-group position-relative">
+              <input id="header-search-input" class="form-control font-weight-bold" type="text"
+                     placeholder="What service are you looking for?">
+              <div class="super-placeholder">
+                <img src="assets/images/icons/pen-6.svg" alt="icon">
+              </div>
+              <button class="find-btn font-weight-bold" type="button">FIND A PRO</button>
+            </div>
+          </div>
+
+          <!--<button class="login-network" type="button">-->
+          <!--  <span>Pro network</span>-->
+          <!--  <img src="assets/images/icons/login.png" alt="login">-->
+          <!--</button>-->
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="about-aiqoo">
+  <section class="head-section position-relative">
+    <div class="page-title">
+      <div class="section-container">
+        <div class="row">
+          <div class="col-12">
+            <div class="page-title-inner">
+              <div class="page-heading-container">
+                <i class="far fa-chevron-left"></i>
+                <h1 class="page-heading">About AIQ Pros</h1>
+              </div>
+
+              <!-- Breadcrumbs -->
+              <div class="breadcrumbs">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <span>Home</span>
+                      <i class="far fa-chevron-right"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span>About AIQ Pros</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- EOL: Breadcrumbs -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-wrap">
+    <div class="content section-container">
+      <div class="logo-container">
+        <div class="tool-container"><img src="assets/images/tool.png" alt="tool"></div>
+        <div class="img-container"><img src="assets/images/logo/aiqoo-pros-logo.svg" alt=""></div>
+      </div>
+      <div class="text-content">
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+          eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea.
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+          eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea.
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+          eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea.
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+          eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea.
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+          eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea.
+        </p>
+      </div>
+      <div class="info-points">
+        <div class="point">
+          <div class="icon">
+            <i class="fad fa-gem"></i>
+          </div>
+          <div class="text">
+            Highest Quality
+            <br>
+            Service</div>
+        </div>
+        <div class="point">
+          <div class="icon">
+            <i class="fad fa-chart-network"></i>
+          </div>
+          <div class="text">
+            Cutting edge
+            <br>
+            Technology
+          </div>
+        </div>
+        <div class="point">
+          <div class="icon">
+            <i class="fad fa-file-certificate"></i>
+          </div>
+          <div class="text">
+            Most reliable
+            <br>
+            professionals
+          </div>
+        </div>
+        <div class="point">
+          <div class="icon">
+            <i class="fad fa-print-search"></i>
+          </div>
+          <div class="text">
+            Lorem Ipsum
+            <br>
+            title
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-our-services">
+    <div class="section-container">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <h2 class="section-title">
+            <span>Our Services</span>
+            <i class="decoration-element"></i>
+          </h2>
+          <div class="text">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+            sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum.
+            Stet clita kasd gubergren, no sea.Lorem ipsum dolor sit
+            amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat,
+            sed diam voluptua. At vero eos et accusam et justo duo
+            dolores et ea rebum. Stet clita kasd gubergren, no gubergren,
+            no sea.Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+            sed diam nonumy eirmod tempor invidunt uvero eos et accusam et
+            justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+            olores et ea rebum. Stet clita kasd gubergren, no
+          </div>
+        </div>
+
+        <div class="d-none d-md-block col-12 col-lg-6">
+          <div class="image-container">
+            <img src="assets/images/dummy/our-services.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="questionnaire position-relative">
+    <div class="section-container">
+      <div class="row justify-content-center">
+        <!--<div class="col-12 d-lg-none mb-3">-->
+        <!--  <h2 class="questionnaire-title">Are you a qualified and certified home services professional?</h2>-->
+        <!--</div>-->
+        <div class="col-auto image-col">
+          <div class="questionnaire-image">
+            <img class="d-none d-600-block"
+                 src="assets/images/professional/bob.png?v=Q721bznfjdCN8o9SjuSytwTvB0ajq4lSnYq86IDOA2s"
+                 alt="Home Services Pro" title="Home Services Pro">
+          </div>
+        </div>
+        <!--<div class="col-12 d-sm-none">-->
+        <!--  <div class="questionnaire-text my-4">-->
+        <!--    Join the thousands of pros already operating with AIQ and let-->
+        <!--    <br class="d-none d-lg-block">-->
+        <!--    us help you grow your business If your business is:-->
+        <!--  </div>-->
+        <!--</div>-->
+
+        <div class="col-auto d-flex questionnaire-content-col">
+          <div class="questionnaire-content">
+            <h2 class="questionnaire-title">Are you a qualified home services professional?</h2>
+            <div class="questionnaire-text">
+              Join the thousands of leading home improvement professionals
+              <br class="d-none d-lg-block">
+              in the AIQPros network and benefit from:
+            </div>
+            <div class="questionnaire-content-outer">
+              <div class="questionnaire-content-inner">
+                <div class="questionnaire-content-item">
+                  <div class="questionnaire-content-icon">
+                    <img src="assets/images/icons/support.png?v=9xquCkc2_wbzwY_n0mp5PvM6ZippHM8zqoxPK27LU04"
+                         alt="Certified Icon">
+                  </div>
+                  <div class="questionnaire-content-text">Technologically automated marketing and advertising</div>
+                </div>
+                <div class="questionnaire-content-item">
+                  <div class="questionnaire-content-icon">
+                    <img src="assets/images/icons/confidence.png?v=g5O0-IBn0j5GmqWMfqZ7tk7i9tPWUQtIgb_bD0mHyvs"
+                         alt="Professional Icon">
+                  </div>
+                  <div class="questionnaire-content-text">AI enhanced user-friendly leads, sales and project management
+                    platform
+                  </div>
+                </div>
+                <div class="questionnaire-content-item border-none">
+                  <div class="questionnaire-content-icon">
+                    <img src="assets/images/icons/fully-insured.png?v=IV2ODyEzBA_r1o3u9Vj771FL3uJbwdU2A8nAG-LKNck"
+                         alt="Insured Icon">
+                  </div>
+                  <div class="questionnaire-content-text">A business optimizing, unique, industry level comparative
+                    reports segment
+                  </div>
+                </div>
+              </div>
+              <div class="join-us">
+                <button type="button">Join Us Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-our-system">
+    <div class="section-container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="section-title">
+            <span>Our system</span>
+            <i class="decoration-element"></i>
+          </h2>
+          <div class="text">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+            sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum.
+            Stet clita kasd gubergren, no sea.Lorem ipsum dolor sit
+            amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore magna aliquyam erat,
+            sed diam voluptua. At vero eos et accusam et justo duo
+            dolores et ea rebum. Stet clita kasd gubergren, no gubergren,
+            no sea.Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+            sed diam nonumy eirmod tempor invidunt uvero eos et accusam et
+            justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+            olores et ea rebum. Stet clita kasd gubergren, no
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-bottom">
+    <div class="section-container">
+      <div class="row">
+        <div class="col-sm-auto col-lg-4 pl-3 pl-lg-0">
+          <div class="image-container">
+            <img src="assets/images/monitor.png" alt="">
+          </div>
+        </div>
+
+        <div class="col col-lg-8 pr-3 pr-md-0 pr-lg-3">
+          <div class="wrapper">
+            <i class="decoration-element"></i>
+            <div class="title">
+              Lorem Ipsum title lorem ipsum title
+            </div>
+            <div class="text">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+              sed diam nonumy eirmod tempor invidunt ut labore et.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="page-footer">
+  <div class="footer-container page-footer-main">
+    <div class="row">
+
+      <!-- left column -->
+      <div class="col-12 col-md-auto col-xl-5 content-column-left">
+        <img src="assets/images/logo/logo.svg" class="brand-logo mb-lg-2" alt="Aiq Home Footer Logo" title="Aiq Home Footer Logo" />
+        <p class="line-h-1-5 mt-4 mt-lg-0">
+          The market changing, AI & BI enhanced, technological marketplace connecting homeowners with local, approved and recommended home improvement contractors and professionals.
+        </p>
+
+        <!-- more information -->
+        <div class="more-information-container">
+          <div class="row">
+            <div class="col-12 d-flex flex-row more-info">
+              <!--<span class="footer-h4 font-weight-600 pb-3">More Information</span>-->
+              <a href="#!" class="page-footer-link mb-2 py-1">About us</a>
+              <a href="#!" class="page-footer-link mb-2 py-1">Help Center</a>
+              <a href="#!" class="page-footer-link mb-2 py-1">Terms of Use</a>
+              <a href="#!" class="page-footer-link mb-2 py-1">Terms of Use</a>
+
+            </div>
+            <div class="col-12 top-services">
+              <div class="row">
+                <div class="col-12">
+                  <span class="footer-h4 font-weight-600 py-3">Top Services</span>
+                </div>
+                <div class="col-12 col-sm-6 d-flex flex-column mt-3 mt-sm-0">
+                  <a href="#!" class="page-footer-link mb-2 py-1">Roof - Install or replace</a>
+                  <a href="#!" class="page-footer-link mb-2 py-1">Accessory Dwelling Units - Build</a>
+                  <a href="#!" class="page-footer-link mb-2 py-1">Garage - Build</a>
+                </div>
+                <div class="col-12 col-sm-6 d-flex flex-column mt-3 mt-sm-0">
+                  <span class="footer-h4 font-weight-600"></span>
+                  <a href="#!" class="page-footer-link mb-2 py-1">Garage - Remodel or renovate</a>
+                  <a href="#!" class="page-footer-link mb-2 py-1">Adus - Remodel</a>
+                  <a href="#!" class="page-footer-link mb-2 py-1">Roof - repair</a>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <!-- center column -->
+      <div class="col-12 col-md-auto col-xl-4 content-column-center">
+        <div class="content">
+          <div class="row">
+            <div class="col-12">
+              <div class="news-letter-wrap">
+                <div class="image-container">
+                  <img src="assets/images/interface.svg" alt="newsletter">
+                </div>
+                <span class="footer-h4 beige font-weight-black py-3">Join The AIQ Home Newsletter</span>
+                <p class="text line-h-1-5">
+                  Sign up today and be first to get notified of special offers,
+                  hot trends and exclusive subscribers’ only events.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="page-footer-subscribe-box">
+                <!--<div class="form-group position-relative">
+                    <i class="fad fa-user"></i>
+                    <input type="text" class="form-control" placeholder="Full name">
+                </div>-->
+                <div class="form-group position-relative mt-2">
+                  <i class="fad fa-envelope"></i>
+                  <input type="email" id="NewsletterEmail" name="NewsletterEmail" class="form-control email" placeholder="Enter your Email">
+                  <button type="button" class="btn-subscribe" onclick="javascript: JoinNewsletter();">Subscribe
+                    <span id="NewsletterSpiner" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span></button>
+
+                </div>
+                <span class="error-message system-color-14" id="NewsletterError">
+                  Please enter email address
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- right column -->
+      <div class="col-12 col-md-auto col-xl-3 content-column-right">
+        <div class="pros-card">
+          <div class="logo-pros-container">
+            <img src="assets/images/footer-pros-logo.png" alt="logo-pros">
+          </div>
+          <p class="line-h-1-5">
+            The industry dedicated, business optimizing, leads, sales and project management platform for all home improvement service providers.
+          </p>
+          <div class="join-us-button">
+            <button type="button">Join Us</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid page-footer-footer">
+    <div class="footer-container page-footer-main">
+      <div class="row">
+        <div class="col-12 col-sm-6">
+          <div class="social">
+            <a class="facebook" href="#">
+              <img src="assets/images/social/facebook.svg" alt="facebook">
+            </a>
+            <a class="linkedin" href="#">
+              <img src="assets/images/social/linkedin.svg" alt="linkedin">
+            </a>
+            <a class="instagram" href="#">
+              <img src="assets/images/social/instagram.svg" alt="instagram">
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6">
+          <div class="content d-flex justify-content-end align-items-center">
+            <p>&#169; 2020 . All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
