@@ -27,3 +27,17 @@
         }
     }
 }
+
+.explore-more {
+    display: inline-block;
+    //width: auto;
+    margin-top: 20px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: solid 1px #585077;
+    background-color: rgba(196, 196, 196, 0);
+    color: #585077;
+    font-weight: 400;
+    font-size: 16.5pt;
+    cursor: pointer;
+}
