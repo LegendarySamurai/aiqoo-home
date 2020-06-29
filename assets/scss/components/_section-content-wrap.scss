@@ -51,11 +51,9 @@
 
 .content-wrap {
   @media(max-width: 1299px) {
-    .content-wrap {
-      .text-content {
-        p {
-          font-size: 16pt;
-        }
+    .text-content {
+      p {
+        font-size: 16pt !important;
       }
     }
   }
@@ -73,7 +71,7 @@
 
     .text-content {
       p {
-        font-size: 14pt;
+        font-size: 14pt !important;
       }
     }
   }
