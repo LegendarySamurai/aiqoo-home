@@ -1,0 +1,129 @@
+.our-technology {
+  // Head section
+  .head-section {
+    background-color: #3e3755;
+
+    &:before {
+      display: none;
+    }
+
+    .wrap {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .title {
+        font-weight: 900;
+        font-size: 26pt;
+        color: #fff;
+      }
+    }
+  }
+
+  // Section "Content wrap"
+  .content-wrap {
+    .content {
+      position: relative;
+      z-index: 10;
+      margin-top: -60px;
+      padding: 0 3% 2%;
+      background-color: #fff;
+      border-top: 17px solid #d8cdba;
+      border-radius: 5px 5px 5px 5px;
+      box-shadow: 0 1.5px 15px 0 rgba(50,81,129,0.2);
+    }
+
+    h2 {
+      font-size: 30pt;
+    }
+
+    .text-content {
+      margin-top: 20px;
+
+      p {
+        font-family: 'Helvetica','Arial',sans-serif;
+        font-weight: 400;
+        font-size: 18.75pt;
+        color: #585858;
+      }
+    }
+  }
+
+  // Text (Commonly used)
+  .text {
+    font-family: 'Helvetica','Arial',sans-serif;
+    font-weight: 400;
+    font-size: 18.75pt;
+    color: #3a3451;
+  }
+
+  // Section "section-bottom"
+  .section-bottom {
+    .info-points {
+      position: relative;
+      padding: 4%;
+      border-radius: 15px;
+      box-shadow: 0 2px 15px 0 rgba(186, 186, 186, 0.25);
+      background-color: #ffffff;
+
+      &:after {
+        position: absolute;
+        left: 50%;
+        bottom: -10px;
+        transform: translate(-50%, 0);
+        display: block;
+        content: '';
+        height: 10px;
+        width: 96%;
+        background-color: #d4cbba;
+        border-radius: 0 0 50px 50px;
+      }
+    }
+
+    .text {
+      margin-top: 50px;
+      margin-bottom: 100px;
+    }
+  }
+}
+
+.our-technology {
+  @media(max-width: 1299px) {
+    // head-section
+    .head-section {
+      .wrap {
+        .title {
+          font-size: 20pt;
+        }
+      }
+    }
+
+    // Our system
+    .our-system {
+      .text {
+        font-size: 16pt;
+      }
+    }
+  }
+
+  @media(max-width: 991px) {}
+
+  @media(max-width: 767px) {}
+
+  @media(max-width: 599px) {
+    // Our system
+    .our-system {
+      .text {
+        padding: 0;
+        font-size: 14pt;
+      }
+
+      .decoration-element {
+        display: none !important;
+      }
+    }
+  }
+
+  @media(max-width: 374px) {}
+}

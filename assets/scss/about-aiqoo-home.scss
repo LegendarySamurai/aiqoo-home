@@ -1,54 +1,7 @@
 .about-aiqoo-home {
   // Commonly used
   .section-title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    margin: 30px 0;
     padding: 0 30px 0 40px;
-
-    span {
-      font-family: 'Helvetica','Arial', sans-serif;
-      font-weight: 900;
-      font-size: 30pt;
-      white-space: nowrap;
-    }
-
-    .decoration-element {
-      display: block;
-      //width: 260px;
-      width: 20vw;
-      height: 2px;
-      margin-left: 20px;
-      background-image: linear-gradient(to right, #d8cdba 0%, rgba(216,205,186,0) 100%);
-    }
-  }
-
-  .content-title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    margin: 10px 0;
-
-    span {
-      font-family: 'Helvetica','Arial', sans-serif;
-      font-weight: bold;
-      font-size: 22pt;
-      white-space: nowrap;
-      color: #585077;
-    }
-
-    .decoration-element {
-      display: block;
-      width: 10vw;
-      height: 2px;
-      margin-left: 10px;
-      background-image: linear-gradient(to right, #d8cdba 0%, rgba(216,205,186,0) 100%);
-    }
   }
 
   .text {
@@ -60,95 +13,7 @@
 
   // Head section
   .head-section {
-    height: 400px;
     background-image: url('../../assets/images/bg/about-aiqoo-home-d.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    &::before {
-      display: block;
-      content: '';
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      width: 100%;
-      height: 100%;
-      background: url('../../assets/images/bg/about-aiqoo-before-d.svg');
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
-
-    // only for this page
-    .page-title-inner {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      color: #fff;
-
-      .page-heading-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        line-height: 1.4;
-      }
-
-      .page-heading {
-        margin-left: 15px;
-        font-family: 'Raleway', 'Helvetica','Arial', sans-serif;
-        font-weight: 500;
-        font-size: 22pt;
-      }
-
-      .fa-chevron-left {
-        font-size: 18pt;
-      }
-    }
-
-    // only for this page
-    .breadcrumbs {
-      .fa-chevron-right {
-        color: #fff;
-      }
-
-      span {
-        color: #fff;
-      }
-    }
-  }
-
-  // Section "Content wrap"
-  .content-wrap {
-    .content {
-      position: relative;
-      z-index: 10;
-      margin-top: -60px;
-      padding: 2% 3%;
-      background-color: #fff;
-      border-top: 17px solid #d8cdba;
-      border-radius: 5px 5px 5px 5px;
-      box-shadow: 0 1.5px 15px 0 rgba(50,81,129,0.2);
-    }
-
-    h2 {
-      font-size: 30pt;
-    }
-
-    .text-content {
-      margin-top: 20px;
-
-      p {
-        font-family: 'Helvetica','Arial',sans-serif;
-        font-weight: 400;
-        font-size: 18.75pt;
-        color: #585858;
-      }
-    }
   }
 
   // Section "about our pros"
@@ -239,10 +104,6 @@
 }
 
 .about-aiqoo-home {
-  @media(max-width: 1899px) {}
-
-  @media(max-width: 1599px) {}
-
   @media(max-width: 1299px) {
     .about-our-pros {
       .content {
@@ -252,29 +113,10 @@
       }
     }
 
-    .content-wrap {
-      .text-content {
-        p {
-          font-size: 16pt;
-        }
-      }
-    }
-
-    .section-title {
-      padding: 0 20px 0 20px;
-
-      span {
-        font-size: 26pt;
-      }
-    }
-
     .text {
-      //padding: 0 0 0 20px;
       font-size: 16pt;
     }
   }
-
-  @media(max-width: 1199px) {}
 
   @media(max-width: 991px) {
     // Section "about"
@@ -291,17 +133,6 @@
   }
 
   @media(max-width: 767px) {
-    // Commonly used
-    .content-title {
-      span {
-        font-size: 18pt;
-      }
-
-      .decoration-element {
-        display: none;
-      }
-    }
-
     // Section "about-aiqoo-pros"
     section.about-aiqoo-pros {
       .content {
@@ -323,26 +154,6 @@
 
   @media(max-width: 599px) {
     // Commonly used
-    .content-title {
-      span {
-        font-size: 15pt;
-        font-weight: 900;
-      }
-    }
-
-    .section-title {
-      margin: 10px 0;
-
-      span {
-        font-size: 24pt;
-      }
-    }
-
-    .page-title-inner {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
     .content {
       max-width: 90%;
     }
@@ -354,14 +165,6 @@
 
     .decoration-element {
       display: none !important;
-    }
-
-    .content-wrap {
-      .text-content {
-        p {
-          font-size: 14pt;
-        }
-      }
     }
 
     // Section "about"
