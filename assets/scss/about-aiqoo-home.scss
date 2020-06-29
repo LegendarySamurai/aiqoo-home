@@ -202,7 +202,11 @@
     }
 
     .about-card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
       margin-bottom: 40px;
+      box-shadow: 0 3px 30px 0 rgba(216,205,186,0.31);
 
       .text {
         font-size: 16.5pt;
@@ -240,6 +244,14 @@
   @media(max-width: 1599px) {}
 
   @media(max-width: 1299px) {
+    .about-our-pros {
+      .content {
+        .text {
+          padding: 0 20px 40px 20px;
+        }
+      }
+    }
+
     .content-wrap {
       .text-content {
         p {
@@ -264,19 +276,75 @@
 
   @media(max-width: 1199px) {}
 
-  @media(max-width: 991px) {}
+  @media(max-width: 991px) {
+    // Section "about"
+    section.about {
+      .card-content {
+        padding: 20px;
+      }
+    }
 
-  @media(max-width: 767px) {}
+    // Sectio "about-our-pros"
+    .about-our-pros {
+      padding-bottom: 20px;
+    }
+  }
+
+  @media(max-width: 767px) {
+    // Commonly used
+    .content-title {
+      span {
+        font-size: 18pt;
+      }
+
+      .decoration-element {
+        display: none;
+      }
+    }
+
+    // Section "about-aiqoo-pros"
+    section.about-aiqoo-pros {
+      .content {
+        .text {
+          padding: 0 20px 20px 20px;
+        }
+      }
+    }
+
+    // Section "about"
+    section.about {
+      .about-card {
+        .text {
+          font-size: 14pt;
+        }
+      }
+    }
+  }
 
   @media(max-width: 599px) {
-    // Common styles
+    // Commonly used
+    .content-title {
+      span {
+        font-size: 15pt;
+        font-weight: 900;
+      }
+    }
+
     .section-title {
-      padding: 0;
       margin: 10px 0;
 
       span {
         font-size: 24pt;
       }
+    }
+
+    .page-title-inner {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .content {
+      max-width: 90%;
     }
 
     .text {
@@ -289,17 +357,26 @@
     }
 
     .content-wrap {
-      .content {
-        max-width: 90%;
-      }
-
       .text-content {
         p {
           font-size: 14pt;
         }
       }
     }
-  }
 
-  @media(max-width: 374px) {}
+    // Section "about"
+    section.about {
+      .section-container {
+        max-width: 90%;
+      }
+
+      .about-card {
+        &:nth-of-type(even) {
+          .row {
+            flex-direction: column-reverse;
+          }
+        }
+      }
+    }
+  }
 }
