@@ -22,7 +22,7 @@
         display: block;
         margin-bottom: 20px;
         font-family: $h-font;
-        font-weight: 900;
+        font-weight: 700;
         font-size: 16pt;
         color: #585077;
     }
@@ -56,7 +56,6 @@
         color: $primaryColor;
         white-space: nowrap;
         padding: 0 20px;
-        font-weight: bold;
         font-size: 17pt;
     }
 
@@ -157,7 +156,6 @@
         }
     }
 }
-
 @media(min-width: 600px) {
     .categories-home-page {
         padding-top: 180px;
@@ -209,3 +207,10 @@
     }
 }
 
+
+@media(min-width: 1600px) {
+
+  .view-more-container {
+    padding-top: 30px;
+  }
+}

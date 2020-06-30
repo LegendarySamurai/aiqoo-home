@@ -9,7 +9,7 @@
     max-width: 1500px;
 }
 .article {
-    font-family: $h-font;
+    font-family: $main-font;
     color: $primaryColor;
     box-sizing: border-box;
 
@@ -59,15 +59,41 @@
         width: 81%;
 
         h1 {
+            font-size: 38pt;
+            color: #585077;
+            font-family: $h-font;
+            //background-color: #f7f2e8;
+            //border-radius: 10px;
+            padding: 10px 30px 10px 0px;
+            font-weight: 700;
+        }
+
+        span {
+            font-size: 14pt;
+            color: #FFF;
+            font-family: $h-font;
+            background-color: red;
+            border-radius: 10px;
+            padding: 5px 10px;
+        }
+    }
+    /*
+        .article-header-l {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        width: 81%;
+
+        h1 {
             font-size: 30pt;
             color: #585077;
-            font-family: "Raleway", sans-serif;
+            font-family: $h-font;
             background-color: #f7f2e8;
             border-radius: 10px;
             padding: 10px 30px 10px 15px;
         }
     }
-
+    */
     .article-header-r {
         position: relative;
         display: inline-block;
@@ -104,7 +130,6 @@
 
         .posted {
             margin-top: 5px;
-            font-weight: 300;
         }
 
         .share-div {
@@ -166,9 +191,9 @@
         .text {
             line-height: 1.35;
             margin: 0;
-            font-weight: 400;
-            font-size: 13pt;
+            font-size: 13.5pt;
             color: #525252;
+            font-family: Arial !important;
 
             p {
                 margin: 5px 0 15px 0;
@@ -317,12 +342,11 @@
                 border-bottom: 1px solid #585077;
                 background-color: transparent;
                 color: #c3c3c3;
-                font-weight: 300;
+
                 font-size: 11pt;
 
                 &::placeholder {
                     color: #c3c3c3;
-                    font-weight: 300;
                     font-size: 11pt;
                 }
             }
@@ -352,8 +376,8 @@
         display: block;
         margin-top: 50px;
         text-align: center;
-        font-family: "Raleway",sans-serif;
-        font-weight: 900;
+        font-family: $h-font;
+        font-weight: 700;
         font-size: 24pt;
         color: #585077;
     }
@@ -453,7 +477,6 @@
 
         .text {
             margin: 0;
-            font-weight: 300;
             font-size: 11pt;
         }
     }
@@ -729,7 +752,6 @@
 
             .posted {
                 margin-top: 5px;
-                font-weight: 300;
             }
         }
     }
@@ -829,13 +851,11 @@
                 .text {
                     line-height: 1.35;
                     margin: 0;
-                    font-weight: 300;
                     font-size: 11pt;
 
                     p {
                         //margin: 0 0 15px 0;
                         //line-height: 1.45;
-                        //font-weight: 300;
                         font-size: 11pt;
                     }
 

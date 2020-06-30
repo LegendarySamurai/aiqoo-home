@@ -5,137 +5,98 @@ document.addEventListener('readystatechange', function (event) {
 	}
 });
 
+//-- Hide Menu In Main Page
+const findBox = document.querySelector('.home .find-box');
+const pageHeader = document.querySelector('.header');
+const headerSearch = document.querySelector('#header-search');
+const btnOpenMenu = document.querySelector('#btn-open-menu');
+const btnCloseMenu = document.querySelector('#btn-close-menu');
+const mainMenuContainer = document.querySelector('#dropdown-menu-container');
+const btnSearch = document.querySelector('#btn-search');
+const headerSearchInput = document.querySelector('#header-search-input');
+
 function init() {
 
+	/*
 	var imgDefer = document.getElementsByTagName('img');
 	for (var i = 0; i < imgDefer.length; i++) {
 		if (imgDefer[i].getAttribute('data-src')) {
 			imgDefer[i].setAttribute('src', imgDefer[i].getAttribute('data-src'));
 		}
 	}
+	*/
+		
+	/*
+	//alert('Raleway 700');
+	var Font = document.createElement('link');
+	Font.rel = 'stylesheet';
+	Font.href = 'https://fonts.googleapis.com/css?family=Raleway:700&display=swap';
+	Font.type = 'text/css';
+	document.getElementsByTagName('head')[0].appendChild(Font);
+	*/
 
-	var Icons = document.createElement('link');
-	Icons.rel = 'stylesheet';
-	Icons.href = 'https://fonts.googleapis.com/icon?family=Material+Icons';
-	Icons.type = 'text/css';
-	document.getElementsByTagName('head')[0].appendChild(Icons);
+	//--
+	var Icons_load = setTimeout(function () {
+		//alert('fontawesome');
+		var Icons = document.createElement('link');
+		Icons.rel = 'stylesheet';
+		Icons.href = 'https://pro.fontawesome.com/releases/v5.11.2/css/all.css';
+		Icons.type = 'text/css';
+		//Icons.integrity = 'sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx';
+		//Icons.crossorigin = 'anonymous';
+		document.getElementsByTagName('head')[0].appendChild(Icons);
+	}, 1500)
 
-	// if (window.location.href.toLowerCase().indexOf("lp/") > -1) {
+
+	if (window.location.href.toLowerCase().indexOf("/c/") > -1) {
 		var funnel_script_load = setTimeout(function () {
 			var script = document.createElement('script');
-			script.src = "assets/js/funnels_0.1.js?v=0.01";
+			script.src = "assets/js/funnels_0.8.js";
 			document.getElementsByTagName('head')[0].appendChild(script);
-		}, 1500000) //todo chage after test in lighthouse
-
-	// }
-}
-
-
-//-- Hide Menu In Main Page
-const findBox = document.querySelector('.home .find-box');
-const pageHeader = document.querySelector('.header.is-hidden-on-home');
-
-function handlePageHeader () {
-
-	if (window.innerWidth >= 992) {
-		const findBoxRect = findBox.getBoundingClientRect();
-
-		if (window.pageYOffset >= findBoxRect.top) {
-			if (!pageHeader.classList.contains('show-on-home')) {
-				pageHeader.classList.add('show-on-home');
-			}
-			else if (pageHeader.classList.contains('hide-on-home')) {
-				pageHeader.classList.remove('hide-on-home');
-			}
-		}
-		else {
-			if (pageHeader.classList.contains('show-on-home')) {
-				pageHeader.classList.add('hide-on-home');
-			}
-		}
+		}, 1100)
 	}
-}
 
-window.addEventListener("load", function () {
+	/*
+	var Font_load = setTimeout(function () {
+		//alert('Raleway');
+		var Font = document.createElement('link');
+		Font.rel = 'stylesheet';
+		Font.href = 'https://fonts.googleapis.com/css?family=Raleway:400,500,600&display=swap';
+		Font.type = 'text/css';
+		document.getElementsByTagName('head')[0].appendChild(Font);
+	}, 1200)
+	*/
+
+
+	//-------------------------------------
+	//-------- handle Page Header ---------
+	//---- Mobile Menu Event Listeners ----
+	//-------------------------------------
+
 	handlePageHeader();
-
 	if (findBox != null) {
 		window.addEventListener('scroll', () => {
 			handlePageHeader();
-			// if (window.innerWidth >= 992) {
-			// 	if (window.pageYOffset >= findBoxRect.top) {
-			// 		if (!pageHeader.classList.contains('show-on-home')) {
-			// 			pageHeader.classList.add('show-on-home');
-			// 		}
-			// 		else if (pageHeader.classList.contains('hide-on-home')) {
-			// 			pageHeader.classList.remove('hide-on-home');
-			// 		}
-			// 	}
-			// 	else {
-			// 		if (pageHeader.classList.contains('show-on-home')) {
-			// 			pageHeader.classList.add('hide-on-home');
-			// 		}
-			// 	}
-			// }
 		});
 	}
-});
 
-// Autocomplete Home page. On input focus add class 24.06.2020 Igor (REPLACE THIS BLOCK OF CODE)
-function handleSearchInputOpen() {
-	$('.find-box').addClass('fixed');
-	document.querySelector('body').style.overflow= 'hidden';
-	$('#head-section-search-input').focus();
-}
-
-function handleHeaderSearchInputOpen() {
-	$('#header-search').addClass('fixed');
-	document.querySelector('body').style.overflow= 'hidden';
-	$('#header-search-input').focus();
-}
-
-if(window.innerWidth <=600) {
-	// Find box
-	$('#head-section-search-input').focus(function() {
-		handleSearchInputOpen();
+	btnOpenMenu.addEventListener('click', () => {
+		mainMenuContainer.classList.remove('hide', 'd-none');
+		mainMenuContainer.classList.add('show');
 	});
 
-	$('.head-section .find-btn').click(function() {
-		handleSearchInputOpen();
-		$('#head-section-search-input').focus();
+	btnCloseMenu.addEventListener('click', () => {
+		mainMenuContainer.classList.add('hide');
+
+		setTimeout(() => {
+			mainMenuContainer.classList.add('d-none');
+		}, 600)
 	});
 
-	$('.return-button').click(function() {
-		$('.find-box').removeClass('fixed');
-		document.querySelector('body').style.overflow= 'unset';
-	});
-
-	// Header search
-	$('.btn-search').click(function() {
-		handleHeaderSearchInputOpen();
-	});
-
-	$('.header .find-btn').click(function() {
-		handleHeaderSearchInputOpen();
-
-		if (headerSearch.classList.contains('show')) {
-			headerSearch.classList.remove('show');
-			headerSearch.classList.add('hide');
-			// handleHeaderSearchInputOpen();
-		}
-	});
-
-	$('#header-search-input').focus(function() {
-		handleHeaderSearchInputOpen();
-		headerSearch.classList.remove('show');
-	});
-
-	$('.return-button-header').click(function() {
-		$('#header-search').removeClass('fixed');
-
+	btnSearch.addEventListener('click', () => {
 		if (!headerSearch.classList.contains('show')) {
 			headerSearch.classList.add('show');
-			// headerSearchInput.focus();
+			headerSearchInput.focus();
 		}
 		else if (headerSearch.classList.contains('hide')) {
 			headerSearch.classList.remove('hide');
@@ -143,48 +104,98 @@ if(window.innerWidth <=600) {
 		else if (headerSearch.classList.contains('show')) {
 			headerSearch.classList.add('hide');
 		}
-		document.querySelector('body').style.overflow= 'unset';
 	});
+
+
+	//---------------------------
+	//------ AutoComplete -------
+	//---- Find box / Header ----
+	//---------------------------
+
+	if (window.innerWidth <= 600) {
+
+		// Main Page AutoComplete
+		$('#head-section-search-input').click(function () {
+			handleMobileAutoCompleteOpen();
+			$('#head-section-search-input').focus();
+		});
+		$('.head-section .find-btn').click(function () {
+			handleMobileAutoCompleteOpen();
+			$('#head-section-search-input').focus();
+		});
+		$('.return-button').click(function () {
+			$('.find-box').removeClass('fixed');
+			document.querySelector('body').style.overflow = 'unset';
+		});
+		function handleMobileAutoCompleteOpen() {
+			$('.find-box').addClass('fixed');
+			document.querySelector('body').style.overflow = 'hidden';
+			$('#head-section-search-input').focus();
+		}
+		// Hide placeholder on input have val
+		$('#head-section-search-input').blur(function () {
+			if (window.innerWidth <= 600) {
+				if (this.value.length < 1) {
+					$('.find-box .main-super-placeholder-heading').css("display", "block");
+				} else {
+					$('.find-box .main-super-placeholder-heading').css("display", "none");
+				}
+			}
+		});
+
+
+		// Header AutoComplete
+		$('.btn-search').click(function () {
+			handleHeaderMobileAutoCompleteOpen();
+		});
+		$('.header .find-btn').click(function () {
+			handleHeaderMobileAutoCompleteOpen();
+		});
+		$('.header-search-input-cover').click(function () {
+			handleHeaderMobileAutoCompleteOpen();
+		});
+		$('.return-button-header').click(function () {
+			$('#header-search').removeClass('fixed');
+			headerSearch.classList.remove('hide');
+			headerSearch.classList.add('show');
+			document.querySelector('body').style.overflow = 'unset';
+			$('.header-search-input-cover').css("display", "block");
+		});
+		function handleHeaderMobileAutoCompleteOpen() {
+			headerSearch.classList.remove('show');
+			headerSearch.classList.add('hide');
+			$('#header-search').addClass('fixed');
+			document.querySelector('body').style.overflow = 'hidden';
+			$('.header-search-input-cover').css("display", "none");
+			$('#header-search-input').focus();
+		}
+	}
+
+
 }
-// EOL: Autocomplete (EOL: REPLACE)
 
+function handlePageHeader() {
+	if (findBox)
+	{ 
+		if (window.innerWidth >= 992) {
+			const findBoxRect = findBox.getBoundingClientRect();
 
-//-- Mobile Menu Event Listeners
-const btnOpenMenu = document.querySelector('#btn-open-menu');
-const btnCloseMenu = document.querySelector('#btn-close-menu');
-const mainMenuContainer = document.querySelector('#dropdown-menu-container');
-const btnSearch = document.querySelector('#btn-search');
-const search = document.querySelector('#btn-search');
-const headerSearch = document.querySelector('#header-search');
-const headerSearchInput = document.querySelector('#header-search-input');
-
-btnOpenMenu.addEventListener('click', () => {
-	mainMenuContainer.classList.remove('hide', 'd-none');
-	mainMenuContainer.classList.add('show');
-});
-
-btnCloseMenu.addEventListener('click', () => {
-	mainMenuContainer.classList.add('hide');
-
-	setTimeout(() => {
-		mainMenuContainer.classList.add('d-none');
-	}, 600)
-});
-
-// Click on Header search button shows the input floating under header with animation
-// btnSearch.addEventListener('click', () => {
-// 	if (!headerSearch.classList.contains('show')) {
-// 		headerSearch.classList.add('show');
-// 		headerSearchInput.focus();
-// 	}
-// 	else if (headerSearch.classList.contains('hide')) {
-// 		headerSearch.classList.remove('hide');
-// 	}
-// 	else if (headerSearch.classList.contains('show')) {
-// 		headerSearch.classList.add('hide');
-// 	}
-// });
-
+			if (window.pageYOffset >= findBoxRect.top) {
+				if (!pageHeader.classList.contains('show-on-home')) {
+					pageHeader.classList.add('show-on-home');
+				}
+				else if (pageHeader.classList.contains('hide-on-home')) {
+					pageHeader.classList.remove('hide-on-home');
+				}
+			}
+			else {
+				if (pageHeader.classList.contains('show-on-home')) {
+					pageHeader.classList.add('hide-on-home');
+				}
+			}
+		}
+	}
+}
 
 function JoinNewsletter() {
 
@@ -359,47 +370,3 @@ function reloadoff(c) {
 	c.style.display = "none";
 }
 function createHttpObject() { var hr; if (window.XMLHttpRequest) { try { hr = new XMLHttpRequest(); } catch (e) { hr = false; } } else if (window.ActiveXObject) { try { hr = new ActiveXObject("Msxml2.HTMLHTTP"); } catch (e) { try { hr = new ActiveXObject("Microsoft.XMLHTTP"); } catch (e) { hr = false; } } } return hr; }
-
-
-
-
-
-
-
-
-
-// Landing page Section search-pro Image size and map size (always should be 3 cards height)
-// function countMapHeight () {
-// 	const proCards = document.querySelectorAll('.pro-card');
-// 	const mapCol = document.querySelector('.map-col');
-//
-// 	proCards.forEach(proCard => {
-// 		let proCardHeight = proCard.clientHeight;
-// 		let mapMaxHeight = proCardHeight * 3;
-// 		mapCol.style.maxHeight = `calc(${mapMaxHeight}px + 2rem + 2rem + 2rem)`;
-// 	})
-// }
-//
-// window.addEventListener('resize',  function() {
-// 	const imageContainers = document.querySelectorAll('.image-container');
-//
-// 	imageContainers.forEach(imageContainer => {
-// 		let imageContainerHeight = (imageContainer.clientWidth) / 2;
-//
-// 		if (window.innerWidth < 767) {
-// 			imageContainer.style.height = `${ imageContainerHeight  }px`;
-// 			imageContainer.style.width = "100" + "%";
-// 		}
-//
-// 		if (window.innerWidth >= 768) {
-// 			imageContainer.style.height = '150' + 'px';
-// 			imageContainer.style.width = '200' + 'px';
-// 		}
-// 	});
-//
-// 	countMapHeight();
-// });
-//
-// $(document).ready(function() {
-// 	countMapHeight();
-// });

@@ -1,23 +1,18 @@
 $(function () {
 	'use strict';
 
-	var countriesArray = $.map(countries, function (value, key) { return { value: value, data: key }; });
+    $('.find-box #head-section-search-input').autocomplete({
 
-    $('.find-box #head-section-search-input').autocomplete({ // code written 24-06-2020 by Igor (REPLACE)
-
-        beforeRender: function (container) {// code written 19-06-2020 by Igor
-            container.addClass("find-pro-autocomplete");// code written 19-06-2020 by Igor
-        },// code written 19-06-2020 by Igor
-        lookup: countriesArray,
-        lookupFilter: function (suggestion, originalQuery, queryLowerCase) {
-            var re = new RegExp('\\b' + $.Autocomplete.utils.escapeRegExChars(queryLowerCase), 'gi');
-
-            return re.test(suggestion.value);
+        serviceUrl: '/api/v1/DataLists/getAutocompleteServicesList',
+        minChars: 1,
+        deferRequestBy: 0,
+        showNoSuggestionNotice: true,
+        beforeRender: function (container) {
+            container.addClass("find-pro-autocomplete");
         },
         onSelect: function (suggestion) {
             //$('#selction-ajax').html('You selected: ' + suggestion.value + ', ' + suggestion.data);
             alert('You selected: ' + suggestion.value + ', ' + suggestion.data);
-            // console.log('WORKS');
             $('.find-box').removeClass('fixed');
             $('.main-super-placeholder-heading').addClass('d-none');
         },
@@ -29,12 +24,8 @@ $(function () {
         },
         showNoSuggestionNotice: true,
         hide: function () {
-            alert('enter....');
-
             var that = this,
                 container = $(that.suggestionsContainer);
-
-            // console.log(that);
 
             if ($.isFunction(that.options.onHide) && that.visible) {
                 that.options.onHide.call(that.element, container);
@@ -45,21 +36,16 @@ $(function () {
             clearTimeout(that.onChangeTimeout);
             $(that.suggestionsContainer).hide();
             that.signalHint(null);
-
-
-            alert('exit');
         },
     });
 
-    $('#header-search #header-search-input').autocomplete({ // code written 24-06-2020 by Igor (REPLACE)
+    $('#header-search #header-search-input').autocomplete({
+        serviceUrl: '/api/v1/DataLists/getAutocompleteServicesList',
+        minChars: 1,
+        deferRequestBy: 0,
+        showNoSuggestionNotice: true,
         beforeRender: function (container) {
-            // console.log('=>', container);
             container.addClass("header-autocomplete");
-        },
-        lookup: countriesArray,
-        lookupFilter: function (suggestion, originalQuery, queryLowerCase) {
-            var re = new RegExp('\\b' + $.Autocomplete.utils.escapeRegExChars(queryLowerCase), 'gi');
-            return re.test(suggestion.value);
         },
         onSelect: function (suggestion) {
             //$('#selction-ajax').html('You selected: ' + suggestion.value + ', ' + suggestion.data);
@@ -78,13 +64,8 @@ $(function () {
         },
         showNoSuggestionNotice: true,
         hide: function () {
-            alert('enter....');
-
             var that = this,
                 container = $(that.suggestionsContainer);
-
-            // console.log(that);
-
             if ($.isFunction(that.options.onHide) && that.visible) {
                 that.options.onHide.call(that.element, container);
             }
@@ -94,48 +75,8 @@ $(function () {
             clearTimeout(that.onChangeTimeout);
             $(that.suggestionsContainer).hide();
             that.signalHint(null);
-
-
-            alert('exit');
         },
-    }); // EOL: code written 24-06-2020 by Igor (REPLACE)
-
-    // code written 19-06-2020 by Igor
-    $('#head-section-search-input').blur(function () {
-        if (window.innerWidth <= 600) {
-            if(this.value.length < 1) {
-                $('.find-box .main-super-placeholder-heading').css("display", "block");
-                // console.log(this.value.length, 'Less then one');
-            } else {
-                $('.find-box .main-super-placeholder-heading').css("display", "none");
-                // console.log(this.value.length, 'More then one');
-            }
-        }
     });
-
-
-
-    // Initialize ajax autocomplete:.
-    /* original
-    $('#head-section-search-input').autocomplete({
-        serviceUrl: '/api/v1/DataLists/getAutocompleteServicesList',
-        lookupFilter: function (suggestion, originalQuery, queryLowerCase) {
-            alert('00000');
-            var re = new RegExp('\\b' + $.Autocomplete.utils.escapeRegExChars(queryLowerCase), 'gi');
-            return re.test(suggestion.value);
-        },
-        onSelect: function (suggestion) {
-            //$('#selction-ajax').html('You selected: ' + suggestion.value + ', ' + suggestion.data);
-            alert('You selected: ' + suggestion.value + ', ' + suggestion.data);
-        },
-        onHint: function (hint) {
-            //$('#autocomplete-ajax-x').val(hint);
-        },
-        onInvalidateSelection: function () {
-            //$('#selction-ajax').html('You selected: none');
-        }
-    });
-    */
 
 });
 

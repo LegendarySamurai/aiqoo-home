@@ -124,6 +124,8 @@
         align-items: center;
     }
 
+
+
     .menu-icon:hover .dropdown-menu-container {
         display: block;
         position: fixed;
@@ -139,6 +141,10 @@
 
     .search {
         .when-input-empty {
+            display: none;
+        }
+
+        .return-button-header {
             display: none;
         }
     }
@@ -246,7 +252,6 @@
             justify-content: flex-start;
             align-items: center;
             padding: 0 10px;
-            font-weight: 300;
             font-size: 12pt;
             color: #fff;
 
@@ -577,6 +582,7 @@
                         0% {
                             opacity: 0;
                         }
+
                         100% {
                             opacity: 1;
                         }
@@ -597,6 +603,7 @@
                         0% {
                             transform: translateX(-100%);
                         }
+
                         100% {
                             transform: translateX(0%);
                         }
@@ -619,6 +626,7 @@
                         0% {
                             opacity: 1;
                         }
+
                         100% {
                             opacity: 0;
                         }
@@ -639,6 +647,7 @@
                         0% {
                             transform: translateX(0%);
                         }
+
                         100% {
                             transform: translateX(-100%);
                         }
@@ -653,7 +662,6 @@
                     animation-fill-mode: forwards;
                     animation-play-state: running;
                 }
-
             }
         }
     }
@@ -749,6 +757,7 @@
                     0% {
                         transform: translate(0, -100%);
                     }
+
                     100% {
                         transform: translate(0, 0%);
                     }
@@ -781,6 +790,7 @@
                     0% {
                         transform: translate(0, 0%);
                     }
+
                     100% {
                         transform: translate(0, -100%);
                     }
@@ -817,8 +827,8 @@
                 .when-input-empty {
                     display: block;
                     padding: 2%;
-                    font-family: 'Raleway', 'Helvetica','Arial',sans-serif;
-                    font-weight: 500;
+                    font-family: $h-font;
+                    font-weight: 600;
                     font-size: 12pt;
                     text-align: center;
                     color: #342e4a;
@@ -885,7 +895,6 @@
         }
 
         .dropdown-menu {
-
         }
 
         .navbar {

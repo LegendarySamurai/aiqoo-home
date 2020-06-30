@@ -1,7 +1,8 @@
 ﻿"use strict";
+var _ut_web_id = "Aiq-3";
 var _apiUrl = "https://api.aiq-magazine.com/api/v1/";
 var _ut_GUID, _ut_Parent_GUID, _ut_ip_api, _userObj;
-console.log("ut ver 0.12");
+console.log("ut ver 0.2");
 startTrack();
 
 
@@ -10,11 +11,14 @@ startTrack();
 //--------------------------------------------------
 
 var myExtObject = {
-    fireConvEvent: function fireConvEvent(n) {
-        window.dataLayer = window.dataLayer || [], window.dataLayer.push({ event: "conv_" + n.toLowerCase() });
+    fireConvEvent: function fireConvEvent(v) {
+        window.dataLayer = window.dataLayer || [], window.dataLayer.push({ event: "conv_" + v.toLowerCase() });
     },
     getVariableVal: function getVariableVal(v) {
         return(eval(v));
+    },
+    zipChange: function zipChange(v) {
+        mapPanToByZip(v) 
     }
 };
 

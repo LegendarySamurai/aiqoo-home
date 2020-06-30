@@ -32,17 +32,16 @@
     }
 
     .text-content {
-        font-family: "Raleway",sans-serif;
+        font-family: $h-font;
         transform: translate(0, 11%);
         padding: 2% 7% 6%;
         background-color: #fff;
         border-top: 10px solid #d8cdba;
         border-radius: 5px 5px 5px 5px;
-
         box-shadow: 0 1.5px 15px 0 rgba(50, 81, 129, 0.2);
 
         h1 {
-            font-weight: 900;
+            font-weight: 700;
             font-size: 30pt;
             color: #585077;
             text-align: left;
