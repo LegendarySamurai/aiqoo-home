@@ -73,7 +73,8 @@
         z-index: 300;
     }
 
-    .fa-play-circle {
+    .fa-play-circle,
+    .play-circle {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -96,7 +97,10 @@
 
     &.small-video {
         .embed-responsive-16by9 {
-            .fa-play-circle {
+            .fa-play-circle,
+            .play-circle{
+                width: 80px;
+                height: 80px;
                 font-size: 50pt;
             }
         }
@@ -112,13 +116,15 @@
         transform: scale(1.1);
       }
 
-      .fa-play-circle {
+      .fa-play-circle,
+      .play-circle {
         font-size: 100pt;
       }
     }
 
     &.small-video:hover {
-      .fa-play-circle {
+      .fa-play-circle,
+      .play-circle {
         font-size: 65pt;
       }
     }

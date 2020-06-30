@@ -85,9 +85,10 @@
         display: none;
         margin-left: auto;
 
-        .fa-search {
-            color: #fff;
-            pointer-events: none;
+        img {
+            width: 19px;
+            height: 19px;
+            margin: 0 auto;
         }
     }
 
@@ -132,7 +133,6 @@
         top: $page-header-height-d;
         left: 0;
         background-color: #fff;
-        //background-color: lightcoral;
     }
 
     .logo {
@@ -273,55 +273,9 @@
 
         .menu-item-icon {
             display: block;
-            width: 40px;
-            height: 30px;
-            background: no-repeat center;
+            width: 30px;
+            height: 20px;
 
-            &.icon-home {
-                background-image: url('../images/icons/home.png');
-            }
-
-            &.icon-categories {
-                background-image: url('../images/icons/nav-trending-categories.png');
-            }
-
-            &.icon-support {
-                background-image: url('../images/icons/nav-support.png');
-            }
-
-            &.icon-magazine {
-                background-image: url('../images/icons/aiq-magazine.png');
-            }
-
-            &.icon-contact-us {
-                background-image: url('../images/icons/mail.png');
-            }
-
-            &.icon-search {
-                background-image: url('../images/icons/magnifier.png');
-            }
-
-            &.icon-settings {
-                background-image: url('../images/icons/settings.png');
-            }
-        }
-    }
-
-    .dropdown-menu-social {
-        display: flex;
-        margin-top: auto;
-        padding-left: 30px;
-
-        li {
-            padding-right: 20px;
-        }
-
-        a {
-            padding: 10px;
-        }
-
-        i {
-            color: transparentize($primaryColor, .4);
         }
     }
 }
@@ -406,10 +360,10 @@
             height: 30px;
         }
 
-        .fa-bars {
-            color: #fff;
-            font-size: 23pt;
-        }
+        //.fa-bars {
+        //    color: #fff;
+        //    font-size: 23pt;
+        //}
 
         .dropdown-menu {
             display: flex;
@@ -466,15 +420,6 @@
         .btn-open-menu,
         .btn-search {
             width: 50px;
-        }
-
-        .menu-icon {
-            width: auto;
-            height: auto;
-        }
-
-        .fa-bars {
-            font-size: 16pt;
         }
 
         .search {
@@ -863,7 +808,12 @@
                     transform: translate(0, -50%);
                     display: block;
                     padding: 2% 3%;
-                    font-size: 16pt;
+                    //font-size: 16pt;
+
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
                 }
 
                 .find-btn {
@@ -902,4 +852,3 @@
         }
     }
 }
-

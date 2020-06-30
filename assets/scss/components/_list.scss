@@ -52,6 +52,11 @@
         flex-direction: row;
         justify-content: flex-start;
         align-items: flex-start;
+
+        img {
+            width: 16px;
+            height: 16px;
+        }
     }
 
     .list-col-item {
@@ -69,9 +74,9 @@
         //margin: 5px 15px;
         //padding-right: 15px;
         //border-right: 1px solid #585077;
-        .fa-chevron-right {
-            font-size: 10pt;
-            color: #585077;
+        img {
+            width: 18px;
+            height: 18px;
         }
     }
 

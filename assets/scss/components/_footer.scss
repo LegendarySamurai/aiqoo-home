@@ -261,14 +261,13 @@
             }
         }
 
-        .fa-envelope,
-        .fa-user {
+        #NewsletterEnvelope {
             position: absolute;
             top: 50%;
             left: 20px;
             transform: translate(0, -50%);
-            font-size: 18pt;
-            color: #585077 !important;
+            width: 24px;
+            height: 28px;
         }
 
         .btn-subscribe {
