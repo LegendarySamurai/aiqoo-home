@@ -28,11 +28,11 @@
   }
 
   .text {
-    margin-top: 20px;
-    padding: 0 0 0 30px;
+    margin-top: 2%;
+    //padding: 0 0 0 30px;
     font-family: 'Helvetica','Arial',sans-serif;
     font-weight: 400;
-    font-size: 18.75pt;
+    font-size: 14pt;
     color: #3a354e;
   }
 
@@ -44,6 +44,32 @@
   // Section "about-our-services"
   .about-our-services {
     padding-bottom: 60px;
+
+    .image-container {
+      position: relative;
+      height: 100%;
+
+      &::before {
+        z-index: 1;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, 0);
+        width: 50%;
+        height: 50%;
+        background-color: #f7f7f7;
+        display: block;
+        content: '';
+      }
+
+      img {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
   }
 
   // Section "about-our-system"
@@ -75,7 +101,7 @@
       line-height: 1.4;
       padding: 0;
       font-weight: 400;
-      font-size: 13.5pt;
+      font-size: 14pt;
       color: #ffffff;
     }
 
@@ -114,8 +140,8 @@
 
   @media(max-width: 1299px) {
     .text {
-      padding: 0 0 0 20px;
-      font-size: 16pt;
+      //padding: 0 0 0 20px;
+      //font-size: 16pt;
     }
 
     .section-bottom {
@@ -141,34 +167,61 @@
 
   @media(max-width: 991px) {
     .about-our-services {
-      .image-container {
-        padding: 2% 6%;
+      position: relative;
+
+      .content-col {
+        .text {
+          margin-top: 360px;
+        }
+      }
+
+      .image-col {
+        position: absolute;
+        top: 110px;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        .image-container {
+          height: 300px;
+
+          &::before {
+            display: none;
+          }
+
+          img {
+            margin: 0 auto;
+          }
+        }
       }
     }
 
     .section-bottom {
-      .image-container {
+      .image-col {
         width: 320px;
-        margin-top: -12vh;
       }
-    }
 
-    .section-bottom {
-      .wrapper {
-        padding: 8% 4% 8% 10%;
+      .image-container {
+        width: 120%;
+        margin-top: -14vh;
       }
     }
   }
 
   @media(max-width: 767px) {
     .section-bottom {
+      .image-col {
+        width: 96%;
+        margin: 0 auto;
+      }
+
       .image-container {
-        width: 210px;
-        margin-top: 0vh;
+        width: 100%;
+        padding: 6% 14%;
+        margin-top: -20vh;
       }
 
       .wrapper {
-        padding: 8% 4% 8% 10%;
+        padding: 3% 5% 5% 5%;
       }
     }
   }
@@ -176,8 +229,8 @@
   @media(max-width: 599px) {
     // Common styles
     .text {
-      padding: 0;
-      font-size: 14pt;
+      padding: 0 !important;
+      font-size: 12pt !important;
     }
 
     .decoration-element {
@@ -185,7 +238,19 @@
     }
 
     .about-our-services {
-      padding-bottom: 0px;
+      padding-bottom: 0;
+
+      .image-col {
+        .image-container {
+          height: 170px;
+        }
+      }
+
+      .content-col {
+        .text {
+          margin-top: 240px;
+        }
+      }
     }
 
     .about-our-system {
@@ -199,11 +264,7 @@
       padding-bottom: 40px;
 
       .image-container {
-        display: none;
-      }
-
-      .wrapper {
-        padding: 4% 4% 6%;
+        margin-top: -10vh;
       }
     }
 

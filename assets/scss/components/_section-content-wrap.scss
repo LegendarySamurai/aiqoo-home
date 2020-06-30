@@ -18,10 +18,11 @@
   .text-content {
     margin-top: 20px;
 
-    p {
+    .text {
+      padding: 0;
       font-family: 'Helvetica','Arial',sans-serif;
       font-weight: 400;
-      font-size: 18.75pt;
+      font-size: 14pt;
       color: #585858;
     }
   }
@@ -51,10 +52,8 @@
 
 .content-wrap {
   @media(max-width: 1299px) {
-    .text-content {
-      p {
-        font-size: 16pt !important;
-      }
+    h2 {
+      font-size: 28pt;
     }
   }
 
@@ -65,16 +64,12 @@
   @media(max-width: 767px) {}
 
   @media(max-width: 599px) {
+    h2 {
+      font-size: 26pt;
+    }
+
     .content {
       max-width: 90%;
     }
-
-    .text-content {
-      p {
-        font-size: 14pt !important;
-      }
-    }
   }
-
-  @media(max-width: 374px) {}
 }

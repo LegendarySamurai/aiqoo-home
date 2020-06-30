@@ -27,24 +27,20 @@
 .content-title {
   @media(max-width: 767px) {
     // Commonly used
-    .content-title {
-      span {
-        font-size: 18pt;
-      }
+    span {
+      font-size: 18pt;
+    }
 
-      .decoration-element {
-        display: none;
-      }
+    .decoration-element {
+      display: none;
     }
   }
 
   @media(max-width: 599px) {
     // Commonly used
-    .content-title {
-      span {
-        font-size: 15pt;
-        font-weight: 900;
-      }
+    span {
+      font-size: 15pt;
+      font-weight: 900;
     }
   }
 }
@@ -83,17 +79,15 @@
     padding: 0 20px 0 20px;
 
     span {
-      font-size: 26pt;
+      font-size: 26pt !important;
     }
   }
 
   @media(max-width: 599px) {
-    .section-title {
-      margin: 10px 0;
+    padding: 0 !important;
 
-      span {
-        font-size: 24pt;
-      }
+    span {
+      font-size: 24pt !important;
     }
   }
 }
