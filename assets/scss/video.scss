@@ -66,6 +66,7 @@
         margin: 10px 0;
         font-size: 11pt;
     }
+
     // tools
     .tool-panel {
         margin-top: 0px;
@@ -103,6 +104,7 @@
         box-shadow: 0 1.5px 15px 0 rgba(0, 0, 0, 0.09);
         background-color: #fff;
     }
+
     // Info
     .video-list {
         // Video settings and layers
@@ -115,15 +117,17 @@
         .video-container {
             &.small-video {
                 .embed-responsive-16by9 {
-                    .fa-play-circle {
-                        font-size: 45pt;
+                    .play-circle {
+                        width: 65px;
+                        height: 65px;
                     }
                 }
             }
 
             &.small-video:hover {
-                .fa-play-circle {
-                    font-size: 40pt;
+                .play-circle {
+                    width: 55px;
+                    height: 55px;
                 }
             }
         }
@@ -145,7 +149,6 @@
         padding-bottom: 40px;
 
         .video-items-col {
-
             .video-item-col {
                 width: calc(100% / 3);
                 margin: 10px 0 0 0;
@@ -155,16 +158,10 @@
 
         .categories-container-col {
             width: 315px;
-
-            .categories-container {
-            }
         }
     }
-    // Video-item-col
-    .video-items-container {
-        //padding: 0 30px;
-    }
 
+    // Video-item-col
     .video-item {
         margin-bottom: 10px;
 

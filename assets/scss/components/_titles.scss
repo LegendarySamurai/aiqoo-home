@@ -90,4 +90,11 @@
       font-size: 24pt !important;
     }
   }
+
+  @media(max-width: 374px) {
+
+    span {
+      font-size: 22pt !important;
+    }
+  }
 }

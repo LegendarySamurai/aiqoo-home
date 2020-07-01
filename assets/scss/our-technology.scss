@@ -12,11 +12,16 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      padding-bottom: 6%;
 
       .title {
         font-weight: 900;
         font-size: 26pt;
         color: #fff;
+      }
+
+      .image-container {
+        width: 180px;
       }
     }
   }
@@ -115,6 +120,18 @@
     }
   }
 
+  @media(max-width: 991px) {
+    .head-section {
+      .wrap {
+        padding-bottom: 12%;
+
+        .image-container {
+          width: 120px;
+        }
+      }
+    }
+  }
+
   @media(max-width: 599px) {
     .head-section {
       .wrap {
@@ -133,6 +150,16 @@
     .our-system {
       .decoration-element {
         display: none !important;
+      }
+    }
+  }
+
+  @media(max-width: 374px) {
+    .head-section {
+      .wrap {
+        .title {
+          font-size: 16pt;
+        }
       }
     }
   }

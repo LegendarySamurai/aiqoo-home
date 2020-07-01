@@ -4,7 +4,7 @@
     position: relative;
     z-index: 10;
     margin-top: -60px;
-    padding: 2% 3%;
+    padding: 0 3% 2%;
     background-color: #fff;
     border-top: 17px solid #d8cdba;
     border-radius: 5px 5px 5px 5px;
@@ -53,23 +53,27 @@
 .content-wrap {
   @media(max-width: 1299px) {
     h2 {
-      font-size: 28pt;
+      font-size: 28pt !important;
     }
   }
 
-  @media(max-width: 1199px) {}
-
-  @media(max-width: 991px) {}
-
-  @media(max-width: 767px) {}
-
   @media(max-width: 599px) {
     h2 {
-      font-size: 26pt;
+      font-size: 26pt !important;
     }
 
     .content {
-      max-width: 90%;
+      max-width: 90% !important;
+    }
+  }
+
+  @media(max-width: 374px) {
+    h2 {
+      font-size: 24pt !important;
+    }
+
+    .content {
+      margin-top: -30px !important;
     }
   }
 }
