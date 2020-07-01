@@ -261,10 +261,11 @@
     width: 100%;
     margin-bottom: .5rem;
 
-    .fa-map-marker-alt,
-    .fa-address-card {
+    img {
+      width: 25px;
+      height: 25px;
       padding-right: 10px;
-      color: #342e49;
+      //color: #342e49;
     }
 
     .text {
@@ -285,6 +286,17 @@
     justify-content: flex-start;
     align-items: center;
     margin-top: 1.5rem;
+
+    button {
+      img {
+        width: 17px;
+        height: 17px;
+      }
+
+      .text {
+        padding-left: 7px;
+      }
+    }
   }
 
   .address-id-wrap,
@@ -304,10 +316,6 @@
     .text {
       font-weight: 600;
       font-size: 11pt;
-    }
-
-    i {
-      padding-right: 10px;
     }
   }
 
@@ -482,7 +490,18 @@
   }
 
   @media(max-width: 599px) {
+    .buttons-wrap {
+      button {
+        img {
+          width: 15px;
+          height: 15px;
+        }
 
+        .text {
+          padding-left: 5px;
+        }
+      }
+    }
   }
 
   @media(max-width: 399px) {

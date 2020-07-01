@@ -29,12 +29,6 @@
       }
     }
 
-    &:nth-child(4),
-    &:nth-child(5),
-    &:nth-child(6) {
-      //padding-top: 30px;
-    }
-
     &:nth-child(1),
     &:nth-child(4),
     &:nth-child(3),
@@ -198,7 +192,6 @@
     align-items: flex-start;
   }
 
-  //.list-col-item,
   .services-list-col {
     width: 20% !important;
     text-align: left;
