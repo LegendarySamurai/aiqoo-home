@@ -69,11 +69,11 @@
         .autocomplete-suggestion {
             height: 55px;
             line-height: 55px;
-            padding: 0 30px 0 55px;
+            padding: 0 10px 0 35px;
             font-size: 12pt;
 
             &::before {
-                left: 30px;
+                left: 20px;
             }
 
             @media(max-width: 599px) {
@@ -116,10 +116,10 @@
             height: 50px;
             line-height: 50px;
             font-size: 10.5pt;
-            padding: 0 5px 0 20px;
+            padding: 0 5px 0 25px;
 
             &::before {
-                left: 5px;
+                left: 10px;
             }
 
             @media(max-width: 599px) {

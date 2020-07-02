@@ -28,6 +28,26 @@
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
+      pointer-events: none;
+    }
+
+    .content {
+      margin-top: 80px;
+    }
+
+    .wrap {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .title {
+        position: relative;
+        z-index: 2;
+        font-weight: 900;
+        font-size: 26pt;
+        color: #fff;
+      }
     }
   }
 
@@ -42,11 +62,13 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 100%;
     margin: 0;
     padding: 4%;
     border-radius: 15px;
     box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.15);
     border-top: 0;
+    border-bottom: 10px solid #d8cdba;
 
     .point {
       display: flex;
@@ -69,6 +91,7 @@
 
   .section-bottom {
     margin-top: 40px;
+    margin-bottom: 60px;
 
     .about-card {
       height: 100%;
@@ -77,10 +100,12 @@
       align-items: center;
       margin-bottom: 40px;
       box-shadow: 0 3px 30px 0 rgba(216,205,186,0.31);
-      border-radius: 50px 0 0 0;
+      border-radius: 15px;
+      overflow: hidden;
     }
 
     .card-content {
+      height: 100%;
       padding: 20px 40px;
     }
 
@@ -98,19 +123,67 @@
 }
 
 .partner {
-  @media(max-width: 1899px) {}
+  @media(max-width: 1299px) {
+    // head-section
+    .head-section {
+      .wrap {
+        .title {
+          font-size: 20pt;
+        }
+      }
+    }
+  }
 
-  @media(max-width: 1599px) {}
+  @media(max-width: 991px) {
+    .info-points {
+      margin: 0 auto;
+    }
 
-  @media(max-width: 1399px) {}
+    .section-bottom {
+      .about-card {
+        max-width: 96%;
+        margin: 0 auto;
 
-  @media(max-width: 1199px) {}
+        .image-container {
+          height: 400px;
 
-  @media(max-width: 991px) {}
+          img {
+            object-position: 50% 0;
+          }
+        }
+      }
+    }
+  }
 
-  @media(max-width: 767px) {}
+  @media(max-width: 599px) {
+    .decoration-element {
+      display: none !important;
+    }
 
-  @media(max-width: 599px) {}
+    .info-points {
+      width: 100%;
+    }
 
-  @media(max-width: 374px) {}
+    .section-bottom {
+      .about-card {
+        .image-container {
+          height: 250px;
+        }
+      }
+    }
+
+    .section-title {
+      span {
+        font-size: 22pt !important;
+      }
+    }
+  }
+
+  @media (max-width: 474px) {
+    .section-title {
+      span {
+        white-space: normal;
+      }
+    }
+  }
 }
