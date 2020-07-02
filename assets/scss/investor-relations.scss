@@ -9,7 +9,7 @@
 
   // Head section
   .head-section {
-    height: 400px;
+    height: 40vh;
     background-image: url('../../assets/images/bg/investor-relations.jpg');
     background-position: center;
     background-size: cover;
@@ -56,9 +56,11 @@
     }
   }
 
+  // Content-wrap
+
   // Section "about our pros"
   .section-bottom {
-    padding-bottom: 150px;
+    //padding-bottom: 150px;
 
     .section-title {
       padding-left: 40px;
@@ -198,11 +200,39 @@
     }
   }
 
-  @media(max-width: 767px) {}
+  @media(max-width: 767px) {
+    .leading-team {
+      .section-title {
+        margin-bottom: 10vh;
+      }
+
+      .card-col {
+        margin-bottom: 14vh;
+      }
+
+      .team {
+        .card {
+          max-width: inherit;
+          width: 94%;
+          margin: 0 auto;
+
+          .item {
+            font-size: 13pt;
+          }
+        }
+      }
+    }
+  }
 
   @media(max-width: 599px) {
     .decoration-element {
       display: none !important;
+    }
+
+    .content-wrap {
+      .content {
+        max-width: 96% !important;
+      }
     }
 
     .section-bottom {
@@ -224,6 +254,18 @@
     .section-title {
       span {
         white-space: normal;
+      }
+    }
+
+    .leading-team {
+      .team {
+        .card-col {
+          padding: 0;
+        }
+
+        .card {
+          width: 100%;
+        }
       }
     }
   }
