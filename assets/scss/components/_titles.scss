@@ -55,7 +55,6 @@
   justify-content: flex-start;
   width: 100%;
   margin: 30px 0;
-  //padding: 0 30px 0 40px;
 
   span {
     font-family: 'Helvetica','Arial', sans-serif;
@@ -66,7 +65,6 @@
 
   .decoration-element {
     display: block;
-    //width: 260px;
     width: 20vw;
     height: 2px;
     margin-left: 20px;
@@ -76,7 +74,7 @@
 
 .section-title {
   @media(max-width: 1299px) {
-    padding: 0 20px 0 20px;
+    //padding: 0 20px 0 20px;
 
     span {
       font-size: 26pt !important;

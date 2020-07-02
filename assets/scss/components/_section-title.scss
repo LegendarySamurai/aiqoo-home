@@ -5,6 +5,10 @@
     align-items: center;
     padding: 0 0 35px 0;
 
+    @media(max-width: 599px) {
+        flex-wrap: wrap;
+    }
+
     .section-title {
         color: $primaryColor;
         white-space: nowrap;
@@ -27,6 +31,12 @@
         padding: 0 20px;
         font-weight: 600;
         font-size: 17pt;
+
+        @media(max-width: 599px) {
+            width: 100%;
+            order: 1;
+            padding-bottom: 15px;
+        }
     }
 
     p {
@@ -50,5 +60,18 @@
     }
     &.right {
         background-image: linear-gradient(to right, #585077, #dde1e8);
+    }
+
+    @media(max-width: 599px) {
+        &.left {
+            order: 2;
+            width: 40%;
+            margin-right: 10px;
+        }
+        &.right {
+            order: 3;
+            width: 40%;
+            margin-left: 10px;
+        }
     }
 }

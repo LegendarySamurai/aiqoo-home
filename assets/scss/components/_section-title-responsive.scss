@@ -12,7 +12,11 @@
 
         h3 {
             font-size: 15pt;
-            max-width: 100%;
+            max-width: 2000px;
+            font-weight: 700;
+            white-space: normal;
+            flex: 1 0 100%;
+            text-align:center;
         }
 
         p {
