@@ -11,7 +11,7 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 }
 
 //-- Hide Menu In Main Page
-const findBox = document.querySelector('.home .find-box');
+const findBox = document.querySelector('.find-box-section .find-box');
 const pageHeader = document.querySelector('.header');
 const headerSearch = document.querySelector('#header-search');
 const btnOpenMenu = document.querySelector('#btn-open-menu');

@@ -1,0 +1,319 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--<base href="/" />-->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Find box component</title>
+  <meta name="title" content="AIQHome: The Leading Source For Local Home Improvement Pros">
+  <meta name="description" content="Easily and safely connect with certified home improvement contractors, builders, installers &amp; service providers for any home project">
+  <meta property="og:title" content="AIQHome: The Leading Source For Local Home Improvement Pros" />
+  <meta property="og:description" content="Easily and safely connect with certified home improvement contractors, builders, installers &amp; service providers for any home project" />
+  <meta property="og:image" content="https://www.aiqhome.com/assets/images/professional/professional-fb.jpg" />
+  <link rel="icon" type="image/x-icon" href="../assets/favicons/favicon.ico?v=rbJvHdQ1pXf3c84N1GgaWko-QCv9q1hkLrr-3w8bd3M" />
+  <!--<link rel="manifest" href="assets/manifest.json?v=3unRh_Mb5JLH_G4OiIY_2d0idb_ytGvM67JFlJM1mmg">-->
+  <script defer src="../assets/js/web.es5.min.js?v=iCd8Achhu4tbrUJ42ULqKBSC_9bs-hLvZVZ1I8TpNV0"></script>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:600,700&display=swap" rel="stylesheet">
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script defer src="../assets/js/autocomplete.es5.min.js"></script>
+  <script defer src="../assets/js/user_tracking.es5.min.js"></script>
+  <link href="../assets/css/web.css" rel="stylesheet" />
+
+  <script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","url":"https://www.aiqhome.com","logo":"https://www.aiqhome.com/assets/images/logo/logo.png"}]</script>
+
+</head>
+<body>
+
+<header id="header" class="header">
+  <div class="section-container">
+    <div class="row">
+      <div class="col-12 pl-0 pl-lg-3 pr-0 pr-lg-3">
+
+        <div class="header-content">
+          <button type="button" id="btn-open-menu" class="btn-open-menu d-lg-none" aria-label="Toggle menu">
+            <img class="menu-icon" src="../assets/images/icons/bars.svg" alt="Toggle menu" />
+          </button>
+
+          <div class="logo">
+            <a href="https://www.aiqhome.com/"><img src="../assets/images/logo/logo.svg?v=IgkdLofEQidYHMGrUW0t3qumnQKKdu9pqWu8MSG36g4" alt="AIQHome Menu Logo" title="AIQHome Menu Logo"></a>
+          </div>
+
+          <button type="button" id="btn-search" class="btn-search" aria-label="Search">
+            <img src="../assets/images/icons/search-white.svg" alt="search" />
+          </button>
+
+          <!-- Dropdown menu -->
+          <div id="dropdown-menu-container" class="dropdown-menu-container">
+            <div id="btn-close-menu" class="btn-close-menu d-lg-none"></div>
+            <div id="dropdown-menu" class="dropdown-menu">
+              <div class="dropdown-menu-inner">
+                <div class="dropdown-menu-header d-lg-none">
+                  <div class="dropdown-menu-header-logo">
+                    <a href="https://www.aiqhome.com/"><img src="../assets/images/logo/logo.svg?v=IgkdLofEQidYHMGrUW0t3qumnQKKdu9pqWu8MSG36g4" alt="AIQHome Logo M" title="AIQHome Logo M"></a>
+                  </div>
+                </div>
+
+                <ul class="navbar">
+                  <li class="is-active">
+                    <a href="https://www.aiqhome.com/">
+                      <img class="d-lg-none menu-item-icon icon-home" src="../assets/images/icons/chevron-right-purple.svg" alt="Chevron right" />
+                      Home
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="magazine/">
+                      <img class="d-lg-none menu-item-icon icon-home" src="../assets/images/icons/chevron-right-purple.svg" alt="Chevron right" />
+                      Magazine
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="tv/">
+                      <img class="d-lg-none menu-item-icon icon-home" src="../assets/images/icons/chevron-right-purple.svg" alt="Chevron right" />
+                      AIQ<span>Home </span>TV
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="services/">
+                      <img class="d-lg-none menu-item-icon icon-home" src="../assets/images/icons/chevron-right-purple.svg" alt="Chevron right" />
+                      Services
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="about-us/">
+                      <img class="d-lg-none menu-item-icon icon-home" src="../assets/images/icons/chevron-right-purple.svg" alt="Chevron right" />
+                      About us
+                    </a>
+                  </li>
+                  <li class="">
+                    <a href="contact-us/" class="no-border-bottom">
+                      <img class="d-lg-none menu-item-icon icon-home" src="../assets/images/icons/chevron-right-purple.svg" alt="Chevron right" />
+                      Contact us
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- EOL: Dropdown menu -->
+
+          <div id="header-search" class="search">
+            <div class="form-group-mobile-wrap">
+              <div class="form-group position-relative">
+                <input type="text" name="header-search-input" id="header-search-input" class="form-control font-weight-bold" placeholder="What service are you looking for?">
+                <div class="header-search-input-cover"></div>
+                <div class="super-placeholder">
+                  <label for="header-search-input">
+                    <img class="header-location" src="../assets/images/icons/pen-6.svg?v=7cGlhey0OBC1P8EieCpQhPjRjk7rjzZuRynaWeDmQU0" alt="Find Pros Icon">
+                  </label>
+                </div>
+                <button type="button" id="FindAProBtn" class="find-btn font-weight-bold">FIND A PRO</button>
+                <span class="return-button-header"><img src="../assets/images/icons/arrow-right.svg" alt="Chevron right" /></span>
+              </div>
+              <div class="when-input-empty">Please type the service you are looking for</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="">
+  <section class="find-box-section position-relative">
+    <div class="section-container position-relative" style="min-height: 300px; ">
+      <!-- search box -->
+      <div class="find-box">
+
+        <div class="form-group-mobile-bg">
+          <div class="form-group position-relative">
+            <input type="text" name="head-section-search-input" id="head-section-search-input" class="form-control" placeholder="Replace a roof / Build an ADU / Replace cabinets" />
+            <div class="super-placeholder">
+              <img class="up-600-block" src="../assets/images/icons/pen-6.svg" alt="Find Pros Icon">
+              <img class="magnifier down-600-block" src="../assets/images/icons/magnifier.svg" alt="Find Pros Magnifiers Icon">
+              <img class="location down-600-block" src="../assets/images/icons/location.svg" alt="Find Pros Location Icon">
+              <label for="head-section-search-input">
+                <span class="main-super-placeholder-heading super-placeholder-heading">What would you like to do?</span>
+              </label>
+              <span class="zip-super-placeholder-heading super-placeholder-heading is-hidden">Enter your zip code.</span>
+            </div>
+            <button class="find-btn" type="button">FIND A PRO</button>
+            <span class="return-button"><img src="../assets/images/icons/arrow-right.svg" alt="arrow right" /></span>
+          </div>
+          <div class="when-input-empty">Please type the service you are looking for</div>
+        </div>
+
+        <!-- Reasons -->
+        <div class="reasons">
+          <!--  up-600-flex -->
+          <div class="reason licensed">
+            <img class="reason-icon" src="../assets/images/header/licensed.png" alt="Licensed Icon" title="Licensed Icon" />
+            <div class="headings">
+              <span>Licensed</span>
+              <p>Certified and insured</p>
+            </div>
+
+          </div>
+
+          <div class="reason protected">
+            <img class="reason-icon" src="../assets/images/header/protected.svg" alt="Approved Icon" title="Approved Icon" />
+            <div class="headings">
+              <span>Approved</span>
+              <p>Screened and vetted</p>
+            </div>
+          </div>
+
+          <div class="reason rating">
+            <img class="reason-icon" src="../assets/images/header/rating.png" alt="5 Star Rating Icon" title="5 Star Rating Icon" />
+            <div class="headings">
+              <span>5 star rated</span>
+              <p>Locally recommended</p>
+            </div>
+          </div>
+
+          <div class="reason local">
+            <img class="reason-icon" src="../assets/images/header/local.png" alt="Local Pros Icon" title="Local Pros Icon" />
+            <div class="headings">
+              <span>Local</span>
+              <p>Active and operating near you</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section style="height: 300px;"></section>
+</main>
+
+<footer class="page-footer">
+  <div class="footer-container page-footer-main">
+    <div class="row">
+
+      <!-- left column -->
+      <div class="col-12 col-md-auto col-xl-5 content-column-left">
+        <img src="../assets/images/footer/logo.svg?v=IgkdLofEQidYHMGrUW0t3qumnQKKdu9pqWu8MSG36g4" class="brand-logo mb-lg-2" alt="AIQHome Footer Logo" title="AIQHome Footer Logo" />
+        <p class="line-h-1-5 mt-4 mt-lg-0">
+          The market changing, AI & BI enhanced, technological marketplace connecting homeowners with local, approved and recommended home improvement contractors and professionals.
+        </p>
+
+        <!-- more information -->
+        <div class="more-information-container">
+          <div class="row">
+            <div class="col-12 d-flex flex-row more-info">
+              <a href="about-us/" class="page-footer-link mb-2 py-1">About us</a>
+              <a href="contact-us/" class="page-footer-link mb-2 py-1">Contact Us</a>
+              <a href="terms-and-conditions/" class="page-footer-link mb-2 py-1">Terms & Conditions</a>
+              <a href="privacy-policy/" class="page-footer-link mb-2 py-1">Privacy Policy</a>
+            </div>
+            <div class="col-12 top-services d-none">
+              <div class="row">
+                <div class="col-12">
+                  <span class="footer-h4 font-weight-600 py-3">Top Services</span>
+                </div>
+                <div class="col-12 col-sm-6 d-flex flex-column mt-3 mt-sm-0">
+                  <a href="#!" class="page-footer-link mb-2 py-1">Roof - Install or replace</a>
+                  <a href="#!" class="page-footer-link mb-2 py-1">Accessory Dwelling Units - Build</a>
+                  <a href="#!" class="page-footer-link mb-2 py-1">Garage - Build</a>
+                </div>
+                <div class="col-12 col-sm-6 d-flex flex-column mt-3 mt-sm-0">
+                  <span class="footer-h4 font-weight-600"></span>
+                  <a href="#!" class="page-footer-link mb-2 py-1">Garage - Remodel or renovate</a>
+                  <a href="#!" class="page-footer-link mb-2 py-1">Adus - Remodel</a>
+                  <a href="#!" class="page-footer-link mb-2 py-1">Roof - repair</a>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <!-- center column -->
+      <div class="col-12 col-md-auto col-xl-4 content-column-center">
+        <div class="content">
+          <div class="row">
+            <div class="col-12">
+              <div class="news-letter-wrap">
+                <div class="image-container">
+                  <img src="../assets/images/footer/interface.svg?v=SihIKODx3Bi8G2Yc4HJNHL9mZemc0Nh_6aJJ8JIfXuA" alt="Paper Airplane Icon">
+                </div>
+                <span class="footer-h4 beige font-weight-black py-3">Join The AIQHome Newsletter</span>
+                <p class="text line-h-1-5">
+                  Sign up today and be first to get notified of special offers,
+                  hot trends and exclusive subscribers’ only events.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="page-footer-subscribe-box">
+                <!--<div class="form-group position-relative">
+                    <i class="fad fa-user">
+
+
+                    <input type="text" class="form-control" placeholder="Full name">
+                </div>-->
+                <div id="NewsletterForm" class="form-group position-relative mt-2">
+                  <img id="NewsletterEnvelope" src="../assets/images/icons/envelope-purple.svg" title="Email" alt="Envelope" />
+                  <input type="text" id="NewsletterEmail" name="NewsletterEmail" aria-labelledby="NewsletterEnvelope" class="form-control email" placeholder="Enter your Email">
+                  <button id="NewsletterBtn" class="btn-subscribe" onclick="javascript: JoinNewsletter();">Subscribe</button>
+                  <button id="NewsletterBtnSpinner" class="btn-subscribe" style="display:none;">Subscribe <span class="spinner-border spinner-border-sm"></span></button>
+                </div>
+                <div id="NewsletterThank" class="form-group position-relative m-t-30" style="display:none;">
+                  <button type="button" class="btn-subscribe">
+                    Thank you for joining the AIQHome newsletter
+                  </button>
+                </div>
+                <span id="NewsletterError" class="error-message system-color-14" style="display:none;"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- right column -->
+      <div class="col-12 col-md-auto col-xl-3 content-column-right">
+        <div class="pros-card">
+          <div class="logo-pros-container">
+            <img src="../assets/images/footer/footer-pros-logo.png?v=cJ9UvSJyUwxmuGUrso7bzgZIs-JNEFbZ3vx4zo7jg6M" alt="AIQ pros logo">
+          </div>
+          <p class="line-h-1-5 mt-3">
+            The industry dedicated, business optimizing, leads, sales and projects management platform for all home improvement service providers.
+          </p>
+          <div class="join-us-button">
+            <a href="aiq-pros/" target="_blank" rel="noopener">Join Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid page-footer-footer">
+    <div class="footer-container page-footer-main">
+      <div class="row">
+        <div class="col-12 col-sm-6">
+          <div class="social">
+            <a href="https://www.youtube.com/channel/UCAL-zUNCZhSwAU0gBJoHsvQ">
+              <img src="../assets/images/footer/social/youtube.svg?v=xjEawKkD6XzHg9lsLYJGLBC2Jz512iwBJq5CRUkPXl8" alt="you tube">
+            </a>
+
+          </div>
+        </div>
+        <div class="col-12 col-sm-6">
+          <div class="content d-flex justify-content-end align-items-center">
+            <p>&#169; Copyright 2020 AIQHome. All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="back-layer"></div>
+
+</body>
+</html>

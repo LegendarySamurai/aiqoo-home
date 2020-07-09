@@ -648,8 +648,11 @@
     }
 
     @media(max-width: 599px) {
-        height: 60px;
         padding-right: 0;
+
+        .header-content {
+            height: 60px;
+        }
 
         .section-container {
             max-width: 100% !important;

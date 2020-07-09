@@ -119,168 +119,6 @@ body {
 
         .logo {
             width: 280px;
-        }
-
-        .when-input-empty {
-            display: none;
-        }
-
-        .form-group {
-            width: 100%;
-            box-shadow: 0px 11px 7px 0 rgba(0, 0, 0, 0.02);
-            border: solid 2px #d8cdba;
-            background-color: #fff;
-            border-radius: 4px;
-            transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-        }
-
-        .form-control {
-            display: block;
-            width: calc(100% - 150px);
-            height: 60px;
-            padding-left: 310px;
-            padding-right: 10px;
-            border-color: transparent;
-
-            &.is-hidden {
-                padding-left: 50px;
-
-                &::placeholder {
-                    color: transparent;
-                }
-            }
-        }
-
-        .form-control {
-            font-weight: 700;
-            color: #352f4a;
-        }
-
-        .form-control,
-        .form-control::placeholder {
-            font-family: $main-font;
-            font-size: 13pt;
-        }
-
-        .form-control::placeholder {
-            font-weight: 500;
-            color: #b3b3b3 !important;
-        }
-
-        .form-control:focus + .super-placeholder .super-placeholder-heading {
-            color: #b3b3b3;
-        }
-
-        .super-placeholder {
-            position: absolute;
-            left: 12px;
-            top: 50%;
-            transform: translateY(-50%);
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            width: initial;
-            height: 100%;
-
-            span {
-                line-height: 1;
-                font-family: $main-font;
-                font-weight: bold;
-            }
-
-            img {
-                width: 16px;
-                margin-right: 10px;
-            }
-
-            .zip-super-placeholder-heading,
-            .main-super-placeholder-heading {
-                &.is-hidden {
-                    display: none !important;
-                }
-
-                &.is-active {
-                    display: block !important;
-                }
-            }
-        }
-
-        .super-placeholder-heading {
-            position: relative;
-            display: block;
-            line-height: 1.5;
-            margin-left: 8px;
-            color: #352f4a;
-            font-family: $h-font;
-            font-weight: bold;
-            font-size: 12pt;
-
-            &.zip-super-placeholder-heading,
-            &.main-super-placeholder-heading {
-                &.is-hidden {
-                    display: none !important;
-                }
-
-                &.is-active {
-                    display: block !important;
-                }
-            }
-        }
-
-        .return-button {
-            display: none;
-        }
-
-        .find-box {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            z-index: 1;
-            transform: translate(0, 50%);
-            max-width: $central-content-width;
-            width: 100%;
-            margin-top: auto;
-            //padding: 10px;
-            padding: 15px;
-            background-color: #f4eee4;
-            box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.16);
-            pointer-events: auto;
-
-            .find-btn {
-                position: absolute;
-                right: 4px;
-                top: 4px;
-                width: 140px;
-                height: calc(100% - 8px);
-                padding: 0 6px;
-                font-size: 11pt;
-                color: #fff;
-                background-color: #585077;
-            }
-
-            &.is-active {
-                left: 50% !important;
-
-                @keyframes find-box-animation {
-                    0% {
-                        transform: translate(-50%, 20%) scale(0.8);
-                    }
-
-                    100% {
-                        transform: translate(-50%, 50%) scale(1);
-                    }
-                }
-
-                animation-name: find-box-animation;
-                animation-duration: 600ms;
-                animation-delay: 0ms;
-                animation-fill-mode: forwards;
-                animation-iteration-count: 1;
-            }
-        }
-
-        .logo {
             background-color: transparent;
         }
     }
@@ -289,13 +127,11 @@ body {
         color: #fff;
     }
 
-    .logo {
-        width: 100%;
-    }
     // Categories
     .categories-home-page {
         padding-top: 150px;
     }
+
     // Magazine
     .magazine {
         padding-top: 360px;
@@ -380,6 +216,7 @@ body {
             margin-top: 30px;
         }
     }
+
     // Google search
     .google-search {
         margin-top: 95px;
@@ -451,6 +288,7 @@ body {
             }
         }
     }
+
     // Common searches
     .common-searches {
         padding-top: 40px;
@@ -475,7 +313,6 @@ body {
     }
 
     @media(max-width: 1199px) {
-
         .head-section {
             h1 {
                 font-size: 22pt;
@@ -490,7 +327,6 @@ body {
     }
 
     @media(max-width: 991px) {
-
         .head-section {
             h1 {
                 font-size: 20pt;
@@ -500,30 +336,9 @@ body {
                 width: 170px;
             }
 
-
-            .head-section-content-inner {
-                //margin-top: 30px;
-            }
-
             .head-section-header {
                 display: none;
             }
-        }
-
-        .form-control:focus {
-            padding-left: 50px;
-            pointer-events: auto;
-        }
-
-        .form-control:focus + .super-placeholder .main-super-placeholder-heading {
-            color: transparent !important;
-            pointer-events: none;
-        }
-
-        .find-box {
-            left: 50% !important;
-            transform: translate(-50%, 50%) !important;
-            max-width: 96% !important;
         }
 
         .card {
@@ -605,7 +420,6 @@ body {
     }
 
     @media(max-width: 767px) {
-
         .head-section {
             h1 {
                 font-size: 16pt;
@@ -615,8 +429,6 @@ body {
                 width: 140px;
             }
         }
-
-
 
         .common-searches {
             padding-top: 4vw;
@@ -674,181 +486,6 @@ body {
             padding: 0 30px;
             text-align: center;
             font-size: 18pt !important;
-        }
-
-        .find-box {
-            bottom: -3%;
-            width: 100%;
-            height: auto;
-            font-family: $main-font;
-
-            &.fixed {
-                z-index: 9000;
-                left: 0 !important;
-                transform: inherit !important;
-
-                .form-group-mobile-bg {
-                    z-index: 999;
-                    position: fixed !important;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    width: 100vw;
-                    height: 100vh;
-                    padding: 2% 0 0;
-                    background: #fff;
-                }
-
-                .form-group {
-                    width: 96%;
-                    margin: 0 auto;
-                }
-
-                .when-input-empty {
-                    display: block;
-                    padding: 2%;
-                    font-family: $h-font;
-                    font-weight: 500;
-                    font-size: 12pt;
-                    text-align: center;
-                    color: #342e4a;
-                }
-
-                .super-placeholder {
-                    bottom: 0;
-                }
-
-                .return-button {
-                    position: absolute;
-                    top: 50%;
-                    right: 10px;
-                    transform: translate(0, -50%);
-                    display: block;
-                    //font-size: 16pt;
-                    img {
-                        width: 20px;
-                        height: 20px;
-                    }
-                }
-
-                .find-btn {
-                    display: none;
-                }
-            }
-
-            .super-placeholder-heading {
-                font-size: 12.5pt;
-            }
-
-            .location {
-                display: none !important;
-            }
-
-            .magnifier {
-                display: block !important;
-            }
-
-            .form-group {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .super-placeholder {
-                height: 48px;
-                top: auto !important;
-                bottom: 48px;
-                transform: none !important;
-                pointer-events: none;
-            }
-
-            .find-btn {
-                position: static !important;
-                height: 48px !important;
-                width: calc(100% + 2px) !important;
-                font-size: 13pt !important;
-            }
-
-            .form-control {
-                width: 100%;
-                height: 50px !important;
-                padding-right: 40px !important;
-                padding-left: 50px !important;
-                pointer-events: auto;
-                font-weight: 600;
-                font-size: 12pt;
-                transition: position 500ms ease-in-out;
-
-                &::placeholder {
-                    color: transparent !important;
-                }
-
-                &.is-hidden {
-                    padding-left: 40px !important;
-
-                    &::placeholder {
-                        color: #b3b3b3 !important;
-                    }
-                }
-            }
-
-            .form-control:focus + .super-placeholder .main-super-placeholder-heading {
-                display: none;
-            }
-
-            .form-control:focus + .super-placeholder .super-placeholder-heading {
-                color: transparent;
-            }
-            // ZIP code - when clicking on find pro btn
-            &.is-active {
-                top: auto;
-                bottom: 60%;
-                position: fixed;
-                z-index: 100;
-                height: auto;
-                width: 92vw;
-
-                .form-group-mobile-bg {
-                    width: 100%;
-                    padding: 20px;
-                    background-color: transparentize($primaryColor, .3);
-                    border-radius: 6px;
-                    border: 1px solid $beige;
-
-                    .form-group {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                    }
-                }
-
-                .location {
-                    display: block !important;
-                    width: 16px;
-                }
-
-                .magnifier {
-                    display: none !important;
-                }
-
-                .find-btn {
-                    position: static;
-                    width: 50%;
-                    height: 48px;
-                    margin: 20px auto 0;
-                    border: 1px solid $beige;
-                    background-color: $beige;
-                    color: $primaryColor;
-                    font-size: 10.5pt;
-                }
-
-                .super-placeholder {
-                    top: 0;
-                    transform: none;
-                    height: 48px;
-                }
-            }
         }
 
         .common-searches {
@@ -913,26 +550,6 @@ body {
         }
 
         .head-section {
-
-            .find-box {
-                .form-control {
-                    padding-right: 10px !important;
-                    padding-left: 30px !important;
-                }
-
-                .main-super-placeholder-heading {
-                    font-size: 10pt;
-                }
-            }
-
-            .super-placeholder-heading {
-                font-size: 11pt;
-
-                img {
-                    width: 12px;
-                }
-            }
-
             .logo {
                 width: 160px !important;
             }
@@ -942,26 +559,10 @@ body {
             }
         }
     }
-
-    @media(min-width: 1600px) {
-        .head-section {
-
-            .find-btn {
-                width: 200px;
-            }
-
-            .form-control {
-                height: 70px;
-                //padding-left: 300px;
-                padding-right: 160px;
-            }
-        }
-    }
 }
 
 
 @media (max-height: 790px) {
-
     .head-section-content {
         height: 300px !important;
     }
