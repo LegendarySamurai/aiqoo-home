@@ -5,7 +5,7 @@
 
 .landing-page {
     position: relative;
-    z-index: 6000;
+    z-index: 7000;
 
     #f_display_1 {
         top: 0;
@@ -16,48 +16,49 @@
     }
     // Reasons for this page
     .reasons {
-        margin-top: 4vh;
+        margin-top: 0;
+        height: 90px;
         box-shadow: 0 3px 15px 0 rgba(0,0,0,0.16);
     }
 
     .head-section {
         z-index: 11;
+        background-color: #f4eee4;
 
         .head-section-content-inner {
             z-index: 9900 !important;
-            min-height: 100vh;
+            min-height: calc(100vh - 70px);
             width: 80%;
             margin: 0 auto;
         }
 
         .heading-wrap {
-            min-height: 15vh;
+            min-height: 11vh;
             width: 100%;
-            padding: 10px 0;
+        }
+
+        .funnel-card-wrap {
+            min-height: calc(89vh - 170px - 70px);
+            height:auto;
+            width: 100%;
+        }
+
+        .reasons-wrap {
+            height: 90px;
+            width: 100%;
+            margin:40px 0 20px 0;
         }
 
         .map-mask-div {
             opacity: .8;
             width: 100%;
-            height: 100vh;
-            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#dfd2ae+1,7db9e8+100&1+0,0+100 */
-            background: -moz-linear-gradient(top, rgba(223,210,174,1) 0%, rgba(223,210,174,0.99) 1%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
-            background: -webkit-linear-gradient(top, rgba(223,210,174,1) 0%,rgba(223,210,174,0.99) 1%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
-            background: linear-gradient(to bottom, rgba(223,210,174,1) 0%,rgba(223,210,174,0.99) 1%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfd2ae', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
+            min-height: 100vh;
+            background: -webkit-linear-gradient(top, rgba(223,210,174,1) 0%, rgba(223,210,174,0.5) 50%, rgba(223,210,174,0.5) 51%, rgba(223,210,174,1) 100%);
+            background: -moz-linear-gradient(top, rgba(223,210,174,1) 0%, rgba(223,210,174,0.5) 50%, rgba(223,210,174,0.5) 51%, rgba(223,210,174,1) 100%);
+            background: linear-gradient(to top, rgba(223,210,174,1) 0%, rgba(223,210,174,0.5) 50%, rgba(223,210,174,0.5) 51%, rgba(223,210,174,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfd2ae', endColorstr='#007db9e8',GradientType=0 );
         }
 
-        .funnel-card-wrap {
-            min-height: calc(65vh - 70px);
-            width: 100%;
-            padding-bottom: 25px;
-        }
-
-        .reasons-wrap {
-            min-height: 20vh;
-            width: 100%;
-            padding-bottom: 20px;
-        }
 
         h1 {
             font-family: $h-font;
@@ -74,7 +75,7 @@
             left: 0;
             width: 100%;
             height: 117.5px;
-            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) -5%, #ebe2d3 70%);
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) -5%, #f4eee4 70%);
         }
     }
 
@@ -86,13 +87,15 @@
             content: '';
             width: 100%;
             height: 700px;
-            background: #ebe2d3 url(../images/landing/bg-shingles.jpg) no-repeat bottom center;
+            background-image: url(../images/bg/bg_categories_d.png);
+            background-position: bottom center;
+            background-repeat: no-repeat;
             background-size: 100%;
         }
     }
 
     .section-2 {
-        background-color: #ebe2d3;
+        background-color: #f4eee4;
 
         .section-title-decoration {
             &.left {
@@ -202,14 +205,13 @@
         .head-section-content-inner {
             width: 96% !important;
         }
+
+        .reasons {
+            height: auto;
+        }
     }
 
     @media(max-width: 768px) {
-        .bg-container {
-            &::before {
-                display: none;
-            }
-        }
 
         .section-2 {
             position: relative;
@@ -222,8 +224,6 @@
                 content: '';
                 width: 100%;
                 height: 700px;
-                background: #ebe2d3 url(../images/landing/bg-shingles.jpg) no-repeat bottom center;
-                background-size: 100%;
             }
         }
 
@@ -526,8 +526,7 @@
                 position: absolute;
                 left: 0;
                 height: 700px;
-                background: #ebe2d3 url(../images/landing/bg-shingles.jpg) no-repeat bottom center;
-                background-size: 100%;
+                background-color: #f4eee4;
             }
         }
 
@@ -615,6 +614,13 @@
     }
 
     @media(max-width: 650px) {
+
+        .reasons-wrap {
+            height: 230px !important;
+            margin: 30px 0 0px 0;
+        }
+
+
         .head-section {
             h1 {
                 white-space: normal;
@@ -702,12 +708,12 @@
 
 .map-bg-div {
     position: absolute;
-    height: 100vh;
+    min-height: 100vh;
     top: 0;
     width: 100%;
     overflow: visible;
     z-index: -2;
-    background-color: #ebe2d3;
+    background-color: #f4eee4;
     background: url('../images/bg/new-map.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -716,17 +722,14 @@
 
     @media(max-width:600px) {
         width: 100%;
-        background: url('../images/bg/new-map-mobile.jpg') no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+        background: none;
+
     }
 
 
     & #bg-map {
         position: absolute;
-        height: 100vh;
+        min-height: 100vh;
         top: 0;
         width: 100%;
         overflow: visible;

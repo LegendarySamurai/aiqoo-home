@@ -117,14 +117,14 @@
 
     .list-col {
         width: 90%;
-        padding: 20px 0 0 0;
-
+        //padding: 20px 0 0 0;
         .list-col-item {
             line-height: 1.8;
             margin: 0 auto;
             font-size: 14.2pt;
             text-align: center;
             width: 100% !important;
+            align-items: baseline;
         }
 
         .decoration-line {
@@ -178,7 +178,8 @@
         }
 
         h5 {
-            font-size: 9pt !important;
+            font-size: 10pt !important;
+            font-weight:600 !important;
         }
     }
 

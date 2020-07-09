@@ -7,6 +7,11 @@ document.addEventListener('readystatechange', function (event) {
 	}
 });
 
+var isMobile = false;
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+	isMobile = true;
+}
+
 //-- Hide Menu In Main Page
 var findBox = document.querySelector('.home .find-box');
 var pageHeader = document.querySelector('.header');
@@ -20,39 +25,30 @@ var headerSearchInput = document.querySelector('#header-search-input');
 function init() {
 
 	/*
- var imgDefer = document.getElementsByTagName('img');
- for (var i = 0; i < imgDefer.length; i++) {
- 	if (imgDefer[i].getAttribute('data-src')) {
- 		imgDefer[i].setAttribute('src', imgDefer[i].getAttribute('data-src'));
- 	}
- }
- */
-
-	/*
  //alert('Raleway 700');
  var Font = document.createElement('link');
  Font.rel = 'stylesheet';
  Font.href = 'https://fonts.googleapis.com/css?family=Raleway:700&display=swap';
  Font.type = 'text/css';
  document.getElementsByTagName('head')[0].appendChild(Font);
+ 
+ 
+ var Icons_load = setTimeout(function () {
+ 	//alert('fontawesome');
+ 	var Icons = document.createElement('link');
+ 	Icons.rel = 'stylesheet';
+ 	Icons.href = 'https://pro.fontawesome.com/releases/v5.11.2/css/all.css';
+ 	Icons.type = 'text/css';
+ 	//Icons.integrity = 'sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx';
+ 	//Icons.crossorigin = 'anonymous';
+ 	document.getElementsByTagName('head')[0].appendChild(Icons);
+ }, 1500)
  */
 
-	//--
-	var Icons_load = setTimeout(function () {
-		//alert('fontawesome');
-		var Icons = document.createElement('link');
-		Icons.rel = 'stylesheet';
-		Icons.href = 'https://pro.fontawesome.com/releases/v5.11.2/css/all.css';
-		Icons.type = 'text/css';
-		//Icons.integrity = 'sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx';
-		//Icons.crossorigin = 'anonymous';
-		document.getElementsByTagName('head')[0].appendChild(Icons);
-	}, 1500);
-
-	if (window.location.href.toLowerCase().indexOf("/c/") > -1) {
+	if (window.location.href.toLowerCase().indexOf("/c/") > -1 || window.location.href.toLowerCase().indexOf("/g/") > -1 || window.location.href.toLowerCase().indexOf("/s/") > -1) {
 		var funnel_script_load = setTimeout(function () {
 			var script = document.createElement('script');
-			script.src = "assets/js/funnels_0.8.js";
+			script.src = "assets/js/funnels_1.0.js";
 			document.getElementsByTagName('head')[0].appendChild(script);
 		}, 1100);
 	}
@@ -67,6 +63,13 @@ function init() {
  	document.getElementsByTagName('head')[0].appendChild(Font);
  }, 1200)
  */
+
+	var imgDefer = document.getElementsByTagName('img');
+	for (var i = 0; i < imgDefer.length; i++) {
+		if (imgDefer[i].getAttribute('data-src')) {
+			imgDefer[i].setAttribute('src', imgDefer[i].getAttribute('data-src'));
+		}
+	}
 
 	//-------------------------------------
 	//-------- handle Page Header ---------
@@ -213,33 +216,35 @@ function JoinNewsletter() {
 
 	if (errorCount == 0) {
 
-		url = "api/v1/Newsletter/setNewSubscribe/?websiteID=3";
+		var url = "api/v1/Newsletter/setNewSubscribe/?websiteID=3";
 		url = url + "&email=" + document.getElementById("NewsletterEmail").value;
 		url = url + "&Rand=" + Math.random();
 
-		http = createHttpObject();
-		http.open('post', url, true);
-		http.onreadystatechange = NewsletterResponse;
-		http.send(null);
+		var xhr = createHttpObject();
+		xhr.open('post', url, true);
+		xhr.send();
+		xhr.onreadystatechange = function () {
+			var _this = this;
+
+			var newsletterError = document.getElementById("NewsletterError");
+			if (xhr.readyState === 4) {
+				if (xhr.status == 200) {
+					if (xhr.responseText == "true") {
+						reloadoff(NewsletterForm);
+						reloadon(NewsletterThank);
+					} else {
+						newsletterError.innerHTML = 'Oops, something went wrong, try again.';
+						reloadon(NewsletterError);
+						reloadon(NewsletterBtn);
+						reloadoff(NewsletterBtnSpinner);
+						email.focus();
+					}
+				}
+			}
+		};
 	} else {
 		reloadon(NewsletterBtn);
 		reloadoff(NewsletterBtnSpinner);
-	}
-}
-
-function NewsletterResponse() {
-	var newsletterError = document.getElementById("NewsletterError");
-	if (http.readyState == 4) {
-		if (http.responseText == "true") {
-			reloadoff(NewsletterForm);
-			reloadon(NewsletterThank);
-		} else {
-			newsletterError.innerHTML = 'Oops, something went wrong, try again.';
-			reloadon(NewsletterError);
-			reloadon(NewsletterBtn);
-			reloadoff(NewsletterBtnSpinner);
-			email.focus();
-		}
 	}
 }
 
@@ -293,7 +298,7 @@ function ContactUsRequest() {
 
 	if (errorCount == 0) {
 
-		url = "api/v1/ContactUs/setNewRequest/?websiteID=3";
+		var url = "api/v1/ContactUs/setNewRequest/?websiteID=3";
 		url = url + "&fullName=" + form.cu_fullName.value;
 		url = url + "&phone=" + form.cu_phone.value;
 		url = url + "&email=" + form.cu_email.value;
@@ -301,10 +306,22 @@ function ContactUsRequest() {
 		url = url + "&details=" + form.cu_details.value;
 		url = url + "&Rand=" + Math.random();
 
-		http = createHttpObject();
-		http.open('post', url, true);
-		http.onreadystatechange = ContactUsResponse;
-		http.send(null);
+		var xhr = createHttpObject();
+		xhr.open('post', url, true);
+		xhr.send();
+		xhr.onreadystatechange = function () {
+			var _this = this;
+			if (xhr.readyState === 4) {
+				if (xhr.status == 200) {
+					if (xhr.responseText == "true") {
+						reloadoff(cu_form_div);
+						reloadon(cu_success);
+					} else {
+						alert('Oops, something went wrong, try again');
+					}
+				}
+			}
+		};
 	} else {
 		reloadon(cu_btn);
 		reloadoff(cu_btnSpinner);
@@ -313,20 +330,9 @@ function ContactUsRequest() {
 	return false;
 }
 
-function ContactUsResponse() {
-	if (http.readyState == 4) {
-		if (http.responseText == "true") {
-			reloadoff(cu_form_div);
-			reloadon(cu_success);
-		} else {
-			alert('Oops, something went wrong, try again');
-		}
-	}
-}
-
 function validatePhone(Phone) {
 	var phonePattern = /(?:\d{1}\s)?\(?(\d{3})\)?-?\s?(\d{3})-?\s?(\d{4})/;
-
+	var error = "";
 	if (Phone.value == "" || Phone.value == null) {
 		error = "Should not be empty.";
 	} else if (Phone.value.length < 10) {

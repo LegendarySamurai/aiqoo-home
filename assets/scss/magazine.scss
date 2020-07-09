@@ -23,19 +23,15 @@
             flex-direction: row;
             justify-content: flex-start;
             align-items: center;
+
+            h1 {
+                padding: 10px 0 6px 0;
+                font-family: $h-font;
+                font-weight: 700;
+                font-size: 30pt;
+            }
         }
-
-        //.fa-chevron-left {
-        //    margin-right: 10px;
-        //    font-size: 26pt;
-        //}
     }
-
-    //.fa-share-alt {
-    //    font-size: 11pt;
-    //    cursor: pointer;
-    //}
-
     .cards {
         padding-right: 10px;
     }
@@ -87,12 +83,12 @@
             justify-content: flex-end;
             align-items: center;
             height: 40px;
-            padding: 0 16px 0 16px;
+            padding: 0 8px;
             background-color: transparentize(#585077, .44);
 
             img {
-                width: 15px;
-                height: 15px;
+                width: 13px;
+                height: 13px;
             }
 
             .tags-inner {
@@ -103,9 +99,10 @@
         }
 
         .tag {
-            padding: 0 8px;
+            padding: 0 3px;
             color: #fff;
-            font-size: 13.5pt;
+            font-size: 11pt;
+            text-align:right;
 
             &:not(:last-child) {
                 border-right: 1px solid #fff;
@@ -113,7 +110,6 @@
         }
     }
     //EOL: tags
-
     // read more
     .read-more {
         position: relative;
@@ -121,17 +117,9 @@
         padding: 0;
         margin-top: 15px;
         color: #b3b3b3;
+        font-family: $main-font;
+        text-decoration: underline;
 
-        &::after {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 1px;
-            background-color: #b3b3b3;
-            display: block;
-            content: '';
-        }
 
         img {
             width: 12px;
@@ -151,7 +139,6 @@
         overflow: hidden;
     }
     // EOL: image-container, card-info
-
     // card-info
     .card-info {
         .fa-share-alt {
@@ -172,7 +159,6 @@
         }
     }
     // EOL: card-info
-
     .image-container {
         img {
             width: 100%;
@@ -184,7 +170,6 @@
     .text {
         color: #000;
     }
-
     // horizontal-card
     .horizontal-card {
         padding: 26px 20px;
@@ -208,6 +193,7 @@
                 flex-direction: row;
                 align-items: center;
                 font-size: 13pt;
+
 
                 img {
                     width: 12px;
@@ -271,7 +257,6 @@
                 }
             }
         }
-
         // Horisontal && big
         &.big {
             .share-link {
@@ -299,7 +284,6 @@
             }
         }
     }
-
     // vertical-card
     .vertical-card {
         padding: 20px 20px;
@@ -311,7 +295,7 @@
 
         .card-info {
             margin-top: 0px;
-            padding:0 5px;
+            padding: 0 5px;
         }
 
         .h2 {
@@ -325,7 +309,6 @@
             line-height: 1.15;
             font-size: 12pt;
         }
-
         // Vertical && Big
         &.big {
             margin-bottom: 20px;
@@ -368,6 +351,7 @@
                 flex-direction: row;
                 align-items: center;
                 font-size: 11pt;
+                font-family: $main-font;
                 color: $primaryColor;
 
                 &::after {
@@ -375,7 +359,6 @@
                 }
             }
         }
-
         // Vertical && Small
         &.small {
             .share-link {
@@ -432,7 +415,6 @@
             font-size: 16.5pt;
         }
     }
-
     // big-content-block
     .big-content-block {
         margin-top: 10px;
@@ -448,7 +430,6 @@
             padding: 0;
         }
     }
-
     // trends
     .trends {
         .share-link {
@@ -462,7 +443,6 @@
             }
         }
     }
-
     // videos
     .videos {
         .video-item {
@@ -538,6 +518,13 @@
     }
 
     @media(max-width: 1199px) {
+        .page-heading-container {
+            h1 {
+                font-size: 26pt !important;
+            }
+        }
+
+
         .horizontal-card {
             &.small {
                 .card-info {
@@ -552,6 +539,7 @@
     }
 
     @media(max-width: 991px) {
+
         .horizontal-card {
             .row {
                 flex-wrap: wrap;
@@ -567,7 +555,15 @@
                     }
 
                     .title {
-                        padding: 10px 0;
+                        padding: 10px 15px 0 15px;
+                    }
+
+                    .text {
+                        padding: 0px 15px;
+                    }
+
+                    .read-more {
+                        padding: 0px 15px;
                     }
                 }
             }
@@ -620,20 +616,31 @@
 
         .horizontal-card {
             &.small {
-                margin:20px 0;
+                margin: 20px 0;
             }
         }
     }
 
     @media(max-width: 767px) {
-        //.container-lg {
-        //    width: 100%;
-        //    max-width: initial;
-        //}
+        .page-heading-container {
+            h1 {
+                font-size: 24pt !important;
+            }
+        }
     }
+
 
     @media(max-width: 599px) {
         padding-top: 50px !important;
+
+        .page-heading-container {
+
+            h1 {
+                padding: 10px 0 0 0;
+                font-size: 20pt !important;
+            }
+        }
+
 
         .card {
             max-width: 100% !important;
@@ -688,6 +695,7 @@
             justify-content: flex-start;
             align-items: flex-start;
         }
+
 
         .tags-container {
             .tag {

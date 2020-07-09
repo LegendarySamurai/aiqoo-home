@@ -284,6 +284,11 @@
             }
         }
 
+        span {
+            color: #d8cdba;
+            margin-right:4px;
+        }
+
         .menu-item-icon {
             display: block;
             width: 30px;
@@ -500,7 +505,7 @@
 
             a {
                 padding: 14px 0;
-                font-size: 11pt;
+                font-size: 12pt;
                 color: $primaryColor;
                 border-bottom: 1px solid transparentize(#000, .84);
 
@@ -508,6 +513,11 @@
                     border-bottom: none;
                 }
             }
+
+            span {
+                color: #887963;
+            }
+
 
             .menu-item-icon {
                 margin: 0 15px;

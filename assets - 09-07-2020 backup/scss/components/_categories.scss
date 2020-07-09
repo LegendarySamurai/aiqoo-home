@@ -1,0 +1,233 @@
+// Categories
+.categories {
+    font-family: $main-font;
+    font-weight: 400;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.categories-home-page {
+    padding-top: 260px;
+    padding-bottom: 280px;
+}
+
+.categories-container {
+    width: 100%;
+    max-width: 315px;
+    height: 100%;
+    padding: 20px;
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+
+    .title {
+        display: block;
+        margin-bottom: 20px;
+        font-family: $h-font;
+        font-weight: 700;
+        font-size: 16pt;
+        color: #585077;
+    }
+}
+
+.categories-item {
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    display: block;
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: transparentize($primaryColor, .5);
+  }
+}
+
+// Other categories
+.other-categories {
+    margin-top: 70px;
+
+    h2 {
+        text-align: center;
+        color: $primaryColor;
+        white-space: nowrap;
+        padding: 0 20px;
+        font-size: 17pt;
+    }
+
+
+    .list {
+        padding-top: 30px;
+    }
+
+}
+
+// view-more-container
+.view-more-container {
+    padding-top: 40px;
+
+    a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-weight: 400;
+        user-select: none;
+        border: 1px solid transparent;
+        font-size: 1rem;
+        line-height: 1.5;
+        cursor: pointer;
+        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        color: #fff;
+        background-color: #585077;
+        box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+        padding: 7px 28px;
+
+        img {
+            width: 12px;
+            height: 12px;
+
+            &.default {
+                display: block;
+            }
+
+            &.hovered {
+                display: none;
+            }
+        }
+    }
+
+    a:hover {
+        color: $beige;
+
+        .default {
+            display: none;
+        }
+
+        .hovered {
+            display: block;
+        }
+    }
+
+    a:after {
+        color: $beige;
+    }
+
+    a:active {
+        color: $beige;
+    }
+
+    .brand-btn {
+        &.big {
+            box-shadow: none;
+
+            i {
+                top: 50%;
+                transform: translate(0, -50%);
+            }
+        }
+    }
+}
+
+@media(max-width: 400px) {
+    .other-categories {
+        h2 {
+            padding: 0;
+        }
+
+        .list {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .list-col {
+            .list-col-item {
+                font-size: 11.5pt;
+            }
+        }
+    }
+}
+
+@media(min-width: 300px) {
+    .categories-home-page {
+        padding-top: 260px;
+        padding-bottom: 280px;
+    }
+    .other-categories {
+        margin-top: 45px;
+
+        h2 {
+            font-size: 13pt;
+        }
+    }
+    .view-more-container {
+        padding-top: 40px;
+
+        a {
+          line-height: 1.5;
+          font-size: 11pt;
+          border: 1px solid transparent;
+        }
+    }
+}
+@media(min-width: 600px) {
+    .categories-home-page {
+        padding-top: 180px;
+        padding-bottom: 280px;
+    }
+
+}
+
+@media(min-width: 991px) {
+    .categories-home-page {
+        padding-top: 160px;
+        padding-bottom: 280px;
+    }
+
+    .categories {
+
+        .list {
+            .col-item {
+                position: relative;
+            }
+
+            .col-item:not(:last-child) {
+                &:after {
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    transform: translateY(-50%);
+                    display: block;
+                    content: '';
+                    width: 2px;
+                    height: 86px;
+                    background-color: #d6dce6;
+                }
+            }
+
+            .list-item-with-icon {
+                position: relative;
+                margin-bottom: 0;
+            }
+        }
+
+        .other-categories {
+            margin-top: 50px;
+
+            h2 {
+                font-size: 14pt;
+            }
+        }
+    }
+}
+
+
+@media(min-width: 1600px) {
+
+  .view-more-container {
+    padding-top: 30px;
+  }
+}

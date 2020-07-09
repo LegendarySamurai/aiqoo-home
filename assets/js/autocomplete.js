@@ -12,7 +12,8 @@ $(function () {
         },
         onSelect: function (suggestion) {
             //$('#selction-ajax').html('You selected: ' + suggestion.value + ', ' + suggestion.data);
-            alert('You selected: ' + suggestion.value + ', ' + suggestion.data);
+            //alert('You selected: ' + suggestion.value + ', ' + suggestion.data);
+            window.location.href = suggestion.data;
             $('.find-box').removeClass('fixed');
             $('.main-super-placeholder-heading').addClass('d-none');
         },
@@ -48,10 +49,8 @@ $(function () {
             container.addClass("header-autocomplete");
         },
         onSelect: function (suggestion) {
-            //$('#selction-ajax').html('You selected: ' + suggestion.value + ', ' + suggestion.data);
-            alert('You selected: ' + suggestion.value + ', ' + suggestion.data);
+            window.location.href = suggestion.data;
             $('#header-search').removeClass('fixed');
-
             if (!headerSearch.classList.contains('show')) {
                 headerSearch.classList.add('show');
             }
@@ -203,7 +202,7 @@ $(function () {
         paramName: 'query',
         transformResult: _transformResult,
         showNoSuggestionNotice: false,
-        noSuggestionNotice: '<div class="image-container"><img src="assets/images/icons/search-no-result.svg"/></div><div class="no-results-message-wrap">We did not find the service you searched for. <a class="services-link" href="/Services/"><i class="fad fa-clipboard-list"></i>see full services list</a></div>',
+        noSuggestionNotice: '<div class="image-container"><img src="assets/images/icons/search-no-result.svg"/></div><div class="no-results-message-wrap">We did not find the service you searched for. <a class="services-link" href="/Services/"><i class="fad fa-clipboard-list">see full services list</a></div>',
         orientation: 'bottom',
         forceFixPosition: false
     };

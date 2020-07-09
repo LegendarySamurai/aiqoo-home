@@ -27,16 +27,16 @@
                 position: sticky;
                 top: 70px;
                 left: 0;
+                width: 100%;
                 background-color: white;
                 padding-top: 25px;
-                padding-bottom: 25px;
-                border-bottom: 1px solid #ececec;
+                padding-bottom: 10px;
+                border-bottom: 2px solid #ececec;
                 z-index: 300;
             }
 
 
             .article-content-headings-col {
-
 
                 .article-content-headings {
                     margin-bottom: 26px;
@@ -52,18 +52,15 @@
         background-color: #fff;
     }
 
-    .article-header-l {
+    .article-header {
         position: relative;
-        display: inline-block;
-        vertical-align: top;
-        width: 81%;
+        display: block;
+        width: 100%;
 
         h1 {
             font-size: 38pt;
             color: #585077;
             font-family: $h-font;
-            //background-color: #f7f2e8;
-            //border-radius: 10px;
             padding: 10px 30px 10px 0px;
             font-weight: 700;
         }
@@ -77,23 +74,24 @@
             padding: 5px 10px;
         }
     }
-    /*
-        .article-header-l {
+
+
+    .article-header-l {
         position: relative;
         display: inline-block;
         vertical-align: top;
         width: 81%;
+        padding: 0 15px;
 
-        h1 {
-            font-size: 30pt;
-            color: #585077;
-            font-family: $h-font;
-            background-color: #f7f2e8;
-            border-radius: 10px;
-            padding: 10px 30px 10px 15px;
+        h2 {
+            line-height: 1.4;
+            margin: 10px 0px 0px 0px;
+            font-weight: 700;
+            font-size: 18pt;
+            color: #585077 !important;
         }
     }
-    */
+
     .article-header-r {
         position: relative;
         display: inline-block;
@@ -137,18 +135,6 @@
         }
     }
     // Content
-    .article-content-headings {
-        margin-top: 26px;
-
-        h2 {
-            line-height: 1.4;
-            margin: 15px 0 15px 0;
-            font-weight: 700;
-            font-size: 18pt;
-            color: #585077 !important;
-        }
-    }
-
     .article-content {
 
         & .image-content {
@@ -237,9 +223,9 @@
         width: 100%;
         margin: 20px 0;
 
-        button {
-            margin-left: auto;
+        .btn {
             background-color: $primaryColor;
+            padding: 10px;
         }
     }
 
@@ -264,7 +250,7 @@
             color: $primaryColor;
         }
 
-        button {
+        .btn {
             width: 240px;
             font-size: 12pt;
         }
@@ -303,7 +289,7 @@
             }
         }
 
-        button {
+        .btn {
             display: flex;
             justify-content: flex-start;
             align-items: center;
@@ -312,8 +298,6 @@
             line-height: 1.25;
             padding: 20px;
             font-size: 18.5pt;
-            -webkit-backdrop-filter: blur(15px);
-            backdrop-filter: blur(15px);
             box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
             border: 3px solid #ffffff;
             background-color: #585077;
@@ -342,7 +326,6 @@
                 border-bottom: 1px solid #585077;
                 background-color: transparent;
                 color: #c3c3c3;
-
                 font-size: 11pt;
 
                 &::placeholder {
@@ -419,7 +402,7 @@
             height: 100%;
         }
 
-        button {
+        .btn {
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -520,8 +503,8 @@
         background-color: transparentize(#ebe2d3, .37);
     }
 
-    button:active,
-    button:focus {
+    .btn:active,
+    .btn:focus {
         color: #fff;
     }
 }
@@ -536,7 +519,7 @@
 
     @media(max-width: 1399px) {
 
-        .article-header-l {
+        .article-header {
             h1 {
                 font-size: 28pt;
             }
@@ -544,7 +527,7 @@
 
         .commercial-3 {
             .find-by-zip-code {
-                button {
+                .btn {
                     width: 110px;
                     height: 100px;
                     font-size: 15.5pt;
@@ -560,12 +543,18 @@
 
     @media(max-width: 1299px) {
 
-        .article-header-l {
-            width: 77%;
-
+        .article-header {
             h1 {
                 font-size: 26pt;
                 padding: 10px 20px 10px 10px;
+            }
+        }
+
+        .article-header-l {
+            width: 77%;
+
+            h2 {
+                font-size: 14pt;
             }
         }
 
@@ -592,7 +581,7 @@
                 font-size: 22pt;
             }
 
-            button {
+            .btn {
                 white-space: nowrap;
             }
         }
@@ -607,12 +596,23 @@
             width: 96%;
         }
 
-        .article-header-l {
-            width: 75%;
-
+        .article-header {
             h1 {
                 font-size: 22pt;
                 padding: 10px 15px 10px 10px;
+            }
+
+            span {
+                font-size: 11.5pt;
+                margin-left: 10px;
+            }
+        }
+
+        .article-header-l {
+            width: 75%;
+
+            h2 {
+                font-size: 13.5pt;
             }
         }
 
@@ -629,7 +629,7 @@
 
             .commercial-3 {
                 .find-by-zip-code {
-                    button {
+                    .btn {
                         padding: 10px;
                     }
 
@@ -647,14 +647,24 @@
             width: 98%;
         }
 
-        .article-header-l {
+        .article-header {
             h1 {
                 font-size: 24pt;
             }
         }
 
+
         .article-section {
             margin-top: 5px;
+
+            .article-inner-container {
+
+
+                .article-content-col {
+                    padding: 5px;
+                    margin: 0;
+                }
+            }
         }
 
         .article-content-headings {
@@ -706,17 +716,32 @@
             padding-bottom: 5px !important;
         }
 
-        .article-header-l {
-            width: 100%;
-
+        .article-header {
             h1 {
                 font-size: 22pt;
-                padding: 10px !important;
+                padding: 10px 0px 5px 0px !important;
+            }
+
+            span {
+                font-size: 10.5pt;
+                margin-left: 0px;
+            }
+        }
+
+
+        .article-header-l {
+            width: 100%;
+            padding: 0 5px;
+
+            h2 {
+               
+                font-size: 12pt;
             }
         }
 
         .article-header-r {
             width: 100%;
+            margin-left: 0;
 
             .share-div {
                 margin: 20px 0;
@@ -728,7 +753,7 @@
             .author {
                 display: inline-block;
                 float: left;
-                margin: 10px;
+                margin: 14px 0;
             }
 
             .author-image {
@@ -790,7 +815,7 @@
                 align-items: flex-start !important;
                 margin-top: 20px;
 
-                button {
+                .btn {
                     justify-content: center;
                     width: 96%;
                     max-width: 240px;
@@ -827,6 +852,9 @@
 
 
                 .article-content-col {
+                    padding: 0;
+                    margin: 0;
+
                     & .image-content {
 
                         img {

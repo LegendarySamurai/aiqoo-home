@@ -1,0 +1,48 @@
+// Head section
+.head-section {
+  .page-title-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+
+    .page-heading-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      line-height: 1.4;
+    }
+
+    .page-heading {
+      margin-left: 15px;
+      font-family: 'Raleway', 'Helvetica','Arial', sans-serif;
+      font-weight: 500;
+      font-size: 22pt;
+    }
+
+    .fa-chevron-left {
+      font-size: 18pt;
+    }
+  }
+
+  .breadcrumbs {
+    .fa-chevron-right {
+      color: #fff;
+    }
+
+    span {
+      color: #fff;
+    }
+  }
+}
+
+.head-section {
+  @media(max-width: 599px) {
+    .page-title-inner {
+      flex-direction: column !important;
+      align-items: flex-start !important;
+    }
+  }
+}
