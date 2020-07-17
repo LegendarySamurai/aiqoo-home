@@ -1,0 +1,209 @@
+.about-aiqoo-home {
+  // Commonly used
+  .section-title {
+    padding: 0 30px 0 40px;
+  }
+
+  .text {
+    font-family: 'Helvetica','Arial',sans-serif;
+    font-weight: 400;
+    font-size: 14pt;
+    color: #fff;
+  }
+
+  // Head section
+  .head-section {
+    height: 40vh;
+    background-image: url('../../assets/images/bg/about-aiqoo-home-d.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &::before {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background: url('../../assets/images/bg/about-aiqoo-before-d.svg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  // Section "about our pros"
+  .about-our-pros {
+    padding-bottom: 150px;
+
+    .section-title {
+      span {
+        color: #fff;
+      }
+    }
+
+    .content {
+      background-color: #3a3451;
+
+      .text {
+        padding: 0 30px 40px 40px;
+      }
+    }
+
+    .image-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: #ccc;
+
+      .image-container {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 50%);
+        width: 100%;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  // Section "about"
+  section.about {
+    margin-bottom: 100px;
+
+    .section-title {
+      span {
+        color: #3a3451;
+      }
+    }
+
+    .about-card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 40px;
+      box-shadow: 0 3px 30px 0 rgba(216,205,186,0.31);
+
+      .text {
+        font-size: 14pt;
+        color: #000;
+      }
+
+      .card-image-container {
+        height: 100%;
+      }
+
+      .image-container {
+        height: 100%;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .card-content {
+      padding: 20px 40px;
+    }
+  }
+
+  .object-contain {
+    object-fit: contain !important;
+  }
+}
+
+.about-aiqoo-home {
+  @media(max-width: 1299px) {
+    .about-our-pros {
+      .content {
+        .text {
+          padding: 0 20px 40px 20px;
+        }
+      }
+    }
+  }
+
+  @media(max-width: 991px) {
+    // Section "about"
+    section.about {
+      .card-content {
+        padding: 20px;
+      }
+    }
+
+    // Sectio "about-our-pros"
+    .about-our-pros {
+      padding-bottom: 20px;
+    }
+  }
+
+  @media(max-width: 767px) {
+    // Section "about-aiqoo-pros"
+    section.about-aiqoo-pros {
+      .content {
+        .text {
+          padding: 0 20px 20px 20px;
+        }
+      }
+    }
+
+    // Section "about"
+    section.about {
+      .about-card {
+        .text {
+          //font-size: 14pt;
+        }
+      }
+    }
+  }
+
+  @media(max-width: 599px) {
+    // Commonly used
+    .content {
+      max-width: 90%;
+    }
+
+    .text {
+      padding: 0 !important;
+      font-size: 12pt !important;
+    }
+
+    .decoration-element {
+      display: none !important;
+    }
+
+    .about-our-pros {
+      .content {
+        .text {
+          padding: 0 20px 40px 0 !important;
+        }
+      }
+    }
+
+    // Section "about"
+    section.about {
+      .section-container {
+        max-width: 90%;
+      }
+
+      .about-card {
+        &:nth-of-type(even) {
+          .row {
+            flex-direction: column-reverse;
+          }
+        }
+      }
+    }
+  }
+}

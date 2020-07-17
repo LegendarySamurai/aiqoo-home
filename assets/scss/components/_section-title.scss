@@ -39,6 +39,14 @@
         }
     }
 
+    h4 {
+        color: $primaryColor;
+        white-space: nowrap;
+        padding: 0 20px;
+        font-weight: 600;
+        font-size: 15pt;
+    }
+
     p {
         font-family: $h-font;
         color: $primaryColor;
@@ -47,7 +55,6 @@
         font-size: 14pt;
         text-align: center;
         width: 100%;
-
     }
 }
 

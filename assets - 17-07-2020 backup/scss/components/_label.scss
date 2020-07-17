@@ -1,0 +1,28 @@
+// label
+.label {
+  display: flex;
+  margin-bottom: 20px;
+
+  .h3 {
+    display: flex;
+    align-items: center;
+    height: 46px;
+    margin-top: 15px;
+    padding: 0 26px;
+    font-size: 19.5pt;
+    color: #fff !important;
+    background-color: #d8cdba;
+  }
+
+  @media(max-width: 1399px) {
+    .h3 {
+      font-size: 16.5pt;
+    }
+  }
+
+  @media(max-width: 599px) {
+    .h3 {
+      margin-top: 15px;
+    }
+  }
+}

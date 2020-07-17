@@ -1,0 +1,163 @@
+// Search box (Created 17.07.2020) Igor
+.search-box {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  line-height: 1;
+  margin-top: 30px;
+  padding: 0 0 0 10px;
+  border-radius: 4px;
+  box-shadow: 0 5.5px 3.5px 0 rgba(0, 0, 0, 0.02);
+  border: solid 2px #d8cdba;
+  background-color: #ffffff;
+
+  .placeholder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 300px;
+  }
+
+  .placeholder-icon {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+  }
+
+  .placeholder-text {
+    font-weight: 600;
+    font-size: 13pt;
+    letter-spacing: .025px;
+  }
+
+  .search-box-input {
+    flex-grow: 1;
+    width: auto;
+    height: 100%;
+    border: none;
+    font-weight: 400;
+    font-size: 13pt;
+    color: #b3b3b3;
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 13pt;
+      color: #b3b3b3;
+    }
+  }
+
+  .search-box-button {
+    display: block;
+    margin-left: auto;
+    height: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 13pt;
+    background-color: #585077;
+    white-space: nowrap;
+  }
+}
+
+// Media
+.search-box {
+  @media(max-width: 991px) {
+    .search-box-button {
+      font-size: 11pt;
+    }
+
+    .search-box-input {
+      font-size: 11pt;
+
+      &::placeholder {
+        font-size: 11pt;
+      }
+    }
+
+    .placeholder {
+      width: 250px;
+    }
+
+    .placeholder-text {
+      font-size: 11pt;
+    }
+
+    .placeholder-icon {
+      width: 13px;
+      height: 13px;
+      margin-right: 5px;
+    }
+  }
+
+  @media(max-width: 767px) {
+    .search-box-button {
+      font-size: 10pt;
+    }
+
+    .search-box-input {
+      font-size: 10pt;
+
+      &::placeholder {
+        font-size: 10pt;
+      }
+    }
+
+    .placeholder {
+      width: 230px;
+    }
+
+    .placeholder-text {
+      font-size: 10pt;
+    }
+
+    .placeholder-icon {
+      width: 11px;
+      height: 11px;
+    }
+  }
+
+  @media(max-width: 599px) {
+    .placeholder {
+      display: none;
+    }
+
+    .search-box-input {
+      padding: 0;
+      flex-grow: unset;
+    }
+
+    .search-box-button {
+      font-size: 9pt;
+    }
+  }
+
+  @media(max-width: 474px) {
+    flex-direction: column;
+    align-items: flex-start;
+    border: none;
+    height: auto;
+
+    .search-box-input {
+      width: 100%;
+      border: solid 2px #d8cdba;
+      height: 45px;
+      padding: 0 10px;
+    }
+
+    .search-box-button {
+      height: 45px;
+      width: 100%;
+      margin-top: 5px;
+    }
+  }
+
+  @media(max-width: 374px) {
+    .search-box-button {
+      font-size: 8pt;
+    }
+  }
+}

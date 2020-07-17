@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="65.359" height="65.381" viewBox="0 0 65.359 65.381">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:none;stroke:#585077;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="prefix__Group_1444" data-name="Group 1444" transform="translate(1.054 1.054)">
+        <circle id="prefix__Ellipse_501" cx="26.559" cy="26.559" r="26.559" class="prefix__cls-1" data-name="Ellipse 501" transform="rotate(-3.15 53.36 1.47)"/>
+        <path id="prefix__Path_14574" d="M2028.558 467.4l9.671 9.671a3.5 3.5 0 0 1 0 4.958 3.5 3.5 0 0 1-4.958 0l-9.671-9.671" class="prefix__cls-1" data-name="Path 14574" transform="translate(-1975.955 -419.733)"/>
+        <path id="prefix__Path_14575" d="M2006 468.012a30.577 30.577 0 0 0 18.312-18.312" class="prefix__cls-1" data-name="Path 14575" transform="translate(-1966.996 -410.722)"/>
+        <path id="prefix__Line_685" d="M0 0L0 11.586" class="prefix__cls-1" data-name="Line 685" transform="translate(34.979 34.756)"/>
+        <path id="prefix__Line_686" d="M0 0L0 11.586" class="prefix__cls-1" data-name="Line 686" transform="translate(20.791 34.756)"/>
+        <circle id="prefix__Ellipse_502" cx="6.578" cy="6.578" r="6.578" class="prefix__cls-1" data-name="Ellipse 502" transform="rotate(-22.5 37.862 -43.143)"/>
+        <path id="prefix__Path_14576" d="M1958 443.014v-16.643a4.274 4.274 0 0 1 4.271-4.271h16.5a4.274 4.274 0 0 1 4.271 4.271v15.022" class="prefix__cls-1" data-name="Path 14576" transform="translate(-1942.56 -396.672)"/>
+        <path id="prefix__Path_14577" d="M1981.821 428.1h-16.5a1.32 1.32 0 0 0-1.326 1.326v3.24a9.454 9.454 0 0 1 5.351-1.669h8.542a9.454 9.454 0 0 1 5.351 1.669v-3.24a1.441 1.441 0 0 0-1.418-1.326z" data-name="Path 14577" transform="translate(-1945.615 -399.727)" style="fill:#d8cdba"/>
+    </g>
+</svg>

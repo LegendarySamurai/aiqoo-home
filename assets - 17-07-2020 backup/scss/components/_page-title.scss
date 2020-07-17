@@ -1,0 +1,50 @@
+.page-title {
+    padding: 20px;
+
+    .page-heading {
+        padding: 10px 0 6px 0;
+        font-family: $h-font;
+        font-weight: 700;
+        font-size: 30pt;
+    }
+}
+
+.page-title {
+  @media(max-width: 1899px) {}
+
+  @media(max-width: 1599px) {}
+
+  @media(max-width: 1399px) {}
+
+  @media(max-width: 1199px) {
+    .page-heading-container {
+      .fa-chevron-left {
+        font-size: 24pt;
+      }
+    }
+
+    .page-heading {
+      font-size: 26pt;
+    }
+  }
+
+  @media(max-width: 991px) {
+    .page-heading-container {
+      .fa-chevron-left {
+        font-size: 18pt;
+      }
+    }
+
+    .page-heading {
+      font-size: 24pt;
+    }
+  }
+
+  @media(max-width: 767px) {}
+
+  @media(max-width: 599px) {
+    padding: 10px;
+  }
+
+  @media(max-width: 374px) {}
+}

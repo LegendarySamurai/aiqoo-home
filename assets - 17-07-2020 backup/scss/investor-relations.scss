@@ -1,0 +1,272 @@
+.investor-relations {
+  // Commonly used
+  .text {
+    font-family: 'Helvetica','Arial',sans-serif;
+    font-weight: 400;
+    font-size: 14pt;
+    color: #fff;
+  }
+
+  // Head section
+  .head-section {
+    height: 40vh;
+    background-image: url('../../assets/images/bg/investor-relations.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &::before {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background: url('../../assets/images/bg/about-aiqoo-before-d.svg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      pointer-events: none;
+    }
+
+    .page-heading {
+      margin-left: 0;
+    }
+
+    .content {
+      margin-top: 80px;
+    }
+
+    .wrap {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .title {
+        position: relative;
+        z-index: 2;
+        font-weight: 900;
+        font-size: 26pt;
+        color: #fff;
+      }
+    }
+  }
+
+  // Content-wrap
+
+  // Section "about our pros"
+  .section-bottom {
+    //padding-bottom: 150px;
+
+    .section-title {
+      padding-left: 40px;
+
+      span {
+        color: #fff;
+      }
+    }
+
+    .content {
+      background-color: #3a3451;
+
+      .text {
+        padding: 0 30px 40px 40px;
+      }
+    }
+
+    .image-container {
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  // Leading-team
+  .leading-team {
+    .team {
+      padding: 6% 7%;
+      //background-color: coral; // remove !!!!
+    }
+
+    .card-col {
+      margin-bottom: 90px;
+    }
+
+    .card {
+      max-width: 290px;
+
+      .card-inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      .image-container {
+        transform: translate(0, -50%);
+        width: 40%;
+      }
+
+      .content {
+        transform: translate(0, -10%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #585077;
+        font-family: 'Helvetica','Arial',sans-serif;
+      }
+
+      .name {
+        font-weight: 600;
+        font-size: 15pt;
+        color: #3a3281;
+      }
+
+      .position {
+        font-weight: 600;
+        font-size: 12pt;
+        color: #3a3281;
+      }
+
+      .expertize {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 5% 7% 5% 9%;
+
+        .item {
+          position: relative;
+          line-height: 1.5;
+          margin-bottom: 10px;
+          font-weight: 400;
+          font-size: 12pt;
+          color: #696969;
+
+          &::before {
+            position: absolute;
+            left: -12px;
+            top: 5px;
+            border-radius: 10px;
+            display: block;
+            content: '';
+            width: 4px;
+            height: 12px;
+            background-color: #3a3281;
+          }
+        }
+      }
+    }
+  }
+}
+
+.investor-relations {
+  @media(max-width: 1299px) {
+    .section-bottom {
+      .section-title {
+        padding-left: 20px;
+      }
+
+      .content {
+        .text {
+          padding: 0 20px 40px 20px;
+        }
+      }
+    }
+  }
+
+  @media(max-width: 1199px) {}
+
+  @media(max-width: 991px) {
+    .section-bottom {
+      padding-bottom: 20px;
+
+      .image-container {
+        height: 400px;
+
+        img {
+          object-position: 50% 15%;
+        }
+      }
+    }
+  }
+
+  @media(max-width: 767px) {
+    .leading-team {
+      .section-title {
+        margin-bottom: 10vh;
+      }
+
+      .card-col {
+        margin-bottom: 14vh;
+      }
+
+      .team {
+        .card {
+          max-width: inherit;
+          width: 94%;
+          margin: 0 auto;
+
+          .item {
+            font-size: 13pt;
+          }
+        }
+      }
+    }
+  }
+
+  @media(max-width: 599px) {
+    .decoration-element {
+      display: none !important;
+    }
+
+    .content-wrap {
+      .content {
+        max-width: 96% !important;
+      }
+    }
+
+    .section-bottom {
+      .content {
+        .text {
+          padding: 0 20px 40px 0 !important;
+        }
+      }
+    }
+
+    .section-title {
+      span {
+        font-size: 22pt !important;
+      }
+    }
+  }
+
+  @media(max-width: 474px) {
+    .section-title {
+      span {
+        white-space: normal;
+      }
+    }
+
+    .leading-team {
+      .team {
+        .card-col {
+          padding: 0;
+        }
+
+        .card {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

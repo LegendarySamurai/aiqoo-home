@@ -402,7 +402,7 @@
 
             .find-btn {
                 width: $page-header-find-pro-btn-992;
-                font-size: 7pt;
+                font-size: 8.5pt;
             }
         }
     }
@@ -759,6 +759,10 @@
                 }
             }
 
+            &.hide-on-start {
+                opacity:0;
+            }
+ 
             &.hide {
                 @keyframes hide-search {
                     0% {
@@ -900,7 +904,7 @@
                 .find-btn {
                     width: 64px;
                     padding: 0;
-                    font-size: 6.5pt;
+                    font-size: 7.5pt;
                 }
             }
         }

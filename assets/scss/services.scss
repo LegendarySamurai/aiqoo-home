@@ -7,7 +7,7 @@
 
 .services-page {
     padding-top: 0 !important;
-    font-family: $h-font;
+    font-family: $main-font;
     color: #585077;
     // Page title
     .page-title-inner {
@@ -25,7 +25,9 @@
     }
     // Services
     section.services {
-        .services-list {
+      background-image: linear-gradient(to bottom, #ffffff, #f4eee4);
+
+      .services-list {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
             grid-gap: 0 20px;
@@ -33,15 +35,52 @@
         }
 
         .services-list-col {
+            position: relative;
             flex-grow: unset;
             flex-basis: unset;
             width: auto !important;
-            padding: 15px;
-            background-color: rgba(255,255,255, 0.5);
-            border: solid 1px #585077;
-            border-radius: 10px;
+            padding: 15px 25px;
+            border-radius: 20px;
+            box-shadow: 0 7.5px 27.5px 0 rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+
+            &::after {
+              display: block;
+              content: '';
+              position: absolute;
+              top: 50%;
+              left: -3px;
+              transform: translate(0, -50%);
+              width: 6px;
+              height: 90%;
+              background-color: #585077;
+              border-radius: 50px 0 0 50px;
+            }
         }
     }
+
+    // Top section
+    .top-section {
+      padding-top: 100px;
+
+      .section-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0 10%;
+      }
+
+      .uppercase-title {
+        font-family: $h-font;
+        font-weight: bold;
+        font-size: 30pt;
+        color: #342e49;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+    }
+
 }
 
 // Responsive
@@ -64,6 +103,18 @@ main.services-page {
         padding: 0;
       }
     }
+
+    // Top section
+    .top-section {
+      .section-inner {
+        padding: 0;
+      }
+
+      .uppercase-title {
+        font-size: 26pt;
+      }
+    }
+
   }
 
   @media(max-width: 767px) {
@@ -78,6 +129,13 @@ main.services-page {
         grid-gap: 0 10px;
       }
     }
+
+    // Top section
+    .top-section {
+      .uppercase-title {
+        font-size: 24pt;
+      }
+    }
   }
 
   @media(max-width: 599px) {
@@ -86,6 +144,13 @@ main.services-page {
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
+    }
+
+    // Top section
+    .top-section {
+      .uppercase-title {
+        font-size: 20pt;
+      }
     }
 
     // Services
@@ -106,6 +171,26 @@ main.services-page {
     // Questionnaire
     .questionnaire {
       margin-top: 0;
+    }
+  }
+
+  @media(max-width: 474px) {
+    // Top section
+    .top-section {
+      .uppercase-title {
+        white-space: nowrap;
+        font-size: 18pt;
+        letter-spacing: .05px;
+      }
+    }
+  }
+
+  @media(max-width: 374px) {
+    // Top section
+    .top-section {
+      .uppercase-title {
+        font-size: 15pt;
+      }
     }
   }
 }
