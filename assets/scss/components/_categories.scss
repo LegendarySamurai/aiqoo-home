@@ -68,17 +68,22 @@
 
 // view-more-container
 .view-more-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
     padding-top: 40px;
 
     a {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        display: block;
+        width: 110px;
+        //display: flex;
+        //flex-direction: row;
+        //align-items: center;
+        line-height: 1.5;
         font-weight: 400;
         user-select: none;
         border: 1px solid transparent;
-        font-size: 1rem;
-        line-height: 1.5;
+        font-size: 11pt;
         cursor: pointer;
         transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
         color: #fff;
@@ -161,15 +166,6 @@
 
         h2 {
             font-size: 13pt;
-        }
-    }
-    .view-more-container {
-        padding-top: 40px;
-
-        a {
-          line-height: 1.5;
-          font-size: 11pt;
-          border: 1px solid transparent;
         }
     }
 }
