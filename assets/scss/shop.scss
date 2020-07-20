@@ -76,14 +76,15 @@
     }
   }
 
-  .aside-col {
+  .filter-col {
     flex-shrink: 0;
     width: 20%;
-    min-width: 300px;
+    max-width: 275px;
+    //min-width: 300px;
   }
 
   // Aside
-  .aside {
+  .filter {
     height: 100%;
     padding: 40px 0 40px 0;
     font-family: $main-font;
@@ -181,7 +182,7 @@
     .shopping-item {
       position: relative;
       //width: 300px;
-      //max-width: 320px;
+      max-width: 275px;
       height: 100%;
       padding-top: 20px;
       box-shadow: 0 2px 27.5px 0 rgba(0, 0, 0, 0.15);
@@ -314,7 +315,7 @@
   }
 
   @media(max-width: 1199px) {
-    .aside-col {
+    .filter-col {
       min-width: 260px;
     }
   }
@@ -324,7 +325,7 @@
   @media(max-width: 767px) {}
 
   @media(max-width: 599px) {
-    .aside-col {
+    .filter-col {
       width: 96%;
       margin: 0 auto;
     }
