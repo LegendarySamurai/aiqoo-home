@@ -3,10 +3,70 @@
 @import 'vendor/bootstrap.custom/collapse';
 
 .shop {
+  // Custom checkbox
+  .custom-label {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 26px;
+    line-height: 26px;
+    margin-top: 10px;
+    padding-left: 30px;
+    font-weight: 400;
+    font-size: 13pt;
+    color: #585077;
+    cursor: pointer;
+
+    &::before {
+      display: block;
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 26px;
+      height: 26px;
+      border: 1px solid #585077;
+      border-radius: 3px;
+      background-color: rgba(0, 0, 0, 0.06);
+    }
+
+    img.chevron {
+      position: absolute;
+      right: 0;
+      top: 13px;
+    }
+  }
+
+  .custom-control {
+    position: absolute;
+    left: 0;
+    width: .1px;
+    height: .1px;
+    opacity: 0;
+    z-index: -1;
+  }
+
+  .custom-checkbox {
+    display: block;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    opacity: 0;
+    background-color: #585077;
+  }
+
+  .custom-control:checked + .custom-checkbox {
+    opacity: 1;
+  }
+  // EOL: Custom checkbox
+
   .shop-inner {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    padding: 0 2.5%;
   }
 
   .shopping-item-col {
@@ -22,10 +82,6 @@
     min-width: 300px;
   }
 
-  .content-wrap-col {
-
-  }
-
   // Aside
   .aside {
     height: 100%;
@@ -33,6 +89,7 @@
     font-family: $main-font;
 
     .title {
+      padding-top: 10px;
       margin-bottom: 10px;
       font-weight: bold;
       font-size: 15pt;
@@ -77,6 +134,10 @@
     // Departments
     .departments {
       color: #585077;
+
+      .title {
+        border-top: 1px solid #585077;
+      }
     }
 
     .department-name {
@@ -91,68 +152,22 @@
         border: none !important;
         outline: none !important;
       }
-
-      .custom-label {
-        display: block;
-        position: relative;
-        width: 100%;
-        //max-width: 200px;
-        margin-bottom: 0;
-        margin-top: 2px;
-        padding-right: 30px;
-        font-weight: 400;
-        font-size: 13pt;
-        color: #585077;
-        cursor: pointer;
-
-        &::before {
-          display: block;
-          content: '';
-          position: absolute;
-          right: 0;
-          top: 0;
-          width: 16px;
-          height: 16px;
-          background-color: #fff;
-          border: 1px solid #585077;
-          border-radius: 3px;
-        }
-      }
-
-      .custom-control {
-        position: absolute;
-        right: 0;
-        width: .1px;
-        height: .1px;
-        opacity: 0;
-        z-index: -1;
-      }
-
-      .custom-checkbox {
-        display: block;
-        width: 12px;
-        height: 12px;
-        position: absolute;
-        top: 2px;
-        right: 2px;
-        opacity: 0;
-        //background-color: #fff;
-        background-color: #585077;
-      }
-
-      .custom-control:checked + .custom-checkbox {
-        opacity: 1;
-        //width: 5px;
-        //height: 5px;
-      }
-
-
     }
 
     .department-subcategories {
       .item {
-        font-weight: 300;
+        margin-bottom: 10px;
+        margin-left: 30px;
+        font-weight: 400;
         font-size: 13pt;
+
+        .item-subcategories {
+          .subcategory-item {
+            margin: 3px 0;
+            font-weight: 300;
+            font-size: 12pt;
+          }
+        }
       }
     }
   }
@@ -260,7 +275,7 @@
 
       .product-name {
         margin-top: 10px;
-        font-weight: 300;
+        font-weight: 400;
         font-size: 12pt;
         color: #000;
       }
@@ -271,7 +286,7 @@
         justify-content: flex-start;
         align-items: center;
         width: 100%;
-        height: 56px;
+        height: 50px;
         margin-top: 20px;
         padding: 0 20px;
         border-radius: 5px;
