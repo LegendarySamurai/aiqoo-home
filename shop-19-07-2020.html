@@ -141,101 +141,351 @@
 
 <main class="shop">
   <section class="section-container shop-inner">
-    <div class="aside">
-      <div class="types">
-        <div class="type active">Type</div>
-        <div class="type">Type</div>
-        <div class="type">Type</div>
-        <div class="type">Type</div>
-        <div class="type">Type</div>
-      </div>
-      <div  class="departments">
-        <div class="department-name" data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseOne">
-          <label class="custom-label">
-            <input type="checkbox" class="custom-control">
-            <span class="custom-checkbox"></span>
-            Basements
-          </label>
-        </div>
-        <div class="collapse" id="collapseOne">
-          <div class="department-subcategories">
-            <div class="item">Basement subcategory</div>
-            <div class="item">Basement subcategory</div>
-            <div class="item">Basement subcategory</div>
+    <div class="row">
+      <div class="col-auto aside-col">
+        <div class="aside">
+          <div class="types">
+            <div class="title">Types</div>
+            <div class="types-inner">
+              <div class="type">Long Type</div>
+              <div class="type">Type</div>
+              <div class="type active">Type</div>
+              <div class="type">Very Long Type</div>
+              <div class="type">Type</div>
+              <div class="type">Type</div>
+              <div class="type active">Very Long Type</div>
+              <div class="type">Type</div>
+            </div>
           </div>
-        </div>
-        <div class="department-name" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">
-          <label class="custom-label">
-            <input type="checkbox" class="custom-control">
-            <span class="custom-checkbox"></span>
-            Roofing
-          </label>
-        </div>
-        <div class="collapse" id="collapseTwo">
-          <div class="department-subcategories">
-            <div class="item">Roofing subcategory</div>
-            <div class="item">Roofing subcategory</div>
-            <div class="item">Roofing subcategory</div>
-          </div>
-        </div>
-        <div class="department-name" data-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree">
-          <label class="custom-label">
-            <input type="checkbox" class="custom-control">
-            <span class="custom-checkbox"></span>
-            3D Design
-          </label>
-        </div>
-        <div class="collapse" id="collapseThree">
-          <div class="department-subcategories">
-            <div class="item">3D Design subcategory</div>
-            <div class="item">3D Design subcategory</div>
-            <div class="item">3D Design subcategory</div>
-          </div>
-        </div>
-
-
-      </div>
-    </div>
-
-    <div class="content-wrap">
-      <div class="row">
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-          <div class="shopping-item">
-            <div class="decoration-element"></div>
-            <div class="shopping-item-inner">
-              <div class="image">
-                <img src="assets/images/shop/drill.png" alt="">
-
-                <!--<img src="assets/images/shop/drilling-machine.png" alt="">-->
+          <div  class="departments mt-4">
+            <div class="title">Department</div>
+            <div class="department-name" data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseOne">
+              <label class="custom-label">
+                <input type="checkbox" class="custom-control">
+                <span class="custom-checkbox"></span>
+                Basements
+              </label>
+            </div>
+            <div class="collapse" id="collapseOne">
+              <div class="department-subcategories">
+                <div class="item">Basement subcategory</div>
+                <div class="item">Basement subcategory</div>
+                <div class="item">Basement subcategory</div>
               </div>
-              <div class="info">
-                <div class="rating">
-                  <div class="rating-images">
-                    <img src="assets/images/shop/star-purple.png" alt="">
-                    <img src="assets/images/shop/star-purple.png" alt="">
-                    <img src="assets/images/shop/star-purple.png" alt="">
-                    <img src="assets/images/shop/star-purple.png" alt="">
-                    <img src="assets/images/shop/start-transparent.png" alt="">
-                  </div>
-                  <span>169</span>
-                </div>
-
-                <div class="price">$149.99</div>
-                <div class="product-name">
-                  Prodcut name Prodcut name
-                  Prodcut name
-                </div>
-                <div class="see-details">
-                  <img src="assets/images/shop/amazon-icon.png" alt="">
-                  <span>See Details</span>
-                </div>
+            </div>
+            <div class="department-name" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">
+              <label class="custom-label">
+                <input type="checkbox" class="custom-control">
+                <span class="custom-checkbox"></span>
+                Roofing
+              </label>
+            </div>
+            <div class="collapse" id="collapseTwo">
+              <div class="department-subcategories">
+                <div class="item">Roofing subcategory</div>
+                <div class="item">Roofing subcategory</div>
+                <div class="item">Roofing subcategory</div>
+              </div>
+            </div>
+            <div class="department-name" data-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree">
+              <label class="custom-label">
+                <input type="checkbox" class="custom-control">
+                <span class="custom-checkbox"></span>
+                3D Design
+              </label>
+            </div>
+            <div class="collapse" id="collapseThree">
+              <div class="department-subcategories">
+                <div class="item">3D Design subcategory</div>
+                <div class="item">3D Design subcategory</div>
+                <div class="item">3D Design subcategory</div>
               </div>
             </div>
 
+
+          </div>
+        </div>
+      </div>
+      <div class="col content-wrap-col">
+        <div class="content-wrap">
+          <div class="row">
+            <div class="col-12 col-md-6 col-xl-4 shopping-item-col mb-4">
+              <div class="shopping-item">
+                <div class="decoration-element"></div>
+                <div class="shopping-item-inner">
+                  <div class="image">
+                    <img src="assets/images/shop/drill.png" alt="">
+                  </div>
+                  <div class="info">
+                    <div class="rating">
+                      <div class="rating-images">
+                        <img src="assets/images/shop/star-purple.png" alt="">
+                        <img src="assets/images/shop/star-purple.png" alt="">
+                        <img src="assets/images/shop/star-purple.png" alt="">
+                        <img src="assets/images/shop/star-purple.png" alt="">
+                        <img src="assets/images/shop/start-transparent.png" alt="">
+                      </div>
+                      <span class="rate">169</span>
+                    </div>
+
+                    <div class="price">$149.99</div>
+                    <div class="product-name">
+                      Prodcut name Prodcut name
+                      Prodcut name
+                    </div>
+                    <a href="#" class="see-details">
+                      <img src="assets/images/shop/amazon-icon.png" alt="">
+                      <span>See Details</span>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-4 shopping-item-col mb-4">
+              <div class="shopping-item">
+                <div class="decoration-element"></div>
+                <div class="shopping-item-inner">
+                  <div class="image">
+                    <img src="assets/images/shop/drilling-machine.png" alt="">
+                  </div>
+                  <div class="info">
+                    <div class="rating">
+                      <div class="rating-images">
+                        <img src="assets/images/shop/star-purple.png" alt="">
+                        <img src="assets/images/shop/star-purple.png" alt="">
+                        <img src="assets/images/shop/star-purple.png" alt="">
+                        <img src="assets/images/shop/star-purple.png" alt="">
+                        <img src="assets/images/shop/start-transparent.png" alt="">
+                      </div>
+                      <span class="rate">169</span>
+                    </div>
+
+                    <div class="price">$149.99</div>
+                    <div class="product-name">
+                      Prodcut name Prodcut name
+                      Prodcut name
+                    </div>
+                    <a href="#" class="see-details">
+                      <img src="assets/images/shop/amazon-icon.png" alt="">
+                      <span>See Details</span>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-4 shopping-item-col mb-4">
+              <div class="shopping-item">
+                <div class="decoration-element"></div>
+                <div class="shopping-item-inner">
+                  <div class="image">
+                    <img src="assets/images/shop/drill.png" alt="">
+                  </div>
+                  <div class="info">
+                    <div class="rating">
+                      <div class="rating-images">
+                        <img src="assets/images/shop/star-purple.png" alt="">
+                        <img src="assets/images/shop/star-purple.png" alt="">
+                        <img src="assets/images/shop/star-purple.png" alt="">
+                        <img src="assets/images/shop/star-purple.png" alt="">
+                        <img src="assets/images/shop/start-transparent.png" alt="">
+                      </div>
+                      <span class="rate">169</span>
+                    </div>
+
+                    <div class="price">$149.99</div>
+                    <div class="product-name">
+                      Prodcut name Prodcut name
+                      Prodcut name
+                    </div>
+                    <a href="#" class="see-details">
+                      <img src="assets/images/shop/amazon-icon.png" alt="">
+                      <span>See Details</span>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-4 shopping-item-col mb-4">
+              <div class="shopping-item">
+                <div class="label">On Sale</div>
+                <div class="decoration-element"></div>
+                <div class="shopping-item-inner">
+                  <div class="image">
+                    <img src="assets/images/shop/drilling-machine.png" alt="">
+                  </div>
+                  <div class="info">
+                    <div class="rating">
+                      <div class="rating-images">
+                        <img src="assets/images/shop/star-purple.png" alt="">
+                        <img src="assets/images/shop/star-purple.png" alt="">
+                        <img src="assets/images/shop/star-purple.png" alt="">
+                        <img src="assets/images/shop/star-purple.png" alt="">
+                        <img src="assets/images/shop/start-transparent.png" alt="">
+                      </div>
+                      <span class="rate">169</span>
+                    </div>
+
+                    <div class="price">$149.99</div>
+                    <div class="product-name">
+                      Prodcut name Prodcut name
+                      Prodcut name
+                    </div>
+                    <a href="#" class="see-details">
+                      <img src="assets/images/shop/amazon-icon.png" alt="">
+                      <span>See Details</span>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 shopping-item-col mb-4">
+              <div class="shopping-item">
+                <div class="decoration-element"></div>
+                <div class="shopping-item-inner">
+                  <div class="image">
+                    <img src="assets/images/shop/drill.png" alt="">
+                  </div>
+                  <div class="info">
+                    <div class="rating">
+                      <div class="rating-images">
+                        <img src="assets/images/shop/star-purple.png" alt="">
+                        <img src="assets/images/shop/star-purple.png" alt="">
+                        <img src="assets/images/shop/star-purple.png" alt="">
+                        <img src="assets/images/shop/star-purple.png" alt="">
+                        <img src="assets/images/shop/start-transparent.png" alt="">
+                      </div>
+                      <span class="rate">169</span>
+                    </div>
+
+                    <div class="price">$149.99</div>
+                    <div class="product-name">
+                      Prodcut name Prodcut name
+                      Prodcut name
+                    </div>
+                    <a href="#" class="see-details">
+                      <img src="assets/images/shop/amazon-icon.png" alt="">
+                      <span>See Details</span>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-4 shopping-item-col mb-4">
+              <div class="shopping-item">
+                <div class="decoration-element"></div>
+                <div class="shopping-item-inner">
+                  <div class="image">
+                    <img src="assets/images/shop/drilling-machine.png" alt="">
+                  </div>
+                  <div class="info">
+                    <div class="rating">
+                      <div class="rating-images">
+                        <img src="assets/images/shop/star-purple.png" alt="">
+                        <img src="assets/images/shop/star-purple.png" alt="">
+                        <img src="assets/images/shop/star-purple.png" alt="">
+                        <img src="assets/images/shop/star-purple.png" alt="">
+                        <img src="assets/images/shop/start-transparent.png" alt="">
+                      </div>
+                      <span class="rate">169</span>
+                    </div>
+
+                    <div class="price">$149.99</div>
+                    <div class="product-name">
+                      Prodcut name Prodcut name
+                      Prodcut name
+                    </div>
+                    <a href="#" class="see-details">
+                      <img src="assets/images/shop/amazon-icon.png" alt="">
+                      <span>See Details</span>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-4 shopping-item-col mb-4">
+              <div class="shopping-item">
+                <div class="decoration-element"></div>
+                <div class="shopping-item-inner">
+                  <div class="image">
+                    <img src="assets/images/shop/drill.png" alt="">
+                  </div>
+                  <div class="info">
+                    <div class="rating">
+                      <div class="rating-images">
+                        <img src="assets/images/shop/star-purple.png" alt="">
+                        <img src="assets/images/shop/star-purple.png" alt="">
+                        <img src="assets/images/shop/star-purple.png" alt="">
+                        <img src="assets/images/shop/star-purple.png" alt="">
+                        <img src="assets/images/shop/start-transparent.png" alt="">
+                      </div>
+                      <span class="rate">169</span>
+                    </div>
+
+                    <div class="price">$149.99</div>
+                    <div class="product-name">
+                      Prodcut name Prodcut name
+                      Prodcut name
+                    </div>
+                    <a href="#" class="see-details">
+                      <img src="assets/images/shop/amazon-icon.png" alt="">
+                      <span>See Details</span>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-4 shopping-item-col mb-4">
+              <div class="shopping-item">
+                <div class="label">On Sale</div>
+                <div class="decoration-element"></div>
+                <div class="shopping-item-inner">
+                  <div class="image">
+                    <img src="assets/images/shop/drilling-machine.png" alt="">
+                  </div>
+                  <div class="info">
+                    <div class="rating">
+                      <div class="rating-images">
+                        <img src="assets/images/shop/star-purple.png" alt="">
+                        <img src="assets/images/shop/star-purple.png" alt="">
+                        <img src="assets/images/shop/star-purple.png" alt="">
+                        <img src="assets/images/shop/star-purple.png" alt="">
+                        <img src="assets/images/shop/start-transparent.png" alt="">
+                      </div>
+                      <span class="rate">169</span>
+                    </div>
+
+                    <div class="price">$149.99</div>
+                    <div class="product-name">
+                      Prodcut name Prodcut name
+                      Prodcut name
+                    </div>
+                    <a href="#" class="see-details">
+                      <img src="assets/images/shop/amazon-icon.png" alt="">
+                      <span>See Details</span>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
   </section>
 
 </main>
