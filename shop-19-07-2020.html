@@ -21,6 +21,7 @@
   <script defer src="assets/js/user_tracking.es5.min.js"></script>
   <!-- For filter collapse -->
   <script defer src="assets/js/collapse.min.js"></script>
+  <script defer src="assets/js/shop.js"></script>
   <link href="assets/css/web.css?v=zdYFwmlYct0GLpJuVa6g6MRNGSRNPStzGMGgu0GMP0Q" rel="stylesheet" />
   <link href="assets/css/shop.css" rel="stylesheet" />
   <script defer src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5db044b3309e51d4"></script>
@@ -174,296 +175,305 @@
 
       <div class="row">
         <div class="col-auto filter-col">
-          <div class="filter-outer active">
+          <div class="filter-outer">
             <div class="filter-heading">
-              <span class="title font-weight-bold font-18">Filter</span>
+              <span class="title">Filter</span>
               <button type="button" class="filter-btn">
-                <i class="fad fa-filter"></i>
+                <img class="filter-icon" src="assets/images/icons/filter.svg"/>
                 <span class="font-10">Filter</span>
               </button>
             </div>
             <div class="filter-inner">
-              <div class="filter-backlayer"></div>
+              <div class="filter-backlayer">
+                <span class="close-filter"></span>
+              </div>
               <div class="filter">
-
-                <div class="types">
-                  <div class="title">Types</div>
-                  <div class="types-inner">
-                    <div class="type">Long Type</div>
-                    <div class="type">Type</div>
-                    <div class="type active">Type</div>
-                    <div class="type">Very Long Type</div>
-                    <div class="type">Type</div>
-                    <div class="type">Type</div>
-                    <div class="type active">Very Long Type</div>
-                    <div class="type">Type</div>
+                <div class="filter-header">
+                  <span class="">Filter</span>
+                  <!-- Close filter button -->
+                  <div class="close-filter">
+                    <img class="close-filter-icon" src="assets/images/icons/close.svg"/>
                   </div>
                 </div>
-                <div  class="departments mt-4">
-                  <div class="title">Department</div>
-
-                  <div class="department-name" data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseOne">
-                    <label class="custom-label">
-                      <input type="checkbox" class="custom-control">
-                      <span class="custom-checkbox"></span>
-                      Basements
-                      <img class="chevron" src="assets/images/icons/arrow-chevron-down.svg" alt="">
-                    </label>
+                <div class="filter-body">
+                  <div class="types">
+                    <div class="title">Types</div>
+                    <div class="types-inner">
+                      <div class="type">Long Type</div>
+                      <div class="type">Type</div>
+                      <div class="type active">Type</div>
+                      <div class="type">Very Long Type</div>
+                      <div class="type">Type</div>
+                      <div class="type">Type</div>
+                      <div class="type active">Very Long Type</div>
+                      <div class="type">Type</div>
+                    </div>
                   </div>
-                  <div class="collapse show" id="collapseOne">
-                    <div class="department-subcategories">
-                      <div class="item">
-                        <div class="item-subcategories">
-                          <div class="subcategory-item">
-                            <label class="custom-label">
-                              <input type="checkbox" class="custom-control">
-                              <span class="custom-checkbox"></span>
-                              Subcategory
-                            </label>
+                  <div  class="departments mt-4">
+                    <div class="title">Department</div>
+
+                    <div class="department-name" data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="false" aria-controls="collapseOne">
+                      <label class="custom-label">
+                        <input type="checkbox" class="custom-control">
+                        <span class="custom-checkbox"></span>
+                        Basements
+                        <img class="chevron" src="assets/images/icons/arrow-chevron-down.svg" alt="">
+                      </label>
+                    </div>
+                    <div class="collapse show" id="collapseOne">
+                      <div class="department-subcategories">
+                        <div class="item">
+                          <div class="item-subcategories">
+                            <div class="subcategory-item">
+                              <label class="custom-label">
+                                <input type="checkbox" class="custom-control">
+                                <span class="custom-checkbox"></span>
+                                Subcategory
+                              </label>
+                            </div>
+                            <div class="subcategory-item">
+                              <label class="custom-label">
+                                <input type="checkbox" class="custom-control">
+                                <span class="custom-checkbox"></span>
+                                Subcategory
+                              </label>
+                            </div>
+                            <div class="subcategory-item">
+                              <label class="custom-label">
+                                <input type="checkbox" class="custom-control">
+                                <span class="custom-checkbox"></span>
+                                Subcategory
+                              </label>
+                            </div>
+                            <div class="subcategory-item">
+                              <label class="custom-label">
+                                <input type="checkbox" class="custom-control">
+                                <span class="custom-checkbox"></span>
+                                Subcategory
+                              </label>
+                            </div>
+                            <div class="subcategory-item">
+                              <label class="custom-label">
+                                <input type="checkbox" class="custom-control">
+                                <span class="custom-checkbox"></span>
+                                Subcategory
+                              </label>
+                            </div>
                           </div>
-                          <div class="subcategory-item">
-                            <label class="custom-label">
-                              <input type="checkbox" class="custom-control">
-                              <span class="custom-checkbox"></span>
-                              Subcategory
-                            </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="department-name" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">
+                      <label class="custom-label">
+                        <input type="checkbox" class="custom-control">
+                        <span class="custom-checkbox"></span>
+                        Roofing
+                        <img class="chevron" src="assets/images/icons/arrow-chevron-down.svg" alt="">
+                      </label>
+                    </div>
+                    <div class="collapse show" id="collapseTwo">
+                      <div class="department-subcategories">
+                        <div class="item">
+                          <div class="item-subcategories">
+                            <div class="subcategory-item">
+                              <label class="custom-label">
+                                <input type="checkbox" class="custom-control">
+                                <span class="custom-checkbox"></span>
+                                Subcategory
+                              </label>
+                            </div>
+                            <div class="subcategory-item">
+                              <label class="custom-label">
+                                <input type="checkbox" class="custom-control">
+                                <span class="custom-checkbox"></span>
+                                Subcategory
+                              </label>
+                            </div>
+                            <div class="subcategory-item">
+                              <label class="custom-label">
+                                <input type="checkbox" class="custom-control">
+                                <span class="custom-checkbox"></span>
+                                Subcategory
+                              </label>
+                            </div>
+                            <div class="subcategory-item">
+                              <label class="custom-label">
+                                <input type="checkbox" class="custom-control">
+                                <span class="custom-checkbox"></span>
+                                Subcategory
+                              </label>
+                            </div>
+                            <div class="subcategory-item">
+                              <label class="custom-label">
+                                <input type="checkbox" class="custom-control">
+                                <span class="custom-checkbox"></span>
+                                Subcategory
+                              </label>
+                            </div>
                           </div>
-                          <div class="subcategory-item">
-                            <label class="custom-label">
-                              <input type="checkbox" class="custom-control">
-                              <span class="custom-checkbox"></span>
-                              Subcategory
-                            </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="department-name" data-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree">
+                      <label class="custom-label">
+                        <input type="checkbox" class="custom-control">
+                        <span class="custom-checkbox"></span>
+                        3D Design
+                        <img class="chevron" src="assets/images/icons/arrow-chevron-down.svg" alt="">
+                      </label>
+                    </div>
+                    <div class="collapse show" id="collapseThree">
+                      <div class="department-subcategories">
+                        <div class="item">
+                          <div class="item-subcategories">
+                            <div class="subcategory-item">
+                              <label class="custom-label">
+                                <input type="checkbox" class="custom-control">
+                                <span class="custom-checkbox"></span>
+                                Subcategory
+                              </label>
+                            </div>
+                            <div class="subcategory-item">
+                              <label class="custom-label">
+                                <input type="checkbox" class="custom-control">
+                                <span class="custom-checkbox"></span>
+                                Subcategory
+                              </label>
+                            </div>
+                            <div class="subcategory-item">
+                              <label class="custom-label">
+                                <input type="checkbox" class="custom-control">
+                                <span class="custom-checkbox"></span>
+                                Subcategory
+                              </label>
+                            </div>
+                            <div class="subcategory-item">
+                              <label class="custom-label">
+                                <input type="checkbox" class="custom-control">
+                                <span class="custom-checkbox"></span>
+                                Subcategory
+                              </label>
+                            </div>
+                            <div class="subcategory-item">
+                              <label class="custom-label">
+                                <input type="checkbox" class="custom-control">
+                                <span class="custom-checkbox"></span>
+                                Subcategory
+                              </label>
+                            </div>
                           </div>
-                          <div class="subcategory-item">
-                            <label class="custom-label">
-                              <input type="checkbox" class="custom-control">
-                              <span class="custom-checkbox"></span>
-                              Subcategory
-                            </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="department-name" data-toggle="collapse" href="#collapseFour" role="button" aria-expanded="false" aria-controls="collapseFour">
+                      <label class="custom-label">
+                        <input type="checkbox" class="custom-control">
+                        <span class="custom-checkbox"></span>
+                        Attics
+                        <img class="chevron" src="assets/images/icons/arrow-chevron-down.svg" alt="">
+                      </label>
+                    </div>
+                    <div class="collapse show" id="collapseFour">
+                      <div class="department-subcategories">
+                        <div class="item">
+                          <div class="item-subcategories">
+                            <div class="subcategory-item">
+                              <label class="custom-label">
+                                <input type="checkbox" class="custom-control">
+                                <span class="custom-checkbox"></span>
+                                Subcategory
+                              </label>
+                            </div>
+                            <div class="subcategory-item">
+                              <label class="custom-label">
+                                <input type="checkbox" class="custom-control">
+                                <span class="custom-checkbox"></span>
+                                Subcategory
+                              </label>
+                            </div>
+                            <div class="subcategory-item">
+                              <label class="custom-label">
+                                <input type="checkbox" class="custom-control">
+                                <span class="custom-checkbox"></span>
+                                Subcategory
+                              </label>
+                            </div>
+                            <div class="subcategory-item">
+                              <label class="custom-label">
+                                <input type="checkbox" class="custom-control">
+                                <span class="custom-checkbox"></span>
+                                Subcategory
+                              </label>
+                            </div>
+                            <div class="subcategory-item">
+                              <label class="custom-label">
+                                <input type="checkbox" class="custom-control">
+                                <span class="custom-checkbox"></span>
+                                Subcategory
+                              </label>
+                            </div>
                           </div>
-                          <div class="subcategory-item">
-                            <label class="custom-label">
-                              <input type="checkbox" class="custom-control">
-                              <span class="custom-checkbox"></span>
-                              Subcategory
-                            </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="department-name" data-toggle="collapse" href="#collapseFive" role="button" aria-expanded="false" aria-controls="collapseFive">
+                      <label class="custom-label">
+                        <input type="checkbox" class="custom-control">
+                        <span class="custom-checkbox"></span>
+                        Cabanas & Arbors
+                        <img class="chevron" src="assets/images/icons/arrow-chevron-down.svg" alt="">
+                      </label>
+                    </div>
+                    <div class="collapse show" id="collapseFive">
+                      <div class="department-subcategories">
+                        <div class="item">
+                          <div class="item-subcategories">
+                            <div class="subcategory-item">
+                              <label class="custom-label">
+                                <input type="checkbox" class="custom-control">
+                                <span class="custom-checkbox"></span>
+                                Subcategory
+                              </label>
+                            </div>
+                            <div class="subcategory-item">
+                              <label class="custom-label">
+                                <input type="checkbox" class="custom-control">
+                                <span class="custom-checkbox"></span>
+                                Subcategory
+                              </label>
+                            </div>
+                            <div class="subcategory-item">
+                              <label class="custom-label">
+                                <input type="checkbox" class="custom-control">
+                                <span class="custom-checkbox"></span>
+                                Subcategory
+                              </label>
+                            </div>
+                            <div class="subcategory-item">
+                              <label class="custom-label">
+                                <input type="checkbox" class="custom-control">
+                                <span class="custom-checkbox"></span>
+                                Subcategory
+                              </label>
+                            </div>
+                            <div class="subcategory-item">
+                              <label class="custom-label">
+                                <input type="checkbox" class="custom-control">
+                                <span class="custom-checkbox"></span>
+                                Subcategory
+                              </label>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-
-                  <div class="department-name" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">
-                    <label class="custom-label">
-                      <input type="checkbox" class="custom-control">
-                      <span class="custom-checkbox"></span>
-                      Roofing
-                      <img class="chevron" src="assets/images/icons/arrow-chevron-down.svg" alt="">
-                    </label>
-                  </div>
-                  <div class="collapse show" id="collapseTwo">
-                    <div class="department-subcategories">
-                      <div class="item">
-                        <div class="item-subcategories">
-                          <div class="subcategory-item">
-                            <label class="custom-label">
-                              <input type="checkbox" class="custom-control">
-                              <span class="custom-checkbox"></span>
-                              Subcategory
-                            </label>
-                          </div>
-                          <div class="subcategory-item">
-                            <label class="custom-label">
-                              <input type="checkbox" class="custom-control">
-                              <span class="custom-checkbox"></span>
-                              Subcategory
-                            </label>
-                          </div>
-                          <div class="subcategory-item">
-                            <label class="custom-label">
-                              <input type="checkbox" class="custom-control">
-                              <span class="custom-checkbox"></span>
-                              Subcategory
-                            </label>
-                          </div>
-                          <div class="subcategory-item">
-                            <label class="custom-label">
-                              <input type="checkbox" class="custom-control">
-                              <span class="custom-checkbox"></span>
-                              Subcategory
-                            </label>
-                          </div>
-                          <div class="subcategory-item">
-                            <label class="custom-label">
-                              <input type="checkbox" class="custom-control">
-                              <span class="custom-checkbox"></span>
-                              Subcategory
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="department-name" data-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree">
-                    <label class="custom-label">
-                      <input type="checkbox" class="custom-control">
-                      <span class="custom-checkbox"></span>
-                      3D Design
-                      <img class="chevron" src="assets/images/icons/arrow-chevron-down.svg" alt="">
-                    </label>
-                  </div>
-                  <div class="collapse show" id="collapseThree">
-                    <div class="department-subcategories">
-                      <div class="item">
-                        <div class="item-subcategories">
-                          <div class="subcategory-item">
-                            <label class="custom-label">
-                              <input type="checkbox" class="custom-control">
-                              <span class="custom-checkbox"></span>
-                              Subcategory
-                            </label>
-                          </div>
-                          <div class="subcategory-item">
-                            <label class="custom-label">
-                              <input type="checkbox" class="custom-control">
-                              <span class="custom-checkbox"></span>
-                              Subcategory
-                            </label>
-                          </div>
-                          <div class="subcategory-item">
-                            <label class="custom-label">
-                              <input type="checkbox" class="custom-control">
-                              <span class="custom-checkbox"></span>
-                              Subcategory
-                            </label>
-                          </div>
-                          <div class="subcategory-item">
-                            <label class="custom-label">
-                              <input type="checkbox" class="custom-control">
-                              <span class="custom-checkbox"></span>
-                              Subcategory
-                            </label>
-                          </div>
-                          <div class="subcategory-item">
-                            <label class="custom-label">
-                              <input type="checkbox" class="custom-control">
-                              <span class="custom-checkbox"></span>
-                              Subcategory
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="department-name" data-toggle="collapse" href="#collapseFour" role="button" aria-expanded="false" aria-controls="collapseFour">
-                    <label class="custom-label">
-                      <input type="checkbox" class="custom-control">
-                      <span class="custom-checkbox"></span>
-                      Attics
-                      <img class="chevron" src="assets/images/icons/arrow-chevron-down.svg" alt="">
-                    </label>
-                  </div>
-                  <div class="collapse show" id="collapseFour">
-                    <div class="department-subcategories">
-                      <div class="item">
-                        <div class="item-subcategories">
-                          <div class="subcategory-item">
-                            <label class="custom-label">
-                              <input type="checkbox" class="custom-control">
-                              <span class="custom-checkbox"></span>
-                              Subcategory
-                            </label>
-                          </div>
-                          <div class="subcategory-item">
-                            <label class="custom-label">
-                              <input type="checkbox" class="custom-control">
-                              <span class="custom-checkbox"></span>
-                              Subcategory
-                            </label>
-                          </div>
-                          <div class="subcategory-item">
-                            <label class="custom-label">
-                              <input type="checkbox" class="custom-control">
-                              <span class="custom-checkbox"></span>
-                              Subcategory
-                            </label>
-                          </div>
-                          <div class="subcategory-item">
-                            <label class="custom-label">
-                              <input type="checkbox" class="custom-control">
-                              <span class="custom-checkbox"></span>
-                              Subcategory
-                            </label>
-                          </div>
-                          <div class="subcategory-item">
-                            <label class="custom-label">
-                              <input type="checkbox" class="custom-control">
-                              <span class="custom-checkbox"></span>
-                              Subcategory
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="department-name" data-toggle="collapse" href="#collapseFive" role="button" aria-expanded="false" aria-controls="collapseFive">
-                    <label class="custom-label">
-                      <input type="checkbox" class="custom-control">
-                      <span class="custom-checkbox"></span>
-                      Cabanas & Arbors
-                      <img class="chevron" src="assets/images/icons/arrow-chevron-down.svg" alt="">
-                    </label>
-                  </div>
-                  <div class="collapse show" id="collapseFive">
-                    <div class="department-subcategories">
-                      <div class="item">
-                        <div class="item-subcategories">
-                          <div class="subcategory-item">
-                            <label class="custom-label">
-                              <input type="checkbox" class="custom-control">
-                              <span class="custom-checkbox"></span>
-                              Subcategory
-                            </label>
-                          </div>
-                          <div class="subcategory-item">
-                            <label class="custom-label">
-                              <input type="checkbox" class="custom-control">
-                              <span class="custom-checkbox"></span>
-                              Subcategory
-                            </label>
-                          </div>
-                          <div class="subcategory-item">
-                            <label class="custom-label">
-                              <input type="checkbox" class="custom-control">
-                              <span class="custom-checkbox"></span>
-                              Subcategory
-                            </label>
-                          </div>
-                          <div class="subcategory-item">
-                            <label class="custom-label">
-                              <input type="checkbox" class="custom-control">
-                              <span class="custom-checkbox"></span>
-                              Subcategory
-                            </label>
-                          </div>
-                          <div class="subcategory-item">
-                            <label class="custom-label">
-                              <input type="checkbox" class="custom-control">
-                              <span class="custom-checkbox"></span>
-                              Subcategory
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-
                 </div>
+
               </div>
             </div>
 
