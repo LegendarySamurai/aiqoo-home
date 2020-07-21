@@ -4,6 +4,21 @@
 @import 'vendor/bootstrap.custom/container';
 
 .shop {
+  .label {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 22px;
+    line-height: 22px;
+    padding: 0 20px;
+    font-weight: 400;
+    font-size: 12pt;
+    color: #585077;
+    cursor: pointer;
+  }
+
   // Custom checkbox
   .custom-label {
     display: block;
