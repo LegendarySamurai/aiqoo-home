@@ -279,6 +279,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        width: 100%;
         padding-top: 20px;
         font-family: $main-font;
       }
@@ -302,7 +303,6 @@
 
           img {
             width: 10px;
-            //height: 8px;
             margin-right: 4px;
           }
         }
@@ -322,29 +322,50 @@
         color: #000;
       }
 
-      .see-details {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
+      .buttons {
         width: 100%;
         height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         margin-top: 20px;
+      }
+
+      .amazon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 100%;
+        margin-right: 20px;
+        background-color: #585077;
+        border-radius: 5px;
+        cursor: pointer;
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      .see-details {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        width: auto;
+        height: 100%;
         padding: 0 20px;
         border-radius: 5px;
         background-color: #585077;
         cursor: pointer;
 
         span {
-          margin: 0 auto;
+          //margin: 0 auto;
           font-weight: 400;
           font-size: 13pt;
           color: #fff;
-        }
-
-        img {
-          width: 20px;
-          height: 20px;
         }
       }
     }
