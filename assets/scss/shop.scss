@@ -400,7 +400,6 @@
 
     .filter-outer {
       &.active {
-
         .filter-heading {
           pointer-events: none;
 
@@ -473,7 +472,9 @@
         }
 
         .filter-body {
+          height: 100%;
           padding: 20px 20px;
+          overflow: auto;
         }
 
         .filter {
@@ -481,7 +482,6 @@
           z-index: 100;
           width: 96%;
           height: 94vh;
-          overflow: auto;
           margin: 30px auto 0;
           border-top-right-radius: 6px;
           border-top-left-radius: 6px;
