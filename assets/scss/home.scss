@@ -295,22 +295,6 @@ body {
         padding-bottom: 40px;
         background-color: #fff;
     }
-
-    // Services
-    section.services {
-        .services-list {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 0 !important;
-        }
-
-        .services-list-col {
-            width: 23% !important;
-            margin-bottom: 20px;
-        }
-    }
 }
 
 
@@ -338,17 +322,6 @@ body {
         .questionnaire {
             .questionnaire-title {
                 font-size: 20pt;
-            }
-        }
-
-        // Services
-        section.services {
-            .services-list {
-                justify-content: flex-start;
-            }
-
-            .services-list-col {
-                width: 31% !important;
             }
         }
     }
@@ -444,13 +417,6 @@ body {
                 padding: 0 216px 0 130px;
             }
         }
-
-        // Services
-        section.services {
-            .services-list-col {
-                width: 31% !important;
-            }
-        }
     }
 
     @media(max-width: 767px) {
@@ -477,17 +443,6 @@ body {
                 button {
                     height: 35px !important;
                 }
-            }
-        }
-
-        // Services
-        section.services {
-            .services-list {
-                justify-content: space-between;
-            }
-
-            .services-list-col {
-                width: 48% !important;
             }
         }
     }
@@ -566,19 +521,6 @@ body {
                 p {
                     color: #585077;
                 }
-            }
-        }
-
-        // Services
-        section.services {
-            .services-list {
-                justify-content: center;
-                margin-top: 20px;
-            }
-
-            .services-list-col {
-                width: 100% !important;
-                max-width: 350px;
             }
         }
     }
