@@ -5,7 +5,7 @@ console.log("Map Functions map.js v=0.1");
 
 var bgMap, indexMap, geocoder;
 var bgZoom = 5.6;
-var indexZoom = 11;
+var indexZoom = 10;
 var latCoord = 39.8333333;
 var longCoord = -98.585522;
 

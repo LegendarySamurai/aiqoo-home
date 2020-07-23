@@ -1,0 +1,82 @@
+.services {
+  background-image: linear-gradient(to bottom, #ffffff, #f4eee4);
+  //background: -webkit-linear-gradient(top, #fff 0%, #fff 20%, #dfd2ae 40%, rgba(223,210,174,0.5) 70%, rgba(223,210,174,0.5) 100%);
+  //background: -moz-linear-gradient(top, #fff 0%, #fff 20%, #dfd2ae 40%, rgba(223,210,174,0.5) 70%, rgba(223,210,174,0.5) 100%);
+  //background: linear-gradient(to top, #fff 0%, #fff 20%, #dfd2ae 40%, rgba(223,210,174,0.5) 70%, rgba(223,210,174,0.5) 100%);
+  //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfd2ae', endColorstr='#007db9e8',GradientType=0 );
+
+  .services-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 !important;
+  }
+
+  .services-list-col {
+    width: 25% !important;
+    padding: 0 15px;
+    flex-grow: unset;
+    flex-basis: unset;
+
+    .services-list-item {
+      position: relative;
+      margin-bottom: 20px;
+      padding: 15px 25px;
+      border-radius: 20px;
+      box-shadow: 0 7.5px 27.5px 0 rgba(0, 0, 0, 0.1);
+      background-color: #ffffff;
+
+      &::after {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: -3px;
+        transform: translate(0, -50%);
+        width: 6px;
+        height: 90%;
+        background-color: #585077;
+        border-radius: 50px 0 0 50px;
+      }
+    }
+  }
+}
+
+.services {
+  @media(max-width: 1199px) {
+    .services-list {
+      .services-list-col {
+        width: 33.3% !important;
+      }
+    }
+  }
+
+  @media(max-width: 767px) {
+    .section-container {
+      max-width: 96%;
+    }
+
+    .services-list {
+      .services-list-col {
+        width: 50% !important;
+      }
+    }
+  }
+
+  @media(max-width: 599px) {
+    .services-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-top: 20px;
+
+      .services-list-col {
+        width: 100% !important;
+        max-width: 350px;
+        margin-bottom: 20px !important;
+      }
+    }
+  }
+}

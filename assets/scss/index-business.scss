@@ -1,0 +1,244 @@
+@import './video';
+@import './helpers/variables';
+
+.index-business {
+  .section-top {
+    margin-top: -70px;
+    height: 390px;
+    background-image: url('../../assets/images/bg/index_business-bg-d.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .inner-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  // Aside
+  .side-block {
+    flex-shrink: 0;
+    width: 286px;
+    background-color: transparentize(darkgoldenrod, .5); //
+
+    .item {
+      border-bottom: 1px solid #e7e7e7;
+    }
+
+    .icon {
+      width: 16px;
+      margin-right: 5px;
+    }
+  }
+
+  // Content-wrap
+  .content-wrap {
+    flex-grow: 1;
+    width: auto;
+  }
+
+  // Section top
+  .section-top {
+    .inner {
+      transform: translate(0%, 60%);
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .image-container {
+      width: 286px;
+      height: 286px;
+      border: 4px solid #fff;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .content-block {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: auto;
+      flex: 1 1 auto;
+      padding: 20px 0 0 20px;
+      font-family: $main-font;
+      background-color: transparentize(darkolivegreen, .5); //
+
+      .heading {
+        font-size: 25pt;
+      }
+
+      .reviews-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0;
+        color: #d8cdba;
+
+        .rating-container {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          .rating {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+          }
+
+          .star {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+
+            img {
+              width: 100%;
+              height: 100%;
+
+              fill: red;
+            }
+          }
+        }
+
+        .rate-index {
+          font-size: 16pt;
+        }
+
+        .reviews {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          font-size: 16pt;
+        }
+
+        .reviews-index {
+          margin-right: 10px;
+        }
+
+        .divider {
+          margin: 0 10px;
+        }
+
+        .add-review {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          width: 160px;
+          margin-left: 20px;
+          padding: .5rem 1rem;
+          border: solid 1px #d8cdba;
+          background-color: rgba(0, 0, 0, 0.25);
+          font-size: 13pt;
+
+          img {
+            width: 10px;
+          }
+        }
+
+        .location {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          font-size: 16pt;
+
+          img {
+            display: block;
+            margin-right: 5px;
+          }
+        }
+      }
+
+      .location {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        span {
+          margin-left: 10px;
+        }
+      }
+
+      .tabs {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        margin-top: 60px;
+
+        .tab {
+          position: relative;
+          margin-right: 10%;
+          padding-bottom: 30px;
+          font-weight: 900;
+          font-size: 18pt;
+          white-space: nowrap;
+          cursor: pointer;
+
+          &.active {
+            &::after {
+              position: absolute;
+              bottom: 0;
+              left: 50%;
+              transform: translate(-50%, 0);
+              display: block;
+              content: '';
+              width: 100%;
+              height: 6px;
+              background-color: #d8cdba;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  // Section about-us
+  .about-us {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 90px;
+    background-color: #fff;
+
+    .video-container {
+      flex-shrink: 0;
+      width: 40%;
+      max-width: 480px;
+      height: 250px;
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      width: auto;
+      flex-grow: 1;
+      padding-left: 20px;
+    }
+
+    .read-more {
+      align-self: flex-end;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      cursor: pointer;
+
+      img {
+        width: 16px;
+        padding-top: 3px;
+        margin-left: 5px;
+      }
+
+      span {
+        font-size: 13pt;
+      }
+    }
+  }
+}

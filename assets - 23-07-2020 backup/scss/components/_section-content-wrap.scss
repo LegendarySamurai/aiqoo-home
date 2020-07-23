@@ -1,0 +1,79 @@
+// Section "Content wrap"
+.content-wrap {
+  .content {
+    position: relative;
+    z-index: 10;
+    margin-top: -10vh;
+    padding: 0 3% 2%;
+    background-color: #fff;
+    border-top: 17px solid #d8cdba;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 1.5px 15px 0 rgba(50,81,129,0.2);
+  }
+
+  h2 {
+    font-size: 30pt;
+  }
+
+  .text-content {
+    margin-top: 20px;
+
+    .text {
+      padding: 0;
+      font-family: 'Helvetica','Arial',sans-serif;
+      font-weight: 400;
+      font-size: 14pt;
+      color: #585858;
+    }
+  }
+
+  .logo-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .tool-container {
+    width: 45px;
+    height: 45px;
+  }
+
+  .img-container {
+    width: 190px;
+    height: 54px;
+    margin-left: 10px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.content-wrap {
+  @media(max-width: 1299px) {
+    h2 {
+      font-size: 28pt !important;
+    }
+  }
+
+  @media(max-width: 599px) {
+    h2 {
+      font-size: 26pt !important;
+    }
+
+    .content {
+      max-width: 90% !important;
+    }
+  }
+
+  @media(max-width: 374px) {
+    h2 {
+      font-size: 24pt !important;
+    }
+
+    .content {
+      margin-top: -30px !important;
+    }
+  }
+}

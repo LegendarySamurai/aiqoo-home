@@ -1,0 +1,199 @@
+/*-------------------------------
+            Helpers
+    ---------------------------
+*/
+
+.w-100 {
+  width: 100% !important;
+}
+
+.w-50 {
+  width: 50% !important;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.line-h-1-5 {
+  line-height: 1.5;
+}
+
+.line-h-2 {
+  line-height: 2;
+}
+
+.font-9{
+  font-size:9pt !important;
+}
+
+.font-10 {
+  font-size: 10pt !important;
+}
+
+.font-11 {
+  font-size: 11pt !important;
+}
+
+.font-weight-black {
+  font-weight: 900 !important;
+}
+
+.font-weight-bold {
+  font-weight: 700 !important;
+}
+
+.font-weight-600 {
+  font-weight: 600 !important;
+}
+
+.font-weight-500 {
+  font-weight: 500 !important;
+}
+
+.font-weight-400 {
+    font-weight: 400 !important;
+}
+.m-t-10 {
+  margin-top: 10px !important;
+}
+.m-t-20 {
+  margin-top: 20px !important;
+}
+.m-t-30 {
+  margin-top: 30px !important;
+}
+.p-20 {
+  padding: 20px !important;
+}
+.p-30 {
+  padding: 30px !important;
+}
+.m-t-70 {
+  margin-top: 70px !important;
+}
+.m-t-10 {
+  margin-top: 10px !important;
+}
+.m-b-20 {
+  margin-bottom: 20px !important;
+}
+.m-b-30 {
+   margin-bottom: 30px !important;
+}
+
+.border-none {
+  border: none !important;
+}
+
+.display-flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-dark {
+  color: $text-color;
+}
+
+.icon-blue {
+  color: #0081ff;
+}
+
+.icon-white,
+.color-white {
+  color: #fff;
+}
+
+.beige {
+  color: $beige !important;
+}
+
+.half-opacity {
+  opacity: .5;
+}
+
+.hide-on-600 {
+  @media(max-width: 600px) {
+    display: none;
+  }
+}
+
+.hide-on-700 {
+  @media(max-width: 700px) {
+    display: none;
+  }
+}
+
+.hide-on-800 {
+  @media(max-width: 800px) {
+    display: none;
+  }
+}
+
+.show-on-600 {
+  @media(min-width: 600px) {
+    display: block;
+  }
+}
+
+.show-on-700 {
+  @media(min-width: 700px) {
+    display: block;
+  }
+}
+
+.show-on-800 {
+  @media(min-width: 800px) {
+    display: block;
+  }
+}
+
+.down-600-block {
+  display: none !important;
+
+  @media(max-width: 599px) {
+    display: block !important;
+  }
+}
+
+.down-600-flex {
+  display: none !important;
+
+  @media(max-width: 599px) {
+    display: flex !important;
+  }
+}
+
+.up-600-block {
+  display: none !important;
+
+  @media(min-width: 600px) {
+    display: block !important;
+  }
+}
+
+.up-600-flex {
+  display: none !important;
+
+  @media(min-width: 600px) {
+    display: flex !important;
+  }
+}
+
+.between-600-and-991-none {
+  display: block !important;
+
+  @media (min-width: 600px) and (max-widtH: 991px) {
+    display: none !important;
+  }
+}
+
+.between-600-and-991-block {
+  display: none !important;
+
+  @media (min-width: 600px) and (max-widtH: 991px) {
+    display: block !important;
+  }
+}

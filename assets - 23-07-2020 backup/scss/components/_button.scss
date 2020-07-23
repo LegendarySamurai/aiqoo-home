@@ -1,0 +1,48 @@
+.brand-btn {
+    padding: 7px 28px;
+    cursor: pointer;
+
+    &.primary {
+        color: #fff;
+        background-color: #585077;
+        box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+    }
+
+    &.big {
+        background-color: #585077;
+        box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.26);
+        color: #fff;
+        font-weight: 600;
+        font-size: 16pt;
+        text-align: center;
+        width: 320px;
+        line-height: 60px;
+
+        & i {
+            position: absolute;
+            right: 35px;
+            top: 22px;
+            font-size: 20pt;
+            color: #fff;
+        }
+    }
+}
+
+.explore-more {
+    display: inline-block;
+    //width: auto;
+    margin-top: 20px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: solid 1px #585077;
+    background-color: rgba(196, 196, 196, 0);
+    color: #585077;
+    font-weight: 400;
+    font-size: 16.5pt;
+    cursor: pointer;
+
+    @media(max-width: 767px) {
+        padding: 10px 20px;
+        font-size: 14pt;
+    }
+}
