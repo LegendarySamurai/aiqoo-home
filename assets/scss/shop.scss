@@ -2,6 +2,7 @@
 @import 'helpers/variables';
 @import 'vendor/bootstrap.custom/collapse';
 @import 'vendor/bootstrap.custom/container';
+@import '../scss/components/pagination';
 
 .shop {
   .label {
@@ -395,9 +396,6 @@
         }
       }
     }
-  }
-
-  @media(max-width: 599px) {
     .filter-inner {
       display: none;
     }
@@ -538,8 +536,14 @@
     }
 
     .content-wrap-col {
+      display: flex;
+      flex-direction: column;
       width: auto;
       flex-basis: unset;
     }
+  }
+
+  @media(max-width: 599px) {
+
   }
 }
