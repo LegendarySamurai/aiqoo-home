@@ -1,0 +1,241 @@
+// helpers
+@import 'helpers/variables';
+@import 'helpers/helpers';
+@import 'vendor/bootstrap.custom/collapse';
+@import 'components/load-funnel';
+@import 'components/aiq-index-section';
+@import 'components/magazine-cards';
+
+.faq-page {
+  .head-section {
+    z-index: 11;
+    background-color: #f4eee4;
+    width: 100%;
+
+    .head-section-container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .head-section-content {
+      padding-bottom: 300px;
+    }
+
+    .head-section-content-inner {
+      z-index: 9900 !important;
+      min-height: calc(100vh - 70px);
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .heading-wrap {
+      min-height: 11vh;
+      width: 100%;
+    }
+
+    .funnel-card-wrap {
+      min-height: calc(89vh - 170px - 70px);
+      height: auto;
+      width: 100%;
+    }
+
+    .map-mask-div {
+      opacity: .8;
+      width: 100%;
+      min-height: 100vh;
+      background: -webkit-linear-gradient(top, rgba(223, 210, 174, 1) 0%, rgba(223, 210, 174, 0.5) 50%, rgba(223, 210, 174, 0.5) 51%, rgba(223, 210, 174, 1) 100%);
+      background: -moz-linear-gradient(top, rgba(223, 210, 174, 1) 0%, rgba(223, 210, 174, 0.5) 50%, rgba(223, 210, 174, 0.5) 51%, rgba(223, 210, 174, 1) 100%);
+      background: linear-gradient(to top, rgba(223, 210, 174, 1) 0%, rgba(223, 210, 174, 0.5) 50%, rgba(223, 210, 174, 0.5) 51%, rgba(223, 210, 174, 1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfd2ae', endColorstr='#007db9e8', GradientType=0);
+    }
+
+    h1 {
+      line-height: 1.5;
+      font-family: $h-font;
+      white-space: normal;
+      color: #585077;
+      font-size: 28pt;
+    }
+
+    .bottom-mask {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 117.5px;
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) -5%, #f4eee4 70%);
+    }
+
+    .faq-accordion {
+      margin-top: 30px;
+
+      .card {
+        position: relative;
+
+        .card-header {
+          width: 100%;
+          height: 56px;
+          box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
+
+          button {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            padding: 0 20px;
+            border-radius: 10px;
+            background-color: #fff;
+
+            span {
+              font-weight: 400;
+              font-size: 22pt;
+            }
+
+            &::before {
+              position: absolute;
+              top: 50%;
+              left: 10px;
+              transform: translate(0, -50%);
+              display: block;
+              content: '';
+              border-radius: 50px;
+              background-color: #d8cdba;
+              height: 80%;
+              width: 4px;
+            }
+
+
+          }
+        }
+
+        //&::after {
+        //  display: none;
+        //}
+
+        &.expanded {
+          &:after {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(0, -50%);
+            display: block !important;
+            content: '';
+            border-radius: 50px 0 0 50px;
+            background-color: #585077;
+            height: 100%;
+            width: 9px;
+          }
+
+          .card-header {
+            position: relative;
+            border-radius: 10px 10px 0 0;
+            background-color: #fff;
+            box-shadow: none;
+
+            button {
+              border-radius: 10px 10px;
+
+              &::before {
+                display: none !important;
+              }
+            }
+
+            span {
+              font-weight: bold;
+            }
+          }
+
+          .collapse {
+            background-color: #fff;
+            border-radius: 0 0 10px 10px;
+
+            .card-body {
+              padding: 10px 20px;
+              border-radius: 0 0 10px 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .magazine-section {
+    .section-container {
+      .inner {
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}
+
+.faq-page {
+  @media(max-width: 991px) {
+    .head-section {
+      .faq-accordion {
+        .card {
+          max-width: unset;
+
+          .card-header {
+            button {
+              span {
+                font-size: 18pt;
+              }
+            }
+          }
+        }
+      }
+
+      h1 {
+        font-size: 26pt;
+      }
+    }
+  }
+
+  @media(max-width: 767px) {
+    .head-section-content {
+      margin-top: 3vh;
+    }
+  }
+
+  @media only screen and (min-width: 300px) and (max-width: 991px) {
+    .headings {
+      text-align: center;
+    }
+
+    .head-section-content {
+      width: 100%;
+    }
+  }
+
+  @media(min-width: 600px) {
+    .head-section {
+      .head-section-content {
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  @media(min-width: 992px) {
+    .head-section {
+      width: 100%;
+
+      .head-section-content {
+        height: 462px;
+      }
+    }
+  }
+
+  @media(min-width: 1920px) {
+    .head-section {
+      .section-container {
+        padding-top: 70px;
+      }
+    }
+  }
+}

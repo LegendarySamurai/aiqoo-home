@@ -157,6 +157,24 @@
 	}, l;
 });
 
+function filterShop(ID, tags, categories) {
+
+	newCategories = '#,' + categories.replace(' ', '') + ',#';
+
+	var checkBox = document.getElementById("collapse_" + ID);
+	if (checkBox.checked == true) {
+		newCategories = newCategories + ID;
+		window.location.href = 'shop/1/' + tags + '/' + clearList(newCategories) + '/';
+	} else {
+		newCategories = newCategories.replace(',' + ID, '');
+		window.location.href = 'shop/1/' + tags + '/' + clearList(newCategories) + '/';
+	}
+}
+
+function clearList(list) {
+	return list.replace(',,', '').replace('#,', '').replace(',#', '').replace('#', '');
+}
+
 $('.filter-btn').click(function () {
 	$('.filter-outer').addClass('active');
 });
