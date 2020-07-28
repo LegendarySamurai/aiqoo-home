@@ -92,11 +92,28 @@
 
       .card {
         position: relative;
+        border-radius: 10px;
+        background-color: #fff;
+
+        &:after {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translate(0, -50%);
+          display: block !important;
+          content: '';
+          border-radius: 10px 0 0 10px;
+          background-color: transparent;
+          height: 100%;
+          width: 9px;
+        }
 
         .card-header {
           width: 100%;
           height: 56px;
           box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
+          //background-color: #fff;
+          border-radius: 10px;
 
           button {
             position: relative;
@@ -108,7 +125,6 @@
             height: 100%;
             padding: 0 20px;
             border-radius: 10px;
-            background-color: #fff;
 
             span {
               font-weight: 400;
@@ -127,33 +143,41 @@
               height: 80%;
               width: 4px;
             }
-
-
           }
         }
 
-        //&::after {
-        //  display: none;
-        //}
+        .collapse {
+          border-radius: 0 0 10px 10px;
+        }
+
+        .card-body {
+          padding: 10px 20px !important;
+          border-radius: 0 0 10px 10px;
+          background-color: transparent !important;
+        }
+
 
         &.expanded {
+          background-color: #fff;
+
           &:after {
-            position: absolute;
-            top: 50%;
-            left: 0;
-            transform: translate(0, -50%);
-            display: block !important;
-            content: '';
-            border-radius: 50px 0 0 50px;
+            //position: absolute;
+            //top: 50%;
+            //left: 0;
+            //transform: translate(0, -50%);
+            //display: block !important;
+            //content: '';
+            //border-radius: 50px 0 0 50px;
             background-color: #585077;
-            height: 100%;
-            width: 9px;
+            //height: 100%;
+            //width: 9px;
           }
 
           .card-header {
             position: relative;
             border-radius: 10px 10px 0 0;
-            background-color: #fff;
+            //background-color: #fff;
+            background-color: transparent;
             box-shadow: none;
 
             button {
@@ -170,12 +194,13 @@
           }
 
           .collapse {
-            background-color: #fff;
-            border-radius: 0 0 10px 10px;
-
-            .card-body {
-              padding: 10px 20px;
+            &.show {
               border-radius: 0 0 10px 10px;
+
+              .card-body {
+                padding: 10px 20px;
+                border-radius: 0 0 10px 10px;
+              }
             }
           }
         }
