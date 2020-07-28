@@ -61,6 +61,13 @@ $(document).ready(() => {
 	});
 
 	$('.faq-accordion .card button').click(function() {
+		$.each($('.faq-accordion .card'), function(index, value) {
+			const card = $(value);
+			// if(card.hasClass('expanded') && !$(this).hasClass('collapsed')) {
+			// 	console.log('FFFFFFFFFFFFF');
+			// }
+			card.removeClass('expanded');
+		});
 		// console.log('step 1');
 		const card = $(this).parents('.card');
 
