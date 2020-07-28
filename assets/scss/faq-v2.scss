@@ -1,0 +1,55 @@
+// helpers
+@import 'helpers/variables';
+@import 'helpers/helpers';
+@import 'vendor/bootstrap.custom/collapse';
+@import 'components/magazine-cards';
+@import 'components/faq-list.component';
+
+.faq-page-v-2 {
+  .card {
+    &.horizontal-card {
+      height: auto;
+      padding: 20px;
+
+      .card-info {
+        .title {
+          padding: 0 2%;
+          font-size: 16pt;
+        }
+
+        .text {
+          line-height: 1.25;
+          padding: 0 2%;
+          font-size: 13pt;
+        }
+      }
+    }
+  }
+
+  .vertical-card {
+    // To make sizes 50% less then in component styles (only for this page)
+    .faq-list {
+      background-color: transparent;
+      background-image: linear-gradient(to bottom, #f3efe847 5%, #d8cdba 35%, #ebe2d3 80%);
+    }
+  }
+}
+
+
+.faq-page-v-2 {
+  @media(max-width: 1899px) {}
+
+  @media(max-width: 1599px) {}
+
+  @media(max-width: 1399px) {}
+
+  @media(max-width: 1199px) {}
+
+  @media(max-width: 991px) {}
+
+  @media(max-width: 767px) {}
+
+  @media(max-width: 599px) {}
+
+  @media(max-width: 374px) {}
+}

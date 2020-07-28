@@ -4,8 +4,9 @@
 @import 'vendor/bootstrap.custom/collapse';
 @import 'components/aiq-index-section';
 @import 'components/magazine-cards';
-@import 'components/funnel-card';
+@import 'components/funnel-card.component';
 @import 'components/load-funnel';
+@import 'components/faq-list.component';
 
 .faq-page {
   .head-section {
@@ -55,160 +56,6 @@
     }
   }
 
-  .faq-list {
-    position: relative;
-    z-index: 20;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: #d8cdba;
-    //background-color: #f4eee4;
-    //background-color: rgba(255, 255, 255, 0);
-    // background-image: linear-gradient(to bottom, #ebe2d3 35%, #d8cdba 70%);
-
-    .mask {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 117.5px;
-
-      background-image: linear-gradient(to bottom, #ebe2d3 5%, #d8cdba 95%);
-    }
-
-    .heading-wrap {
-      min-height: 11vh;
-      width: 100%;
-    }
-
-    h1 {
-      line-height: 1.5;
-      font-family: $h-font;
-      white-space: normal;
-      color: #585077;
-      font-size: 28pt;
-    }
-
-    .faq-accordion {
-      margin-top: 30px;
-
-      .card {
-        position: relative;
-        border-radius: 10px;
-        background-color: #fff;
-
-        &:after {
-          position: absolute;
-          top: 50%;
-          left: 0;
-          transform: translate(0, -50%);
-          display: block !important;
-          content: '';
-          border-radius: 10px 0 0 10px;
-          background-color: transparent;
-          height: 100%;
-          width: 9px;
-        }
-
-        .card-header {
-          width: 100%;
-          height: 56px;
-          box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
-          //background-color: #fff;
-          border-radius: 10px;
-
-          button {
-            position: relative;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            height: 100%;
-            padding: 0 20px;
-            border-radius: 10px;
-
-            span {
-              font-weight: 400;
-              font-size: 22pt;
-            }
-
-            &::before {
-              position: absolute;
-              top: 50%;
-              left: 10px;
-              transform: translate(0, -50%);
-              display: block;
-              content: '';
-              border-radius: 50px;
-              background-color: #d8cdba;
-              height: 80%;
-              width: 4px;
-            }
-          }
-        }
-
-        .collapse {
-          border-radius: 0 0 10px 10px;
-        }
-
-        .card-body {
-          padding: 10px 20px !important;
-          border-radius: 0 0 10px 10px;
-          background-color: transparent !important;
-        }
-
-
-        &.expanded {
-          background-color: #fff;
-
-          &:after {
-            //position: absolute;
-            //top: 50%;
-            //left: 0;
-            //transform: translate(0, -50%);
-            //display: block !important;
-            //content: '';
-            //border-radius: 50px 0 0 50px;
-            background-color: #585077;
-            //height: 100%;
-            //width: 9px;
-          }
-
-          .card-header {
-            position: relative;
-            border-radius: 10px 10px 0 0;
-            //background-color: #fff;
-            background-color: transparent;
-            box-shadow: none;
-
-            button {
-              border-radius: 10px 10px;
-
-              &::before {
-                display: none !important;
-              }
-            }
-
-            span {
-              font-weight: bold;
-            }
-          }
-
-          .collapse {
-            &.show {
-              border-radius: 0 0 10px 10px;
-
-              .card-body {
-                padding: 10px 20px;
-                border-radius: 0 0 10px 10px;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
   .magazine-section {
     .section-container {
       .inner {
@@ -223,8 +70,6 @@
 
 .faq-page {
   @media(max-width: 991px) {
-    .head-section { }
-
     .faq-list {
       h1 {
         font-size: 26pt;
