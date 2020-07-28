@@ -2,9 +2,10 @@
 @import 'helpers/variables';
 @import 'helpers/helpers';
 @import 'vendor/bootstrap.custom/collapse';
-@import 'components/load-funnel';
 @import 'components/aiq-index-section';
 @import 'components/magazine-cards';
+@import 'components/funnel-card';
+@import 'components/load-funnel';
 
 .faq-page {
   .head-section {

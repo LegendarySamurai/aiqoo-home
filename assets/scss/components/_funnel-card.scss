@@ -1,0 +1,75 @@
+.head-section-content-inner {
+  z-index: 9900 !important;
+  min-height: calc(100vh - 70px);
+  width: 80%;
+  margin: 0 auto;
+}
+
+.funnel-card-wrap {
+  min-height: calc(89vh - 170px - 70px);
+  height: auto;
+  width: 100%;
+
+  .funnel-card {
+    &.content {
+      margin-top: 5%;
+
+      .title {
+        margin: .3vh auto;
+        padding-bottom: 1.5vh;
+        font-weight: 600;
+        font-size: 18pt;
+        color: #585077;
+      }
+
+      .text {
+        font: 400 13pt Helvetica;
+        color: #342e49;
+      }
+
+      .image-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 3% 0;
+
+        img {
+          width: 15%;
+          min-width: 130px;
+        }
+      }
+
+      .home-page-link {
+        display: inline-block;
+        width: auto;
+        height: auto;
+        margin: 2% auto 0;
+        padding: 2%;
+        background-color: #f4eee4;
+        color: #fff;
+        font-size: 13pt;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.funnel-card-wrap {
+  @media(max-width: 767px) {
+    .funnel-card {
+      &.content {
+        min-height: 500px;
+        min-width: 300px;
+        padding: 30px 2% 2% 2%;
+      }
+    }
+  }
+
+  @media(max-width: 374px) {
+    .funnel-card {
+      &.content {
+        min-width: 96%;
+      }
+    }
+  }
+}
