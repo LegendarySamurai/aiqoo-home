@@ -11,6 +11,9 @@
 
   .card {
     &.horizontal-card {
+      max-width: fit-content;
+      align-items: center;
+      justify-content: center;
       height: auto;
       padding: 20px;
 
@@ -122,19 +125,48 @@
 
 
 .faq-page-v-2 {
-  @media(max-width: 1899px) {}
+  @media(max-width: 1399px) {
+    .label {
+      .h3 {
+        font-size: 16.5pt !important;
+      }
+    }
+  }
 
-  @media(max-width: 1599px) {}
+  @media(max-width: 991px) {
+    .card {
+      &.horizontal-card {
+        .image-container {
+          display: flex;
+          justify-content: center;
+        }
 
-  @media(max-width: 1399px) {}
+        .card-info {
+          margin-top: 20px;
 
-  @media(max-width: 1199px) {}
+          .title {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
 
-  @media(max-width: 991px) {}
+  @media(max-width: 767px) {
+    .content-block-col {
+      order: 2;
+    }
 
-  @media(max-width: 767px) {}
+    .aside-col {
+      order: 1;
+    }
+  }
 
   @media(max-width: 599px) {
+    .section-container {
+      max-width: 100%;
+    }
+
     .videos {
       .video-info {
         .text {
@@ -145,6 +177,4 @@
       }
     }
   }
-
-  @media(max-width: 374px) {}
 }
