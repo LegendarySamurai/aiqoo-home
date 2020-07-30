@@ -11,11 +11,6 @@
     flex-shrink: 0;
     width: 286px;
 
-    .side-block {
-    }
-
-    .aside-inner { }
-
     .item {
       padding-top: 10px;
       border-bottom: 1px solid #e7e7e7;
@@ -64,19 +59,12 @@
     }
   }
 
-  // Content-wrap
-  .content-block-col {
-    //flex-grow: 1;
-    //width: auto;
-  }
-
   // Section top
   .section-top-bg {
     position: sticky;
     top: 20px;
     left: 0;
     z-index: 220;
-    //margin-top: -70px;
     width: 100%;
     height: 320px;
     background-image: url('../../assets/images/bg/index_business-bg-d.jpg');
@@ -92,7 +80,6 @@
     z-index: 230;
     width: 100%;
     margin: -180px auto 0;
-    //background-color: #fff;
 
     .section-container {
       position: relative;
@@ -113,10 +100,12 @@
     .image-col {
       width: 286px;
 
-      img {
-        width: 100%;
-        height: 100%;
-        border: 4px solid #fff;
+      .image-container {
+        img {
+          width: 100%;
+          height: 100%;
+          border: 4px solid #fff;
+        }
       }
     }
 
@@ -127,7 +116,6 @@
       height: 100%;
       padding: 20px 0 0 20px;
       font-family: $main-font;
-      //background-color: transparentize(darkolivegreen, .5); //
 
       .heading {
         font-size: 25pt;
@@ -165,22 +153,6 @@
 
         .divider {
           margin: 0 10px;
-        }
-
-        .add-review {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: center;
-          width: 160px;
-          padding: .5rem 1rem;
-          border: solid 1px #d8cdba;
-          background-color: rgba(0, 0, 0, 0.25);
-          font-size: 13pt;
-
-          img {
-            width: 10px;
-          }
         }
 
         .location {
@@ -267,6 +239,24 @@
       font-weight: bold;
       font-size: 13pt;
       color: #fff;
+    }
+  }
+
+  // Add review
+
+  .add-review {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 160px;
+    padding: .5rem 1rem;
+    border: solid 1px #d8cdba;
+    background-color: rgba(0, 0, 0, 0.25);
+    font-size: 13pt;
+
+    img {
+      width: 10px;
     }
   }
 
@@ -507,6 +497,7 @@
       padding: 0 10px;
       border: 1px solid #d8cdba;
       font-size: 13pt;
+      cursor: pointer;
 
       img {
         width: 15px;
@@ -664,12 +655,6 @@
           .reviews {
             font-size: 15pt;
           }
-
-          .add-review {
-            width: 150px;
-            padding: .5rem 0.75rem;
-            font-size: 12pt;
-          }
         }
       }
     }
@@ -692,6 +677,12 @@
           }
         }
       }
+    }
+
+    .add-review {
+      width: 150px;
+      padding: .5rem 0.75rem;
+      font-size: 12pt;
     }
 
     .rating {
@@ -747,11 +738,12 @@
     }
 
     .send-message {
-      left: 19px;
-      bottom: 4px;
-      right: auto;
+      width: 90%;
+      position: absolute;
+      bottom: 0;
+      left: 15px;
       top: auto;
-      width: 248px;
+      right: auto;
       justify-content: center;
     }
 
@@ -785,13 +777,13 @@
           .reviews {
             font-size: 14pt;
           }
-
-          .add-review {
-            width: 140px;
-            font-size: 11pt;
-          }
         }
       }
+    }
+
+    .add-review {
+      width: 140px;
+      font-size: 11pt;
     }
 
     .tabs {
@@ -803,7 +795,7 @@
 
   @media(max-width: 767px) {
     .send-message {
-      width: 182px;
+      width: 180px;
       height: 45px;
     }
 
@@ -825,12 +817,6 @@
         }
       }
 
-      .image-col {
-        width: 30%;
-      }
-    }
-
-    .section-top {
       .content-block-col {
         .heading {
           font-size: 18pt;
@@ -838,9 +824,14 @@
 
         .reviews-container {
           flex-wrap: wrap;
+          margin: 1.5vh 0 1.5vh;
 
-          .add-review {
-            margin-top: 10px;
+          .rate-index {
+            font-size: 11pt;
+          }
+
+          .reviews {
+            font-size: 11pt;
           }
         }
 
@@ -850,19 +841,137 @@
           }
         }
       }
+
+      .image-col {
+        width: 210px;
+      }
+    }
+
+    .add-review {
+      width: auto;
+      font-size: 11pt;
+      border: none;
+      box-shadow: none;
+      background-color: transparent;
+      padding: 0 0 2px 0;
+      border-bottom: 1px solid #d8cdba;
+
+      img {
+        width: 8px;
+        margin-left: 5px;
+      }
+
+      span {
+        font-weight: bold !important;
+      }
     }
 
     .tabs {
       max-width: 410px;
 
       .tab {
+        padding-bottom: 10px;
         font-size: 13pt;
         color: #fff;
+
+        &.active {
+          &::after {
+            height: 4px;
+          }
+        }
       }
     }
   }
 
-  @media(max-width: 599px) {}
+  @media(max-width: 599px) {
+    .tabs {
+      max-width: 100%;
+      margin-top: 20px;
+    }
 
-  @media(max-width: 374px) {}
+    .aside-col {
+      position: static;
+      width: 100%;
+    }
+
+    .section-top-bg {
+      height: 360px;
+      position: static;
+      background-size: auto 100%;
+    }
+
+    .section-top-sticky {
+      position: static;
+      top: auto;
+      left: auto;
+      height: 360px;
+      margin: -360px auto 0;
+      padding-top: 10px;
+
+      .content-block-col {
+        padding: 0 5px 10px;
+
+        .heading {
+          margin-top: 15px;
+          font-size: 16pt;
+        }
+      }
+
+      .content-block {
+        .reviews-container {
+          margin: 1vh 0;
+
+          .rating-container {
+            margin-right: 10px;
+            margin-bottom: 7px;
+          }
+        }
+      }
+    }
+
+    .our-projects {
+      .card {
+        max-width: 100%;
+      }
+
+      .our-projects-data {
+        font-size: 14pt !important;
+      }
+    }
+
+    .our-reviews {
+      .section-container {
+        padding: 0;
+      }
+
+      .our-reviews-data {
+        font-size: 14pt !important;
+      }
+
+      .add-review-btn {
+        height: 40px;
+        font-size: 12pt;
+      }
+    }
+  }
+
+  @media(max-width: 450px) {
+    .tabs {
+      .tab {
+        font-size: 11pt;
+      }
+    }
+
+    //.section-top-bg {
+    //  height: 400px;
+    //}
+
+    .section-top-sticky {
+      .content-block-col {
+        .heading {
+          font-size: 14pt !important;
+        }
+      }
+    }
+  }
 }
