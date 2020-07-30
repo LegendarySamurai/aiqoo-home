@@ -6,10 +6,13 @@
 
   // Aside
   .aside-col {
-    position: sticky;
-    top: 0;
     flex-shrink: 0;
     width: 286px;
+
+    .aside-inner {
+      position: sticky;
+      top: 430px;
+    }
 
     .item {
       padding-top: 10px;
@@ -75,7 +78,7 @@
 
   .section-top-sticky {
     position: sticky;
-    top: 80px;
+    top: 160px;
     left: 0;
     z-index: 230;
     width: 100%;
@@ -86,7 +89,7 @@
 
       &::after {
         position: absolute;
-        bottom: -10px;
+        bottom: 0;
         left: 50%;
         transform: translate(-50%, 0);
         width: 96%;
@@ -114,8 +117,9 @@
       flex-direction: column;
       align-items: flex-start;
       height: 100%;
-      padding: 20px 0 0 20px;
+      //padding: 20px 0 0 0;
       font-family: $main-font;
+      //background-color: transparentize(coral, .7);
 
       .heading {
         font-size: 25pt;
@@ -186,20 +190,25 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    width: 100%;
-    max-width: 620px;
+    width: 101%;
     margin-top: auto;
+    margin-left: -2px;
+    padding-right: 420px;
+    padding-top: 23px;
+    background-color: #fff;
 
     .tab {
-      position: relative;
-      //margin-right: 10%;
       padding-bottom: 25px;
       font-weight: 900;
       font-size: 18pt;
       white-space: nowrap;
       cursor: pointer;
 
-      &.active {
+      &.a-active,
+      &.b-active,
+      &.c-active {
+        position: relative;
+
         &::after {
           position: absolute;
           bottom: 0;
@@ -337,7 +346,6 @@
     justify-content: space-between;
     align-items: flex-start;
     padding-bottom: 20px;
-    background-color: #fff;
 
     &::after {
       position: absolute;
@@ -609,10 +617,6 @@
 }
 
 .index-business {
-  @media(max-width: 1899px) {}
-
-  @media(max-width: 1599px) {}
-
   @media(max-width: 1299px) {
     .our-projects {
       .our-projects-data {
@@ -628,18 +632,13 @@
   }
 
   @media(max-width: 1199px) {
-    .about-us {
-      .video-container {
-        height: unset;
-      }
-    }
-
-    .post-text {
-      line-height: 1.35;
-      font-size: 12pt;
-    }
-
     .section-top-sticky {
+      .section-container {
+        & > .row {
+          flex-wrap: nowrap;
+        }
+      }
+
       .content-block {
         padding: 0;
 
@@ -657,6 +656,17 @@
           }
         }
       }
+    }
+
+    .about-us {
+      .video-container {
+        height: unset;
+      }
+    }
+
+    .post-text {
+      line-height: 1.35;
+      font-size: 12pt;
     }
 
     .our-reviews {
@@ -697,7 +707,8 @@
     }
 
     .tabs {
-      max-width: 500px;
+      padding-top: 31px;
+      padding-right: 22%;
 
       .tab {
         font-size: 16pt;
@@ -733,12 +744,8 @@
   }
 
   @media(max-width: 991px) {
-    .aside-col {
-      width: 260px;
-    }
-
     .send-message {
-      width: 90%;
+      width: 230px;
       position: absolute;
       bottom: 0;
       left: 15px;
@@ -747,13 +754,22 @@
       justify-content: center;
     }
 
-    .section-top {
-      height: 320px;
-      margin-top: -60px;
+    .aside-col {
+      width: 260px;
 
-      .section-top-inner {
-        transform: translate(0%, 65%);
+      .aside-inner {
+        top: 350px;
       }
+    }
+
+    .section-top-bg {
+      height: 244px;
+    }
+
+    .section-top-sticky {
+      top: 110px;
+      height: 220px;
+      margin-top: -154px;
 
       .image-col {
         width: 260px;
@@ -794,6 +810,29 @@
   }
 
   @media(max-width: 767px) {
+    // Aside
+    .aside-col {
+      width: 210px;
+
+      .aside-inner {
+        top: 330px;
+      }
+
+      .item {
+        .icon {
+          margin-right: 10px;
+        }
+
+        span {
+          font-size: 11pt;
+        }
+      }
+
+      .social {
+        padding: 0 0 20px;
+      }
+    }
+
     .send-message {
       width: 180px;
       height: 45px;
@@ -805,11 +844,13 @@
     }
 
     .section-top-bg {
-      height: 300px;
+      height: 230px;
     }
 
     .section-top-sticky {
-      margin: -190px auto 0;
+      top: 131px;
+      height: 180px;
+      margin: -119px auto 0;
 
       .section-container {
         &::after {
@@ -867,14 +908,14 @@
     }
 
     .tabs {
-      max-width: 410px;
+      padding-right: 20px;
 
       .tab {
         padding-bottom: 10px;
         font-size: 13pt;
-        color: #fff;
+        //color: #fff;
 
-        &.active {
+        &.tab-active {
           &::after {
             height: 4px;
           }
@@ -884,18 +925,8 @@
   }
 
   @media(max-width: 599px) {
-    .tabs {
-      max-width: 100%;
-      margin-top: 20px;
-    }
-
-    .aside-col {
-      position: static;
-      width: 100%;
-    }
-
     .section-top-bg {
-      height: 360px;
+      height: 320px;
       position: static;
       background-size: auto 100%;
     }
@@ -904,9 +935,20 @@
       position: static;
       top: auto;
       left: auto;
-      height: 360px;
-      margin: -360px auto 0;
-      padding-top: 10px;
+      height: 340px;
+      margin-top: -297px;
+      padding-top: 0;
+
+      .section-container {
+        & >.row {
+          flex-wrap: wrap;
+          flex-direction: column;
+        }
+      }
+
+      .image-col {
+        margin: 0 auto;
+      }
 
       .content-block-col {
         padding: 0 5px 10px;
@@ -927,6 +969,42 @@
           }
         }
       }
+    }
+
+    // Aside
+    .aside-col {
+      position: static;
+      width: 100%;
+
+      .aside-inner {
+        position: static;
+      }
+
+      .social {
+        padding: 0 23% 20px;
+
+        .social-item {
+          width: 40px;
+          height: 40px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+      }
+    }
+
+    .tabs {
+      margin-top: 15px;
+      padding-top: 30px;
+      padding-right: 0;
+      background-color: transparent;
+    }
+
+    .send-message {
+      bottom: 0;
     }
 
     .our-projects {
@@ -956,21 +1034,42 @@
   }
 
   @media(max-width: 450px) {
+    // Aside
+    .aside-col {
+      .social {
+        padding: 0 20px 20px;
+      }
+    }
+
     .tabs {
       .tab {
         font-size: 11pt;
       }
     }
 
-    //.section-top-bg {
-    //  height: 400px;
-    //}
-
     .section-top-sticky {
       .content-block-col {
         .heading {
           font-size: 14pt !important;
         }
+      }
+    }
+  }
+
+  @media(max-width: 345px) {
+    .tabs {
+      margin-top: 0;
+      padding-top: 20px;
+    }
+
+    .section-top-bg {
+      height: 330px;
+    }
+
+    .section-top-sticky {
+      margin-top: -320px;
+      .location {
+        margin-top: 10px;
       }
     }
   }

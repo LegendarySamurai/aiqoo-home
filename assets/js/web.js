@@ -1,4 +1,5 @@
 ﻿console.log("main.js v=0.1");
+
 document.addEventListener('readystatechange', function (event) {
 	if (event.target.readyState === "complete") {
 		init();

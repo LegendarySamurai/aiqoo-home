@@ -15,9 +15,11 @@
   <link rel="icon" type="image/x-icon"
         href="assets/favicons/favicon.ico?v=-aFKl_fnEZLhxG-mj69VM5ESG3JrpZDfb3B2Zt9y79I"/>
   <!--<link rel="manifest" href="assets/manifest.json?v=3unRh_Mb5JLH_G4OiIY_2d0idb_ytGvM67JFlJM1mmg">-->
-  <script defer src="assets/js/web.es5.min.js?v=Q0hbeOicaOFvmADkCbdiLLAx0ndX_E4vVzKcS4UUuLw"></script>
+  <!--<script defer src="assets/js/web.es5.min.js?v=Q0hbeOicaOFvmADkCbdiLLAx0ndX_E4vVzKcS4UUuLw"></script>-->
+
   <link href="https://fonts.googleapis.com/css?family=Raleway:600,700&display=swap" rel="stylesheet">
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script defer src="assets/js/business-index.js"></script>
   <script defer src="assets/js/autocomplete.es5.min.js"></script>
   <script defer src="assets/js/user_tracking.es5.min.js"></script>
   <link href="assets/css/web.css?v=YoFODcqUmgz3TvM1xzPPq68ptulVmUkrTa_Q5NP113E" rel="stylesheet"/>
@@ -277,10 +279,6 @@
   <section class="section-top-bg"></section>
 
   <section class="section-top-sticky">
-    <!--<button class="add-review d-flex d-sm-none" type="button">-->
-    <!--  <span class="system-color-19 font-weight-black">Add review</span>-->
-    <!--  <img src="assets/images/icons/angle-right-beige.svg" alt="">-->
-    <!--</button>-->
     <div class="section-container">
       <div class="row">
         <div class="col-auto image-col">
@@ -321,9 +319,9 @@
               <span class="font-weight-500 color-white">Manhattan, NY, United States  </span>
             </div>
             <div class="tabs">
-              <a href="#about-us" class="tab system-color-11 active">About us</a>
-              <a href="#our-projects" class="tab system-color-11">Our projects</a>
-              <a href="#our-reviews" class="tab system-color-11">Our Reviews</a>
+              <a id="tab-a" href="#a" class="tab tab-a system-color-11">About us</a>
+              <a id="tab-b" href="#b" class="tab tab-b system-color-11">Our projects</a>
+              <a id="tab-c" href="#c" class="tab tab-c system-color-11">Our Reviews</a>
             </div>
           </div>
         </div>
@@ -405,7 +403,7 @@
         <div class="col content-block-col">
           <div class="content-wrap">
             <!-- About us -->
-            <section class="about-us" id="about-us">
+            <section class="section-content-b about-us" id="a">
               <div class="row">
                 <div class="col-12 col-lg-auto video-col">
                   <div class="video-container">
@@ -441,7 +439,7 @@
             </section>
 
             <!-- Our projects -->
-            <section class="our-projects" id="our-projects">
+            <section class="section-content-b our-projects" id="b">
               <div class="row">
                 <div class="col-12">
                   <h2 class="font-weight-black system-color-11 our-projects-data">Our Projects</h2>
@@ -649,7 +647,7 @@
             </section>
 
             <!-- Our Reviews -->
-            <section class="our-reviews" id="our-reviews">
+            <section class="section-content-b our-reviews" id="c">
               <div class="reviews-inner">
                 <div class="section-container">
                   <div class="row">
