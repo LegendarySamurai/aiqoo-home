@@ -70,6 +70,7 @@
   .vertical-card {
     position: sticky !important;
     top: 70px;
+
     // To make sizes 50% less then in component styles (only for this page)
     .faq-list {
       background-color: transparent;
@@ -197,6 +198,24 @@
 
     .aside-col {
       order: 1;
+
+      .vertical-card {
+        position: relative !important;
+      }
+    }
+
+    .featured-items {
+      margin-top: 60px;
+    }
+
+    .card {
+      &.horizontal-card {
+        .image-container {
+          img {
+            max-height: 25vh;
+          }
+        }
+      }
     }
   }
 
@@ -211,16 +230,6 @@
           margin-bottom: 10px;
           max-height: 60px;
           font-size: 12pt;
-        }
-      }
-    }
-
-    .card {
-      &.horizontal-card {
-        .image-container {
-          img {
-            max-height: 25vh;
-          }
         }
       }
     }
