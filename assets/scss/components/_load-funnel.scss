@@ -65,17 +65,19 @@
 
 .funnel-card h2 {
     position: relative;
+    font-family: Helvetica, Arial, sans-serif;
     font-weight: 400;
-    font-size: 11pt;
+    font-size: 13pt;
     cursor: pointer;
     background-color: #e4ebe4;
     border-radius: 5px;
     margin: 0 5px;
     padding: 4px 5px;
+    font-weight: 500;
 }
 
 .funnel-card h2 strong {
-    font-size: 12.5pt;
+    font-size: 13.5pt;
     font-weight: 600;
 }
 
@@ -313,12 +315,12 @@
     }
 
     .funnel-card h2 {
-        font-size: 11pt;
-        margin-left: 0;
+        font-size: 10pt;
     }
 
-    .step-div-h2 {
-        font-size: 10pt;
+    .funnel-card h2 strong {
+        font-size: 10.5pt;
+        font-weight: 600;
     }
 
     .step-div-h2 img {
@@ -353,7 +355,7 @@
 
 @media (max-width: 600px) {
     .funnel-card h2 {
-        font-size: 12pt;
+        font-size: 11pt;
     }
 
     .step-div-h1 {
