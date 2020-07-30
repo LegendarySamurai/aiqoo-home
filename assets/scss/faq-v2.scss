@@ -68,6 +68,8 @@
   }
 
   .vertical-card {
+    position: sticky !important;
+    top: 70px;
     // To make sizes 50% less then in component styles (only for this page)
     .faq-list {
       background-color: transparent;
@@ -178,6 +180,7 @@
 
         .card-info {
           margin-top: 20px;
+          padding-bottom: 20px;
 
           .title {
             text-align: center;
@@ -208,6 +211,16 @@
           margin-bottom: 10px;
           max-height: 60px;
           font-size: 12pt;
+        }
+      }
+    }
+
+    .card {
+      &.horizontal-card {
+        .image-container {
+          img {
+            max-height: 25vh;
+          }
         }
       }
     }
