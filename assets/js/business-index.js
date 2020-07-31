@@ -13,6 +13,7 @@ $(window).on('load', function () {
 	const ourProjects = $('#our-projects');
 	const ourReviews = $('#our-reviews');
 	const contentWrap = $('.content-wrap');
+	const asideBlock = $('.aside-inner');
 
 	let aboutUsTop = aboutUs.offset().top;
 	let aboutUsHeight = aboutUs.innerHeight();
@@ -27,6 +28,7 @@ $(window).on('load', function () {
 	let ourReviewsBottom = ourReviewsTop + ourReviewsHeight;
 
 	let contentWrapTop = contentWrap.offset().top;
+	let asideBlockTop = asideBlock.offset().top;
 
 	$(window).on('resize scroll', function () {
 		let scroll = $(document).scrollTop();
@@ -55,46 +57,30 @@ $(window).on('load', function () {
 		$(this).on('click', function () {
 			let target = $(this).attr('href');
 			console.log('target', target);
-			$('body,html').animate(
-				{
-					scrollTop: $(target).offset().top - contentWrapTop,
-					behavior: 'smooth'
-				},
-				800 //speed
-			);
 
-			$(this).addClass('active');
+
+			if (window.innerWidth < 600) {
+				console.log($(target).offset().top);
+				$('body,html').animate(
+					{
+						scrollTop: $(target).offset().top - contentWrapTop + asideBlockTop + 500,
+						behavior: 'smooth'
+					},
+					800 //speed
+				);
+			} else {
+				$('.tab').removeClass('active');
+				$(this).addClass('active');
+				$('body,html').animate(
+					{
+						scrollTop: $(target).offset().top - contentWrapTop + 80,
+						behavior: 'smooth'
+					},
+					800 //speed
+				);
+			}
+
 		});
 	});
-
-	// $('#tab-a').click(function() {
-	// 	// $(window).scrollIntoView(aboutUsTop);
-	// 	$("body,html").animate(
-	// 		{
-	// 			scrollTop: $(aboutUsTop)
-	// 		},
-	// 		800 //speed
-	// 	);
-	// });
-
-	// $('#tab-b').click(function() {
-	// 	// $(window).scrollIntoView(aboutUsTop);
-	// 	$("body,html").animate(
-	// 		{
-	// 			scrollTop: $(ourProjectsTop)
-	// 		},
-	// 		800 //speed
-	// 	);
-	// });
-
-	// $('#tab-c').click(function() {
-	// 	// $(window).scrollIntoView(aboutUsTop);
-	// 	$("body,html").animate(
-	// 		{
-	// 			scrollTop: $(ourReviewsTop)
-	// 		},
-	// 		800 //speed
-	// 	);
-	// });
 });
 
