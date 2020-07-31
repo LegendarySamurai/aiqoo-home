@@ -204,9 +204,7 @@
       white-space: nowrap;
       cursor: pointer;
 
-      &.a-active,
-      &.b-active,
-      &.c-active {
+      &.active {
         position: relative;
 
         &::after {
@@ -915,7 +913,7 @@
         font-size: 13pt;
         //color: #fff;
 
-        &.tab-active {
+        &.active {
           &::after {
             height: 4px;
           }
