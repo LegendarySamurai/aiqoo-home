@@ -222,14 +222,15 @@
         }
 
         .super-placeholder {
-          bottom: 0;
+          bottom: 11px;
         }
 
         .return-button {
           position: absolute;
-          top: 50%;
+          //top: 50%;
+          top: 15px;
           right: 10px;
-          transform: translate(0, -50%);
+          //transform: translate(0, -50%);
           display: block;
           //font-size: 16pt;
           img {
