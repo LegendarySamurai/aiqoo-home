@@ -19,11 +19,15 @@
 
   <link href="https://fonts.googleapis.com/css?family=Raleway:600,700&display=swap" rel="stylesheet">
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script defer src="assets/js/lightgallery.min.js"></script>
+  <script defer src="assets/js/lg-thumbnail.min.js"></script>
+  <script defer src="assets/js/lg-fullscreen.min.js"></script>
   <script defer src="assets/js/business-index.js"></script>
   <script defer src="assets/js/autocomplete.es5.min.js"></script>
   <script defer src="assets/js/user_tracking.es5.min.js"></script>
+  <!--<link type="text/css" rel="stylesheet" href="css/lightgallery.css" />-->
+  <link href="assets/css/lightgallery.min.css" rel="stylesheet"/>
   <link href="assets/css/web.css?v=YoFODcqUmgz3TvM1xzPPq68ptulVmUkrTa_Q5NP113E" rel="stylesheet"/>
-
   <link href="assets/css/index-business.css" rel="stylesheet"/>
   <script defer src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5db044b3309e51d4"></script>
   <script type="application/ld+json">[
@@ -157,6 +161,7 @@
 			f.parentNode.insertBefore(j, f);
 		})(window, document, 'script', 'dataLayer', 'GTM-WZQH374');</script>
   <!-- End Google Tag Manager -->
+
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -447,12 +452,9 @@
                   <h2 class="font-weight-black system-color-11 our-projects-data">Our Projects</h2>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-12 col-md-6 col-xl-4 card-col">
-                  <div class="card">
-                    <div class="image-container">
-                      <img src="assets/images/bg/card-bg.png" alt="">
-                    </div>
+              <div id="captions" class="row">
+                <div data-sub-html=".card-1" data-src="assets/images/bg/card-bg.png" class="col-12 col-md-6 col-xl-4 card-col">
+                  <a href class="card card-1">
                     <div class="info">
                       <div class="title font-weight-bold system-color-11">
                         Lorem ipsum dolor
@@ -467,7 +469,7 @@
                             src="assets/images/icons/chevron-right-purple.svg" alt=""></span>
                       </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="col-12 col-md-6 col-xl-4 card-col">
                   <div class="card">
@@ -638,6 +640,8 @@
                   </div>
                 </div>
               </div>
+
+
               <div class="row">
                 <div class="col-12">
                   <div class="load-more-btn">

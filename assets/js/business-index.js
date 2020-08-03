@@ -84,3 +84,9 @@ $(window).on('load', function () {
 	});
 });
 
+// Calling LightGallery
+$(document).ready(function() {
+	$('#captions').lightGallery();
+});
+
+

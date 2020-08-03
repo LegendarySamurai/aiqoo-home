@@ -100,11 +100,11 @@
 
   .section-top-sticky {
     position: sticky;
-    top: 87px;
+    top: 84px;
     left: 0;
     z-index: 301;
     width: 100%;
-    margin: -180px auto 0;
+    margin: -186px auto 0;
 
     .section-container {
       position: relative;
@@ -333,8 +333,8 @@
 
   .post-text {
     line-height: 1.35;
-    font-weight: 300;
-    font-size: 12pt;
+    font-weight: normal;
+    font-size: 11pt;
   }
 
   .post-date {
@@ -656,7 +656,7 @@
 
   @media(max-width: 1199px) {
     .section-top-sticky {
-      top: 90px;
+      //top: 90px;
 
       .section-container {
         & > .row {
@@ -765,10 +765,10 @@
 
   @media(max-width: 991px) {
     .send-message {
-      width: 230px;
+      width: 221px;
       position: absolute;
-      bottom: 0;
-      left: 15px;
+      left: 20px;
+      bottom: 3px;
       top: auto;
       right: auto;
       justify-content: center;
@@ -787,7 +787,7 @@
     }
 
     .section-top-sticky {
-      top: 80px;
+      top: 77px;
       height: 210px;
       margin-top: -154px;
 
@@ -854,7 +854,7 @@
     }
 
     .send-message {
-      width: 180px;
+      width: 171px;
       height: 45px;
     }
 
@@ -1025,7 +1025,7 @@
     }
 
     .send-message {
-      bottom: 0;
+      //bottom: 0;
     }
 
     .our-projects {
