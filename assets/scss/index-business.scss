@@ -2,7 +2,7 @@
 @import './helpers/variables';
 
 .index-business {
-  font-family: "Raleway","Helvetica","Arial",sans-serif;
+  font-family: "Helvetica","Arial",sans-serif;
 
   // Aside
   .aside-col {
@@ -18,8 +18,12 @@
       padding-top: 10px;
       border-bottom: 1px solid #e7e7e7;
 
+      .item-title {
+        font-size: 14pt;
+      }
+
       span {
-        font-size: 15pt;
+        font-size: 12pt;
       }
     }
 
@@ -316,9 +320,9 @@
   }
 
   .post-text {
-    line-height: 1.25;
+    line-height: 1.35;
     font-weight: 300;
-    font-size: 13pt;
+    font-size: 12pt;
   }
 
   .post-date {
@@ -392,6 +396,7 @@
 
       .text-content {
         margin-top: 0;
+        font-weight: 300;
         font-size: 13pt;
       }
     }
@@ -416,7 +421,7 @@
 
     .our-projects-data {
       padding: 20px 0;
-      font-size: 18pt;
+      font-size: 16pt;
     }
 
     .card-col {
@@ -427,7 +432,7 @@
       box-shadow: 0 7px 22.5px 0 rgba(0, 0, 0, 0.1);
 
       .title {
-        font-size: 16pt;
+        font-size: 14pt;
       }
 
       .info {
@@ -439,7 +444,7 @@
         flex-direction: row;
         align-items: center;
         margin: 10px 0;
-        font-size: 13pt;
+        font-size: 12pt;
 
         img {
           width: 13px;
@@ -457,7 +462,7 @@
           display: flex;
           flex-direction: row;
           align-items: center;
-          font-size: 13pt;
+          font-size: 12pt;
 
           img {
             width: 8px;
@@ -467,6 +472,7 @@
         }
 
         .view {
+          font-size: 13pt;
           cursor: pointer;
           border-bottom: 1px solid #342e49;
         }
@@ -625,13 +631,13 @@
   @media(max-width: 1299px) {
     .our-projects {
       .our-projects-data {
-        font-size: 16pt !important;
+        //font-size: 16pt !important;
       }
     }
 
     .our-reviews {
       .our-reviews-data {
-        font-size: 16pt !important;
+        //font-size: 16pt !important;
       }
     }
   }
@@ -669,11 +675,6 @@
       .video-container {
         height: unset;
       }
-    }
-
-    .post-text {
-      line-height: 1.35;
-      font-size: 12pt;
     }
 
     .our-reviews {
@@ -726,7 +727,7 @@
     .aside-col {
       .item {
         span {
-          font-size: 13pt;
+          //font-size: 13pt;
         }
       }
     }
