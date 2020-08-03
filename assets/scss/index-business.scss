@@ -22,8 +22,20 @@
         font-size: 14pt;
       }
 
-      span {
+      .item-text {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
         font-size: 12pt;
+
+        span {
+          line-height: 1;
+        }
+      }
+
+      .job-address {
+        font-size: 10pt;
       }
     }
 
@@ -215,7 +227,7 @@
     .tab {
       padding-bottom: 25px;
       font-weight: 600;
-      font-size: 16pt;
+      font-size: 14pt;
       white-space: nowrap;
       cursor: pointer;
 
@@ -229,7 +241,7 @@
           transform: translate(-50%, 0);
           display: block;
           content: '';
-          width: 100%;
+          width: calc(100% + 10px);
           height: 6px;
           background-color: #d8cdba;
         }
@@ -396,8 +408,8 @@
 
       .text-content {
         margin-top: 0;
-        font-weight: 300;
-        font-size: 13pt;
+        font-weight: normal;
+        font-size: 12pt;
       }
     }
   }
@@ -719,7 +731,7 @@
       padding-right: 22%;
 
       .tab {
-        font-size: 14pt;
+        font-size: 12pt;
         padding-bottom: 20px;
       }
     }
