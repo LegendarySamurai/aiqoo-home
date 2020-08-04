@@ -88,5 +88,9 @@ $(window).on('load', function () {
 $(document).ready(function() {
 	$('#captions').lightGallery();
 });
+//
+// $(document).ready(function() {
+// 	$('#card-1').lightGallery();
+// });
 
 

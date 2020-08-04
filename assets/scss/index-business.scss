@@ -1,6 +1,22 @@
 @import './video';
 @import './helpers/variables';
 
+// Light Gallery
+.lg-outer {
+  top: 70px;
+
+  .lg {
+    height: calc(100% - 70px) !important;
+  }
+}
+
+.lg-sub-html {
+  .info {
+    //min-width: 300px;
+    //margin: 0 auto;
+  }
+}
+
 .index-business {
   font-family: "Helvetica","Arial",sans-serif;
 
