@@ -15,18 +15,17 @@
   <link rel="icon" type="image/x-icon"
         href="assets/favicons/favicon.ico?v=-aFKl_fnEZLhxG-mj69VM5ESG3JrpZDfb3B2Zt9y79I"/>
   <!--<link rel="manifest" href="assets/manifest.json?v=3unRh_Mb5JLH_G4OiIY_2d0idb_ytGvM67JFlJM1mmg">-->
-  <!--<script defer src="assets/js/web.es5.min.js?v=Q0hbeOicaOFvmADkCbdiLLAx0ndX_E4vVzKcS4UUuLw"></script>-->
-
+  <script defer src="assets/js/web.es5.min.js?v=Q0hbeOicaOFvmADkCbdiLLAx0ndX_E4vVzKcS4UUuLw"></script>
   <link href="https://fonts.googleapis.com/css?family=Raleway:600,700&display=swap" rel="stylesheet">
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
   <script defer src="assets/js/lightgallery.min.js"></script>
   <script defer src="assets/js/lg-thumbnail.min.js"></script>
-  <!--<script defer src="assets/js/lg-hash.min.js"></script>-->
   <script defer src="assets/js/lg-fullscreen.min.js"></script>
   <script defer src="assets/js/business-index.js"></script>
   <script defer src="assets/js/autocomplete.es5.min.js"></script>
   <script defer src="assets/js/user_tracking.es5.min.js"></script>
-  <!--<link type="text/css" rel="stylesheet" href="css/lightgallery.css" />-->
   <link href="assets/css/lightgallery.min.css" rel="stylesheet"/>
   <link href="assets/css/web.css?v=YoFODcqUmgz3TvM1xzPPq68ptulVmUkrTa_Q5NP113E" rel="stylesheet"/>
   <link href="assets/css/index-business.css" rel="stylesheet"/>
@@ -458,39 +457,39 @@
               <div class="row">
                 <div class="col-12 col-md-6 col-xl-4 card-col">
                   <!-- Card -->
-                  <div id="pr-card-1" class="card project-card">
+                  <ul id="pr-card-1" class="card project-card">
                     <!-- Card image -->
-                    <a data-sub-html="<h4>Lorem ipsum dolor 1</h4>
+                    <li data-sub-html="<h4>Lorem ipsum dolor 1</h4>
                       <p>
                         Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
                         Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
                         Lorem ipsum dolor Lorem ipsum dolor...
                       </p>"
-                       href="assets/images/bg/card-bg-1.png"
+                        data-src="assets/images/bg/card-bg-1.png"
                        class="image-container">
-                      <img src="assets/images/bg/card-bg-1.png" alt="">
-                    </a>
+                      <img src="assets/images/bg/card-bg-1.png" />
+                    </li>
 
-                    <a data-sub-html="<h4>Lorem ipsum dolor 2</h4>
+                    <li data-sub-html="<h4>Lorem ipsum dolor 2</h4>
                       <p>
                         Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
                         Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
                         Lorem ipsum dolor Lorem ipsum dolor...
                       </p>"
-                       href="assets/images/bg/card-bg-2.png"
+                       data-src="assets/images/bg/card-bg-2.png"
                        class="image-container d-none">
-                      <img src="assets/images/bg/card-bg-2.png" alt="">
-                    </a>
-                    <a data-sub-html="<h4>Lorem ipsum dolor 3</h4>
+                      <img src="assets/images/bg/card-bg-2.png" />
+                    </li>
+                    <li data-sub-html="<h4>Lorem ipsum dolor 3</h4>
                       <p>
                         Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
                         Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
                         Lorem ipsum dolor Lorem ipsum dolor...
                       </p>"
-                       href="assets/images/bg/card-bg-3.png"
+                        data-src="assets/images/bg/card-bg-3.png"
                        class="image-container d-none">
-                      <img src="assets/images/bg/card-bg-3.png" alt="">
-                    </a>
+                      <img src="assets/images/bg/card-bg-3.png" />
+                    </li>
                     <!-- Card info -->
                     <div class="info">
                       <div class="title font-weight-bold system-color-11">
@@ -508,44 +507,54 @@
                         </span>
                       </div>
                     </div>
-                  </div>
+                  </ul>
                 </div>
 
-                <div class="col-12 col-md-6 col-xl-4 card-col d-none">
+                <div class="col-12 col-md-6 col-xl-4 card-col">
                   <!-- Card -->
-                  <div id="pr-card-2" class="card project-card">
+                  <ul id="pr-card-2" class="card project-card">
                     <!-- Card image -->
-                    <a data-sub-html="<h4>Lorem ipsum dolor 4</h4>
+                    <li data-sub-html="<h4>Lorem ipsum dolor 4</h4>
                       <p>
                         Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
                         Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
                         Lorem ipsum dolor Lorem ipsum dolor...
                       </p>"
-                       href="assets/images/bg/card-bg-3.png"
+                       data-src="assets/images/bg/card-bg-3.png"
                        class="image-container">
-                      <img src="assets/images/bg/card-bg-3.png" alt="">
-                    </a>
+                      <img src="assets/images/bg/card-bg-3.png" />
+                    </li>
 
-                    <a data-sub-html="<h4>Lorem ipsum dolor 5</h4>
+                    <li data-sub-html="<h4>Lorem ipsum dolor 5</h4>
                       <p>
                         Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
                         Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
                         Lorem ipsum dolor Lorem ipsum dolor...
                       </p>"
-                       href="assets/images/bg/card-bg-2.png"
+                        data-src="assets/images/bg/card-bg-2.png"
                        class="image-container d-none">
-                      <img src="assets/images/bg/card-bg-2.png" alt="">
-                    </a>
-                    <a data-sub-html="<h4>Lorem ipsum dolor 6</h4>
+                      <img src="assets/images/bg/card-bg-2.png" />
+                    </li>
+                    <li data-sub-html="<h4>Lorem ipsum dolor 6</h4>
                       <p>
                         Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
                         Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
                         Lorem ipsum dolor Lorem ipsum dolor...
                       </p>"
-                       href="assets/images/bg/card-bg-1.png"
+                        data-src="assets/images/bg/card-bg-1.png"
                        class="image-container d-none">
-                      <img src="assets/images/bg/card-bg-1.png" alt="">
-                    </a>
+                      <img src="assets/images/bg/card-bg-1.png" />
+                    </li>
+                    <li data-sub-html="<h4>Lorem ipsum dolor 7</h4>
+                      <p>
+                        Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                        Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                        Lorem ipsum dolor Lorem ipsum dolor...
+                      </p>"
+                        data-src="assets/images/bg/card-bg-3.png"
+                       class="image-container d-none">
+                      <img src="assets/images/bg/card-bg-3.png" />
+                    </li>
                     <!-- Card info -->
                     <div class="info">
                       <div class="title font-weight-bold system-color-11">
@@ -563,98 +572,98 @@
                         </span>
                       </div>
                     </div>
-                  </div>
+                  </ul>
                 </div>
 
-                <div class="col-12 col-md-6 col-xl-4 card-col d-none">
+                <div class="col-12 col-md-6 col-xl-4 card-col">
                   <!-- Card -->
-                  <div id="pr-card-3" class="card project-card">
+                  <ul id="pr-card-3" class="card project-card">
                     <!-- Card image -->
-                    <a data-sub-html="<h4>Lorem ipsum dolor 7</h4>
+                    <li data-sub-html="<h4>Lorem ipsum dolor 7</h4>
                       <p>
                         Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
                         Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
                         Lorem ipsum dolor Lorem ipsum dolor...
                       </p>"
-                       href="assets/images/bg/card-bg-1.png"
+                        data-src="assets/images/bg/card-bg-2.png"
                        class="image-container">
-                      <img src="assets/images/bg/card-bg-1.png" alt="">
-                    </a>
+                      <img src="assets/images/bg/card-bg-2.png" />
+                    </li>
 
-                    <a data-sub-html="<h4>Lorem ipsum dolor 8</h4>
+                    <li data-sub-html="<h4>Lorem ipsum dolor 8</h4>
                       <p>
                         Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
                         Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
                         Lorem ipsum dolor Lorem ipsum dolor...
                       </p>"
-                       href="assets/images/bg/card-bg-2.png"
+                       data-src="assets/images/bg/card-bg-3.png"
                        class="image-container d-none">
-                      <img src="assets/images/bg/card-bg-2.png" alt="">
-                    </a>
-                    <a data-sub-html="<h4>Lorem ipsum dolor 9</h4>
+                      <img src="assets/images/bg/card-bg-3.png" />
+                    </li>
+                    <li data-sub-html="<h4>Lorem ipsum dolor 9</h4>
                       <p>
                         Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
                         Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
                         Lorem ipsum dolor Lorem ipsum dolor...
                       </p>"
-                       href="assets/images/bg/card-bg-3.png"
+                        data-src="assets/images/bg/card-bg-1.png"
                        class="image-container d-none">
-                      <img src="assets/images/bg/card-bg-3.png" alt="">
-                    </a>
-                    <a data-sub-html="<h4>Lorem ipsum dolor 10</h4>
+                      <img src="assets/images/bg/card-bg-1.png" />
+                    </li>
+                    <li data-sub-html="<h4>Lorem ipsum dolor 10</h4>
                       <p>
                         Lorem ipsum dolor Lorem ipsum dolor Lorem dolor Lorem ipsum dolor
                         Lorem ipsum dolor Lorem ipsum dolor...
                       </p>"
-                       href="assets/images/bg/card-bg-3.png"
+                        data-src="assets/images/bg/card-bg-3.png"
                        class="image-container d-none">
-                      <img src="assets/images/bg/card-bg-3.png" alt="">
-                    </a>
-                    <a data-sub-html="<h4>Lorem ipsum dolor 11</h4>
+                      <img src="assets/images/bg/card-bg-3.png" />
+                    </li>
+                    <li data-sub-html="<h4>Lorem ipsum dolor 11</h4>
                       <p>
                         Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
                         Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
                         Lorem ipsum dolor Lorem ipsum dolor...
                       </p>"
-                       href="assets/images/bg/card-bg-2.png"
+                        data-src="assets/images/bg/card-bg-2.png"
                        class="image-container d-none">
-                      <img src="assets/images/bg/card-bg-2.png" alt="">
-                    </a>
-                    <a data-sub-html="<h4>Lorem ipsum dolor 12</h4>
+                      <img src="assets/images/bg/card-bg-2.png" />
+                    </li>
+                    <li data-sub-html="<h4>Lorem ipsum dolor 12</h4>
                       <p>
                         Lorem ipsum dolor Lorem ipsum dolor Lorem ...
                       </p>"
-                       href="assets/images/bg/card-bg-3.png"
+                        data-src="assets/images/bg/card-bg-3.png"
                        class="image-container d-none">
-                      <img src="assets/images/bg/card-bg-3.png" alt="">
-                    </a>
-                    <a data-sub-html="<h4>Lorem ipsum dolor 13</h4>
+                      <img src="assets/images/bg/card-bg-3.png" />
+                    </li>
+                    <li data-sub-html="<h4>Lorem ipsum dolor 13</h4>
                       <p>
                         Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
                         Lorem ipsum dolor Lorem ipsum dolor...
                       </p>"
-                       href="assets/images/bg/card-bg-2.png"
+                        data-src="assets/images/bg/card-bg-2.png"
                        class="image-container d-none">
-                      <img src="assets/images/bg/card-bg-2.png" alt="">
-                    </a>
-                    <a data-sub-html="<h4>Lorem ipsum dolor 14</h4>
+                      <img src="assets/images/bg/card-bg-2.png" />
+                    </li>
+                    <li data-sub-html="<h4>Lorem ipsum dolor 14</h4>
                       <p>
                         Lorem ipsum dolor ...
                       </p>"
-                       href="assets/images/bg/card-bg-3.png"
+                       data-src="assets/images/bg/card-bg-3.png"
                        class="image-container d-none">
-                      <img src="assets/images/bg/card-bg-3.png" alt="">
-                    </a>
-                    <a data-sub-html="<h4>Lorem ipsum dolor 15</h4>
+                      <img src="assets/images/bg/card-bg-3.png" />
+                    </li>
+                    <li data-sub-html="<h4>Lorem ipsum dolor 15</h4>
                       <p>
                         Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
                         Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
                         Lorem ipsum dolor Lorem ipsum dolor...
                       </p>"
-                       href="assets/images/bg/card-bg-1.png"
+                        data-src="assets/images/bg/card-bg-1.png"
                        class="image-container d-none">
-                      <img src="assets/images/bg/card-bg-1.png" alt="">
-                    </a>
+                      <img src="assets/images/bg/card-bg-1.png" />
+                    </li>
                     <!-- Card info -->
                     <div class="info">
                       <div class="title font-weight-bold system-color-11">
@@ -672,8 +681,9 @@
                         </span>
                       </div>
                     </div>
-                  </div>
+                  </ul>
                 </div>
+
               </div>
 
 
