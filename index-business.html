@@ -21,6 +21,7 @@
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script defer src="assets/js/lightgallery.min.js"></script>
   <script defer src="assets/js/lg-thumbnail.min.js"></script>
+  <!--<script defer src="assets/js/lg-hash.min.js"></script>-->
   <script defer src="assets/js/lg-fullscreen.min.js"></script>
   <script defer src="assets/js/business-index.js"></script>
   <script defer src="assets/js/autocomplete.es5.min.js"></script>
@@ -453,327 +454,225 @@
                 </div>
               </div>
 
-              <div id="card-1" style="display:none">
-                <div class="info">
-                  <h4>Lorem ipsum dolor 1</h4>
-                  <p>
-                    Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
-                    Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
-                    Lorem ipsum dolor Lorem ipsum dolor...
-                  </p>
-                </div>
-              </div>
 
-              <div id="card-2" style="display:none">
-                <div class="info">
-                  <h4>Lorem ipsum dolor 2</h4>
-                  <p>
-                    Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
-                    Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
-                    Lorem ipsum dolor Lorem ipsum dolor...
-                  </p>
-                </div>
-              </div>
-
-              <div id="card-3" style="display:none">
-                <div class="info">
-                  <h4>Lorem ipsum dolor 3</h4>
-                  <p>
-                    Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
-                    Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
-                    Lorem ipsum dolor Lorem ipsum dolor...
-                  </p>
-                </div>
-              </div>
-
-              <div id="card-4" style="display:none">
-                <div class="info">
-                  <h4>Lorem ipsum dolor 4</h4>
-                  <p>
-                    Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
-                    Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
-                    Lorem ipsum dolor Lorem ipsum dolor...
-                  </p>
-                </div>
-              </div>
-
-              <div id="card-5" style="display:none">
-                <div class="info">
-                  <h4>Lorem ipsum dolor 5</h4>
-                  <p>
-                    Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
-                    Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
-                    Lorem ipsum dolor Lorem ipsum dolor...
-                  </p>
-                </div>
-              </div>
-
-              <div id="card-6" style="display:none">
-                <div class="info">
-                  <h4>Lorem ipsum dolor 6</h4>
-                  <p>
-                    Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
-                    Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
-                    Lorem ipsum dolor Lorem ipsum dolor...
-                  </p>
-                </div>
-              </div>
-
-              <div id="card-7" style="display:none">
-                <div class="info">
-                  <h4>Lorem ipsum dolor 7</h4>
-                  <p>
-                    Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
-                    Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
-                    Lorem ipsum dolor Lorem ipsum dolor...
-                  </p>
-                </div>
-              </div>
-
-              <div id="card-8" style="display:none">
-                <div class="info">
-                  <h4>Lorem ipsum dolor 8</h4>
-                  <p>
-                    Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
-                    Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
-                    Lorem ipsum dolor Lorem ipsum dolor...
-                  </p>
-                </div>
-              </div>
-
-              <div id="card-9" style="display:none">
-                <div class="info">
-                  <h4>Lorem ipsum dolor 9</h4>
-                  <p>
-                    Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
-                    Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
-                    Lorem ipsum dolor Lorem ipsum dolor...
-                  </p>
-                </div>
-              </div>
-
-              <div id="card-10" style="display:none">
-                <div class="info">
-                  <h4>Lorem ipsum dolor 10</h4>
-                  <p>
-                    Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
-                    Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
-                    Lorem ipsum dolor Lorem ipsum dolor...
-                  </p>
-                </div>
-              </div>
-
-
-              <div id="captions" class="row">
-                <div data-sub-html="#card-1" data-src="assets/images/bg/card-bg-1.png" class="col-12 col-md-6 col-xl-4 card-col">
-                  <a href="assets/images/bg/card-bg-3.png" class="card">
-                    <div class="image-container">
+              <div class="row">
+                <div class="col-12 col-md-6 col-xl-4 card-col">
+                  <!-- Card -->
+                  <div id="pr-card-1" class="card project-card">
+                    <!-- Card image -->
+                    <a data-sub-html="<h4>Lorem ipsum dolor 1</h4>
+                      <p>
+                        Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                        Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                        Lorem ipsum dolor Lorem ipsum dolor...
+                      </p>"
+                       href="assets/images/bg/card-bg-1.png"
+                       class="image-container">
                       <img src="assets/images/bg/card-bg-1.png" alt="">
-                    </div>
-                    <div class="info">
-                      <div class="title font-weight-bold system-color-11">
-                        Lorem ipsum dolor
-                      </div>
-                      <div class="location">
-                        <img class="" src="assets/images/icons/location-dark.svg" alt="">
-                        <span class="font-weight-500 system-color-11">Beverly hills, California</span>
-                      </div>
-                      <div class="card-bottom">
-                        <span class="system-color-11 font-weight-300">16 Photos</span>
-                        <span class="view font-weight-300 system-color-11">View <img
-                            src="assets/images/icons/chevron-right-purple.svg" alt=""></span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div data-sub-html="#card-2" data-src="assets/images/bg/card-bg-2.png" class="col-12 col-md-6 col-xl-4 card-col">
-                  <a href="assets/images/bg/bg_categories_d.jpg" class="card">
-                    <div class="image-container">
+                    </a>
+
+                    <a data-sub-html="<h4>Lorem ipsum dolor 2</h4>
+                      <p>
+                        Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                        Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                        Lorem ipsum dolor Lorem ipsum dolor...
+                      </p>"
+                       href="assets/images/bg/card-bg-2.png"
+                       class="image-container d-none">
                       <img src="assets/images/bg/card-bg-2.png" alt="">
-                    </div>
-                    <div class="info">
-                      <div class="title font-weight-bold system-color-11">
-                        Lorem ipsum dolor
-                      </div>
-                      <div class="location">
-                        <img class="" src="assets/images/icons/location-dark.svg" alt="">
-                        <span class="font-weight-500 system-color-11">Beverly hills, California</span>
-                      </div>
-                      <div class="card-bottom">
-                        <span class="system-color-11 font-weight-300">16 Photos</span>
-                        <span class="view font-weight-300 system-color-11">View <img
-                            src="assets/images/icons/chevron-right-purple.svg" alt=""></span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div data-sub-html="#card-3" data-src="assets/images/bg/card-bg-3.png" class="col-12 col-md-6 col-xl-4 card-col">
-                  <a href="assets/images/bg/bg_categories_d.jpg" class="card">
-                    <div class="image-container">
+                    </a>
+                    <a data-sub-html="<h4>Lorem ipsum dolor 3</h4>
+                      <p>
+                        Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                        Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                        Lorem ipsum dolor Lorem ipsum dolor...
+                      </p>"
+                       href="assets/images/bg/card-bg-3.png"
+                       class="image-container d-none">
                       <img src="assets/images/bg/card-bg-3.png" alt="">
-                    </div>
+                    </a>
+                    <!-- Card info -->
                     <div class="info">
                       <div class="title font-weight-bold system-color-11">
                         Lorem ipsum dolor
                       </div>
                       <div class="location">
-                        <img class="" src="assets/images/icons/location-dark.svg" alt="">
+                        <i class="location-icon"></i>
                         <span class="font-weight-500 system-color-11">Beverly hills, California</span>
                       </div>
                       <div class="card-bottom">
                         <span class="system-color-11 font-weight-300">16 Photos</span>
-                        <span class="view font-weight-300 system-color-11">View <img
-                            src="assets/images/icons/chevron-right-purple.svg" alt=""></span>
+                        <span class="view font-weight-300 system-color-11">
+                          View
+                          <i class="chevron"></i>
+                        </span>
                       </div>
                     </div>
-                  </a>
+                  </div>
                 </div>
-                <div data-sub-html="#card-4" data-src="assets/images/bg/card-bg-1.png" class="col-12 col-md-6 col-xl-4 card-col">
-                  <a href="assets/images/bg/bg_categories_d.jpg" class="card">
-                    <div class="image-container">
-                      <img src="assets/images/bg/card-bg-1.png" alt="">
-                    </div>
-                    <div class="info">
-                      <div class="title font-weight-bold system-color-11">
-                        Lorem ipsum dolor
-                      </div>
-                      <div class="location">
-                        <img class="" src="assets/images/icons/location-dark.svg" alt="">
-                        <span class="font-weight-500 system-color-11">Beverly hills, California</span>
-                      </div>
-                      <div class="card-bottom">
-                        <span class="system-color-11 font-weight-300">16 Photos</span>
-                        <span class="view font-weight-300 system-color-11">View <img
-                            src="assets/images/icons/chevron-right-purple.svg" alt=""></span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div data-sub-html="#card-5" data-src="assets/images/bg/card-bg-2.png" class="col-12 col-md-6 col-xl-4 card-col">
-                  <a href="assets/images/bg/bg_categories_d.jpg" class="card">
-                    <div class="image-container">
+
+                <div class="col-12 col-md-6 col-xl-4 card-col d-none">
+                  <!-- Card -->
+                  <div id="pr-card-2" class="card project-card">
+                    <!-- Card image -->
+                    <a data-sub-html="<h4>Lorem ipsum dolor 4</h4>
+                      <p>
+                        Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                        Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                        Lorem ipsum dolor Lorem ipsum dolor...
+                      </p>"
+                       href="assets/images/bg/card-bg-3.png"
+                       class="image-container">
+                      <img src="assets/images/bg/card-bg-3.png" alt="">
+                    </a>
+
+                    <a data-sub-html="<h4>Lorem ipsum dolor 5</h4>
+                      <p>
+                        Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                        Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                        Lorem ipsum dolor Lorem ipsum dolor...
+                      </p>"
+                       href="assets/images/bg/card-bg-2.png"
+                       class="image-container d-none">
                       <img src="assets/images/bg/card-bg-2.png" alt="">
-                    </div>
-                    <div class="info">
-                      <div class="title font-weight-bold system-color-11">
-                        Lorem ipsum dolor
-                      </div>
-                      <div class="location">
-                        <img class="" src="assets/images/icons/location-dark.svg" alt="">
-                        <span class="font-weight-500 system-color-11">Beverly hills, California</span>
-                      </div>
-                      <div class="card-bottom">
-                        <span class="system-color-11 font-weight-300">16 Photos</span>
-                        <span class="view font-weight-300 system-color-11">View <img
-                            src="assets/images/icons/chevron-right-purple.svg" alt=""></span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div data-sub-html="#card-6" data-src="assets/images/bg/card-bg-3.png" class="col-12 col-md-6 col-xl-4 card-col">
-                  <a href="assets/images/bg/bg_categories_d.jpg" class="card">
-                    <div class="image-container">
-                      <img src="assets/images/bg/card-bg-3.png" alt="">
-                    </div>
-                    <div class="info">
-                      <div class="title font-weight-bold system-color-11">
-                        Lorem ipsum dolor
-                      </div>
-                      <div class="location">
-                        <img class="" src="assets/images/icons/location-dark.svg" alt="">
-                        <span class="font-weight-500 system-color-11">Beverly hills, California</span>
-                      </div>
-                      <div class="card-bottom">
-                        <span class="system-color-11 font-weight-300">16 Photos</span>
-                        <span class="view font-weight-300 system-color-11">View <img
-                            src="assets/images/icons/chevron-right-purple.svg" alt=""></span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div data-sub-html="#card-7" data-src="assets/images/bg/card-bg-1.png" class="col-12 col-md-6 col-xl-4 card-col">
-                  <a href="assets/images/bg/bg_categories_d.jpg" class="card">
-                    <div class="image-container">
+                    </a>
+                    <a data-sub-html="<h4>Lorem ipsum dolor 6</h4>
+                      <p>
+                        Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                        Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                        Lorem ipsum dolor Lorem ipsum dolor...
+                      </p>"
+                       href="assets/images/bg/card-bg-1.png"
+                       class="image-container d-none">
                       <img src="assets/images/bg/card-bg-1.png" alt="">
-                    </div>
+                    </a>
+                    <!-- Card info -->
                     <div class="info">
                       <div class="title font-weight-bold system-color-11">
                         Lorem ipsum dolor
                       </div>
                       <div class="location">
-                        <img class="" src="assets/images/icons/location-dark.svg" alt="">
+                        <i class="location-icon"></i>
                         <span class="font-weight-500 system-color-11">Beverly hills, California</span>
                       </div>
                       <div class="card-bottom">
                         <span class="system-color-11 font-weight-300">16 Photos</span>
-                        <span class="view font-weight-300 system-color-11">View <img
-                            src="assets/images/icons/chevron-right-purple.svg" alt=""></span>
+                        <span class="view font-weight-300 system-color-11">
+                          View
+                          <i class="chevron"></i>
+                        </span>
                       </div>
                     </div>
-                  </a>
+                  </div>
                 </div>
-                <div data-sub-html="#card-8" data-src="assets/images/bg/card-bg-2.png" class="col-12 col-md-6 col-xl-4 card-col">
-                  <a href="assets/images/bg/bg_categories_d.jpg" class="card">
-                    <div class="image-container">
+
+                <div class="col-12 col-md-6 col-xl-4 card-col d-none">
+                  <!-- Card -->
+                  <div id="pr-card-3" class="card project-card">
+                    <!-- Card image -->
+                    <a data-sub-html="<h4>Lorem ipsum dolor 7</h4>
+                      <p>
+                        Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                        Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                        Lorem ipsum dolor Lorem ipsum dolor...
+                      </p>"
+                       href="assets/images/bg/card-bg-1.png"
+                       class="image-container">
+                      <img src="assets/images/bg/card-bg-1.png" alt="">
+                    </a>
+
+                    <a data-sub-html="<h4>Lorem ipsum dolor 8</h4>
+                      <p>
+                        Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                        Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                        Lorem ipsum dolor Lorem ipsum dolor...
+                      </p>"
+                       href="assets/images/bg/card-bg-2.png"
+                       class="image-container d-none">
                       <img src="assets/images/bg/card-bg-2.png" alt="">
-                    </div>
-                    <div class="info">
-                      <div class="title font-weight-bold system-color-11">
-                        Lorem ipsum dolor
-                      </div>
-                      <div class="location">
-                        <img class="" src="assets/images/icons/location-dark.svg" alt="">
-                        <span class="font-weight-500 system-color-11">Beverly hills, California</span>
-                      </div>
-                      <div class="card-bottom">
-                        <span class="system-color-11 font-weight-300">16 Photos</span>
-                        <span class="view font-weight-300 system-color-11">View <img
-                            src="assets/images/icons/chevron-right-purple.svg" alt=""></span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div data-sub-html="#card-9" data-src="assets/images/bg/card-bg-3.png" class="col-12 col-md-6 col-xl-4 card-col">
-                  <a href="assets/images/bg/bg_categories_d.jpg" class="card">
-                    <div class="image-container">
+                    </a>
+                    <a data-sub-html="<h4>Lorem ipsum dolor 9</h4>
+                      <p>
+                        Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                        Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                        Lorem ipsum dolor Lorem ipsum dolor...
+                      </p>"
+                       href="assets/images/bg/card-bg-3.png"
+                       class="image-container d-none">
                       <img src="assets/images/bg/card-bg-3.png" alt="">
-                    </div>
-                    <div class="info">
-                      <div class="title font-weight-bold system-color-11">
-                        Lorem ipsum dolor
-                      </div>
-                      <div class="location">
-                        <img class="" src="assets/images/icons/location-dark.svg" alt="">
-                        <span class="font-weight-500 system-color-11">Beverly hills, California</span>
-                      </div>
-                      <div class="card-bottom">
-                        <span class="system-color-11 font-weight-300">16 Photos</span>
-                        <span class="view font-weight-300 system-color-11">View <img
-                            src="assets/images/icons/chevron-right-purple.svg" alt=""></span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div data-sub-html="#card-10" data-src="assets/images/bg/card-bg-1.png" class="col-12 col-md-6 col-xl-4 card-col">
-                  <a href="assets/images/bg/bg_categories_d.jpg" class="card">
-                    <div class="image-container">
+                    </a>
+                    <a data-sub-html="<h4>Lorem ipsum dolor 10</h4>
+                      <p>
+                        Lorem ipsum dolor Lorem ipsum dolor Lorem dolor Lorem ipsum dolor
+                        Lorem ipsum dolor Lorem ipsum dolor...
+                      </p>"
+                       href="assets/images/bg/card-bg-3.png"
+                       class="image-container d-none">
+                      <img src="assets/images/bg/card-bg-3.png" alt="">
+                    </a>
+                    <a data-sub-html="<h4>Lorem ipsum dolor 11</h4>
+                      <p>
+                        Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                        Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                        Lorem ipsum dolor Lorem ipsum dolor...
+                      </p>"
+                       href="assets/images/bg/card-bg-2.png"
+                       class="image-container d-none">
+                      <img src="assets/images/bg/card-bg-2.png" alt="">
+                    </a>
+                    <a data-sub-html="<h4>Lorem ipsum dolor 12</h4>
+                      <p>
+                        Lorem ipsum dolor Lorem ipsum dolor Lorem ...
+                      </p>"
+                       href="assets/images/bg/card-bg-3.png"
+                       class="image-container d-none">
+                      <img src="assets/images/bg/card-bg-3.png" alt="">
+                    </a>
+                    <a data-sub-html="<h4>Lorem ipsum dolor 13</h4>
+                      <p>
+                        Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                        Lorem ipsum dolor Lorem ipsum dolor...
+                      </p>"
+                       href="assets/images/bg/card-bg-2.png"
+                       class="image-container d-none">
+                      <img src="assets/images/bg/card-bg-2.png" alt="">
+                    </a>
+                    <a data-sub-html="<h4>Lorem ipsum dolor 14</h4>
+                      <p>
+                        Lorem ipsum dolor ...
+                      </p>"
+                       href="assets/images/bg/card-bg-3.png"
+                       class="image-container d-none">
+                      <img src="assets/images/bg/card-bg-3.png" alt="">
+                    </a>
+                    <a data-sub-html="<h4>Lorem ipsum dolor 15</h4>
+                      <p>
+                        Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                        Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                        Lorem ipsum dolor Lorem ipsum dolor...
+                      </p>"
+                       href="assets/images/bg/card-bg-1.png"
+                       class="image-container d-none">
                       <img src="assets/images/bg/card-bg-1.png" alt="">
-                    </div>
+                    </a>
+                    <!-- Card info -->
                     <div class="info">
                       <div class="title font-weight-bold system-color-11">
                         Lorem ipsum dolor
                       </div>
                       <div class="location">
-                        <img class="" src="assets/images/icons/location-dark.svg" alt="">
+                        <i class="location-icon"></i>
                         <span class="font-weight-500 system-color-11">Beverly hills, California</span>
                       </div>
                       <div class="card-bottom">
                         <span class="system-color-11 font-weight-300">16 Photos</span>
-                        <span class="view font-weight-300 system-color-11">View <img
-                            src="assets/images/icons/chevron-right-purple.svg" alt=""></span>
+                        <span class="view font-weight-300 system-color-11">
+                          View
+                          <i class="chevron"></i>
+                        </span>
                       </div>
                     </div>
-                  </a>
+                  </div>
                 </div>
               </div>
 

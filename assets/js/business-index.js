@@ -85,12 +85,30 @@ $(window).on('load', function () {
 });
 
 // Calling LightGallery
-$(document).ready(function() {
-	$('#captions').lightGallery();
-});
-//
 // $(document).ready(function() {
-// 	$('#card-1').lightGallery();
+// 	$("#hash").lightGallery({
+// 		download: false,
+// 		counter: false,
+// 		hash: true,
+// 		galleryId: 1
 // });
+// 	$("#hash2").lightGallery({
+// 		download: false,
+// 		counter: false,
+// 		hash: true,
+// 		galleryId: 2
+// });
+// });
+
+// $('.project-card').each(function (index) {
+// 	$('#' + this.id).lightGallery({
+// 		share: false,
+// 		galleryId: index
+// 	});
+// });
+$(document).ready(function() {
+	$('.project-card').lightGallery();
+});
+
 
 
