@@ -17,8 +17,14 @@
     //cursor: pointer;
 
     .icon {
-      margin-right: 40px;
-      font-size: 32pt;
+      flex-shrink: 0;
+      width: 80px;
+      height: 80px;
+      margin-right: 15px;
+
+      img {
+        object-fit: contain;
+      }
     }
 
     .text {
@@ -39,6 +45,15 @@
         margin-right: 20px ;
         font-size: 29pt;
       }
+    }
+  }
+
+  @media(max-width: 1199px) {
+    flex-wrap: wrap;
+
+    .point {
+      width: 50%;
+      margin-bottom: 40px;
     }
   }
 
