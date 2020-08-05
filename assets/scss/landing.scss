@@ -752,3 +752,32 @@
     width: 100%;
     height: 73vh;
 }
+
+.funnel-card-nav h2 {
+    position: relative;
+    font-family: Helvetica !important;
+    font-weight: 500 !important;
+    font-size: 13pt !important;
+    cursor: pointer;
+    background-color: #e4ebe4;
+    border-radius: 5px;
+    margin: 0 5px;
+    padding: 4px 5px;
+}
+
+.funnel-card-nav h2 strong {
+    font-size: 13.5pt !important;
+    font-weight: 600 !important;
+}
+
+
+@media(max-width: 767px) {
+    .funnel-card-nav h2 {
+        font-size: 10pt !important;
+    }
+
+    .funnel-card-nav h2 strong {
+        font-size: 10.5pt !important;
+        font-weight: 600 !important;
+    }
+}

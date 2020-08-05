@@ -354,9 +354,6 @@
 }
 
 @media (max-width: 600px) {
-    .funnel-card h2 {
-        font-size: 11pt;
-    }
 
     .step-div-h1 {
         /*
@@ -384,14 +381,6 @@
 }
 
 @media (max-width: 400px) {
-    .funnel-card h2 {
-        font-size: 11pt;
-    }
-
-    .step-div-h2 span {
-        font-size: 11pt;
-    }
-
     .step-div-h2 span::first-line {
         font-size: 14pt;
     }

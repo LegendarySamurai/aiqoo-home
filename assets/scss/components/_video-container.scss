@@ -11,7 +11,7 @@
         justify-content: flex-start;
         height: auto;
         padding: 7px 30px 7px 10px;
-        background-color: transparentize(#d8cdba, .2);
+        background-color: transparentize(#d8cdba, .1);
         color: #342e49;
         font-family: $h-font;
 
@@ -23,18 +23,22 @@
 
     &.small-video {
         .text {
-            left: 10px;
+            left: 3%;
             top: auto;
-            bottom: 10px;
+            bottom: 7px;
             //width: 94%;
             width: auto;
+            height:42px;
+            max-width: 94%;
             padding: 5px 20px 5px 10px;
+            color: #342e49;
+            /*
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
-
+                */
             & .video-title {
-                font-size: 10pt;
+                font-size: 10.5pt;
             }
         }
     }

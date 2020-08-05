@@ -1,5 +1,4 @@
-﻿//--\assets\js\collapse.min.js
-"use strict";
+﻿"use strict";
 
 !(function (e, t) {
 	"object" == typeof exports && "undefined" != typeof module ? module.exports = t(require("jquery")) : "function" == typeof define && define.amd ? define(["jquery"], t) : (e = e || self).Util = t(e.jQuery);
@@ -157,51 +156,34 @@
 	}, l;
 });
 
-function filterShopDepartments(ID, tags, categories) {
-
-	newCategories = '#,' + categories.replace(' ', '') + ',#';
-
-	var checkBox = document.getElementById("s_checkbox" + ID);
-	if (checkBox.checked == true) {
-		newCategories = newCategories + ',' + ID;
-		newCategories = clearList(newCategories);
-		window.location.href = 'shop/1/' + tags + '/' + newCategories + '/';
-	} else {
-		newCategories = newCategories.replace(',' + ID, '');
-		newCategories = clearList(newCategories);
-		if (newCategories == '' || newCategories == "" || newCategories == null) {
-			newCategories = "-";
+$(document).ready(function () {
+	$.each($('.faq-accordion .card'), function (index, value) {
+		// console.log(value);
+		var card = $(value);
+		var collapse = card.find('.collapse');
+		var cardCollapsed = collapse.hasClass('show');
+		if (cardCollapsed) {
+			card.addClass('expanded');
+		} else {
+			card.removeClass('expanded');
 		}
-		window.location.href = 'shop/1/' + tags + '/' + newCategories + '/';
-	}
-}
+	});
 
-function filterShopTypes(ID, tags, categories, action) {
+	$('.faq-accordion .card button').click(function () {
+		$.each($('.faq-accordion .card'), function (index, value) {
+			var card = $(value);
+			card.removeClass('expanded');
+		});
+		// console.log('step 1');
+		var card = $(this).parents('.card');
 
-	newTags = '#,' + tags.replace(' ', '') + ',#';
-	if (action == true) {
-		newTags = newTags + ',' + ID;
-		newTags = clearList(newTags);
-		window.location.href = 'shop/1/' + newTags + '/' + categories + '/';
-	} else {
-		newTags = newTags.replace(',' + ID, '');
-		newTags = clearList(newTags);
-		if (newTags == '' || newTags == "" || newTags == null) {
-			newTags = "-";
+		var collapse = card.find('.collapse');
+
+		if (collapse.hasClass('show')) {
+			card.removeClass('expanded');
+		} else {
+			card.addClass('expanded');
 		}
-		window.location.href = 'shop/1/' + newTags + '/' + categories + '/';
-	}
-}
-
-function clearList(list) {
-	return list.replace(',-', ',').replace(',,', '').replace('#,', '').replace(',#', '').replace('#', '');
-}
-
-$('.filter-btn').click(function () {
-	$('.filter-outer').addClass('active');
-});
-
-$('.close-filter').click(function () {
-	$('.filter-outer').removeClass('active');
+	});
 });
 
