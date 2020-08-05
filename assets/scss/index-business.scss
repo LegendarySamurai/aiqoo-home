@@ -1,6 +1,10 @@
 @import './video';
 @import './helpers/variables';
 
+body.blocked {
+  overflow: hidden;
+}
+
 // Light Gallery
 .lg-backdrop {
   background-color: transparentize(#000, .2) !important;
@@ -9,28 +13,26 @@
 .lg-outer {
   top: 70px;
 
+  .lg-sub-html {
+    bottom: auto !important;
+    top: 120px !important;
+  }
+
+  &.lg-pull-caption-up {
+    &.lg-thumb-open {
+      .lg-sub-html {
+        bottom: auto !important;
+        top: 120px !important;
+      }
+    }
+  }
+
   .lg {
     height: calc(100% - 70px) !important;
   }
 }
 
-.lg-sub-html {
-  .info {
-    //min-width: 300px;
-    //margin: 0 auto;
-  }
-}
-
-//.lg-thumb-item {
-//  &:last-of-type {
-//    display: none;
-//  }
-//}
-//
-//img[src="undefined"] {
-//  display: none;
-//}
-
+// Page styles
 .index-business {
   font-family: "Helvetica","Arial",sans-serif;
 

@@ -107,7 +107,32 @@ $(window).on('load', function () {
 // 	});
 // });
 $(document).ready(function() {
-	$('.project-card').lightGallery();
+	const $lg = $('.project-card');
+	$lg.lightGallery({
+		pullCaptionUp: false
+	});
+
+	$lg.on('onAfterOpen.lg',function(){
+		// console.log(index, fromTouch, fromThumb);
+		console.log('works');
+		$('body').addClass('blocked');
+	});
+
+	$lg.on('onCloseAfter.lg', function() {
+		$('body').removeClass('blocked');
+	});
+
+	// if(!$('body').hasClass('.lg-on') && $('body').hasClass('.blocked')) {
+	// 	$('body').removeClass('blocked');
+	// }
+});
+
+$('.project-card').each(function() {
+	$(this).on('click', function() {
+		if($('body').hasClass('.lg-on')) {
+			$('body').addClass('blocked');
+		}
+	})
 });
 
 
