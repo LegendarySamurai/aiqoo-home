@@ -184,10 +184,11 @@
     }
 
     .team {
-      //padding: 6% 7%;
       padding: 6% 4% 2%;
-      //background-color: #fff;
-      //box-shadow: 0 1.5px 15px 0 rgba(50,81,129,0.2);
+
+      .team-row {
+        justify-content: center;
+      }
     }
 
     .card-col {
@@ -197,29 +198,33 @@
     .card {
       max-width: 290px;
       box-shadow: 0 1.5px 15px 0 rgba(50,81,129,0.2);
+      border-radius: 10px;
 
       .card-inner {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
+        height: 100%;
       }
 
       .image-container {
         transform: translate(0, -50%);
-        //width: 40%;
-        width: 150px;
-        height: 200px;
-        //box-shadow: 0 3px 30px 0 rgba(216,205,186,0.31);
+        width: 40%;
+        border-radius: 10px;
+        //width: 150px;
+        //height: 200px;
         box-shadow: 0 1.5px 15px 0 rgba(50,81,129,0.2);
+        margin-bottom: 50px;
       }
 
       .content {
-        transform: translate(0, -20%);
+        flex-grow: 1;
+        transform: translate(0, -10%);
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         color: #585077;
         font-family: 'Helvetica','Arial',sans-serif;
       }
@@ -267,6 +272,61 @@
     }
   }
 
+  // market-numbers
+  .market-numbers {
+    margin-top: 20px;
+
+    .num-col {
+      width: 25%;
+    }
+
+    .number-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      //color: #fff;
+      color: #585077;
+    }
+
+    .currency {
+      font-weight: 900;
+      font-size: 30pt;
+    }
+
+    .profit {
+      margin-top: 10px;
+      font-weight: bold;
+      font-size: 11pt;
+      color: #bd52af;
+    }
+  }
+
+  .list-with-bullets {
+    li {
+      position: relative;
+      line-height: 1;
+      margin-bottom: 10px;
+      padding-left: 20px;
+
+      &::before {
+        position: absolute;
+        top: .05em;
+        left: -10px;
+        display: block;
+        content: '';
+        width: 12px;
+        height: 12px;
+        background-color: #bd52af;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .block-with-underline {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d8cdba;
+  }
+
   .object-contain {
     object-fit: contain !important;
   }
@@ -308,6 +368,14 @@
   }
 
   @media(max-width: 767px) {
+    // market-numbers
+    .market-numbers {
+      .num-col {
+        width: 50%;
+        margin-bottom: 20px;
+      }
+    }
+
     // Leading team
     .leading-team {
       .section-title {
@@ -358,6 +426,17 @@
   }
 
   @media(max-width: 599px) {
+    // market-numbers
+    .market-numbers {
+      .currency {
+        font-size: 24pt;
+      }
+
+      .profit {
+        font-size: 9pt;
+      }
+    }
+
     // Leading team
     .leading-team {
       .section-title {
@@ -395,7 +474,7 @@
     .about-our-pros {
       .content {
         .text {
-          padding: 0 20px 40px 0 !important;
+          padding: 0 0 20px 20px !important;
         }
       }
     }
@@ -417,6 +496,14 @@
   }
 
   @media (max-width: 474px) {
+    .about-our-pros {
+      .section-title {
+        span {
+          font-size: 18pt !important;
+        }
+      }
+    }
+
     // Leading team
     .leading-team {
       .section-title {
@@ -433,6 +520,22 @@
         .card {
           width: 100%;
         }
+      }
+    }
+  }
+
+  @media (max-width: 374px) {
+    .about-our-pros {
+      .section-title {
+        span {
+          font-size: 15pt !important;
+        }
+      }
+    }
+
+    .content-wrap {
+      .content {
+        margin-top: 0 !important;
       }
     }
   }
