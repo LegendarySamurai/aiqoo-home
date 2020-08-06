@@ -61,6 +61,12 @@
       cursor: pointer;
     }
 
+    .content-title {
+      span {
+        white-space: normal !important;
+      }
+    }
+
     .section-title {
       span {
         color: #fff;
@@ -79,12 +85,30 @@
       position: relative;
       width: 100%;
       height: 100%;
-      background-image: url('../../assets/images/info/our-pros.png');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: auto 100%;
+      //background-image: url('../../');
+      //background-repeat: no-repeat;
+      //background-position: center;
+      //background-size: auto 100%;
+
+      .pros-img {
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+
+        img {
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+        }
+      }
 
       .image-container {
+        z-index: 2;
         position: absolute;
         left: 50%;
         bottom: 0;
@@ -161,6 +185,92 @@
     .card-content {
       padding: 20px 40px;
     }
+
+    .info-card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 40px;
+      background-color: #fff;
+      box-shadow: 0 3px 30px 0 rgba(216,205,186,0.31);
+    }
+
+    .leading-team-card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 40px;
+      background-color: #fff;
+      box-shadow: 0 3px 30px 0 rgba(216,205,186,0.31);
+
+      .text {
+        font-size: 13pt;
+        color: #000;
+      }
+
+      .leading-team {
+        margin-top: 50px !important;
+
+        .card {
+          margin: 0 auto;
+
+          .image-container {
+            transform: unset;
+            margin-top: -80px;
+            margin-bottom: 20px;
+          }
+
+          .content {
+            transform: unset;
+          }
+        }
+      }
+    }
+  }
+
+  // Charts
+  .charts-container {
+    .charts-wrap {
+      //background-color: transparentize(blue, .5);
+    }
+
+    .modal-btns-container {
+      position: absolute;
+      top: 15%;
+      left: 49%;
+      transform: translate(-50%, 0);
+      width: 47%;
+      height: 150px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      //background-color: transparentize(coral, .5);
+
+      @media(max-width: 1199px) {
+        height: 120px;
+      }
+
+      @media(max-width: 991px) {
+        height: 100px;
+      }
+
+      @media(max-width: 767px) {
+        height: 80px;
+      }
+
+      @media(max-width: 599px) {
+        height: 60px;
+      }
+
+      @media(max-width: 474px) {
+        height: 40px;
+      }
+    }
+
+    .image-wrap {
+      //position: absolute;
+    }
   }
 
   // Leading team
@@ -225,6 +335,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
+        max-width: 90%;
         color: #585077;
         font-family: 'Helvetica','Arial',sans-serif;
       }
@@ -239,6 +350,7 @@
         font-weight: 600;
         font-size: 12pt;
         color: #3a3281;
+        text-align: center;
       }
 
       .expertize {
@@ -384,6 +496,10 @@
 
       .card-col {
         margin-bottom: 14vh;
+
+        &:last-of-type {
+          margin-bottom: 0 !important;
+        }
       }
 
       .team {
@@ -415,12 +531,10 @@
       }
     }
 
-    // Section "about"
-    section.about {
-      .about-card {
-        .text {
-          //font-size: 14pt;
-        }
+    .about-our-pros {
+      .explore-more-beige {
+        padding: 10px 20px;
+        font-size: 14pt;
       }
     }
   }
@@ -439,9 +553,23 @@
 
     // Leading team
     .leading-team {
+      //margin-top: 80px !important;
+
       .section-title {
         span {
           font-size: 22pt !important;
+        }
+      }
+
+      .card {
+        .image-container {
+          transform: unset;
+          margin-top: -80px;
+          margin-bottom: 20px;
+        }
+
+        .content {
+          transform: unset;
         }
       }
     }
@@ -491,6 +619,10 @@
             flex-direction: column-reverse;
           }
         }
+      }
+
+      .info-card {
+        border-radius: 0 0 22px 22px !important;
       }
     }
   }
