@@ -45,36 +45,3 @@ $('.close-filter').click(() => {
 	$('.filter-outer').removeClass('active');
 });
 
-<!--Code for collapse purple stripe -->
-$(document).ready(() => {
-	$.each($('.faq-accordion .card'), function(index, value) {
-		// console.log(value);
-		const card = $(value);
-		const collapse = card.find('.collapse');
-		const cardCollapsed = collapse.hasClass('show');
-		if (cardCollapsed) {
-			card.addClass('expanded');
-		}
-		else {
-			card.removeClass('expanded');
-		}
-	});
-
-	$('.faq-accordion .card button').click(function() {
-		$.each($('.faq-accordion .card'), function(index, value) {
-			const card = $(value);
-			card.removeClass('expanded');
-		});
-		// console.log('step 1');
-		const card = $(this).parents('.card');
-
-		const collapse = card.find('.collapse');
-
-		if (collapse.hasClass('show')) {
-			card.removeClass('expanded');
-		}
-		else {
-			card.addClass('expanded');
-		}
-	});
-});

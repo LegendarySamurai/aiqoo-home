@@ -63,20 +63,21 @@
     padding: 4px 5px;
 }
 
-.funnel-card h2 {
+.vertical-center h2 {
     position: relative;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: 400;
+    width: 75%;
+    min-height: 30px;
+    font-weight: 500;
     font-size: 13pt;
     cursor: pointer;
     background-color: #e4ebe4;
     border-radius: 5px;
-    margin: 0 5px;
+    margin: 10px 0 20px 25%;
     padding: 4px 5px;
-    font-weight: 500;
+    font-family: Helvetica,sans-serif;
 }
 
-.funnel-card h2 strong {
+.vertical-center h2 strong {
     font-size: 13.5pt;
     font-weight: 600;
 }
@@ -119,7 +120,7 @@
     width: 100%;
     padding: 0 5%;
     margin: 30px auto 20px auto;
-    font-size: 20pt;
+    font-size: 18pt;
     font-weight: 600;
     color: #574f76;
     background-color: #FFF;
@@ -303,6 +304,19 @@
         display: none;
     }
 
+    .vertical-center h2 {
+        position: relative;
+        width: 96%;
+        font-size: 11.5pt;
+        text-align: left;
+        margin: 15px 2%;
+    }
+
+    .vertical-center h2 strong {
+        font-size: 12pt;
+        font-weight: 600;
+    }
+
     .step-div {
         width: 100%;
         margin-left: 0%;
@@ -312,15 +326,6 @@
     .step-div-h1 {
         font-size: 16pt;
         padding: 10px 5%;
-    }
-
-    .funnel-card h2 {
-        font-size: 10pt;
-    }
-
-    .funnel-card h2 strong {
-        font-size: 10.5pt;
-        font-weight: 600;
     }
 
     .step-div-h2 img {
@@ -467,41 +472,6 @@
 }
 
 
-/*
-.indicator {
-    position: relative;
-    width: 100%;
-    margin: 0;
-}
-.indicator :first-child {
-    width: 60%;
-    max-width: 60%;
-}
-
-.indicator li {
-    position: relative;
-    display: inline-block;
-    vertical-align: top;
-    width: 40%;
-    max-width: 300px;
-    height: 40px;
-    margin: 20px 3% 30px 3%;
-    cursor: pointer;
-    z-index: 1500;
-    animation-duration: 1.25s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-    animation-name: placeHolderShimmer;
-    animation-timing-function: linear;
-    background: #F6F6F6;
-    background: linear-gradient(to right, #F6F6F6 8%, #F0F0F0 18%, #F6F6F6 33%);
-    background-size: 800px 104px;
-    opacity:0.7;
-    border-radius: 4px;
-}
-
-*/
-
 @keyframes placeHolderShimmer {
     0% {
         background-position: -468px 0
@@ -511,38 +481,3 @@
         background-position: 468px 0
     }
 }
-/*
-@media (max-width: 600px) {
-    .funnel-card {
-        width: 98%;
-        min-width: 300px;
-        padding: 15px 2% 2% 2%;
-    }
-
-    .indicator {
-        position: relative;
-        width: 100%;
-        margin: 40px 0 0 0;
-    }
-    .indicator li {
-        width: 90%;
-        margin: 20px 0 20px 0;
-    }
-    .indicator :first-child {
-        width: 90%;
-        margin: 20px 0 20px 0;
-    }
-}
-
-@media (max-width: 850px) {
-    .funnel-card h2 {
-        font-size: 11pt !important;
-    }
-
-}
-@media (max-width: 500px) {
-    .funnel-card h2 {
-        font-size: 10pt !important;
-    }
-}
-    */
