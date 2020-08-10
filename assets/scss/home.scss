@@ -185,8 +185,12 @@ body {
                 margin-bottom: 4px;
                 margin-right: 10px;
                 border-radius: 50%;
-                overflow: hidden;
-                font-size: 10.5pt;
+                //overflow: hidden;
+                //font-size: 10.5pt;
+
+                img {
+                    border-radius: 50%;
+                }
             }
 
             .profile-name {
