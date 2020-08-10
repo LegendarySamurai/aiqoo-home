@@ -76,20 +76,18 @@
     a {
         display: block;
         width: 110px;
-        //display: flex;
-        //flex-direction: row;
-        //align-items: center;
+        padding: 7px 28px;
         line-height: 1.5;
         font-weight: 400;
-        user-select: none;
-        border: 1px solid transparent;
         font-size: 11pt;
-        cursor: pointer;
-        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
         color: #fff;
         background-color: #585077;
         box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
-        padding: 7px 28px;
+        border: 1px solid transparent;
+        cursor: pointer;
+        user-select: none;
+        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        white-space: nowrap;
 
         img {
             width: 12px;
