@@ -650,6 +650,10 @@
     @media(max-width: 599px) {
         padding-right: 0;
 
+        &.header-full-h {
+            height: 100vh;
+        }
+
         .header-content {
             height: 60px;
         }
