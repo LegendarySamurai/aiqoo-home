@@ -490,6 +490,24 @@
   }
 
   @media(max-width: 599px) {
+    .head-row {
+      top: 120px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+
+      .logo-container {
+        justify-content: center;
+
+        img {
+          width: 70%;
+        }
+
+        .logo-title {
+          font-size: 20pt;
+        }
+      }
+    }
+
     .buttons-wrap {
       button {
         img {
