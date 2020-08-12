@@ -120,6 +120,7 @@ function init() {
 			var handleHeaderMobileAutoCompleteOpen = function handleHeaderMobileAutoCompleteOpen() {
 				headerSearch.classList.add('hide');
 				$('#header-search').addClass('fixed');
+				$('#header').addClass('header-full-h');
 				headerSearch.classList.remove('hide-on-start');
 				document.querySelector('body').style.overflow = 'hidden';
 				$('.header-search-input-cover').css("display", "none");
@@ -163,6 +164,7 @@ function init() {
 				$('#header-search').removeClass('fixed');
 				document.querySelector('body').style.overflow = 'unset';
 				$('.header-search-input-cover').css("display", "block");
+				$('#header').removeClass('header-full-h');
 			});
 		})();
 	}
