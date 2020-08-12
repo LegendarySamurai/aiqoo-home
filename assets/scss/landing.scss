@@ -436,9 +436,12 @@
     }
 
     .bg-container {
+      padding-bottom: 50px;
+      
       &:before {
         position: absolute;
-        top: 150px;
+        //top: 150px;
+        bottom: 480px;
         left: 0;
         height: 300px;
       }
