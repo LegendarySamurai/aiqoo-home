@@ -209,14 +209,11 @@
       @media(max-width: 767px) {
         padding: 0 0 20px;
       }
-
-      & > .row  {
-        //align-items: flex-start;
-      }
     }
   }
 
   .faq-list {
+    position: relative;
     padding: 15px 25px;
     border-radius: 20px;
 
@@ -224,11 +221,34 @@
       margin-top: 30px;
     }
 
+    &::after {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: -3px;
+      transform: translate(0, -50%);
+      width: 6px;
+      height: 90%;
+      background-color: #585077;
+      border-radius: 0 50px 50px 0;
+    }
+
+    .h4-title {
+      line-height: 1.25;
+      margin-bottom: 10px;
+      padding-bottom: 5px;
+      font-size: 13pt;
+      color: #585077;
+      border-bottom: 1px solid transparentize(#585077, .6);
+    }
+
     .faq-accordion {
       .card-header {
         button {
           span {
             font-size: 10pt;
+            text-align: left;
           }
         }
       }
