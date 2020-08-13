@@ -787,11 +787,18 @@
       margin: 30px 0 0px 0;
     }
 
-
     .head-section {
       h1 {
         white-space: normal;
         font-size: 15.5pt;
+      }
+    }
+  }
+
+  @media(max-width: 450px) {
+    .head-section {
+      h1 {
+        font-size: 11pt;
       }
     }
   }
