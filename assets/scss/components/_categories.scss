@@ -74,10 +74,12 @@
     padding-top: 40px;
 
     a {
-        display: block;
-        width: 110px;
-        padding: 7px 28px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: auto;
         line-height: 1.5;
+        padding: 7px 28px;
         font-weight: 400;
         font-size: 11pt;
         color: #fff;
