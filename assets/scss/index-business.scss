@@ -251,10 +251,12 @@ body.blocked {
     justify-content: space-between;
     align-items: flex-end;
     width: 101%;
-    margin-top: auto;
-    margin-left: -2px;
+    padding-top: 15px;
     padding-right: 420px;
-    padding-top: 23px;
+    margin-top: 36px;
+    margin-left: -2px;
+    //margin-top: auto;
+    //padding-top: 23px;
     background-color: #fff;
 
     .tab {

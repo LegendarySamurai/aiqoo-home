@@ -203,8 +203,8 @@
 
   // la-landing-faq page
   .section-faq {
-    margin-top: 40px;
-    
+    padding-top: 40px !important;
+
     .section-container {
       padding: 30px 0;
 
@@ -262,8 +262,11 @@
     top: 80px;
     height: 100%;
 
+    @media(max-width: 767px) {
+      position: static;
+    }
+
     .services-list {
-      //height: 100%;
       padding: 0;
 
       .services-list-col {
@@ -271,7 +274,6 @@
         flex-grow: unset;
         flex-basis: unset;
         width: 100% !important;
-        //height: 100%;
         padding: 15px 25px;
         border-radius: 20px;
         box-shadow: 0 7.5px 27.5px 0 rgba(0, 0, 0, 0.1);
@@ -303,48 +305,13 @@
 
         .list-col-item {
           width: auto !important;
-          //display: inline;
           margin: 0 0 20px 0 !important;
-
-          span {
-            //width: 90% !important;
-            ///* background-color: coral; */
-            //white-space: nowrap;
-            //text-overflow: ellipsis;
-            //overflow: hidden;
-          }
 
           img {
             margin-left: 10px;
           }
         }
       }
-
-      //.services-list-container {
-      //  display: flex;
-      //  flex-direction: row;
-      //  flex-wrap: wrap;
-      //  justify-content: space-between;
-      //  align-items: center;
-      //  padding-top: 10px;
-      //
-      //  p {
-      //    width: 50%;
-      //    font-size: 12pt;
-      //
-      //    a {
-      //      display: flex;
-      //      flex-direction: row;
-      //      align-items: center;
-      //      margin-bottom: 20px;
-      //    }
-      //
-      //    img {
-      //      width: 10px;
-      //      margin-left: 10px;
-      //    }
-      //  }
-      //}
     }
   }
 
@@ -357,6 +324,7 @@
     .logo-container {
       .logo {
         width: 150px;
+        flex-shrink: 0;
       }
     }
   }
@@ -416,6 +384,40 @@
     .categories {
       .list {
         padding: 0;
+      }
+    }
+  }
+
+  @media(max-width: 499px) {
+    .aiq-index {
+      .head-row {
+        .logo-container {
+          .logo-title {
+            font-size: 18pt;
+          }
+          .logo {
+            width: 120px;
+          }
+        }
+      }
+    }
+  }
+
+  @media(max-width: 399px) {
+    .aiq-index {
+      .head-row {
+        .logo-container {
+          flex-direction: column;
+          align-items: center;
+
+          .logo-title {
+            font-size: 16pt;
+          }
+          .logo {
+            margin-bottom: 10px;
+            width: 100px;
+          }
+        }
       }
     }
   }
@@ -630,7 +632,6 @@
     }
   }
 
-
   @media(min-width: 992px) {
     .all-categories {
       padding-top: 60px;
@@ -781,7 +782,6 @@
   }
 
   @media(max-width: 650px) {
-
     .reasons-wrap {
       height: 230px !important;
       margin: 30px 0 0px 0;

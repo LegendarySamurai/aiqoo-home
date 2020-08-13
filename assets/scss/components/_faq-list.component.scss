@@ -3,7 +3,9 @@
   z-index: 20;
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #d8cdba;
+  //background-color: #d8cdba;
+
+  background-image: linear-gradient(to bottom, #ebe2d3 5%, #d8cdba 65%, rgba(223, 210, 174, 0.5) 85%);
 
   .mask {
     position: absolute;
