@@ -367,6 +367,31 @@ function ContactUsRequest() {
 
 }
 
+
+function getBusinessPhone(businessID) {
+	var strPhone = "";
+	if (businessID == 1) {
+		strPhone = "866-377-6637";
+	}
+	else if (businessID == 2) {
+		strPhone = "213-572-6131";
+	}
+	else if (businessID == 3) {
+		strPhone = "888-373-9930";
+	}
+
+	if (isMobile) {
+		window.location.href = "tel:" + strPhone;
+	}
+	else {
+		document.getElementById("call_" + businessID).innerHTML = '<span class="text">' + strPhone + '</span>';
+	}
+
+	return false;
+}
+
+
+
 function validatePhone(Phone) {
 	var phonePattern = /(?:\d{1}\s)?\(?(\d{3})\)?-?\s?(\d{3})-?\s?(\d{4})/;
 	var error = "";

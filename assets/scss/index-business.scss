@@ -157,6 +157,8 @@ body.blocked {
 
     .image-col {
       width: 286px;
+      padding: 0;
+      background-color: transparentize(coral, .5); //
 
       .image-container {
         img {
@@ -168,6 +170,7 @@ body.blocked {
     }
 
     .content-block-col {
+      height: 248px;
       padding-left: 0;
       padding-right: 0;
     }
@@ -253,9 +256,9 @@ body.blocked {
     width: 101%;
     padding-top: 15px;
     padding-right: 420px;
-    margin-top: 36px;
+    //margin-top: 36px;
     margin-left: -2px;
-    //margin-top: auto;
+    margin-top: auto;
     //padding-top: 23px;
     background-color: #fff;
 
