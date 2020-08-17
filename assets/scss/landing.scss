@@ -49,26 +49,27 @@
     .reasons-wrap {
       height: 90px;
       width: 100%;
-      margin: 40px 0 20px 0;
+      margin: 30px 0 20px 0;
     }
 
     .map-mask-div {
       opacity: .8;
       width: 100%;
-      min-height: 100vh;
+      //min-height: 100vh;
+      min-height: calc(100vh - 70px);
       background: -webkit-linear-gradient(top, rgba(223, 210, 174, 1) 0%, rgba(223, 210, 174, 0.5) 50%, rgba(223, 210, 174, 0.5) 51%, rgba(223, 210, 174, 1) 100%);
       background: -moz-linear-gradient(top, rgba(223, 210, 174, 1) 0%, rgba(223, 210, 174, 0.5) 50%, rgba(223, 210, 174, 0.5) 51%, rgba(223, 210, 174, 1) 100%);
       background: linear-gradient(to top, rgba(223, 210, 174, 1) 0%, rgba(223, 210, 174, 0.5) 50%, rgba(223, 210, 174, 0.5) 51%, rgba(223, 210, 174, 1) 100%);
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfd2ae', endColorstr='#007db9e8', GradientType=0);
     }
 
-
     h1 {
       font-family: $h-font;
       font-weight: 700;
+      font-size: 26pt;
       color: $text-color;
       text-align: center !important;
-      line-height: 1.5;
+      line-height: 1.25;
       white-space: normal;
     }
 
@@ -830,10 +831,10 @@
 
   @media(min-width: 1251px) {
     .head-section {
-      h1 {
-        font-size: 28pt;
-        white-space: nowrap;
-      }
+      //h1 {
+      //  font-size: 26pt;
+      //  white-space: nowrap;
+      //}
     }
   }
 
@@ -888,7 +889,8 @@
 
 .map-bg-div {
   position: absolute;
-  min-height: 100vh;
+  //min-height: 100vh;
+  height: calc(100vh - 70px);
   top: 0;
   width: 100%;
   overflow: visible;
@@ -903,13 +905,13 @@
   @media(max-width: 600px) {
     width: 100%;
     background: none;
-
   }
 
 
   & #bg-map {
     position: absolute;
-    min-height: 100vh;
+    //min-height: 100vh;
+    height: calc(100vh - 70px);
     top: 0;
     width: 100%;
     overflow: visible;
