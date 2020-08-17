@@ -426,7 +426,11 @@
     .pro-card {
       height: auto;
       max-height: unset;
-      margin-bottom: 3rem;
+      //margin-bottom: 3rem;
+
+      &:not(:last-of-type) {
+        margin-bottom: 3rem;
+      }
     }
 
     .section-container {

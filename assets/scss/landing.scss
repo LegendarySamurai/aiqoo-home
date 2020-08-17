@@ -69,8 +69,8 @@
       font-size: 26pt;
       color: $text-color;
       text-align: center !important;
-      line-height: 1.25;
-      white-space: normal;
+      line-height: 1.5;
+      white-space: nowrap;
     }
 
     .bottom-mask {
@@ -834,6 +834,7 @@
   @media(min-width: 651px) and (max-width: 1250px) {
     .head-section {
       h1 {
+        line-height: 1.25;
         white-space: normal;
         font-size: 26pt;
       }
