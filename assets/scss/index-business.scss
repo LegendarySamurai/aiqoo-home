@@ -498,6 +498,7 @@ body.blocked {
 
     .card {
       box-shadow: 0 7px 22.5px 0 rgba(0, 0, 0, 0.1);
+      cursor: pointer;
 
       .title {
         font-size: 14pt;
@@ -875,8 +876,8 @@ body.blocked {
       //top: 77px;
       //height: 210px;
       //margin-top: -154px;
-      top: 94px;
-      height: 230px;
+      top: 51px;
+      height: 240px;
       margin-top: -183px;
 
       .image-col {

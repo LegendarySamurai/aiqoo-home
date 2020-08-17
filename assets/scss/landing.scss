@@ -207,17 +207,62 @@
   .section-faq {
     padding-top: 40px !important;
 
-    .row {
-      width: 98%;
-      margin: 0 auto;
-    }
-
     .section-container {
       padding: 30px 0;
 
       @media(max-width: 767px) {
         padding: 0 0 20px;
       }
+    }
+
+    .wrap {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%;
+      margin: 0 auto;
+
+      @media(max-width: 991px) {
+        flex-wrap: wrap;
+      }
+    }
+
+    .faq-col {
+      flex-grow: 1;
+      padding-right: 15px;
+      padding-left: 15px;
+
+      @media(max-width: 991px) {
+        flex-grow: 0;
+        width: 100%;
+        margin-top: 30px;
+      }
+    }
+
+    .services-list-container-col {
+      width: 40%;
+      padding-right: 15px;
+      padding-left: 15px;
+
+      @media(max-width: 991px) {
+        width: 100%;
+      }
+    }
+  }
+
+  .section-faq-full-width-items {
+    .wrap {
+      flex-wrap: wrap;
+    }
+
+    .services-list-container-col {
+      width: 100%;
+    }
+
+    .faq-col {
+      width: 100%;
+      margin-top: 30px;
     }
   }
 
@@ -494,7 +539,7 @@
 
     .bg-container {
       //padding-bottom: 50px;
-      
+
       &:before {
         position: absolute;
         //top: 150px;

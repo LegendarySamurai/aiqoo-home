@@ -8,6 +8,7 @@
 // 	});
 // });
 
+
 $(window).on('load', function () {
 	const aboutUs = $('#about-us');
 	const ourProjects = $('#our-projects');
@@ -15,24 +16,72 @@ $(window).on('load', function () {
 	const contentWrap = $('.content-wrap');
 	const asideBlock = $('.aside-inner');
 
-	let aboutUsTop = aboutUs.offset().top;
-	let aboutUsHeight = aboutUs.innerHeight();
-	let aboutUsBottom = aboutUsTop + aboutUsHeight;
+	let scroll = $(document).scrollTop();
 
-	let ourProjectsTop = ourProjects.offset().top;
-	let ourProjectsHeight = ourProjects.innerHeight();
-	let ourProjectsBottom = ourProjectsTop + ourProjectsHeight;
+	let aboutUsTop, aboutUsHeight, aboutUsBottom;
+	if (aboutUs.length !== 0) {
+		aboutUsTop = aboutUs.offset().top;
+		aboutUsHeight = aboutUs.innerHeight();
+		aboutUsBottom = aboutUsTop + aboutUsHeight;
+	}
 
-	let ourReviewsTop = ourReviews.offset().top;
-	let ourReviewsHeight = ourReviews.innerHeight();
-	let ourReviewsBottom = ourReviewsTop + ourReviewsHeight;
+	let ourProjectsTop, ourProjectsHeight, ourProjectsBottom;
+	if (ourProjects.length !== 0) {
+		ourProjectsTop = ourProjects.offset().top;
+		ourProjectsHeight = ourProjects.innerHeight();
+		ourProjectsBottom = ourProjectsTop + ourProjectsHeight;
+	}
 
-	let contentWrapTop = contentWrap.offset().top;
-	let asideBlockTop = asideBlock.offset().top;
+	let ourReviewsTop, ourReviewsHeight, ourReviewsBottom;
+	if (ourReviews.length !== 0) {
+		ourReviewsTop = ourReviews.offset().top;
+		ourReviewsHeight = ourReviews.innerHeight();
+		ourReviewsBottom = ourReviewsTop + ourReviewsHeight;
+	};
+
+	let asideBlockTop;
+	if (asideBlock.length !== 0) {
+		asideBlockTop = asideBlock.offset().top;
+	}
+
+	let contentWrapTop;
+	if (contentWrap.length !== 0) {
+		contentWrapTop = contentWrap.offset().top;
+		let positionOnPage = contentWrapTop + scroll;
+	}
 
 	$(window).on('resize scroll', function () {
-		let scroll = $(document).scrollTop();
-		let positionOnPage = contentWrapTop + scroll;
+		scroll = $(document).scrollTop();
+
+		if (aboutUs.length !== 0) {
+			let aboutUsTop = aboutUs.offset().top;
+			let aboutUsHeight = aboutUs.innerHeight();
+			let aboutUsBottom = aboutUsTop + aboutUsHeight;
+		}
+
+		if (ourProjects.length !== 0) {
+			let ourProjectsTop = ourProjects.offset().top;
+			let ourProjectsHeight = ourProjects.innerHeight();
+			let ourProjectsBottom = ourProjectsTop + ourProjectsHeight;
+		}
+
+		if (ourReviews.length !== 0) {
+			let ourReviewsTop = ourReviews.offset().top
+			let ourReviewsHeight = ourReviews.innerHeight();
+			let ourReviewsBottom = ourReviewsTop + ourReviewsHeight;
+		};
+
+		if (asideBlock.length !== 0) {
+			let asideBlockTop = asideBlock.offset().top;
+		}
+
+		if (contentWrap.length !== 0) {
+			let contentWrapTop = contentWrap.offset().top;
+			positionOnPage = contentWrapTop + scroll;
+		}
+
+
+		// handling active section on scroll
 		if (positionOnPage <= aboutUsBottom) {
 			// console.log('1', 'About us block');
 			$('#tab-a').addClass('active');
@@ -53,14 +102,21 @@ $(window).on('load', function () {
 		}
 	});
 
-	$('.tab').each(function () {
-		$(this).on('click', function () {
-			let target = $(this).attr('href');
-			console.log('target', target);
 
+	// handling active section on click
+	$('.tab').each(function () {
+		$(this).on('click', function (e) {
+			e.preventDefault();
+			let target = $(this).attr('href');
+			// console.log('target', target);
+
+			if (!contentWrap || !asideBlock) {
+				return;
+			}
 
 			if (window.innerWidth < 600) {
-				console.log($(target).offset().top);
+				// console.log($(target).offset().top);
+
 				$('body,html').animate(
 					{
 						scrollTop: $(target).offset().top - contentWrapTop + asideBlockTop + 500,
@@ -69,20 +125,23 @@ $(window).on('load', function () {
 					800 //speed
 				);
 			} else {
-				$('.tab').removeClass('active');
-				$(this).addClass('active');
-				$('body,html').animate(
-					{
-						scrollTop: $(target).offset().top - contentWrapTop + 80,
-						behavior: 'smooth'
-					},
-					800 //speed
-				);
+				if ($(target).length !== 0) {
+					$('.tab').removeClass('active');
+					$(this).addClass('active');
+					$('body,html').animate(
+						{
+							scrollTop: $(target).offset().top - contentWrapTop + 80,
+							behavior: 'smooth'
+						},
+						800 //speed
+					);
+				}
 			}
 
 		});
 	});
 });
+
 
 // Calling LightGallery
 // $(document).ready(function() {
@@ -125,6 +184,9 @@ $(document).ready(function() {
 	// if(!$('body').hasClass('.lg-on') && $('body').hasClass('.blocked')) {
 	// 	$('body').removeClass('blocked');
 	// }
+
+
+
 });
 
 $('.project-card').each(function() {
