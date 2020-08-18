@@ -168,12 +168,12 @@ $(window).on('load', function () {
 $(document).ready(function() {
 	const $lg = $('.project-card');
 	$lg.lightGallery({
-		pullCaptionUp: false
+		pullCaptionUp: false,
+		pager: true,
+		selector: 'li'
 	});
 
-	$lg.on('onAfterOpen.lg',function(){
-		// console.log(index, fromTouch, fromThumb);
-		console.log('works');
+	$lg.on('onAfterOpen.lg',function() {
 		$('body').addClass('blocked');
 	});
 
@@ -181,14 +181,9 @@ $(document).ready(function() {
 		$('body').removeClass('blocked');
 	});
 
-	// if(!$('body').hasClass('.lg-on') && $('body').hasClass('.blocked')) {
-	// 	$('body').removeClass('blocked');
-	// }
-
-
-
 });
 
+// Blocks body scroll when gallery is open
 $('.project-card').each(function() {
 	$(this).on('click', function() {
 		if($('body').hasClass('.lg-on')) {

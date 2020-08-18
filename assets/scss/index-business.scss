@@ -849,16 +849,16 @@ body.blocked {
   }
 
   @media(max-width: 991px) {
-    .send-message {
-      position: absolute;
-      left: 20px;
-      bottom: 3px;
-      top: auto;
-      right: auto;
-      justify-content: center;
-      width: 221px;
-      box-shadow: none;
-    }
+    //.send-message {
+    //  position: absolute;
+    //  left: 20px;
+    //  bottom: 3px;
+    //  top: auto;
+    //  right: auto;
+    //  justify-content: center;
+    //  width: 221px;
+    //  box-shadow: none;
+    //}
 
     .aside-col {
       width: 260px;
@@ -943,9 +943,9 @@ body.blocked {
     }
 
     .send-message {
-      width: 172px;
-      left: 19px;
-      height: 45px;
+      //width: 172px;
+      //left: 19px;
+      //height: 45px;
     }
 
     .content {
@@ -1038,6 +1038,21 @@ body.blocked {
     }
   }
 
+  @media(max-width: 991px) and (min-width: 600px) {
+    .send-message {
+      position: static;
+      margin-top: 15px;
+      padding: 0 20px;
+      white-space: nowrap;
+
+
+      img {
+        flex-shrink: 0;
+        margin-right: 10px;
+      }
+    }
+  }
+
   @media(max-width: 599px) {
     .section-top-bg {
       height: 320px;
@@ -1049,8 +1064,8 @@ body.blocked {
       position: static;
       top: auto;
       left: auto;
-      height: 270px;
-      margin-top: -240px;
+      height: 360px;
+      margin-top: -310px;
       padding-top: 0;
 
       .section-container {
@@ -1061,7 +1076,17 @@ body.blocked {
       }
 
       .image-col {
+        width: 300px;
         margin: 0 auto;
+
+        .send-message {
+          top: auto;
+          bottom: 4px;
+          left: 50%;
+          transform: translate(-50%, 0);
+          justify-content: center;
+          width: calc(100% - 30px - 8px);
+        }
       }
 
       .content-block-col {
@@ -1116,10 +1141,6 @@ body.blocked {
       padding-top: 30px;
       padding-right: 0;
       background-color: transparent;
-    }
-
-    .send-message {
-      //bottom: 0;
     }
 
     .our-projects {
@@ -1177,15 +1198,12 @@ body.blocked {
       padding-top: 20px;
     }
 
-    .section-top-bg {
-      height: 280px;
-    }
-
     .section-top-sticky {
-      margin-top: -230px;
+      height: 300px;
+      margin-top: -275px;
 
-      .location {
-        margin-top: 10px;
+      .image-col {
+        width: 280px;
       }
     }
   }
