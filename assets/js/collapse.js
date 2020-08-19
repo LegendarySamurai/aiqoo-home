@@ -19,6 +19,9 @@ $(document).ready(() => {
 		$.each($('.faq-accordion .card'), function (index, value) {
 			const card = $(value);
 			card.removeClass('expanded');
+			$('.collapse').each(function() {
+				$(this).removeClass('show');
+			})
 		});
 		// console.log('step 1');
 		const card = $(this).parents('.card');

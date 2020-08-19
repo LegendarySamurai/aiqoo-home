@@ -176,7 +176,6 @@ $(document).ready(function () {
 			$('.collapse').each(function() {
 				$(this).removeClass('show');
 			})
-			// collapse.removeClass('show');
 		});
 		// console.log('step 1');
 		var card = $(this).parents('.card');

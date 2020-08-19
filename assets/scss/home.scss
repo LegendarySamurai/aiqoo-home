@@ -152,8 +152,10 @@ body {
         .magazine-header {
             margin-top: -550px;
 
-            .magazine-header-text {
-                font-size: 12pt;
+            .section-sub-title-container {
+                p {
+                    text-align: center;
+                }
             }
         }
 
@@ -162,6 +164,7 @@ body {
             margin-bottom: 30px;
             font-family: $h-font;
             font-weight: 400;
+            font-size: 12pt;
         }
 
         .article {
@@ -505,7 +508,7 @@ body {
 
         .categories-home-page {
             padding-top: 34vh !important;
-            padding-bottom: 70%;
+            padding-bottom: 30%;
         }
 
         .magazine {
