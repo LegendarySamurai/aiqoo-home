@@ -267,7 +267,7 @@ body.blocked {
   .tabs {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-end;
     width: 101%;
     margin-top: auto;
@@ -275,9 +275,6 @@ body.blocked {
     padding-left: 15px;
     padding-top: 15px;
     padding-right: 420px;
-    //margin-top: 36px;
-    //margin-left: -2px;
-    //padding-top: 23px;
     background-color: #fff;
 
     .tab {
@@ -286,6 +283,10 @@ body.blocked {
       font-size: 14pt;
       white-space: nowrap;
       cursor: pointer;
+
+      &:not(:first-child) {
+        margin-left: 7%;
+      }
 
       &.active {
         position: relative;

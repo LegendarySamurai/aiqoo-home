@@ -173,6 +173,10 @@ $(document).ready(function () {
 		$.each($('.faq-accordion .card'), function (index, value) {
 			var card = $(value);
 			card.removeClass('expanded');
+			$('.collapse').each(function() {
+				$(this).removeClass('show');
+			})
+			// collapse.removeClass('show');
 		});
 		// console.log('step 1');
 		var card = $(this).parents('.card');
