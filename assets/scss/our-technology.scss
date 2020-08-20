@@ -52,9 +52,12 @@
 
     .image-col {
       .image-container {
-        height: 100%;
         display: flex;
+        justify-content: center;
         align-items: center;
+        width: 88%;
+        height: 100%;
+        margin: 0 auto;
       }
     }
   }
