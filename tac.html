@@ -34,24 +34,23 @@
 
     </script>
 
-    <header class="header ">
+
+    <header id="header" class="header ">
         <div class="section-container">
             <div class="row">
                 <div class="col-12 pl-0 pl-lg-3 pr-0 pr-lg-3">
 
                     <div class="header-content">
                         <button type="button" id="btn-open-menu" class="btn-open-menu d-lg-none" aria-label="Toggle menu">
-                            <span class="menu-icon">
-                                <i class="far fa-bars"></i>
-                            </span>
+                            <img class="menu-icon" src="assets/images/icons/bars.svg" alt="Toggle menu" />
                         </button>
 
                         <div class="logo">
-                            <a href="https://localhost:44391/"><img src="assets/images/logo/logo.svg?v=IgkdLofEQidYHMGrUW0t3qumnQKKdu9pqWu8MSG36g4" alt="Aiq Home Menu Logo" title="Aiq Home Menu Logo"></a>
+                            <a href="https://www.aiqhome.com/"><img src="assets/images/logo/logo-white.png?v=hsEM2qLExwQHtUekR8wluJA3ADpw3Xh1uXCFIv0qMb0" alt="AIQHome Menu Logo" title="AIQHome Menu Logo"></a>
                         </div>
 
                         <button type="button" id="btn-search" class="btn-search" aria-label="Search">
-                            <i class="fal fa-search"></i>
+                            <img src="assets/images/icons/search-white.svg" alt="search" />
                         </button>
 
                         <!-- Dropdown menu -->
@@ -61,63 +60,33 @@
                                 <div class="dropdown-menu-inner">
                                     <div class="dropdown-menu-header d-lg-none">
                                         <div class="dropdown-menu-header-logo">
-                                            <a href="https://localhost:44391/"><img src="assets/images/logo/logo.svg?v=IgkdLofEQidYHMGrUW0t3qumnQKKdu9pqWu8MSG36g4" alt="Aiq Home Logo M" title="Aiq Home Logo M"></a>
+                                            <a href="https://www.aiqhome.com/"><img src="assets/images/logo/logo.svg?v=IgkdLofEQidYHMGrUW0t3qumnQKKdu9pqWu8MSG36g4" alt="AIQHome Logo M" title="AIQHome Logo M"></a>
                                         </div>
                                     </div>
 
                                     <ul class="navbar">
                                         <li class="">
-                                            <a href="https://localhost:44391/">
-                                                <i class="d-lg-none menu-item-icon icon-home"></i>
-                                                <span>Home</span>
+                                            <a href="https://www.aiqhome.com/">
+                                                <img class="d-lg-none menu-item-icon icon-home" src="assets/images/icons/chevron-right-purple.svg" alt="Chevron right" />
+                                                Home
                                             </a>
                                         </li>
                                         <li class="">
                                             <a href="magazine/">
-                                                <i class="d-lg-none menu-item-icon icon-magazine"></i>
-                                                <span>Magazine</span>
+                                                <img class="d-lg-none menu-item-icon icon-home" src="assets/images/icons/chevron-right-purple.svg" alt="Chevron right" />
+                                                Magazine
                                             </a>
                                         </li>
                                         <li class="">
-                                            <a href="magazine/videos/">
-                                                <i class="d-lg-none menu-item-icon icon-home"></i>
-                                                <span>Videos</span>
+                                            <a href="tv/">
+                                                <img class="d-lg-none menu-item-icon icon-home" src="assets/images/icons/chevron-right-purple.svg" alt="Chevron right" />
+                                                AIQ<span>Home </span>TV
                                             </a>
                                         </li>
                                         <li class="">
                                             <a href="services/">
-                                                <i class="d-lg-none menu-item-icon icon-home"></i>
-                                                <span>Services</span>
-                                            </a>
-                                        </li>
-                                        <li class="">
-                                            <a href="about-us/">
-                                                <i class="d-lg-none menu-item-icon icon-home"></i>
-                                                <span>About us</span>
-                                            </a>
-                                        </li>
-                                        <li class="">
-                                            <a href="contact-us/" class="no-border-bottom">
-                                                <i class="d-lg-none menu-item-icon icon-contact-us"></i>
-                                                <span>Contact us</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-
-                                    <ul class="dropdown-menu-social d-lg-none">
-                                        <li>
-                                            <a href="#!">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#!">
-                                                <i class="fab fa-instagram"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#!">
-                                                <i class="fab fa-twitter"></i>
+                                                <img class="d-lg-none menu-item-icon icon-home" src="assets/images/icons/chevron-right-purple.svg" alt="Chevron right" />
+                                                Services
                                             </a>
                                         </li>
                                     </ul>
@@ -126,14 +95,19 @@
                         </div>
                         <!-- EOL: Dropdown menu -->
 
-                        <div id="header-search" class="search">
-                            <div class="form-group position-relative">
-                                <input type="text" id="header-search-input" aria-labelledby="FindAProBtn" class="form-control font-weight-bold" placeholder="What service are you looking for?">
-                                <div class="super-placeholder">
-                                    <img class="header-location" src="assets/images/icons/pen-6.svg?v=7cGlhey0OBC1P8EieCpQhPjRjk7rjzZuRynaWeDmQU0" alt="Find Pros Icon">
-
+                        <div id="header-search" class="search hide-on-start">
+                            <div class="form-group-mobile-wrap">
+                                <div class="form-group position-relative">
+                                    <input type="text" name="header-search-input" id="header-search-input" class="form-control font-weight-bold" placeholder="What service do you need?">
+                                    <div class="header-search-input-cover"></div>
+                                    <div class="super-placeholder">
+                                        <label for="header-search-input">
+                                            <img class="header-location" src="assets/images/icons/pen-6.svg?v=7cGlhey0OBC1P8EieCpQhPjRjk7rjzZuRynaWeDmQU0" alt="Find Pros Icon">
+                                        </label>
+                                    </div>
+                                    <button type="button" id="FindAProBtn" class="find-btn font-weight-bold">FIND A PRO</button>
+                                    <span class="return-button-header"><img src="assets/images/icons/arrow-right.svg" alt="Chevron right" /></span>
                                 </div>
-                                <button type="button" id="FindAProBtn" class="find-btn font-weight-bold">FIND A PRO</button>
                             </div>
                         </div>
                     </div>
@@ -247,135 +221,119 @@
         </div>
     </section>
 </main>
-    
-        <footer class="page-footer">
+
+    <footer class="page-footer">
+        <div class="footer-container page-footer-main">
+            <div class="row">
+
+                <!-- left column -->
+                <div class="col-12 col-md-auto col-xl-5 content-column-left">
+                    <img src="assets/images/logo/logo-white.png?v=hsEM2qLExwQHtUekR8wluJA3ADpw3Xh1uXCFIv0qMb0" class="brand-logo mb-lg-2" alt="AIQHome Footer Logo" title="AIQHome Footer Logo" />
+                    <p class="line-h-1-5 mt-4 mt-lg-0">
+                        The market changing, AI & BI enhanced, technological marketplace connecting homeowners with local, approved and recommended home improvement contractors and professionals.
+                    </p>
+
+                    <!-- more information -->
+                    <div class="more-information-container">
+                        <div class="row">
+                            <div class="col-12 d-flex flex-row more-info">
+                                <a href="about-us/" class="page-footer-link mb-2 py-1">About us</a>
+                                <a href="contact-us/" class="page-footer-link mb-2 py-1">Contact Us</a>
+                                <a href="our-technology/" class="page-footer-link mb-2 py-1">Our Technology</a>
+                                <a href="investor-relations/" class="page-footer-link mb-2 py-1">Investor Relations</a>
+                            </div>
+                            <div class="col-12 d-flex flex-row more-info">
+                                <a href="about-aiq-pros/" class="page-footer-link mb-2 py-1">About AIQPros</a>
+                                <a href="magazine/" class="page-footer-link mb-2 py-1">Magazine</a>
+                                <a href="terms-and-conditions/" class="page-footer-link mb-2 py-1">Terms & Conditions</a>
+                                <a href="privacy-policy/" class="page-footer-link mb-2 py-1">Privacy Policy</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- center column -->
+                <div class="col-12 col-md-auto col-xl-4 content-column-center">
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="news-letter-wrap">
+                                    <div class="image-container">
+                                        <img src="assets/images/footer/interface.svg?v=SihIKODx3Bi8G2Yc4HJNHL9mZemc0Nh_6aJJ8JIfXuA" alt="Paper Airplane Icon">
+                                    </div>
+                                    <span class="footer-h4 beige font-weight-black py-3">Join The AIQHome Newsletter</span>
+                                    <p class="text line-h-1-5">
+                                        Sign up today and be first to get notified of special offers,
+                                        hot trends and exclusive subscribers’ only events.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-footer-subscribe-box">
+                                    <!--<div class="form-group position-relative">
+                                        <i class="fad fa-user">
+
+
+                                        <input type="text" class="form-control" placeholder="Full name">
+                                    </div>-->
+                                    <div id="NewsletterForm" class="form-group position-relative mt-2">
+                                        <img id="NewsletterEnvelope" src="assets/images/icons/envelope-purple.svg" title="Email" alt="Envelope" />
+                                        <input type="text" id="NewsletterEmail" name="NewsletterEmail" aria-labelledby="NewsletterEnvelope" class="form-control email" placeholder="Enter your Email">
+                                        <button id="NewsletterBtn" class="btn-subscribe" onclick="javascript: JoinNewsletter();">Subscribe</button>
+                                        <button id="NewsletterBtnSpinner" class="btn-subscribe" style="display:none;">Subscribe <span class="spinner-border spinner-border-sm"></span></button>
+                                    </div>
+                                    <div id="NewsletterThank" class="form-group position-relative m-t-30" style="display:none;">
+                                        <button type="button" class="btn-subscribe">
+                                            Thank you for joining the AIQHome newsletter
+                                        </button>
+                                    </div>
+                                    <span id="NewsletterError" class="error-message system-color-14" style="display:none;"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- right column -->
+                <div class="col-12 col-md-auto col-xl-3 content-column-right">
+                    <div class="pros-card">
+                        <div class="logo-pros-container">
+                            <img src="assets/images/footer/footer-pros-logo.png?v=cJ9UvSJyUwxmuGUrso7bzgZIs-JNEFbZ3vx4zo7jg6M" alt="AIQ pros logo">
+                        </div>
+                        <p class="line-h-1-5 mt-3">
+                            The industry dedicated, business optimizing, leads, sales and projects management platform for all home improvement service providers.
+                        </p>
+                        <div class="join-us-button">
+                            <a href="aiq-pros/" target="_blank" rel="noopener">Join Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid page-footer-footer">
             <div class="footer-container page-footer-main">
                 <div class="row">
+                    <div class="col-12 col-sm-6">
+                        <div class="social">
+                            <a href="https://www.youtube.com/channel/UCAL-zUNCZhSwAU0gBJoHsvQ">
+                                <img src="assets/images/footer/social/youtube.svg?v=xjEawKkD6XzHg9lsLYJGLBC2Jz512iwBJq5CRUkPXl8" alt="you tube">
+                            </a>
 
-                    <!-- left column -->
-                    <div class="col-12 col-md-auto col-xl-5 content-column-left">
-                        <img src="assets/images/footer/logo.svg?v=IgkdLofEQidYHMGrUW0t3qumnQKKdu9pqWu8MSG36g4" class="brand-logo mb-lg-2" alt="Aiq Home Footer Logo" title="Aiq Home Footer Logo" />
-                        <p class="line-h-1-5 mt-4 mt-lg-0">
-                            The market changing, AI & BI enhanced, technological marketplace connecting homeowners with local, approved and recommended home improvement contractors and professionals.
-                        </p>
-
-                        <!-- more information -->
-                        <div class="more-information-container">
-                            <div class="row">
-                                <div class="col-12 d-flex flex-row more-info">
-                                    <a href="about-us/" class="page-footer-link mb-2 py-1">About us</a>
-                                    <a href="contact-us/" class="page-footer-link mb-2 py-1">Contact Us</a>
-                                    <a href="terms-and-conditions/" class="page-footer-link mb-2 py-1">Terms & Conditions</a>
-                                    <a href="privacy-policy/" class="page-footer-link mb-2 py-1">Privacy Policy</a>
-                                </div>
-                                <div class="col-12 top-services d-none">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <span class="footer-h4 font-weight-600 py-3">Top Services</span>
-                                        </div>
-                                        <div class="col-12 col-sm-6 d-flex flex-column mt-3 mt-sm-0">
-                                            <a href="#!" class="page-footer-link mb-2 py-1">Roof - Install or replace</a>
-                                            <a href="#!" class="page-footer-link mb-2 py-1">Accessory Dwelling Units - Build</a>
-                                            <a href="#!" class="page-footer-link mb-2 py-1">Garage - Build</a>
-                                        </div>
-                                        <div class="col-12 col-sm-6 d-flex flex-column mt-3 mt-sm-0">
-                                            <span class="footer-h4 font-weight-600"></span>
-                                            <a href="#!" class="page-footer-link mb-2 py-1">Garage - Remodel or renovate</a>
-                                            <a href="#!" class="page-footer-link mb-2 py-1">Adus - Remodel</a>
-                                            <a href="#!" class="page-footer-link mb-2 py-1">Roof - repair</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                            </div>
                         </div>
                     </div>
-
-                    <!-- center column -->
-                    <div class="col-12 col-md-auto col-xl-4 content-column-center">
-                        <div class="content">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="news-letter-wrap">
-                                        <div class="image-container">
-                                            <img src="assets/images/footer/interface.svg?v=SihIKODx3Bi8G2Yc4HJNHL9mZemc0Nh_6aJJ8JIfXuA" alt="newsletter">
-                                        </div>
-                                        <span class="footer-h4 beige font-weight-black py-3">Join The AIQ Home Newsletter</span>
-                                        <p class="text line-h-1-5">
-                                            Sign up today and be first to get notified of special offers,
-                                            hot trends and exclusive subscribers’ only events.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="page-footer-subscribe-box">
-                                        <!--<div class="form-group position-relative">
-                                            <i class="fad fa-user"></i>
-                                            <input type="text" class="form-control" placeholder="Full name">
-                                        </div>-->
-                                        <div id="NewsletterForm" class="form-group position-relative mt-2">
-                                            <i class="fad fa-envelope" id="NewsletterEnvelope" title="Email"></i>
-                                            <input type="text" id="NewsletterEmail" name="NewsletterEmail" aria-labelledby="NewsletterEnvelope" class="form-control email" placeholder="Enter your Email">
-                                            <button id="NewsletterBtn" class="btn-subscribe" onclick="javascript: JoinNewsletter();">Subscribe</button>
-                                            <button id="NewsletterBtnSpinner" class="btn-subscribe" style="display:none;">Subscribe <span class="spinner-border spinner-border-sm"></span></button>
-                                        </div>
-                                        <div id="NewsletterThank" class="form-group position-relative m-t-30" style="display:none;">
-                                            <button type="button" class="btn-subscribe">
-                                                Thank you for joining the AIQHome newsletter.
-                                            </button>
-                                        </div>
-                                        <span id="NewsletterError" class="error-message system-color-14" style="display:none;"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- right column -->
-                    <div class="col-12 col-md-auto col-xl-3 content-column-right">
-                        <div class="pros-card">
-                            <div class="logo-pros-container">
-                                <img src="assets/images/footer/footer-pros-logo.png?v=cJ9UvSJyUwxmuGUrso7bzgZIs-JNEFbZ3vx4zo7jg6M" alt="logo-pros">
-                            </div>
-                            <p class="line-h-1-5 mt-3">
-                                The industry dedicated, business optimizing, leads, sales and project management platform for all home improvement service providers.
-                            </p>
-                            <div class="join-us-button">
-                                <a href="http://www.aiqpros.com/" target="_blank">Join Us</a>
-                            </div>
+                    <div class="col-12 col-sm-6">
+                        <div class="content d-flex justify-content-end align-items-center">
+                            <p>&#169; Copyright 2020 AIQHome. All Rights Reserved</p>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="container-fluid page-footer-footer">
-                <div class="footer-container page-footer-main">
-                    <div class="row">
-                        <div class="col-12 col-sm-6">
-                            <div class="social">
-                                <a class="facebook" href="#">
-                                    <img src="assets/images/footer/social/facebook.svg?v=GRT4tGugZdC2efJx-77YvRIHbk6rQLFoL42q1Q6vpLw" alt="facebook">
-                                </a>
-                                <a class="linkedin" href="#">
-                                    <img src="assets/images/footer/social/linkedin.svg?v=nyl2dc--tPuYS2agE4r_-ratqiMo6vJwAu6OvWsc2Xs" alt="linkedin">
-                                </a>
-                                <a class="instagram" href="#">
-                                    <img src="assets/images/footer/social/instagram.svg?v=Y56zTGyn3NcffZOX1hLy7qef0NNftU9RMQ7BNdbE9HY" alt="instagram">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6">
-                            <div class="content d-flex justify-content-end align-items-center">
-                                <p>&#169; 2020 . All Rights Reserved.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        </div>
+    </footer>
         <div class="back-layer"></div>
     
 </body>
