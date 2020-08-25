@@ -60,14 +60,6 @@
           font-size: 14pt;
         }
       }
-
-      //.image-container {
-      //  padding-top: 80px;
-      //
-      //  img {
-      //    max-height: 25vh;
-      //  }
-      //}
     }
   }
 
@@ -95,6 +87,7 @@
               }
 
               img {
+                flex-shrink: 0;
                 margin-left: 10px;
               }
             }
