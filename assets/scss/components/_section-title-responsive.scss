@@ -61,8 +61,20 @@
     }
 }
 
+@media(max-width: 499px) {
+    .section-title-container {
+        padding: 5% 0 0 0;
+
+        h3 {
+            font-size: 14pt;
+        }
+    }
+}
+
 @media(max-width: 374px) {
     .section-title-container {
-        padding: 2% 0 0 0;
+        h3 {
+            font-size: 13pt;
+        }
     }
 }
