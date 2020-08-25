@@ -138,8 +138,10 @@
     }
 }
 
-@media(max-width: 400px) {
+@media(max-width: 399px) {
     .other-categories {
+        margin-top: 5px !important;
+
         h2 {
             padding: 0;
         }
@@ -148,13 +150,6 @@
             padding-left: 15px;
             padding-right: 15px;
         }
-        /*
-        .list-col {
-            .list-col-item {
-                font-size: 11.5pt;
-            }
-        }
-            */
     }
 }
 
@@ -171,13 +166,14 @@
         }
     }
 }
+
 @media(min-width: 600px) {
     .categories-home-page {
         padding-top: 180px;
         padding-bottom: 280px;
     }
-
 }
+
 @media(max-width: 600px) {
     .categories-home-page {
         padding-bottom: 28vh;
@@ -191,7 +187,6 @@
     }
 
     .categories {
-
         .list {
             .col-item {
                 position: relative;
@@ -227,9 +222,7 @@
     }
 }
 
-
 @media(min-width: 1600px) {
-
   .view-more-container {
     padding-top: 30px;
   }
