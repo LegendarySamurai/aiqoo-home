@@ -16,6 +16,14 @@
     color: #fff;
   }
 
+  .content-title {
+    span {
+      @media(max-width: 1199px) {
+        font-size: 18pt;
+      }
+    }
+  }
+
   // Top section
   .top-section {
     .section-inner {
@@ -85,10 +93,6 @@
       position: relative;
       width: 100%;
       height: 100%;
-      //background-image: url('../../');
-      //background-repeat: no-repeat;
-      //background-position: center;
-      //background-size: auto 100%;
 
       .pros-img {
         z-index: 1;
@@ -230,8 +234,14 @@
 
   // Charts
   .charts-container {
-    .charts-wrap {
-      //background-color: transparentize(blue, .5);
+    background-color: #fff !important;
+
+    .content-title {
+      margin-top: 40px;
+
+      @media(max-width: 991px) {
+        margin-top: 20px;
+      }
     }
 
     .modal-btns-container {
@@ -245,7 +255,6 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      //background-color: transparentize(coral, .5);
 
       @media(max-width: 1199px) {
         height: 120px;
@@ -269,7 +278,17 @@
     }
 
     .image-wrap {
-      //position: absolute;
+      margin-top: 70px;
+
+      @media(max-width: 1199px) {
+        margin-top: 50px;
+      }
+
+      @media(max-width: 991px) {
+        margin-top: 20px;
+      }
+      @media(max-width: 767px) {}
+      @media(max-width: 599px) {}
     }
   }
 
