@@ -30,10 +30,6 @@
         }
       }
 
-      //.image-container {
-      //  width: 180px;
-      //}
-
       video {
         &:focus {
           outline: none;
@@ -212,6 +208,12 @@
     .our-system {
       .decoration-element {
         display: none !important;
+      }
+
+      .content-col {
+        .text {
+          padding-bottom: 0 !important;
+        }
       }
     }
   }
