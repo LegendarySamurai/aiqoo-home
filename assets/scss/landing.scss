@@ -491,6 +491,14 @@
         padding: 0;
       }
     }
+
+    .services-list-container-col {
+      .services-list {
+        .list {
+          flex-direction: column;
+        }
+      }
+    }
   }
 
   @media(max-width: 499px) {
