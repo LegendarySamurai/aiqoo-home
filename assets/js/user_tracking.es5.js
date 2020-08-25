@@ -2,7 +2,7 @@
 var _ut_web_id = "Aiq-3";
 var _apiUrl = "https://api.aiq-magazine.com/api/v1/";
 var _ut_GUID, _ut_Parent_GUID, _ut_ip_api, _userObj;
-console.log("ut ver 0.2");
+console.log("ut ver 0.3");
 startTrack();
 
 //----------------------------------------------------

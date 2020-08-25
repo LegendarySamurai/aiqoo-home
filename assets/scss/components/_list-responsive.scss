@@ -74,7 +74,7 @@
 
     .list {
         .list-item-with-icon a {
-            h5 {
+            h4 {
                 width: 50%;
             }
         }
@@ -97,7 +97,7 @@
     .list {
 
         .list-item-with-icon a {
-            h5 {
+            h4 {
                 width: auto;
             }
         }
@@ -119,9 +119,10 @@
         width: 90%;
         //padding: 20px 0 0 0;
         .list-col-item {
-            line-height: 1.8;
+            line-height: 2.1;
             margin: 0 auto;
             font-size: 14.2pt;
+
             text-align: center;
             width: 100% !important;
             align-items: baseline;
@@ -177,7 +178,7 @@
             margin-bottom: 25px;
         }
 
-        h5 {
+        h4 {
             font-size: 10pt !important;
             font-weight:600 !important;
         }

@@ -152,10 +152,8 @@ body {
         .magazine-header {
             margin-top: -550px;
 
-            .section-sub-title-container {
-                p {
-                    text-align: center;
-                }
+            .magazine-header-text {
+                font-size: 12pt;
             }
         }
 
@@ -164,7 +162,6 @@ body {
             margin-bottom: 30px;
             font-family: $h-font;
             font-weight: 400;
-            font-size: 12pt;
         }
 
         .article {
@@ -508,7 +505,7 @@ body {
 
         .categories-home-page {
             padding-top: 34vh !important;
-            padding-bottom: 60%;
+            padding-bottom: 70%;
         }
 
         .magazine {
@@ -518,9 +515,12 @@ body {
                 margin-top: -470px;
             }
 
+            .more-tips {
+                margin-top: 10px;
+            }
+
             .card-col {
                 max-width: 330px;
-                //margin: 0 auto;
             }
         }
 
@@ -546,24 +546,18 @@ body {
         }
 
         .list-item-with-icon {
-            h5 {
-                font-size: 10pt !important;
+            h4 {
+                font-size: 10pt;
             }
         }
     }
 
     @media (max-width: 374px) {
         .magazine {
-            padding-top: 310px;
+            padding-top: 270px;
 
             .magazine-header {
                 margin-top: -490px;
-            }
-        }
-
-        .list-item-with-icon {
-            h5 {
-                font-size: 9pt !important;
             }
         }
 
