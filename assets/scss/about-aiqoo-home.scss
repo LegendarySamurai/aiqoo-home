@@ -627,7 +627,7 @@
     .about-our-pros {
       .content {
         .text {
-          padding: 0 0 20px 20px !important;
+          padding: 0 0 20px 0 !important;
         }
       }
     }
@@ -643,6 +643,10 @@
           .row {
             flex-direction: column-reverse;
           }
+        }
+
+        .card-content {
+          padding: 20px 16px;
         }
 
         .content-title {
