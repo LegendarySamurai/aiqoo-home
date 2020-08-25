@@ -18,9 +18,14 @@
     flex-grow: unset;
     flex-basis: unset;
 
+    &:not(:last-of-type) {
+      .services-list-item {
+        margin-bottom: 20px;
+      }
+    }
+
     .services-list-item {
       position: relative;
-      margin-bottom: 20px;
       padding: 15px 25px;
       border-radius: 20px;
       box-shadow: 0 7.5px 27.5px 0 rgba(0, 0, 0, 0.1);
@@ -75,7 +80,6 @@
       .services-list-col {
         width: 100% !important;
         max-width: 350px;
-        margin-bottom: 20px !important;
       }
     }
   }
