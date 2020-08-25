@@ -4,10 +4,41 @@
     font-weight: 400;
     padding-top: 50px;
     padding-bottom: 50px;
-}
-.categories-home-page {
-    padding-top: 260px;
-    padding-bottom: 280px;
+
+    @media(min-width: 991px) {
+        .list {
+            .col-item {
+                position: relative;
+            }
+
+            .col-item:not(:last-child) {
+                &:after {
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    transform: translateY(-50%);
+                    display: block;
+                    content: '';
+                    width: 2px;
+                    height: 86px;
+                    background-color: #d6dce6;
+                }
+            }
+
+            .list-item-with-icon {
+                position: relative;
+                margin-bottom: 0;
+            }
+        }
+
+        .other-categories {
+            margin-top: 50px;
+
+            h2 {
+                font-size: 14pt;
+            }
+        }
+    }
 }
 
 .categories-container {
@@ -51,19 +82,39 @@
 .other-categories {
     margin-top: 70px;
 
+    @media(min-width: 300px) {
+        margin-top: 45px;
+    }
+
+    @media(max-width: 399px) {
+        margin-top: 5px !important;
+    }
+
     h2 {
         text-align: center;
-        color: $primaryColor;
+        color: #585077;
         white-space: nowrap;
         padding: 0 20px;
         font-size: 17pt;
+
+        @media(min-width: 300px) {
+            font-size: 13pt;
+        }
+
+        @media(max-width: 399px) {
+            padding: 0;
+        }
     }
 
 
     .list {
         padding-top: 30px;
-    }
 
+        @media(max-width: 399px) {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
 }
 
 // view-more-container
@@ -71,7 +122,7 @@
     display: flex;
     align-items: center;
     width: 100%;
-    padding-top: 20px;
+    padding-top: 30px;
     margin: 0 auto;
 
     a {
@@ -138,92 +189,31 @@
     }
 }
 
-@media(max-width: 399px) {
-    .other-categories {
-        margin-top: 5px !important;
+// Categories Home page
+.categories-home-page {
+    padding-top: 140px;
+    padding-bottom: 260px;
 
-        h2 {
-            padding: 0;
-        }
-
-        .list {
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-    }
-}
-
-@media(min-width: 300px) {
-    .categories-home-page {
-        padding-top: 260px;
-        padding-bottom: 280px;
-    }
-    .other-categories {
-        margin-top: 45px;
-
-        h2 {
-            font-size: 13pt;
-        }
-    }
-}
-
-@media(min-width: 600px) {
-    .categories-home-page {
-        padding-top: 180px;
-        padding-bottom: 280px;
-    }
-}
-
-@media(max-width: 600px) {
-    .categories-home-page {
-        padding-bottom: 28vh;
-    }
-}
-
-@media(min-width: 991px) {
-    .categories-home-page {
-        padding-top: 160px;
-        padding-bottom: 280px;
+    @media(max-width: 991px) {
+        padding-top: 170px;
     }
 
-    .categories {
-        .list {
-            .col-item {
-                position: relative;
-            }
-
-            .col-item:not(:last-child) {
-                &:after {
-                    position: absolute;
-                    top: 50%;
-                    right: 0;
-                    transform: translateY(-50%);
-                    display: block;
-                    content: '';
-                    width: 2px;
-                    height: 86px;
-                    background-color: #d6dce6;
-                }
-            }
-
-            .list-item-with-icon {
-                position: relative;
-                margin-bottom: 0;
-            }
-        }
-
-        .other-categories {
-            margin-top: 50px;
-
-            h2 {
-                font-size: 14pt;
-            }
-        }
+    @media(max-width: 767px) {
+        padding-bottom: 200px;
     }
-}
 
-@media(min-width: 1600px) {
-  .view-more-container {
-    padding-top: 30px;
-  }
+    @media(max-width: 599px) {
+        padding-top: 200px;
+        padding-bottom: 410px;
+    }
+
+    @media(max-width: 499px) {
+        padding-top: 210px;
+        padding-bottom: 420px;
+    }
+
+    @media(max-width: 374px) {
+        padding-top: 240px;
+        padding-bottom: 250px;
+    }
 }
