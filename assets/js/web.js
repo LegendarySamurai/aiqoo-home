@@ -1,11 +1,11 @@
 ﻿console.log("main.js v=0.1");
 
 // Detect if ios device
-iOSDevice = !!navigator.platform.match(/iPhone|iPod|iPad/);
-
-if (iOSDevice) {
-	$('form-group-mobile-wrap').addClass('ios-device');
-}
+// iOSDevice = !!navigator.platform.match(/iPhone|iPod|iPad/);
+//
+// if (iOSDevice) {
+// 	$('form-group-mobile-wrap').addClass('ios-device');
+// }
 
 document.addEventListener('readystatechange', function (event) {
 	if (event.target.readyState === "complete") {

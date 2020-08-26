@@ -38,11 +38,14 @@
 		<!-- End Google Tag Manager -->
 
 		<!-- Detect if ios device -->
-		var iOSDevice = !!navigator.platform.match(/iPhone|iPod|iPad/);
-		console.log(iOSDevice);
-		if (iOSDevice) {
-			$('.form-group-mobile-wrap').addClass('ios-device');
-		}
+    $().ready(function() {
+	    var iOSDevice = !!navigator.platform.match(/iPhone|iPod|iPad/);
+	    console.log(iOSDevice);
+	    if (iOSDevice) {
+		    $('.form-group-mobile-wrap').addClass('ios-device');
+	    }
+    });
+
   </script>
 
 
