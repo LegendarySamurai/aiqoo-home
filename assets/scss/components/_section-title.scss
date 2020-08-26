@@ -83,3 +83,15 @@
         }
     }
 }
+
+.section-sub-title-container {
+    p {
+        font-family: $h-font;
+        color: $primaryColor;
+        padding: 0;
+        font-weight: 600;
+        font-size: 14pt;
+        text-align: center;
+        width: 100%;
+    }
+}
