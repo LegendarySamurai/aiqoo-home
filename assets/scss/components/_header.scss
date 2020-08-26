@@ -793,6 +793,26 @@
                 z-index: 9000;
                 padding: 0;
 
+                &.show {
+                    .form-group-mobile-wrap {
+
+                        /* CSS specific to iOS devices */
+                        @supports (-webkit-touch-callout: none) {
+                            top: -62px;
+                            width: 100%;
+                            left: 0;
+                            //background-color: transparentize(coral, .5);
+                        }
+
+                        //&.ios-device {
+                        //    top: -62px;
+                        //    width: 100%;
+                        //    left: 0;
+                        //    background-color: transparentize(coral, .5);
+                        //}
+                    }
+                }
+
                 .form-group-mobile-wrap {
                     z-index: 999;
                     position: fixed !important;
@@ -809,21 +829,6 @@
                     //height: 100vh;
                     padding: 2% 2% 0;
                     background: #fff;
-
-                    /* CSS specific to iOS devices */
-                    @supports (-webkit-touch-callout: none) {
-                        top: -62px;
-                        width: 100%;
-                        left: 0;
-                        //background-color: transparentize(coral, .5);
-                    }
-
-                    //&.ios-device {
-                    //    top: -62px;
-                    //    width: 100%;
-                    //    left: 0;
-                    //    background-color: transparentize(coral, .5);
-                    //}
                 }
 
                 .when-input-empty {
