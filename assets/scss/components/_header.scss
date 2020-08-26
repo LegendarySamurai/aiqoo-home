@@ -812,11 +812,9 @@
 
                     /* CSS specific to iOS devices */
                     @supports (-webkit-touch-callout: none) {
-                        height: 100%;
-                        top: 0;
+                        top: -62px;
+                        width: 100%;
                         left: 0;
-                        right: 0;
-                        bottom: 0;
                         background-color: transparentize(coral, .5);
                     }
                 }
