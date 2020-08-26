@@ -815,15 +815,15 @@
                         top: -62px;
                         width: 100%;
                         left: 0;
-                        background-color: transparentize(coral, .5);
+                        //background-color: transparentize(coral, .5);
                     }
 
-                    &.ios-device {
-                        top: -62px;
-                        width: 100%;
-                        left: 0;
-                        background-color: transparentize(coral, .5);
-                    }
+                    //&.ios-device {
+                    //    top: -62px;
+                    //    width: 100%;
+                    //    left: 0;
+                    //    background-color: transparentize(coral, .5);
+                    //}
                 }
 
                 .when-input-empty {
