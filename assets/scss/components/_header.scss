@@ -793,6 +793,11 @@
                 z-index: 9000;
                 padding: 0;
 
+                /* CSS specific to iOS devices */
+                @supports (-webkit-touch-callout: none) {
+                    background-color: #fff;
+                }
+
                 &.show {
                     .form-group-mobile-wrap {
 
@@ -801,15 +806,7 @@
                             top: -62px;
                             width: 100%;
                             left: 0;
-                            //background-color: transparentize(coral, .5);
                         }
-
-                        //&.ios-device {
-                        //    top: -62px;
-                        //    width: 100%;
-                        //    left: 0;
-                        //    background-color: transparentize(coral, .5);
-                        //}
                     }
                 }
 
