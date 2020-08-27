@@ -792,6 +792,7 @@
             &.fixed {
                 z-index: 9000;
                 padding: 0;
+                background-color: #fff;
 
                 /* CSS specific to iOS devices */
                 @supports (-webkit-touch-callout: none) {
