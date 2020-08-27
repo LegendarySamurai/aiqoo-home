@@ -22,15 +22,9 @@
         background-color: #585077;
     }
 
-    .section-container {
-        //margin: 0 auto;
-        //@media(min-width: 1400px) {
-        //  max-width: 1100px;
-        //}
-        //.row {
-        //  justify-content: center;
-        //  align-items: stretch;
-        //}
+    .image-col {
+        margin-left: 6%;
+        margin-right: auto;
     }
 
     .questionnaire-title {
@@ -61,6 +55,10 @@
     .questionnaire-content {
         display: flex;
         flex-direction: column;
+    }
+
+    .questionnaire-content-col {
+        position: absolute;
     }
 
     .questionnaire-content-outer {
@@ -121,7 +119,6 @@
         }
 
         .join-us {
-            //flex-grow: 1;
             width: calc(100% - 20px);
             margin-left: auto;
             margin-right: auto;
@@ -141,16 +138,22 @@
     }
 }
 
-
-@media(max-width: 1899px) {}
-
-@media(max-width: 1599px) {}
-
-@media(max-width: 1399px) {}
+@media(max-width: 1399px) {
+    // Questionaire
+    .questionnaire {
+        .image-col {
+            margin-left: 3%;
+        }
+    }
+}
 
 @media(max-width: 1199px) {
   // Questionaire
   .questionnaire {
+      .image-col {
+          margin: 0 auto 0 -2%;
+      }
+
     .questionnaire-title {
       font-size: 20pt;
     }
@@ -168,7 +171,12 @@
             height: 80%;
         }
 
+        .image-col {
+            margin: 0;
+        }
+
         .questionnaire-content-col {
+            position: relative;
             flex-grow: 1;
             flex-shrink: 1;
         }
