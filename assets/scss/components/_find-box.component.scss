@@ -331,6 +331,11 @@
         }
       }
 
+      input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: red !important;
+        font-size: 16pt !important;
+      }
+
       .form-control:focus + .super-placeholder .main-super-placeholder-heading {
         display: none;
       }
