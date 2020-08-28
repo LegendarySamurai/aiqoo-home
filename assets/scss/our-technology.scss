@@ -157,7 +157,7 @@
   @media(max-width: 991px) {
     .section-title {
       span {
-        white-space: normal;
+        //white-space: normal;
       }
     }
 
@@ -171,8 +171,6 @@
       }
     }
   }
-
-  @media(max-width: 767px) { }
 
   @media(max-width: 599px) {
     .head-section {
@@ -216,6 +214,15 @@
         }
       }
     }
+  }
+
+  @media(max-width: 499px) {
+    // Section "Content wrap"
+    //.content-wrap {
+    //  h2 {
+    //    font-size: 26pt !important;
+    //  }
+    //}
   }
 
   @media(max-width: 374px) {
