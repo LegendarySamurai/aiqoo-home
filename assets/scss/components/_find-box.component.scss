@@ -301,8 +301,6 @@
           color: transparent !important;
           opacity: 0 !important;
           font-size: 0 !important;
-          //color: red !important;
-          //font-size: 16pt !important;
         }
 
         &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -335,7 +333,7 @@
         }
       }
 
-      input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      input::-webkit-input-placeholder { /* Ios v9 Iphone 6s and less */
         color: transparent !important;
         opacity: 0 !important;
         font-size: 0 !important;

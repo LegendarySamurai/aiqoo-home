@@ -155,18 +155,30 @@
   }
 
   @media(max-width: 991px) {
-    .section-title {
-      span {
-        //white-space: normal;
-      }
-    }
-
     .head-section {
       .wrap {
         padding-bottom: 12%;
 
         .image-container {
           width: 120px;
+        }
+      }
+    }
+
+    .our-system {
+      .image-col {
+        .image-container {
+          justify-content: center;
+
+          img {
+            width: 80%;
+          }
+        }
+      }
+
+      .content-col {
+        .text {
+          padding-bottom: 0 !important;
         }
       }
     }
@@ -207,22 +219,7 @@
       .decoration-element {
         display: none !important;
       }
-
-      .content-col {
-        .text {
-          padding-bottom: 0 !important;
-        }
-      }
     }
-  }
-
-  @media(max-width: 499px) {
-    // Section "Content wrap"
-    //.content-wrap {
-    //  h2 {
-    //    font-size: 26pt !important;
-    //  }
-    //}
   }
 
   @media(max-width: 374px) {

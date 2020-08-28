@@ -1,3 +1,19 @@
+@media(max-width: 899px) {
+    .section-title-long {
+        span {
+            font-size: 22pt !important;
+        }
+    }
+}
+
+@media(max-width: 699px) {
+    .section-title-long {
+        span {
+            font-size: 20pt !important;
+        }
+    }
+}
+
 @media(max-width: 599px) {
     .section-title-container {
         padding: 10% 0 0 0;
@@ -60,6 +76,18 @@
             text-align: left;
         }
     }
+
+    .section-title {
+        span {
+            font-size: 22pt !important;
+        }
+    }
+
+    .section-title-long {
+        span {
+            font-size: 16pt !important;
+        }
+    }
 }
 
 @media(max-width: 499px) {
@@ -68,6 +96,26 @@
 
         h3 {
             font-size: 14pt;
+        }
+    }
+
+    .section-title {
+        span {
+            font-size: 20pt !important;
+        }
+    }
+
+    .section-title-long {
+        span {
+            font-size: 13pt !important;
+        }
+    }
+}
+
+@media(max-width: 399px) {
+    .section-title {
+        span {
+            white-space: normal;
         }
     }
 }
