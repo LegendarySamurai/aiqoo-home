@@ -31,6 +31,7 @@
     color: #fff;
     font-size: 13pt;
     font-weight: 600;
+    white-space: nowrap;
   }
 
   .card {
@@ -47,7 +48,6 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        /* background-color: coral; */
 
         .title {
           padding: 0 2%;
@@ -229,6 +229,18 @@
           font-size: 12pt;
         }
       }
+    }
+
+    .card {
+      &.horizontal-card {
+        .card-info {
+          margin-top: 0;
+        }
+      }
+    }
+
+    .home-page-link {
+      margin-top: 20px;
     }
   }
 }
