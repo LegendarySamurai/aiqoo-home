@@ -7,6 +7,15 @@
 // 	$('form-group-mobile-wrap').addClass('ios-device');
 // }
 
+// Animation Ipo
+const NumberAnimation = new CountUp('countNum', 2000000);
+if (!NumberAnimation.error) {
+	NumberAnimation.start();
+} else {
+	console.error(NumberAnimation.error);
+}
+
+//
 document.addEventListener('readystatechange', function (event) {
 	if (event.target.readyState === "complete") {
 		init();

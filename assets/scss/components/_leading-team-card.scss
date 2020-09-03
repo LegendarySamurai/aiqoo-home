@@ -1,0 +1,112 @@
+
+
+// Leading team
+.leading-team {
+  padding-bottom: 40px;
+  //padding: 13% 7% 0%;
+
+  .section-container {
+    padding-top: 1%;
+    background-color: #fff;
+    box-shadow: 0 1.5px 15px 0 rgba(50,81,129,0.2);
+  }
+
+  .section-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 30px 0 80px;
+  }
+
+  .team {
+    padding: 6% 4% 2%;
+
+    .team-row {
+      justify-content: center;
+    }
+  }
+
+  .card-col {
+    margin-bottom: 140px;
+  }
+
+  .card {
+    max-width: 290px;
+    box-shadow: 0 1.5px 15px 0 rgba(50,81,129,0.2);
+    border-radius: 10px;
+
+    .card-inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      height: 100%;
+    }
+
+    .image-container {
+      transform: translate(0, -50%);
+      width: 40%;
+      border-radius: 10px;
+      //width: 150px;
+      //height: 200px;
+      box-shadow: 0 1.5px 15px 0 rgba(50,81,129,0.2);
+      margin-bottom: 50px;
+    }
+
+    .content {
+      flex-grow: 1;
+      transform: translate(0, -10%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      max-width: 90%;
+      color: #585077;
+      font-family: 'Helvetica','Arial',sans-serif;
+    }
+
+    .name {
+      font-weight: 600;
+      font-size: 15pt;
+      color: #3a3281;
+    }
+
+    .position {
+      font-weight: 600;
+      font-size: 12pt;
+      color: #3a3281;
+      text-align: center;
+    }
+
+    .expertize {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 5% 7% 5% 9%;
+
+      .item {
+        position: relative;
+        line-height: 1.5;
+        margin-bottom: 10px;
+        font-weight: 400;
+        font-size: 12pt;
+        color: #696969;
+
+        &::before {
+          position: absolute;
+          left: -12px;
+          top: 5px;
+          border-radius: 10px;
+          display: block;
+          content: '';
+          width: 4px;
+          height: 12px;
+          background-color: #3a3281;
+        }
+      }
+    }
+  }
+}

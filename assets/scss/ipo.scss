@@ -1,0 +1,306 @@
+.ipo {
+  // top-section
+  .top-section {
+    height: 255px;
+  }
+
+  h2 {
+    font-weight: 900;
+    font-size: 27pt;
+  }
+
+  // section-top-bg
+  .section-top-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // section-top-content
+  .section-top-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+    color: #fff;
+    //background-color: transparentize(coral, .5);
+
+    h2 {
+
+    }
+
+    .text-content {
+      p {
+
+      }
+    }
+
+    .info-content {
+      .stats {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        border-radius: 7.5px;
+        background-image: linear-gradient(to top, #3d3753, rgba(52, 46, 73, 0));
+
+        i {
+          margin-right: 10px;
+          color: #d8cdba;
+          font-size: 36pt;
+          font-weight: 300;
+        }
+      }
+
+      .count-numbers {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        span {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 72px;
+          height: 72px;
+          margin-right: 10px;
+          color: #342e49;
+          font-size: 30pt;
+          font-weight: 600;
+          border-radius: 3px;
+          background-image: linear-gradient(to top, #ffffff, rgba(255, 255, 255, 0));
+        }
+      }
+    }
+  }
+
+  // section about-ipo
+  .info-card {
+    margin-top: 10px;
+
+    .card-info {
+      width: 100%;
+      padding: 15px 40px;
+      border-radius: 5px;
+      box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
+      background-color: #ffffff;
+    }
+
+    .card-content {
+      .content-title {
+        span {
+          font-size: 30pt;
+          color: #2a253a;
+        }
+      }
+
+      .text {
+        font-size: 15pt;
+      }
+    }
+
+    .card-image-container {
+      height: 100%;
+
+      .image-container {
+        position: absolute;
+        top: 30%;
+      }
+
+      img {
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  // investment-milestones
+  .investment-milestones {
+    margin-top: 40px;
+
+    .title {
+      padding-left: 7%;
+      margin-bottom: 40px;
+      font-weight: 900;
+      font-size: 19.5pt;
+      color: #342e49;
+    }
+
+    .wrap {
+
+    }
+
+    .status-col {
+      width: 9%;
+    }
+
+    .counter-col {
+      width: 7%;
+    }
+
+    .counter {
+      width: 46px;
+      height: 46px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      font-weight: bold;
+      font-size: 13.5pt;
+      color: #fff;
+    }
+
+    .content-information {
+      max-width: 1160px;
+      padding: 30px 20px 30px 80px;
+      border-radius: 5px;
+      box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
+      border: solid 1px #e3e3e3;
+      background-color: #ffffff;
+    }
+
+    .dotted-list {
+      display: flex;
+      flex-direction: column;
+
+      .dotted-list-item {
+        position: relative;
+        line-height: 1.5;
+        font-size: 15pt;
+
+        &::before {
+          position: absolute;
+          top: 50%;
+          left: -30px;
+          transform: translate(0, -50%);
+          display: block;
+          content: '';
+          width: 10px;
+          height: 10px;
+          background-color: #76718a;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      color: #3e3755;
+
+      .info-title {
+        font-size: 16.5pt;
+      }
+
+      .text {
+        font-size: 13.5pt;
+      }
+
+      .read-more {
+        align-self: flex-end;
+        font-size: 10.5pt;
+      }
+    }
+  }
+
+  // invest-now
+  .invest-now-wrap {
+    position: relative;
+    height: 100%;
+
+    .image-container {
+      z-index: 2;
+      position: absolute;
+      top: 0%;
+      left: 50%;
+      -webkit-transform: translate(-50%, 0);
+      -moz-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+      -o-transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
+      width: 200px;
+      height: 160px;
+      box-shadow: 0 2px 7.5px 0 rgba(87, 81, 116, 0.5);
+    }
+
+    .invest-now {
+      z-index: 1;
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      padding: 45px 13px;
+      border-radius: 5px;
+      background-image: linear-gradient(to top, #47425d, #5f5296);
+      color: #fff;
+
+      .title {
+        font-size: 22pt;
+        text-align: center;
+      }
+
+      .text {
+        margin-top: 15px;
+        line-height: 1.5;
+        font-size: 15pt;
+      }
+
+      .download {
+        margin-top: 15px;
+        border-radius: 2px;
+        box-shadow: 0 2px 7.5px 0 rgba(87, 81, 116, 0.5);
+        background-color: #d8cdba;
+        color: #342e49;
+        font-size: 13.5pt;
+      }
+    }
+  }
+
+  .leading-team {
+    .team {
+      &.section-container {
+        background-color: transparent;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+
+// Reponsive
+.ipo {
+  @media(max-width: 1899px) {}
+
+  @media(max-width: 1599px) {}
+
+  @media(max-width: 1399px) {}
+
+  @media(max-width: 1199px) {}
+
+  @media(max-width: 991px) {}
+
+  @media(max-width: 767px) {
+    // top-section
+    .top {
+      height: 500px;
+    }
+  }
+
+  @media(max-width: 599px) {}
+
+  @media(max-width: 374px) {}
+}
