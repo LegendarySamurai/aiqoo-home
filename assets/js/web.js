@@ -1,4 +1,5 @@
-﻿console.log("main.js v=0.1");
+﻿import { CountUp } from './countUp.js';
+console.log("main.js v=0.1");
 
 // Detect if ios device
 // iOSDevice = !!navigator.platform.match(/iPhone|iPod|iPad/);
@@ -7,13 +8,18 @@
 // 	$('form-group-mobile-wrap').addClass('ios-device');
 // }
 
-// Animation Ipo
-const NumberAnimation = new CountUp('countNum', 2000000);
-if (!NumberAnimation.error) {
-	NumberAnimation.start();
-} else {
-	console.error(NumberAnimation.error);
-}
+// Language Selection in ipo-header
+// To style only selects with the my-select class
+$(function () {
+	$('.lang-select').selectpicker();
+});
+
+window.onload = function() {
+	var countUp = new CountUp('counter', 2000000, {
+		startVal: 0
+		});
+	countUp.start();
+};
 
 //
 document.addEventListener('readystatechange', function (event) {
@@ -107,18 +113,24 @@ function init() {
 		})
 	}
 
-	btnOpenMenu.addEventListener('click', () => {
-		mainMenuContainer.classList.remove('hide', 'd-none');
-		mainMenuContainer.classList.add('show');
-	});
+	if (btnOpenMenu) {
+		btnOpenMenu.addEventListener('click', () => {
+			mainMenuContainer.classList.remove('hide', 'd-none');
+			mainMenuContainer.classList.add('show');
+		});
+	}
 
-	btnCloseMenu.addEventListener('click', () => {
-		mainMenuContainer.classList.add('hide');
+	if (btnCloseMenu) {
+		btnCloseMenu.addEventListener('click', () => {
+			mainMenuContainer.classList.add('hide');
 
-		setTimeout(() => {
-			mainMenuContainer.classList.add('d-none');
-		}, 600)
-	});
+			setTimeout(() => {
+				mainMenuContainer.classList.add('d-none');
+			}, 600)
+		});
+	}
+
+
 
 	//---------------------------
 	//------ AutoComplete -------
