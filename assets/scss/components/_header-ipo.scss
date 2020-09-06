@@ -1,107 +1,21 @@
 @import "../vendor/bootstrap.custom/bootstrap.scss";
 @import "../vendor/bootstrap.custom/bootstrap-theme.scss";
 
-// Lang-select data
-.lang-select {
-  width: 160px !important;
-
-  .dropdown-toggle {
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 7px 17px 0 rgba(0, 0, 0, 0.45);
-    background: #575174;
-
-    &:focus {
-      outline: none !important;
-      outline-offset: 0;
-    }
-
-    .caret {
-      border-top-color: #fff;
-    }
-  }
-
-  .filter-option {
-    .select-item {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-
-      span {
-        font-weight: normal;
-        font-size: 13.5pt;
-        color: #fff;
-      }
-
-      img {
-        margin-right: 20px;
-      }
-    }
-  }
-
-  .dropdown-menu {
-    margin: 0;
-    padding: 0 5px;
-    border: none;
-
-    .inner {
-      border-top: 1px solid transparentize(#fff, .5);
-    }
-
-    li {
-      a {
-        width: 100%;
-        height: 42px;
-        padding: 0;
-      }
-
-      &:not(:last-child) {
-        .select-item {
-          border-bottom: 1px solid #fff;
-        }
-      }
-    }
-
-    .text {
-      width: 100%;
-      height: 100%;
-    }
-
-    .select-item {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      height: 100%;
-
-      span {
-        font-weight: 300;
-        font-size: 13.5pt;
-        color: #fff;
-      }
-
-      img {
-        margin-right: 20px;
-      }
-    }
-
-    // ot to duplicate the same selected item
-    & .active > a {
-      display: none;
-    }
-
-    &.open {
-    }
-  }
-
-}
-
 .header-ipo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-100%, 0); // header is hidden on page load
   z-index: 8000;
   display: flex;
   align-items: center;
   width: 100%;
   height: 90px;
   background-color: #342e49;
+
+  @media(max-width: 767px) {
+    transform: unset;
+  }
 
   .header-content {
     display: flex;
@@ -113,10 +27,12 @@
   .info-content-header {
     display: flex;
     flex-direction: row;
-    //justify-content: space-between;
     align-items: center;
     width: auto;
 
+    @media(max-width: 767px) {
+      display: none;
+    }
 
     .title {
       margin-left: 10px;
@@ -145,7 +61,6 @@
         align-items: center;
         width: 30px;
         height: 30px;
-        //margin-right: 3%;
         margin-right: 5px;
         background-color: #676080;
         border-radius: 3px;
@@ -153,13 +68,11 @@
       }
 
       i {
-        //margin-right: 3%;
         margin-right: 5px;
         font-weight: bold;
       }
 
       .currency {
-        //margin-right: 3%;
         margin-right: 5px;
         font-weight: 400;
       }
@@ -171,6 +84,10 @@
 
     img {
       width: 140px;
+
+      @media(max-width: 599px) {
+        width: 100px;
+      }
     }
 
     a {
@@ -184,6 +101,10 @@
       font-weight: bold;
       font-size: 22.5pt;
       color: #fff;
+
+      @media(max-width: 599px) {
+        font-size: 18pt;
+      }
     }
   }
 
@@ -199,11 +120,156 @@
       font-weight: 500;
       font-size: 10.5pt;
       color: #342e49;
+
+      @media(max-width: 767px) {
+        font-size: 9pt;
+      }
     }
 
     img {
       width: 14px;
       margin-right: 20px;
+
+      @media(max-width: 767px) {
+        width: 10px;
+        margin-right: 5px;
+      }
     }
   }
+}
+
+
+// Lang-select data
+.lang-select {
+  width: 160px !important;
+
+  @media(max-width: 767px) {
+    width: 50px !important;
+  }
+
+  .dropdown-toggle {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 7px 17px 0 rgba(0, 0, 0, 0.45);
+    background: #575174;
+
+    &:focus {
+      outline: none !important;
+      outline-offset: 0;
+    }
+
+    .caret {
+      border-top-color: #fff;
+
+      @media(max-width: 767px) {
+        right: 3px;
+      }
+    }
+  }
+
+  .filter-option {
+    .select-item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      @media(max-width: 767px) {
+        justify-content: center;
+      }
+
+      span {
+        font-weight: normal;
+        font-size: 13.5pt;
+        color: #fff;
+
+        @media(max-width: 767px) {
+          font-size: 0;
+        }
+      }
+
+      img {
+        margin-right: 20px;
+
+        @media(max-width: 767px) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .dropdown-menu {
+    margin: 0;
+    padding: 0 5px;
+    border: none;
+
+    @media(max-width: 767px) {
+      left: auto;
+      right: 0;
+    }
+
+    .inner {
+      border-top: 1px solid transparentize(#fff, .5);
+    }
+
+    li {
+      a {
+        width: 100%;
+        height: 42px;
+        padding: 0;
+
+        &:hover {
+          background: #575174;
+        }
+      }
+
+      &:not(:last-child) {
+        .select-item {
+          border-bottom: 1px solid #fff;
+        }
+      }
+    }
+
+    .text {
+      width: 100%;
+      height: 100%;
+    }
+
+    .select-item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 100%;
+
+      @media(max-width: 767px) {
+        justify-content: center;
+      }
+
+      span {
+        font-weight: 300;
+        font-size: 13.5pt;
+        color: #fff;
+
+        @media(max-width: 767px) {
+          font-size: 0;
+        }
+      }
+
+      img {
+        margin-right: 20px;
+
+        @media(max-width: 767px) {
+          margin-right: 0;
+        }
+      }
+    }
+
+    // ot to duplicate the same selected item
+    & .active > a {
+      display: none;
+    }
+
+    &.open {
+    }
+  }
+
 }

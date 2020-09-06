@@ -1,16 +1,37 @@
 @import './components/header-ipo';
 
+.dummy-container {
+  width: 100%;
+  height: 90px;
+}
+
 .ipo {
   padding-top: 0;
 
   // top-section
   .top-section {
     height: 400px;
+
+    @media(max-width: 1199px) {
+      height: 300px;
+    }
+
+    @media(max-width: 767px) {
+      height: 380px;
+    }
   }
 
   h2 {
     font-weight: 900;
     font-size: 27pt;
+
+    @media(max-width: 1199px) {
+      font-size: 22pt;
+    }
+
+    @media(max-width: 599px) {
+      font-size: 18pt;
+    }
   }
 
   // section-top-bg
@@ -41,6 +62,12 @@
     width: 100%;
     color: #fff;
 
+    .text-content-col {
+      @media(max-width: 767px) {
+        order: 2;
+      }
+    }
+
     .text-content {
       p {
         line-height: 1.25;
@@ -48,6 +75,20 @@
         color: #fff;
         font-weight: 400;
         font-size: 19.5pt;
+
+        @media(max-width: 1199px) {
+          font-size: 16pt;
+        }
+
+        @media(max-width: 599px) {
+
+        }
+      }
+    }
+
+    .info-content-col {
+      @media(max-width: 767px) {
+        order: 1;
       }
     }
 
@@ -56,6 +97,10 @@
         padding: 28px 10px;
         border-radius: 15px;
         background-image: linear-gradient(to top, #3d3753, rgba(52, 46, 73, 0));
+
+        @media(max-width: 599px) {
+          padding: 10px;
+        }
       }
 
       .stats {
@@ -67,23 +112,37 @@
         border-radius: 15px;
         background-image: linear-gradient(to top, #3d3753, rgba(52, 46, 73, 0));
 
+        @media(max-width: 599px) {
+          margin-top: 0;
+        }
+
         i {
           margin-right: 5px;
           color: #d8cdba;
           font-size: 36pt;
           font-weight: 300;
+
+          @media(max-width: 1199px) {
+            font-size: 30pt;
+          }
+
+          @media(max-width: 599px) {
+            font-size: 24pt;
+          }
         }
       }
 
       #counter {
-        //display: flex;
-        //flex-direction: row;
-        //align-items: center;
         color: #342e49;
         font-size: 30pt;
         font-weight: bold;
         border-radius: 6px;
         background-image: linear-gradient(to top, #ffffff, rgba(255, 255, 255, 0));
+
+        @media(max-width: 599px) {
+          margin-left: 10px;
+          font-size: 24pt;
+        }
 
         span {
           //display: flex;
@@ -102,8 +161,10 @@
     margin-top: 10px;
 
     .card-info {
+      z-index: 3;
+      position: relative;
       width: 100%;
-      padding: 15px 40px;
+      padding: 15px 40px 25px;
       border-radius: 10px;
       box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
       background-color: #ffffff;
@@ -114,11 +175,19 @@
         span {
           font-size: 30pt;
           color: #2a253a;
+
+          @media(max-width: 1199px) {
+            font-size: 24pt;
+          }
         }
       }
 
       .text {
         font-size: 15pt;
+
+        @media(max-width: 1199px) {
+          font-size: 13pt;
+        }
       }
     }
 
@@ -128,11 +197,34 @@
       .image-container {
         position: absolute;
         top: 30%;
+
+        @media(max-width: 1199px) {
+          top: 50%;
+        }
+
+        @media(max-width: 991px) {
+          top: 50%;
+          transform: translate(0, -50%);
+        }
+
+        @media(max-width: 767px) {
+          position: static;
+          transform: unset;
+          margin-top: 30px;
+        }
       }
 
       img {
         width: 80%;
         margin: 0 auto;
+
+        @media(max-width: 1399px) {
+          width: 100%;
+        }
+
+        @media(max-width: 767px) {
+          width: 80%;
+        }
       }
     }
   }
@@ -141,44 +233,515 @@
   .investment-milestones {
     margin-top: 40px;
 
+    .section-container {
+      position: relative;
+
+      &::after {
+        z-index: 1;
+        position: absolute;
+        top: 50%;
+        left: 36px;
+        -webkit-transform: translate(0, -50%);-moz-transform: translate(0, -50%);-ms-transform: translate(0, -50%);-o-transform: translate(0, -50%);transform: translate(0, -50%);
+        display: block;
+        content: '';
+        width: 1px;
+        height: 120%;
+        border: 1px dashed #cec3b2;
+
+        @media(max-width: 1199px) {
+          left: 32px;
+        }
+      }
+    }
+
     .title {
       padding-left: 7%;
       margin-bottom: 40px;
       font-weight: 900;
       font-size: 19.5pt;
       color: #342e49;
+
+      @media(max-width: 1199px) {
+        font-size: 16pt;
+      }
     }
 
-    .wrap {
+    .investment-milestones-item-wrap {
+      margin-top: 30px;
 
+      &:nth-child(2) {
+        margin-top: 0;
+      }
+
+      // Done
+      &.done {
+        // Status col
+        .status-col {
+          .image-container {
+            border: 3px solid #76718a;
+          }
+
+          .status-name {
+            color: #76718a;
+          }
+        }
+
+        // Counter col
+        .counter-col {
+          .counter {
+            background-color: #76718a;
+
+            &::after {
+              border: 1px dashed #76718a;
+            }
+          }
+        }
+
+        // content-information
+        .content-information-col {
+          .decoration-element {
+            background-color: #76718a;
+          }
+
+          .content-information {
+            padding: 30px 20px 30px 80px;
+            box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
+            border: solid 2px #e3e3e3;
+            background-color: #ffffff;
+
+            @media(max-width: 767px) {
+              padding: 20px 20px 20px 30px;
+            }
+          }
+        }
+
+        .info-col {
+          @media(max-width: 767px) {
+            margin-top: 20px;
+            padding-left: 0;
+          }
+          
+          &::before {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(0, -50%);
+            display: block;
+            content: '';
+            width: 1px;
+            height: 90%;
+            background-color: #e1e1e1;
+
+            @media(max-width: 767px) {
+              display: none;
+            }
+          }
+        }
+
+        .dotted-list {
+          .dotted-list-item {
+            &::before {
+              background-color: #76718a;
+            }
+          }
+        }
+      }
+
+      // Available
+      &.available {
+        // Status col
+        .status-col {
+          .image-container {
+            border: 3px solid #008000;
+          }
+
+          .status-name {
+            color: #008000;
+          }
+        }
+
+        // Counter col
+        .counter-col {
+          .counter {
+            background-color: #008000;
+
+            &::after {
+              border: 1px dashed #008000;
+            }
+          }
+        }
+
+        // content-information
+        .content-information-col {
+          .decoration-element {
+            background-color: #008000;
+          }
+
+          .content-information {
+            padding: 30px 20px 30px 80px;
+            box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
+            border: solid 2px #e3e3e3;
+            background-color: #ffffff;
+
+            @media(max-width: 767px) {
+              padding: 20px 20px 20px 30px;
+            }
+          }
+        }
+
+        .dotted-list {
+          .dotted-list-item {
+            &::before {
+              background-color: #008000;
+            }
+          }
+        }
+
+        .info-col {
+          @media(max-width: 767px) {
+            margin-top: 20px;
+            padding-left: 0;
+          }
+
+          &::before {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(0, -50%);
+            display: block;
+            content: '';
+            width: 1px;
+            height: 90%;
+            background-color: #e1e1e1;
+
+            @media(max-width: 767px) {
+              display: none;
+            }
+          }
+        }
+      }
+
+      // Pending
+      &.pending {
+        // Status col
+        .status-col {
+          .image-container {
+            border: 3px solid #cdcdcd;
+          }
+
+          .status-name {
+            color: #cdcdcd;
+          }
+        }
+
+        // Counter col
+        .counter-col {
+          .counter {
+            background-color: #afafaf;
+
+            &::after {
+              border: 1px dashed #cec3b2;
+            }
+          }
+        }
+
+        // content-information
+        .content-information-col {
+          .decoration-element {
+            background-color: #afafaf;
+          }
+
+          .content-information {
+            padding: 30px 20px 30px 50px;
+            border: solid 2px #c4c4c4;
+            background-color: #f8f8f8;
+
+            @media(max-width: 767px) {
+              padding: 20px;
+            }
+          }
+
+          .dotted-list {
+            .dotted-list-item {
+              font-size: 12pt;
+            }
+          }
+        }
+
+        // info
+        .info {
+          color: #8f8f8f;
+
+          .info-title {
+            font-size: 13.5pt;
+          }
+
+          .text {
+            font-size: 13.5pt;
+          }
+        }
+      }
     }
 
+    .invest-now-wrap-container {
+      margin-top: 60px;
+
+      // Counter col
+      .counter-col {
+        .counter {
+          background-color: #3e3853;
+
+          &::after {
+            display: none;
+          }
+        }
+      }
+
+      .card-content {
+        z-index: 3;
+        position: relative;
+        width: 100%;
+        padding: 30px 40px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+
+        .content-title {
+          margin: 0 0 15px;
+
+          span {
+            line-height: 1;
+            font-size: 30pt;
+            color: #2a253a;
+
+            @media(max-width: 1199px) {
+              font-size: 24pt;
+            }
+          }
+        }
+
+        .text {
+          font-size: 12pt;
+        }
+      }
+
+      .card-image-container {
+        height: 100%;
+
+        .image-container {
+          position: absolute;
+          top: 30%;
+        }
+
+        img {
+          width: 80%;
+          margin: 0 auto;
+        }
+      }
+
+      // invest-now
+      .invest-now-wrap {
+        position: relative;
+        height: 100%;
+
+        .image-container {
+          z-index: 2;
+          position: absolute;
+          top: 0;
+          left: 50%;
+          -webkit-transform: translate(-50%, 0);
+          -moz-transform: translate(-50%, 0);
+          -ms-transform: translate(-50%, 0);
+          -o-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+          width: 150px;
+          //height: 160px;
+          //box-shadow: 0 2px 7.5px 0 rgba(87, 81, 116, 0.5);
+        }
+
+        .invest-now {
+          z-index: 1;
+          position: absolute;
+          bottom: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 100%;
+          padding: 45px 13px;
+          border-radius: 10px;
+          background-image: linear-gradient(to top, #47425d, #5f5296);
+          color: #fff;
+
+          .invest-now-title {
+            font-size: 22pt;
+            text-align: center;
+            color: #fff;
+          }
+
+          .invest-now-text {
+            margin-top: 15px;
+            line-height: 1.25;
+            font-size: 15pt;
+            text-align: center;
+          }
+
+          .download {
+            margin-top: 15px;
+            border-radius: 4px;
+            box-shadow: 0 2px 7.5px 0 rgba(87, 81, 116, 0.5);
+            background-color: #d8cdba;
+            color: #342e49;
+            font-size: 13.5pt;
+          }
+        }
+      }
+    }
+
+    // Status col
     .status-col {
-      width: 9%;
+      display: flex;
+      align-items: center;
+      width: 12%;
+
+      .status {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 86px;
+        height: 86px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        background-color: transparent;
+
+        @media(max-width: 1199px) {
+          width: 70px;
+          height: 70px;
+        }
+
+        @media(max-width: 767px) {
+          width: 50px;
+          height: 50px;
+        }
+
+        .status-image {
+          @media(max-width: 767px) {
+            width: 60%;
+          }
+        }
+      }
+
+      .status-name {
+        font-weight: 900;
+        font-size: 21pt;
+
+        @media(max-width: 1199px) {
+          font-size: 16pt;
+        }
+
+        @media(max-width: 767px) {
+          margin-top: 10px;
+          font-size: 12pt;
+        }
+      }
     }
 
+    // Counter col
     .counter-col {
+      display: flex;
+      align-items: center;
       width: 7%;
+
+      .counter {
+        flex-shrink: 0;
+        z-index: 2;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 46px;
+        height: 46px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        font-weight: bold;
+        font-size: 13.5pt;
+        color: #fff;
+
+        @media(max-width: 1199px) {
+          width: 36px;
+          height: 36px;
+          font-size: 11pt;
+        }
+
+        &::after {
+          position: absolute;
+          top: 50%;
+          right: -100%;
+          -webkit-transform: translate(0, -50%);-moz-transform: translate(0, -50%);-ms-transform: translate(0, -50%);-o-transform: translate(0, -50%);transform: translate(0, -50%);
+          display: block;
+          content: '';
+          width: 100%;
+          height: 1px;
+          border: 1px dashed #cdcdcd;
+
+          @media(max-width: 767px) {
+            display: none;
+          }
+        }
+      }
     }
 
-    .counter {
-      width: 46px;
-      height: 46px;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      border-radius: 50%;
-      font-weight: bold;
-      font-size: 13.5pt;
-      color: #fff;
+    // content-information
+    .content-information-col {
+      z-index: 3;
+
+      .decoration-element {
+        position: absolute;
+        top: 50%;
+        left: 12px;
+        -webkit-transform: translate(0, -50%);
+        -moz-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        -o-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        width: 4px;
+        height: 75%;
+        -webkit-border-radius: 20px 0 0 20px;
+        -moz-border-radius: 20px 0 0 20px;
+        border-radius: 20px 0 0 20px;
+      }
+
+      .progress-line {
+        letter-spacing: 5px;
+        font-size: 11pt;
+        font-weight: bold;
+        color: #fff;
+        overflow: hidden;
+        position: absolute;
+        bottom: -5px;
+        left: 65px;
+        //-webkit-transform: translate(-50%, 0);-moz-transform: translate(-50%, 0);-ms-transform: translate(-50%, 0);-o-transform: translate(-50%, 0);transform: translate(-50%, 0);
+        width: calc(100% - 80px - 20px);
+        height: 14px;
+        background-color: #e0e0e0;
+
+        @media(max-width: 1199px) {
+          height: 10px;
+        }
+      }
     }
 
     .content-information {
       max-width: 1160px;
-      padding: 30px 20px 30px 80px;
       border-radius: 10px;
-      box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
-      border: solid 1px #e3e3e3;
-      background-color: #ffffff;
     }
 
     .dotted-list {
@@ -190,6 +753,11 @@
         line-height: 1.5;
         font-size: 15pt;
 
+        @media(max-width: 1199px) {
+          line-height: 1;
+          font-size: 13pt;
+        }
+
         &::before {
           position: absolute;
           top: 50%;
@@ -199,8 +767,16 @@
           content: '';
           width: 10px;
           height: 10px;
-          background-color: #76718a;
           border-radius: 50%;
+
+          @media(max-width: 1199px) {
+            width: 6px;
+            height: 6px;
+          }
+
+          @media(max-width: 767px) {
+            left: -17px;
+          }
         }
       }
     }
@@ -211,71 +787,33 @@
       color: #3e3755;
 
       .info-title {
+        font-weight: bold;
         font-size: 16.5pt;
+
+        @media(max-width: 1199px) {
+          font-size: 13pt;
+        }
       }
 
       .text {
+        font-weight: 400;
         font-size: 13.5pt;
+
+        @media(max-width: 1199px) {
+          font-size: 11pt;
+        }
       }
 
       .read-more {
         align-self: flex-end;
+        font-weight: bold;
         font-size: 10.5pt;
-      }
-    }
-  }
+        cursor: pointer;
+        text-decoration: underline;
 
-  // invest-now
-  .invest-now-wrap {
-    position: relative;
-    height: 100%;
-
-    .image-container {
-      z-index: 2;
-      position: absolute;
-      top: 0%;
-      left: 50%;
-      -webkit-transform: translate(-50%, 0);
-      -moz-transform: translate(-50%, 0);
-      -ms-transform: translate(-50%, 0);
-      -o-transform: translate(-50%, 0);
-      transform: translate(-50%, 0);
-      width: 200px;
-      height: 160px;
-      box-shadow: 0 2px 7.5px 0 rgba(87, 81, 116, 0.5);
-    }
-
-    .invest-now {
-      z-index: 1;
-      position: absolute;
-      bottom: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 100%;
-      padding: 45px 13px;
-      border-radius: 10px;
-      background-image: linear-gradient(to top, #47425d, #5f5296);
-      color: #fff;
-
-      .title {
-        font-size: 22pt;
-        text-align: center;
-      }
-
-      .text {
-        margin-top: 15px;
-        line-height: 1.5;
-        font-size: 15pt;
-      }
-
-      .download {
-        margin-top: 15px;
-        border-radius: 4px;
-        box-shadow: 0 2px 7.5px 0 rgba(87, 81, 116, 0.5);
-        background-color: #d8cdba;
-        color: #342e49;
-        font-size: 13.5pt;
+        @media(max-width: 1199px) {
+          font-size: 9pt;
+        }
       }
     }
   }
@@ -299,7 +837,29 @@
 
   @media(max-width: 1399px) {}
 
-  @media(max-width: 1199px) {}
+  @media(max-width: 1199px) {
+    //.info-card {
+    //  .card-content {
+    //    .content-title {
+    //      span {
+    //        font-size: 24pt;
+    //      }
+    //    }
+    //  }
+    //}
+    //
+    //.investment-milestones {
+    //  .invest-now-wrap-container {
+    //    .card-content {
+    //      .content-title {
+    //        span {
+    //          font-size: 24pt;
+    //        }
+    //      }
+    //    }
+    //  }
+    //}
+  }
 
   @media(max-width: 991px) {}
 
