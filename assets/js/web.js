@@ -12,16 +12,16 @@ console.log("main.js v=0.1");
 $(window).scroll(function() {
 	var scrollTop = $(window).scrollTop();
 
-	let headerIpo = $('#header-ipo');
+	let headerIpo = $('.info-content-header');
 	let headerIpoHeight = headerIpo.height();
 
 	if ( scrollTop > headerIpoHeight) {
-		headerIpo.addClass('show-header');
-		headerIpo.removeClass('hide-header');
+		headerIpo.addClass('show');
+		headerIpo.removeClass('hide');
 	}
 	else {
-		headerIpo.removeClass('show-header');
-		headerIpo.addClass('hide-header');
+		headerIpo.removeClass('show');
+		headerIpo.addClass('hide');
 	}
 
 });
@@ -37,18 +37,20 @@ $(function () {
 window.onload = function() {
 	var countUp = new CountUp('counter', 2000000, {
 		startVal: 0,
-		// formattingFn: function (number) {
-		// 	// console.log(number);
-		// 	let numberToString =  number.toString();
-		// 	let chars = numberToString.split('');
-		//
-		// 	let newValue = chars.reduce((accumulator, currentValue) => {
-		// 		return accumulator +  + '<span>' + currentValue + '</span>'
-		// 	}, '');
-		// 	console.log(newValue);
-		// 	return 'newValue';
-		// }
-		});
+		formattingFn: function (number) {
+			let numberToString =  number.toString();
+			let chars = numberToString.split('');
+			// console.log(chars);
+			let numArray = chars.map(Number);
+			console.log(numArray);
+
+			let newValue = numArray.reduce((accumulator, currentValue) => {
+				return accumulator + '<span>' + currentValue + '</span>'
+			}, '');
+			console.log(newValue);
+			return newValue;
+		}
+	});
 	countUp.start();
 };
 // make string
