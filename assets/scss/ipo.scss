@@ -1,4 +1,5 @@
 @import './components/header-ipo';
+@import './helpers/variables';
 
 .dummy-container {
   width: 100%;
@@ -10,19 +11,32 @@
 
   // top-section
   .top-section {
+    position: relative;
     height: 400px;
 
     @media(max-width: 1199px) {
-      height: 300px;
+      height: 314px;
     }
 
     @media(max-width: 767px) {
-      height: 380px;
+      height: 394px;
+    }
+
+    &::before {
+      z-index: 2;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      content: '';
+      width: 100%;
+      height: 14px;
+      background-color: #d8cdba;
     }
   }
 
   h2 {
-    font-weight: 900;
+    font-family: 'Gotham-Black', $h-font;
     font-size: 27pt;
 
     @media(max-width: 1199px) {
@@ -31,6 +45,43 @@
 
     @media(max-width: 599px) {
       font-size: 18pt;
+    }
+  }
+
+  .read-more {
+    position: relative;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      //transform: translate(-50%, 0);
+      display: block;
+      content: '';
+      width: 100%;
+      height: 1px;
+      background-color: #3e3755;
+      color: #3e3755;
+    }
+
+    .read-more-text {
+      font-family: $main-font;
+      font-weight: bold;
+      font-size: 10.5pt;
+    }
+
+    .arrow {
+      transform: rotate(90deg);
+      width: 10px;
+      margin-left: 5px;
+      margin-top: 3px;
+      font-family: $main-font;
+      font-weight: bold;
     }
   }
 
@@ -74,6 +125,7 @@
         line-height: 1.25;
         margin-top: 20px;
         color: #fff;
+        font-family: Raleway, sans-serif;
         font-weight: 400;
         font-size: 19.5pt;
 
@@ -210,8 +262,12 @@
     }
 
     .card-content {
+      display: flex;
+      flex-direction: column;
+
       .content-title {
         span {
+          font-family: 'Gotham-Black', $h-font;
           font-size: 30pt;
           color: #2a253a;
 
@@ -231,6 +287,7 @@
     }
 
     .card-image-container {
+      width: 100%;
       height: 100%;
 
       .image-container {
@@ -278,13 +335,13 @@
       &::after {
         z-index: 1;
         position: absolute;
-        top: 50%;
+        top: 42%;
         left: 36px;
         -webkit-transform: translate(0, -50%);-moz-transform: translate(0, -50%);-ms-transform: translate(0, -50%);-o-transform: translate(0, -50%);transform: translate(0, -50%);
         display: block;
         content: '';
         width: 1px;
-        height: 120%;
+        height: 96%;
         border: 1px dashed #cec3b2;
 
         @media(max-width: 1199px) {
@@ -296,7 +353,7 @@
     .title {
       padding-left: 7%;
       margin-bottom: 40px;
-      font-weight: 900;
+      font-family: 'Gotham-Black', $h-font;
       font-size: 19.5pt;
       color: #342e49;
 
@@ -550,6 +607,7 @@
 
           span {
             line-height: 1;
+            font-family: 'Gotham-Black', $h-font;
             font-size: 30pt;
             color: #2a253a;
 
@@ -678,7 +736,7 @@
       }
 
       .status-name {
-        font-weight: 900;
+        font-family: 'Gotham-Black', Helvetica, Arial, sans-serif;
         font-size: 21pt;
 
         @media(max-width: 1199px) {
@@ -759,21 +817,28 @@
       }
 
       .progress-line {
-        letter-spacing: 5px;
-        font-size: 11pt;
-        font-weight: bold;
-        color: #fff;
         overflow: hidden;
         position: absolute;
         bottom: -5px;
         left: 65px;
-        //-webkit-transform: translate(-50%, 0);-moz-transform: translate(-50%, 0);-ms-transform: translate(-50%, 0);-o-transform: translate(-50%, 0);transform: translate(-50%, 0);
         width: calc(100% - 80px - 20px);
         height: 14px;
+        letter-spacing: 5px;
+        font-size: 11pt;
+        font-weight: bold;
+        color: #fff;
+        //-webkit-transform: translate(-50%, 0);-moz-transform: translate(-50%, 0);-ms-transform: translate(-50%, 0);-o-transform: translate(-50%, 0);transform: translate(-50%, 0);
+
         background-color: #e0e0e0;
 
         @media(max-width: 1199px) {
           height: 10px;
+        }
+
+        span {
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
         }
       }
     }
@@ -781,6 +846,13 @@
     .content-information {
       max-width: 1160px;
       border-radius: 10px;
+
+      .status-col {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: auto;
+      }
     }
 
     .dotted-list {
@@ -842,22 +914,32 @@
           font-size: 11pt;
         }
       }
-
-      .read-more {
-        align-self: flex-end;
-        font-weight: bold;
-        font-size: 10.5pt;
-        cursor: pointer;
-        text-decoration: underline;
-
-        @media(max-width: 1199px) {
-          font-size: 9pt;
-        }
-      }
     }
   }
 
   .leading-team {
+    .section-container {
+      background-color: transparent;
+      box-shadow: none;
+
+      .content-title {
+        display: flex;
+        justify-content: center;
+        margin: 50px 0 30px;
+
+        span {
+          font-family: 'Gotham-Black', $h-font;
+          font-size: 30pt;
+          color: #2a253a;
+          text-align: center;
+
+          @media(max-width: 1199px) {
+            font-size: 24pt;
+          }
+        }
+      }
+    }
+
     .team {
       &.section-container {
         background-color: transparent;
@@ -876,38 +958,11 @@
 
   @media(max-width: 1399px) {}
 
-  @media(max-width: 1199px) {
-    //.info-card {
-    //  .card-content {
-    //    .content-title {
-    //      span {
-    //        font-size: 24pt;
-    //      }
-    //    }
-    //  }
-    //}
-    //
-    //.investment-milestones {
-    //  .invest-now-wrap-container {
-    //    .card-content {
-    //      .content-title {
-    //        span {
-    //          font-size: 24pt;
-    //        }
-    //      }
-    //    }
-    //  }
-    //}
-  }
+  @media(max-width: 1199px) { }
 
   @media(max-width: 991px) {}
 
-  @media(max-width: 767px) {
-    // top-section
-    .top {
-      height: 500px;
-    }
-  }
+  @media(max-width: 767px) { }
 
   @media(max-width: 599px) {}
 

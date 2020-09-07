@@ -77,16 +77,16 @@
 
           <button type="button" class="download-btn">
             <img class="menu-icon" src="assets/images/info/download-purple.svg" alt="Download" />
-            <span>Download <span class="d-none d-lg-block">company documentation</span></span>
+            <span>Company documentation</span>
           </button>
 
-          <!-- Language selection -->
+          <!-- Langualg selection -->
           <select class="selectpicker lang-select">
-            <option data-content="<div class='select-item'><img src='assets/images/lang/eng.svg'><span class='d-xl-none'>En.</span><span class='d-none d-xl-block'>English</span></div>">English</option>
-            <option data-content="<div class='select-item'><img src='assets/images/lang/french.svg'><span class='d-xl-none'>Fr.</span><span class='d-none d-xl-block'>French</span></div>">French</option>
-            <option data-content="<div class='select-item'><img src='assets/images/lang/spanish.svg'><span class='d-xl-none'>Es.</span><span class='d-none d-xl-block'>Spanish</span></div>">Spanish</option>
-            <option data-content="<div class='select-item'><img src='assets/images/lang/russian.svg'><span class='d-xl-none'>Ru.</span><span class='d-none d-xl-block'>Russian</span></div>">Russian</option>
-            <option data-content="<div class='select-item'><img src='assets/images/lang/arabic.svg'><span class='d-xl-none'>Ar.</span><span class='d-none d-xl-block'>Arabic</span></div>">Arabic</option>
+            <option data-content="<div class='select-item'><img src='assets/images/lang/eng.svg'><span class='d-lg-none'>En.</span><span class='d-none d-lg-block'>English</span></div>">English</option>
+            <option data-content="<div class='select-item'><img src='assets/images/lang/french.svg'><span class='d-lg-none'>Fr.</span><span class='d-none d-lg-block'>French</span></div>">French</option>
+            <option data-content="<div class='select-item'><img src='assets/images/lang/spanish.svg'><span class='d-lg-none'>Es.</span><span class='d-none d-lg-block'>Spanish</span></div>">Spanish</option>
+            <option data-content="<div class='select-item'><img src='assets/images/lang/russian.svg'><span class='d-lg-none'>Ru.</span><span class='d-none d-lg-block'>Russian</span></div>">Russian</option>
+            <option data-content="<div class='select-item'><img src='assets/images/lang/arabic.svg'><span class='d-lg-none'>Ar.</span><span class='d-none d-lg-block'>Arabic</span></div>">Arabic</option>
           </select>
           <!-- EOL: Language selection -->
         </div>
@@ -162,9 +162,13 @@
                   dolor sit amet, consetetur sadipscing elitr, sed dolores et ea rebum.
                   Stet clita kasd gubergren, no
                 </div>
+                <div class="read-more">
+                  <span class="read-more-text">Read more</span>
+                  <span class="arrow"> > </span>
+                </div>
               </div>
             </div>
-            <div class="col-12 col-md-4">
+            <div class="d-none d-md-flex col-md-4">
               <div class="card-image-container position-relative">
                 <div class="image-container">
                   <img class="" src="assets/images/info/notebook3.png" alt="ipo">
@@ -236,16 +240,29 @@
                     ipsuipsum dolor ist ipsupsum dolor  ist ipsum
                     lorem ipsum dolor ist ipsu
                   </div>
+
                   <div class="read-more">
-                    Read more <i> > </i>
+                    <span class="read-more-text">Read more</span>
+                    <span class="arrow"> > </span>
                   </div>
+                </div>
+              </div>
+              <div class="col-auto status-col d-md-none">
+                <div class="status">
+                  <div class="image-container">
+                    <img class="status-image" src="assets/images/icons/check-icon-light-purple.svg" alt="done">
+                  </div>
+                  <span class="status-name">Done</span>
                 </div>
               </div>
             </div>
           </div>
-          <div class="progress-line">/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</div>
+          <div class="progress-line">
+            <span>/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</span>
+          </div>
+
         </div>
-        <div class="col-auto status-col">
+        <div class="d-none d-md-flex col-auto status-col">
           <div class="status">
             <div class="image-container">
               <img class="status-image" src="assets/images/icons/check-icon-light-purple.svg" alt="done">
@@ -304,16 +321,29 @@
                     ipsuipsum dolor ist ipsupsum dolor  ist ipsum
                     lorem ipsum dolor ist ipsu
                   </div>
+
                   <div class="read-more">
-                    Read more <i> > </i>
+                    <span class="read-more-text">Read more</span>
+                    <span class="arrow"> > </span>
                   </div>
+                </div>
+              </div>
+              <div class="col-auto status-col d-md-none ">
+                <div class="status">
+                  <div class="image-container">
+                    <img class="status-image" src="assets/images/icons/available-green.svg" alt="Available">
+                  </div>
+                  <span class="status-name">Available</span>
                 </div>
               </div>
             </div>
           </div>
-          <div class="progress-line">/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</div>
+
+          <div class="progress-line">
+            <span>/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</span>
+          </div>
         </div>
-        <div class="col-auto status-col">
+        <div class="col-auto status-col d-none d-md-flex ">
           <div class="status">
             <div class="image-container">
               <img class="status-image" src="assets/images/icons/available-green.svg" alt="Available">
@@ -372,16 +402,29 @@
                     ipsuipsum dolor ist ipsupsum dolor  ist ipsum
                     lorem ipsum dolor ist ipsu
                   </div>
+
                   <!--<div class="read-more">-->
-                  <!--  Read more <i> > </i>-->
+                  <!--  <span class="read-more-text">Read more</span>-->
+                  <!--  <span class="arrow"> > </span>-->
                   <!--</div>-->
+                </div>
+              </div>
+              <div class="col-auto status-col d-md-none ">
+                <div class="status">
+                  <div class="image-container">
+                    <img class="status-image" src="assets/images/icons/hourglass.svg" alt="Pending">
+                  </div>
+                  <span class="status-name">Pending</span>
                 </div>
               </div>
             </div>
           </div>
-          <div class="progress-line">/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</div>
+
+          <div class="progress-line">
+            <span>/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</span>
+          </div>
         </div>
-        <div class="col-auto status-col">
+        <div class="col-auto status-col d-none d-md-flex ">
           <div class="status">
             <div class="image-container">
               <img class="status-image" src="assets/images/icons/hourglass.svg" alt="Pending">
@@ -392,7 +435,7 @@
       </div>
       <div class="row investment-milestones-item-wrap pending">
         <div class="col-auto counter-col">
-          <div class="counter">4</div>
+          <div class="counter">3</div>
         </div>
         <div class="col content-information-col">
           <div class="decoration-element"></div>
@@ -440,16 +483,29 @@
                     ipsuipsum dolor ist ipsupsum dolor  ist ipsum
                     lorem ipsum dolor ist ipsu
                   </div>
+
                   <!--<div class="read-more">-->
-                  <!--  Read more <i> > </i>-->
+                  <!--  <span class="read-more-text">Read more</span>-->
+                  <!--  <span class="arrow"> > </span>-->
                   <!--</div>-->
+                </div>
+              </div>
+              <div class="col-auto status-col d-md-none ">
+                <div class="status">
+                  <div class="image-container">
+                    <img class="status-image" src="assets/images/icons/hourglass.svg" alt="Pending">
+                  </div>
+                  <span class="status-name">Pending</span>
                 </div>
               </div>
             </div>
           </div>
-          <div class="progress-line">/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</div>
+
+          <div class="progress-line">
+            <span>/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</span>
+          </div>
         </div>
-        <div class="col-auto status-col">
+        <div class="col-auto status-col d-none d-md-flex ">
           <div class="status">
             <div class="image-container">
               <img class="status-image" src="assets/images/icons/hourglass.svg" alt="Pending">
@@ -460,7 +516,7 @@
       </div>
       <div class="row investment-milestones-item-wrap pending">
         <div class="col-auto counter-col">
-          <div class="counter">5</div>
+          <div class="counter">3</div>
         </div>
         <div class="col content-information-col">
           <div class="decoration-element"></div>
@@ -508,16 +564,29 @@
                     ipsuipsum dolor ist ipsupsum dolor  ist ipsum
                     lorem ipsum dolor ist ipsu
                   </div>
+
                   <!--<div class="read-more">-->
-                  <!--  Read more <i> > </i>-->
+                  <!--  <span class="read-more-text">Read more</span>-->
+                  <!--  <span class="arrow"> > </span>-->
                   <!--</div>-->
+                </div>
+              </div>
+              <div class="col-auto status-col d-md-none ">
+                <div class="status">
+                  <div class="image-container">
+                    <img class="status-image" src="assets/images/icons/hourglass.svg" alt="Pending">
+                  </div>
+                  <span class="status-name">Pending</span>
                 </div>
               </div>
             </div>
           </div>
-          <div class="progress-line">/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</div>
+
+          <div class="progress-line">
+            <span>/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</span>
+          </div>
         </div>
-        <div class="col-auto status-col">
+        <div class="col-auto status-col d-none d-md-flex ">
           <div class="status">
             <div class="image-container">
               <img class="status-image" src="assets/images/icons/hourglass.svg" alt="Pending">
@@ -585,6 +654,9 @@
 
 
   <section class="leading-team">
+    <div class="section-container">
+      <div class="content-title"><span>Leading Team</span></div>
+    </div>
 
     <div class="team section-container">
       <div class="row">

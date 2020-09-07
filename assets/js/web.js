@@ -40,14 +40,13 @@ window.onload = function() {
 		// formattingFn: function (number) {
 		// 	// console.log(number);
 		// 	let numberToString =  number.toString();
-		// 	console.log(typeof(numberToString), "=>1");
-		// 	let newArrOfNums = numberToString.split(',');
-		// 	console.log(newArrOfNums, '=>2');
-		// 	// let wrappedNums = newArrOfNums.forEach(item, function(){
-		// 		// console.log(item, '=>3');
-		// 		// return '<span>' + num + '</span>';
-		// 	// });
+		// 	let chars = numberToString.split('');
 		//
+		// 	let newValue = chars.reduce((accumulator, currentValue) => {
+		// 		return accumulator +  + '<span>' + currentValue + '</span>'
+		// 	}, '');
+		// 	console.log(newValue);
+		// 	return 'newValue';
 		// }
 		});
 	countUp.start();
