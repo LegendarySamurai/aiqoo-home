@@ -58,6 +58,7 @@
           </div>
 
           <div class="info-content-header">
+            <span class="title">Raised so far:</span>
             <div class="stats">
               <i class="currency">$</i>
               <div class="count-numbers">
@@ -72,21 +73,20 @@
                 <span>0</span>
               </div>
             </div>
-            <span class="title">Raised so far:</span>
           </div>
 
           <button type="button" class="download-btn">
             <img class="menu-icon" src="assets/images/info/download-purple.svg" alt="Download" />
-            <span>Download company documentation</span>
+            <span>Download <span class="d-none d-lg-block">company documentation</span></span>
           </button>
 
           <!-- Language selection -->
           <select class="selectpicker lang-select">
-            <option data-content="<div class='select-item'><img src='assets/images/lang/eng.svg'><span>English</span></div>">English</option>
-            <option data-content="<div class='select-item'><img src='assets/images/lang/french.svg'><span>French</span></div>">French</option>
-            <option data-content="<div class='select-item'><img src='assets/images/lang/spanish.svg'><span>Spanish</span></div>">Spanish</option>
-            <option data-content="<div class='select-item'><img src='assets/images/lang/russian.svg'><span>Russian</span></div>">Russian</option>
-            <option data-content="<div class='select-item'><img src='assets/images/lang/arabic.svg'><span>Arabic</span></div>">Arabic</option>
+            <option data-content="<div class='select-item'><img src='assets/images/lang/eng.svg'><span class='d-xl-none'>En.</span><span class='d-none d-xl-block'>English</span></div>">English</option>
+            <option data-content="<div class='select-item'><img src='assets/images/lang/french.svg'><span class='d-xl-none'>Fr.</span><span class='d-none d-xl-block'>French</span></div>">French</option>
+            <option data-content="<div class='select-item'><img src='assets/images/lang/spanish.svg'><span class='d-xl-none'>Es.</span><span class='d-none d-xl-block'>Spanish</span></div>">Spanish</option>
+            <option data-content="<div class='select-item'><img src='assets/images/lang/russian.svg'><span class='d-xl-none'>Ru.</span><span class='d-none d-xl-block'>Russian</span></div>">Russian</option>
+            <option data-content="<div class='select-item'><img src='assets/images/lang/arabic.svg'><span class='d-xl-none'>Ar.</span><span class='d-none d-xl-block'>Arabic</span></div>">Arabic</option>
           </select>
           <!-- EOL: Language selection -->
         </div>
@@ -95,7 +95,9 @@
     </div>
   </div>
 </header>
+
 <div class="dummy-container d-md-none"></div>
+
 <main class="ipo">
   <section class="top-section position-relative">
     <div class="section-top-bg">
@@ -122,7 +124,13 @@
                   <div id="counter"></div>
                 </div>
                 <div class="updated">
+                  <div class="updated-wrap">
+                    <img src="assets/images/info/updated.svg" alt="updated">
+                    <span class="updated-title">Data last updated:</span>
+                    <span class="updated-time">13 : 54 : 09</span>
+                  </div>
 
+                  <div class="note">* The information presented here is updated on an hourly basis</div>
                 </div>
               </div>
 

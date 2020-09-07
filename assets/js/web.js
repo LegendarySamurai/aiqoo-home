@@ -8,18 +8,56 @@ console.log("main.js v=0.1");
 // 	$('form-group-mobile-wrap').addClass('ios-device');
 // }
 
+// Header Ipo appears on scroll
+$(window).scroll(function() {
+	var scrollTop = $(window).scrollTop();
+
+	let headerIpo = $('#header-ipo');
+	let headerIpoHeight = headerIpo.height();
+
+	if ( scrollTop > headerIpoHeight) {
+		headerIpo.addClass('show-header');
+		headerIpo.removeClass('hide-header');
+	}
+	else {
+		headerIpo.removeClass('show-header');
+		headerIpo.addClass('hide-header');
+	}
+
+});
+
+
 // Language Selection in ipo-header
 // To style only selects with the my-select class
 $(function () {
 	$('.lang-select').selectpicker();
 });
 
+// Counter
 window.onload = function() {
 	var countUp = new CountUp('counter', 2000000, {
-		startVal: 0
+		startVal: 0,
+		// formattingFn: function (number) {
+		// 	// console.log(number);
+		// 	let numberToString =  number.toString();
+		// 	console.log(typeof(numberToString), "=>1");
+		// 	let newArrOfNums = numberToString.split(',');
+		// 	console.log(newArrOfNums, '=>2');
+		// 	// let wrappedNums = newArrOfNums.forEach(item, function(){
+		// 		// console.log(item, '=>3');
+		// 		// return '<span>' + num + '</span>';
+		// 	// });
+		//
+		// }
 		});
 	countUp.start();
 };
+// make string
+// split fo array of strings
+// each array element wrap in span
+
+
+
 
 //
 document.addEventListener('readystatechange', function (event) {
