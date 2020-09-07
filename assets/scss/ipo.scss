@@ -15,11 +15,13 @@
     height: 400px;
 
     @media(max-width: 1199px) {
-      height: 314px;
+      height: auto;
+      padding: 40px 0;
+      min-height: 344px;
     }
 
     @media(max-width: 767px) {
-      height: 394px;
+      height: 430px;
     }
 
     &::before {
@@ -49,6 +51,14 @@
 
     @media(max-width: 767px) {
       font-size: 18pt;
+    }
+
+    @media(max-width: 599px) {
+      font-size: 16pt;
+    }
+
+    @media(max-width: 410px) {
+      font-size: 14pt;
     }
   }
 
@@ -116,16 +126,17 @@
     color: #fff;
 
     .text-content-col {
-      @media(max-width: 767px) {
-        order: 2;
-        margin-top: 20px;
-      }
+      //@media(max-width: 767px) {
+      //  order: 2;
+      //  margin-top: 20px;
+      //}
     }
 
     .text-content {
       p {
         line-height: 1.25;
         margin-top: 20px;
+        padding: 28px 10px;
         color: #fff;
         font-family: Raleway, sans-serif;
         font-weight: 400;
@@ -139,12 +150,17 @@
           margin-top: 10px;
           font-size: 13pt;
         }
+
+        @media(max-width: 599px) {
+          font-size: 11pt;
+        }
       }
     }
 
     .info-content-col {
       @media(max-width: 767px) {
-        order: 1;
+        //margin-top: 20px;
+        //order: 1;
       }
     }
 
@@ -190,6 +206,13 @@
             font-size: 20pt;
           }
         }
+
+        .currency {
+          font-family: 'Gotham-Regular', $h-font;
+          font-style: normal;
+          font-size: 36pt;
+          color: #d8cdba;
+        }
       }
 
       #counter {
@@ -223,6 +246,10 @@
       .updated {
         padding-left: 20px;
 
+        @media(max-width: 599px) {
+          padding-left: 0;
+        }
+
         .updated-wrap {
           display: flex;
           flex-direction: row;
@@ -244,11 +271,15 @@
           .updated-title {
             margin-left: 10px;
             color: #fff;
-            font-weight: 300;
+            font-weight: 400;
             font-size: 15pt;
 
             @media(max-width: 767px) {
               font-size: 13pt;
+            }
+
+            @media(max-width: 599px) {
+              font-size: 11pt;
             }
           }
 
@@ -262,6 +293,10 @@
             @media(max-width: 767px) {
               font-size: 14pt;
             }
+
+            @media(max-width: 599px) {
+              font-size: 11pt;
+            }
           }
         }
 
@@ -273,6 +308,10 @@
 
           @media(max-width: 767px) {
             font-size: 9pt;
+          }
+
+          @media(max-width: 599px) {
+            font-size: 7pt;
           }
         }
       }
@@ -378,6 +417,10 @@
 
         @media(max-width: 1199px) {
           left: 32px;
+        }
+
+        @media(max-width: 767px) {
+          left: 25px;
         }
       }
     }
@@ -628,6 +671,18 @@
     .invest-now-wrap-container {
       margin-top: 60px;
 
+      .card-content-col {
+        @media(max-width: 991px) {
+          order: 2;
+        }
+      }
+
+      .invest-now-wrap-col {
+        @media(max-width: 991px) {
+          order: 1;
+        }
+      }
+
       // Counter col
       .counter-col {
         .counter {
@@ -649,6 +704,11 @@
         border-radius: 10px;
         box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
         background-color: #ffffff;
+
+        @media(max-width: 991px) {
+          margin-top: 40px;
+        }
+
 
         .content-title {
           margin: 0 0 15px;
@@ -691,11 +751,6 @@
 
         @media(max-width: 991px) {
           height: 280px;
-          margin-top: 40px;
-        }
-
-        @media(max-width: 410px) {
-          margin-top: 40px;
         }
 
         .image-container {
@@ -792,6 +847,7 @@
     // Status col
     .status-col {
       display: flex;
+      justify-content: center;
       align-items: center;
       width: 12%;
 
@@ -853,6 +909,10 @@
       align-items: center;
       width: 7%;
 
+      @media(max-width: 767px) {
+        width:  auto;
+      }
+
       .counter {
         flex-shrink: 0;
         z-index: 2;
@@ -873,6 +933,18 @@
           width: 36px;
           height: 36px;
           font-size: 11pt;
+        }
+
+        @media(max-width: 767px) {
+          width: 26px;
+          height: 26px;
+          font-size: 9pt;
+        }
+
+        @media(max-width: 599px) {
+          width: 20px;
+          height: 20px;
+          font-size: 8pt;
         }
 
         &::after {
