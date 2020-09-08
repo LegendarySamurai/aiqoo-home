@@ -389,7 +389,9 @@
         }
 
         .form-group {
-            width: 280px;
+            width: auto;
+            max-width: 400px;
+            //width: 280px;
 
             .super-placeholder {
                 left: 10px;
@@ -401,7 +403,7 @@
             }
 
             .find-btn {
-                width: $page-header-find-pro-btn-992;
+                width: auto;
                 font-size: 8.5pt;
             }
         }
