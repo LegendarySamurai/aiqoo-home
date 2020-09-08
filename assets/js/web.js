@@ -16,12 +16,12 @@ $(window).scroll(function() {
 	let headerIpoHeight = headerIpo.height();
 
 	if ( scrollTop > headerIpoHeight) {
-		headerIpo.addClass('show');
-		headerIpo.removeClass('hide');
+		headerIpo.addClass('show-content');
+		headerIpo.removeClass('hide-content');
 	}
 	else {
-		headerIpo.removeClass('show');
-		headerIpo.addClass('hide');
+		headerIpo.removeClass('show-content');
+		headerIpo.addClass('hide-content');
 	}
 
 });
