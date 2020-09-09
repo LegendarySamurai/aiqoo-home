@@ -19,7 +19,8 @@
     // Reasons for this page
     .reasons {
         margin-top: 0;
-        height: 90px;
+        //height: 90px;
+        height: 100%;
         box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.16);
     }
 
@@ -51,7 +52,8 @@
         }
 
         .reasons-wrap {
-            height: 90px;
+            //height: 90px;
+            height: 8vh;
             width: 100%;
             margin: 30px 0 20px 0;
         }
@@ -432,6 +434,14 @@
     }
   }
 
+  @media(max-width: 1199px) and (min-width: 768px) {
+    .head-section {
+      .reasons-wrap {
+        height: 10vh;
+      }
+    }
+  }
+
   @media(max-width: 768px) {
     .section-2 {
       position: relative;
@@ -726,7 +736,7 @@
     .head-section-content-inner {
       height: auto;
       margin-top: 2vh;
-      padding-top: 2vh;
+      //padding-top: 2vh;
     }
 
     .head-section {
