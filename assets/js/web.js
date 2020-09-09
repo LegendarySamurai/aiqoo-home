@@ -176,7 +176,7 @@ function init() {
 			$('#header').removeClass('header-full-h');
 		});
 		function handleHeaderMobileAutoCompleteOpen() {
-			headerSearch.classList.add('hide');
+			$('#header-search').addClass('hide');
 			$('#header-search').addClass('fixed');
 			$('#header').addClass('header-full-h');
 			headerSearch.classList.remove('hide-on-start');
