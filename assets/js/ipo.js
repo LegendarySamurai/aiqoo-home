@@ -1,8 +1,5 @@
 import { CountUp } from './countUp.js';
 
-// Language Selection in ipo-header
-// To style only selects with the my-select class
-
 $(function () {
 	$('.lang-select').selectpicker();
 });
