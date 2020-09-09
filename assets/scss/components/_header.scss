@@ -924,6 +924,7 @@
             .form-group {
                 input {
                     padding-left: 30px;
+                    padding-right: 70px;
                 }
 
                 .find-btn {
@@ -934,11 +935,20 @@
             }
         }
 
-        .dropdown-menu {
-        }
-
         .navbar {
             margin-top: 10px;
+        }
+    }
+
+    @media(max-width: 360px) {
+        .form-group {
+            .form-control {
+                font-size: 10pt;
+
+                &::placeholder {
+                    font-size: 10pt;
+                }
+            }
         }
     }
 }
