@@ -627,7 +627,6 @@
         padding-top: 50px !important;
 
         .page-heading-container {
-
             h1 {
                 padding: 10px 0 0 0;
                 font-size: 20pt !important;
@@ -693,6 +692,14 @@
         .tags-container {
             .tag {
                 margin-top: 0;
+            }
+        }
+    }
+
+    @media(max-width: 374px) {
+        .page-heading-container {
+            h1 {
+                font-size: 18pt !important;
             }
         }
     }

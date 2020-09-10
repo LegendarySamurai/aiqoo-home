@@ -1,0 +1,101 @@
+main {
+  position: relative;
+}
+
+.info-note {
+  z-index: 301;
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  width: auto;
+  max-width: 300px;
+  padding: 15px 25px;
+  -moz-border-radius:20px;
+  border-radius:20px ;
+  background-color: #fff;
+  //box-shadow: 23px 0 60px 0 rgba(0,0,0,0.5);
+  //box-shadow: 6px 2px 26px 2px rgba(0,0,0,0.65);
+  //box-shadow: 6px 7px 26px 2px transparentize(#585077, .35);
+  box-shadow: 0 10px 10px -5px transparentize(#585077, .35);
+  //position:relative;
+  //-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  //-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  //box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+
+  //&:before,
+  //&:after {
+  //  content:"";
+  //  position:absolute;
+  //  z-index:-1;
+  //  -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+  //  -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+  //  box-shadow:0 0 20px rgba(0,0,0,0.8);
+  //  top:0;
+  //  bottom:0;
+  //  left: 0;
+  //  right: 0;
+  //  -moz-border-radius:20px;
+  //  border-radius:20px ;
+  //}
+
+  //&:after {
+  //  right:10px;
+  //  left:auto;
+  //  -webkit-transform:skew(8deg) rotate(3deg);
+  //  -moz-transform:skew(8deg) rotate(3deg);
+  //  -ms-transform:skew(8deg) rotate(3deg);
+  //  -o-transform:skew(8deg) rotate(3deg);
+  //  transform:skew(8deg) rotate(3deg);
+  //}
+
+  .info-note-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media(max-width: 599px) {
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 98%;
+    max-width: 350px;
+    padding: 15px 45px 15px 25px;
+  }
+
+  .decoration-element {
+    z-index: 1;
+    //display: block;
+    //content: '';
+    position: absolute;
+    top: 50%;
+    left: -2px;
+    transform: translate(0, -50%);
+    width: 4px;
+    height: 80%;
+    background-color: #d8cdba;
+    //background-color: #585077;
+    border-radius: 50px 0 0 50px;
+  }
+
+  .h4-title {
+    line-height: 1.25;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    font-size: 13pt;
+    color: #585077;
+    text-align: center;
+    //border-bottom: 1px solid #e9e9e9;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+
+    img {
+      width: 20px;
+    }
+  }
+}
