@@ -17,13 +17,24 @@
       left: 30px;
       transform: translate(0, 130%);
       width: auto;
-      max-width: 300px;
+      max-width: 380px;
       padding: 15px 25px;
       -moz-border-radius:20px;
       border-radius:20px ;
       background-color: #fff;
       box-shadow: 0 10px 10px -5px transparentize(#585077, .35);
 
+      @media(max-width: 599px) {
+        left: 23px;
+        bottom: 15px;
+        max-width: 90%;
+        padding: 15px 45px 15px 25px;
+      }
+
+      @media(max-width: 399px) {
+        left: 15px;
+        padding: 15px 30px 15px 10px;
+      }
 
       &.show-content {
         @keyframes show-content {
