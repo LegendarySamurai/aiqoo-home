@@ -20,6 +20,8 @@ const btnCloseMenu = document.querySelector('#btn-close-menu');
 const mainMenuContainer = document.querySelector('#dropdown-menu-container');
 const btnSearch = document.querySelector('#btn-search');
 const headerSearchInput = document.querySelector('#header-search-input');
+// const funnelCardWrap = document.querySelector('.funnel-card-wrap');
+
 
 function init() {
 
@@ -103,9 +105,10 @@ function init() {
 			handleSearchBox();
 		}
 
-	}, { passive: true });
-	
+		handleInfoNote();
 
+
+	}, { passive: true });
 	
 	
 
@@ -128,7 +131,6 @@ function init() {
 	//---------------------------
 
 	if (window.innerWidth <= 600) {
-
 		// Main Page AutoComplete
 		$('#head-section-search-input').click(function () {
 			handleMobileAutoCompleteOpen();
@@ -189,6 +191,24 @@ function init() {
 
 }
 
+// Only on landing pages after we scroll to the bottom of funnel card
+function handleInfoNote() {
+	const funnelCardWrap = $('.funnel-card-wrap');
+	const infoNote = $('.landing-page .info-note');
+	let firstScreenHeight = funnelCardWrap.offset().top + funnelCardWrap.innerHeight() - 100;
+
+	if ($('main').hasClass('landing-page')) {
+		if ($(window).scrollTop() > firstScreenHeight && !infoNote.hasClass('hide-content')) {
+			infoNote.addClass('show-content');
+		} else if ($(window).scrollTop() > firstScreenHeight && infoNote.hasClass('hide-content')) {
+			infoNote.removeClass('hide-content');
+		}
+		else if (infoNote.hasClass('show-content')) {
+			infoNote.addClass('hide-content');
+		}
+	}
+}
+
 function handlePageHeader() {
 	if (findBox)
 	{ 
@@ -211,8 +231,9 @@ function handlePageHeader() {
 		}
 	}
 }
+
 function handleSearchBox() {
-	if (window.innerWidth < 600)
+	if ((window.innerWidth < 600) && (!($('main').hasClass('landing-page'))))
 	{
 		var isShow = false;
 		if (findBox) {
@@ -294,7 +315,6 @@ function JoinNewsletter() {
 
 	
 }
-
 
 function ContactUsRequest() {
 
@@ -386,7 +406,6 @@ function ContactUsRequest() {
 
 }
 
-
 function getBusinessPhone(businessID) {
 	var strPhone = "";
 	if (businessID == 1) {
@@ -408,8 +427,6 @@ function getBusinessPhone(businessID) {
 
 	return false;
 }
-
-
 
 function validatePhone(Phone) {
 	var phonePattern = /(?:\d{1}\s)?\(?(\d{3})\)?-?\s?(\d{3})-?\s?(\d{4})/;

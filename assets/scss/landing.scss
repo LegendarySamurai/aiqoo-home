@@ -9,6 +9,65 @@
     position: relative;
     z-index: 7000;
 
+    // Info note
+    .info-note {
+      z-index: 301;
+      position: fixed;
+      bottom: 30px;
+      left: 30px;
+      transform: translate(0, 130%);
+      width: auto;
+      max-width: 300px;
+      padding: 15px 25px;
+      -moz-border-radius:20px;
+      border-radius:20px ;
+      background-color: #fff;
+      box-shadow: 0 10px 10px -5px transparentize(#585077, .35);
+
+
+      &.show-content {
+        @keyframes show-content {
+          0% {
+            transform: translate(0, 130%);
+          }
+
+          100% {
+            transform: translate(0, 0%);
+          }
+        }
+
+        animation-name: show-content;
+        animation-duration: 400ms;
+        animation-timing-function: ease;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        animation-play-state: running;
+      }
+
+      &.hide-content {
+        @keyframes hide-content {
+          0% {
+            transform: translate(0, 0%);
+          }
+
+          100% {
+            transform: translate(0, 130%);
+          }
+        }
+
+        animation-name: hide-content;
+        animation-duration: 400ms;
+        animation-timing-function: ease;
+        animation-delay: 0ms;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        animation-play-state: running;
+      }
+    }
+
     #f_display_1 {
         top: 0;
         left: 0;
@@ -16,6 +75,7 @@
         bottom: 0;
         width: 100%;
     }
+
     // Reasons for this page
     .reasons {
         margin-top: 0;
@@ -486,8 +546,9 @@
 
     .head-section {
       h1 {
+        line-height: 1.25;
         white-space: normal;
-        font-size: 15.5pt;
+        font-size: 20pt;
       }
     }
   }
