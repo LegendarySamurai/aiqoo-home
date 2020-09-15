@@ -1187,6 +1187,48 @@
       }
     }
   }
+
+  .timeline {
+    .timeline-items-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .timeline-item {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 250px;
+    }
+
+    .timeline-image-container {
+      position: relative;
+      width: 100%;
+
+      .img {
+        z-index: 1;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, 0);
+        width: 100%;
+      }
+
+      .img-info {
+        z-index: 2;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+      }
+    }
+  }
 }
 
 
