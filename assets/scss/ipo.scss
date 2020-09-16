@@ -1190,18 +1190,12 @@
 
   .timeline {
     width: 100%;
-    //height: fit-content;
-    //min-height: calc(100vh - 104px);
-
 
     .section-container {
       position: relative;
       width: 100%;
       max-width: 1500px;
-      padding: 0 0 80px;
-      //height: 100%;
-      //height: auto;
-      //min-height: calc(100vh - 104px);
+      padding: 40px 0 40px;
     }
 
     .map-bg {
@@ -1226,9 +1220,6 @@
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
-      //justify-content: center;
-      //justify-content: space-between;
-      //justify-content: space-around;
       justify-content: space-evenly;
       align-items: center;
     }
