@@ -1198,6 +1198,10 @@
 
       & > .row {
         justify-content: space-evenly;
+
+        @media(max-width: 1399px) {
+          justify-content: flex-start;
+        }
       }
     }
 
