@@ -1194,8 +1194,11 @@
     .section-container {
       position: relative;
       width: 100%;
-      max-width: 1500px;
       padding: 40px 0 40px;
+
+      @media(min-width: 1400px) {
+        max-width: 1500px;
+      }
     }
 
     .map-bg {
@@ -1217,24 +1220,46 @@
       position: relative;
       z-index: 2;
       width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: space-evenly;
-      align-items: center;
+
+      & > .row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+        @media(max-width: 1399px) {
+          justify-content: flex-start;
+        }
+      }
     }
 
-    .timeline-item {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+    .timeline-item-col {
+      //position: relative;
+      //display: flex;
+      //flex-direction: column;
+      //justify-content: center;
+      //align-items: center;
       width: 250px;
-      margin: 0 15px 20px;
 
       @media(max-width: 1399px) {
-        margin: 0 55px 20px;
+        display: flex;
+        justify-content: center;
+        width: 33%;
+      }
+
+      @media(max-width: 991px) {
+        width: 50%;
+      }
+
+      @media(max-width: 599px) {
+        width: 100%;
+      }
+
+      .timeline-item {
+        @media(max-width: 1399px) {
+          width: 250px;
+        }
       }
     }
 
