@@ -12,7 +12,7 @@
 	<meta property="og:image" content="https://www.aiqhome.com/assets/images/professional/professional-fb.jpg" />
 
 	<link rel="icon" type="image/x-icon" href="assets/favicons/favicon.ico?v=-aFKl_fnEZLhxG-mj69VM5ESG3JrpZDfb3B2Zt9y79I" />
-	<link rel="manifest" href="assets/manifest.json?v=3unRh_Mb5JLH_G4OiIY_2d0idb_ytGvM67JFlJM1mmg">
+	<!--<link rel="manifest" href="assets/manifest.json?v=3unRh_Mb5JLH_G4OiIY_2d0idb_ytGvM67JFlJM1mmg">-->
 	<link href="https://fonts.googleapis.com/css?family=Raleway:600,700&amp;display=swap" rel="stylesheet">
 	<script defer src="assets/js/user_tracking.es5.min.js?v=NElueTM5Tbb7lij0q6c4FSNh_3TXMGzJQUpVUKps_54"></script>
 
@@ -45,7 +45,7 @@
 				<div class="col-12 pl-0 pl-lg-3 pr-0 pr-lg-3">
 					<div class="header-content">
 
-						<div>
+						<div class="logo-ipo-container">
 							<img class="logo-ipo" src="assets/images/logo/logo-white.png" alt="AIQHome Logo" title="AIQHome Logo">
 							<span class="logo-title-ipo">private raise</span>
 						</div>
@@ -68,10 +68,9 @@
 							</div>
 						</div>
 
-						<button type="button" class="download-btn">
-							<img class="menu-icon" src="assets/images/info/download-purple.svg" alt="Download" />
-							<span class="d-none d-lg-block">Company documentation</span>
-							<span class="d-lg-none">Documents</span>
+						<button type="button" class="download-btn" onclick="javascript:openIpoDownloadPopup();">
+							<img class="menu-icon" src="assets/images/ipo/envelope.svg" alt="Download" />
+							<span class="d-none d-lg-block">Additional information</span>
 						</button>
 
 						<!-- Langualg selection -->
@@ -1033,6 +1032,73 @@
 				<i class="decoration-element"></i>
 			</div>
 			<div id="ipoModalText" class="text"></div>
+		</div>
+	</div>
+
+	<!-- The Form Modal -->
+	<div id="ipoDownloadModal" class="modal ipo-download-modal">
+		<!-- Modal content -->
+		<div class="modal-content">
+			<div class="modal-header">
+				<span class="title">Additional information</span>
+				<span class="close" onclick="javascript:closeIpoDownloadPopup();">
+					<img src="assets/images/ipo/x-mark.svg" alt="close-icon">
+				</span>
+			</div>
+
+			<div class="content">
+				<div class="title-text">
+					For Additional information please fill out the following details
+					And our representative will contact you
+				</div>
+
+				<div class="divider"></div>
+
+				<div class="form-content">
+					<form action="">
+						<label for="name">
+							<input id="name" type="text" class="name">
+							<span class="input-icon">
+								<img src="assets/images/ipo/user.svg" alt="user-icon">
+							</span>
+						</label>
+						<label for="phone">
+							<input id="phone" type="tel" class="phone">
+							<span class="input-icon">
+								<img src="assets/images/ipo/phone.svg" alt="phone-icon">
+							</span>
+						</label>
+
+						<!-- Langualg selection -->
+						<div class="select-container">
+							<label for="language">
+								<select id="language" class="">
+									<option>English</option>
+									<option>French</option>
+									<option>Spanish</option>
+									<option>Russian</option>
+									<option>Arabic</option>
+								</select>
+								<span class="input-icon">
+									<img src="assets/images/ipo/globe-light.svg" alt="globe-icon">
+								</span>
+							</label>
+						</div>
+						<!-- EOL: Language selection -->
+						<label for="email">
+							<input id="email" type="email" class="email">
+							<span class="input-icon">
+								<img src="assets/images/ipo/email.svg" alt="email-icon">
+							</span>
+							<button type="button" class="send">
+								<img src="assets/images/ipo/send-arrow.svg" alt="send-arrow">
+								<span>Send</span>
+							</button>
+						</label>
+
+					</form>
+				</div>
+			</div>
 		</div>
 	</div>
 

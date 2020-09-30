@@ -12,8 +12,6 @@ window.closeIpoModel = (id, headline) => {
 	document.getElementById("ipoModalText").innerHTML = '';
 };
 
-
-
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
 	if (event.target == document.getElementById("ipoModal")) {
@@ -21,7 +19,24 @@ window.onclick = function(event) {
 	}
 };
 
+// Download modal
+window.openIpoDownloadPopup = () => {
+	document.getElementById("ipoDownloadModal").style.display = "block";
+};
 
+window.closeIpoDownloadPopup = () => {
+	document.getElementById("ipoDownloadModal").style.display = "none";
+};
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+	if (event.target == document.getElementById("ipoDownloadModal")) {
+		closeIpoDownloadPopup();
+	}
+};
+
+
+// Selectpicker
 $(function () {
 	$('.lang-select').selectpicker();
 });
