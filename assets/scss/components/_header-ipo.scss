@@ -91,9 +91,8 @@
 
   .logo-ipo-container {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
   }
 
   .info-content-header {
@@ -259,28 +258,17 @@
   }
 
   .download-btn {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 38px;
-    margin-right: 20px;
-    background-color: #d8cdba;
-    border-radius: 4px;
-    box-shadow: 0 2px 7.5px 0 rgba(87, 81, 116, 0.5);
-
-    @media(max-width: 767px) {
-      margin-right: 0;
-    }
-
     span {
-      font-weight: 500;
-      font-size: 10.5pt;
-      color: #342e49;
+      @media(max-width: 450px) {
+        display: none;
+      }
     }
 
     img {
-      width: 14px;
-      margin-right: 10px;
+      @media(max-width: 450px) {
+        width: 24px;
+        margin-right: 0;
+      }
     }
   }
 }
