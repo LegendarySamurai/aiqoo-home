@@ -14,6 +14,7 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 }
 
 //-- Hide Menu In Main Page
+var scrollToTop = document.querySelector('#ScrollToTop');
 var findBox = document.querySelector('.find-box-section .find-box');
 var pageHeader = document.querySelector('.header');
 var headerSearch = document.querySelector('#header-search');
@@ -50,7 +51,7 @@ function init() {
 	if (window.location.href.toLowerCase().indexOf("/c/") > -1 || window.location.href.toLowerCase().indexOf("/g/") > -1 || window.location.href.toLowerCase().indexOf("/s/") > -1 || window.location.href.toLowerCase().indexOf("/p/") > -1) {
 		var funnel_script_load = setTimeout(function () {
 			var script = document.createElement('script');
-			script.src = "assets/js/funnels_2.0.js";
+			script.src = "assets/js/funnels_2.4.js";
 			document.getElementsByTagName('head')[0].appendChild(script);
 		}, 1100);
 	}
@@ -103,7 +104,9 @@ function init() {
 			handleSearchBox();
 		}
 
-		handleInfoNote();
+		if (scrollToTop != null) {
+			handleInfoNote();
+		}
 	}, { passive: true });
 
 	btnOpenMenu.addEventListener('click', function () {

@@ -6,7 +6,7 @@ console.log("Map Functions map.js v=0.1");
 if (isMobile != true) {
 
     var script = document.createElement('script');
-    script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyAHnDaHtC-BxNseH5sJi4hhAq07N3lkCX8&callback=initMap&language=en";
+    script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyAHnDaHtC-BxNseH5sJi4hhAq07N3lkCX8&callback=initMap&language=en&libraries=places";
     document.getElementsByTagName('head')[0].appendChild(script);
 
     var bgMap, indexMap, geocoder;

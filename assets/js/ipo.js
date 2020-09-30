@@ -1,5 +1,27 @@
 import { CountUp } from './countUp.js';
 
+window.openIpoModel = (id, headline) => {
+	document.getElementById("ipoModal").style.display = "block";
+	document.getElementById("ipoModalHeadline").innerHTML = headline;
+	document.getElementById("ipoModalText").innerHTML = document.getElementById("fullText_Ipo").innerHTML;
+};
+
+window.closeIpoModel = (id, headline) => {
+	document.getElementById("ipoModal").style.display = "none";
+	document.getElementById("ipoModalHeadline").innerHTML = '';
+	document.getElementById("ipoModalText").innerHTML = '';
+};
+
+
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+	if (event.target == document.getElementById("ipoModal")) {
+		closeIpoModel();
+	}
+};
+
+
 $(function () {
 	$('.lang-select').selectpicker();
 });
